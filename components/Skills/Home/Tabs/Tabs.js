@@ -261,12 +261,12 @@ const Tabs = () => {
                       </span>
                     </div>
                     <div className="flex gap-3 mt-2">
-                      <Link href="/selfpaced/dsa-system-design.json">
+                      <Link href="https://courses.skillslash.com/learn/DSA---System-Design--FAANG-interviews-">
                         <button className="border-[1px] border-[#646464] border-solid bg-transparent px-[9px] py-1 text-[#646464] font-normal text-xs">
                           View Details
                         </button>
                       </Link>
-                      <Link href="/selfpaced/dsa-system-design.json">
+                      <Link href="https://courses.skillslash.com/learn/DSA---System-Design--FAANG-interviews-">
                         <button className={styles.gridBtn}>
                           Start Learning
                         </button>
@@ -930,12 +930,12 @@ const Tabs = () => {
                       </span>
                     </div>
                     <div className="flex gap-3 mt-2">
-                      <Link href="/selfpaced/dsa-system-design.json">
+                      <Link href="https://courses.skillslash.com/learn/DSA---System-Design--FAANG-interviews-">
                         <button className="border-[1px] border-[#646464] border-solid bg-transparent px-[9px] py-1 text-[#646464] font-normal text-xs">
                           View Details
                         </button>
                       </Link>
-                      <Link href="/selfpaced/dsa-system-design.json">
+                      <Link href="https://courses.skillslash.com/learn/DSA---System-Design--FAANG-interviews-">
                         <button className={styles.gridBtn}>
                           Start Learning
                         </button>
@@ -1748,12 +1748,12 @@ const Tabs = () => {
                       </span>
                     </div>
                     <div className="flex gap-3 mt-2">
-                      <Link href="/selfpaced/dsa-system-design.json">
+                      <Link href="https://courses.skillslash.com/learn/DSA---System-Design--FAANG-interviews-">
                         <button className="border-[1px] border-[#646464] border-solid bg-transparent px-[9px] py-1 text-[#646464] font-normal text-xs">
                           View Details
                         </button>
                       </Link>
-                      <Link href="/selfpaced/dsa-system-design.json">
+                      <Link href="https://courses.skillslash.com/learn/DSA---System-Design--FAANG-interviews-">
                         <button className={styles.gridBtn}>
                           Start Learning
                         </button>
@@ -1964,12 +1964,12 @@ const Tabs = () => {
                       </span>
                     </div>
                     <div className="flex gap-3 mt-2">
-                      <Link href="/selfpaced/dsa-system-design.json">
+                      <Link href="https://courses.skillslash.com/learn/DSA---System-Design--FAANG-interviews-">
                         <button className="border-[1px] border-[#646464] border-solid bg-transparent px-[9px] py-1 text-[#646464] font-normal text-xs">
                           View Details
                         </button>
                       </Link>
-                      <Link href="/selfpaced/dsa-system-design.json">
+                      <Link href="https://courses.skillslash.com/learn/DSA---System-Design--FAANG-interviews-">
                         <button className={styles.gridBtn}>
                           Start Learning
                         </button>
@@ -2524,12 +2524,12 @@ const Tabs = () => {
                       </span>
                     </div>
                     <div className="flex gap-3 mt-2">
-                      <Link href="/selfpaced/dsa-system-design.json">
+                      <Link href="https://courses.skillslash.com/learn/DSA---System-Design--FAANG-interviews-">
                         <button className="border-[1px] border-[#646464] border-solid bg-transparent px-[9px] py-1 text-[#646464] font-normal text-xs">
                           View Details
                         </button>
                       </Link>
-                      <Link href="/selfpaced/dsa-system-design.json">
+                      <Link href="https://courses.skillslash.com/learn/DSA---System-Design--FAANG-interviews-">
                         <button className={styles.gridBtn}>
                           Start Learning
                         </button>
@@ -2899,12 +2899,12 @@ const Tabs = () => {
                       </span>
                     </div>
                     <div className="flex gap-3 mt-2">
-                      <Link href="/selfpaced/dsa-system-design.json">
+                      <Link href="https://courses.skillslash.com/learn/DSA---System-Design--FAANG-interviews-">
                         <button className="border-[1px] border-[#646464] border-solid bg-transparent px-[9px] py-1 text-[#646464] font-normal text-xs">
                           View Details
                         </button>
                       </Link>
-                      <Link href="/selfpaced/dsa-system-design.json">
+                      <Link href="https://courses.skillslash.com/learn/DSA---System-Design--FAANG-interviews-">
                         <button className={styles.gridBtn}>
                           Start Learning
                         </button>
