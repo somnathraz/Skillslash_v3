@@ -26,7 +26,7 @@ const CustomPopup = ({
     if (onetime)
       setTimeout(() => {
         setOpen(true);
-      }, 5000);
+      }, 3000);
     return;
   }, []);
   const popupShow = () => {
@@ -38,35 +38,31 @@ const CustomPopup = ({
       <div className={styles.Offer}>
         <h6>Grab 50% Discount on All Our Bundle</h6>
         <p>
-          <strong>Available Course Details</strong> :<br />
-        </p>
-
-        <li>
           <strong>Data Science & AI Bootcamp - Professionals:</strong>
           <s style={{ marginRight: "5px" }}> MRP ₹11,999</s>
           <s> 5,999</s> 3000
-        </li>
-        <li>
+        </p>
+        <p>
           <strong>Data Science & AI Bootcamp - College Students:</strong>
           <s style={{ marginRight: "5px" }}> MRP ₹9,999</s>
           <s>4,999 </s>2500
-        </li>
-        <li>
+        </p>
+        <p>
           <strong>Data Analytics- Non Tech Professionals:</strong>{" "}
           <s style={{ marginRight: "5px" }}>MRP ₹7,999 </s>
           <s>3,999 </s>2000
-        </li>
-        <li>
+        </p>
+        <p>
           <strong>DSA and System Design :</strong>
           <s style={{ marginRight: "5px" }}>MRP ₹7,999 </s>
           <s>3,999</s> 2000
-        </li>
+        </p>
 
         <Link
           href="https://wa.me/+918391911911?text=ChatWithUs"
           style={{ marginTop: "20px" }}
         >
-          <button>Start Learning!</button>
+          <button>Get Discount</button>
         </Link>
       </div>
     </div>

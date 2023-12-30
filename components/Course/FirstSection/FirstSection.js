@@ -77,7 +77,7 @@ const FirstSection = ({
           <p className={styles.pTop}>{deskTopPara}</p>
           <p className={styles.sidePara}>{spanTitleText}</p>
         </div>
-        <h1>{title}</h1>
+        <h1 style={{ color: "black" }}>{title}</h1>
         {/* {seoPage ? (
           <div dangerouslySetInnerHTML={{ __html: seoPara }}></div>
         ) : (

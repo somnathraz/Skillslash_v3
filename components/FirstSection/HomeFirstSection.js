@@ -45,7 +45,7 @@ const HomeFirstSection = ({
         <div className={styles.paraWrap}>
           <p className={styles.pTop}>{deskTopPara}</p>
         </div>
-        <h1 className={styles.homeH1}>
+        <h1 className={styles.homeH1} style={{ color: "black" }}>
           Self-paced Live Project-Based
           <br /> Learning Platform
         </h1>
@@ -55,7 +55,7 @@ const HomeFirstSection = ({
         </p>
         <TextAnimation homePage={true} />
         <div className={styles.btnWrapper}>
-          <a href="#explore">
+          <a href="/selfpaced">
             <button>
               Explore Courses
               <BsArrowRightShort className="bIconS" />
