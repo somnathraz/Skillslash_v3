@@ -129,6 +129,9 @@ const Navbar = ({ link, event }) => {
               height={60}
             />
           </a>
+          <Link href={actualLink}>
+            <button className="hidden max-sm:block">Start Learning</button>
+          </Link>
           <button
             onMouseEnter={() => setIcon(true)}
             onMouseOver={() => setIcon(true)}

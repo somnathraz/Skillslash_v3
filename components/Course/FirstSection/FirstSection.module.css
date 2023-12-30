@@ -701,7 +701,6 @@
   }
 
   .left h1 {
-    font-size: 27px;
     margin: 0;
     font-weight: bold;
     padding: 0;
@@ -749,5 +748,10 @@
   }
   .imgWrapper {
     display: none;
+  }
+  .homeH1 {
+    font-size: 22px !important;
+    font-weight: bold !important;
+    color: black !important;
   }
 }

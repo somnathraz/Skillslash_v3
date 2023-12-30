@@ -356,7 +356,7 @@
   .left {
     display: flex;
     align-items: center;
-    justify-items: flex-start;
+    justify-content: space-between;
     gap: 0px;
   }
 

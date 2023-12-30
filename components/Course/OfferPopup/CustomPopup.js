@@ -36,7 +36,7 @@ const CustomPopup = ({
     <div className={open ? styles.OfferPopupCus : styles.hide}>
       <AiFillCloseCircle className={styles.Icon} onClick={handelOpen} />
       <div className={styles.Offer}>
-        <h6>Grab 50% Discount on All Our Bundle</h6>
+        <h6 className="font-bold">Grab 50% Discount on All Our Bundle</h6>
         <p>
           <strong>Data Science & AI Bootcamp - Professionals:</strong>
           <s style={{ marginRight: "5px" }}> MRP ₹11,999</s>

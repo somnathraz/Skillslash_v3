@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import ParaAnimation from "../../ParaAnimation/ParaAnimation";
 
 const FirstSection = () => {
@@ -21,12 +22,14 @@ const FirstSection = () => {
           &nbsp;to reach your career goal
         </h1>
         <ParaAnimation text="Hybrid= Video lesson + Live Doubt session + Live Project session" />
-        <button
-          className="bg-transparent text-[#f18350] px-4 py-2 mt-3 "
-          style={{ border: "2px solid #f18350" }}
-        >
-          Explore Free Courses
-        </button>
+        <Link href="#course">
+          <button
+            className="bg-transparent text-[#f18350] px-4 py-2 mt-3 "
+            style={{ border: "2px solid #f18350" }}
+          >
+            Explore Our Courses
+          </button>
+        </Link>
       </div>
       <div></div>
     </div>

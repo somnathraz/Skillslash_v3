@@ -312,6 +312,9 @@
     display: inline-block;
     margin-bottom: 10px;
   }
+  .homeTabWrapper {
+    height: 570px !important;
+  }
   .lines {
     border: 0.1px solid rgba(123, 123, 123, 0.3);
   }

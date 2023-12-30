@@ -45,7 +45,7 @@ const HomeFirstSection = ({
         <div className={styles.paraWrap}>
           <p className={styles.pTop}>{deskTopPara}</p>
         </div>
-        <h1 className={styles.homeH1} style={{ color: "black" }}>
+        <h1 className={styles.homeH1}>
           Self-paced Live Project-Based
           <br /> Learning Platform
         </h1>

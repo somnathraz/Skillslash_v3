@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./FirstSection.module.css";
-import { AiOutlineDownload } from "react-icons/ai";
+
 import Image from "next/image";
 import TextAnimation from "../../Animation/TextAnimation";
 

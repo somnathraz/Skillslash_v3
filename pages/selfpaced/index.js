@@ -94,7 +94,9 @@ export default function Home() {
 
       <Navbar link="https://courses.skillslash.com/learn" />
       <FirstSection />
-      <Tabs />
+      <div id="course">
+        <Tabs />
+      </div>
       <Certificate />
       <ProjectSlider heading="Hands-on Projects" redirectDs={true} />
       <Bootcamp />
