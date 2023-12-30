@@ -6,6 +6,7 @@ import Certificate from "../../components/Skills/Home/Certificate/Certificate";
 import ProjectSlider from "../../components/Skills/Global/Project/ProjectSlider";
 import Bootcamp from "../../components/Skills/Home/Bootcamp/Bootcamp";
 import FAQ from "../../components/Skills/Global/FAQ/FAQ";
+import CustomPopup from "../../components/Course/OfferPopup/CustomPopup";
 
 export default function Home() {
   const FaqDATA = [
@@ -98,6 +99,7 @@ export default function Home() {
       <ProjectSlider heading="Hands-on Projects" redirectDs={true} />
       <Bootcamp />
       <FAQ heading="Frequently Asked Questions" FaqData={FaqDATA} />
+      <CustomPopup />
     </>
   );
 }
