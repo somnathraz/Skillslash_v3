@@ -46,7 +46,7 @@ const HomeFirstSection = ({
           <p className={styles.pTop}>{deskTopPara}</p>
         </div>
         <h1 className={styles.homeH1}>
-          Self-peaced Live Project-Based
+          Self-paced Live Project-Based
           <br /> Learning Platform
         </h1>
         <p className={styles.pBotM}>
