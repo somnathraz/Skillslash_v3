@@ -190,7 +190,7 @@ const MegaMenu = ({ handleIcon }) => {
                     </div>
                   </div>
                 </a>
-                <a href="/selfpaced/dsa-system-design.json">
+                <a href="https://skillslash-pvt-ltd.learnyst.com/learn/PYTHON-BOOTCAMP">
                   <div
                     className={styles.mInnerBox}
                     onClick={() => handleIcon(false)}
@@ -205,7 +205,7 @@ const MegaMenu = ({ handleIcon }) => {
                     </div>
                   </div>
                 </a>{" "}
-                <a href="/selfpaced/dsa-system-design.json">
+                <a href="https://skillslash-pvt-ltd.learnyst.com/learn/Machine-Learning-with-Applied-Statistics">
                   <div
                     className={styles.mInnerBox}
                     onClick={() => handleIcon(false)}
@@ -435,7 +435,7 @@ const MegaMenu = ({ handleIcon }) => {
                 </div>
               </div>
             </a>
-            <a href="/selfpaced/dsa-system-design.json">
+            <a href="https://skillslash-pvt-ltd.learnyst.com/learn/PYTHON-BOOTCAMP">
               <div
                 className={styles.mInnerBox}
                 onClick={() => handleIcon(false)}
@@ -450,7 +450,7 @@ const MegaMenu = ({ handleIcon }) => {
                 </div>
               </div>
             </a>{" "}
-            <a href="/selfpaced/dsa-system-design.json">
+            <a href="https://skillslash-pvt-ltd.learnyst.com/learn/Machine-Learning-with-Applied-Statistics">
               <div
                 className={styles.mInnerBox}
                 onClick={() => handleIcon(false)}

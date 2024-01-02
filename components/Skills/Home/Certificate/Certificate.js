@@ -282,7 +282,7 @@ const Certificate = () => {
               <div className={styles.gridWrap}>
                 <div className="flex h-full w-full relative">
                   <Image
-                    src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Certificate/course-completion-certificate.png"
+                    src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Certificate/course-certificate.webp"
                     fill
                     alt="Project certificate"
                   />
