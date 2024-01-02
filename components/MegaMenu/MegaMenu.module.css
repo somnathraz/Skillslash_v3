@@ -127,6 +127,9 @@
   flex-flow: column;
   gap: 5px;
 }
+.mInnerBoxDiv h5 {
+  font-weight: 500;
+}
 .mInnerBox span div {
   display: flex;
   align-items: center;

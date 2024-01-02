@@ -42,10 +42,10 @@ const Header = ({
             </button>
           </Link>
           <div className="flex flex-col ">
-            <p className="text-lg text-black font-medium"> {actualPrice}</p>
+            <p className="text-lg text-black font-medium"> {offerPrice}</p>
             <div className="flex gap-3 items-center">
               <p>
-                <s> {offerPrice}</s>
+                <s> {actualPrice}</s>
               </p>
             </div>
           </div>
