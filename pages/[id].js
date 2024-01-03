@@ -785,7 +785,7 @@ export default function Home({
         />
         <FloatIcon />
         {/* <Newsletter /> */}
-        <CustomPopup />
+        {/* <CustomPopup />*/}
         <Footer />
       </div>
     </>

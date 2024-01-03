@@ -101,7 +101,7 @@ export default function Home() {
       <ProjectSlider heading="Hands-on Projects" redirectDs={true} />
       <Bootcamp />
       <FAQ heading="Frequently Asked Questions" FaqData={FaqDATA} />
-      <CustomPopup />
+      {/* <CustomPopup />*/}
     </>
   );
 }

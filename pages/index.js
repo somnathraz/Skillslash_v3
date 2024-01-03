@@ -66,7 +66,7 @@ export default function Home() {
         )}
         <FirstPart homePage={true} />
         <SecondPart homePage={true} />
-        <CustomPopup />
+        {/* <CustomPopup />*/}
       </div>
     </>
   );
