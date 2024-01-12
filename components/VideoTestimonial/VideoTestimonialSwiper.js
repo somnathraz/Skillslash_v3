@@ -1,8 +1,6 @@
 import styles from "./VideoTestimonial.module.css";
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
-
 import { BsFillPlayFill } from "react-icons/bs";
 import "swiper/css";
 import "swiper/css/free-mode";

@@ -3,21 +3,7 @@
   margin-left: 10px;
   height: max-content;
 }
-.MenuTabs {
-  display: flex;
-  margin-top: 30px;
-  height: 350px;
-  gap: 25px;
-  justify-content: space-between;
-  background-color: white;
-}
-.leftPanel {
-  display: flex;
-  flex-flow: column;
-}
-.leftPanel .gridWrap {
-  display: none;
-}
+
 .span {
   display: flex;
   align-items: center;
@@ -124,7 +110,6 @@
   padding: 0px 15px 15px 15px;
   width: 100%;
   display: flex;
-  flex-flow: column;
   gap: 5px;
   z-index: 10;
 }
@@ -165,7 +150,6 @@
   display: flex;
   justify-content: center;
   line-height: 21px;
-
   text-align: center;
   padding: 0;
   padding-top: 10px;
@@ -177,7 +161,6 @@
   color: #4f419a;
   font-size: 30px;
   padding: 5px;
-
   margin-right: 5px;
   border-radius: 4px;
 }

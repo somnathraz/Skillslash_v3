@@ -7,7 +7,7 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .ReviewSlider {
-  padding: 30px 100px;
+  padding: 50px 100px 0 100px;
 }
 .ReviewSlider h4 {
   margin-bottom: 0;
@@ -98,9 +98,11 @@
 }
 .siteReview {
   display: grid;
+  background-color: #111621;
   grid-template-columns: 48% 48%;
   position: relative;
-  height: 180px;
+  height: 130px;
+  border-radius: 8;
   border-radius: 4px;
   margin: 40px 80px;
 }
@@ -116,6 +118,7 @@
 }
 .ratingText h2 {
   font-size: 30px;
+  color: white;
 }
 @media (max-width: 1281px) {
   .ReviewSlider {

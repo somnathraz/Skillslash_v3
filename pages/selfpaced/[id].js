@@ -7,6 +7,12 @@ import Certificate from "../../components/Skills/Home/Certificate/Certificate";
 import React from "react";
 import { getAllPostIds, getPostData } from "../../lib/newPages";
 import FAQ from "../../components/Skills/Global/FAQ/FAQ";
+import WhyUsAnimate from "../../components/Skills/CoursePage/WhyUsAnimate/WhyUsAnimate";
+import WhyUs from "../../components/WhyUs/WhyUs";
+import VideoTestimonial from "../../components/VideoTestimonial/VideoTestimonial";
+import Reviews from "../../components/Review/Reviews";
+import DetailTable from "../../components/Skills/CoursePage/DetailTable/DetailTable";
+import Learn from "../../components/Skills/CoursePage/Learn/Learn";
 
 const DataSciencePage = ({ DataScienceCourseData }) => {
   const FaqDATA = [
@@ -100,15 +106,26 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         offerPrice={DataScienceCourseData.data.header.offerPrice}
         discount={DataScienceCourseData.data.header.discount}
       />
-      <CourseDetails hour={DataScienceCourseData.data.header.hour} />
+      <Learn />
+      <WhyUs />
+      <VideoTestimonial
+        heading="What is it like to train with us?
+"
+        spanText="our learners say it best."
+      />
+      <Reviews />
+      <DetailTable />
       <DataScienceSyllabus
         seoSyllabus={DataScienceCourseData.data.seoSyllabus}
         heading="Modules"
         hour={DataScienceCourseData.data.header.hour}
       />
 
+      {/* <WhyUsAnimate /> */}
+      {/* <CourseDetails hour={DataScienceCourseData.data.header.hour} /> */}
+
       <ProjectSlider heading="Hands-on Projects" redirectDs={true} />
-      <Certificate />
+
       <FAQ heading="Frequently Asked Questions" FaqData={FaqDATA} />
     </div>
   );

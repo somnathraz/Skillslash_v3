@@ -1,21 +1,23 @@
 import React from "react";
 import dynamic from "next/dynamic";
-import styles from "../../styles/Home.module.css";
-const MiddlePageCta = dynamic(() => import("../MiddlePageCta/MiddlePageCta"));
+import VideoTestimonial from "../VideoTestimonial/VideoTestimonial";
 const Reviews = dynamic(() => import("../Review/Reviews"));
 const Footer = dynamic(() => import("../Footer/Footer"));
 
-const Hiring = dynamic(() => import("../Hiring/Hiring"));
 // const Newsletter = dynamic(() => import("../Newsletter/Newsletter"));
 const OurEvents = dynamic(() => import("../OurEvents/OurEvents"));
 
 const SecondPart = ({ homePage }) => {
   return (
     <>
-      <div className={styles.advantage}>
+      {/* <div className={styles.advantage}>
         <Hiring />
-      </div>
-
+      </div> */}
+      <VideoTestimonial
+        heading="What is it like to train with us?
+"
+        spanText="our learners say it best."
+      />
       <Reviews
         home={homePage}
         title="Our Mission Is To Provide World-Class Education"
