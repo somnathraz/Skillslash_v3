@@ -21,7 +21,7 @@ function YourComponent() {
   });
   return (
     <div
-      className="h-[1700px] max-sm:h-[1950px] px-28 py-10 bg-[#fff7f3] flex flex-col max-sm:px-5 max-sm:py-5"
+      className="h-[1700px] max-sm:h-[2150px] px-28 py-10 bg-[#fff7f3] flex flex-col max-sm:px-5 max-sm:py-5"
       ref={ref}
     >
       <h2 className="text-[#FDDACE] text-8xl max-sm:text-3xl font-bold uppercase text-left ml-7 max-sm:ml-0 max-sm:text-center">
@@ -157,40 +157,40 @@ function YourComponent() {
             fill="white"
           />
         </motion.svg>
-        <div className="bg-white shadow rounded-2xl px-10  pt-24 pb-14 z-40 relative ml-64 max-sm:ml-0 mt-32 w-[78%] flex items-end justify-end max-sm:w-[100%]">
-          <div className="absolute bg-[#EEEBFF] top-10 right-0 font-medium px-4 py-1 rounded-l-2xl">
+        <div className="bg-white shadow rounded-2xl px-10 max-sm:px-5  pt-24 max-sm:pt-[210px] pb-14 z-40 relative ml-64 max-sm:ml-0 mt-32  w-[78%] flex items-end justify-end max-sm:justify-start max-sm:w-[100%]">
+          <div className="absolute bg-[#EEEBFF] top-10 max-sm:top-[160px] right-0 font-medium px-4 py-1 rounded-l-2xl">
             For Non-Tech Professionals
           </div>
           <div className="flex flex-col gap-4">
-            <h3 className="text-4xl font-bold text-[#f18350] max-sm:text-2xl">
+            <h3 className="text-4xl font-bold text-[#f18350]  max-sm:text-2xl">
               Data Analytics course
             </h3>
             <p className="text-black font-medium ">Why this bootcamp?</p>
-            <div className="flex gap-8 max-sm:flex-col max-sm:gap-3">
+            <div className="flex gap-8 max-sm:flex-col max-sm:gap-3 ">
               <div className="flex flex-col gap-7 max-sm:gap-3">
-                <p className="flex gap-3 items-center text-sm ">
+                <p className="flex gap-3 items-center text-sm max-sm:text-lg">
                   <span className="bg-[#eff1ff] px-1 py-1 rounded-sm">
-                    <BiSolidVideos className="text-[#343434]" />
+                    <BiSolidVideos className="text-[#343434] max-sm:text-2xl" />
                   </span>
                   206+ hrs videos Lessons
                 </p>
-                <p className="flex gap-3 items-center text-sm ">
+                <p className="flex gap-3 items-center text-sm max-sm:text-lg ">
                   <span className="bg-[#eff1ff] px-1 py-1 rounded-sm">
-                    <MdQuestionMark className="text-[#343434]" />
+                    <MdQuestionMark className="text-[#343434] max-sm:text-lg" />
                   </span>
                   Live Doubt clearing session
                 </p>
               </div>
-              <div className="flex flex-col gap-7 max-sm:gap-3">
-                <p className="flex gap-3 items-center text-sm ">
+              <div className="flex flex-col gap-7 max-sm:gap-3 ">
+                <p className="flex gap-3 items-center text-sm max-sm:text-lg">
                   <span className="bg-[#eff1ff] px-1 py-1 rounded-sm">
-                    <FaChalkboardTeacher className="text-[#343434]" />
+                    <FaChalkboardTeacher className="text-[#343434] max-sm:text-lg" />
                   </span>
                   10 Live instructor-led projects
                 </p>
-                <p className="flex gap-3 items-center text-sm">
+                <p className="flex gap-3 items-center text-sm max-sm:text-lg">
                   <span className="bg-[#eff1ff] px-1 py-1 rounded-sm">
-                    <PiCertificate className="text-[#343434]" />
+                    <PiCertificate className="text-[#343434] max-sm:text-lg" />
                   </span>
                   Triple Certification
                 </p>
@@ -207,12 +207,12 @@ function YourComponent() {
               </button>
             </div>
           </div>
-          <div className="absolute left-[-230px] top-12 max-sm:hidden">
+          <div className="absolute left-[-230px] top-12 max-sm:left-[10px] max-sm:top-[-60px] max-sm:right-[10px] max-sm:flex max-sm:items-center max-sm:justify-center">
             <Image
               src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Course_icon/Data-science-ai-thumbnail.webp"
               alt="data-science-course"
               height={294}
-              width={416}
+              width={mobile ? 290 : 416}
             />
           </div>
         </div>
@@ -272,8 +272,8 @@ function YourComponent() {
           alt="data analytics"
         />
 
-        <div className="bg-white shadow rounded-2xl px-10  pt-24 pb-14 z-40 relative ml-52 max-sm:ml-0 mt-32 w-[74%] max-sm:w-[100%]">
-          <div className="absolute bg-[#EEEBFF] top-10 left-0 font-medium px-4 py-1 rounded-r-2xl">
+        <div className="bg-white shadow rounded-2xl px-10  pt-24 max-sm:pt-[210px] pb-14 z-40 relative ml-52 max-sm:ml-0 mt-32 w-[74%] max-sm:w-[100%]">
+          <div className="absolute bg-[#EEEBFF] top-10  max-sm:top-[160px] left-0 font-medium px-4 py-1 rounded-r-2xl">
             For Programmers
           </div>
 
@@ -323,12 +323,12 @@ function YourComponent() {
               </button>
             </div>
           </div>
-          <div className="absolute right-[-230px] top-12 max-sm:hidden">
+          <div className="absolute right-[-230px] top-12 max-sm:left-[10px] max-sm:top-[-60px] max-sm:right-[10px] max-sm:flex max-sm:items-center max-sm:justify-center">
             <Image
               src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Course_icon/Data-science-ai-thumbnail.webp"
               alt="data-science-course"
               height={294}
-              width={416}
+              width={mobile ? 290 : 416}
             />
           </div>
         </div>
