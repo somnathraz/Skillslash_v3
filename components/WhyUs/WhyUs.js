@@ -52,8 +52,10 @@ const WhyUs = () => {
   }, [currentIndex, imageSrc]);
 
   return (
-    <div className="py-14 flex flex-col gap-11">
-      <h2 className="px-28 text-3xl">Why Choose Us?</h2>
+    <div className="py-14 flex flex-col gap-11 ">
+      <h2 className="px-28 max-sm:px-5 text-3xl max-sm:text-2xl">
+        Why Choose Us?
+      </h2>
       <div className="px-28 bg-gradient-to-t from-[#f3f1fffe] from-8 0% to-white w-full to-20% flex flex-col h-max">
         <div className="bg-black h-[330px] rounded grid grid-cols-[48%,48.5%] gap-10 pl-16 relative">
           <div className="absolute bottom-0 h-[190px] bg-gradient-to-t from-[#000000] from-10% to-transparent w-[55%] to-70% z-20"></div>
@@ -184,13 +186,13 @@ const WhyUs = () => {
           </div>
         </div>
         <div
-          className="grid grid-cols-[40%,57%] relative px-36 h-[350px] items-center gap-10 pb-[60px] pt-10"
+          className="grid grid-cols-[40%,57%] relative px-36 max-sm:px-5 h-[350px] items-center gap-10 pb-[60px] pt-10"
           ref={certRef}
         >
           <div className="absolute top-[0px] h-[666px] left-[80px] z-10">
             <motion.svg
               preserveAspectRatio="xMidYMax meet"
-              className="h-[470px] w-[650px]"
+              className="h-[470px] w-[650px] max-sm:hidden"
             >
               <motion.path
                 id="animatedPath1"

@@ -214,7 +214,7 @@
 @media (max-width: 641px) {
   .siteReview {
     display: flex;
-    background-color: #f7f6ff;
+    background-color: #111621;
     align-items: center;
     flex-flow: column;
   }
@@ -233,6 +233,7 @@
   .rightImg {
     display: flex;
     gap: 10px;
+    padding: 10px;
   }
   .rightImg img {
     width: 100%;
@@ -243,6 +244,9 @@
   }
   .siteReview h5 {
     font-size: 20px;
+  }
+  .ratingText {
+    margin-top: 10px;
   }
 }
 
@@ -259,7 +263,6 @@
   }
   .ReviewBox {
     padding: 0px 0px;
-    background-color: #f9f8ff;
     height: 280px !important;
   }
 
@@ -300,6 +303,7 @@
     margin-right: 10px;
   }
   .ratingText {
+    font-size: 20px;
     padding-left: 0;
   }
   .siteReview {
@@ -314,5 +318,12 @@
   .profileWrapper {
     padding: 0;
     height: 180px !important;
+  }
+  .headings h2 {
+    font-size: 23px;
+  }
+  .ratingText h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
   }
 }

@@ -645,7 +645,8 @@ button {
     margin: 10px;
   }
   .wrapperHeading hr {
-    width: 100px;
+    width: 75px;
+    min-width: 75px;
   }
   h5 {
     font-size: 30px;
