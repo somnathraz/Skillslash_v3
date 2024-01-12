@@ -16,7 +16,7 @@ const SecondPart = ({ homePage }) => {
       <VideoTestimonial
         heading="What is it like to train with us?
 "
-        spanText="our learners say it best."
+        spanText="Our learners say it best"
       />
       <Reviews
         home={homePage}

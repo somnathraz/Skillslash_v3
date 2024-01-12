@@ -67,8 +67,7 @@ const HomeFirstSection = ({
           <p className={styles.pTop}>{deskTopPara}</p>
         </div>
         <h1 className={styles.homeH1}>
-          <span className={styles.homeSpan}>Self-paced Live Project-Based</span>
-          Learning Platform
+          <span className={styles.homeSpan}>Self-paced Live Project-Based Learning Platform</span>
         </h1>
         <p className={styles.pBotM}>
           Access comprehensive lessons with live doubt-clearing classes. Work on
@@ -80,7 +79,7 @@ const HomeFirstSection = ({
           <a href="/selfpaced">
             <button>
               Explore Courses
-              <BsArrowRightShort className="bIconS" />
+              {/* <BsArrowRightShort className="bIconS" /> */}
             </button>
           </a>
         </div>

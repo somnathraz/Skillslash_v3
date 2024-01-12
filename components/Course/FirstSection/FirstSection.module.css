@@ -694,7 +694,7 @@
     background-color: #111621;
     align-items: center;
     grid-template-columns: 100%;
-    padding: 40px 20px 20px 20px;
+    padding: 40px 20px 40px 20px;
     height: max-content;
     overflow: hidden;
   }
@@ -738,8 +738,8 @@
     font-size: 20px;
     text-align: center;
     margin-bottom: 0px;
-    padding: 0px 5px;
-    line-height: 47px;
+    padding: 5px 15px;
+    line-height: 30px;
     background-color: #f18350;
   }
 
@@ -751,8 +751,11 @@
   }
   .pBotM {
     text-align: center;
+    line-height: 26px;
+    font-size: 16px;
+    width: 100%;
     margin: 0;
-    color: #575757;
+    color: #d6d6d6;
   }
   .left h1 span {
     color: white;
@@ -773,18 +776,21 @@
   }
 
   .btnWrapper button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
+    margin-top: 10px;
+    margin-right: 0;
+    padding: 10px 20px;
     width: max-content;
-    display: flex;
-
+    border: 3px solid #f18350;
+    background-color: transparent;
     justify-content: center;
     border-radius: 4px;
   }
-  .certIcon {
+  /* .certIcon {
     font-size: 30px;
     color: #c4bbff;
-  }
+  } */
   .realWorkIcon {
     font-size: 32px;
     color: #c4bbff;
@@ -793,11 +799,12 @@
     display: none;
   }
   .homeH1 {
-    font-size: 22px !important;
+    font-size: 36px !important;
     font-weight: bold !important;
+    line-height: 52px;
     color: white !important;
   }
-  .btnWrapper button {
+  /* .btnWrapper button {
     background-color: #f18350;
-  }
+  } */
 }

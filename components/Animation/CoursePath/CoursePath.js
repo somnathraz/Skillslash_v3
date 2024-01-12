@@ -63,7 +63,7 @@ function YourComponent() {
             fill="white"
           />
         </motion.svg>
-        <div className="bg-white shadow rounded-2xl px-10  pt-24 max-sm:pt-[210px] pb-14 z-40 relative ml-56 max-sm:ml-0 mt-10 max-sm:mt-16 w-[74%] max-sm:w-[100%]">
+        <div className="bg-white shadow rounded-2xl px-10  pt-24 max-sm:pt-[210px] pb-14 max-sm:pb-10 z-40 relative ml-56 max-sm:ml-0 mt-10 max-sm:mt-16 w-[74%] max-sm:w-[100%]">
           <div className="absolute bg-[#EEEBFF] top-10 max-sm:top-[160px] left-0 font-medium px-4 py-1 rounded-r-2xl">
             For Professionals
           </div>
@@ -102,13 +102,12 @@ function YourComponent() {
                 </p>
               </div>
             </div>
-            <div className="flex gap-5 items-center">
+            <div className="flex max-sm:flex-col gap-5 max-sm:gap-3 items-center max-sm:items-start">
               <div>
-                <p className="font-semibold text-[#f18350] text-2xl mt-4">
-                  ₹5,999
-                </p>
+                <p className="font-semibold flex gap-4 items-center text-[#f18350] text-2xl mt-4 max-sm:mt-3">
+                  ₹5,999 <span className=" text-[#4D4D4D] line-through text-lg max-sm:text-[16px] max-sm:font-">₹11,999</span></p>
               </div>
-              <button className="bg-[#f18350] px-3 py-1 mt-4 ">
+              <button className="bg-[#f18350] px-3 py-1 mt-4 max-sm:mt-0 max-sm:w-full max-sm:justify-center max-sm:py-2">
                 Explore Bootcamp
               </button>
             </div>
@@ -157,7 +156,7 @@ function YourComponent() {
             fill="white"
           />
         </motion.svg>
-        <div className="bg-white shadow rounded-2xl px-10 max-sm:px-5  pt-24 max-sm:pt-[210px] pb-14 z-40 relative ml-64 max-sm:ml-0 mt-32  w-[78%] flex items-end justify-end max-sm:justify-start max-sm:w-[100%]">
+        <div className="bg-white shadow rounded-2xl px-10 pt-24 max-sm:pt-[210px] pb-14 max-sm:pb-10 z-40 relative ml-64 max-sm:ml-0 mt-32  w-[78%] flex items-end justify-end max-sm:justify-start max-sm:w-[100%]">
           <div className="absolute bg-[#EEEBFF] top-10 max-sm:top-[160px] right-0 font-medium px-4 py-1 rounded-l-2xl">
             For Non-Tech Professionals
           </div>
@@ -166,43 +165,42 @@ function YourComponent() {
               Data Analytics course
             </h3>
             <p className="text-black font-medium ">Why this bootcamp?</p>
-            <div className="flex gap-8 max-sm:flex-col max-sm:gap-3 ">
+            <div className="flex gap-8 max-sm:flex-col max-sm:gap-3">
               <div className="flex flex-col gap-7 max-sm:gap-3">
-                <p className="flex gap-3 items-center text-sm max-sm:text-lg">
+                <p className="flex gap-3 items-center text-sm ">
                   <span className="bg-[#eff1ff] px-1 py-1 rounded-sm">
-                    <BiSolidVideos className="text-[#343434] max-sm:text-2xl" />
+                    <BiSolidVideos className="text-[#343434]" />
                   </span>
                   206+ hrs videos Lessons
                 </p>
-                <p className="flex gap-3 items-center text-sm max-sm:text-lg ">
+                <p className="flex gap-3 items-center text-sm ">
                   <span className="bg-[#eff1ff] px-1 py-1 rounded-sm">
-                    <MdQuestionMark className="text-[#343434] max-sm:text-lg" />
+                    <MdQuestionMark className="text-[#343434]" />
                   </span>
                   Live Doubt clearing session
                 </p>
               </div>
-              <div className="flex flex-col gap-7 max-sm:gap-3 ">
-                <p className="flex gap-3 items-center text-sm max-sm:text-lg">
+              <div className="flex flex-col gap-7 max-sm:gap-3">
+                <p className="flex gap-3 items-center text-sm ">
                   <span className="bg-[#eff1ff] px-1 py-1 rounded-sm">
-                    <FaChalkboardTeacher className="text-[#343434] max-sm:text-lg" />
+                    <FaChalkboardTeacher className="text-[#343434]" />
                   </span>
-                  10 Live instructor-led projects
+                  20 Live instructor-led projects
                 </p>
-                <p className="flex gap-3 items-center text-sm max-sm:text-lg">
+                <p className="flex gap-3 items-center text-sm">
                   <span className="bg-[#eff1ff] px-1 py-1 rounded-sm">
-                    <PiCertificate className="text-[#343434] max-sm:text-lg" />
+                    <PiCertificate className="text-[#343434]" />
                   </span>
                   Triple Certification
                 </p>
               </div>
             </div>
-            <div className="flex gap-5 items-center">
+            <div className="flex max-sm:flex-col gap-5 max-sm:gap-3 items-center max-sm:items-start">
               <div>
-                <p className="font-semibold text-[#f18350] text-2xl mt-4">
-                  ₹3,999
-                </p>
+                <p className="font-semibold flex gap-4 items-center text-[#f18350] text-2xl mt-4 max-sm:mt-3">
+                  ₹3,999 <span className=" text-[#4D4D4D] line-through text-lg max-sm:text-[16px] max-sm:font-">₹7,999</span></p>
               </div>
-              <button className="bg-[#f18350] px-3 py-1 mt-4 ">
+              <button className="bg-[#f18350] px-3 py-1 mt-4 max-sm:mt-0 max-sm:w-full max-sm:justify-center max-sm:py-2">
                 Explore Bootcamp
               </button>
             </div>
@@ -272,7 +270,7 @@ function YourComponent() {
           alt="data analytics"
         />
 
-        <div className="bg-white shadow rounded-2xl px-10  pt-24 max-sm:pt-[210px] pb-14 z-40 relative ml-52 max-sm:ml-0 mt-32 w-[74%] max-sm:w-[100%]">
+        <div className="bg-white shadow rounded-2xl px-10  pt-24 max-sm:pt-[210px] pb-14 max-sm:pb-10 z-40 relative ml-52 max-sm:ml-0 mt-32 w-[74%] max-sm:w-[100%]">
           <div className="absolute bg-[#EEEBFF] top-10  max-sm:top-[160px] left-0 font-medium px-4 py-1 rounded-r-2xl">
             For Programmers
           </div>
@@ -283,12 +281,12 @@ function YourComponent() {
             </h3>
             <p className="text-black font-medium ">Why this bootcamp?</p>
             <div className="flex gap-8 max-sm:flex-col max-sm:gap-3">
-              <div className="flex flex-col gap-7">
+              <div className="flex flex-col gap-7 max-sm:gap-3">
                 <p className="flex gap-3 items-center text-sm ">
                   <span className="bg-[#eff1ff] px-1 py-1 rounded-sm">
                     <BiSolidVideos className="text-[#343434]" />
                   </span>
-                  83+ hrs self-paced videos
+                  83+ hrs self-pased videos
                 </p>
                 <p className="flex gap-3 items-center text-sm ">
                   <span className="bg-[#eff1ff] px-1 py-1 rounded-sm">
@@ -297,7 +295,7 @@ function YourComponent() {
                   Live Doubt clearing session
                 </p>
               </div>
-              <div className="flex flex-col gap-7">
+              <div className="flex flex-col gap-7 max-sm:gap-3">
                 <p className="flex gap-3 items-center text-sm ">
                   <span className="bg-[#eff1ff] px-1 py-1 rounded-sm">
                     <FaChalkboardTeacher className="text-[#343434]" />
@@ -308,17 +306,16 @@ function YourComponent() {
                   <span className="bg-[#eff1ff] px-1 py-1 rounded-sm">
                     <PiCertificate className="text-[#343434]" />
                   </span>
-                  FAANG Trainers
+                  FAANG trainers
                 </p>
               </div>
             </div>
-            <div className="flex gap-5 items-center">
+            <div className="flex max-sm:flex-col gap-5 max-sm:gap-3 items-center max-sm:items-start">
               <div>
-                <p className="font-semibold text-[#f18350] text-2xl mt-4">
-                  ₹5,999
-                </p>
+                <p className="font-semibold flex gap-4 items-center text-[#f18350] text-2xl mt-4 max-sm:mt-3">
+                  ₹5,999 <span className=" text-[#4D4D4D] line-through text-lg max-sm:text-[16px] max-sm:font-">₹11,999</span></p>
               </div>
-              <button className="bg-[#f18350] px-3 py-1 mt-4 ">
+              <button className="bg-[#f18350] px-3 py-1 mt-4 max-sm:mt-0 max-sm:w-full max-sm:justify-center max-sm:py-2">
                 Explore Bootcamp
               </button>
             </div>

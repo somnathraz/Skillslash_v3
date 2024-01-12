@@ -7,64 +7,64 @@ const CourseSlider = () => {
       <h3 className="text-4xl max-sm:text-2xl font-bold">Our Courses</h3>
       <div className="grid grid-cols-[45%,45%,45%] max-sm:grid-cols-[92%,92%,92%] gap-8 max-sm:gap-5 overflow-scroll pb-4 pl-2">
         <div className="shadow rounded-lg bg-[#ede9ff] ">
-          <div className="flex items-center gap-4 px-6 max-sm:py-5  py-10">
+          <div className="flex items-center gap-4 px-6 max-sm:px-3 max-sm:py-4 py-10">
             <Image
               src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Course_icon/Dsa-course-icon.webp"
               alt="data science course"
-              width={60}
-              height={60}
+              width={50}
+              height={50}
               loading="lazy"
             />
-            <h3 className="font-medium text-xl">
+            <h3 className="font-medium max-sm:text-[16px] max-sm:font-semibold">
               DSA + System Design (FAANG interviews)
             </h3>
           </div>
-          <div className="bg-white flex flex-wrap px-6 py-4 rounded-lg gap-4 text-xs items-center justify-between">
+          <div className="bg-white flex px-6 max-sm:px-3 py-4 max-sm:py-3 rounded-b-lg gap-4 max-sm:gap-2 text-xs max-sm:text-[11px] items-center justify-between">
             <span>15+ hrs of lessons</span>
-            <span>Live Doubt Sessions</span>
+            <span>Live Doubt Classes</span>
             <span>Live Projects</span>
 
-            <button className="text-xs px-4 py-2">Start Learning</button>
+            {/* <button className="text-xs px-4 py-2">Start Learning</button> */}
           </div>
         </div>
         <div className="shadow rounded-lg bg-[#ede9ff] ">
-          <div className="flex items-center gap-4 px-6 py-10 max-sm:py-5">
+          <div className="flex items-center gap-4 px-6 max-sm:px-3 max-sm:py-4 py-10">
             <Image
               src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Course_icon/python-course-icon.webp"
               alt="data science course"
-              width={60}
-              height={60}
+              width={50}
+              height={50}
               loading="lazy"
             />
-            <h3 className="font-medium text-xl">Python For Data Science</h3>
+            <h3 className="font-medium max-sm:text-[16px] max-sm:font-semibold">Python For Data Science</h3>
           </div>
-          <div className="bg-white flex flex-wrap px-6 py-4 rounded-lg gap-4 text-xs items-center justify-between">
+          <div className="bg-white flex px-6 max-sm:px-3 py-4 max-sm:py-3 rounded-b-lg gap-4 max-sm:gap-2 text-xs max-sm:text-[11px] items-center justify-between">
             <span>15+ hrs of lessons</span>
             <span>Live Projects</span>
             <span>Live Doubt Sessions</span>
             {/* <span>2 Live instructor-led projects</span>
             <span>Triple Certification</span> */}
-            <button className="text-xs px-4 py-2">Start Learning</button>
+            {/* <button className="text-xs px-4 py-2">Start Learning</button> */}
           </div>
         </div>
         <div className="shadow rounded-lg bg-[#ede9ff] ">
-          <div className="flex items-center gap-4 px-6 py-10 max-sm:py-5">
+          <div className="flex items-center gap-4 px-6 max-sm:px-3 max-sm:py-4 py-10">
             <Image
               src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Course_icon/Tableau-course-icon.webp"
               alt="data science course"
-              width={60}
-              height={60}
+              width={50}
+              height={50}
               loading="lazy"
             />
-            <h3 className="font-medium text-xl">Tableau</h3>
+            <h3 className="font-medium max-sm:text-[16px] max-sm:font-semibold">Tableau</h3>
           </div>
-          <div className="bg-white flex flex-wrap px-6 py-4 rounded-lg gap-4 text-xs items-center justify-between">
+          <div className="bg-white flex px-6 max-sm:px-3 py-4 max-sm:py-3 rounded-b-lg gap-4 max-sm:gap-2 text-xs max-sm:text-[11px] items-center justify-between">
             <span>15+ hrs of lessons</span>
             <span>Live Projects</span>
             <span>Live Doubt Sessions</span>
             {/* <span>2 Live instructor-led projects</span>
             <span>Triple Certification</span> */}
-            <button className="text-xs px-4 py-2">Start Learning</button>
+            {/* <button className="text-xs px-4 py-2">Start Learning</button> */}
           </div>
         </div>
       </div>
