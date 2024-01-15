@@ -98,7 +98,7 @@ const ReviewSwiper = ({ event, review }) => {
         }}
         breakpoints={{
           1281: { slidesPerView: 3, spaceBetween: 40 },
-          801: { slidesPerView: 2.5, spaceBetween: 10 },
+          801: { slidesPerView: 2.5, spaceBetween: 30 },
           641: { slidesPerView: 1.6, spaceBetween: 10 },
           481: { slidesPerView: 1, spaceBetween: 10 },
           200: { slidesPerView: 1, spaceBetween: 10 },

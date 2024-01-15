@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import {
-  MdOutlineArrowForward,
-  MdKeyboardArrowDown,
-  MdKeyboardArrowUp,
-} from "react-icons/md";
+import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import styles from "./Navbar.module.css";
 import Link from "next/link";
 import { FaBars } from "react-icons/fa";

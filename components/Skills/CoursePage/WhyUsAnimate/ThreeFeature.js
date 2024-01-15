@@ -9,8 +9,8 @@ const ThirdFeature = () => {
       <motion.span
         initial={{
           scale: 1,
-          height: "30px",
-          width: "30px",
+          height: "20px",
+          width: "20px",
           fontSize: "0",
           background: "transparent",
           border: "1px solid #f18350",
@@ -18,17 +18,17 @@ const ThirdFeature = () => {
         animate={
           inView
             ? {
-                scale: 1.5,
-                height: "40px",
-                width: "40px",
-                fontSize: "30px",
+                scale: 1.3,
+                height: "30px",
+                width: "30px",
+                fontSize: "25px",
                 background: "#f18359",
                 border: "0",
               }
             : {
                 scale: 1,
-                height: "30px",
-                width: "30px",
+                height: "20px",
+                width: "20px",
                 fontSize: "0",
                 background: "transparent",
                 border: "1px solid #f18350",
@@ -36,7 +36,7 @@ const ThirdFeature = () => {
         }
         transition={{
           duration: 1,
-          delay: 0,
+          delay: 1,
           type: "spring",
           damping: 50,
           stiffness: 100,
@@ -59,7 +59,9 @@ const ThirdFeature = () => {
         }
         transition={{ duration: 1, delay: 1, type: "spring" }}
       >
-        <h3 className="text-5xl text-white font-bold">Live Project Sessions</h3>
+        <h3 className="text-5xl text-white font-semibold max-sm:text-3xl">
+          Mock Tests and <span className="text-[#f18350]">Assignment</span>
+        </h3>
         <div>
           <p>Multi-domain projects</p>
           <p>Trainers led live interactive project sessions</p>

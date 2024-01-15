@@ -5,7 +5,7 @@ import { MdOutlineClear } from "react-icons/md";
 
 const DetailTable = () => {
   return (
-    <div className="px-40 py-10 flex flex-col gap-5  relative">
+    <div className="px-40 py-10 flex flex-col gap-5 max-[1281px]:px-24 relative">
       <Image
         src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Course+Header/table-data-science.png"
         fill
@@ -15,7 +15,7 @@ const DetailTable = () => {
       <h2 className="text-white font-bold text-4xl text-center">
         Skillslash Bootcamp
       </h2>
-      <div className="border-[1px] border-[#ffffff] rounded-lg grid  grid-cols-[35%,16%,16%,16%] gap-10 px-14 py-10 justify-center">
+      <div className="border-[1px] border-[#ffffff] rounded-lg grid  grid-cols-[35%,16%,16%,16%] max-[1281px]:gird-cols-[35%,17%,17%,19%] gap-10 px-14 py-10 justify-center">
         <div className="flex flex-col gap-3 mt-14 ml-5">
           <p className="text-white">Lesson</p>
           <hr className="w-[60%] bg-[#646464] text-[#646464] border-[#646464]" />

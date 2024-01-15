@@ -5,9 +5,9 @@ import Image from "next/image";
 const Learn = () => {
   return (
     <div>
-      <div className="grid grid-cols-[60%,39%] gap-5 px-28 py-7">
+      <div className="grid grid-cols-[60%,39%] gap-5 px-28 py-7 max-[1281px]:px-20">
         <div className="flex flex-col gap-5">
-          <div className="flex gap-3 max-sm:hidden">
+          <div className="flex gap-3 max-sm:hidden max-[1281px]:hidden">
             <span className="border-[#f18350] text-[#f18350] border-2 px-5 py-1 w-max rounded">
               Features
             </span>
@@ -27,7 +27,9 @@ const Learn = () => {
               FAQ
             </span>
           </div>
-          <h2 className="text-4xl font-bold">What will you learn?</h2>
+          <h2 className="text-4xl font-bold max-[1281px]:text-3xl">
+            What will you learn?
+          </h2>
           <div>
             <p className="flex gap-2 items-center">
               <MdCheck className="text-[#10C168]" />
@@ -49,7 +51,9 @@ const Learn = () => {
               sociis
             </p>
           </div>
-          <h2 className="text-4xl font-bold mt-3">Courses based on Topics</h2>
+          <h2 className="text-4xl font-bold mt-3 max-[1281px]:text-2xl">
+            Courses based on Topics
+          </h2>
           <div className="grid grid-cols-[14%,14%,14%,14%,14%,14%] gap-4">
             <div className="bg-[#f18350] rounded flex items-center justify-center py-2">
               <Image

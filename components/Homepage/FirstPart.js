@@ -6,6 +6,7 @@ import WhyUs from "../WhyUs/WhyUs";
 import CoursePath from "../Animation/CoursePath/CoursePath";
 import CourseSlider from "../CourseSlider/CourseSlider";
 import Slider from "../Animation/Slider/Slider";
+import WhyUsAnimate from "../Skills/CoursePage/WhyUsAnimate/WhyUsAnimate";
 const ProgramInfo = dynamic(() => import("../Course/ProgramInfo/ProgramInfo"));
 // const BoxAnimation = dynamic(() => import("../BoxAnimation/BoxAnimation"));
 
@@ -42,9 +43,10 @@ const FirstPart = ({ homePage }) => {
       <Slider />
       <CoursePath />
       <CourseSlider />
-      {/* <div ref={ref}>
+      <div ref={ref}>
         <WhyUs scrollYProgress={scrollYProgress} />
-      </div> */}
+      </div>
+      <WhyUsAnimate />
       {/* <BoxAnimation /> */}
     </>
   );

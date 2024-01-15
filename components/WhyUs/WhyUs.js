@@ -52,13 +52,13 @@ const WhyUs = () => {
   }, [currentIndex, imageSrc]);
 
   return (
-    <div className="py-14 flex flex-col gap-11 ">
-      <h2 className="px-28 max-sm:px-5 text-3xl max-sm:text-2xl">
+    <div className="py-14 flex flex-col gap-11 max-sm:hidden">
+      <h2 className="px-28 max-[1281px]:px-20 max-sm:px-5 text-3xl max-sm:text-2xl">
         Why Choose Us?
       </h2>
-      <div className="px-28 bg-gradient-to-t from-[#f3f1fffe] from-8 0% to-white w-full to-20% flex flex-col h-max">
-        <div className="bg-black h-[330px] rounded grid grid-cols-[48%,48.5%] gap-10 pl-16 relative">
-          <div className="absolute bottom-0 h-[190px] bg-gradient-to-t from-[#000000] from-10% to-transparent w-[55%] to-70% z-20"></div>
+      <div className="px-28 max-[1281px]:px-20 bg-gradient-to-t from-[#f3f1fffe] from-8 0% to-white w-full to-20% flex flex-col h-max">
+        <div className="bg-black h-[330px] max-[1281px]:h-[305px]  rounded grid grid-cols-[48%,48.5%] max-[1281px]:grid-cols-[43%,53%] gap-10 pl-16 relative max-[1281px]:pl-10">
+          <div className="absolute bottom-0 h-[190px] bg-gradient-to-t from-[#000000] from-10% to-transparent w-[55%] to-70% z-20 max-[1281px]:w-[56%]"></div>
           <div className="relative overflow-x-scroll hideScroll w-[87vw]">
             {/* <div className="absolute top-[-96px] left-5 z-0 h-[800px]">
               <hr className=" w-[1px] bg-white z-[0] h-[800px]" />
@@ -101,7 +101,7 @@ const WhyUs = () => {
                   </div>
                 </div>
                 <div className="text-[#e1e1e1] flex flex-col gap-2">
-                  <h3 className="text-white text-[28px] font-bold">
+                  <h3 className="text-white text-[28px] font-bold max-[1281px]:text-[24px]">
                     <span className="text-[#f18350]">Live Doubt </span> Clearing
                     Session
                   </h3>
@@ -123,7 +123,7 @@ const WhyUs = () => {
                   </div>
                 </div>
                 <div className="text-[#e1e1e1]">
-                  <h3 className="text-white text-[28px] font-bold">
+                  <h3 className="text-white text-[28px] font-bold max-[1281px]:text-[24px]">
                     <span className="text-[#f18350]">Recorded</span> Sessions
                   </h3>
                   <li>350+ hours of Live class recorded sessions</li>
@@ -144,7 +144,7 @@ const WhyUs = () => {
                   </div>
                 </div>
                 <div className="text-[#e1e1e1]">
-                  <h3 className="text-white text-[28px] font-bold">
+                  <h3 className="text-white text-[28px] font-bold max-[1281px]:text-[24px]">
                     <span className="text-[#f18350]">Mock Tests </span> and
                     Assignment
                   </h3>
@@ -166,7 +166,7 @@ const WhyUs = () => {
                   </div>
                 </div>
                 <div className="text-[#e1e1e1]">
-                  <h3 className="text-white text-[28px] font-bold">
+                  <h3 className="text-white text-[28px] font-bold max-[1281px]:text-[24px]">
                     <span className="text-[#f18350]">Live Project </span>
                     Session
                   </h3>
@@ -177,7 +177,7 @@ const WhyUs = () => {
               </div>
             </motion.div>
           </div>
-          <div className="relative h-[415px] mt-[-85px]">
+          <div className="relative h-[415px] max-[1281px]:h-[390px] mt-[-85px]">
             <Image
               src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/why-us-image.webp"
               alt="why choose"
@@ -186,13 +186,13 @@ const WhyUs = () => {
           </div>
         </div>
         <div
-          className="grid grid-cols-[40%,57%] relative px-36 max-sm:px-5 h-[350px] items-center gap-10 pb-[60px] pt-10"
+          className="grid grid-cols-[40%,57%] max-[1281px]:gird-cols-[45%,53%] relative px-36 max-sm:px-5 h-[350px] max-[1281px]:px-24  items-center gap-10 pb-[60px]  pt-10"
           ref={certRef}
         >
-          <div className="absolute top-[0px] h-[666px] left-[80px] z-10">
+          <div className="absolute top-[0px] h-[666px] left-[80px] max-[1281px]:left-[58px] z-10">
             <motion.svg
               preserveAspectRatio="xMidYMax meet"
-              className="h-[470px] w-[650px] max-sm:hidden"
+              className="h-[470px] w-[650px] max-sm:hidden max-[1281px]:hidden"
             >
               <motion.path
                 id="animatedPath1"
@@ -255,7 +255,7 @@ const WhyUs = () => {
                 </div>
               </motion.div>
             ) : (
-              <div className="bg-[#0000005e] w-[130px] h-full border-l-8 border-black relative z-10">
+              <div className="bg-[#0000005e] w-[130px]  h-full border-l-8 border-black relative z-10">
                 <div className="h-[40px] w-10 bg-black flex items-center justify-center z-20 absolute top-[41%] left-[-25px] rounded-full">
                   <IoIosArrowBack className="text-3xl text-white" />
                 </div>
@@ -263,7 +263,7 @@ const WhyUs = () => {
             )}
           </div>
 
-          <div className="relative w-full h-full">
+          <div className="relative w-full h-full  ">
             <Image src={imageSrc[currentIndex]} fill alt="certificate image" />
           </div>
 

@@ -7,12 +7,12 @@ const FirstFeature = () => {
   const [ref, inView] = useInView();
   console.log(inView);
   return (
-    <motion.div className="grid grid-cols-[8%,81%] item-center gap-7 ">
+    <motion.div className="grid grid-cols-[8%,81%] item-center gap-7  ">
       <motion.span
         initial={{
           scale: 1,
-          height: "30px",
-          width: "30px",
+          height: "20px",
+          width: "20px",
           fontSize: "0",
           background: "transparent",
           border: "1px solid #f18350",
@@ -20,17 +20,17 @@ const FirstFeature = () => {
         animate={
           inView
             ? {
-                scale: 1.5,
-                height: "40px",
-                width: "40px",
-                fontSize: "30px",
+                scale: 1.3,
+                height: "30px",
+                width: "30px",
+                fontSize: "25px",
                 background: "#f18359",
                 border: "0",
               }
             : {
                 scale: 1,
-                height: "30px",
-                width: "30px",
+                height: "20px",
+                width: "20px",
                 fontSize: "0",
                 background: "transparent",
                 border: "1px solid #f18350",
@@ -61,28 +61,19 @@ const FirstFeature = () => {
         }
         transition={{ duration: 1, delay: 0, type: "spring" }}
       >
-        <h3 className="text-5xl text-white font-semibold">
+        <h3 className="text-5xl text-white font-semibold max-sm:text-2xl ">
           Live Project <span className="text-[#f18350]"> Sessions</span>
         </h3>
-        <div className="flex flex-col gap-3">
-          <p
-            className="flex items-center gap-3 "
-            style={{ color: "#ffffff", fontSize: "24px" }}
-          >
-            <FaCircleCheck className="text-[#10c168] text-[18px]" /> Trainers
-            led live interactive sessions
+        <div className="flex flex-col gap-3 ">
+          <p className="flex items-center gap-3 text-[20px] text-white ">
+            <FaCircleCheck className="text-[#10c168] text-[18px]" /> Live
+            interactive sessions
           </p>
-          <p
-            className="flex items-center gap-3 "
-            style={{ color: "#ffffff", fontSize: "24px" }}
-          >
+          <p className="flex items-center gap-3 text-[20px] text-white ">
             <FaCircleCheck className="text-[#10c168] text-[18px]" />{" "}
             Multi-domain projects
           </p>
-          <p
-            className="flex items-center gap-3 "
-            style={{ color: "#ffffff", fontSize: "24px" }}
-          >
+          <p className="flex items-center gap-3 text-[20px] text-white ">
             <FaCircleCheck className="text-[#10c168] text-[18px]" />
             Weekly sessions
           </p>

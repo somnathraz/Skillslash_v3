@@ -16,16 +16,16 @@ const WhyUsAnimate = () => {
   });
   return (
     <div
-      className="flex flex-col px-28 py-10  bg-[#111621] gap-5 mt-[300px]"
+      className="hidden max-sm:flex flex-col px-5 py-5  bg-[#111621] gap-5 mt-[100px]"
       ref={ref}
     >
-      <h2 className="text-5xl font-bold text-white">Why Choose Us?</h2>
-      <div className="grid grid-cols-[60%,38%] gap-8">
-        <div className="flex flex-col gap-8 relative mt-[60px]">
-          <div className="absolute h-[92%] w-[4px] b left-5 z-0">
+      <h2 className="text-2xl font-bold text-white">Why Choose Us?</h2>
+      <div className="grid grid-cols-[60%,38%] gap-8 max-sm:flex max-sm:flex-col">
+        <div className="flex flex-col gap-8 relative mt-[20px] ">
+          <div className="absolute h-[100%] w-[4px] b left-4 z-0">
             <motion.svg height="100%" width="100%">
               <motion.path
-                d="M 0 0 V 1900"
+                d="M 0 0 V 1400"
                 strokeWidth="4"
                 pathLength={1}
                 stroke="#ffffff"
@@ -33,8 +33,8 @@ const WhyUsAnimate = () => {
               />
             </motion.svg>
           </div>
-          <div className="flex flex-col relative z-10 gap-[170px]">
-            <div className="h-[250px]">
+          <div className="flex flex-col relative z-10 gap-[120px]">
+            <div className="h-[150px]">
               <FirstFeature />
             </div>
             <div className="h-[180px]">
@@ -46,12 +46,12 @@ const WhyUsAnimate = () => {
             <div className="h-[180px]">
               <FourthFeature />
             </div>
-            <div className="h-[180px]">
+            {/* <div className="h-[180px]">
               <FifthFeature />
             </div>
             <div className="h-[180px]">
               <SixthFeature />
-            </div>
+            </div> */}
           </div>
         </div>
         <div>

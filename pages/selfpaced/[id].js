@@ -91,7 +91,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
   return (
     <div>
       <Navbar link={DataScienceCourseData.data.header.link} />
-      <Header
+      {/* <Header
         deskTopPara="India’s 1st"
         mTopPara="India’s 1st"
         title={DataScienceCourseData.data.header.title}
@@ -106,8 +106,9 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         offerPrice={DataScienceCourseData.data.header.offerPrice}
         discount={DataScienceCourseData.data.header.discount}
       />
-      <Learn />
+      <Learn /> */}
       <WhyUs />
+      <WhyUsAnimate />
       <VideoTestimonial
         heading="What is it like to train with us?
 "
