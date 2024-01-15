@@ -315,14 +315,15 @@
     font-size: 17px;
   }
   .ReviewBox {
-    height: 400px !important;
+    height: 350px !important;
     border-radius: 8px;
 
     background-color: white;
     justify-content: flex-start;
   }
   .desc p {
-    width: 98%;
+    width: 100%;
+    font-size: 14px;
   }
   .categoryBar {
     width: 100%;
