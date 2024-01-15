@@ -5,7 +5,7 @@
 .span span {
   display: inline-block;
   width: max-content;
-  font-size: 30px;
+  font-size: 25px;
   color: #f18350;
   font-weight: 700;
   opacity: 1;
@@ -17,17 +17,17 @@
 }
 @media (max-width: 1024px) {
   .span span {
-    font-size: 25px;
+    font-size: 18px;
   }
 }
 @media (max-width: 961px) {
   .span span {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 @media (max-width: 801px) {
   .span span {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 @media (max-width: 641px) {

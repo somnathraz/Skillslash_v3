@@ -1,11 +1,19 @@
 import dynamic from "next/dynamic";
-import styles from "../../styles/Home.module.css";
 import HomeFirstSection from "../FirstSection/HomeFirstSection";
-const Tabs = dynamic(() => import("../Tabs/Tabs"));
+import { useRef } from "react";
+import { useScroll } from "framer-motion";
+import WhyUs from "../WhyUs/WhyUs";
+import CoursePath from "../Animation/CoursePath/CoursePath";
+import CourseSlider from "../CourseSlider/CourseSlider";
+import Slider from "../Animation/Slider/Slider";
 const ProgramInfo = dynamic(() => import("../Course/ProgramInfo/ProgramInfo"));
-const BoxAnimation = dynamic(() => import("../BoxAnimation/BoxAnimation"));
+// const BoxAnimation = dynamic(() => import("../BoxAnimation/BoxAnimation"));
 
 const FirstPart = ({ homePage }) => {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+  });
   return (
     <>
       <HomeFirstSection
@@ -15,7 +23,8 @@ const FirstPart = ({ homePage }) => {
         spanTitleText=""
         homePage={homePage}
         desc="Get real work experience and certifications. Learn from industry experts and get placed in top product companies!"
-        backgroundImg="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/new-home-page-header.webp"
+        backgroundImg="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/header-home-page-skillslash.webp"
+        rightImg="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/skillslash-first-header-side.webp"
         iconImg="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/HomepageDataCollection.webp"
         usp1=" Live Interactive "
         usp2=" Company "
@@ -28,11 +37,15 @@ const FirstPart = ({ homePage }) => {
         width="405"
         height="404"
       />
+
       <ProgramInfo homePage={homePage} />
-
-      <Tabs />
-
-      <BoxAnimation />
+      <Slider />
+      <CoursePath />
+      <CourseSlider />
+      {/* <div ref={ref}>
+        <WhyUs scrollYProgress={scrollYProgress} />
+      </div> */}
+      {/* <BoxAnimation /> */}
     </>
   );
 };

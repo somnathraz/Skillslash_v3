@@ -7,7 +7,7 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .ReviewSlider {
-  padding: 30px 100px;
+  padding: 50px 100px 0 100px;
 }
 .ReviewSlider h4 {
   margin-bottom: 0;
@@ -98,9 +98,11 @@
 }
 .siteReview {
   display: grid;
+  background-color: #111621;
   grid-template-columns: 48% 48%;
   position: relative;
-  height: 180px;
+  height: 130px;
+  border-radius: 8;
   border-radius: 4px;
   margin: 40px 80px;
 }
@@ -116,6 +118,7 @@
 }
 .ratingText h2 {
   font-size: 30px;
+  color: white;
 }
 @media (max-width: 1281px) {
   .ReviewSlider {
@@ -211,7 +214,7 @@
 @media (max-width: 641px) {
   .siteReview {
     display: flex;
-    background-color: #f7f6ff;
+    background-color: #111621;
     align-items: center;
     flex-flow: column;
   }
@@ -230,6 +233,7 @@
   .rightImg {
     display: flex;
     gap: 10px;
+    padding: 10px;
   }
   .rightImg img {
     width: 100%;
@@ -240,6 +244,9 @@
   }
   .siteReview h5 {
     font-size: 20px;
+  }
+  .ratingText {
+    margin-top: 10px;
   }
 }
 
@@ -256,7 +263,6 @@
   }
   .ReviewBox {
     padding: 0px 0px;
-    background-color: #f9f8ff;
     height: 280px !important;
   }
 
@@ -297,6 +303,7 @@
     margin-right: 10px;
   }
   .ratingText {
+    font-size: 20px;
     padding-left: 0;
   }
   .siteReview {
@@ -311,5 +318,14 @@
   .profileWrapper {
     padding: 0;
     height: 180px !important;
+  }
+  .headings h2 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+  .ratingText h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
   }
 }

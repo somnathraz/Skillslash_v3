@@ -6,19 +6,24 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   scroll-behavior: smooth;
 }
 .element::-webkit-scrollbar {
   width: 0 !important;
 }
+
 :root {
   --swiper-theme-color: #4f419a !important;
+}
+.hideScroll::-webkit-scrollbar {
+  display: none;
 }
 a {
   color: inherit;
   text-decoration: none;
 }
+
 p {
   font-style: normal;
   font-weight: 400;
@@ -128,7 +133,15 @@ button {
   width: 100%;
   height: 100%;
 }
-
+.mmOpacity {
+  opacity: 0.5;
+}
+/* .swiper-slide:not(.swiper-slide-active) {
+  opacity: 0.5;
+} */
+.swiper-slide-next {
+  opacity: 1;
+}
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -632,7 +645,8 @@ button {
     margin: 10px;
   }
   .wrapperHeading hr {
-    width: 100px;
+    width: 75px;
+    min-width: 75px;
   }
   h5 {
     font-size: 30px;

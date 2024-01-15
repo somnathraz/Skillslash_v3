@@ -93,7 +93,7 @@
   height: 110px;
   gap: 10px;
   padding: 5px 30px;
-  background-color: #f6f4ff;
+  background-color: #ffece4;
   align-items: flex-start;
   justify-content: center;
 }
@@ -110,7 +110,7 @@
   margin: 0;
   font-weight: 600;
   text-align: left;
-  color: #4f419a;
+  color: #f18350;
 }
 .desc {
   text-align: left;

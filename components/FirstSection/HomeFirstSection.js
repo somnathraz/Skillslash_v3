@@ -1,18 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../Course/FirstSection/FirstSection.module.css";
 import Image from "next/image";
-import dynamic from "next/dynamic";
-const VideoPopup = dynamic(() => import("../VideoPopup/VideoPopup"));
-import TextAnimation from "../Animation/TextAnimation";
+import { BiVideo } from "react-icons/bi";
 import { BsArrowRightShort } from "react-icons/bs";
+import Typed from "../Animation/TypedText/Typed";
 
 const HomeFirstSection = ({
   deskTopPara,
-  homePage,
-  width,
-  height,
-  mainHeaderImg,
-  mainAlt,
   backgroundImg,
   usp1,
   usp2,
@@ -23,14 +17,41 @@ const HomeFirstSection = ({
   usp3Span,
   usp4Span,
 }) => {
-  const [video, setVideo] = useState(false);
+  // const [video, setVideo] = useState(false);
+  const [courseTitles, setCourseTitles] = useState([
+    {
+      title: "Data Science & AI Bootcamp - Professionals",
+      img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Ai-icon-first-header.webp",
+    },
+    {
+      title: "Data Analytics- Non Tech Professionals",
+      img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Course+Header/data-science-chat.png",
+    },
+    {
+      title: "Data Science & AI Bootcamp - Final Year Student",
+      img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Course+Header/data-science-course-chat.png",
+    },
 
-  const videoSHow = () => {
-    setVideo(true);
-  };
+    // Add more course titles as needed
+  ]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      // Increment the current index, and loop back to 0 if it exceeds the array length
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % courseTitles.length);
+    }, 2000);
+
+    // Clear the interval when the component unmounts
+    return () => clearInterval(intervalId);
+  }, [courseTitles]);
+
+  // const videoSHow = () => {
+  //   setVideo(true);
+  // };
   return (
     <section className={styles.wrapper}>
-      <VideoPopup triggers={video} setTriggers={setVideo} ids="76M0jhQ8Svo" />
+      {/* <VideoPopup triggers={video} setTriggers={setVideo} ids="76M0jhQ8Svo" /> */}
 
       <div className={styles.bgImg}>
         <Image
@@ -46,88 +67,44 @@ const HomeFirstSection = ({
           <p className={styles.pTop}>{deskTopPara}</p>
         </div>
         <h1 className={styles.homeH1}>
-          Self-paced Live Project-Based
-          <br /> Learning Platform
+          <span className={styles.homeSpan}>Self-paced Live Project-Based Learning Platform</span>
         </h1>
         <p className={styles.pBotM}>
           Access comprehensive lessons with live doubt-clearing classes. Work on
           Live Projects & acquire Project and Internship certifications.
         </p>
-        <TextAnimation homePage={true} />
+        {/* <TextAnimation homePage={true} /> */}
+
         <div className={styles.btnWrapper}>
           <a href="/selfpaced">
             <button>
               Explore Courses
-              <BsArrowRightShort className="bIconS" />
+              {/* <BsArrowRightShort className="bIconS" /> */}
             </button>
           </a>
         </div>
-
-        <div className={styles.uspFeatures}>
-          <div className={styles.left}>
-            <div className={styles.uspFeatures1}>
-              <div>
-                <Image
-                  src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/liveTV.webp"
-                  priority={true}
-                  alt="learn directly from live classes"
-                  width={30}
-                  height={32}
-                />
-              </div>
-              <p>
-                {usp1} <span>{usp1Span}</span>
-              </p>
-            </div>
-            <div className={styles.uspFeatures2}>
-              <div>
-                <Image
-                  src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/certificate-icon-first.png"
-                  priority={true}
-                  alt=" Direct Company experience certificate"
-                  width={32}
-                  height={34}
-                />
-              </div>
-              <p>
-                {usp2} <span>{usp2Span}</span>
-              </p>
-            </div>
-          </div>
-          <div className={styles.right}>
-            <div className={styles.uspFeatures4}>
-              <div>
-                <Image
-                  src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/like.webp"
-                  alt="100% Interview Guarantee"
-                  width={30}
-                  priority={true}
-                  height={34}
-                />
-              </div>
-              <p>
-                {usp4} <span>{usp4Span}</span>
-              </p>
-            </div>
-            <div className={styles.uspFeatures3}>
-              <div>
-                <Image
-                  src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/certificate-icon-first.png"
-                  priority={true}
-                  alt=" Direct Company experience certificate"
-                  width={32}
-                  height={34}
-                />
-              </div>
-              <p>
-                {usp3} <span>{usp3Span}</span>
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
       <div className={styles.right}>
-        <div className={styles.imgWrapper}></div>
+        {/* <Image src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/header-img-home-page.png" /> */}
+        <span className={styles.typeText}>
+          <Typed text="Prompt engineering for beginners...." speed={50} />
+        </span>
+        <div className={styles.animateBox}>
+          <div className={styles.animateTag}>
+            <BiVideo className="text-lg" />
+            Course
+          </div>
+          <div className={styles.animateIconWrapper}>
+            <Image
+              src={courseTitles[currentIndex].img}
+              alt="data science and AI"
+              width={40}
+              height={40}
+              priority
+            />
+          </div>
+          <h3>{courseTitles[currentIndex].title}</h3>
+        </div>
       </div>
     </section>
   );
