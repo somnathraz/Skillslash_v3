@@ -4,6 +4,7 @@ import { BiSolidVideos } from "react-icons/bi";
 import { MdQuestionMark } from "react-icons/md";
 import { FaChalkboardTeacher } from "react-icons/fa";
 import { PiCertificate } from "react-icons/pi";
+import Link from "next/link";
 import Image from "next/image";
 function YourComponent() {
   const [mobile, setMobile] = useState(false);
@@ -107,9 +108,10 @@ function YourComponent() {
                 <p className="font-semibold flex gap-4 items-center text-[#f18350] text-2xl mt-4 max-sm:mt-3">
                   ₹5,999 <span className=" text-[#4D4D4D] line-through text-lg max-sm:text-[16px] max-sm:font-">₹11,999</span></p>
               </div>
+              <Link href="/selfpaced/data-science-&-aI-bootcamp-professionals">
               <button className="bg-[#f18350] px-3 py-1 mt-4 max-sm:mt-0 max-sm:w-full max-sm:justify-center max-sm:py-2">
                 Explore Bootcamp
-              </button>
+              </button></Link>
             </div>
           </div>
           <div className="absolute right-[-230px] top-12 max-sm:left-[10px] max-sm:top-[-60px] max-sm:right-[10px] max-sm:flex max-sm:items-center max-sm:justify-center ">
@@ -200,9 +202,10 @@ function YourComponent() {
                 <p className="font-semibold flex gap-4 items-center text-[#f18350] text-2xl mt-4 max-sm:mt-3">
                   ₹3,999 <span className=" text-[#4D4D4D] line-through text-lg max-sm:text-[16px] max-sm:font-">₹7,999</span></p>
               </div>
+              <Link href="/selfpaced/data-analytics-non-tech-professional">
               <button className="bg-[#f18350] px-3 py-1 mt-4 max-sm:mt-0 max-sm:w-full max-sm:justify-center max-sm:py-2">
                 Explore Bootcamp
-              </button>
+              </button></Link>
             </div>
           </div>
           <div className="absolute left-[-230px] top-12 max-sm:left-[10px] max-sm:top-[-60px] max-sm:right-[10px] max-sm:flex max-sm:items-center max-sm:justify-center">
@@ -315,9 +318,10 @@ function YourComponent() {
                 <p className="font-semibold flex gap-4 items-center text-[#f18350] text-2xl mt-4 max-sm:mt-3">
                   ₹5,999 <span className=" text-[#4D4D4D] line-through text-lg max-sm:text-[16px] max-sm:font-">₹11,999</span></p>
               </div>
+              <Link href="/selfpaced/dsa-system-design">
               <button className="bg-[#f18350] px-3 py-1 mt-4 max-sm:mt-0 max-sm:w-full max-sm:justify-center max-sm:py-2">
                 Explore Bootcamp
-              </button>
+              </button></Link>
             </div>
           </div>
           <div className="absolute right-[-230px] top-12 max-sm:left-[10px] max-sm:top-[-60px] max-sm:right-[10px] max-sm:flex max-sm:items-center max-sm:justify-center">

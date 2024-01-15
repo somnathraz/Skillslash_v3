@@ -107,7 +107,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         discount={DataScienceCourseData.data.header.discount}
       />
       <Learn />
-      <WhyUs />
+      {/* <WhyUs />
       <VideoTestimonial
         heading="What is it like to train with us?
 "
@@ -119,10 +119,10 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         seoSyllabus={DataScienceCourseData.data.seoSyllabus}
         heading="Modules"
         hour={DataScienceCourseData.data.header.hour}
-      />
+      />  */}
 
       {/* <WhyUsAnimate /> */}
-      {/* <CourseDetails hour={DataScienceCourseData.data.header.hour} /> */}
+     <CourseDetails hour={DataScienceCourseData.data.header.hour} />
 
       <ProjectSlider heading="Hands-on Projects" redirectDs={true} />
 
