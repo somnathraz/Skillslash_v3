@@ -40,7 +40,7 @@ const FirstPart = ({ homePage }) => {
       />
 
       <ProgramInfo homePage={homePage} />
-      <Slider />
+      {/* <Slider /> */}
       <CoursePath />
       <CourseSlider />
       <div ref={ref}>

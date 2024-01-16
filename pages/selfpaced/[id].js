@@ -91,42 +91,43 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
   return (
     <div>
       <Navbar link={DataScienceCourseData.data.header.link} />
-      {/* <Header
-        deskTopPara="India’s 1st"
-        mTopPara="India’s 1st"
+      <Header
         title={DataScienceCourseData.data.header.title}
-        spanTitle={DataScienceCourseData.data.header.spanTitle}
-        spanTitleText="Live Project based Self-paced Learning"
-        desc="This course =  Video lesson + "
-        desc1=" Live Doubt session "
-        desc2=" Live Project session"
-        hour={DataScienceCourseData.data.header.hour}
-        link={DataScienceCourseData.data.header.link}
-        actualPrice={DataScienceCourseData.data.header.actualPrice}
+        desc={DataScienceCourseData.data.header.desc}
+        imgSrc={DataScienceCourseData.data.header.imgSrc}
+        hrs={DataScienceCourseData.data.header.hour}
+        certification={DataScienceCourseData.data.header.certification}
         offerPrice={DataScienceCourseData.data.header.offerPrice}
+        actualPrice={DataScienceCourseData.data.header.actualPrice}
         discount={DataScienceCourseData.data.header.discount}
+        link={DataScienceCourseData.data.header.link}
       />
-      <Learn /> */}
+      <Learn
+        firstPoint={DataScienceCourseData.data.header.firstPoint}
+        secondPoint={DataScienceCourseData.data.header.secondPoint}
+        thirdPoint={DataScienceCourseData.data.header.thirdPoint}
+        fourthPoint={DataScienceCourseData.data.header.fourthPoint}
+      />
       <WhyUs />
       <WhyUsAnimate />
       <VideoTestimonial
-        heading="What is it like to train with us?
-"
+        heading="What is it like to train with us?"
         spanText="our learners say it best."
       />
       <Reviews />
       <DetailTable />
       <DataScienceSyllabus
         seoSyllabus={DataScienceCourseData.data.seoSyllabus}
-        heading="Modules"
+        heading="Course Modules"
         hour={DataScienceCourseData.data.header.hour}
       />
-
       {/* <WhyUsAnimate /> */}
       {/* <CourseDetails hour={DataScienceCourseData.data.header.hour} /> */}
-
-      <ProjectSlider heading="Hands-on Projects" redirectDs={true} />
-
+      <ProjectSlider
+        heading="Hands-on Projects"
+        redirectDs={true}
+        redirectFs={DataScienceCourseData.data.header.FullStack}
+      />
       <FAQ heading="Frequently Asked Questions" FaqData={FaqDATA} />
     </div>
   );

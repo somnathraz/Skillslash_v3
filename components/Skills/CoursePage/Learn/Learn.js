@@ -2,12 +2,12 @@ import React from "react";
 import { MdCheck } from "react-icons/md";
 import Image from "next/image";
 
-const Learn = () => {
+const Learn = ({ firstPoint, secondPoint, thirdPoint, fourthPoint }) => {
   return (
     <div>
-      <div className="grid grid-cols-[60%,39%] gap-5 px-28 py-7 max-[1281px]:px-20">
-        <div className="flex flex-col gap-5">
-          <div className="flex gap-3 max-sm:hidden max-[1281px]:hidden">
+      <div className="grid grid-cols-[60%,39%] gap-5 px-28 max-sm:px-6 py-7 max-sm:py-4 max-sm:flex">
+        <div className="flex flex-col gap-5 max-sm:gap-0">
+          <div className="flex gap-3 max-sm:hidden">
             <span className="border-[#f18350] text-[#f18350] border-2 px-5 py-1 w-max rounded">
               Features
             </span>
@@ -31,76 +31,73 @@ const Learn = () => {
             What will you learn?
           </h2>
           <div>
-            <p className="flex gap-2 items-center">
-              <MdCheck className="text-[#10C168]" />
-              Neque sodales ut etiam sit amet nisl purus non tellus orci ac
-              auctor
+            <p className="grid max-sm:grid-cols-[8%,88%] grid-cols-[3%,97%] gap-2 items-center max-sm:items-start max-sm:text-[15px] max-sm:w-[98%]">
+              <MdCheck className="text-[#10C168] max-sm:text-[25px]" />
+              {firstPoint}
             </p>
-            <p className="flex gap-2 items-center">
-              <MdCheck className="text-[#10C168]" />
-              Tristique nulla apquet enim tortor at auctor urna. Sit amet apquam
-              id diam maer
+            <p className="grid max-sm:grid-cols-[8%,88%] grid-cols-[3%,97%] gap-2 items-center  max-sm:items-start max-sm:text-[15px]  max-sm:w-[98%]">
+              <MdCheck className="text-[#10C168] max-sm:text-[25px]" />
+              {secondPoint}
             </p>
-            <p className="flex gap-2 items-center">
-              <MdCheck className="text-[#10C168]" />
-              Nam pbero justo laoreet sit amet. Lacus sed viverra tellus in hac
+            <p className="grid max-sm:grid-cols-[8%,88%] grid-cols-[3%,97%] gap-2 items-center  max-sm:items-start max-sm:text-[15px] max-sm:w-[98%]">
+              <MdCheck className="text-[#10C168] max-sm:text-[25px]" />
+              {thirdPoint}
             </p>
-            <p className="flex gap-2 items-center">
-              <MdCheck className="text-[#10C168]" />
-              Tempus imperdiet nulla malesuada pellentesque ept eget gravida cum
-              sociis
+            <p className="grid max-sm:grid-cols-[8%,88%] grid-cols-[3%,97%] gap-2 items-center  max-sm:items-start max-sm:text-[15px] max-sm:w-[98%]">
+              <MdCheck className="text-[#10C168] max-sm:text-[25px]" />
+              {fourthPoint}
             </p>
           </div>
           <h2 className="text-4xl font-bold mt-3 max-[1281px]:text-2xl">
             Courses based on Topics
           </h2>
-          <div className="grid grid-cols-[14%,14%,14%,14%,14%,14%] gap-4">
+          <div className="grid grid-cols-[14%,14%,14%,14%,14%,14%] gap-2">
             <div className="bg-[#f18350] rounded flex items-center justify-center py-2">
               <Image
-                src="/images/sql_icon.png"
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/sql-icon.png"
                 alt="headerImg"
-                width={44}
-                height={54}
+                width={24}
+                height={34}
               />
             </div>
             <div className="bg-[#EEEAFF] rounded flex items-center justify-center py-2">
               <Image
-                src="/images/python_icon.png"
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/python-icon.png"
                 alt="headerImg"
-                width={48}
-                height={48}
+                width={34}
+                height={34}
               />
             </div>
             <div className="bg-[#EEEAFF] rounded flex items-center justify-center py-2">
               <Image
-                src="/images/tableau_icon.png"
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/tabluae-icon.png"
                 alt="headerImg"
-                width={49}
-                height={48}
+                width={59}
+                height={58}
               />
             </div>
             <div className="bg-[#EEEAFF] rounded flex items-center justify-center py-2">
               <Image
-                src="/images/PowerBI_icon.png"
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powerbi-icon.png"
                 alt="headerImg"
-                width={44}
-                height={48}
+                width={54}
+                height={58}
               />
             </div>
             <div className="bg-[#EEEAFF] rounded flex items-center justify-center py-2">
               <Image
-                src="/images/MongoDB_icon.png"
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/mongoDb-icon.png"
                 alt="headerImg"
                 width={21}
-                height={48}
+                height={38}
               />
             </div>
             <div className="bg-[#EEEAFF] rounded flex items-center justify-center py-2">
               <Image
-                src="/images/Git_icon.png"
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/git-icon.png"
                 alt="headerImg"
-                width={48}
-                height={48}
+                width={33}
+                height={33}
               />
             </div>
           </div>

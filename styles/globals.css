@@ -687,6 +687,7 @@ button {
     display: flex;
     flex-flow: column;
   }
+
   .FlDiv {
     display: flex;
     justify-content: space-evenly;
@@ -737,5 +738,9 @@ button {
   }
   .notFound h5 {
     font-size: 30px;
+  }
+  .gridBox {
+    padding: 10px;
+    grid-template-columns: 26% 18% 18% 18%;
   }
 }

@@ -1,16 +1,21 @@
 {
   "header": {
-    "deskTopPara": "India’s 1st",
-    "mTopPara": "India’s 1st",
-    "title": "Data Science & AI Bootcamp For -",
-    "spanTitle": "Professionals",
+    "title": "Data Science & AI Bootcamp",
     "spanTitleText": "Live Project based Self-paced Learning",
-    "desc": "This course =  Video lesson + Live Doubt session + Live Project session",
-    "hour": "228+",
+    "desc": "Microsoft guided triple certification blended learning course with video lessons and live doubt sessions and live project sessions.",
+    "imgSrc": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/Header/CoursePage_header.png",
+    "dataScience": true,
+    "FullStack": false,
+    "hour": "246+ Hrs",
     "link": "https://skillslash-pvt-ltd.learnyst.com/learn/Data-Science---AI-Bootcamp---Professionals",
     "offerPrice": "₹ 5,999",
     "actualPrice": "₹ 11,999",
-    "discount": "50%"
+    "discount": "50%",
+    "certification": "3",
+    "firstPoint": "Foundations: Programming, Stats, Python Basics, Data Types.",
+    "secondPoint": "Data Analysis: Numpy, Pandas, Matplotlib, ML.",
+    "thirdPoint": "Advanced: Deep Learning, NLP, Reinforcement Learning, Big Data.",
+    "fourthPoint": "Tools: Excel, SQL, Cloud Deployment, BI: Tableau, Power BI."
   },
   "seoSyllabus": [
     {

@@ -65,15 +65,15 @@ const FirstFeature = () => {
           Live Project <span className="text-[#f18350]"> Sessions</span>
         </h3>
         <div className="flex flex-col gap-3 ">
-          <p className="flex items-center gap-3 text-[20px] text-white ">
+          <p className="grid grid-cols-[8%,89%] gap-3 text-[20px] text-white ">
             <FaCircleCheck className="text-[#10c168] text-[18px]" /> Live
             interactive sessions
           </p>
-          <p className="flex items-center gap-3 text-[20px] text-white ">
+          <p className="grid grid-cols-[8%,89%] items-center gap-3 text-[20px] text-white ">
             <FaCircleCheck className="text-[#10c168] text-[18px]" />{" "}
             Multi-domain projects
           </p>
-          <p className="flex items-center gap-3 text-[20px] text-white ">
+          <p className="grid grid-cols-[8%,89%] items-center gap-3 text-[20px] text-white ">
             <FaCircleCheck className="text-[#10c168] text-[18px]" />
             Weekly sessions
           </p>

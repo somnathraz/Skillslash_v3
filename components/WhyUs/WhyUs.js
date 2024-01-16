@@ -102,12 +102,12 @@ const WhyUs = () => {
                 </div>
                 <div className="text-[#e1e1e1] flex flex-col gap-2">
                   <h3 className="text-white text-[28px] font-bold max-[1281px]:text-[24px]">
-                    <span className="text-[#f18350]">Live Doubt </span> Clearing
+                    <span className="text-[#f18350]"> Live </span>Project
                     Session
                   </h3>
-                  <li>350+ hours of Live class recorded sessions</li>
-                  <li>Get advanced level knowledge of all the concepts</li>
-                  <li>Learn all the modules from the industry-experts</li>
+                  <li> interactive sessions</li>
+                  <li> Multi-domain projects</li>
+                  <li>Weekly sessions</li>
                 </div>
               </div>
             </motion.div>
@@ -124,11 +124,11 @@ const WhyUs = () => {
                 </div>
                 <div className="text-[#e1e1e1]">
                   <h3 className="text-white text-[28px] font-bold max-[1281px]:text-[24px]">
-                    <span className="text-[#f18350]">Recorded</span> Sessions
+                    <span className="text-[#f18350]">Live</span> Doubt Sessions
                   </h3>
-                  <li>350+ hours of Live class recorded sessions</li>
-                  <li>Get advanced level knowledge of all the concepts</li>
-                  <li>Learn all the modules from the industry-experts</li>
+                  <li>Live interactive sessions</li>
+                  <li>Unlimited doubt sessions</li>
+                  <li>Weekly sessions</li>
                 </div>
               </div>
             </motion.div>
@@ -145,12 +145,11 @@ const WhyUs = () => {
                 </div>
                 <div className="text-[#e1e1e1]">
                   <h3 className="text-white text-[28px] font-bold max-[1281px]:text-[24px]">
-                    <span className="text-[#f18350]">Mock Tests </span> and
-                    Assignment
+                    <span className="text-[#f18350]">Triple</span> Certification
                   </h3>
-                  <li>350+ hours of Live class recorded sessions</li>
-                  <li>Get advanced level knowledge of all the concepts</li>
-                  <li>Learn all the modules from the industry-experts</li>
+                  <li>Microsoft course completion certificate</li>
+                  <li>Project experience certificate</li>
+                  <li>Internship certificate</li>
                 </div>
               </div>
             </motion.div>
@@ -167,12 +166,14 @@ const WhyUs = () => {
                 </div>
                 <div className="text-[#e1e1e1]">
                   <h3 className="text-white text-[28px] font-bold max-[1281px]:text-[24px]">
-                    <span className="text-[#f18350]">Live Project </span>
-                    Session
+                    <span className="text-[#f18350]"> Career </span>
+                    Support
                   </h3>
-                  <li>350+ hours of Live class recorded sessions</li>
-                  <li>Get advanced level knowledge of all the concepts</li>
-                  <li>Learn all the modules from the industry-experts</li>
+                  <li>
+                    Live resume & LinkedIn profile building session with expert
+                  </li>
+                  <li>Multiple mock interviews sessions with mentors</li>
+                  <li>Job opening & job application support</li>
                 </div>
               </div>
             </motion.div>
@@ -186,7 +187,7 @@ const WhyUs = () => {
           </div>
         </div>
         <div
-          className="grid grid-cols-[40%,57%] max-[1281px]:gird-cols-[45%,53%] relative px-36 max-sm:px-5 h-[350px] max-[1281px]:px-24  items-center gap-10 pb-[60px]  pt-10"
+          className="grid grid-cols-[44%,53%] max-[1281px]:gird-cols-[45%,53%] relative px-36 max-sm:px-5 h-[350px] max-[1281px]:px-24  items-center gap-10 pb-[60px]  pt-10"
           ref={certRef}
         >
           <div className="absolute top-[0px] h-[666px] left-[80px] max-[1281px]:left-[58px] z-10">
@@ -272,12 +273,27 @@ const WhyUs = () => {
               Triple Certification
             </h3>
             <div className="flex flex-col gap-2">
-              <p>Internship certification from Analytics Consulting Firm.</p>
-              <p>
-                Project experience certifications from Analytics Consulting
-                Firm.
-              </p>
-              <p>Course Completion certification.</p>
+              <div>
+                <h3 className="font-bold"> Internship Certificate</h3>
+                <p>
+                  Showcase experience to recruiters with internship certificate
+                  from Skill-AI. Stand out of the crowd with experience.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-bold">Project Experience Certificate</h3>
+                <p>
+                  Micro validation of your internship experience from Skill-AI,
+                  showcase the hiring manager the list of real-life projects you
+                </p>
+              </div>
+              <div>
+                <h3 className="font-bold">Microsoft Certificate</h3>
+                <p>
+                  Enhance your resume and LinkedIn profile with the certificate
+                  from global leader in this technology.
+                </p>
+              </div>
             </div>
           </div>
         </div>

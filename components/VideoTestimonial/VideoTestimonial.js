@@ -21,7 +21,6 @@ const VideoTestimonial = ({ event, heading, spanText }) => {
 
       <div className={styles.ReviewSlider}>
         <div className={styles.headings}>
-          <p className="text-center ">What Our Learners has to say</p>
           <h2 className="text-center flex flex-col  mb-10">
             {heading}
             <span className="text-[#f18350]">{spanText}</span>
