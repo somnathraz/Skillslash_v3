@@ -217,9 +217,12 @@
   }
   .typeText {
     position: absolute;
-    top: 37%;
-    width: 330px;
-    height: 32px;
+    top: 36%;
+    width: 270px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     left: -70px;
     color: black;
     background-color: white;

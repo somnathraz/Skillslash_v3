@@ -87,7 +87,8 @@ const HomeFirstSection = ({
       <div className={styles.right}>
         {/* <Image src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/header-img-home-page.png" /> */}
         <span className={styles.typeText}>
-          <Typed text="Prompt engineering for beginners...." speed={50} />
+        <Image src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powered+by+microsoft.png" alt="PoweredByMicrosoft" width={230} height={24}/>
+          {/* <Typed text="Prompt engineering for beginners...." speed={50} /> */}
         </span>
         <div className={styles.animateBox}>
           <div className={styles.animateTag}>

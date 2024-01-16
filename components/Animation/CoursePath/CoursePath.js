@@ -22,7 +22,7 @@ function YourComponent() {
   });
   return (
     <div
-      className="h-[1700px] max-sm:h-[2150px] px-28 py-10 bg-[#fff7f3] flex flex-col max-sm:px-5 max-sm:py-5"
+      className="h-[1800px] max-sm:h-[2320px] px-28 py-10 bg-[#fff7f3] flex flex-col max-sm:px-5 max-sm:py-5"
       ref={ref}
     >
       <h2 className="text-[#FDDACE] text-8xl max-sm:text-3xl font-bold uppercase text-left ml-7 max-sm:ml-0 max-sm:text-center">
@@ -64,11 +64,12 @@ function YourComponent() {
             fill="white"
           />
         </motion.svg>
-        <div className="bg-white shadow rounded-2xl px-10  pt-24 max-sm:pt-[210px] pb-14 max-sm:pb-10 z-40 relative ml-56 max-sm:ml-0 mt-10 max-sm:mt-16 w-[74%] max-sm:w-[100%]">
+        <div className="bg-white shadow rounded-2xl px-14  pt-24 max-sm:pt-[210px] pb-14 max-sm:pb-10 z-40 relative ml-48 max-sm:ml-0 mt-10 max-sm:mt-16 w-[85%] max-sm:w-[100%]">
           <div className="absolute bg-[#EEEBFF] top-10 max-sm:top-[160px] left-0 font-medium px-4 py-1 rounded-r-2xl">
             For Professionals
           </div>
           <div className="flex flex-col gap-4">
+            <Image src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powered+by+microsoft.png" alt="PoweredByMicrosoft" width={mobile ? 180 : 230} height={mobile ? 19 : 24}/>
             <h3 className="text-4xl max-sm:text-2xl font-bold text-[#f18350]">
               Data Science & AI
             </h3>
@@ -114,7 +115,7 @@ function YourComponent() {
               </button></Link>
             </div>
           </div>
-          <div className="absolute right-[-230px] top-12 max-sm:left-[10px] max-sm:top-[-60px] max-sm:right-[10px] max-sm:flex max-sm:items-center max-sm:justify-center ">
+          <div className="absolute right-[-150px] top-[60px] max-sm:left-[10px] max-sm:top-[-60px] max-sm:right-[10px] max-sm:flex max-sm:items-center max-sm:justify-center ">
             <Image
               src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Course_icon/Data-science-ai-thumbnail.webp"
               alt="data-science-course"
@@ -158,11 +159,12 @@ function YourComponent() {
             fill="white"
           />
         </motion.svg>
-        <div className="bg-white shadow rounded-2xl px-10 pt-24 max-sm:pt-[210px] pb-14 max-sm:pb-10 z-40 relative ml-64 max-sm:ml-0 mt-32  w-[78%] flex items-end justify-end max-sm:justify-start max-sm:w-[100%]">
+        <div className="bg-white shadow rounded-2xl px-14 pt-24 max-sm:pt-[210px] pb-14 max-sm:pb-10 z-40 relative ml-56 max-sm:ml-0 mt-32  w-[85%] flex items-end justify-end max-sm:justify-start max-sm:w-[100%]">
           <div className="absolute bg-[#EEEBFF] top-10 max-sm:top-[160px] right-0 font-medium px-4 py-1 rounded-l-2xl">
             For Non-Tech Professionals
           </div>
           <div className="flex flex-col gap-4">
+          <Image src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powered+by+microsoft.png" alt="PoweredByMicrosoft" width={mobile ? 180 : 230} height={mobile ? 19 : 24}/>
             <h3 className="text-4xl font-bold text-[#f18350]  max-sm:text-2xl">
               Data Analytics course
             </h3>
@@ -208,7 +210,7 @@ function YourComponent() {
               </button></Link>
             </div>
           </div>
-          <div className="absolute left-[-230px] top-12 max-sm:left-[10px] max-sm:top-[-60px] max-sm:right-[10px] max-sm:flex max-sm:items-center max-sm:justify-center">
+          <div className="absolute left-[-165px] top-16 max-sm:left-[10px] max-sm:top-[-60px] max-sm:right-[10px] max-sm:flex max-sm:items-center max-sm:justify-center">
             <Image
               src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Course_icon/Data-science-ai-thumbnail.webp"
               alt="data-science-course"
@@ -218,7 +220,7 @@ function YourComponent() {
           </div>
         </div>
         <motion.svg
-          className="absolute w-max h-[470px] z-0 left-10 top-[58.3%] max-sm:hidden"
+          className="absolute w-max h-[470px] z-0 left-20 top-[58.3%] max-sm:hidden"
           preserveAspectRatio="xMidYMax meet"
         >
           <motion.path
@@ -255,14 +257,14 @@ function YourComponent() {
           src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Course_icon/data-analytics-non-tech-pro.png"
           width="40"
           height="40"
-          className="z-10 absolute left-[45px] top-[72.1%] max-sm:hidden"
+          className="z-10 absolute left-[85px] top-[71.2%] max-sm:hidden"
           alt="data analytics"
         />
         <Image
           src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Course_icon/data-science-for-clg-icon.png"
           width="40"
           height="40"
-          className="z-10 absolute top-[38.6%] right-[-16.7%] max-sm:hidden"
+          className="z-10 absolute top-[38.25%] right-[-16.7%] max-sm:hidden"
           alt="data analytics"
         />
         <Image
@@ -273,12 +275,13 @@ function YourComponent() {
           alt="data analytics"
         />
 
-        <div className="bg-white shadow rounded-2xl px-10  pt-24 max-sm:pt-[210px] pb-14 max-sm:pb-10 z-40 relative ml-52 max-sm:ml-0 mt-32 w-[74%] max-sm:w-[100%]">
+        <div className="bg-white shadow rounded-2xl px-14  pt-24 max-sm:pt-[210px] pb-14 max-sm:pb-10 z-40 relative ml-48 max-sm:ml-0 mt-32 max-sm:mt-16 w-[85%] max-sm:w-[100%]">
           <div className="absolute bg-[#EEEBFF] top-10  max-sm:top-[160px] left-0 font-medium px-4 py-1 rounded-r-2xl">
             For Programmers
           </div>
 
           <div className="flex flex-col gap-4">
+          <Image src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powered+by+microsoft.png" alt="PoweredByMicrosoft" width={mobile ? 180 : 230} height={mobile ? 19 : 24}/>
             <h3 className="text-4xl max-sm:text-2xl font-bold text-[#f18350] ">
               DSA + SD (FAANG)
             </h3>
@@ -324,7 +327,7 @@ function YourComponent() {
               </button></Link>
             </div>
           </div>
-          <div className="absolute right-[-230px] top-12 max-sm:left-[10px] max-sm:top-[-60px] max-sm:right-[10px] max-sm:flex max-sm:items-center max-sm:justify-center">
+          <div className="absolute right-[-150px] top-[60px] max-sm:left-[10px] max-sm:top-[-60px] max-sm:right-[10px] max-sm:flex max-sm:items-center max-sm:justify-center">
             <Image
               src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Course_icon/Data-science-ai-thumbnail.webp"
               alt="data-science-course"
