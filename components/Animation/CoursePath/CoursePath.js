@@ -69,7 +69,12 @@ function YourComponent() {
             For Professionals
           </div>
           <div className="flex flex-col gap-4">
-            <Image src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powered+by+microsoft.png" alt="PoweredByMicrosoft" width={mobile ? 180 : 230} height={mobile ? 19 : 24}/>
+            <Image
+              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powered+by+microsoft.png"
+              alt="PoweredByMicrosoft"
+              width={mobile ? 180 : 230}
+              height={mobile ? 19 : 24}
+            />
             <h3 className="text-4xl max-sm:text-2xl font-bold text-[#f18350]">
               Data Science & AI
             </h3>
@@ -107,17 +112,22 @@ function YourComponent() {
             <div className="flex max-sm:flex-col gap-5 max-sm:gap-3 items-center max-sm:items-start">
               <div>
                 <p className="font-semibold flex gap-4 items-center text-[#f18350] text-2xl mt-4 max-sm:mt-3">
-                  ₹5,999 <span className=" text-[#4D4D4D] line-through text-lg max-sm:text-[16px] max-sm:font-">₹11,999</span></p>
+                  ₹8,999{" "}
+                  <span className=" text-[#4D4D4D] line-through text-lg max-sm:text-[16px] max-sm:font-">
+                    ₹11,999
+                  </span>
+                </p>
               </div>
               <Link href="/selfpaced/data-science-&-aI-bootcamp-professionals">
-              <button className="bg-[#f18350] px-3 py-1 mt-4 max-sm:mt-0 max-sm:w-full max-sm:justify-center max-sm:py-2">
-                Explore Bootcamp
-              </button></Link>
+                <button className="bg-[#f18350] px-3 py-1 mt-4 max-sm:mt-0 max-sm:w-full max-sm:justify-center max-sm:py-2">
+                  Explore Bootcamp
+                </button>
+              </Link>
             </div>
           </div>
           <div className="absolute right-[-150px] top-[60px] max-sm:left-[10px] max-sm:top-[-60px] max-sm:right-[10px] max-sm:flex max-sm:items-center max-sm:justify-center ">
             <Image
-              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Course_icon/Data-science-ai-thumbnail.webp"
+              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/data-science-header.png"
               alt="data-science-course"
               height={294}
               width={mobile ? 290 : 416}
@@ -164,7 +174,12 @@ function YourComponent() {
             For Non-Tech Professionals
           </div>
           <div className="flex flex-col gap-4">
-          <Image src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powered+by+microsoft.png" alt="PoweredByMicrosoft" width={mobile ? 180 : 230} height={mobile ? 19 : 24}/>
+            <Image
+              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powered+by+microsoft.png"
+              alt="PoweredByMicrosoft"
+              width={mobile ? 180 : 230}
+              height={mobile ? 19 : 24}
+            />
             <h3 className="text-4xl font-bold text-[#f18350]  max-sm:text-2xl">
               Data Analytics course
             </h3>
@@ -202,17 +217,22 @@ function YourComponent() {
             <div className="flex max-sm:flex-col gap-5 max-sm:gap-3 items-center max-sm:items-start">
               <div>
                 <p className="font-semibold flex gap-4 items-center text-[#f18350] text-2xl mt-4 max-sm:mt-3">
-                  ₹3,999 <span className=" text-[#4D4D4D] line-through text-lg max-sm:text-[16px] max-sm:font-">₹7,999</span></p>
+                  ₹5,999{" "}
+                  <span className=" text-[#4D4D4D] line-through text-lg max-sm:text-[16px] max-sm:font-">
+                    ₹7,999
+                  </span>
+                </p>
               </div>
               <Link href="/selfpaced/data-analytics-non-tech-professional">
-              <button className="bg-[#f18350] px-3 py-1 mt-4 max-sm:mt-0 max-sm:w-full max-sm:justify-center max-sm:py-2">
-                Explore Bootcamp
-              </button></Link>
+                <button className="bg-[#f18350] px-3 py-1 mt-4 max-sm:mt-0 max-sm:w-full max-sm:justify-center max-sm:py-2">
+                  Explore Bootcamp
+                </button>
+              </Link>
             </div>
           </div>
           <div className="absolute left-[-165px] top-16 max-sm:left-[10px] max-sm:top-[-60px] max-sm:right-[10px] max-sm:flex max-sm:items-center max-sm:justify-center">
             <Image
-              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Course_icon/Data-science-ai-thumbnail.webp"
+              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/data-analytics-header.png"
               alt="data-science-course"
               height={294}
               width={mobile ? 290 : 416}
@@ -275,13 +295,18 @@ function YourComponent() {
           alt="data analytics"
         />
 
-        <div className="bg-white shadow rounded-2xl px-14  pt-24 max-sm:pt-[210px] pb-14 max-sm:pb-10 z-40 relative ml-48 max-sm:ml-0 mt-32 max-sm:mt-16 w-[85%] max-sm:w-[100%]">
+        <div className="bg-white shadow rounded-2xl px-14  pt-24 max-sm:pt-[210px] pb-14 max-sm:pb-10 z-40 relative ml-48 max-sm:ml-0 mt-32 max-sm:mt-32 w-[85%] max-sm:w-[100%]">
           <div className="absolute bg-[#EEEBFF] top-10  max-sm:top-[160px] left-0 font-medium px-4 py-1 rounded-r-2xl">
             For Programmers
           </div>
 
           <div className="flex flex-col gap-4">
-          <Image src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powered+by+microsoft.png" alt="PoweredByMicrosoft" width={mobile ? 180 : 230} height={mobile ? 19 : 24}/>
+            <Image
+              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powered+by+microsoft.png"
+              alt="PoweredByMicrosoft"
+              width={mobile ? 180 : 230}
+              height={mobile ? 19 : 24}
+            />
             <h3 className="text-4xl max-sm:text-2xl font-bold text-[#f18350] ">
               DSA + SD (FAANG)
             </h3>
@@ -319,17 +344,22 @@ function YourComponent() {
             <div className="flex max-sm:flex-col gap-5 max-sm:gap-3 items-center max-sm:items-start">
               <div>
                 <p className="font-semibold flex gap-4 items-center text-[#f18350] text-2xl mt-4 max-sm:mt-3">
-                  ₹5,999 <span className=" text-[#4D4D4D] line-through text-lg max-sm:text-[16px] max-sm:font-">₹11,999</span></p>
+                  ₹3,999
+                  <span className=" text-[#4D4D4D] line-through text-lg max-sm:text-[16px] max-sm:font-">
+                    ₹7,999
+                  </span>
+                </p>
               </div>
               <Link href="/selfpaced/dsa-system-design">
-              <button className="bg-[#f18350] px-3 py-1 mt-4 max-sm:mt-0 max-sm:w-full max-sm:justify-center max-sm:py-2">
-                Explore Bootcamp
-              </button></Link>
+                <button className="bg-[#f18350] px-3 py-1 mt-4 max-sm:mt-0 max-sm:w-full max-sm:justify-center max-sm:py-2">
+                  Explore Bootcamp
+                </button>
+              </Link>
             </div>
           </div>
           <div className="absolute right-[-150px] top-[60px] max-sm:left-[10px] max-sm:top-[-60px] max-sm:right-[10px] max-sm:flex max-sm:items-center max-sm:justify-center">
             <Image
-              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Course_icon/Data-science-ai-thumbnail.webp"
+              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/dsa+header.png"
               alt="data-science-course"
               height={294}
               width={mobile ? 290 : 416}

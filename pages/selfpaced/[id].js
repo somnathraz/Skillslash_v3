@@ -13,6 +13,8 @@ import VideoTestimonial from "../../components/VideoTestimonial/VideoTestimonial
 import Reviews from "../../components/Review/Reviews";
 import DetailTable from "../../components/Skills/CoursePage/DetailTable/DetailTable";
 import Learn from "../../components/Skills/CoursePage/Learn/Learn";
+import Footer from "../../components/Footer/Footer";
+import FloatIcon from "../../components/Floticon/FloatIcon";
 
 const DataSciencePage = ({ DataScienceCourseData }) => {
   const FaqDATA = [
@@ -129,6 +131,8 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         redirectFs={DataScienceCourseData.data.header.FullStack}
       />
       <FAQ heading="Frequently Asked Questions" FaqData={FaqDATA} />
+      <Footer />
+      <FloatIcon />
     </div>
   );
 };
