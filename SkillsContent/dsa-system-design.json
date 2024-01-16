@@ -1,16 +1,19 @@
 {
   "header": {
-    "deskTopPara": "India’s 1st",
-    "mTopPara": "India’s 1st",
-    "title": "DSA + System Design",
-    "spanTitle": " (FAANG interviews)",
-    "spanTitleText": "Live Project based Self-paced Learning",
-    "desc": "This course =  Video lesson + Live Doubt session + Live Project session",
+    "title": "DSA & System Design Bootcamp",
+    "desc": "FAANG instructor’s blended learning course with video lessons and live doubt sessions and live project sessions to crack Software Developer interview in any product base company.",
+    "imgSrc": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/dsa+header.png",
     "hour": "18+",
     "link": "https://skillslash-pvt-ltd.learnyst.com/learn/DSA---System-Design--FAANG-interviews-",
     "offerPrice": "₹ 3,999",
     "actualPrice": "₹ 7,999",
-    "discount": "50%"
+    "discount": "50%",
+    "certification": "3",
+    "FullStack": true,
+    "firstPoint": "DSA: Arrays, Sorting, Trees, DP, Linked Lists, Graphs, Advanced Structures.",
+    "secondPoint": "System Design: Intro, Scalability, API, Load Balancer, HLD, LLD.",
+    "thirdPoint": "Advanced DSA: LRU Cache, Adv. Trees, DP Optimization.",
+    "fourthPoint": "Design Components: Storage, Cache, CDN, Load Balancer, Scalability, Queues, CAP Theorem."
   },
   "seoSyllabus": [
     {

@@ -7,6 +7,14 @@ import Certificate from "../../components/Skills/Home/Certificate/Certificate";
 import React from "react";
 import { getAllPostIds, getPostData } from "../../lib/newPages";
 import FAQ from "../../components/Skills/Global/FAQ/FAQ";
+import WhyUsAnimate from "../../components/Skills/CoursePage/WhyUsAnimate/WhyUsAnimate";
+import WhyUs from "../../components/WhyUs/WhyUs";
+import VideoTestimonial from "../../components/VideoTestimonial/VideoTestimonial";
+import Reviews from "../../components/Review/Reviews";
+import DetailTable from "../../components/Skills/CoursePage/DetailTable/DetailTable";
+import Learn from "../../components/Skills/CoursePage/Learn/Learn";
+import Footer from "../../components/Footer/Footer";
+import FloatIcon from "../../components/Floticon/FloatIcon";
 
 const DataSciencePage = ({ DataScienceCourseData }) => {
   const FaqDATA = [
@@ -86,30 +94,45 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
     <div>
       <Navbar link={DataScienceCourseData.data.header.link} />
       <Header
-        deskTopPara="India’s 1st"
-        mTopPara="India’s 1st"
         title={DataScienceCourseData.data.header.title}
-        spanTitle={DataScienceCourseData.data.header.spanTitle}
-        spanTitleText="Live Project based Self-paced Learning"
-        desc="This course =  Video lesson + "
-        desc1=" Live Doubt session "
-        desc2=" Live Project session"
-        hour={DataScienceCourseData.data.header.hour}
-        link={DataScienceCourseData.data.header.link}
-        actualPrice={DataScienceCourseData.data.header.actualPrice}
+        desc={DataScienceCourseData.data.header.desc}
+        imgSrc={DataScienceCourseData.data.header.imgSrc}
+        hrs={DataScienceCourseData.data.header.hour}
+        certification={DataScienceCourseData.data.header.certification}
         offerPrice={DataScienceCourseData.data.header.offerPrice}
+        actualPrice={DataScienceCourseData.data.header.actualPrice}
         discount={DataScienceCourseData.data.header.discount}
+        link={DataScienceCourseData.data.header.link}
       />
-      <CourseDetails hour={DataScienceCourseData.data.header.hour} />
+      <Learn
+        firstPoint={DataScienceCourseData.data.header.firstPoint}
+        secondPoint={DataScienceCourseData.data.header.secondPoint}
+        thirdPoint={DataScienceCourseData.data.header.thirdPoint}
+        fourthPoint={DataScienceCourseData.data.header.fourthPoint}
+      />
+      <WhyUs />
+      <WhyUsAnimate />
+      <VideoTestimonial
+        heading="What is it like to train with us?"
+        spanText="our learners say it best."
+      />
+      <Reviews />
+      <DetailTable />
       <DataScienceSyllabus
         seoSyllabus={DataScienceCourseData.data.seoSyllabus}
-        heading="Modules"
+        heading="Course Modules"
         hour={DataScienceCourseData.data.header.hour}
       />
-
-      <ProjectSlider heading="Hands-on Projects" redirectDs={true} />
-      <Certificate />
+      {/* <WhyUsAnimate /> */}
+      {/* <CourseDetails hour={DataScienceCourseData.data.header.hour} /> */}
+      <ProjectSlider
+        heading="Hands-on Projects"
+        redirectDs={true}
+        redirectFs={DataScienceCourseData.data.header.FullStack}
+      />
       <FAQ heading="Frequently Asked Questions" FaqData={FaqDATA} />
+      <Footer />
+      <FloatIcon />
     </div>
   );
 };

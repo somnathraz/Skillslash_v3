@@ -93,7 +93,7 @@
   height: 110px;
   gap: 10px;
   padding: 5px 30px;
-  background-color: #f6f4ff;
+  background-color: #ffece4;
   align-items: flex-start;
   justify-content: center;
 }
@@ -110,7 +110,7 @@
   margin: 0;
   font-weight: 600;
   text-align: left;
-  color: #4f419a;
+  color: #f18350;
 }
 .desc {
   text-align: left;
@@ -160,7 +160,7 @@
   }
 
   .header h3 {
-    font-size: 21px;
+    font-size: 18px;
   }
   .sliderWrap {
     margin: 40px 80px;
@@ -168,8 +168,11 @@
   .seoPara {
     margin: 0 60px;
   }
+  .desc p {
+    font-size: 14px;
+  }
   .ReviewBox {
-    height: 340px;
+    height: 380px !important;
   }
   .categoryBar {
     padding: 0px 0px 30px 0px;
@@ -254,6 +257,9 @@
 }
 
 @media (max-width: 481px) {
+  .projectWrap {
+    margin-top: -20px;
+  }
   .body {
     padding: 0 10px;
   }
@@ -315,14 +321,15 @@
     font-size: 17px;
   }
   .ReviewBox {
-    height: 400px !important;
+    height: 350px !important;
     border-radius: 8px;
 
     background-color: white;
     justify-content: flex-start;
   }
   .desc p {
-    width: 98%;
+    width: 100%;
+    font-size: 14px;
   }
   .categoryBar {
     width: 100%;

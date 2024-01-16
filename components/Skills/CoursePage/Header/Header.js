@@ -1,120 +1,167 @@
 import React from "react";
+import { MdKeyboardArrowRight } from "react-icons/md";
+import Image from "next/image";
+import { MdOutlineAccessAlarms } from "react-icons/md";
 import Link from "next/link";
+import {
+  MdOutlineVideocam,
+  MdLiveTv,
+  MdOutlineWorkHistory,
+  MdLockOpen,
+} from "react-icons/md";
+import { PiCertificateBold } from "react-icons/pi";
+
 const Header = ({
-  desc,
-  deskTopPara,
-  spanTitleText,
   title,
-  spanTitle,
-  desc1,
-  desc2,
-  hour,
-  link,
-  actualPrice,
+  desc,
+  imgSrc,
+  hrs,
+  certification,
   offerPrice,
+  actualPrice,
   discount,
+  link,
 }) => {
   return (
-    <div className="bg-[#F8F6FF] px-28 pt-32 pb-20 grid grid-cols-[55%,44%] gap-4 relative max-sm:px-5 max-sm:flex max-sm:flex-col max-sm:pt-24">
-      <div className="flex flex-col gap-6 ">
-        <div className="flex flex-col gap-2">
-          <p className="bg-[#f18350] w-max px-4 py-1 rounded text-white font-bold text-lg">
-            {deskTopPara}
-          </p>
-          <p className="font-medium">{spanTitleText}</p>
+    <div className="grid grid-cols-[60%,39%] max-sm:flex max-sm:flex-col gap-5 max-sm:mb-[750px] bg-[#111621] w-full mt-[70px] px-28 max-sm:px-5 py-28 max-sm:py-14 relative">
+      <div className="absolute gradient top-0 left-0 h-full w-[60%] max-sm:w-full z-0"></div>
+      <div className="flex flex-col gap-2 relative z-[1]">
+        <div className="flex gap-3 text-[#F18350] font-bold items-center">
+          <p className="text-[#F18350] font-semibold">Development</p>
+          <MdKeyboardArrowRight className="text-white" />
+          <p className="text-[#F18350] font-semibold">Data Science</p>
+          {/* <MdKeyboardArrowRight className="text-[white]" />
+          <p>Data Science</p> */}
         </div>
-        <h1 className="text-4xl font-bold text-black max-sm:text-2xl">
+
+        <h1 className="text-5xl text-white font-bold leading-[58px] max-[1281px]:text-3xl max-sm:leading-[45px]">
           {title}
-          <span className="text-[black]">{spanTitle}</span>
         </h1>
-        <p className="text-lg">
-          {" "}
-          {desc} <b>{desc1}</b> +<b>{desc2}</b>
+        <p className="text-[#cccccc] w-[91%] text-[18px] max-[1281px]:text-[16px] leading-[28px] max-sm:leading-[24px] font-light mt-2">
+          {desc}
         </p>
-        {/* <h3 className="text-2xl font-bold text-[#f18350]">500K+ learners</h3> */}
-        <div className="flex items-center gap-3">
-          <Link href={link}>
-            <button
-              className="px-5 py-2 bg-transparent text-[#f18350]  rounded"
-              style={{ border: "1px solid #f18350" }}
-            >
-              Start Learning
-            </button>
-          </Link>
-          <div className="flex flex-col ">
-            <p className="text-lg text-black font-medium"> {offerPrice}</p>
-            <div className="flex gap-3 items-center">
-              <p>
-                <s> {actualPrice}</s>
+        <div className="grid grid-cols-3 gap-2 border-[1px] mt-3 w-[75%] max-sm:w-[97%] rounded items-center px-4 py-1 justify-center">
+          <Image
+            src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/Header/Google_review.png"
+            alt="Goole_RReviews"
+            width={150}
+            height={23}
+            className="mx-auto"
+          />
+          <Image
+            src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/Header/switchup_review.png"
+            alt="Goole_RReviews"
+            width={150}
+            height={23}
+            className="mx-auto"
+          />
+          <Image
+            src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/Header/cr_review.png"
+            alt="Goole_RReviews"
+            width={150}
+            height={23}
+            className="mx-auto"
+          />
+        </div>
+      </div>
+      <div className="flex flex-col gap-7 relative">
+        <div className="bg-white px-11 py-3 max-sm:px-0 rounded shadow flex flex-col w-full z-[1] absolute mt-28">
+          <div className="absolute w-[451px]  max-sm:w-[355px] h-[288px] max-sm:h-[212px] top-[-120px] max-sm:top-[-100px] left-3 max-sm:left-2 max-sm:flex max-sm:justify-center">
+            <Image src={imgSrc} alt="headerImg" fill />
+          </div>
+          <div className="flex gap-2 w-full items-center mt-[180px] max-sm:mt-[120px] max-sm:px-4">
+            <p className="text-[#000000] flex gap-4 text-2xl font-bold items-center mr-3">
+              {offerPrice}
+              <span className="line-through text-lg font-normal text-[#646464]">
+                {actualPrice}
+              </span>
+            </p>
+            <Image
+              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/discount.png"
+              alt="discount"
+              width={20}
+              height={20}
+              style={{ height: "20px" }}
+            />
+            <p className="text-[#f18350] font-bold">({discount} Off)</p>
+          </div>
+          <div className="flex flex-col gap-5 max-sm:px-4">
+            <p className="text-[#B32D0F] text-[14px] flex gap-2 items-center">
+              <MdOutlineAccessAlarms />
+              <b>6 days</b> left at this price!
+            </p>
+            <Link href={link}>
+              <button className="w-full px-4 bg-[#f18350] text-white rounded py-3 font-bold text-xl">
+                Enroll Now
+              </button>
+            </Link>
+          </div>
+          <div className="flex flex-col gap-2 py-4">
+            <h3 className="text-xl font-bold px-5 py-1">Course Content</h3>
+            <hr />
+            <div className="flex flex-col gap-2 px-7">
+              <p className="flex gap-2 items-center justify-between py-2">
+                <span className="flex gap-2 items-center">
+                  <MdOutlineVideocam className="text-xl" />
+                  Video Lessons
+                </span>
+                <span>
+                  <b>{hrs}</b>
+                </span>
+              </p>
+              <hr />
+              <p className="flex gap-2 items-center justify-between py-2">
+                <span className="flex gap-2 items-center">
+                  <MdLiveTv className="text-xl" />
+                  Live Doubt Session
+                </span>
+                <span>
+                  <b>Weekly</b>
+                </span>
+              </p>
+              <hr />
+              <p className="flex gap-2 items-center justify-between py-2">
+                <span className="flex gap-2 items-center">
+                  <MdLiveTv className="text-xl" />
+                  Live Project Sessions
+                </span>
+                <span>
+                  <b>Weekly</b>
+                </span>
+              </p>
+              <hr />
+              <p className="flex gap-2 items-center justify-between py-2">
+                <span className="flex gap-2 items-center">
+                  <MdOutlineWorkHistory className="text-xl" />
+                  Career Support
+                </span>
+                <span>
+                  <b>Included</b>
+                </span>
+              </p>
+              <hr />
+              <p className="flex gap-2 items-center justify-between py-2">
+                <span className="flex gap-2 items-center">
+                  <MdLockOpen className="text-xl" />
+                  Course Access
+                </span>
+                <span>
+                  <b>Lifetime</b>
+                </span>
+              </p>
+              <hr />
+              <p className="flex gap-2 items-center justify-between py-2">
+                <span className="flex gap-2 items-center">
+                  <PiCertificateBold className="text-xl" />
+                  Certifications
+                </span>
+                <span>
+                  <b>{certification}</b>
+                </span>
               </p>
             </div>
           </div>
-          <p className="bg-[#f9ac89] px-3 py-1 rounded text-black text-sm">
-            {discount} OFF
-          </p>
         </div>
-      </div>
-      <div></div>
-      <div
-        className="flex flex-col gap-3 rounded px-8 py-8 absolute bg-white right-28 top-28 max-sm:right-0 max-sm:top-[95%] max-sm:mt-2 max-sm:w-[90%] max-sm:mr-[20px] "
-        style={{
-          boxShadow:
-            "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px",
-        }}
-      >
-        <h3 className="text-2xl font-semibold flex flex-col  mb-4">
-          Course Highlights
-        </h3>
-
-        <hr className="w-full text-[#646464]" />
-
-        <div className="flex flex-col">
-          <span className="text-lg font-semibold">Recorded Session</span>
-          <p className="text-[#646464]">{hour} hours of Recorded Session</p>
-        </div>
-        <div className="flex flex-col">
-          <span className="text-lg font-semibold">
-            Live Doubt Clearing Sessions
-          </span>
-          <p className="text-[#646464]">Weekly live session with trainers</p>
-        </div>
-        <div className="flex flex-col">
-          <span className="text-lg font-semibold">Live Project Sessions</span>
-          <p className="text-[#646464]">
-            Live sessions with trainers on real-life projects
-          </p>
-        </div>
-
-        <div className="flex flex-col">
-          <span className="text-lg font-semibold">Certificates</span>
-          <p className="text-[#646464]">Triple Certificates</p>
-        </div>
-        <hr className="w-full text-[#646464]" />
-        <Link href={link}>
-          <span className="text-[#0056d2] mt-2 font-medium">
-            start learning
-          </span>
-        </Link>
-      </div>
-      <div className="absolute bottom-[-50px] left-28 flex gap-3 max-sm:hidden ">
-        <span className="border-[#f18350] text-[#f18350] border-2 px-5 py-1 w-max rounded">
-          Features
-        </span>
-        <span className="border-[#646464] border-[1px] px-5 py-1 w-max rounded">
-          Modules
-        </span>
-        <span className="border-[#646464] border-[1px] px-5 py-1 w-max rounded">
-          Project
-        </span>
-        <span className="border-[#646464] border-[1px] px-5 py-1 w-max rounded">
-          Certification
-        </span>
-        <span className="border-[#646464] border-[1px] px-5 py-1 w-max rounded">
-          Tool
-        </span>
-        <span className="border-[#646464] border-[1px] px-5 py-1 w-max rounded">
-          FAQ
-        </span>
       </div>
     </div>
   );

@@ -4,16 +4,10 @@ import Image from "next/image";
 const Rating = ({ ratingData }) => {
   return (
     <div className={styles.siteReview}>
-      <div className={styles.imgWrap}>
-        <Image
-          src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/review-line-back.webp"
-          fill={true}
-          style={{ objectFit: "contain" }}
-          alt="rating background"
-        />
-      </div>
       <div className={styles.ratingText}>
-        <h2>Top Sites That Ranked Us</h2>
+        <h2>
+          Top Sites That <span className="text-[#f18350]">Ranked Us</span>
+        </h2>
       </div>
       <div className={styles.rightImg}>
         {ratingData.map((imgData) => {

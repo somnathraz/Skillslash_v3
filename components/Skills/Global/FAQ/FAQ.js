@@ -25,14 +25,11 @@ function FAQ({ FaqData, desc, heading }) {
       itemType="https://schema.org/FAQPage"
     >
       <div className={styles.headWrap}>
-        <h2
-          style={{ marginBottom: "20px" }}
-          className="text-4xl font-bold max-sm:text-2xl"
-        >
+        <h2 className="text-4xl font-bold max-sm:text-2xl  max-sm:mb-0">
           {heading}
         </h2>
 
-        <p className={styles.pBot} style={{ marginBottom: "20px" }}>
+        <p className={styles.pBot} style={{ display: "none" }}>
           {desc}
         </p>
       </div>

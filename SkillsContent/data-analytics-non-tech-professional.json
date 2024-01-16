@@ -1,16 +1,21 @@
 {
   "header": {
-    "deskTopPara": "India’s 1st",
-    "mTopPara": "India’s 1st",
-    "title": "Data Analytics For",
-    "spanTitle": " Non Tech Professionals",
+    "title": "Data Analytics Bootcamp",
     "spanTitleText": "Live Project based Self-paced Learning",
-    "desc": "This course =  Video lesson + Live Doubt session + Live Project session",
+    "desc": "Microsoft guided triple certification blended learning course with video lessons and live doubt sessions and live project sessions.",
+    "imgSrc": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/data-analytics-header.png",
     "hour": "206+",
     "link": "https://courses.skillslash.com/learn/Data-Analytics--Non-Tech-Professionals",
-    "offerPrice": "₹ 3,999",
+    "offerPrice": "₹ 5,999",
     "actualPrice": "₹ 7,999",
-    "discount": "50%"
+    "discount": "25%",
+    "dataScience": true,
+    "FullStack": false,
+    "certification": "3",
+    "firstPoint": "Foundations: Programming, Stats, Python Basics, Data Types.",
+    "secondPoint": "Data Manipulation: Numpy, Pandas, Matplotlib.",
+    "thirdPoint": "Machine Learning: Regression, Classification, Clustering.",
+    "fourthPoint": "Tools & Visualization: SQL, Excel, Tableau, Power BI."
   },
   "seoSyllabus": [
     {

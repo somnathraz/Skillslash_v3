@@ -64,7 +64,7 @@
 }
 .star {
   color: #efd664;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .ReviewBox {
@@ -72,24 +72,23 @@
   flex-flow: column;
   padding: 20px;
   gap: 10px;
-  margin-left: 10px;
+  margin-left: 0px;
   height: 278px;
   overflow: hidden;
   max-height: 750px;
   margin-bottom: 37px;
+  border-bottom: 3px solid #f18350;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   margin-top: 10px;
-  background: #ffffff;
   border-radius: 8px;
-}
-.ReviewBox:hover {
-  background-color: #4f419a;
 }
 
 .nameWrap {
   width: 100%;
   display: flex;
   text-align: left;
+  gap: 10px;
+  align-items: center;
   justify-content: flex-start;
   padding: 10px 0px;
 }
@@ -97,16 +96,13 @@
   margin-right: 0px;
   text-align: left;
 }
-.ReviewBox:hover p {
-  color: white;
-}
+
 .profileWrapper {
   position: absolute;
-  top: 20px;
+  top: 30px;
   right: 20px;
   z-index: 1;
-  background-color: white;
-  border-radius: 1000%;
+  border-radius: 100%;
   padding: 5px;
   display: flex;
   align-items: center;
@@ -115,18 +111,12 @@
 
 .ReviewBox h3 {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 14px;
   margin: 0;
   color: #4f419a;
   text-align: center;
 }
 
-.ReviewBox:hover h3 {
-  color: white;
-}
-.ReviewBox:hover .readMore {
-  color: #e3dfff;
-}
 .ReviewBox:hover .star {
   color: #efd664;
 }
@@ -155,6 +145,7 @@
   .ReviewRight {
     padding-right: 10px;
   }
+
   .ReviewRight h4 {
     font-size: 26px;
     line-height: 30px;
@@ -180,10 +171,12 @@
   .ReviewSlider {
     padding: 20px 20px;
     margin-top: 0px;
+    margin-bottom: 40px;
   }
   .ReviewBox {
     padding: 20px 10px;
     background-color: #f9f8ff;
+    margin-bottom: 0;
   }
 
   .ReviewTop {

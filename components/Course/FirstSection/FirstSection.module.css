@@ -3,7 +3,7 @@
     display: grid;
     align-items: center;
     gap: 20px;
-    margin-top: 50px;
+    margin-top: 70px;
     position: relative;
     grid-template-columns: 49% 49%;
     padding: 40px 100px;
@@ -14,7 +14,6 @@
     height: 100%;
     left: 0;
     top: 0;
-
     width: 100%;
     overflow: hidden;
     z-index: -1;
@@ -22,14 +21,7 @@
   .left .imgWrap {
     display: none;
   }
-  .powered {
-    color: black;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 18px;
-    font-weight: 500;
-  }
+
   .uspFeatures {
     display: none;
   }
@@ -63,12 +55,11 @@
   }
   .pBotM {
     color: #e1e1e1;
-    width: 100%;
+    width: 80%;
   }
   .iconImg {
     position: absolute;
     width: 89px;
-
     bottom: -40px;
     right: 40%;
   }
@@ -84,9 +75,9 @@
     display: flex;
     position: relative;
     z-index: 1;
-    gap: 10px;
+    gap: 15px;
     flex-flow: column;
-    padding: 50px 0 30px 0px;
+    padding: 40px 0 50px 0px;
   }
   .mobileDivWrapper {
     display: flex;
@@ -94,11 +85,15 @@
   .left h1 {
     font-size: 36px;
     margin: 0;
-    margin-top: 10px;
     font-weight: bold;
     padding: 0;
+    line-height: 40px;
     color: white;
   }
+  .homeSpan {
+    color: #f18350 !important;
+  }
+
   .pBot {
     margin-bottom: 12px;
     margin-top: 0px;
@@ -115,7 +110,7 @@
   }
   .pTop {
     background-color: #f18350;
-    font-size: 30px;
+    font-size: 25px;
     color: white;
     font-weight: 600;
     border-radius: 5px;
@@ -155,10 +150,11 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    color: white;
-    background-color: #4f419a;
+    color: #f18350;
+    border: 1px solid #f18350;
+    background-color: transparent;
     border-radius: 6px;
-    padding: 15px 25px;
+    padding: 10px 20px;
     width: max-content;
 
     margin-right: 20px;
@@ -183,6 +179,55 @@
     bottom: -0px;
     align-self: start;
     justify-content: flex-start;
+  }
+  .animateBox {
+    position: absolute;
+    background-color: #323161;
+    border-radius: 8px;
+    padding: 10px;
+    gap: 10px;
+    top: 47%;
+    left: -120px;
+    display: flex;
+    flex-flow: column;
+    width: 270px;
+  }
+  .animateTag {
+    display: flex;
+    gap: 10px;
+    padding: 5px 10px;
+    font-weight: 500;
+    border-radius: 2px;
+    font-size: 12px;
+    width: max-content;
+    background-color: #232148;
+    align-items: center;
+    color: #8c94be;
+  }
+  .animateIconWrapper {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  .animateBox h3 {
+    color: white;
+    width: 90%;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .typeText {
+    position: absolute;
+    top: 36%;
+    width: 270px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -70px;
+    color: black;
+    background-color: white;
+    padding: 3px 10px;
+    border-radius: 4px;
   }
 }
 @media (max-width: 1281px) {
@@ -281,7 +326,7 @@
   }
   .pTop {
     background-color: #f18350;
-    font-size: 28px;
+    font-size: 25px;
     color: white;
     font-weight: 600;
     border-radius: 5px;
@@ -376,7 +421,7 @@
 }
 @media (max-width: 1024px) {
   .pTop {
-    font-size: 25px;
+    font-size: 20px;
 
     padding: 10px;
   }
@@ -437,7 +482,7 @@
     right: 42%;
   }
   .pTop {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .imgWrapper {
@@ -580,7 +625,7 @@
     text-align: center;
     width: max-content;
 
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     margin-bottom: 0px;
     padding: 0px 5px;
@@ -649,9 +694,10 @@
 @media (max-width: 481px) {
   .wrapper {
     display: grid;
+    background-color: #111621;
     align-items: center;
     grid-template-columns: 100%;
-    padding: 40px 20px 20px 20px;
+    padding: 40px 20px 40px 20px;
     height: max-content;
     overflow: hidden;
   }
@@ -692,11 +738,11 @@
     color: white;
     text-align: center;
     width: max-content;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     margin-bottom: 0px;
-    padding: 0px 5px;
-    line-height: 47px;
+    padding: 5px 15px;
+    line-height: 30px;
     background-color: #f18350;
   }
 
@@ -708,11 +754,14 @@
   }
   .pBotM {
     text-align: center;
+    line-height: 26px;
+    font-size: 16px;
+    width: 100%;
     margin: 0;
-    color: #575757;
+    color: #d6d6d6;
   }
   .left h1 span {
-    color: #4f419a;
+    color: white;
     margin: 0;
   }
 
@@ -730,18 +779,21 @@
   }
 
   .btnWrapper button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
+    margin-top: 10px;
+    margin-right: 0;
+    padding: 10px 20px;
     width: max-content;
-    display: flex;
-
+    border: 3px solid #f18350;
+    background-color: transparent;
     justify-content: center;
     border-radius: 4px;
   }
-  .certIcon {
+  /* .certIcon {
     font-size: 30px;
     color: #c4bbff;
-  }
+  } */
   .realWorkIcon {
     font-size: 32px;
     color: #c4bbff;
@@ -750,8 +802,12 @@
     display: none;
   }
   .homeH1 {
-    font-size: 22px !important;
+    font-size: 36px !important;
     font-weight: bold !important;
-    color: black !important;
+    line-height: 52px;
+    color: white !important;
   }
+  /* .btnWrapper button {
+    background-color: #f18350;
+  } */
 }

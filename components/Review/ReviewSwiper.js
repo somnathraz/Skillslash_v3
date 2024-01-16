@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { BsFillStarFill } from "react-icons/bs";
 import { FaStarHalf } from "react-icons/fa";
 // Import Swiper styles
+import { FcGoogle } from "react-icons/fc";
 import dynamic from "next/dynamic";
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -27,6 +28,22 @@ const ReviewSwiper = ({ event, review }) => {
   useEffect(() => {
     setMounted(true);
   });
+  // useEffect(() => {
+  //   const swiper = new Swiper(".swiper-container", {
+  //     // Your Swiper configuration options go here
+  //     // Example: direction: 'horizontal', loop: true, etc.
+  //   });
+
+  //   swiper.on("slideChange", function () {
+  //     const middleSlideIndex = Math.floor(swiper.slides.length / 2);
+
+  //     // Remove the active class from all slides
+  //     swiper.slides.removeClass("mmOpacity");
+
+  //     // Add the custom active class to the middle slide
+  //     swiper.slides.eq(middleSlideIndex).addClass("mmOpacity");
+  //   });
+  // }, []);
   // useEffect(() => {
   //   // let width = window.innerWidth;
   //   // if (width < 481) {
@@ -74,13 +91,14 @@ const ReviewSwiper = ({ event, review }) => {
         slidesPerView={3.7}
         spaceBetween={20}
         freeMode={true}
+        initialSlide="2"
         pagination={{
           dynamicBullets: true,
           clickable: true,
         }}
         breakpoints={{
-          1281: { slidesPerView: 3.4, spaceBetween: 60 },
-          801: { slidesPerView: 2.5, spaceBetween: 10 },
+          1281: { slidesPerView: 3, spaceBetween: 40 },
+          801: { slidesPerView: 2.5, spaceBetween: 30 },
           641: { slidesPerView: 1.6, spaceBetween: 10 },
           481: { slidesPerView: 1, spaceBetween: 10 },
           200: { slidesPerView: 1, spaceBetween: 10 },
@@ -104,42 +122,57 @@ const ReviewSwiper = ({ event, review }) => {
                 popupShow();
               }}
             >
+              <Image
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/review-bg.png"
+                fill
+                alt="review bg"
+                className="z-[-1]"
+              />
               <div className={styles.nameWrap}>
-                <h3>{data.name}</h3>
-              </div>
-              <div className={styles.rating}>
-                {data.rating === "low" ? (
-                  <>
-                    <BsFillStarFill className={styles.star} />
-                    <BsFillStarFill className={styles.star} />
-                    <BsFillStarFill className={styles.star} />
-                    <BsFillStarFill className={styles.star} />
-                  </>
-                ) : (
-                  ""
-                )}
-                {data.rating === "medium" ? (
-                  <>
-                    <BsFillStarFill className={styles.star} />
-                    <BsFillStarFill className={styles.star} />
-                    <BsFillStarFill className={styles.star} />
-                    <BsFillStarFill className={styles.star} />
-                    <FaStarHalf className={styles.star} />
-                  </>
-                ) : (
-                  ""
-                )}
-                {data.rating === "high" ? (
-                  <>
-                    <BsFillStarFill className={styles.star} />
-                    <BsFillStarFill className={styles.star} />
-                    <BsFillStarFill className={styles.star} />
-                    <BsFillStarFill className={styles.star} />
-                    <BsFillStarFill className={styles.star} />
-                  </>
-                ) : (
-                  ""
-                )}
+                <Image
+                  src={data.img}
+                  width="50"
+                  height="50"
+                  alt={data.alt}
+                  loading="lazy"
+                />
+                <div className="flex flex-col items-start ">
+                  <h3>{data.name}</h3>
+                  <div className={styles.rating}>
+                    {data.rating === "low" ? (
+                      <>
+                        <BsFillStarFill className={styles.star} />
+                        <BsFillStarFill className={styles.star} />
+                        <BsFillStarFill className={styles.star} />
+                        <BsFillStarFill className={styles.star} />
+                      </>
+                    ) : (
+                      ""
+                    )}
+                    {data.rating === "medium" ? (
+                      <>
+                        <BsFillStarFill className={styles.star} />
+                        <BsFillStarFill className={styles.star} />
+                        <BsFillStarFill className={styles.star} />
+                        <BsFillStarFill className={styles.star} />
+                        <FaStarHalf className={styles.star} />
+                      </>
+                    ) : (
+                      ""
+                    )}
+                    {data.rating === "high" ? (
+                      <>
+                        <BsFillStarFill className={styles.star} />
+                        <BsFillStarFill className={styles.star} />
+                        <BsFillStarFill className={styles.star} />
+                        <BsFillStarFill className={styles.star} />
+                        <BsFillStarFill className={styles.star} />
+                      </>
+                    ) : (
+                      ""
+                    )}
+                  </div>
+                </div>
               </div>
 
               <p>
@@ -158,13 +191,7 @@ const ReviewSwiper = ({ event, review }) => {
                 </span>
               </p>
               <div className={styles.profileWrapper}>
-                <Image
-                  src={data.img}
-                  width="80"
-                  height="80"
-                  alt={data.alt}
-                  loading="lazy"
-                />
+                <FcGoogle className="text-4xl" />
               </div>
             </SwiperSlide>
           );

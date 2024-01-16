@@ -27,7 +27,7 @@ const Tabs = () => {
   });
 
   return (
-    <div className={`${styles.wrapper} ${styles.homeTabWrapper}`}>
+    <div className={styles.wrapper}>
       <h2 className="text-4xl font-medium max-sm:text-2xl">
         Explore Our Courses
       </h2>
@@ -258,7 +258,7 @@ const Tabs = () => {
                       oneYear ? styles.ActiveSpanIcon : styles.spanIcon
                     }
                   />
-                  Self Paced
+                  Self Peaced
                 </span>
                 <IoIosArrowDown />
               </span>
@@ -280,7 +280,7 @@ const Tabs = () => {
                       oneYear ? styles.ActiveSpanIcon : styles.spanIcon
                     }
                   />
-                  Self Paced
+                  Self Peaced
                 </span>
 
                 <IoIosArrowForward />

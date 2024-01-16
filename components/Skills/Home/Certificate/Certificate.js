@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { IoIosArrowForward, IoIosArrowDown } from "react-icons/io";
 import Image from "next/image";
-import Link from "next/link";
 import TabData from "./TabData";
 import styles from "./Certificate.module.css";
 

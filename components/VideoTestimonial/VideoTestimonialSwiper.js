@@ -1,8 +1,6 @@
 import styles from "./VideoTestimonial.module.css";
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
-
 import { BsFillPlayFill } from "react-icons/bs";
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -50,7 +48,7 @@ const VideoTestimonialSwiper = ({ event, review }) => {
           clickable: true,
         }}
         breakpoints={{
-          1281: { slidesPerView: 2.5, spaceBetween: 40 },
+          1281: { slidesPerView: 2.1, spaceBetween: 40 },
           1024: { slidesPerView: 2.2, spaceBetween: 40 },
           961: { slidesPerView: 1.8, spaceBetween: 20 },
           801: { slidesPerView: 2.3, spaceBetween: 40 },

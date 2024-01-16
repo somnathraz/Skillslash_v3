@@ -8,7 +8,7 @@ const VideoTestimonialSwiper = dynamic(() =>
 );
 import { ratingData } from "./ratingData";
 
-const VideoTestimonial = ({ event, heading }) => {
+const VideoTestimonial = ({ event, heading, spanText }) => {
   const [review, setReview] = useState(dsReview);
 
   // const [video, setVideo] = useState(false);
@@ -21,8 +21,10 @@ const VideoTestimonial = ({ event, heading }) => {
 
       <div className={styles.ReviewSlider}>
         <div className={styles.headings}>
-          <p>What Our Learners has to say</p>
-          <h2>{heading}</h2>
+          <h2 className="text-center flex flex-col  mb-10">
+            {heading}
+            <span className="text-[#f18350]">{spanText}</span>
+          </h2>
         </div>
         <VideoTestimonialSwiper review={review} />
         <Rating ratingData={ratingData} />

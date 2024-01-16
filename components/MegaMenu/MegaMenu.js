@@ -50,9 +50,9 @@ const MegaMenu = ({ handleIcon }) => {
                   className={styles.mInnerBox}
                   onClick={() => handleIcon(false)}
                 >
-                  <a href="/selfpaced/data-science-&-aI-bootcamp-professionals">
+                  <a href="/selfpaced/data-science-&-aI-bootcamp-professional">
                     <div className={styles.mInnerBoxDiv}>
-                      <h5>Data Science & AI Bootcamp - Professionals</h5>
+                      <h5>Data Science & AI Bootcamp</h5>
                       <span>
                         <div>2 Live Projects</div>
                         <BsDot className={styles.dot} />
@@ -61,13 +61,13 @@ const MegaMenu = ({ handleIcon }) => {
                     </div>
                   </a>
                 </div>
-                <a href="/selfpaced/data-science-&-aI-bootcamp-final-year">
+                <a href="/selfpaced/dsa-system-design">
                   <div
                     className={styles.mInnerBox}
                     onClick={() => handleIcon(false)}
                   >
                     <div className={styles.mInnerBoxDiv}>
-                      <h5>Data Science & AI Bootcamp - Final Year Student</h5>
+                      <h5>DSA & System Design Bootcamp</h5>
                       <span>
                         <div>2 Live Projects</div>
                         <BsDot className={styles.dot} />
@@ -134,9 +134,9 @@ const MegaMenu = ({ handleIcon }) => {
                   className={styles.mInnerBox}
                   onClick={() => handleIcon(false)}
                 >
-                  <a href="/selfpaced/data-science-&-aI-bootcamp-professionals">
+                  <a href="/selfpaced/data-science-&-aI-bootcamp-professional">
                     <div className={styles.mInnerBoxDiv}>
-                      <h5>Data Science & AI Bootcamp - Professionals</h5>
+                      <h5>Data Science & AI Bootcamp</h5>
                       <span>
                         <div>2 Live Projects</div>
                         <BsDot className={styles.dot} />
@@ -145,13 +145,13 @@ const MegaMenu = ({ handleIcon }) => {
                     </div>
                   </a>
                 </div>
-                <a href="/selfpaced/data-science-&-aI-bootcamp-final-year">
+                <a href="/selfpaced/dsa-system-design">
                   <div
                     className={styles.mInnerBox}
                     onClick={() => handleIcon(false)}
                   >
                     <div className={styles.mInnerBoxDiv}>
-                      <h5>Data Science & AI Bootcamp - Final Year Student</h5>
+                      <h5>DSA & System Design Bootcamp</h5>
                       <span>
                         <div>2 Live Projects</div>
                         <BsDot className={styles.dot} />
@@ -175,21 +175,6 @@ const MegaMenu = ({ handleIcon }) => {
                     </div>
                   </div>
                 </a>
-                <a href="/selfpaced/dsa-system-design.json">
-                  <div
-                    className={styles.mInnerBox}
-                    onClick={() => handleIcon(false)}
-                  >
-                    <div className={styles.mInnerBoxDiv}>
-                      <h5>DSA + System Design (FAANG interviews)</h5>
-                      <span>
-                        <div>2 Live Projects</div>
-                        <BsDot className={styles.dot} />
-                        <div>self-paced videos</div>
-                      </span>
-                    </div>
-                  </div>
-                </a>
                 <a href="https://skillslash-pvt-ltd.learnyst.com/learn/PYTHON-BOOTCAMP">
                   <div
                     className={styles.mInnerBox}
@@ -204,7 +189,7 @@ const MegaMenu = ({ handleIcon }) => {
                       </span>
                     </div>
                   </div>
-                </a>{" "}
+                </a>
                 <a href="https://skillslash-pvt-ltd.learnyst.com/learn/Machine-Learning-with-Applied-Statistics">
                   <div
                     className={styles.mInnerBox}
@@ -333,7 +318,7 @@ const MegaMenu = ({ handleIcon }) => {
             <div className={styles.mInnerBox} onClick={() => handleIcon(false)}>
               <a href="/selfpaced/data-science-&-aI-bootcamp-professionals">
                 <div className={styles.mInnerBoxDiv}>
-                  <h5>Data Science & AI Bootcamp - Professionals</h5>
+                  <h5>Data Science & AI Bootcamp</h5>
                   <span>
                     <div>Live Doubt Sessions</div>
                     <BsDot className={styles.dot} />
@@ -342,13 +327,13 @@ const MegaMenu = ({ handleIcon }) => {
                 </div>
               </a>
             </div>
-            <a href="/selfpaced/data-science-&-aI-bootcamp-final-year">
+            <a href="/selfpaced/dsa-system-design">
               <div
                 className={styles.mInnerBox}
                 onClick={() => handleIcon(false)}
               >
                 <div className={styles.mInnerBoxDiv}>
-                  <h5>Data Science & AI Bootcamp - Final Year Student</h5>
+                  <h5>DSA & System Design Bootcamp</h5>
                   <span>
                     <div>Live Doubt Sessions</div>
                     <BsDot className={styles.dot} />
@@ -381,7 +366,7 @@ const MegaMenu = ({ handleIcon }) => {
             <div className={styles.mInnerBox} onClick={() => handleIcon(false)}>
               <a href="/selfpaced/data-science-&-aI-bootcamp-professionals">
                 <div className={styles.mInnerBoxDiv}>
-                  <h5>Data Science & AI Bootcamp - Professionals</h5>
+                  <h5>Data Science & AI Bootcamp</h5>
                   <span>
                     <div>Live Project Sessions</div>
                     <BsDot className={styles.dot} />
@@ -390,13 +375,13 @@ const MegaMenu = ({ handleIcon }) => {
                 </div>
               </a>
             </div>
-            <a href="/selfpaced/data-science-&-aI-bootcamp-final-year">
+            <a href="/selfpaced/dsa-system-design">
               <div
                 className={styles.mInnerBox}
                 onClick={() => handleIcon(false)}
               >
                 <div className={styles.mInnerBoxDiv}>
-                  <h5>Data Science & AI Bootcamp - Final Year Student</h5>
+                  <h5>DSA & System Design Bootcamp</h5>
                   <span>
                     <div>Live Project Sessions</div>
                     <BsDot className={styles.dot} />
@@ -412,21 +397,6 @@ const MegaMenu = ({ handleIcon }) => {
               >
                 <div className={styles.mInnerBoxDiv}>
                   <h5>Data Analytics- Non Tech Professionals</h5>
-                  <span>
-                    <div>Live Project Sessions</div>
-                    <BsDot className={styles.dot} />
-                    <div>Live Doubt Sessions</div>
-                  </span>
-                </div>
-              </div>
-            </a>
-            <a href="/selfpaced/dsa-system-design.json">
-              <div
-                className={styles.mInnerBox}
-                onClick={() => handleIcon(false)}
-              >
-                <div className={styles.mInnerBoxDiv}>
-                  <h5>DSA + System Design (FAANG interviews)</h5>
                   <span>
                     <div>Live Project Sessions</div>
                     <BsDot className={styles.dot} />
