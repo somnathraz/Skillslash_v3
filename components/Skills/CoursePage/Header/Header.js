@@ -23,21 +23,24 @@ const Header = ({
   link,
 }) => {
   return (
-    <div className="grid grid-cols-[60%,39%] max-sm:flex max-sm:flex-col gap-5 max-sm:mb-[750px] bg-[#111621] w-full mt-[70px] px-28 max-sm:px-5 py-28 max-sm:py-14 relative">
+    <div className="grid grid-cols-[60%,39%] max-sm:flex max-sm:flex-col gap-5 max-sm:mb-[750px] bg-[#111621] w-full mt-[70px] px-28 max-sm:px-5 py-[100px] max-sm:py-14 relative">
       <div className="absolute gradient top-0 left-0 h-full w-[60%] max-sm:w-full z-0"></div>
       <div className="flex flex-col gap-2 relative z-[1]">
         <div className="flex gap-3 text-[#F18350] font-bold items-center">
-          <p className="text-[#F18350] font-semibold">Development</p>
+          <p className="text-[#F18350] font-semibold">Self-Paced</p>
           <MdKeyboardArrowRight className="text-white" />
-          <p className="text-[#F18350] font-semibold">Data Science</p>
+          <p className="text-[#F18350] font-semibold">{title}</p>
           {/* <MdKeyboardArrowRight className="text-[white]" />
           <p>Data Science</p> */}
         </div>
-
-        <h1 className="text-5xl text-white font-bold leading-[58px] max-[1281px]:text-3xl max-sm:leading-[45px]">
+          <div className="px-4 py-[6px] mt-4 bg-white w-max rounded">
+            {/* <Image src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/powered-by-microsoft-(White).png" alt="PoweredByMicrosoft" width={200} height={22}/> */}
+            <Image src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powered+by+microsoft.png" alt="PoweredByMicrosoft" width={200} height={22}/>
+          </div>
+        <h1 className="text-5xl text-white font-bold leading-[58px] max-[1281px]:text-3xl max-sm:leading-[45px] mt-2">
           {title}
         </h1>
-        <p className="text-[#cccccc] w-[91%] text-[18px] max-[1281px]:text-[16px] leading-[28px] max-sm:leading-[24px] font-light mt-2">
+        <p className="text-[#cccccc] w-[91%] text-[17px] max-[1281px]:text-[16px] leading-[28px] max-sm:leading-[24px] font-light mt-2">
           {desc}
         </p>
         <div className="grid grid-cols-3 gap-2 border-[1px] mt-3 w-[75%] max-sm:w-[97%] rounded items-center px-4 py-1 justify-center">
@@ -50,14 +53,14 @@ const Header = ({
           />
           <Image
             src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/Header/switchup_review.png"
-            alt="Goole_RReviews"
+            alt="switchup_RReviews"
             width={150}
             height={23}
             className="mx-auto"
           />
           <Image
-            src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/Header/cr_review.png"
-            alt="Goole_RReviews"
+            src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/CR_review.png"
+            alt="CR_RReviews"
             width={150}
             height={23}
             className="mx-auto"
