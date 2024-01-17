@@ -9,6 +9,7 @@
     "actualPrice": "₹ 7,999",
     "discount": "50%",
     "certification": "3",
+    "dataScience": false,
     "FullStack": true,
     "firstPoint": "DSA: Arrays, Sorting, Trees, DP, Linked Lists, Graphs, Advanced Structures.",
     "secondPoint": "System Design: Intro, Scalability, API, Load Balancer, HLD, LLD.",

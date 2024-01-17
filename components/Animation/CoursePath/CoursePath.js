@@ -64,17 +64,19 @@ function YourComponent() {
             fill="white"
           />
         </motion.svg>
-        <div className="bg-white shadow rounded-2xl px-14  pt-24 max-sm:pt-[210px] pb-14 max-sm:pb-10 z-40 relative ml-48 max-sm:ml-0 mt-10 max-sm:mt-16 w-[85%] max-sm:w-[100%]">
-          <div className="absolute bg-[#EEEBFF] top-10 max-sm:top-[160px] left-0 font-medium px-4 py-1 rounded-r-2xl">
+        <div className="bg-white shadow rounded-2xl px-14 pt-14 max-sm:pt-[210px] pb-14 max-sm:pb-10 z-40 relative ml-48 max-sm:ml-0 mt-10 max-sm:mt-16 w-[85%] max-sm:w-[100%]">
+          {/* <div className="absolute bg-[#EEEBFF] top-10 max-sm:top-[160px] left-0 font-medium px-4 py-1 rounded-r-2xl">
             For Professionals
-          </div>
+          </div> */}
           <div className="flex flex-col gap-4">
-            <Image
-              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powered+by+microsoft.png"
-              alt="PoweredByMicrosoft"
-              width={mobile ? 180 : 230}
-              height={mobile ? 19 : 24}
-            />
+            <div className="px-3 py-2 bg-[#EEEBFF] rounded w-[31%]">
+              <Image
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powered+by+microsoft.png"
+                alt="PoweredByMicrosoft"
+                width={mobile ? 180 : 230}
+                height={mobile ? 19 : 24}
+              />
+            </div>
             <h3 className="text-4xl max-sm:text-2xl font-bold text-[#f18350]">
               Data Science & AI
             </h3>
@@ -125,7 +127,7 @@ function YourComponent() {
               </Link>
             </div>
           </div>
-          <div className="absolute right-[-150px] top-[60px] max-sm:left-[10px] max-sm:top-[-60px] max-sm:right-[10px] max-sm:flex max-sm:items-center max-sm:justify-center ">
+          <div className="absolute right-[-150px] top-[50px] max-sm:left-[10px] max-sm:top-[-60px] max-sm:right-[10px] max-sm:flex max-sm:items-center max-sm:justify-center ">
             <Image
               src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/data-science-header.png"
               alt="data-science-course"
@@ -169,17 +171,19 @@ function YourComponent() {
             fill="white"
           />
         </motion.svg>
-        <div className="bg-white shadow rounded-2xl px-14 pt-24 max-sm:pt-[210px] pb-14 max-sm:pb-10 z-40 relative ml-56 max-sm:ml-0 mt-32  w-[85%] flex items-end justify-end max-sm:justify-start max-sm:w-[100%]">
-          <div className="absolute bg-[#EEEBFF] top-10 max-sm:top-[160px] right-0 font-medium px-4 py-1 rounded-l-2xl">
+        <div className="bg-white shadow rounded-2xl px-14 pt-14 max-sm:pt-[210px] pb-14 max-sm:pb-10 z-40 relative ml-56 max-sm:ml-0 mt-32  w-[85%] flex items-end justify-end max-sm:justify-start max-sm:w-[100%]">
+          {/* <div className="absolute bg-[#EEEBFF] top-10 max-sm:top-[160px] right-0 font-medium px-4 py-1 rounded-l-2xl">
             For Non-Tech Professionals
-          </div>
+          </div> */}
           <div className="flex flex-col gap-4">
-            <Image
-              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powered+by+microsoft.png"
-              alt="PoweredByMicrosoft"
-              width={mobile ? 180 : 230}
-              height={mobile ? 19 : 24}
-            />
+            <div className="px-3 py-2 bg-[#EEEBFF] rounded w-[47%]">
+              <Image
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powered+by+microsoft.png"
+                alt="PoweredByMicrosoft"
+                width={mobile ? 180 : 230}
+                height={mobile ? 19 : 24}
+              />
+            </div>
             <h3 className="text-4xl font-bold text-[#f18350]  max-sm:text-2xl">
               Data Analytics course
             </h3>
@@ -230,7 +234,7 @@ function YourComponent() {
               </Link>
             </div>
           </div>
-          <div className="absolute left-[-165px] top-16 max-sm:left-[10px] max-sm:top-[-60px] max-sm:right-[10px] max-sm:flex max-sm:items-center max-sm:justify-center">
+          <div className="absolute left-[-165px] top-[52px] max-sm:left-[10px] max-sm:top-[-60px] max-sm:right-[10px] max-sm:flex max-sm:items-center max-sm:justify-center">
             <Image
               src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/data-analytics-header.png"
               alt="data-science-course"
@@ -240,7 +244,7 @@ function YourComponent() {
           </div>
         </div>
         <motion.svg
-          className="absolute w-max h-[470px] z-0 left-20 top-[58.3%] max-sm:hidden"
+          className="absolute w-max h-[470px] z-0 left-20 top-[56%] max-sm:hidden"
           preserveAspectRatio="xMidYMax meet"
         >
           <motion.path
@@ -277,14 +281,14 @@ function YourComponent() {
           src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Course_icon/data-analytics-non-tech-pro.png"
           width="40"
           height="40"
-          className="z-10 absolute left-[85px] top-[71.2%] max-sm:hidden"
+          className="z-10 absolute left-[85px] top-[69%] max-sm:hidden"
           alt="data analytics"
         />
         <Image
           src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Course_icon/data-science-for-clg-icon.png"
           width="40"
           height="40"
-          className="z-10 absolute top-[38.25%] right-[-16.7%] max-sm:hidden"
+          className="z-10 absolute top-[37.8%] right-[-16.7%] max-sm:hidden"
           alt="data analytics"
         />
         <Image
@@ -295,18 +299,20 @@ function YourComponent() {
           alt="data analytics"
         />
 
-        <div className="bg-white shadow rounded-2xl px-14  pt-24 max-sm:pt-[210px] pb-14 max-sm:pb-10 z-40 relative ml-48 max-sm:ml-0 mt-32 max-sm:mt-32 w-[85%] max-sm:w-[100%]">
-          <div className="absolute bg-[#EEEBFF] top-10  max-sm:top-[160px] left-0 font-medium px-4 py-1 rounded-r-2xl">
+        <div className="bg-white shadow rounded-2xl px-14 pt-14 max-sm:pt-[210px] pb-14 max-sm:pb-10 z-40 relative ml-48 max-sm:ml-0 mt-32 max-sm:mt-32 w-[85%] max-sm:w-[100%]">
+          {/* <div className="absolute bg-[#EEEBFF] top-10  max-sm:top-[160px] left-0 font-medium px-4 py-1 rounded-r-2xl">
             For Programmers
-          </div>
+          </div> */}
 
           <div className="flex flex-col gap-4">
-            <Image
-              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powered+by+microsoft.png"
-              alt="PoweredByMicrosoft"
-              width={mobile ? 180 : 230}
-              height={mobile ? 19 : 24}
-            />
+            <div className="px-3 py-2 bg-[#EEEBFF] rounded w-[32%]">
+              <Image
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powered+by+microsoft.png"
+                alt="PoweredByMicrosoft"
+                width={mobile ? 180 : 230}
+                height={mobile ? 19 : 24}
+              />
+            </div>
             <h3 className="text-4xl max-sm:text-2xl font-bold text-[#f18350] ">
               DSA + SD (FAANG)
             </h3>
@@ -357,7 +363,7 @@ function YourComponent() {
               </Link>
             </div>
           </div>
-          <div className="absolute right-[-150px] top-[60px] max-sm:left-[10px] max-sm:top-[-60px] max-sm:right-[10px] max-sm:flex max-sm:items-center max-sm:justify-center">
+          <div className="absolute right-[-150px] top-[52px] max-sm:left-[10px] max-sm:top-[-60px] max-sm:right-[10px] max-sm:flex max-sm:items-center max-sm:justify-center">
             <Image
               src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/dsa+header.png"
               alt="data-science-course"
