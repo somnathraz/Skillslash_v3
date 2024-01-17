@@ -105,7 +105,7 @@ const WhyUs = () => {
                     <span className="text-[#f18350]"> Live </span>Project
                     Session
                   </h3>
-                  <li> interactive sessions</li>
+                  <li> Interactive sessions</li>
                   <li> Multi-domain projects</li>
                   <li>Weekly sessions</li>
                 </div>

@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import styles from "../Course/FirstSection/FirstSection.module.css";
 import Image from "next/image";
 import { BiVideo } from "react-icons/bi";
-import { BsArrowRightShort } from "react-icons/bs";
-import Typed from "../Animation/TypedText/Typed";
 
 const HomeFirstSection = ({
   deskTopPara,
@@ -20,15 +18,15 @@ const HomeFirstSection = ({
   // const [video, setVideo] = useState(false);
   const [courseTitles, setCourseTitles] = useState([
     {
-      title: "Data Science & AI Bootcamp - Professionals",
+      title: "Data Science & AI Bootcamp",
       img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Ai-icon-first-header.webp",
     },
     {
-      title: "Data Analytics- Non Tech Professionals",
+      title: "Data Analytics Course",
       img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Course+Header/data-science-chat.png",
     },
     {
-      title: "Data Science & AI Bootcamp - Final Year Student",
+      title: "DSA + SD (FAANG)",
       img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Course+Header/data-science-course-chat.png",
     },
 
@@ -67,11 +65,14 @@ const HomeFirstSection = ({
           <p className={styles.pTop}>{deskTopPara}</p>
         </div>
         <h1 className={styles.homeH1}>
-          <span className={styles.homeSpan}>Self-paced Live Project-Based Learning Platform</span>
+          <span className={styles.homeSpan}>
+            Self paced learning platform with live doubt & project sessions
+          </span>
         </h1>
         <p className={styles.pBotM}>
-          Access comprehensive lessons with live doubt-clearing classes. Work on
-          Live Projects & acquire Project and Internship certifications.
+          Access In-Depth, Self-Paced Courses with Live Doubt-Clearing Sessions,
+          and Real-world Projects for Job Readiness and Industry-Recognized
+          Certification.
         </p>
         {/* <TextAnimation homePage={true} /> */}
 
@@ -87,7 +88,12 @@ const HomeFirstSection = ({
       <div className={styles.right}>
         {/* <Image src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/header-img-home-page.png" /> */}
         <span className={styles.typeText}>
-        <Image src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powered+by+microsoft.png" alt="PoweredByMicrosoft" width={230} height={24}/>
+          <Image
+            src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powered+by+microsoft.png"
+            alt="PoweredByMicrosoft"
+            width={230}
+            height={24}
+          />
           {/* <Typed text="Prompt engineering for beginners...." speed={50} /> */}
         </span>
         <div className={styles.animateBox}>

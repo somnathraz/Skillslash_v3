@@ -1,9 +1,8 @@
-import CourseDetails from "../../components/Skills/CoursePage/CourseDetails/CourseDetails";
 import Header from "../../components/Skills/CoursePage/Header/Header";
 import DataScienceSyllabus from "../../components/Skills/CoursePage/SeoSyllabus/SeoSyllabus";
 import Navbar from "../../components/Navbar/Navbar";
 import ProjectSlider from "../../components/Skills/Global/Project/ProjectSlider";
-import Certificate from "../../components/Skills/Home/Certificate/Certificate";
+import Head from "next/head";
 import React from "react";
 import { getAllPostIds, getPostData } from "../../lib/newPages";
 import FAQ from "../../components/Skills/Global/FAQ/FAQ";
@@ -92,6 +91,13 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
   ];
   return (
     <div>
+      <Head>
+        <title>{DataScienceCourseData.data.header.title}</title>
+        <meta
+          name="description"
+          content={DataScienceCourseData.data.header.desc}
+        />
+      </Head>
       <Navbar link={DataScienceCourseData.data.header.link} />
       <Header
         title={DataScienceCourseData.data.header.title}
@@ -110,27 +116,41 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         thirdPoint={DataScienceCourseData.data.header.thirdPoint}
         fourthPoint={DataScienceCourseData.data.header.fourthPoint}
       />
-      <WhyUs />
-      <WhyUsAnimate />
+      <div id="certificate">
+        <WhyUs />
+      </div>
+      <div id="certificate">
+        <WhyUsAnimate />
+      </div>
       <VideoTestimonial
+        redirectDs={DataScienceCourseData.data.header.dataScience}
         heading="What is it like to train with us?"
         spanText="our learners say it best."
       />
       <Reviews />
-      <DetailTable />
-      <DataScienceSyllabus
-        seoSyllabus={DataScienceCourseData.data.seoSyllabus}
-        heading="Course Modules"
-        hour={DataScienceCourseData.data.header.hour}
-      />
+      <DetailTable offerPrice={DataScienceCourseData.data.header.offerPrice} />
+      <div id="modules">
+        <DataScienceSyllabus
+          title={DataScienceCourseData.data.header.title}
+          seoSyllabus={DataScienceCourseData.data.seoSyllabus}
+          heading="Course Modules"
+          hour={DataScienceCourseData.data.header.hour}
+          redirectFs={DataScienceCourseData.data.header.FullStack}
+          redirectDs={DataScienceCourseData.data.header.dataScience}
+        />
+      </div>
       {/* <WhyUsAnimate /> */}
       {/* <CourseDetails hour={DataScienceCourseData.data.header.hour} /> */}
-      <ProjectSlider
-        heading="Hands-on Projects"
-        redirectDs={true}
-        redirectFs={DataScienceCourseData.data.header.FullStack}
-      />
-      <FAQ heading="Frequently Asked Questions" FaqData={FaqDATA} />
+      <div id="projects">
+        <ProjectSlider
+          heading="Hands-on Projects"
+          redirectDs={DataScienceCourseData.data.header.dataScience}
+          redirectFs={DataScienceCourseData.data.header.FullStack}
+        />
+      </div>
+      <div id="faq">
+        <FAQ heading="Frequently Asked Questions" FaqData={FaqDATA} />
+      </div>
       <Footer />
       <FloatIcon />
     </div>
