@@ -133,7 +133,10 @@ const ProjectSlider = ({
     <div className={styles.projectWrap}>
       <div className={styles.projectHeader}>
         <div className={styles.leftWrap}>
-          <h2 className="text-4xl font-bold">{heading}</h2>
+          <h2 className="text-4xl font-bold">
+            {redirectDs ? "30+ " : "15+ "}
+            {heading}
+          </h2>
         </div>
       </div>
       {seoPage ? (
@@ -145,71 +148,77 @@ const ProjectSlider = ({
         ""
       )}
       <div className={styles.sliderWrap}>
-        <div className={styles.categoryBar}>
-          <div className={styles.categoryWrap}>
-            <span
-              className={
-                domainName === "BFSI" ? styles.spanActive : styles.span
-              }
-              onClick={() => {
-                setDomainName("BFSI");
-              }}
-            >
-              BFSI
-            </span>
+        {redirectDs ? (
+          <div className={styles.categoryBar}>
+            <div className={styles.categoryWrap}>
+              <span
+                className={
+                  domainName === "BFSI" ? styles.spanActive : styles.span
+                }
+                onClick={() => {
+                  setDomainName("BFSI");
+                }}
+              >
+                BFSI
+              </span>
 
-            <span
-              className={domainName === "HR" ? styles.spanActive : styles.span}
-              onClick={() => {
-                setDomainName("HR");
-              }}
-            >
-              HR
-            </span>
-            <span
-              className={
-                domainName === "HealthCare" ? styles.spanActive : styles.span
-              }
-              onClick={() => {
-                setDomainName("HealthCare");
-              }}
-            >
-              Healthcare
-            </span>
-            <span
-              className={
-                domainName === "Sales" ? styles.spanActive : styles.span
-              }
-              onClick={() => {
-                setDomainName("Sales");
-              }}
-            >
-              Sales
-            </span>
-            <span
-              className={
-                domainName === "Manufacturing and Supply Chain"
-                  ? styles.spanActive
-                  : styles.span
-              }
-              onClick={() => {
-                setDomainName("Manufacturing and Supply Chain");
-              }}
-            >
-              Manufacturing
-            </span>
-            <span
-              className={
-                domainName === "Retail" ? styles.spanActive : styles.span
-              }
-              onClick={() => {
-                setDomainName("Retail");
-              }}
-            >
-              Retail
-            </span>
+              <span
+                className={
+                  domainName === "HR" ? styles.spanActive : styles.span
+                }
+                onClick={() => {
+                  setDomainName("HR");
+                }}
+              >
+                HR
+              </span>
+              <span
+                className={
+                  domainName === "HealthCare" ? styles.spanActive : styles.span
+                }
+                onClick={() => {
+                  setDomainName("HealthCare");
+                }}
+              >
+                Healthcare
+              </span>
+              <span
+                className={
+                  domainName === "Sales" ? styles.spanActive : styles.span
+                }
+                onClick={() => {
+                  setDomainName("Sales");
+                }}
+              >
+                Sales
+              </span>
+              <span
+                className={
+                  domainName === "Manufacturing and Supply Chain"
+                    ? styles.spanActive
+                    : styles.span
+                }
+                onClick={() => {
+                  setDomainName("Manufacturing and Supply Chain");
+                }}
+              >
+                Manufacturing
+              </span>
+              <span
+                className={
+                  domainName === "Retail" ? styles.spanActive : styles.span
+                }
+                onClick={() => {
+                  setDomainName("Retail");
+                }}
+              >
+                Retail
+              </span>
+            </div>
           </div>
-        </div>
+        ) : (
+          ""
+        )}
 
         <ProjectSwiper
           swiperData={swiperData}
