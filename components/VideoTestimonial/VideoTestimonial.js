@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 import styles from "./VideoTestimonial.module.css";
-import { dsReview } from "./VideoTestimonialData";
+import { dsReview, fsReview } from "./VideoTestimonialData";
 import Rating from "./Rating";
 import { useState } from "react";
 const VideoTestimonialSwiper = dynamic(() =>
@@ -8,8 +8,8 @@ const VideoTestimonialSwiper = dynamic(() =>
 );
 import { ratingData } from "./ratingData";
 
-const VideoTestimonial = ({ event, heading, spanText }) => {
-  const [review, setReview] = useState(dsReview);
+const VideoTestimonial = ({ event, heading, spanText, redirectDs }) => {
+  const [review, setReview] = useState(redirectDs ? dsReview : fsReview);
 
   // const [video, setVideo] = useState(false);
   // const videoSHow = () => {

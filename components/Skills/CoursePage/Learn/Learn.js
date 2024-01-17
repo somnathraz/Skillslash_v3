@@ -1,6 +1,7 @@
 import React from "react";
 import { MdCheck } from "react-icons/md";
 import Image from "next/image";
+import Link from "next/link";
 
 const Learn = ({ firstPoint, secondPoint, thirdPoint, fourthPoint }) => {
   return (
@@ -8,24 +9,31 @@ const Learn = ({ firstPoint, secondPoint, thirdPoint, fourthPoint }) => {
       <div className="grid grid-cols-[60%,39%] gap-5 px-28 max-sm:px-6 py-7 max-sm:py-4 max-sm:flex">
         <div className="flex flex-col gap-5 max-sm:gap-0">
           <div className="flex gap-3 max-sm:hidden">
-            <span className="border-[#f18350] text-[#f18350] border-2 px-5 py-1 w-max rounded">
-              Features
-            </span>
-            <span className="border-[#646464] border-[1px] px-5 py-1 w-max rounded">
-              Modules
-            </span>
-            <span className="border-[#646464] border-[1px] px-5 py-1 w-max rounded">
-              Project
-            </span>
-            <span className="border-[#646464] border-[1px] px-5 py-1 w-max rounded">
-              Certification
-            </span>
-            <span className="border-[#646464] border-[1px] px-5 py-1 w-max rounded">
-              Tool
-            </span>
-            <span className="border-[#646464] border-[1px] px-5 py-1 w-max rounded">
-              FAQ
-            </span>
+            <Link href="#features">
+              <span className="border-[#f18350] text-[#f18350] border-2 px-5 py-1 w-max rounded">
+                Features
+              </span>
+            </Link>
+            <Link href="#modules">
+              <span className="border-[#646464] border-[1px] px-5 py-1 w-max rounded">
+                Modules
+              </span>
+            </Link>
+            <Link href="#projects">
+              <span className="border-[#646464] border-[1px] px-5 py-1 w-max rounded">
+                Project
+              </span>
+            </Link>
+            <Link href="#certificate">
+              <span className="border-[#646464] border-[1px] px-5 py-1 w-max rounded">
+                Certification
+              </span>
+            </Link>
+            <Link href="#faq">
+              <span className="border-[#646464] border-[1px] px-5 py-1 w-max rounded">
+                FAQ
+              </span>
+            </Link>
           </div>
           <h2 className="text-4xl font-bold max-[1281px]:text-3xl">
             What will you learn?

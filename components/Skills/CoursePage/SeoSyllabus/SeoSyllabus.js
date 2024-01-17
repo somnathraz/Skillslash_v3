@@ -6,7 +6,15 @@ import { AiOutlineTool } from "react-icons/ai";
 import { BiCheck, BiTimeFive } from "react-icons/bi";
 import { BsDot } from "react-icons/bs";
 
-function DataScienceSyllabus({ seoSyllabus, syllabusDesc, heading, hour }) {
+function DataScienceSyllabus({
+  seoSyllabus,
+  syllabusDesc,
+  heading,
+  hour,
+  title,
+  redirectDs,
+  redirectFs,
+}) {
   const [popups, setPopups] = useState(false);
 
   const popupShow = () => {
@@ -67,7 +75,7 @@ function DataScienceSyllabus({ seoSyllabus, syllabusDesc, heading, hour }) {
                           handleChange(id);
                         }}
                       >
-                        <p className={styles.accorDHead}>Course Content</p>
+                        <p className={styles.accorDHead}>Module Content</p>
                         <span>
                           {Module0.open ? (
                             <MdKeyboardArrowUp className="icon" />
@@ -124,11 +132,11 @@ function DataScienceSyllabus({ seoSyllabus, syllabusDesc, heading, hour }) {
       <div>
         <div className={styles.syllabusRight}>
           <h5 className={styles.rightHeading}>
-            Data Science & AI Bootcamp <span>Curriculum</span>
+            {title} <span>Curriculum</span>
           </h5>
           <p className={styles.rightDesc}>
-            Data Science and AI courses Syllabus are curated by leading
-            faculties and industry leaders.
+            {title} Syllabus are curated by leading faculties and industry
+            leaders.
           </p>
           <div className={styles.feature}>
             <BiTimeFive className={styles.clockIcon} />
@@ -141,7 +149,7 @@ function DataScienceSyllabus({ seoSyllabus, syllabusDesc, heading, hour }) {
           <div className={styles.feature}>
             <AiOutlineTool className={styles.settingIcon} />
             <div className={styles.fContent}>
-              <p className={styles.fHeading}>2 </p>
+              <p className={styles.fHeading}>{redirectDs ? "30+" : "15+"}</p>
               <span>Live Project</span>
             </div>
           </div>

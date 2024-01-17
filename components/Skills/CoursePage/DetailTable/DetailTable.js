@@ -3,7 +3,7 @@ import Image from "next/image";
 import { FaCircleCheck } from "react-icons/fa6";
 import { MdOutlineClear } from "react-icons/md";
 
-const DetailTable = () => {
+const DetailTable = ({ offerPrice }) => {
   return (
     <div className="px-40 py-10 flex flex-col gap-5 max-[1281px]:px-24 relative max-sm:px-5 max-sm:overflow-scroll bg-[#111621]">
       <h2 className="text-white font-bold text-4xl text-center max-sm:text-2xl">
@@ -72,7 +72,7 @@ const DetailTable = () => {
             <FaCircleCheck className="text-[#12c168] " />
           </p>
           <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
-          <p className="text-white max-sm:py-2">7000</p>
+          <p className="text-white max-sm:py-2">{offerPrice}</p>
         </div>
         <div className="flex flex-col gap-[15px] max-sm:gap-[15px] items-center">
           <p className="mb-[25px] max-sm:mb-[5px] text-white text-center">

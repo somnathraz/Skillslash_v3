@@ -7,14 +7,7 @@ export const dsReview = [
     alt: "Meenakshi review",
     para: "Project Certification helped me a lot during interviews sessions",
   },
-  {
-    id: 3,
-    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/Akarsh+Srivastava.webp",
-    name: "Akarsh,  Data Scientist",
-    link: "PaykTlWUmRA",
-    alt: "Akarsh Srivastava review",
-    para: "Skillslash makes it easier to pursue course while working as a professional",
-  },
+
   {
     id: 4,
     img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/Pragyan+Prakash.webp",
@@ -23,9 +16,19 @@ export const dsReview = [
     alt: "Pragyan Praksha review",
     para: "Along with a good course, groundwork is essential to become data scientist",
   },
+];
+export const fsReview = [
+  {
+    id: 3,
+    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/Review/Akarsh+Srivastava.png",
+    name: "Akarsh,  Data Scientist",
+    link: "PaykTlWUmRA",
+    alt: "Akarsh Srivastava review",
+    para: "Skillslash makes it easier to pursue course while working as a professional",
+  },
   {
     id: 1,
-    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/Mrin_al+Sahay.webp",
+    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/Review/Mrin%EF%BB%BFal+Sahay.png",
     name: "Mrinal Sahay, Data Scientist ",
     link: "IftwFoDA3rI",
     alt: "Mrinal Sahay review",
