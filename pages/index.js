@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.css";
 import { useState, useEffect } from "react";
 const SecondPart = dynamic(() => import("../components/Homepage/SecondPart"));
 import FirstPart from "../components/Homepage/FirstPart";
-import FloatIcon from "../components/Floticon/FloatIcon";
+import WhatsappButton from "../components/WhatsAppButton/WhatsappButton";
 // import MiddlePageCta from "../components/MiddlePageCta/MiddlePageCta";
 const OfferPopup = dynamic(() =>
   import("../components/Course/OfferPopup/OfferPopup")
@@ -66,7 +66,7 @@ export default function Home() {
         )}
         <FirstPart homePage={true} />
         <SecondPart homePage={true} />
-        <FloatIcon />
+        <WhatsappButton />
         {/* <CustomPopup />*/}
       </div>
     </div>

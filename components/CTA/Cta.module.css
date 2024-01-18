@@ -10,29 +10,34 @@
   flex-flow: column;
   justify-content: center;
   padding-left: 50px;
+  padding: 20px 50px;
 }
 
 .leftCta button {
   width: max-content;
   gap: 10px;
+  padding: 8px 15px;
   margin-top: 20px;
   font-size: 14px;
   color: #4f419a;
   background-color: #ffffff;
 }
-.leftCta button:hover {
-  background-color: #d7d2f1;
-  color: #4f419a;
-}
-.leftCta h2 {
+
+.leftCta h4 {
   color: #ffffff;
   margin: 0;
+  font-size: 25px;
   font-weight: 700;
+}
+.rightCta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .pTop {
   color: #ffffff;
   margin: 0;
-  font-weight: 600;
+  font-weight: 400;
 }
 .smallCTA {
   margin: 0;

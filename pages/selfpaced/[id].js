@@ -13,7 +13,8 @@ import Reviews from "../../components/Review/Reviews";
 import DetailTable from "../../components/Skills/CoursePage/DetailTable/DetailTable";
 import Learn from "../../components/Skills/CoursePage/Learn/Learn";
 import Footer from "../../components/Footer/Footer";
-import FloatIcon from "../../components/Floticon/FloatIcon";
+import WhatsappButton from "../../components/WhatsAppButton/WhatsappButton";
+import CTA from "../../components/CTA/CTA";
 
 const DataSciencePage = ({ DataScienceCourseData }) => {
   const FaqDATA = [
@@ -136,6 +137,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
 
       <Reviews redirectFs={DataScienceCourseData.data.header.FullStack} />
       <DetailTable offerPrice={DataScienceCourseData.data.header.offerPrice} />
+      <CTA />
       <div id="modules">
         <DataScienceSyllabus
           title={DataScienceCourseData.data.header.title}
@@ -159,7 +161,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         <FAQ heading="Frequently Asked Questions" FaqData={FaqDATA} />
       </div>
       <Footer />
-      <FloatIcon />
+      <WhatsappButton />
     </div>
   );
 };

@@ -17,13 +17,21 @@ const CTA = ({ redirectDSA }) => {
         />
       </div>
       <div className={styles.leftCta}>
-        <h4 style={{ color: "white" }}>Get Free Career Counselling</h4>
-        <p className={styles.pTop}>For queries, feedback & assistance</p>
-        <p className={styles.smallCTA}>(7AM -12 AM)</p>
+        <h4 style={{ color: "white" }}>
+          Lost in the Learning Maze? Let's Chat!
+        </h4>
+        <p className={styles.pTop}>
+          Having difficulties? Connect with our counselor to discover more about
+          this course.
+        </p>
         <a href="tel:+91-8391-911-911">
           <button>
-            <IoMdCall className={styles.cIcon} />
-            8391-911-911
+            <Image
+              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/chat-gif.gif"
+              width={30}
+              height={30}
+            />
+            Chat With Us
           </button>
         </a>
       </div>
