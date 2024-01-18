@@ -64,12 +64,12 @@ function YourComponent() {
             fill="white"
           />
         </motion.svg>
-        <div className="bg-white shadow rounded-2xl px-14 pt-14 max-sm:pt-[210px] pb-14 max-sm:pb-10 z-40 relative ml-48 max-sm:ml-0 mt-10 max-sm:mt-16 w-[85%] max-sm:w-[100%]">
+        <div className="bg-white shadow rounded-2xl px-14 pt-14 max-sm:pt-[180px] pb-14 max-sm:pb-10 z-40 relative ml-48 max-sm:ml-0 mt-10 max-sm:mt-16 w-[85%] max-sm:w-[100%]">
           {/* <div className="absolute bg-[#EEEBFF] top-10 max-sm:top-[160px] left-0 font-medium px-4 py-1 rounded-r-2xl">
             For Professionals
           </div> */}
           <div className="flex flex-col gap-4">
-            <div className="px-3 py-2 bg-[#EEEBFF] rounded w-[31%]">
+            <div className="px-3 py-2 bg-[#EEEBFF] rounded w-[31%] max-sm:w-[70%]">
               <Image
                 src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powered+by+microsoft.png"
                 alt="PoweredByMicrosoft"
@@ -171,12 +171,12 @@ function YourComponent() {
             fill="white"
           />
         </motion.svg>
-        <div className="bg-white shadow rounded-2xl px-14 pt-14 max-sm:pt-[210px] pb-14 max-sm:pb-10 z-40 relative ml-56 max-sm:ml-0 mt-32  w-[85%] flex items-end justify-end max-sm:justify-start max-sm:w-[100%]">
+        <div className="bg-white shadow rounded-2xl px-14 pt-14 max-sm:pt-[180px] pb-14 max-sm:pb-10 z-40 relative ml-56 max-sm:ml-0 mt-32  w-[85%] flex items-end justify-end max-sm:justify-start max-sm:w-[100%]">
           {/* <div className="absolute bg-[#EEEBFF] top-10 max-sm:top-[160px] right-0 font-medium px-4 py-1 rounded-l-2xl">
             For Non-Tech Professionals
           </div> */}
           <div className="flex flex-col gap-4">
-            <div className="px-3 py-2 bg-[#EEEBFF] rounded w-[47%]">
+            <div className="px-3 py-2 bg-[#EEEBFF] rounded w-[47%] max-sm:w-[80%]">
               <Image
                 src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powered+by+microsoft.png"
                 alt="PoweredByMicrosoft"
@@ -299,13 +299,13 @@ function YourComponent() {
           alt="data analytics"
         />
 
-        <div className="bg-white shadow rounded-2xl px-14 pt-14 max-sm:pt-[210px] pb-14 max-sm:pb-10 z-40 relative ml-48 max-sm:ml-0 mt-32 max-sm:mt-32 w-[85%] max-sm:w-[100%]">
+        <div className="bg-white shadow rounded-2xl px-14 pt-14 max-sm:pt-[180px] pb-14 max-sm:pb-10 z-40 relative ml-48 max-sm:ml-0 mt-32 max-sm:mt-32 w-[85%] max-sm:w-[100%]">
           {/* <div className="absolute bg-[#EEEBFF] top-10  max-sm:top-[160px] left-0 font-medium px-4 py-1 rounded-r-2xl">
             For Programmers
           </div> */}
 
           <div className="flex flex-col gap-4">
-            <div className="px-3 py-2 bg-[#EEEBFF] rounded w-[32%]">
+            <div className="px-3 py-2 bg-[#EEEBFF] rounded w-[32%] max-sm:w-[70%]">
               <Image
                 src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powered+by+microsoft.png"
                 alt="PoweredByMicrosoft"

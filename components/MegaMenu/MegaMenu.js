@@ -82,7 +82,7 @@ const MegaMenu = ({ handleIcon }) => {
                     onClick={() => handleIcon(false)}
                   >
                     <div className={styles.mInnerBoxDiv}>
-                      <h5>Data Analytics- Non Tech Professionals</h5>
+                      <h5>Data Analytics Course</h5>
                       <span>
                         <div>2 Live Projects</div>
                         <BsDot className={styles.dot} />
@@ -166,7 +166,7 @@ const MegaMenu = ({ handleIcon }) => {
                     onClick={() => handleIcon(false)}
                   >
                     <div className={styles.mInnerBoxDiv}>
-                      <h5>Data Analytics- Non Tech Professionals</h5>
+                      <h5>Data Analytics Course</h5>
                       <span>
                         <div>2 Live Projects</div>
                         <BsDot className={styles.dot} />
@@ -348,7 +348,7 @@ const MegaMenu = ({ handleIcon }) => {
                 onClick={() => handleIcon(false)}
               >
                 <div className={styles.mInnerBoxDiv}>
-                  <h5>Data Analytics- Non Tech Professionals</h5>
+                  <h5>Data Analytics Course</h5>
                   <span>
                     <div>Live Doubt Sessions</div>
                     <BsDot className={styles.dot} />
@@ -396,7 +396,7 @@ const MegaMenu = ({ handleIcon }) => {
                 onClick={() => handleIcon(false)}
               >
                 <div className={styles.mInnerBoxDiv}>
-                  <h5>Data Analytics- Non Tech Professionals</h5>
+                  <h5>Data Analytics Course</h5>
                   <span>
                     <div>Live Project Sessions</div>
                     <BsDot className={styles.dot} />

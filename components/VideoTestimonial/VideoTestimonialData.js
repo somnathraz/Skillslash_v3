@@ -21,7 +21,7 @@ export const fsReview = [
   {
     id: 3,
     img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/Review/Akarsh+Srivastava.png",
-    name: "Akarsh,  Data Scientist",
+    name: "Akarsh,  Data Analyst",
     link: "PaykTlWUmRA",
     alt: "Akarsh Srivastava review",
     para: "Skillslash makes it easier to pursue course while working as a professional",
@@ -29,9 +29,9 @@ export const fsReview = [
   {
     id: 1,
     img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/Review/Mrin%EF%BB%BFal+Sahay.png",
-    name: "Mrinal Sahay, Data Scientist ",
+    name: "Mrinal Sahay, Data Analyst ",
     link: "IftwFoDA3rI",
     alt: "Mrinal Sahay review",
-    para: "Data Scientist is currently the best career option to choose",
+    para: "Data Analyst is currently the best career option to choose",
   },
 ];

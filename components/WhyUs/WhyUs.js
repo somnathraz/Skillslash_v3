@@ -90,7 +90,7 @@ const WhyUs = () => {
               </motion.svg>
             </div>
             <motion.div className="relative h-[130px]">
-              <div className="flex gap-10  z-10 relative mt-[50px]">
+              <div className="flex gap-10 mt-8 z-10 relative">
                 <div className="flex h-max items-center">
                   <div className="border-[1px] border-white bg-black rounded-full h-[40px] w-[40px] flex items-center justify-center ">
                     <FaRegCirclePlay className="text-white text-3xl" />
@@ -100,14 +100,13 @@ const WhyUs = () => {
                     <span>::</span>
                   </div>
                 </div>
-                <div className="text-[#e1e1e1] flex flex-col gap-2">
+                <div className="text-[#e1e1e1]">
                   <h3 className="text-white text-[28px] font-bold max-[1281px]:text-[24px]">
-                    <span className="text-[#f18350]"> Live </span>Project
-                    Session
+                    <span className="text-[#f18350]">Triple</span> Certification
                   </h3>
-                  <li> Interactive sessions</li>
-                  <li> Multi-domain projects</li>
-                  <li>Weekly sessions</li>
+                  <li>Microsoft course completion certificate</li>
+                  <li>Project experience certificate</li>
+                  <li>Internship certificate</li>
                 </div>
               </div>
             </motion.div>
@@ -133,7 +132,7 @@ const WhyUs = () => {
               </div>
             </motion.div>
             <motion.div className="relative ">
-              <div className="flex gap-10 mt-8 z-10 relative">
+              <div className="flex gap-10  z-10 relative mt-[50px]">
                 <div className="flex h-max items-center">
                   <div className="border-[1px] border-white bg-black rounded-full h-[40px] w-[40px] flex items-center justify-center ">
                     <FaRegCirclePlay className="text-white text-3xl" />
@@ -143,13 +142,14 @@ const WhyUs = () => {
                     <span>::</span>
                   </div>
                 </div>
-                <div className="text-[#e1e1e1]">
+                <div className="text-[#e1e1e1] flex flex-col gap-2">
                   <h3 className="text-white text-[28px] font-bold max-[1281px]:text-[24px]">
-                    <span className="text-[#f18350]">Triple</span> Certification
+                    <span className="text-[#f18350]"> Live </span>Project
+                    Session
                   </h3>
-                  <li>Microsoft course completion certificate</li>
-                  <li>Project experience certificate</li>
-                  <li>Internship certificate</li>
+                  <li> Interactive sessions</li>
+                  <li> Multi-domain projects</li>
+                  <li>Weekly sessions</li>
                 </div>
               </div>
             </motion.div>

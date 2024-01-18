@@ -23,7 +23,7 @@ const demoVideos = () => {
       <Intro />
       <VideoTabs />
       <Footer />
-      <AutoPopUp />
+      {/* <AutoPopUp /> */}
     </div>
   );
 };

@@ -1,7 +1,10 @@
 import React from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import Image from "next/image";
-import { MdOutlineAccessAlarms } from "react-icons/md";
+import {
+  MdOutlineAccessAlarms,
+  MdOutlinePlayCircleOutline,
+} from "react-icons/md";
 import Link from "next/link";
 import {
   MdOutlineVideocam,
@@ -21,9 +24,10 @@ const Header = ({
   actualPrice,
   discount,
   link,
+  redirectDs,
 }) => {
   return (
-    <div className="grid grid-cols-[60%,39%] max-sm:flex max-sm:flex-col gap-5 max-sm:mb-[750px] bg-[#111621] w-full mt-[70px] px-28 max-sm:px-5 py-[100px] max-sm:py-14 relative">
+    <div className="grid grid-cols-[60%,39%] max-sm:flex max-sm:flex-col gap-5 max-sm:mb-[750px] bg-[#111621] w-full mt-[70px] px-28 max-sm:px-5 py-[100px] pb-[70px] max-sm:py-14 relative">
       <div className="absolute gradient top-0 left-0 h-full w-[60%] max-sm:w-full z-0"></div>
       <div className="flex flex-col gap-2 relative z-[1]">
         <div className="flex gap-3 text-[#F18350] font-bold items-center">
@@ -33,10 +37,19 @@ const Header = ({
           {/* <MdKeyboardArrowRight className="text-[white]" />
           <p>Data Science</p> */}
         </div>
+        {redirectDs && (
           <div className="px-4 py-[6px] mt-4 bg-white w-max rounded">
             {/* <Image src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/powered-by-microsoft-(White).png" alt="PoweredByMicrosoft" width={200} height={22}/> */}
-            <Image src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powered+by+microsoft.png" alt="PoweredByMicrosoft" width={200} height={22}/>
+
+            <Image
+              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powered+by+microsoft.png"
+              alt="PoweredByMicrosoft"
+              width={200}
+              height={22}
+            />
           </div>
+        )}
+
         <h1 className="text-5xl text-white font-bold leading-[58px] max-[1281px]:text-3xl max-sm:leading-[45px] mt-2">
           {title}
         </h1>
@@ -66,11 +79,19 @@ const Header = ({
             className="mx-auto"
           />
         </div>
+        <Link href="/demo-videos">
+          <button className="bg-[#f18350] px-3 py-2 mt-4">
+            Watch Demo Videos
+          </button>
+        </Link>
       </div>
       <div className="flex flex-col gap-7 relative">
         <div className="bg-white px-11 py-3 max-sm:px-0 rounded shadow flex flex-col w-full z-[1] absolute mt-28">
           <div className="absolute w-[413px]  max-sm:w-[313px] h-[290px] max-sm:h-[220px] top-[-120px] max-sm:top-[-100px] left-12 min-[1440px]:left-8 max-sm:left-7 max-sm:flex max-sm:justify-center">
-            <Image src={imgSrc} alt="headerImg" fill />
+            <Link href="/demo-videos">
+              <Image src={imgSrc} alt="headerImg" fill />
+              <MdOutlinePlayCircleOutline className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer " />
+            </Link>
           </div>
           <div className="flex gap-2 w-full items-center mt-[180px] max-sm:mt-[120px] max-sm:px-4">
             <p className="text-[#000000] flex gap-4 text-2xl font-bold items-center mr-3">
@@ -109,7 +130,7 @@ const Header = ({
                   Video Lessons
                 </span>
                 <span>
-                  <b>{hrs}</b>
+                  <b>{hrs} Hrs</b>
                 </span>
               </p>
               <hr />
