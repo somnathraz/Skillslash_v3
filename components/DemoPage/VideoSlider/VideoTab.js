@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { IoIosArrowForward, IoIosArrowDown } from "react-icons/io";
 import TabData from "./VideoData";
 import styles from "./VideoTab.module.css";
-import { MdOutlineLocalFireDepartment, MdDataSaverOff } from "react-icons/md";
+import { BsGraphUp } from "react-icons/bs";
+
 import { AiOutlineLineChart } from "react-icons/ai";
 import { BsLaptop } from "react-icons/bs";
 import {
@@ -491,34 +492,32 @@ const VideoTabs = () => {
             )}
             {mobile ? (
               <span
-                key={TabData[6].id}
+                key={TabData[7].id}
                 id="0"
                 onClick={() => {
                   setPython(false);
-                  setDsa(false);
+                  setDsa(true);
                   setDataScience(false);
                   setMl(false);
                   setStat(false);
                   setNlp(false);
                   setDeepLearning(false);
-                  setProjects(true);
+                  setProjects(false);
                 }}
-                className={projects ? styles.spanActive : styles.span}
+                className={dsa ? styles.spanActive : styles.span}
               >
                 <span>
-                  <FaUncharted
-                    className={
-                      projects ? styles.ActiveSpanIcon : styles.spanIcon
-                    }
+                  <BsGraphUp
+                    className={dsa ? styles.ActiveSpanIcon : styles.spanIcon}
                   />
-                  {TabData[6].title}
+                  Dsa & System Design
                 </span>
 
                 <IoIosArrowDown />
               </span>
             ) : (
               <span
-                key={TabData[6].id}
+                key={TabData[7].id}
                 id="0"
                 onClick={() => {
                   setPython(false);
@@ -528,24 +527,22 @@ const VideoTabs = () => {
                   setNlp(false);
                   setStat(false);
                   setDeepLearning(false);
-                  setProjects(true);
+                  setProjects(false);
                 }}
-                className={projects ? styles.spanActive : styles.span}
+                className={dsa ? styles.spanActive : styles.span}
               >
                 <span>
-                  <FaUncharted
-                    className={
-                      projects ? styles.ActiveSpanIcon : styles.spanIcon
-                    }
+                  <BsGraphUp
+                    className={dsa ? styles.ActiveSpanIcon : styles.spanIcon}
                   />
-                  {TabData[6].title}
+                  Dsa & System Design
                 </span>
                 <IoIosArrowForward />
               </span>
             )}
-            {projects ? (
+            {dsa ? (
               <div className={styles.gridWrap}>
-                {TabData[6].desc.map((data) => {
+                {TabData[7].desc.map((data) => {
                   const src = `https://www.youtube-nocookie.com/embed/${data.link}`;
                   return (
                     <div className={styles.gridBox} key={data.id}>
@@ -685,6 +682,28 @@ const VideoTabs = () => {
             {projects ? (
               <div className={styles.gridWrap}>
                 {TabData[6].desc.map((data) => {
+                  const src = `https://www.youtube-nocookie.com/embed/${data.link}`;
+                  return (
+                    <div className={styles.gridBox} key={data.id}>
+                      <iframe
+                        src={src}
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        style={{
+                          border: "4px solid white",
+                          borderRadius: "4px",
+                        }}
+                      ></iframe>
+                    </div>
+                  );
+                })}
+              </div>
+            ) : (
+              ""
+            )}
+            {dsa ? (
+              <div className={styles.gridWrap}>
+                {TabData[7].desc.map((data) => {
                   const src = `https://www.youtube-nocookie.com/embed/${data.link}`;
                   return (
                     <div className={styles.gridBox} key={data.id}>

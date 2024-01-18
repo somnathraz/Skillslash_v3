@@ -76,6 +76,7 @@ const TabData = [
       },
     ],
   },
+
   {
     id: "Deep Learning",
     title: "Deep Learning",
@@ -161,6 +162,28 @@ const TabData = [
       {
         id: 4,
         link: "JBOt9G3_dZ4",
+      },
+    ],
+  },
+  {
+    id: "dsa",
+    title: "Projects",
+    desc: [
+      {
+        id: 1,
+        link: "WUQxUKnhsDc",
+      },
+      {
+        id: 2,
+        link: "CSU4Hp3KQV4",
+      },
+      {
+        id: 3,
+        link: "ozyZyq7s7",
+      },
+      {
+        id: 4,
+        link: "a2WbI_sGLsI",
       },
     ],
   },
