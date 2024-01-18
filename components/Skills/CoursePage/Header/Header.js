@@ -88,7 +88,7 @@ const Header = ({
       <div className="flex flex-col gap-7 relative">
         <div className="bg-white px-11 py-3 max-sm:px-0 rounded shadow flex flex-col w-full z-[1] absolute mt-28">
           <div className="absolute w-[413px]  max-sm:w-[313px] h-[290px] max-sm:h-[220px] top-[-120px] max-sm:top-[-100px] left-12 min-[1440px]:left-8 max-sm:left-7 max-sm:flex max-sm:justify-center">
-            <Link href="/demo-videos">
+            <Link href="https://courses.skillslash.com/learn">
               <Image src={imgSrc} alt="headerImg" fill />
               <MdOutlinePlayCircleOutline className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer " />
             </Link>
