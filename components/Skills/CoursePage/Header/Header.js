@@ -79,7 +79,7 @@ const Header = ({
             className="mx-auto"
           />
         </div>
-        <Link href="/demo-videos">
+        <Link href="https://courses.skillslash.com/learn">
           <button className="bg-[#f18350] px-3 py-2 mt-4">
             Watch Demo Videos
           </button>

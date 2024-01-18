@@ -40,12 +40,12 @@
 .TopBar {
   width: 100vw;
   scroll-behavior: smooth;
-  font-size: 14px;
+  font-size: 16px;
   position: fixed;
   top: 0px;
   text-align: center;
   z-index: 999;
-  background-color: #4f419a;
+  background-color: black;
   color: white;
   height: max-content;
   padding: 5px 50px;

@@ -75,7 +75,7 @@ const HomeFirstSection = ({ deskTopPara, backgroundImg }) => {
               Watch Demo Videos
             </button>
           </Link>
-          <a href="/selfpaced">
+          <a href="https://courses.skillslash.com/learn">
             <button>
               Explore Courses
               {/* <BsArrowRightShort className="bIconS" /> */}

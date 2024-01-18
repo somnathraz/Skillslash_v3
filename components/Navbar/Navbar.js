@@ -193,8 +193,8 @@ const Navbar = ({ link, event }) => {
         </div>
       </nav>
       <main className={styles.TopBar}>
-        Use code NEWYEAR50 to get 50% flat discount on all our Bootcamps and
-        other courses
+        Use code <b className="text-[#f18350] pl-[4px] pr-[4px]"> NEWYEAR50 </b>{" "}
+        to get 50% flat discount.
       </main>
     </div>
   );
