@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./SeoSyllabus.module.css";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import Link from "next/link";
+import Image from "next/image";
 import { AiOutlineTool } from "react-icons/ai";
 import { BiCheck, BiTimeFive } from "react-icons/bi";
 import { BsDot } from "react-icons/bs";
@@ -151,6 +152,16 @@ function DataScienceSyllabus({
             <div className={styles.fContent}>
               <p className={styles.fHeading}>{redirectDs ? "30+" : "15+"}</p>
               <span>Live Project</span>
+            </div>
+          </div>
+          <div className={styles.feature}>
+            <Image
+              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/chat-gif.gif"
+              width={50}
+              height={50}
+            />
+            <div className={styles.fContent}>
+              <p className="text-xl font-medium text-black">Chat With Us</p>
             </div>
           </div>
         </div>
