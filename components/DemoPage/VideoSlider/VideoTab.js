@@ -18,6 +18,7 @@ const VideoTabs = () => {
   const [nlp, setNlp] = useState(false);
   const [ml, setMl] = useState(false);
   const [stat, setStat] = useState(false);
+  const [dsa, setDsa] = useState(false);
   const [deepLearning, setDeepLearning] = useState(false);
   const [projects, setProjects] = useState(false);
   const [mobile, setMobile] = useState(false);
@@ -43,6 +44,7 @@ const VideoTabs = () => {
                 id="0"
                 onClick={() => {
                   setPython(true);
+                  setDsa(false);
                   setDataScience(false);
                   setMl(false);
                   setNlp(false);
@@ -67,6 +69,7 @@ const VideoTabs = () => {
                 id="0"
                 onClick={() => {
                   setPython(true);
+                  setDsa(false);
                   setDataScience(false);
                   setMl(false);
                   setNlp(false);
@@ -114,6 +117,7 @@ const VideoTabs = () => {
                 id="0"
                 onClick={() => {
                   setPython(false);
+                  setDsa(false);
                   setDataScience(false);
                   setMl(false);
                   setStat(true);
@@ -138,6 +142,7 @@ const VideoTabs = () => {
                 id="0"
                 onClick={() => {
                   setPython(false);
+                  setDsa(false);
                   setDataScience(false);
                   setMl(false);
                   setNlp(false);
@@ -185,6 +190,7 @@ const VideoTabs = () => {
                 id="0"
                 onClick={() => {
                   setPython(false);
+                  setDsa(false);
                   setDataScience(false);
                   setMl(true);
                   setNlp(false);
@@ -209,6 +215,7 @@ const VideoTabs = () => {
                 id="0"
                 onClick={() => {
                   setPython(false);
+                  setDsa(false);
                   setDataScience(false);
                   setMl(true);
                   setNlp(false);
@@ -257,6 +264,7 @@ const VideoTabs = () => {
                 id="0"
                 onClick={() => {
                   setPython(false);
+                  setDsa(false);
                   setStat(false);
                   setDataScience(false);
                   setMl(false);
@@ -285,6 +293,7 @@ const VideoTabs = () => {
                   setPython(false);
                   setDataScience(false);
                   setMl(false);
+                  setDsa(false);
                   setStat(false);
                   setNlp(false);
                   setDeepLearning(true);
@@ -333,6 +342,7 @@ const VideoTabs = () => {
                 onClick={() => {
                   setDataScience(false);
                   setPython(false);
+                  setDsa(false);
                   setMl(false);
                   setStat(false);
                   setNlp(true);
@@ -356,6 +366,7 @@ const VideoTabs = () => {
                 onClick={() => {
                   setDataScience(false);
                   setPython(false);
+                  setDsa(false);
                   setMl(false);
                   setStat(false);
                   setNlp(true);
@@ -408,6 +419,7 @@ const VideoTabs = () => {
                 id="0"
                 onClick={() => {
                   setPython(false);
+                  setDsa(false);
                   setDataScience(false);
                   setMl(false);
                   setStat(false);
@@ -434,6 +446,83 @@ const VideoTabs = () => {
                 id="0"
                 onClick={() => {
                   setPython(false);
+                  setDsa(false);
+                  setDataScience(false);
+                  setMl(false);
+                  setNlp(false);
+                  setStat(false);
+                  setDeepLearning(false);
+                  setProjects(true);
+                }}
+                className={projects ? styles.spanActive : styles.span}
+              >
+                <span>
+                  <FaUncharted
+                    className={
+                      projects ? styles.ActiveSpanIcon : styles.spanIcon
+                    }
+                  />
+                  {TabData[6].title}
+                </span>
+                <IoIosArrowForward />
+              </span>
+            )}
+            {projects ? (
+              <div className={styles.gridWrap}>
+                {TabData[6].desc.map((data) => {
+                  const src = `https://www.youtube-nocookie.com/embed/${data.link}`;
+                  return (
+                    <div className={styles.gridBox} key={data.id}>
+                      <iframe
+                        src={src}
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        style={{
+                          border: "4px solid white",
+                          borderRadius: "4px",
+                        }}
+                      ></iframe>
+                    </div>
+                  );
+                })}
+              </div>
+            ) : (
+              ""
+            )}
+            {mobile ? (
+              <span
+                key={TabData[6].id}
+                id="0"
+                onClick={() => {
+                  setPython(false);
+                  setDsa(false);
+                  setDataScience(false);
+                  setMl(false);
+                  setStat(false);
+                  setNlp(false);
+                  setDeepLearning(false);
+                  setProjects(true);
+                }}
+                className={projects ? styles.spanActive : styles.span}
+              >
+                <span>
+                  <FaUncharted
+                    className={
+                      projects ? styles.ActiveSpanIcon : styles.spanIcon
+                    }
+                  />
+                  {TabData[6].title}
+                </span>
+
+                <IoIosArrowDown />
+              </span>
+            ) : (
+              <span
+                key={TabData[6].id}
+                id="0"
+                onClick={() => {
+                  setPython(false);
+                  setDsa(true);
                   setDataScience(false);
                   setMl(false);
                   setNlp(false);

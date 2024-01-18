@@ -15,6 +15,8 @@ import Learn from "../../components/Skills/CoursePage/Learn/Learn";
 import Footer from "../../components/Footer/Footer";
 import WhatsappButton from "../../components/WhatsAppButton/WhatsappButton";
 import CTA from "../../components/CTA/CTA";
+import CustomPopup from "../../components/Course/OfferPopup/CustomPopup";
+import MiddlePopup from "../../components/Course/OfferPopup/MiddlePopup";
 
 const DataSciencePage = ({ DataScienceCourseData }) => {
   const FaqDATA = [
@@ -162,6 +164,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
       </div>
       <Footer />
       <WhatsappButton />
+      <MiddlePopup />
     </div>
   );
 };

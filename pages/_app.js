@@ -16,8 +16,22 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Script
-        id="ze-snippet"
-        src="https://static.zdassets.com/ekr/snippet.js?key=26328f0b-05d1-4cd3-a18c-bd2fdd408471"
+        type="text/javascript"
+        id="zsiqchat"
+        dangerouslySetInnerHTML={{
+          __html: `
+        var $zoho=$zoho || {};
+        $zoho.salesiq = $zoho.salesiq || {widgetcode: "siq69d23de7c07a840e811eb99d28cfba44ec96ea04cb91a8975de94be5e6e502c1", values:{},ready:function(){}};
+        var d=document;
+        var s=d.createElement("script");
+        s.type="text/javascript";
+        s.id="zsiqscript";
+        s.defer=true;
+        s.src="https://salesiq.zohopublic.in/widget";
+        var t=d.getElementsByTagName("script")[0];
+        t.parentNode.insertBefore(s,t);
+      `,
+        }}
         strategy="afterInteractive"
       />
       <main className={montserrat.className}>
