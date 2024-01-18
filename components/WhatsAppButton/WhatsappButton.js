@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./WhatsappButton.module.css";
+import styles from "./WhatsAppButtons.module.css";
 import { FaWhatsapp } from "react-icons/fa";
 const WhatsappButton = () => {
   return (
