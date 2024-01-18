@@ -28,13 +28,13 @@ const Intro = () => {
         </div>
       )}
       <div className={style.contentWrapper}>
-        <div>
+        <div className="flex flex-col gap-5">
           <h2>Demo Session And Sample Class Recordings</h2>
           <div className={style.paraWrap}>
             <p>
               Our mission is to make our learners achieve their desired
-              outcomes.Skillslash has impacted 1 million+ registered learners in
-              50+ countries across the world.
+              outcomes. Skillslash has impacted 1 million+ registered learners
+              in 50+ countries across the world.
             </p>
           </div>
           <button>Explore Demo Videos</button>

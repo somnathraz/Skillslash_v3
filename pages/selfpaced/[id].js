@@ -109,6 +109,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         actualPrice={DataScienceCourseData.data.header.actualPrice}
         discount={DataScienceCourseData.data.header.discount}
         link={DataScienceCourseData.data.header.link}
+        redirectDs={DataScienceCourseData.data.header.dataScience}
       />
       <Learn
         firstPoint={DataScienceCourseData.data.header.firstPoint}
@@ -122,12 +123,18 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
       <div id="certificate">
         <WhyUsAnimate />
       </div>
-      <VideoTestimonial
-        redirectDs={DataScienceCourseData.data.header.dataScience}
-        heading="What is it like to train with us?"
-        spanText="our learners say it best."
-      />
-      <Reviews />
+      {DataScienceCourseData.data.header.FullStack ? (
+        ""
+      ) : (
+        <VideoTestimonial
+          redirectDa={DataScienceCourseData.data.header.dataAnalytics}
+          redirectDs={DataScienceCourseData.data.header.dataScience}
+          heading="What is it like to train with us?"
+          spanText="our learners say it best."
+        />
+      )}
+
+      <Reviews redirectFs={DataScienceCourseData.data.header.FullStack} />
       <DetailTable offerPrice={DataScienceCourseData.data.header.offerPrice} />
       <div id="modules">
         <DataScienceSyllabus

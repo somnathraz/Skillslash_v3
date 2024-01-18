@@ -1,20 +1,10 @@
 import React, { useState, useEffect } from "react";
 import styles from "../Course/FirstSection/FirstSection.module.css";
 import Image from "next/image";
+import Link from "next/link";
 import { BiVideo } from "react-icons/bi";
 
-const HomeFirstSection = ({
-  deskTopPara,
-  backgroundImg,
-  usp1,
-  usp2,
-  usp3,
-  usp4,
-  usp1Span,
-  usp2Span,
-  usp3Span,
-  usp4Span,
-}) => {
+const HomeFirstSection = ({ deskTopPara, backgroundImg }) => {
   // const [video, setVideo] = useState(false);
   const [courseTitles, setCourseTitles] = useState([
     {
@@ -77,6 +67,14 @@ const HomeFirstSection = ({
         {/* <TextAnimation homePage={true} /> */}
 
         <div className={styles.btnWrapper}>
+          <Link href="https://courses.skillslash.com/learn">
+            <button
+              className="bg-[#f18350] px-3 py-2 text-white"
+              style={{ background: "#f18350", color: "white" }}
+            >
+              Watch Demo Videos
+            </button>
+          </Link>
           <a href="/selfpaced">
             <button>
               Explore Courses

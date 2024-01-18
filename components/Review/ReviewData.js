@@ -212,15 +212,7 @@ export const fsReview = [
     para: "The trainers at Skillslash are quite amazing. The teaching style was simple yet effective. I was able to get into my dream company IBM within 7 months",
     desc: "The trainers at Skillslash are quite amazing. The teaching style was simple yet effective. I was able to get into my dream company IBM within 7 months The trainers at Skillslash are quite amazing. The teaching style was simple yet effective. I was able to get into my dream company IBM within 7 months",
   },
-  {
-    id: 2,
-    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/Mirnal_sahay_review.webp",
-    name: "Mirnal Sahay",
-    alt: "Mrinal Sahay review",
-    rating: "high",
-    para: "The trainers at Skillslash are quite amazing. The teaching style was simple yet effective. I was able to get into my dream company IBM within 7 months",
-    desc: "One of the best course providers is Skillslash, their data science course has helped me become the data scientist I am today. There are tons of differences  between studying data science and working as a data  scientist.",
-  },
+
   {
     id: 3,
     img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/Manisha_singh.webp",
