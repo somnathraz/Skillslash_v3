@@ -192,10 +192,10 @@ const Navbar = ({ link, event }) => {
           )}
         </div>
       </nav>
-      {/* <main className={styles.TopBar}>
-        Upto INR 30,000/- scholarship..... On selected courses for the 1st 2
-        enrollments
-      </main> */}
+      <main className={styles.TopBar}>
+        Use code NEWYEAR50 to get 50% flat discount on all our Bootcamps and
+        other courses
+      </main>
     </div>
   );
 };

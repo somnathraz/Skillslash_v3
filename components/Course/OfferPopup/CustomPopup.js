@@ -36,7 +36,7 @@ const CustomPopup = ({
     <div className={open ? styles.OfferPopupCus : styles.hide}>
       <AiFillCloseCircle className={styles.Icon} onClick={handelOpen} />
       <div className={styles.Offer}>
-        <h6 className="font-bold">Grab 50% Discount on All Our Bundle</h6>
+        <h6 className="font-bold">Grab 50% Discount on All Our Bootcamp</h6>
         <p>
           <strong>Data Science & AI Bootcamp - Professionals:</strong>
           <s style={{ marginRight: "5px" }}> MRP ₹11,999</s>
@@ -57,13 +57,20 @@ const CustomPopup = ({
           <s style={{ marginRight: "5px" }}>MRP ₹7,999 </s>
           <s>3,999</s> 2000
         </p>
-
-        <Link
-          href="https://wa.me/+918391911911?text=ChatWithUs"
-          style={{ marginTop: "20px" }}
-        >
-          <button>Get Discount</button>
-        </Link>
+        <div className="flex gap-2">
+          <Link
+            href="https://wa.me/+918391911911?text=ChatWithUs"
+            style={{ marginTop: "20px" }}
+          >
+            <button>Get Discount</button>
+          </Link>
+          <Link
+            href="https://wa.me/+918391911911?text=ChatWithUs"
+            style={{ marginTop: "20px" }}
+          >
+            <button>Watch Intro Video</button>
+          </Link>
+        </div>
       </div>
     </div>
   );
