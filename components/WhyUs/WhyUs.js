@@ -4,13 +4,12 @@ import Image from "next/image";
 import { IoIosArrowBack } from "react-icons/io";
 import { motion, useScroll } from "framer-motion";
 
-const WhyUs = () => {
+const WhyUs = ({ redirectDs }) => {
   const certRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: certRef.current,
   });
   const intervalIdRef = useRef(null);
-  const parentIdRef = useRef(null);
   const imageSrc = [
     "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Certificate/Certificate+Of+Internship.webp",
     // Add other image URLs as needed
@@ -178,6 +177,7 @@ const WhyUs = () => {
               </div>
             </motion.div>
           </div>
+
           <div className="relative h-[415px] max-[1281px]:h-[390px] mt-[-85px]">
             <Image
               src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/why-us-image.webp"
@@ -186,117 +186,125 @@ const WhyUs = () => {
             />
           </div>
         </div>
-        <div
-          className="grid grid-cols-[44%,53%] max-[1281px]:gird-cols-[45%,53%] relative px-36 max-sm:px-5 h-[350px] max-[1281px]:px-24  items-center gap-10 pb-[60px]  pt-10"
-          ref={certRef}
-        >
-          <div className="absolute top-[0px] h-[666px] left-[80px] max-[1281px]:left-[58px] z-10">
-            <motion.svg
-              preserveAspectRatio="xMidYMax meet"
-              className="h-[470px] w-[650px] max-sm:hidden max-[1281px]:hidden"
-            >
-              <motion.path
-                id="animatedPath1"
-                fill="none"
-                d="M 5 0 V 367  Q 5 380, 20 380 H 520 Q 540 380, 540 390 V 440"
-                stroke="black"
-                strokeWidth="2"
-                className="z-10"
-              />
-              <motion.path
-                id="animatedPath1"
-                fill="none"
-                d="M 5 0 V 367  Q 5 380, 20 380 H 520 Q 540 380, 540 390 V 440"
-                stroke="#f18350"
-                strokeWidth="2"
-                className="z-10"
-                pathLength={1}
-                style={{ pathLength: scrollYProgress }}
-              />
-              <circle
-                cx="540"
-                cy="450"
-                r="10"
-                fill="none"
-                stroke="black"
-                strokeWidth={1}
-              />
-              <motion.circle
-                cx="540"
-                cy="450"
-                r="10"
-                fill="none"
-                stroke="#f18350"
-                strokeWidth={1}
-                pathLength={1}
-                className="z-10"
-                style={{ pathLength: scrollYProgress }}
-              />
-            </motion.svg>
-          </div>
+        {redirectDs && (
           <div
-            onMouseEnter={() => setAnimateState(false)}
-            onMouseLeave={() => setAnimateState(true)}
-            className="absolute top-0  z-10 h-full w-full flex items-end justify-end"
+            className="grid grid-cols-[44%,53%] max-[1281px]:gird-cols-[45%,53%] relative px-36 max-sm:px-5 h-[350px] max-[1281px]:px-24  items-center gap-10 pb-[60px]  pt-10"
+            ref={certRef}
           >
-            {animateState ? (
-              <motion.div
-                ref={intervalIdRef}
-                id="slide"
-                variants={variants}
-                initial="initial"
-                animate="animate"
-                onMouseEnter={() => setAnimateState(false)}
-                onMouseOver={() => setAnimateState(false)}
-                onMouseLeave={() => setAnimateState(true)}
-                className="bg-[#0000005e] h-full border-l-8 border-black relative z-10"
+            <div className="absolute top-[0px] h-[666px] left-[80px] max-[1281px]:left-[58px] z-10">
+              <motion.svg
+                preserveAspectRatio="xMidYMax meet"
+                className="h-[470px] w-[650px] max-sm:hidden max-[1281px]:hidden"
               >
-                <div className="h-[40px] w-10 bg-black flex items-center justify-center z-20 absolute top-[41%] left-[-25px] rounded-full">
-                  <IoIosArrowBack className="text-3xl text-white" />
+                <motion.path
+                  id="animatedPath1"
+                  fill="none"
+                  d="M 5 0 V 367  Q 5 380, 20 380 H 520 Q 540 380, 540 390 V 440"
+                  stroke="black"
+                  strokeWidth="2"
+                  className="z-10"
+                />
+                <motion.path
+                  id="animatedPath1"
+                  fill="none"
+                  d="M 5 0 V 367  Q 5 380, 20 380 H 520 Q 540 380, 540 390 V 440"
+                  stroke="#f18350"
+                  strokeWidth="2"
+                  className="z-10"
+                  pathLength={1}
+                  style={{ pathLength: scrollYProgress }}
+                />
+                <circle
+                  cx="540"
+                  cy="450"
+                  r="10"
+                  fill="none"
+                  stroke="black"
+                  strokeWidth={1}
+                />
+                <motion.circle
+                  cx="540"
+                  cy="450"
+                  r="10"
+                  fill="none"
+                  stroke="#f18350"
+                  strokeWidth={1}
+                  pathLength={1}
+                  className="z-10"
+                  style={{ pathLength: scrollYProgress }}
+                />
+              </motion.svg>
+            </div>
+            <div
+              onMouseEnter={() => setAnimateState(false)}
+              onMouseLeave={() => setAnimateState(true)}
+              className="absolute top-0  z-10 h-full w-full flex items-end justify-end"
+            >
+              {animateState ? (
+                <motion.div
+                  ref={intervalIdRef}
+                  id="slide"
+                  variants={variants}
+                  initial="initial"
+                  animate="animate"
+                  onMouseEnter={() => setAnimateState(false)}
+                  onMouseOver={() => setAnimateState(false)}
+                  onMouseLeave={() => setAnimateState(true)}
+                  className="bg-[#0000005e] h-full border-l-8 border-black relative z-10"
+                >
+                  <div className="h-[40px] w-10 bg-black flex items-center justify-center z-20 absolute top-[41%] left-[-25px] rounded-full">
+                    <IoIosArrowBack className="text-3xl text-white" />
+                  </div>
+                </motion.div>
+              ) : (
+                <div className="bg-[#0000005e] w-[130px]  h-full border-l-8 border-black relative z-10">
+                  <div className="h-[40px] w-10 bg-black flex items-center justify-center z-20 absolute top-[41%] left-[-25px] rounded-full">
+                    <IoIosArrowBack className="text-3xl text-white" />
+                  </div>
                 </div>
-              </motion.div>
-            ) : (
-              <div className="bg-[#0000005e] w-[130px]  h-full border-l-8 border-black relative z-10">
-                <div className="h-[40px] w-10 bg-black flex items-center justify-center z-20 absolute top-[41%] left-[-25px] rounded-full">
-                  <IoIosArrowBack className="text-3xl text-white" />
+              )}
+            </div>
+
+            <div className="relative w-full h-full  ">
+              <Image
+                src={imageSrc[currentIndex]}
+                fill
+                alt="certificate image"
+              />
+            </div>
+
+            <div className="flex flex-col gap-4">
+              <h3 className="text-4xl text-[#4f419a] font-bold">
+                Triple Certification
+              </h3>
+              <div className="flex flex-col gap-2">
+                <div>
+                  <h3 className="font-bold"> Internship Certificate</h3>
+                  <p>
+                    Showcase experience to recruiters with internship
+                    certificate from Skill-AI. Stand out of the crowd with
+                    experience.
+                  </p>
                 </div>
-              </div>
-            )}
-          </div>
-
-          <div className="relative w-full h-full  ">
-            <Image src={imageSrc[currentIndex]} fill alt="certificate image" />
-          </div>
-
-          <div className="flex flex-col gap-4">
-            <h3 className="text-4xl text-[#4f419a] font-bold">
-              Triple Certification
-            </h3>
-            <div className="flex flex-col gap-2">
-              <div>
-                <h3 className="font-bold"> Internship Certificate</h3>
-                <p>
-                  Showcase experience to recruiters with internship certificate
-                  from Skill-AI. Stand out of the crowd with experience.
-                </p>
-              </div>
-              <div>
-                <h3 className="font-bold">Project Experience Certificate</h3>
-                <p>
-                  Micro validation of your internship experience from Skill-AI,
-                  showcase the hiring manager the list of real-life projects you
-                </p>
-              </div>
-              <div>
-                <h3 className="font-bold">Microsoft Certificate</h3>
-                <p>
-                  Enhance your resume and LinkedIn profile with the certificate
-                  from global leader in this technology.
-                </p>
+                <div>
+                  <h3 className="font-bold">Project Experience Certificate</h3>
+                  <p>
+                    Micro validation of your internship experience from
+                    Skill-AI, showcase the hiring manager the list of real-life
+                    projects you
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-bold">Microsoft Certificate</h3>
+                  <p>
+                    Enhance your resume and LinkedIn profile with the
+                    certificate from global leader in this technology.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );

@@ -13,18 +13,26 @@ const MiddlePopup = () => {
   };
 
   useEffect(() => {
+    let timeOut;
     if (onetime)
-      setTimeout(() => {
+      timeOut = setTimeout(() => {
         setOpen(true);
       }, 3000);
-    return;
-  }, []);
-  const popupShow = () => {
-    setPopups(true);
-  };
+    if (open) {
+      // Add a class to disable scrolling on the body
+      document.body.style.overflow = "hidden";
+
+      // Remove the class when the modal is closed
+      return () => {
+        document.body.style.overflow = "visible";
+      };
+    }
+    return () => clearTimeout(timeOut);
+  }, [open]);
+
   return (
     open && (
-      <div className="absolute h-screen w-screen bg-[#00000062] left-0 top-0 z-[1001] flex items-center justify-center">
+      <div className="fixed overflow-hidden h-screen w-screen bg-[#00000062] left-0 top-0 z-[1001] flex items-center justify-center">
         <div className="bg-white w-[50%] max-sm:w-[90%] h-max rounded-lg flex  flex-col items-center justify-center px-16 py-10 gap-5 relative">
           <AiFillCloseCircle
             className="absolute right-0 top-0 text-2xl text-black"
