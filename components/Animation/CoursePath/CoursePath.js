@@ -114,13 +114,13 @@ function YourComponent() {
             <div className="flex max-sm:flex-col gap-5 max-sm:gap-3 items-center max-sm:items-start">
               <div>
                 <p className="font-semibold flex gap-4 items-center text-[#f18350] text-2xl mt-4 max-sm:mt-3">
-                  ₹8,999{" "}
+                  ₹5,999{" "}
                   <span className=" text-[#4D4D4D] line-through text-lg max-sm:text-[16px] max-sm:font-">
                     ₹11,999
                   </span>
                 </p>
               </div>
-              <Link href="/selfpaced/data-science-&-aI-bootcamp-professionals">
+              <Link href="/selfpaced/data-science-&-aI-bootcamp">
                 <button className="bg-[#f18350] px-3 py-1 mt-4 max-sm:mt-0 max-sm:w-full max-sm:justify-center max-sm:py-2">
                   Explore Bootcamp
                 </button>
@@ -227,7 +227,7 @@ function YourComponent() {
                   </span>
                 </p>
               </div>
-              <Link href="/selfpaced/data-analytics-non-tech-professional">
+              <Link href="/selfpaced/data-analytics-bootcamp">
                 <button className="bg-[#f18350] px-3 py-1 mt-4 max-sm:mt-0 max-sm:w-full max-sm:justify-center max-sm:py-2">
                   Explore Bootcamp
                 </button>
@@ -305,15 +305,15 @@ function YourComponent() {
           </div> */}
 
           <div className="flex flex-col gap-4">
-            <div className="w-[32%] max-sm:w-[70%]">
+            <div className="w-[32%] max-sm:w-[100%]">
               <Image
                 src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/FAANG+Software+Developer+as+Trainers.png"
                 alt="PoweredByMicrosoft"
-                width={mobile ? 180 : 230}
-                height={mobile ? 19 : 24}
+                width={230}
+                height={24}
               />
             </div>
-            <h3 className="text-4xl max-sm:text-2xl font-bold text-[#f18350] w-[70%] ">
+            <h3 className="text-4xl max-sm:text-2xl font-bold text-[#f18350] w-[70%] max-sm:w-[100%] ">
               DSA & System Design Bootcamp
             </h3>
             <p className="text-black font-medium ">Why this bootcamp?</p>
@@ -356,7 +356,7 @@ function YourComponent() {
                   </span>
                 </p>
               </div>
-              <Link href="/selfpaced/dsa-system-design">
+              <Link href="/selfpaced/dsa-system-design-bootcamp">
                 <button className="bg-[#f18350] px-3 py-1 mt-4 max-sm:mt-0 max-sm:w-full max-sm:justify-center max-sm:py-2">
                   Explore Bootcamp
                 </button>

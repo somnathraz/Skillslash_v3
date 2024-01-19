@@ -50,7 +50,7 @@ const MegaMenu = ({ handleIcon }) => {
                   className={styles.mInnerBox}
                   onClick={() => handleIcon(false)}
                 >
-                  <a href="/selfpaced/data-science-&-aI-bootcamp-professional">
+                  <a href="/selfpaced/data-science-&-aI-bootcamp">
                     <div className={styles.mInnerBoxDiv}>
                       <h5>Data Science & AI Bootcamp</h5>
                       <span>
@@ -61,7 +61,7 @@ const MegaMenu = ({ handleIcon }) => {
                     </div>
                   </a>
                 </div>
-                <a href="/selfpaced/dsa-system-design">
+                <a href="/selfpaced/dsa-system-design-bootcamp">
                   <div
                     className={styles.mInnerBox}
                     onClick={() => handleIcon(false)}
@@ -76,7 +76,7 @@ const MegaMenu = ({ handleIcon }) => {
                     </div>
                   </div>
                 </a>
-                <a href="/business-analytics-course">
+                <a href="/selfpaced/data-analytics-bootcamp">
                   <div
                     className={styles.mInnerBox}
                     onClick={() => handleIcon(false)}
@@ -134,7 +134,7 @@ const MegaMenu = ({ handleIcon }) => {
                   className={styles.mInnerBox}
                   onClick={() => handleIcon(false)}
                 >
-                  <a href="/selfpaced/data-science-&-aI-bootcamp-professional">
+                  <a href="/selfpaced/data-science-&-aI-bootcamp">
                     <div className={styles.mInnerBoxDiv}>
                       <h5>Data Science & AI Bootcamp</h5>
                       <span>
@@ -145,7 +145,7 @@ const MegaMenu = ({ handleIcon }) => {
                     </div>
                   </a>
                 </div>
-                <a href="/selfpaced/dsa-system-design">
+                <a href="/selfpaced/dsa-system-design-bootcamp">
                   <div
                     className={styles.mInnerBox}
                     onClick={() => handleIcon(false)}
@@ -160,7 +160,7 @@ const MegaMenu = ({ handleIcon }) => {
                     </div>
                   </div>
                 </a>
-                <a href="/selfpaced/data-analytics-non-tech-professionals">
+                <a href="/selfpaced/data-analytics-bootcamp">
                   <div
                     className={styles.mInnerBox}
                     onClick={() => handleIcon(false)}
@@ -316,7 +316,7 @@ const MegaMenu = ({ handleIcon }) => {
         {popular ? (
           <div className={styles.gridPanel}>
             <div className={styles.mInnerBox} onClick={() => handleIcon(false)}>
-              <a href="/selfpaced/data-science-&-aI-bootcamp-professionals">
+              <a href="/selfpaced/data-science-&-aI-bootcamp">
                 <div className={styles.mInnerBoxDiv}>
                   <h5>Data Science & AI Bootcamp</h5>
                   <span>
@@ -327,7 +327,7 @@ const MegaMenu = ({ handleIcon }) => {
                 </div>
               </a>
             </div>
-            <a href="/selfpaced/dsa-system-design">
+            <a href="/selfpaced/dsa-system-design-bootcamp">
               <div
                 className={styles.mInnerBox}
                 onClick={() => handleIcon(false)}
@@ -342,7 +342,7 @@ const MegaMenu = ({ handleIcon }) => {
                 </div>
               </div>
             </a>
-            <a href="/selfpaced/data-analytics-non-tech-professional">
+            <a href="/selfpaced/data-analytics-bootcamp">
               <div
                 className={styles.mInnerBox}
                 onClick={() => handleIcon(false)}
@@ -364,7 +364,7 @@ const MegaMenu = ({ handleIcon }) => {
         {DataScience ? (
           <div className={styles.gridPanel}>
             <div className={styles.mInnerBox} onClick={() => handleIcon(false)}>
-              <a href="/selfpaced/data-science-&-aI-bootcamp-professionals">
+              <a href="/selfpaced/data-science-&-aI-bootcamp">
                 <div className={styles.mInnerBoxDiv}>
                   <h5>Data Science & AI Bootcamp</h5>
                   <span>
@@ -375,7 +375,7 @@ const MegaMenu = ({ handleIcon }) => {
                 </div>
               </a>
             </div>
-            <a href="/selfpaced/dsa-system-design">
+            <a href="/selfpaced/dsa-system-design-bootcamp">
               <div
                 className={styles.mInnerBox}
                 onClick={() => handleIcon(false)}
@@ -390,7 +390,7 @@ const MegaMenu = ({ handleIcon }) => {
                 </div>
               </div>
             </a>
-            <a href="/selfpaced/data-analytics-non-tech-professionals">
+            <a href="/selfpaced/data-analytics-bootcamp">
               <div
                 className={styles.mInnerBox}
                 onClick={() => handleIcon(false)}

@@ -162,6 +162,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
       {/* <CourseDetails hour={DataScienceCourseData.data.header.hour} /> */}
       <div id="projects">
         <ProjectSlider
+          noProject={DataScienceCourseData.data.header.noProject}
           redirectBa={DataScienceCourseData.data.header.dataAnalytics}
           heading="Hands-on Projects"
           redirectDs={DataScienceCourseData.data.header.dataScience}
