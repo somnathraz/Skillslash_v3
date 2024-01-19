@@ -19,12 +19,15 @@ const ProjectSlider = ({
   seoPage,
   ProjectsPara,
   heading,
+  noProject,
 }) => {
+  console.log(noProject);
   const [swiperData, setSwiperData] = useState(
     DsProject.filter((DsProject) => {
       return DsProject.domainName === "BFSI";
     })
   );
+
   const [domainName, setDomainName] = useState("BFSI");
 
   useEffect(() => {
@@ -134,7 +137,8 @@ const ProjectSlider = ({
       <div className={styles.projectHeader}>
         <div className={styles.leftWrap}>
           <h2 className="text-4xl font-bold">
-            {redirectDs ? "30+ " : "15+ "}
+            {noProject}
+
             {heading}
           </h2>
         </div>
