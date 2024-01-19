@@ -25,15 +25,16 @@ const Header = ({
   discount,
   link,
   redirectDs,
+  redirectFs,
 }) => {
   return (
     <div className="grid grid-cols-[60%,39%] max-sm:flex max-sm:flex-col gap-5 max-sm:mb-[750px] bg-[#111621] w-full mt-[70px] px-28 max-sm:px-5 py-[100px] pb-[70px] max-sm:py-14 relative">
       <div className="absolute gradient top-0 left-0 h-full w-[60%] max-sm:w-full z-0"></div>
       <div className="flex flex-col gap-2 relative z-[1]">
-        <div className="flex gap-3 text-[#F18350] font-bold items-center max-sm:text-sm max-sm:gap-1">
-          <p className="text-[#F18350] font-semibold">Self-Paced</p>
+        <div className="flex gap-3 text-[#F18350] font-bold items-center max-sm:hidden">
+          <p className="text-[#F18350] font-semibold max-sm:text-[15px] max-sm:font-medium">Self-Paced</p>
           <MdKeyboardArrowRight className="text-white" />
-          <p className="text-[#F18350] font-semibold">{title}</p>
+          <p className="text-[#F18350] font-semibold max-sm:text-[15px] max-sm:font-medium">{title}</p>
           {/* <MdKeyboardArrowRight className="text-[white]" />
           <p>Data Science</p> */}
         </div>
@@ -49,11 +50,20 @@ const Header = ({
             />
           </div>
         )}
+      {redirectFs && (
+          <div className="relative w-[348px] max-sm:w-[310px] h-[32px] max-sm:h-[29px] mt-3 max-sm:mt-12 ">
+            {/* <Image src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/powered-by-microsoft-(White).png" alt="PoweredByMicrosoft" width={200} height={22}/> */}
 
-        <h1 className="text-5xl text-white font-bold leading-[58px] max-[1281px]:text-3xl max-sm:leading-[45px] mt-2">
+            <Image
+              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/FAANG+Software+Developer+as+Trainers.png"
+              alt="FAANG Operators" fill
+            />
+          </div>
+        )}
+        <h1 className="text-5xl text-white font-bold leading-[58px] max-[1281px]:text-3xl max-sm:leading-[45px]">
           {title}
         </h1>
-        <p className="text-[#cccccc] w-[91%] text-[17px] max-[1281px]:text-[16px] leading-[28px] max-sm:leading-[24px] font-light mt-2">
+        <p className="text-[#cccccc] w-[91%] text-[17px] max-sm:text-[16px] max-[1281px]:text-[16px] leading-[28px] max-sm:leading-[24px] font-light mt-2 max-sm:mt-0">
           {desc}
         </p>
         <div className="grid grid-cols-3 gap-2 border-[1px] mt-3 w-[75%] max-sm:w-[97%] rounded items-center px-4 py-1 justify-center">
