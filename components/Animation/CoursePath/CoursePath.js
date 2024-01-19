@@ -77,8 +77,8 @@ function YourComponent() {
                 height={mobile ? 19 : 24}
               />
             </div>
-            <h3 className="text-4xl max-sm:text-2xl font-bold text-[#f18350]">
-              Data Science & AI
+            <h3 className="text-4xl max-sm:text-2xl font-bold text-[#f18350] w-[70%] max-sm:w-[100%]">
+              Data Science & AI Bootcamp
             </h3>
             <p className="text-black font-medium ">Why this bootcamp?</p>
             <div className="flex gap-8 max-sm:flex-col max-sm:gap-3">
@@ -184,8 +184,8 @@ function YourComponent() {
                 height={mobile ? 19 : 24}
               />
             </div>
-            <h3 className="text-4xl font-bold text-[#f18350]  max-sm:text-2xl">
-              Data Analytics course
+            <h3 className="text-4xl font-bold text-[#f18350]  max-sm:text-2xl ">
+              Data Analytics Bootcamp
             </h3>
             <p className="text-black font-medium ">Why this bootcamp?</p>
             <div className="flex gap-8 max-sm:flex-col max-sm:gap-3">
