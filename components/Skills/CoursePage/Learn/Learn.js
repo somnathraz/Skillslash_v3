@@ -3,7 +3,13 @@ import { MdCheck } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
 
-const Learn = ({ firstPoint, secondPoint, thirdPoint, fourthPoint, redirectFs }) => {
+const Learn = ({
+  firstPoint,
+  secondPoint,
+  thirdPoint,
+  fourthPoint,
+  redirectFs,
+}) => {
   return (
     <div>
       <div className="grid grid-cols-[60%,39%] gap-5 px-28 max-sm:px-6 py-7 max-sm:py-4 max-sm:flex">
@@ -70,7 +76,11 @@ const Learn = ({ firstPoint, secondPoint, thirdPoint, fourthPoint, redirectFs })
             </div>
             <div className="bg-[#EEEAFF] rounded flex items-center justify-center py-2">
               <Image
-                src={redirectFs ? "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/java+icon.png" : "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/python-icon.png"}
+                src={
+                  redirectFs
+                    ? "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/java+icon.png"
+                    : "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/python-icon.png"
+                }
                 alt="headerImg"
                 width={34}
                 height={34}
@@ -78,18 +88,26 @@ const Learn = ({ firstPoint, secondPoint, thirdPoint, fourthPoint, redirectFs })
             </div>
             <div className="bg-[#EEEAFF] rounded flex items-center justify-center py-2">
               <Image
-                src={redirectFs ? "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/c%2B%2B+icon.png" : "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/tabluae-icon.png"}
+                src={
+                  redirectFs
+                    ? "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/c%2B%2B+icon.png"
+                    : "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/tabluae-icon.png"
+                }
                 alt="headerImg"
-                width={59}
-                height={58}
+                width={redirectFs ? 34 : 59}
+                height={redirectFs ? 34 : 58}
               />
             </div>
             <div className="bg-[#EEEAFF] rounded flex items-center justify-center py-2">
               <Image
-                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powerbi-icon.png"
+                src={
+                  redirectFs
+                    ? "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/js+icon.png"
+                    : "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powerbi-icon.png"
+                }
                 alt="headerImg"
-                width={54}
-                height={58}
+                width={redirectFs ? 34 : 54}
+                height={redirectFs ? 34 : 58}
               />
             </div>
             <div className="bg-[#EEEAFF] rounded flex items-center justify-center py-2">
