@@ -105,6 +105,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
       <Header
         title={DataScienceCourseData.data.header.title}
         desc={DataScienceCourseData.data.header.desc}
+        redirectFs={DataScienceCourseData.data.header.FullStack}
         imgSrc={DataScienceCourseData.data.header.imgSrc}
         hrs={DataScienceCourseData.data.header.hour}
         certification={DataScienceCourseData.data.header.certification}
@@ -116,6 +117,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
       />
       <Learn
         firstPoint={DataScienceCourseData.data.header.firstPoint}
+        redirectFs={DataScienceCourseData.data.header.FullStack}
         secondPoint={DataScienceCourseData.data.header.secondPoint}
         thirdPoint={DataScienceCourseData.data.header.thirdPoint}
         fourthPoint={DataScienceCourseData.data.header.fourthPoint}
