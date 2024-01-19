@@ -143,10 +143,9 @@ function DataScienceSyllabus({
             <BiTimeFive className={styles.clockIcon} />
             <div className={styles.fContent}>
               <p className={styles.fHeading}>{hour} Hrs</p>
-              <span>Live classes</span>
+              <span className="text-sm">Recorded classes</span>
             </div>
           </div>
-
           <div className={styles.feature}>
             <AiOutlineTool className={styles.settingIcon} />
             <div className={styles.fContent}>
@@ -154,16 +153,21 @@ function DataScienceSyllabus({
               <span>Live Project</span>
             </div>
           </div>
-          <div className={styles.feature}>
-            <Image
-              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/chat-gif.gif"
-              width={50}
-              height={50}
-            />
-            <div className={styles.fContent}>
-              <p className="text-xl font-medium text-black">Chat With Us</p>
+          <Link
+            href="https://wa.me/+918391911911?text=ChatWithUs"
+            className={styles.feature}
+          >
+            <div className="flex items-center justify-center">
+              <Image
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/chat-gif.gif"
+                width={50}
+                height={50}
+              />
+              <div className={styles.fContent}>
+                <p className="text-xl font-medium text-black">Chat With Us</p>
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

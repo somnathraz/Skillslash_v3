@@ -15,7 +15,6 @@ import Learn from "../../components/Skills/CoursePage/Learn/Learn";
 import Footer from "../../components/Footer/Footer";
 import WhatsappButton from "../../components/WhatsAppButton/WhatsappButton";
 import CTA from "../../components/CTA/CTA";
-import CustomPopup from "../../components/Course/OfferPopup/CustomPopup";
 import MiddlePopup from "../../components/Course/OfferPopup/MiddlePopup";
 
 const DataSciencePage = ({ DataScienceCourseData }) => {
@@ -121,7 +120,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         fourthPoint={DataScienceCourseData.data.header.fourthPoint}
       />
       <div id="certificate">
-        <WhyUs />
+        <WhyUs redirectDs={DataScienceCourseData.data.header.dataScience} />
       </div>
       <div id="certificate">
         <WhyUsAnimate />
@@ -138,7 +137,14 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
       )}
 
       <Reviews redirectFs={DataScienceCourseData.data.header.FullStack} />
-      <DetailTable offerPrice={DataScienceCourseData.data.header.offerPrice} />
+      <DetailTable
+        offerPrice={DataScienceCourseData.data.header.actualPrice}
+        hrs={DataScienceCourseData.data.header.hour}
+        otherHr={DataScienceCourseData.data.header.otherHr}
+        liveHr={DataScienceCourseData.data.header.liveHr}
+        redirectDs={DataScienceCourseData.data.header.dataScience}
+        redirectFs={DataScienceCourseData.data.header.FullStack}
+      />
       <CTA />
       <div id="modules">
         <DataScienceSyllabus
@@ -154,6 +160,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
       {/* <CourseDetails hour={DataScienceCourseData.data.header.hour} /> */}
       <div id="projects">
         <ProjectSlider
+          redirectBa={DataScienceCourseData.data.header.dataAnalytics}
           heading="Hands-on Projects"
           redirectDs={DataScienceCourseData.data.header.dataScience}
           redirectFs={DataScienceCourseData.data.header.FullStack}
@@ -172,7 +179,6 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
 export default DataSciencePage;
 export async function getStaticPaths() {
   const paths = getAllPostIds();
-
   return {
     paths,
     fallback: false,

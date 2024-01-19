@@ -221,7 +221,7 @@ function YourComponent() {
             <div className="flex max-sm:flex-col gap-5 max-sm:gap-3 items-center max-sm:items-start">
               <div>
                 <p className="font-semibold flex gap-4 items-center text-[#f18350] text-2xl mt-4 max-sm:mt-3">
-                  ₹5,999{" "}
+                  ₹3,999{" "}
                   <span className=" text-[#4D4D4D] line-through text-lg max-sm:text-[16px] max-sm:font-">
                     ₹7,999
                   </span>
@@ -305,16 +305,16 @@ function YourComponent() {
           </div> */}
 
           <div className="flex flex-col gap-4">
-            <div className="px-3 py-2 bg-[#EEEBFF] rounded w-[32%] max-sm:w-[70%]">
+            <div className="w-[32%] max-sm:w-[70%]">
               <Image
-                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powered+by+microsoft.png"
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/FAANG+Software+Developer+as+Trainers.png"
                 alt="PoweredByMicrosoft"
                 width={mobile ? 180 : 230}
                 height={mobile ? 19 : 24}
               />
             </div>
-            <h3 className="text-4xl max-sm:text-2xl font-bold text-[#f18350] ">
-              DSA + SD (FAANG)
+            <h3 className="text-4xl max-sm:text-2xl font-bold text-[#f18350] w-[70%] ">
+              DSA & System Design Bootcamp
             </h3>
             <p className="text-black font-medium ">Why this bootcamp?</p>
             <div className="flex gap-8 max-sm:flex-col max-sm:gap-3">

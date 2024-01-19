@@ -3,31 +3,53 @@ import Image from "next/image";
 import { FaCircleCheck } from "react-icons/fa6";
 import { MdOutlineClear } from "react-icons/md";
 
-const DetailTable = ({ offerPrice }) => {
+const DetailTable = ({
+  offerPrice,
+  hrs,
+  otherHr,
+  liveHr,
+  redirectDs,
+  redirectFs,
+}) => {
   return (
     <div className="px-40 py-10 flex flex-col gap-5 max-[1281px]:px-24 relative max-sm:px-5 max-sm:overflow-scroll bg-[#111621]">
       <h2 className="text-white font-bold text-4xl text-center max-sm:text-2xl">
         Skillslash Bootcamp
       </h2>
-      <div className="border-[1px] border-[#ffffff] rounded-lg gridBox grid  grid-cols-[35%,16%,16%,16%] max-[1281px]:gird-cols-[35%,17%,17%,19%]  gap-10 px-5 py-5 justify-center max-sm:w-max max-sm:overflow-scroll">
-        <div className="flex flex-col gap-3 mt-14 ml-5">
+      <div className="border-[1px] border-[#ffffff] rounded-lg gridBox grid  grid-cols-[35%,16%,16%,16%] max-[1281px]:gird-cols-[35%,17%,17%,19%]  gap-[44px] px-5 py-5 justify-center max-sm:w-max max-sm:overflow-scroll">
+        <div
+          className={`flex flex-col ${
+            redirectDs ? "gap-[13px]" : "gap-[14px]"
+          } max-sm:gap-3 mt-14 ml-5`}
+        >
           <p className="text-white">Lesson</p>
           <hr className="w-[60%] bg-[#646464] text-[#646464] border-[#646464]" />
           <p className="text-white">In-depth Lesson</p>
           <hr className="w-[60%] bg-[#646464] text-[#646464] border-[#646464]" />
+          {redirectFs && (
+            <>
+              <p className="text-white">FAANG Trainers</p>
+              <hr className="w-[60%] bg-[#646464] text-[#646464] border-[#646464]" />
+            </>
+          )}
           <p className="text-white">Live Doubt Clearing</p>
           <hr className="w-[60%] bg-[#646464] text-[#646464] border-[#646464]" />
           <p className="text-white">Live Projects</p>
           <hr className="w-[60%] bg-[#646464] text-[#646464] border-[#646464]" />
-          <p className="text-white">Course Completion Certificate</p>
-          <hr className="w-[60%] bg-[#646464] text-[#646464] border-[#646464]" />
-          <p className="text-white">Project Experience Certificate</p>
-          <hr className="w-[60%] bg-[#646464] text-[#646464] border-[#646464]" />
-          <p className="text-white">Internship Certificate</p>
-          <hr className="w-[60%] bg-[#646464] text-[#646464] border-[#646464]" />
-          <p className="text-white">Final Year Project Assistance</p>
-          <hr className="w-[60%] bg-[#646464] text-[#646464] border-[#646464]" />
-          <p className="text-white">Resume Building Session</p>
+          {redirectDs && (
+            <>
+              <p className="text-white">Microsoft Course Certificate</p>
+              <hr className="w-[60%] bg-[#646464] text-[#646464] border-[#646464]" />
+              <p className="text-white">Project Experience Certificate</p>
+              <hr className="w-[60%] bg-[#646464] text-[#646464] border-[#646464]" />
+              <p className="text-white">Internship Certificate</p>
+              <hr className="w-[60%] bg-[#646464] text-[#646464] border-[#646464]" />
+              <p className="text-white">Final Year Project Assistance</p>
+              <hr className="w-[60%] bg-[#646464] text-[#646464] border-[#646464]" />
+            </>
+          )}
+
+          <p className="text-white">Career Support</p>
           <hr className="w-[60%] bg-[#646464] text-[#646464] border-[#646464]" />
           <p className="text-white">Average Pricing</p>
         </div>
@@ -40,34 +62,43 @@ const DetailTable = ({ offerPrice }) => {
           />
           <p className="text-white mt-2">Recorded</p>
           <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
-          <p className="text-white">
-            <FaCircleCheck className="text-[#12c168] " />
-          </p>
+          <p className="text-white">{hrs} Hrs</p>
           <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
           <p className="text-white">
             <FaCircleCheck className="text-[#12c168] " />
           </p>
           <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
-          <p className="text-white">
-            <FaCircleCheck className="text-[#12c168] " />
-          </p>
+          {redirectFs && (
+            <>
+              <p className="text-white">
+                <FaCircleCheck className="text-[#12c168] " />
+              </p>
+              <hr className="w-[60%] bg-[#646464] text-[#646464] border-[#646464]" />
+            </>
+          )}
+          <p className="text-white">{redirectDs ? "30" : "15"}</p>
           <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
-          <p className="text-white max-sm:py-2">
-            <FaCircleCheck className="text-[#12c168] " />
-          </p>
-          <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
-          <p className="text-white max-sm:py-2">
-            <FaCircleCheck className="text-[#12c168] " />
-          </p>
-          <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
-          <p className="text-white max-sm:py-2">
-            <FaCircleCheck className="text-[#12c168] " />
-          </p>
-          <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
-          <p className="text-white max-sm:py-2">
-            <FaCircleCheck className="text-[#12c168] " />
-          </p>
-          <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
+          {redirectDs && (
+            <>
+              <p className="text-white max-sm:py-2">
+                <FaCircleCheck className="text-[#12c168] " />
+              </p>
+              <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
+              <p className="text-white max-sm:py-2">
+                <FaCircleCheck className="text-[#12c168] " />
+              </p>
+              <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
+              <p className="text-white max-sm:py-2">
+                <FaCircleCheck className="text-[#12c168] " />
+              </p>
+              <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
+              <p className="text-white max-sm:py-2">
+                <FaCircleCheck className="text-[#12c168] " />
+              </p>
+              <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
+            </>
+          )}
+
           <p className="text-white max-sm:py-2">
             <FaCircleCheck className="text-[#12c168] " />
           </p>
@@ -80,6 +111,16 @@ const DetailTable = ({ offerPrice }) => {
           </p>
           <p className="text-white">Recorded</p>
           <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
+          <p className="text-white">{otherHr} Hrs</p>
+          <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
+          {redirectFs && (
+            <>
+              <p className="text-white">
+                <FaCircleCheck className="text-[#12c168] " />
+              </p>
+              <hr className="w-[60%] bg-[#646464] text-[#646464] border-[#646464]" />
+            </>
+          )}
           <p className="text-white">
             <MdOutlineClear className="text-[#646464] " />
           </p>
@@ -88,26 +129,27 @@ const DetailTable = ({ offerPrice }) => {
             <MdOutlineClear className="text-[#646464] " />
           </p>
           <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
-          <p className="text-white">
-            <MdOutlineClear className="text-[#646464] " />
-          </p>
-          <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
-          <p className="text-white max-sm:py-2">
-            <MdOutlineClear className="text-[#646464] " />
-          </p>
-          <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
-          <p className="text-white max-sm:py-2">
-            <MdOutlineClear className="text-[#646464] " />
-          </p>
-          <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
-          <p className="text-white max-sm:py-2">
-            <MdOutlineClear className="text-[#646464] " />
-          </p>
-          <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
-          <p className="text-white max-sm:py-2">
-            <MdOutlineClear className="text-[#646464] " />
-          </p>
-          <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
+          {redirectDs && (
+            <>
+              <p className="text-white max-sm:py-2">
+                <MdOutlineClear className="text-[#646464] " />
+              </p>
+              <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
+              <p className="text-white max-sm:py-2">
+                <MdOutlineClear className="text-[#646464] " />
+              </p>
+              <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
+              <p className="text-white max-sm:py-2">
+                <MdOutlineClear className="text-[#646464] " />
+              </p>
+              <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
+              <p className="text-white max-sm:py-2">
+                <MdOutlineClear className="text-[#646464] " />
+              </p>
+              <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
+            </>
+          )}
+
           <p className="text-white max-sm:py-2">
             <MdOutlineClear className="text-[#646464] " />
           </p>
@@ -120,34 +162,43 @@ const DetailTable = ({ offerPrice }) => {
           </p>
           <p className="text-white">Live</p>
           <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
+          <p className="text-white">{liveHr} Hrs</p>
+          <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
+          {redirectFs && (
+            <>
+              <p className="text-white">
+                <FaCircleCheck className="text-[#12c168] " />
+              </p>
+              <hr className="w-[60%] bg-[#646464] text-[#646464] border-[#646464]" />
+            </>
+          )}
           <p className="text-white">
             <FaCircleCheck className="text-[#12c168] " />
           </p>
           <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
-          <p className="text-white">
-            <FaCircleCheck className="text-[#12c168] " />
-          </p>
+          <p className="text-white">{redirectDs ? "30" : "15"}</p>
           <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
-          <p className="text-white">
-            <FaCircleCheck className="text-[#12c168] " />
-          </p>
-          <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
-          <p className="text-white max-sm:py-2">
-            <FaCircleCheck className="text-[#12c168] " />
-          </p>
-          <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
-          <p className="text-white max-sm:py-2">
-            <MdOutlineClear className="text-[#646464] " />
-          </p>
-          <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
-          <p className="text-white max-sm:py-2">
-            <MdOutlineClear className="text-[#646464] " />
-          </p>
-          <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
-          <p className="text-white max-sm:py-2">
-            <MdOutlineClear className="text-[#646464] " />
-          </p>
-          <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
+          {redirectDs && (
+            <>
+              <p className="text-white max-sm:py-2">
+                <FaCircleCheck className="text-[#12c168] " />
+              </p>
+              <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
+              <p className="text-white max-sm:py-2">
+                <MdOutlineClear className="text-[#646464] " />
+              </p>
+              <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
+              <p className="text-white max-sm:py-2">
+                <MdOutlineClear className="text-[#646464] " />
+              </p>
+              <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
+              <p className="text-white max-sm:py-2">
+                <MdOutlineClear className="text-[#646464] " />
+              </p>
+              <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
+            </>
+          )}
+
           <p className="text-white max-sm:py-2">
             <FaCircleCheck className="text-[#12c168] " />
           </p>
