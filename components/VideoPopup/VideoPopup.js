@@ -11,7 +11,7 @@ const VideoPopup = (props) => {
     if (width < 481) {
       setMobile(true);
     }
-  });
+  }, []);
   return props.triggers ? (
     <div className={styles.FramePopup}>
       <div className={styles.iframeHolder}>

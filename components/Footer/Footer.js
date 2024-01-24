@@ -88,6 +88,16 @@ const Footer = () => {
               8391-911-911
             </p>
           </a>
+
+          <p className="mt-2">For Support call On this Number</p>
+          <div className="flex flex-col gap-2">
+            <a href="tel:+918867307615" className="text-white">
+              +918867307615
+            </a>
+            <a href="tel:+918105904632" className="text-white">
+              +918105904632
+            </a>
+          </div>
         </div>
         <div className={styles.fPages}>
           <h5>Pages</h5>

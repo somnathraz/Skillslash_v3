@@ -11,13 +11,7 @@ const MiddlePopup = () => {
     setOpen(false);
     setOnetime(false);
   };
-
   useEffect(() => {
-    let timeOut;
-    if (onetime)
-      timeOut = setTimeout(() => {
-        setOpen(true);
-      }, 3000);
     if (open) {
       // Add a class to disable scrolling on the body
       document.body.style.overflow = "hidden";
@@ -27,8 +21,16 @@ const MiddlePopup = () => {
         document.body.style.overflow = "visible";
       };
     }
-    return () => clearTimeout(timeOut);
   }, [open]);
+  useEffect(() => {
+    let timeOut;
+    if (onetime)
+      timeOut = setTimeout(() => {
+        setOpen(true);
+      }, 3000);
+
+    return () => clearTimeout(timeOut);
+  }, []);
 
   return (
     open && (
