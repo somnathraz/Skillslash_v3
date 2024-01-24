@@ -44,7 +44,7 @@ const FirstPart = ({ homePage }) => {
       <CoursePath />
       <CourseSlider />
       <div ref={ref}>
-        <WhyUs scrollYProgress={scrollYProgress} />
+        <WhyUs scrollYProgress={scrollYProgress} home={true} />
       </div>
       <WhyUsAnimate />
       {/* <BoxAnimation /> */}
