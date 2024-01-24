@@ -4,7 +4,7 @@ import Image from "next/image";
 import { IoIosArrowBack } from "react-icons/io";
 import { motion, useScroll } from "framer-motion";
 
-const WhyUs = ({ redirectDs }) => {
+const WhyUs = ({ redirectDs, home }) => {
   const certRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: certRef.current,
@@ -186,7 +186,7 @@ const WhyUs = ({ redirectDs }) => {
             />
           </div>
         </div>
-        {redirectDs && (
+        {(redirectDs || home) && (
           <div
             className="grid grid-cols-[44%,53%] max-[1281px]:gird-cols-[45%,53%] relative px-36 max-sm:px-5 h-[350px] max-[1281px]:px-24  items-center gap-10 pb-[60px]  pt-10"
             ref={certRef}

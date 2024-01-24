@@ -5,7 +5,7 @@ import ThirdFeature from "./ThreeFeature";
 import FourthFeature from "./FourthFeature";
 import { motion, useScroll } from "framer-motion";
 
-const WhyUsAnimate = () => {
+const WhyUsAnimate = ({ redirectDa }) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -38,9 +38,14 @@ const WhyUsAnimate = () => {
             <div className="h-[130px]">
               <SecondFeature />
             </div>
-            <div className="h-[160px]">
-              <ThirdFeature />
-            </div>
+            {redirectDa ? (
+              ""
+            ) : (
+              <div className="h-[160px]">
+                <ThirdFeature />
+              </div>
+            )}
+
             <div className="h-[130px]">
               <FourthFeature />
             </div>
