@@ -15,7 +15,9 @@ const WhyUsAnimate = ({ redirectDa, redirectDs, home }) => {
     "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Certificate/Certificate+Of+Internship.webp",
     // Add other image URLs as needed
     "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Certificate/theorax-project-certificate.webp",
-    "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Certificate/course-certificate.webp",
+    redirectDa
+      ? "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/data-sample-certificate.webp"
+      : "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/Microsoft-certificate-data-science-without-border.webp",
   ];
   return (
     <>

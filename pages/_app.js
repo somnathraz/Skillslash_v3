@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps }) {
         t.parentNode.insertBefore(s,t);
       `,
         }}
-        strategy="afterInteractive"
+        strategy="lazyOnload"
       />
       <main className={montserrat.className}>
         <Component {...pageProps} />
