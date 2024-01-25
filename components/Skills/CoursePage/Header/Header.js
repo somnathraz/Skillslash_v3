@@ -32,9 +32,13 @@ const Header = ({
       <div className="absolute gradient top-0 left-0 h-full w-[60%] max-sm:w-full z-0"></div>
       <div className="flex flex-col gap-2 relative z-[1]">
         <div className="flex gap-3 text-[#F18350] font-bold items-center max-sm:hidden">
-          <p className="text-[#F18350] font-semibold max-sm:text-[15px] max-sm:font-medium">Self-Paced</p>
+          <p className="text-[#F18350] font-semibold max-sm:text-[15px] max-sm:font-medium">
+            Self-Paced
+          </p>
           <MdKeyboardArrowRight className="text-white" />
-          <p className="text-[#F18350] font-semibold max-sm:text-[15px] max-sm:font-medium">{title}</p>
+          <p className="text-[#F18350] font-semibold max-sm:text-[15px] max-sm:font-medium">
+            {title}
+          </p>
           {/* <MdKeyboardArrowRight className="text-[white]" />
           <p>Data Science</p> */}
         </div>
@@ -47,16 +51,19 @@ const Header = ({
               alt="PoweredByMicrosoft"
               width={200}
               height={22}
+              priority
             />
           </div>
         )}
-      {redirectFs && (
+        {redirectFs && (
           <div className="relative w-[348px] max-sm:w-[310px] h-[32px] max-sm:h-[29px] mt-3 max-sm:mt-12 ">
             {/* <Image src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/powered-by-microsoft-(White).png" alt="PoweredByMicrosoft" width={200} height={22}/> */}
 
             <Image
               src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/FAANG+Software+Developer+as+Trainers.png"
-              alt="FAANG Operators" fill
+              alt="FAANG Operators"
+              fill
+              priority
             />
           </div>
         )}
@@ -72,6 +79,7 @@ const Header = ({
             alt="Goole_RReviews"
             width={150}
             height={23}
+            priority
             className="mx-auto"
           />
           <Image
@@ -79,6 +87,7 @@ const Header = ({
             alt="switchup_RReviews"
             width={150}
             height={23}
+            priority
             className="mx-auto"
           />
           <Image
@@ -86,6 +95,7 @@ const Header = ({
             alt="CR_RReviews"
             width={150}
             height={23}
+            priority
             className="mx-auto"
           />
         </div>
@@ -99,7 +109,7 @@ const Header = ({
         <div className="bg-white px-11 py-3 max-sm:px-0 rounded shadow flex flex-col w-full z-[1] absolute mt-28">
           <div className="absolute w-[413px]  max-sm:w-[313px] h-[290px] max-sm:h-[220px] top-[-120px] max-sm:top-[-100px] left-12 min-[1440px]:left-8 max-sm:left-7 max-sm:flex max-sm:justify-center">
             <Link href="https://courses.skillslash.com/learn">
-              <Image src={imgSrc} alt="headerImg" fill />
+              <Image src={imgSrc} alt="headerImg" fill priority quality={40} />
               <MdOutlinePlayCircleOutline className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer " />
             </Link>
           </div>
@@ -115,6 +125,7 @@ const Header = ({
               alt="discount"
               width={20}
               height={20}
+              priority
               style={{ height: "20px" }}
             />
             <p className="text-[#f18350] font-bold">({discount} Off)</p>
