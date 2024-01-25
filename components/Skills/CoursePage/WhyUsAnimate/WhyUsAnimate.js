@@ -72,7 +72,7 @@ const WhyUsAnimate = ({ redirectDa, redirectDs, home }) => {
       </div>
       <div>
         {(redirectDs || home) && (
-          <div className="flex flex-col relative px-28 max-sm:px-5  max-[1281px]:px-24  items-center gap-10 pb-[10px]  pt-10 ">
+          <div className="hidden max-sm:flex flex-col relative px-28 max-sm:px-5  max-[1281px]:px-24  items-center gap-10 pb-[10px]  pt-10 ">
             <div className="flex flex-col gap-4 items-center">
               <h3 className="text-3xl text-[#4f419a] font-bold">
                 Triple Certification
