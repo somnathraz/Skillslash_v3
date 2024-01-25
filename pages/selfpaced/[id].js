@@ -122,7 +122,10 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         fourthPoint={DataScienceCourseData.data.header.fourthPoint}
       />
       <div id="certificate">
-        <WhyUs redirectDs={DataScienceCourseData.data.header.dataScience} />
+        <WhyUs
+          redirectDs={DataScienceCourseData.data.header.dataScience}
+          redirectDa={DataScienceCourseData.data.header.dataAnalytics}
+        />
       </div>
       <div id="certificate">
         <WhyUsAnimate
@@ -177,7 +180,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
       </div>
       <Footer />
       <WhatsappButton />
-      <MiddlePopup />
+      {/* <MiddlePopup /> */}
     </div>
   );
 };

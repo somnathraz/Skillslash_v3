@@ -46,7 +46,7 @@ const FirstPart = ({ homePage }) => {
       <div ref={ref}>
         <WhyUs scrollYProgress={scrollYProgress} home={true} />
       </div>
-      <WhyUsAnimate />
+      <WhyUsAnimate home={true} />
       {/* <BoxAnimation /> */}
     </>
   );
