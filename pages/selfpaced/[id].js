@@ -180,7 +180,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
       </div>
       <Footer />
       <WhatsappButton />
-      <MiddlePopup />
+      {/* <MiddlePopup /> */}
     </div>
   );
 };
