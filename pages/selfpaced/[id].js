@@ -127,6 +127,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
       <div id="certificate">
         <WhyUsAnimate
           redirectDa={DataScienceCourseData.data.header.dataAnalytics}
+          redirectDs={DataScienceCourseData.data.header.dataScience}
         />
       </div>
       {DataScienceCourseData.data.header.FullStack ? (
