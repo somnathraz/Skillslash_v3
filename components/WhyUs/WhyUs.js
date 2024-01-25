@@ -194,7 +194,7 @@ const WhyUs = ({ redirectDs, home, redirectDa }) => {
                 <motion.path
                   id="animatedPath1"
                   fill="none"
-                  d="M 5 0 V 680  Q 5 690, 20 790 H 520 Q 540 690, 540 805 V 730"
+                  d="M 5 0 V 600  Q 5 605, 20 605 H 520 Q 540 605, 540 615 V 630"
                   stroke="#f18350"
                   strokeWidth="2"
                   className="z-10"
