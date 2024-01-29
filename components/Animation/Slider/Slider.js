@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Slider.module.css";
+import Image from "next/image";
 const Slider = () => {
   const firstSlide = [
     {
@@ -123,38 +124,38 @@ const Slider = () => {
               "linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 67%)",
           }}
         ></div>
-        <Marquee className={styles.Marquee}>
-          <MarqueeGroup className={styles.MarqueeGroup}>
+        <div className={styles.Marquee}>
+          <div className={styles.MarqueeGroup}>
             {firstSlide.map((el, index) => (
-              <ImageGroup key={index}>
-                <Image src={el} />
-              </ImageGroup>
+              <div key={index}>
+                <Image src={el.src} height={el.height} width={el.width} />
+              </div>
             ))}
-          </MarqueeGroup>
-          <MarqueeGroup className={styles.MarqueeGroup}>
+          </div>
+          <div className={styles.MarqueeGroup}>
             {firstSlide.map((el, index) => (
-              <ImageGroup key={index}>
-                <Image src={el} />
-              </ImageGroup>
+              <div key={index}>
+                <Image src={el.src} height={el.height} width={el.width} />
+              </div>
             ))}
-          </MarqueeGroup>
-        </Marquee>
-        <Marquee className={styles.Marquee}>
-          <MarqueeGroup2 className={styles.MarqueeGroup2}>
+          </div>
+        </div>
+        <div className={styles.Marquee}>
+          <div className={styles.MarqueeGroup2}>
             {secondSlide.map((el, index) => (
-              <ImageGroup key={index}>
-                <Image src={el} />
-              </ImageGroup>
+              <div key={index}>
+                <Image src={el.src} height={el.height} width={el.width} />
+              </div>
             ))}
-          </MarqueeGroup2>
-          <MarqueeGroup2 className={styles.MarqueeGroup2}>
+          </div>
+          <div className={styles.MarqueeGroup2}>
             {secondSlide.map((el, index) => (
-              <ImageGroup key={index}>
-                <Image src={el} />
-              </ImageGroup>
+              <div key={index}>
+                <Image src={el.src} height={el.height} width={el.width} />
+              </div>
             ))}
-          </MarqueeGroup2>
-        </Marquee>
+          </div>
+        </div>
       </div>
     </div>
   );
