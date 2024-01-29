@@ -1,0 +1,205 @@
+{
+  "header": {
+    "title": "DSA & System Design Bootcamp",
+    "desc": "FAANG instructor’s blended learning course with video lessons and live doubt sessions and live project sessions to crack Software Developer interview in any product base company.",
+    "imgSrc": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/dsa+header.png",
+    "hour": "76",
+    "noProject": "15+ ",
+    "otherHr": "50",
+    "liveHr": "76",
+    "link": "https://courses.skillslash.com/learn/DSA---System-Design-Bootcamp",
+    "offerPrice": "₹ 3,999",
+    "actualPrice": "₹ 7,999",
+    "discount": "50%",
+    "certification": "3",
+    "dataScience": false,
+    "FullStack": true,
+    "firstPoint": "DSA: Arrays, Sorting, Trees, DP, Linked Lists, Graphs, Advanced Structures.",
+    "secondPoint": "System Design: Intro, Scalability, API, Load Balancer, HLD, LLD.",
+    "thirdPoint": "Advanced DSA: LRU Cache, Adv. Trees, DP Optimization.",
+    "fourthPoint": "Design Components: Storage, Cache, CDN, Load Balancer, Scalability, Queues, CAP Theorem."
+  },
+  "seoSyllabus": [
+    {
+      "Module0": {
+        "title": " Module 1 - Data Structures and Algorithms ",
+        "desc": "This module helps you to master the algorithms and data structures interview in FAANG & top product based MNCs. You will be solving 250+ coding challenges under guidance of expert mentors working in Tier 1 companies like Microsoft, Amazon, Adobe, Facebook, Google etc.",
+        "content": [
+          {
+            "chap": {
+              "title": "",
+              "desc": [
+                "Array basics, Problem solving techniques with example",
+                "Time Complexity & Bit manipulations",
+                "Sorting, Searching & String Algorithms",
+                "Linked list",
+                "Two pointer techniques",
+                "Stack & Queue - Implementation & Problems.",
+                "Tree, Trie, Ternary Search tree",
+                "Recursion & Greedy Algorithms",
+                "Combinatorial problems with backtracking",
+                "Hashing",
+                "Graph Theory",
+                "Dynamic Programming"
+              ]
+            }
+          }
+        ],
+        "id": 1,
+        "open": false
+      }
+    },
+    {
+      "Module0": {
+        "title": "Module 2 - System Design in Depth",
+        "desc": "",
+        "content": [
+          {
+            "chap": {
+              "title": "Chapter 1: System Design fundamentals",
+              "desc": [
+                "OOD : Object-oriented analysis and design , Design patterns",
+                "CAP Theorem in distributed Computer Systems",
+                "Load balancing - Caching - Distributed And Global Cache",
+                "CDN, Proxy, Web Socket, Polling",
+                "Database Indexing, Sharding, Normalization, ACID, SQL vs NoSQL",
+                "Messaging Queue",
+                "Multithreading and Synchronization"
+              ]
+            }
+          },
+          {
+            "chap": {
+              "title": "Chapter 2: High Level Design With Projects",
+              "desc": [
+                "Introduction to common MicroService design patterns",
+                "Microservices & System components in real world",
+                "Event Driven, Domain Driven, Rest API driven Architectures",
+                "3 Real time projects"
+              ]
+            }
+          },
+          {
+            "chap": {
+              "title": "Chapter 3: Low Level Design With Projects",
+              "desc": [
+                "OOD and Design Patterns",
+                "API Design",
+                "DB Schema Design for NoSQL and SQL",
+                "Common LLD and API design questions"
+              ]
+            }
+          },
+          {
+            "chap": {
+              "title": "Chapter 4: Mini Projects :",
+              "desc": [
+                "Designing Facebook news feed",
+                "Designing web crawler",
+                "Designing Uber Backend",
+                "Designing youtube"
+              ]
+            }
+          }
+        ],
+        "id": 2,
+        "open": false
+      }
+    },
+    {
+      "Module0": {
+        "title": "Module 3 - Advance Data Structures & Algorithms",
+        "desc": "",
+        "content": [
+          {
+            "chap": {
+              "title": "",
+              "desc": [
+                "LRU cache Like Problems",
+                "Advance Tree - Segment tree, Suffix tree, Red black tree, K-D tree",
+                "Advance Dynamic Programming",
+                "CDN, Proxy, Web Socket, Polling",
+                "Solve 30+ hard level coding interview questions from FAANG companies."
+              ]
+            }
+          }
+        ],
+        "id": 3,
+        "open": false
+      }
+    }
+  ],
+  "FaqDATA": [
+    {
+      "id": 1,
+      "ques": "Is this an Advanced level or beginner level course?",
+
+      "ans": " Our premium self-paced course leaves no stone unturned in covering all the topics from basic to advanced level. With each module taught in detail by industry experts, you can be confident in your ability to master the content. ",
+      "open": true
+    },
+    {
+      "id": 2,
+      "ques": "Can a fresher do this course?",
+      "ans": "This course is designed to meet the needs of both seasoned professionals and college goers/fresh graduates, providing comprehensive coverage of topics across all levels - from basic to advanced. ",
+      "open": false
+    },
+    {
+      "id": 3,
+      "ques": "How can I enroll in this course?",
+
+      "ans": "Select the course you are interested in. Navigate to the course page by clicking on 'View Details' for more information. Click on 'Buy Now' to make a purchase. Before buying, feel free to watch the preview and the first video of the course for free.",
+      "open": false
+    },
+    {
+      "id": 7,
+      "ques": "What kind of Certification does the Data Science training in Bangalore provide?",
+
+      "ans": "Most importantly, by getting our Data science course training in Bangalore, you will not just obtain any ordinary type of certification or academic degree. Instead, we offer a globally recognized real work experience certificate from companies and Microsoft Certification for Data scientist for completing the Data Science training. The firm with which you completed your industrial project can also give you direct certifications. ",
+      "open": false
+    },
+    {
+      "id": 4,
+      "ques": " How can I get my doubts cleared?",
+      "ans": "We host live interactive doubt-clearing sessions led by our instructor during weekends. Additionally, for instant replies to your questions, we offer a community forum where you can post your doubts throughout the day and receive instant clarification.",
+      "open": false
+    },
+    {
+      "id": 5,
+      "ques": "Does this course have any live class features?",
+
+      "ans": "Yes, we do. The project sessions will be fully instructor-led live interactive sessions.  Additionally, the doubt-clearing sessions are live sessions scheduled to take place on weekends.",
+      "open": false
+    },
+    {
+      "id": 6,
+      "ques": "What can I expect from this course?",
+
+      "ans": "Access self-paced sessions anytime, led by top faculty and industry experts. Also polish your skills by completing the assignments and tests at the end of each module. All-day doubt-clearing support. You will also get a live doubt-clearing session with the instructor on weekends. Get to work on instructor-led Live Projects during weekends. On completing the Live projects you will be eligible to get a shareable Live Project certification which you can showcase in your resume and LinkedIn profile. Also get an Internship certificate on completing two projects. We support your career by helping you build an impactful professional Resume/CV and LinkedIn profile.",
+      "open": false
+    },
+    {
+      "id": 10,
+      "ques": "Is there a time limit to complete this course?",
+      "ans": "This course has a subscription of 2 years. We expect you to complete the entire course at least within 2 years",
+      "open": false
+    },
+    {
+      "id": 8,
+      "ques": "Is there any refund policy?",
+      "ans": "Yes, this course has a refund policy. The refund can be claimed within 3 working days from the purchase of the product. The course should not been accessed by more than 10%.",
+      "open": false
+    },
+    {
+      "id": 9,
+      "ques": "Can I access this course on mobile and tablet?",
+      "ans": "Absolutely! Our platform is designed to be mobile-responsive, allowing you to access and learn from our courses on various devices, including smartphones and tablets.",
+      "open": false
+    },
+    {
+      "id": 12,
+      "ques": "How can I do the internship provided along with this bootcamp?",
+      "ans": "After enrolling, proceed through our self-paced video recordings, and complete quizzes, and assignments. Following that, you'll have access to live project sessions led by our instructors. Upon completion of three live projects, you will get an internship certificate.",
+      "open": false
+    }
+  ]
+}
