@@ -13,7 +13,7 @@ const WhyUs = ({ redirectDs, home, redirectDa }) => {
   const imageSrc = [
     "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Certificate/Certificate+Of+Internship.webp",
     // Add other image URLs as needed
-    "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Certificate/theorax-project-certificate.webp",
+    "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/project-experience.webp",
     redirectDa
       ? "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/data-sample-certificate.webp"
       : "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/Microsoft-certificate-data-science-without-border.webp",
@@ -259,13 +259,12 @@ const WhyUs = ({ redirectDs, home, redirectDa }) => {
               <div className="grid grid-cols-3 gap-3">
                 <div className="bg-white shadow rounded-lg px-7 py-4 flex flex-col gap-3">
                   <div className="relative w-full h-[180px]  ">
-                    <Image src={imageSrc[0]} fill alt="certificate image" />
+                    <Image src={imageSrc[2]} fill alt="certificate image" />
                   </div>
-                  <h3 className="font-bold"> Internship Certificate</h3>
+                  <h3 className="font-bold">Microsoft Certificate</h3>
                   <p>
-                    Showcase experience to recruiters with internship
-                    certificate from Skill-AI. Stand out of the crowd with
-                    experience.
+                    Enhance your resume and LinkedIn profile with the
+                    certificate from global leader in this technology.
                   </p>
                 </div>
                 <div className="bg-white shadow rounded-lg px-7 py-4 flex flex-col gap-3">
@@ -281,12 +280,13 @@ const WhyUs = ({ redirectDs, home, redirectDa }) => {
                 </div>
                 <div className="bg-white shadow rounded-lg px-7 py-4 flex flex-col gap-3">
                   <div className="relative w-full h-[180px]  ">
-                    <Image src={imageSrc[2]} fill alt="certificate image" />
+                    <Image src={imageSrc[0]} fill alt="certificate image" />
                   </div>
-                  <h3 className="font-bold">Microsoft Certificate</h3>
+                  <h3 className="font-bold"> Internship Certificate</h3>
                   <p>
-                    Enhance your resume and LinkedIn profile with the
-                    certificate from global leader in this technology.
+                    Showcase experience to recruiters with internship
+                    certificate from Skill-AI. Stand out of the crowd with
+                    experience.
                   </p>
                 </div>
               </div>
