@@ -211,10 +211,10 @@ const Navbar = ({ link, event, ads }) => {
           )}
         </div>
       </nav>
-      <main className={styles.TopBar}>
+      {/* <main className={styles.TopBar}>
         Use code <b className="text-[#f18350] pl-[4px] pr-[4px]"> NEWYEAR50 </b>{" "}
         to get 50% flat discount.
-      </main>
+      </main> */}
     </div>
   );
 };
