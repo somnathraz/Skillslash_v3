@@ -15,7 +15,7 @@ const montserrat = Montserrat({
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Script
+      {/* <Script
         type="text/javascript"
         id="zsiqchat"
         dangerouslySetInnerHTML={{
@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }) {
       `,
         }}
         strategy="lazyOnload"
-      />
+      /> */}
       <main className={montserrat.className}>
         <Component {...pageProps} />
         <GoogleTagManager gtmId="GTM-WJVZHTB" />
