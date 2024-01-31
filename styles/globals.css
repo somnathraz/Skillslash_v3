@@ -62,6 +62,24 @@ h2 {
   margin: 21px;
 }
 
+.slideAnimation {animation: scrollAnimation 16s linear infinite;}
+/* @keyframes scrollAnimation {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    transform: translateX(-40%);
+  }
+} */
+@keyframes scrollAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 .bgWrap {
   position: absolute;
   height: 100%;
