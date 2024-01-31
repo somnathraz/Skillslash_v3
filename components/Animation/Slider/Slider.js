@@ -1,18 +1,6 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-// import required modules
-import { Autoplay } from "swiper";
+import styles from "./Slider.module.css";
 import Image from "next/image";
-// import "swiper/css";
-// import "swiper/css/free-mode";
-// import "swiper/css/pagination";
-// import "swiper/css/navigation";
-// import { Pagination, FreeMode } from "swiper";
-
 const Slider = () => {
   const firstSlide = [
     {
@@ -115,8 +103,8 @@ const Slider = () => {
     },
   ];
   return (
-    <div className="px-28 py-10 ">
-      <h2 className="text-3xl font-semibold text-center mb-3">
+    <div className="px-28 py-10 max-sm:px-5">
+      <h2 className="text-3xl font-semibold text-center mb-3 max-sm:text-xl">
         Our Trainers at top tech companies
       </h2>
       <div className="relative overflow-hidden">
@@ -136,103 +124,39 @@ const Slider = () => {
               "linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 67%)",
           }}
         ></div>
-        <div className="flex gap-4 slideAnimation">
-          {firstSlide.map((image, i) => {
-            return (
-              <div
-                key={i}
-                style={{ boxShadow: "rgba(0, 0, 0, 0.1) 0px 4px 12px" }}
-                className="my-8 w-[20%]"
-              >
-                <Image
-                  src={image.src}
-                  alt="Logo1"
-                  height={image.height}
-                  width={image.width}
-                />
+        <div className={styles.Marquee}>
+          <div className={styles.MarqueeGroup}>
+            {firstSlide.map((el, index) => (
+              <div key={index}>
+                <Image src={el.src} height={el.height} width={el.width} />
               </div>
-            );
-          })}
+            ))}
+          </div>
+          <div className={styles.MarqueeGroup}>
+            {firstSlide.map((el, index) => (
+              <div key={index}>
+                <Image src={el.src} height={el.height} width={el.width} />
+              </div>
+            ))}
+          </div>
         </div>
-
-        {/* <Swiper
-          slidesPerView={3.7}
-          spaceBetween={20}
-          autoplay={{
-            delay: 100,
-            disableOnInteraction: false,
-          }}
-          modules={[Autoplay]}
-          speed={4000}
-          breakpoints={{
-            1281: { slidesPerView: 5, spaceBetween: 20 },
-            801: { slidesPerView: 2.5, spaceBetween: 30 },
-            641: { slidesPerView: 1.6, spaceBetween: 10 },
-            481: { slidesPerView: 1, spaceBetween: 10 },
-            200: { slidesPerView: 1, spaceBetween: 10 },
-          }}
-          loop={true}
-          style={{ "--swiper-theme-color": "#4f419a" }}
-          loopFillGroupWithBlank={true}
-          grabCursor={true}
-          className="mySwiper"
-        >
-          {secondSlide.map((image, i) => {
-            return (
-              <SwiperSlide
-                key={i}
-                style={{ boxShadow: "rgba(0, 0, 0, 0.1) 0px 4px 12px" }}
-                className="mb-8 w-[80%] relative"
-              >
-                <Image
-                  src={image.src}
-                  alt="Logo1"
-                  fill={true}
-                  // height={image.height}
-                  // width={image.width}
-                />
-              </SwiperSlide>
-            );
-          })}
-        </Swiper> */}
+        <div className={styles.Marquee}>
+          <div className={styles.MarqueeGroup2}>
+            {secondSlide.map((el, index) => (
+              <div key={index}>
+                <Image src={el.src} height={el.height} width={el.width} />
+              </div>
+            ))}
+          </div>
+          <div className={styles.MarqueeGroup2}>
+            {secondSlide.map((el, index) => (
+              <div key={index}>
+                <Image src={el.src} height={el.height} width={el.width} />
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
-      {/* <swiper
-        slidesPerView={3.7}
-        spaceBetween={20}
-        // freeMode={true}
-        // initialSlide="2"
-        pagination={{
-          dynamicBullets: true,
-          clickable: true,
-        }}
-        // breakpoints={{
-        //   1281: { slidesPerView: 3, spaceBetween: 40 },
-        //   801: { slidesPerView: 2.5, spaceBetween: 30 },
-        //   641: { slidesPerView: 1.6, spaceBetween: 10 },
-        //   481: { slidesPerView: 1, spaceBetween: 10 },
-        //   200: { slidesPerView: 1, spaceBetween: 10 },
-        // }}
-        loop={true}
-        style={{ "--swiper-theme-color": "#4f419a" }}
-        loopFillGroupWithBlank={true}
-        grabCursor={true}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-        {firstSlide.map((image, i) => {
-          return (
-            <SwiperSlide key={i}>
-              <Image
-                src={image.src}
-                alt="Logo1"
-                height={image.height}
-                width={image.width}
-                style={{ boxShadow: "rgba(0, 0, 0, 0.1) 0px 4px 12px" }}
-              />
-            </SwiperSlide>
-          );
-        })}
-      </swiper> */}
     </div>
   );
 };

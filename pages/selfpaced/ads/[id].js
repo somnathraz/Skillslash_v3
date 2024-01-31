@@ -1,21 +1,21 @@
-import Header from "../../components/Skills/CoursePage/Header/Header";
-import DataScienceSyllabus from "../../components/Skills/CoursePage/SeoSyllabus/SeoSyllabus";
-import Navbar from "../../components/Navbar/Navbar";
-import ProjectSlider from "../../components/Skills/Global/Project/ProjectSlider";
+import Header from "../../../components/Skills/CoursePage/Header/Header";
+import DataScienceSyllabus from "../../../components/Skills/CoursePage/SeoSyllabus/SeoSyllabus";
+import Navbar from "../../../components/Navbar/Navbar";
+import ProjectSlider from "../../../components/Skills/Global/Project/ProjectSlider";
 import Head from "next/head";
 import React from "react";
-import { getAllPostIds, getPostData } from "../../lib/newPages";
-import FAQ from "../../components/Skills/Global/FAQ/FAQ";
-import WhyUsAnimate from "../../components/Skills/CoursePage/WhyUsAnimate/WhyUsAnimate";
-import WhyUs from "../../components/WhyUs/WhyUs";
-import VideoTestimonial from "../../components/VideoTestimonial/VideoTestimonial";
-import Reviews from "../../components/Review/Reviews";
-import DetailTable from "../../components/Skills/CoursePage/DetailTable/DetailTable";
-import Learn from "../../components/Skills/CoursePage/Learn/Learn";
-import Footer from "../../components/Footer/Footer";
-import WhatsappButton from "../../components/WhatsAppButton/WhatsappButton";
-import CTA from "../../components/CTA/CTA";
-import MiddlePopup from "../../components/Course/OfferPopup/MiddlePopup";
+import { getAllPostIds, getPostData } from "../../../lib/newPagesAds";
+import FAQ from "../../../components/Skills/Global/FAQ/FAQ";
+import WhyUsAnimate from "../../../components/Skills/CoursePage/WhyUsAnimate/WhyUsAnimate";
+import WhyUs from "../../../components/WhyUs/WhyUs";
+import VideoTestimonial from "../../../components/VideoTestimonial/VideoTestimonial";
+import Reviews from "../../../components/Review/Reviews";
+import DetailTable from "../../../components/Skills/CoursePage/DetailTable/DetailTable";
+import Learn from "../../../components/Skills/CoursePage/Learn/Learn";
+// import Footer from "../../components/Footer/Footer";
+import WhatsappButton from "../../../components/WhatsAppButton/WhatsappButton";
+import CTA from "../../../components/CTA/CTA";
+// import MiddlePopup from "../../components/Course/OfferPopup/MiddlePopup";
 
 const DataSciencePage = ({ DataScienceCourseData }) => {
   const FaqDATA = [
@@ -100,7 +100,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           content={DataScienceCourseData.data.header.desc}
         />
       </Head>
-      <Navbar link={DataScienceCourseData.data.header.link} />
+      <Navbar link={DataScienceCourseData.data.header.link} ads={true} />
       <Header
         title={DataScienceCourseData.data.header.title}
         desc={DataScienceCourseData.data.header.desc}
@@ -178,7 +178,6 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
       <div id="faq">
         <FAQ heading="Frequently Asked Questions" FaqData={FaqDATA} />
       </div>
-      <Footer />
       <WhatsappButton />
       {/* <MiddlePopup /> */}
     </div>

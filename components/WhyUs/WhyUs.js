@@ -4,35 +4,22 @@ import Image from "next/image";
 import { IoIosArrowBack } from "react-icons/io";
 import { motion, useScroll } from "framer-motion";
 
-const WhyUs = ({ redirectDs }) => {
+const WhyUs = ({ redirectDs, home, redirectDa }) => {
   const certRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: certRef.current,
   });
-  const intervalIdRef = useRef(null);
+
   const imageSrc = [
     "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Certificate/Certificate+Of+Internship.webp",
     // Add other image URLs as needed
-    "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Certificate/theorax-project-certificate.webp",
-    "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Certificate/course-certificate.webp",
+    "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/project-experience.webp",
+    redirectDa
+      ? "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/data-sample-certificate.webp"
+      : "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/Microsoft-certificate-data-science-without-border.webp",
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animateState, setAnimateState] = useState(true);
-  const variants = {
-    initial: { width: "130px" },
-    animate: {
-      width: "100%",
-      scaleX: "100%",
-      transition: {
-        type: "spring",
-        duration: 2,
-        delay: 1,
-        repeat: Infinity,
-        repeatType: "mirror",
-        repeatDelay: 0,
-      },
-    },
-  };
 
   useEffect(() => {
     let intervalId;
@@ -186,20 +173,20 @@ const WhyUs = ({ redirectDs }) => {
             />
           </div>
         </div>
-        {redirectDs && (
+        {(redirectDs || home) && (
           <div
-            className="grid grid-cols-[44%,53%] max-[1281px]:gird-cols-[45%,53%] relative px-36 max-sm:px-5 h-[350px] max-[1281px]:px-24  items-center gap-10 pb-[60px]  pt-10"
+            className="flex flex-col relative px-28 max-sm:px-5 h-[550px] max-[1281px]:px-24  items-center gap-10 pb-[60px]  pt-10"
             ref={certRef}
           >
             <div className="absolute top-[0px] h-[666px] left-[80px] max-[1281px]:left-[58px] z-10">
               <motion.svg
                 preserveAspectRatio="xMidYMax meet"
-                className="h-[470px] w-[650px] max-sm:hidden max-[1281px]:hidden"
+                className="h-[870px] w-[650px] max-sm:hidden max-[1281px]:hidden"
               >
                 <motion.path
                   id="animatedPath1"
                   fill="none"
-                  d="M 5 0 V 367  Q 5 380, 20 380 H 520 Q 540 380, 540 390 V 440"
+                  d="M 5 0 V 600  Q 5 605, 20 605 H 520 Q 540 605, 540 615 V 630"
                   stroke="black"
                   strokeWidth="2"
                   className="z-10"
@@ -207,7 +194,7 @@ const WhyUs = ({ redirectDs }) => {
                 <motion.path
                   id="animatedPath1"
                   fill="none"
-                  d="M 5 0 V 367  Q 5 380, 20 380 H 520 Q 540 380, 540 390 V 440"
+                  d="M 5 0 V 600  Q 5 605, 20 605 H 520 Q 540 605, 540 615 V 630"
                   stroke="#f18350"
                   strokeWidth="2"
                   className="z-10"
@@ -216,7 +203,7 @@ const WhyUs = ({ redirectDs }) => {
                 />
                 <circle
                   cx="540"
-                  cy="450"
+                  cy="640"
                   r="10"
                   fill="none"
                   stroke="black"
@@ -224,7 +211,7 @@ const WhyUs = ({ redirectDs }) => {
                 />
                 <motion.circle
                   cx="540"
-                  cy="450"
+                  cy="640"
                   r="10"
                   fill="none"
                   stroke="#f18350"
@@ -235,7 +222,7 @@ const WhyUs = ({ redirectDs }) => {
                 />
               </motion.svg>
             </div>
-            <div
+            {/* <div
               onMouseEnter={() => setAnimateState(false)}
               onMouseLeave={() => setAnimateState(true)}
               className="absolute top-0  z-10 h-full w-full flex items-end justify-end"
@@ -263,30 +250,27 @@ const WhyUs = ({ redirectDs }) => {
                   </div>
                 </div>
               )}
-            </div>
+            </div> */}
 
-            <div className="relative w-full h-full  ">
-              <Image
-                src={imageSrc[currentIndex]}
-                fill
-                alt="certificate image"
-              />
-            </div>
-
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 items-center">
               <h3 className="text-4xl text-[#4f419a] font-bold">
                 Triple Certification
               </h3>
-              <div className="flex flex-col gap-2">
-                <div>
-                  <h3 className="font-bold"> Internship Certificate</h3>
+              <div className="grid grid-cols-3 gap-3">
+                <div className="bg-white shadow rounded-lg px-7 py-4 flex flex-col gap-3">
+                  <div className="relative w-full h-[180px]  ">
+                    <Image src={imageSrc[2]} fill alt="certificate image" />
+                  </div>
+                  <h3 className="font-bold">Microsoft Certificate</h3>
                   <p>
-                    Showcase experience to recruiters with internship
-                    certificate from Skill-AI. Stand out of the crowd with
-                    experience.
+                    Enhance your resume and LinkedIn profile with the
+                    certificate from global leader in this technology.
                   </p>
                 </div>
-                <div>
+                <div className="bg-white shadow rounded-lg px-7 py-4 flex flex-col gap-3">
+                  <div className="relative w-full h-[180px]  ">
+                    <Image src={imageSrc[1]} fill alt="certificate image" />
+                  </div>
                   <h3 className="font-bold">Project Experience Certificate</h3>
                   <p>
                     Micro validation of your internship experience from
@@ -294,15 +278,20 @@ const WhyUs = ({ redirectDs }) => {
                     projects you
                   </p>
                 </div>
-                <div>
-                  <h3 className="font-bold">Microsoft Certificate</h3>
+                <div className="bg-white shadow rounded-lg px-7 py-4 flex flex-col gap-3">
+                  <div className="relative w-full h-[180px]  ">
+                    <Image src={imageSrc[0]} fill alt="certificate image" />
+                  </div>
+                  <h3 className="font-bold"> Internship Certificate</h3>
                   <p>
-                    Enhance your resume and LinkedIn profile with the
-                    certificate from global leader in this technology.
+                    Showcase experience to recruiters with internship
+                    certificate from Skill-AI. Stand out of the crowd with
+                    experience.
                   </p>
                 </div>
               </div>
             </div>
+            <div className="w-full h-[220px] flex gap-2"></div>
           </div>
         )}
       </div>

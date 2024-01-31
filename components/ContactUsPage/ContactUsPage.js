@@ -4,7 +4,7 @@ import { MdOutlineLocationOn } from "react-icons/md";
 import { AiOutlineHome } from "react-icons/ai";
 import { AiOutlineMail } from "react-icons/ai";
 import { BiPhoneCall } from "react-icons/bi";
-const Image = dynamic(() => import("next/image"));
+import Image from "next/image";
 import ContactForm from "../ContactusForm/ContactusForm";
 import styles from "../../styles/contact-us.module.css";
 

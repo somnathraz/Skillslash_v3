@@ -25,7 +25,7 @@ const MegaMenu = dynamic(() => import("../MegaMenu/MegaMenu"));
 
 //   return timeLeft;
 // };
-const Navbar = ({ link, event }) => {
+const Navbar = ({ link, event, ads }) => {
   const [show, setShow] = useState(false);
   const [icon, setIcon] = useState(false);
   const [popups, setPopups] = useState(false);
@@ -114,8 +114,7 @@ const Navbar = ({ link, event }) => {
               </span>
             </div>
           </div>
-
-          <a href="/">
+          {ads ? (
             <Image
               src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/Skillslash-logo-new.png"
               alt="Skillslash"
@@ -124,26 +123,43 @@ const Navbar = ({ link, event }) => {
               width={180}
               height={60}
             />
-          </a>
+          ) : (
+            <a href="/">
+              <Image
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/Skillslash-logo-new.png"
+                alt="Skillslash"
+                quality={100}
+                style={{ objectFit: "contain" }}
+                width={180}
+                height={60}
+              />
+            </a>
+          )}
+
           <Link href={actualLink}>
             <button className="hidden max-sm:block">Start Learning</button>
           </Link>
-          <button
-            onMouseEnter={() => setIcon(true)}
-            onMouseOver={() => setIcon(true)}
-            onClick={() => {
-              setIcon(!icon);
-              setShow(false);
-            }}
-            className={styles.MegaBtn}
-          >
-            Our Courses
-            {icon ? (
-              <MdKeyboardArrowUp className={styles.bIcon} />
-            ) : (
-              <MdKeyboardArrowDown className={styles.bIcon} />
-            )}
-          </button>
+          {ads ? (
+            ""
+          ) : (
+            <button
+              onMouseEnter={() => setIcon(true)}
+              onMouseOver={() => setIcon(true)}
+              onClick={() => {
+                setIcon(!icon);
+                setShow(false);
+              }}
+              className={styles.MegaBtn}
+            >
+              Our Courses
+              {icon ? (
+                <MdKeyboardArrowUp className={styles.bIcon} />
+              ) : (
+                <MdKeyboardArrowDown className={styles.bIcon} />
+              )}
+            </button>
+          )}
+
           {icon ? (
             <div
               className="megaMenu"
@@ -157,7 +173,11 @@ const Navbar = ({ link, event }) => {
           )}
         </div>
         <div className={styles.right}>
-          {event ? (
+          {ads ? (
+            <Link href={actualLink}>
+              <button>Start Learning</button>
+            </Link>
+          ) : event ? (
             <>
               <span>
                 <Link href="#Feature">Program Features</Link>
@@ -172,7 +192,6 @@ const Navbar = ({ link, event }) => {
             </>
           ) : (
             <>
-              {" "}
               <span>
                 <Link href="/event">EVENTS</Link>
               </span>
@@ -192,10 +211,10 @@ const Navbar = ({ link, event }) => {
           )}
         </div>
       </nav>
-      <main className={styles.TopBar}>
+      {/* <main className={styles.TopBar}>
         Use code <b className="text-[#f18350] pl-[4px] pr-[4px]"> NEWYEAR50 </b>{" "}
         to get 50% flat discount.
-      </main>
+      </main> */}
     </div>
   );
 };
