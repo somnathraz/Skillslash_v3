@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import Image from "next/image";
 import {
@@ -13,6 +13,7 @@ import {
   MdLockOpen,
 } from "react-icons/md";
 import { PiCertificateBold } from "react-icons/pi";
+import VideoPlaylist from "../../Global/VideoPlaylist/VideoPlaylist";
 
 const Header = ({
   title,
@@ -27,8 +28,14 @@ const Header = ({
   redirectDs,
   redirectFs,
 }) => {
+  const [show, setShow] = useState(true);
+  const showVideo = (data) => {
+    setShow(data);
+  };
   return (
     <div className="grid grid-cols-[60%,39%] max-sm:flex max-sm:flex-col gap-5 max-sm:mb-[750px] bg-[#111621] w-full mt-[70px] px-28 max-sm:px-5 py-[100px] pb-[70px] max-sm:py-14 relative">
+      {show && <VideoPlaylist setShow={showVideo} show={show} />}
+
       <div className="absolute gradient top-0 left-0 h-full w-[60%] max-sm:w-full z-0"></div>
       <div className="flex flex-col gap-2 relative z-[1]">
         <div className="flex gap-3 text-[#F18350] font-bold items-center max-sm:hidden">
@@ -99,11 +106,11 @@ const Header = ({
             className="mx-auto"
           />
         </div>
-        <Link href={link}>
+        <div onClick={() => showVideo()}>
           <button className="bg-[#f18350] px-3 py-2 mt-4">
             Watch Demo Videos
           </button>
-        </Link>
+        </div>
       </div>
       <div className="flex flex-col gap-7 relative">
         <div className="bg-white px-11 py-3 max-sm:px-0 rounded shadow flex flex-col w-full z-[1] absolute mt-28">

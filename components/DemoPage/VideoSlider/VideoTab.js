@@ -25,7 +25,6 @@ const VideoTabs = () => {
   const [mobile, setMobile] = useState(false);
   useEffect(() => {
     let width = window.innerWidth;
-
     if (width < 801) {
       setMobile(true);
     }
