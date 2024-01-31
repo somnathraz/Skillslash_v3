@@ -103,8 +103,8 @@ const Slider = () => {
     },
   ];
   return (
-    <div className="px-28 py-10 ">
-      <h2 className="text-3xl font-semibold text-center mb-3">
+    <div className="px-28 py-10 max-sm:px-5">
+      <h2 className="text-3xl font-semibold text-center mb-3 max-sm:text-xl">
         Our Trainers at top tech companies
       </h2>
       <div className="relative overflow-hidden">
