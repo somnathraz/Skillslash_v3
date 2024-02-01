@@ -17,6 +17,7 @@
   padding: 8px 22px;
   font-size: 16px;
   font-weight: 600;
+  background-color: #4f419a;
 }
 .formWrapper {
   width: 100%;
@@ -30,7 +31,7 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   background-color: #f7fdff;
   border-radius: 3px;
-  border-bottom: 4px solid  #4f419a;
+  border-bottom: 4px solid #4f419a;
 }
 .pdfWrapper,
 .pdfWrapperS {

@@ -41,23 +41,6 @@ export default function Document() {
         <meta name="expires" content="never" />
         <meta name="coverage" content="Worldwide" />
         <meta name="robots" content="ALL"></meta>
-
-        {/* <script
-          id="facebook"
-          dangerouslySetInnerHTML={{
-            __html: `
-            !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-              n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-              n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-              t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-              document,'script','https://connect.facebook.net/en_US/fbevents.js');
-              
-              fbq('init', '1473566943117244');
-              fbq('set','agent','tmgoogletagmanager', '1473566943117244');
-              fbq('track', "PageView");
-          `,
-          }}
-        /> */}
       </Head>
       <body>
         <Main />

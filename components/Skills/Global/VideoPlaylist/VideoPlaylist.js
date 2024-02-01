@@ -1,11 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { AiFillCloseCircle } from "react-icons/ai";
-import TabData from "../../../DemoPage/VideoSlider/VideoData";
-
+import TabData from "./VideoData";
+import { FaYoutube } from "react-icons/fa";
 const VideoPlaylist = ({ setShow, show }) => {
+  const [activeVideo, setActiveVideo] = useState("oGE7FWT2t5Q");
   const handelOpen = () => {
     setShow(false);
   };
+  console.log(TabData[0]);
   useEffect(() => {
     if (show) {
       // Add a class to disable scrolling on the body
@@ -25,7 +27,7 @@ const VideoPlaylist = ({ setShow, show }) => {
           onClick={handelOpen}
         />
         <iframe
-          src="https://www.youtube-nocookie.com/embed/9_Rrdtf9gdU"
+          src={`https://www.youtube-nocookie.com/embed/${activeVideo}`}
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           className="w-full h-[420px] max-sm:h-[220px]"
@@ -41,23 +43,19 @@ const VideoPlaylist = ({ setShow, show }) => {
               const src = `https://www.youtube-nocookie.com/embed/${data.link}`;
               return (
                 <div
-                  className="py-5 w-full px-5 flex items-center gap-3 justify-between "
+                  className={`py-5 w-full px-5 flex items-center gap-3 justify-between ${
+                    data.link === activeVideo ? "bg-[#505050]" : "bg-black"
+                  } rounded `}
                   key={i}
+                  onClick={() => setActiveVideo(data.link)}
                 >
-                  <div className="flex items-center gap-3">
-                    <iframe
-                      src={src}
-                      title="YouTube video player"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      className="w-[40px] h-[30px]"
-                      style={{
-                        border: "0px solid white",
-                        borderRadius: "4px",
-                      }}
-                    ></iframe>
-                    <h3 className="text-white font-bold">{data.name}</h3>
+                  <div className="flex items-center gap-3 cursor-pointer">
+                    <FaYoutube className="text-[#CD201F] text-2xl" />
+                    <h3 className="text-white font-bold capitalize">
+                      {data.name}
+                    </h3>
                   </div>
-                  <p>0:29</p>
+                  <p className="text-white">{data.time}</p>
                 </div>
               );
             })}

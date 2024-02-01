@@ -1,16 +1,33 @@
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
-import { AiFillCloseCircle } from "react-icons/ai";
+import Link from "next/link";
+import { MdClose } from "react-icons/md";
 
-const MiddlePopup = () => {
+const MiddlePopup = ({
+  redirectFs,
+  redirectDs,
+  redirectBa,
+  redirectWeb,
+  redirectDSA,
+}) => {
   const [open, setOpen] = useState(false);
   const [popups, setPopups] = useState(false);
   const [onetime, setOnetime] = useState(true);
-
+  const [showCross, setShowCross] = useState(false);
+  const [data, setData] = useState({
+    title: "Explore our top selling ",
+    spanTitle: "Data Science course",
+    link: "/selfpaced/data-science-&-aI-bootcamp",
+  });
   const handelOpen = () => {
     setOpen(false);
     setOnetime(false);
   };
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShowCross(true);
+    }, 8000);
+    return () => clearTimeout(timeout);
+  }, []);
   useEffect(() => {
     if (open) {
       // Add a class to disable scrolling on the body
@@ -23,6 +40,27 @@ const MiddlePopup = () => {
     }
   }, [open]);
   useEffect(() => {
+    if (redirectDs) {
+      setData({
+        title: "Explore our top selling ",
+        spanTitle: "Data Science course",
+        link: "/selfpaced/data-science-&-aI-bootcamp",
+      });
+    }
+    if (redirectBa) {
+      setData({
+        title: "Explore our top selling",
+        spanTitle: "Data Analytics course",
+        link: "/selfpaced/data-analytics-bootcamp",
+      });
+    }
+    if (redirectFs) {
+      setData({
+        title: "Explore our top selling",
+        spanTitle: "DSA & System Design course",
+        link: "/selfpaced/dsa-system-design-bootcamp",
+      });
+    }
     let timeOut;
     if (onetime)
       timeOut = setTimeout(() => {
@@ -36,23 +74,29 @@ const MiddlePopup = () => {
     open && (
       <div className="fixed overflow-hidden h-screen w-screen bg-[#00000062] left-0 top-0 z-[1001] flex items-center justify-center">
         <div className="bg-white w-[50%] max-sm:w-[90%] h-max rounded-lg flex  flex-col items-center justify-center px-16 py-10 gap-5 relative">
-          <AiFillCloseCircle
-            className="absolute right-0 top-0 text-2xl text-black"
-            onClick={handelOpen}
-          />
+          {showCross && (
+            <MdClose
+              className="absolute right-[5px] top-[4px] text-xl text-black"
+              onClick={handelOpen}
+            />
+          )}
 
-          <h3 className="text-5xl max-sm:text-2xl font-semibold  text-center">
-            <span className="text-[#f18350] font-bold">50% OFF </span>ON ALL OUR
-            COURSES
+          <h3 className="text-4xl max-sm:text-2xl font-medium  text-center flex flex-col gap-2">
+            {data.title}
+            <br />
+            <span className="text-[#f18350] font-bold text-4xl">
+              {data.spanTitle}
+            </span>
           </h3>
-          <p className="font-semibold text-black text-center">
-            Limited Period Offer. Grab The Deal
-          </p>
-          <a href="https://wa.me/+918391911911?text=ChatWithUs">
-            <button className="bg-[#f18350] cursor-pointer">
-              RECEIVE 50% OFF COUPON
+
+          <Link href={data.link}>
+            <button
+              className="bg-[#4f419a] cursor-pointer"
+              style={{ padding: "8px 15px" }}
+            >
+              Explore Course
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     )

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { useRouter } from "next/router";
 import Image from "next/image";
 import {
   MdOutlineAccessAlarms,
@@ -27,10 +28,16 @@ const Header = ({
   link,
   redirectDs,
   redirectFs,
+  redirectDa,
 }) => {
-  const [show, setShow] = useState(true);
+  const router = useRouter();
+  const [show, setShow] = useState(false);
   const showVideo = (data) => {
-    setShow(data);
+    if (redirectDa) {
+      setShow(data);
+    } else {
+      router.push(link);
+    }
   };
   return (
     <div className="grid grid-cols-[60%,39%] max-sm:flex max-sm:flex-col gap-5 max-sm:mb-[750px] bg-[#111621] w-full mt-[70px] px-28 max-sm:px-5 py-[100px] pb-[70px] max-sm:py-14 relative">
@@ -106,7 +113,7 @@ const Header = ({
             className="mx-auto"
           />
         </div>
-        <div onClick={() => showVideo()}>
+        <div onClick={() => showVideo(true)}>
           <button className="bg-[#f18350] px-3 py-2 mt-4">
             Watch Demo Videos
           </button>
@@ -115,10 +122,10 @@ const Header = ({
       <div className="flex flex-col gap-7 relative">
         <div className="bg-white px-11 py-3 max-sm:px-0 rounded shadow flex flex-col w-full z-[1] absolute mt-28">
           <div className="absolute w-[413px]  max-sm:w-[313px] h-[290px] max-sm:h-[220px] top-[-120px] max-sm:top-[-100px] left-12 min-[1440px]:left-8 max-sm:left-7 max-sm:flex max-sm:justify-center">
-            <Link href={link}>
+            <div onClick={() => showVideo(true)}>
               <Image src={imgSrc} alt="headerImg" fill priority quality={40} />
               <MdOutlinePlayCircleOutline className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer " />
-            </Link>
+            </div>
           </div>
           <div className="flex gap-2 w-full items-center mt-[180px] max-sm:mt-[120px] max-sm:px-4">
             <p className="text-[#000000] flex gap-4 text-2xl font-bold items-center mr-3">
