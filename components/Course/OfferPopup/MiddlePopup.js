@@ -1,12 +1,22 @@
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
+import Link from "next/link";
 import { AiFillCloseCircle } from "react-icons/ai";
 
-const MiddlePopup = () => {
+const MiddlePopup = ({
+  redirectFs,
+  redirectDs,
+  redirectBa,
+  redirectWeb,
+  redirectDSA,
+}) => {
   const [open, setOpen] = useState(false);
   const [popups, setPopups] = useState(false);
   const [onetime, setOnetime] = useState(true);
-
+  const [data, setData] = useState({
+    title: "Explore our top selling ",
+    spanTitle: "Data Science course",
+    link: "/selfpaced/data-science-&-aI-bootcamp",
+  });
   const handelOpen = () => {
     setOpen(false);
     setOnetime(false);
@@ -23,6 +33,27 @@ const MiddlePopup = () => {
     }
   }, [open]);
   useEffect(() => {
+    if (redirectDs) {
+      setData({
+        title: "Explore our top selling ",
+        spanTitle: "Data Science course",
+        link: "/selfpaced/data-science-&-aI-bootcamp",
+      });
+    }
+    if (redirectBa) {
+      setData({
+        title: "Explore our top selling",
+        spanTitle: "Data Analytics course",
+        link: "/selfpaced/data-analytics-bootcamp",
+      });
+    }
+    if (redirectFs) {
+      setData({
+        title: "Explore our top selling",
+        spanTitle: "DSA & System Design course",
+        link: "/selfpaced/dsa-system-design-bootcamp",
+      });
+    }
     let timeOut;
     if (onetime)
       timeOut = setTimeout(() => {
@@ -42,17 +73,15 @@ const MiddlePopup = () => {
           />
 
           <h3 className="text-5xl max-sm:text-2xl font-semibold  text-center">
-            <span className="text-[#f18350] font-bold">50% OFF </span>ON ALL OUR
-            COURSES
+            {data.title}
+            <span className="text-[#f18350] font-bold">{data.spanTitle}</span>
           </h3>
-          <p className="font-semibold text-black text-center">
-            Limited Period Offer. Grab The Deal
-          </p>
-          <a href="https://wa.me/+918391911911?text=ChatWithUs">
+
+          <Link href={data.link}>
             <button className="bg-[#f18350] cursor-pointer">
-              RECEIVE 50% OFF COUPON
+              Explore Course
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     )
