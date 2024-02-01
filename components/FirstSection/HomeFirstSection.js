@@ -67,14 +67,6 @@ const HomeFirstSection = ({ deskTopPara, backgroundImg }) => {
         {/* <TextAnimation homePage={true} /> */}
 
         <div className={styles.btnWrapper}>
-          <Link href="https://courses.skillslash.com/learn">
-            <button
-              className="bg-[#f18350] px-3 py-2 text-white"
-              style={{ background: "#f18350", color: "white" }}
-            >
-              Watch Demo Videos
-            </button>
-          </Link>
           <a href="https://courses.skillslash.com/learn">
             <button>
               Explore Courses

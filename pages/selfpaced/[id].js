@@ -113,6 +113,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         discount={DataScienceCourseData.data.header.discount}
         link={DataScienceCourseData.data.header.link}
         redirectDs={DataScienceCourseData.data.header.dataScience}
+        redirectDa={DataScienceCourseData.data.header.dataAnalytics}
       />
       <Learn
         firstPoint={DataScienceCourseData.data.header.firstPoint}
