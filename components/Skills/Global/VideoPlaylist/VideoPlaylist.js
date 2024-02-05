@@ -27,7 +27,7 @@ const VideoPlaylist = ({ setShow, show }) => {
           onClick={handelOpen}
         />
         <iframe
-          src={`https://www.youtube-nocookie.com/embed/${activeVideo}`}
+          src={`https://www.youtube-nocookie.com/embed/${activeVideo}?autoplay=1`}
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           className="w-full h-[420px] max-sm:h-[220px]"
