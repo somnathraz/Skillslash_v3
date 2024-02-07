@@ -100,7 +100,12 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           content={DataScienceCourseData.data.header.desc}
         />
       </Head>
-      <Navbar link={DataScienceCourseData.data.header.link} />
+      <Navbar
+        link={DataScienceCourseData.data.header.link}
+        redirectDs={DataScienceCourseData.data.header.dataScience}
+        redirectDa={DataScienceCourseData.data.header.dataAnalytics}
+        redirectFs={DataScienceCourseData.data.header.FullStack}
+      />
       <Header
         title={DataScienceCourseData.data.header.title}
         desc={DataScienceCourseData.data.header.desc}
@@ -180,7 +185,11 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         <FAQ heading="Frequently Asked Questions" FaqData={FaqDATA} />
       </div>
       <Footer />
-      <WhatsappButton />
+      <WhatsappButton
+        redirectDs={DataScienceCourseData.data.header.dataScience}
+        redirectDa={DataScienceCourseData.data.header.dataAnalytics}
+        redirectFs={DataScienceCourseData.data.header.FullStack}
+      />
       {/* <MiddlePopup /> */}
     </div>
   );

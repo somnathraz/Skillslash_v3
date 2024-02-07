@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { useRouter } from "next/router";
 import Image from "next/image";
@@ -39,6 +39,21 @@ const Header = ({
       router.push(link);
     }
   };
+  const [idBtnO, setIdBtnO] = useState("DABCORG-SLO");
+  const [idBtnDV, setIdBtnDV] = useState("DABCORG-DV");
+  const [idBtnV, setIdBtnV] = useState("DABCORG-V");
+  useEffect(() => {
+    if (redirectDs) {
+      setIdBtnO("DSBCORG-SLO");
+      setIdBtnDV("DSBCORG-DV");
+      setIdBtnV("DSBCORG-V");
+    }
+    if (redirectFs) {
+      setIdBtnO("DSABCORG-SLB");
+      setIdBtnDV("DSABCORG-DV");
+      setIdBtnV("DSABCORG-V");
+    }
+  }, [redirectDs, redirectFs, redirectDa]);
   return (
     <div className="grid grid-cols-[60%,39%] max-sm:flex max-sm:flex-col gap-5 max-sm:mb-[750px] bg-[#111621] w-full mt-[70px] px-28 max-sm:px-5 py-[100px] pb-[70px] max-sm:py-14 relative">
       {show && <VideoPlaylist setShow={showVideo} show={show} />}
@@ -114,7 +129,7 @@ const Header = ({
           />
         </div>
         <div onClick={() => showVideo(true)}>
-          <button className="bg-[#f18350] px-3 py-2 mt-4">
+          <button className="bg-[#f18350] px-3 py-2 mt-4" id={idBtnDV}>
             Watch Demo Videos
           </button>
         </div>
@@ -122,9 +137,19 @@ const Header = ({
       <div className="flex flex-col gap-7 relative">
         <div className="bg-white px-11 py-3 max-sm:px-0 rounded shadow flex flex-col w-full z-[1] absolute mt-28">
           <div className="absolute w-[413px]  max-sm:w-[313px] h-[290px] max-sm:h-[220px] top-[-120px] max-sm:top-[-100px] left-12 min-[1440px]:left-8 max-sm:left-7 max-sm:flex max-sm:justify-center">
-            <div onClick={() => showVideo(true)}>
-              <Image src={imgSrc} alt="headerImg" fill priority quality={40} />
-              <MdOutlinePlayCircleOutline className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer " />
+            <div onClick={() => showVideo(true)} id={idBtnV}>
+              <Image
+                src={imgSrc}
+                alt="headerImg"
+                fill
+                priority
+                quality={40}
+                id={idBtnV}
+              />
+              <MdOutlinePlayCircleOutline
+                className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
+                id={idBtnV}
+              />
             </div>
           </div>
           <div className="flex gap-2 w-full items-center mt-[180px] max-sm:mt-[120px] max-sm:px-4">
@@ -150,7 +175,10 @@ const Header = ({
               Valid Till <b>Today</b>
             </p>
             <Link href={link}>
-              <button className="w-full px-4 bg-[#f18350] text-white rounded py-3 font-bold text-xl flex justify-center items-center">
+              <button
+                className="w-full px-4 bg-[#f18350] text-white rounded py-3 font-bold text-xl flex justify-center items-center"
+                id={idBtnO}
+              >
                 Start Learning
               </button>
             </Link>
