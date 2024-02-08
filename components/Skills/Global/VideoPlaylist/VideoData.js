@@ -7,7 +7,7 @@ const TabData = [
         id: 1,
         name: "Concatenate & Merge Data Frame",
         time: "9:30",
-        link: "oGE7FWT2t5Q",
+        link: "8LKRvqxvxlw",
       },
       {
         id: 2,
@@ -22,6 +22,30 @@ const TabData = [
         time: "06:42",
         link: "rLVJNgenPmQ",
         mode: "online live class",
+      },
+    ],
+  },
+  {
+    id: "DSA",
+    title: "DSA",
+    desc: [
+      {
+        id: 1,
+        name: "Recursion & Backtracking",
+        time: "11:06",
+        link: "E7TU84sIwOI",
+      },
+      {
+        id: 2,
+        name: "Linked List",
+        time: "16:25",
+        link: "6MYYjibNSzI",
+      },
+      {
+        id: 3,
+        name: "Dynamic Programming",
+        time: "10:57",
+        link: "x57JxqzwWVI",
       },
     ],
   },
@@ -47,30 +71,6 @@ const TabData = [
         name: "ANN in Deep Learning",
         time: "9:06",
         link: "qhiGc4OIVOk",
-      },
-    ],
-  },
-  {
-    id: "DSA",
-    title: "DSA",
-    desc: [
-      {
-        id: 1,
-        name: "Recursion & Backtracking",
-        time: "11:06",
-        link: "E7TU84sIwOI",
-      },
-      {
-        id: 2,
-        name: "Linked List",
-        time: "16:25",
-        link: "6MYYjibNSzI",
-      },
-      {
-        id: 3,
-        name: "Dynamic Programming",
-        time: "10:57",
-        link: "x57JxqzwWVI",
       },
     ],
   },

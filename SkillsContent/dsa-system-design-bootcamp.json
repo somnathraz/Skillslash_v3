@@ -14,6 +14,7 @@
     "certification": "3",
     "dataScience": false,
     "FullStack": true,
+    "dataAnalytics": false,
     "firstPoint": "DSA: Arrays, Sorting, Trees, DP, Linked Lists, Graphs, Advanced Structures.",
     "secondPoint": "System Design: Intro, Scalability, API, Load Balancer, HLD, LLD.",
     "thirdPoint": "Advanced DSA: LRU Cache, Adv. Trees, DP Optimization.",
