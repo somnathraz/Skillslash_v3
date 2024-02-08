@@ -6,7 +6,7 @@ import FourthFeature from "./FourthFeature";
 import Image from "next/image";
 import { motion, useScroll } from "framer-motion";
 
-const WhyUsAnimate = ({ redirectDa, redirectDs, home }) => {
+const WhyUsAnimate = ({ redirectDa, redirectDs, home, redirectFs }) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -48,7 +48,7 @@ const WhyUsAnimate = ({ redirectDa, redirectDs, home }) => {
               <div className="h-[130px]">
                 <SecondFeature />
               </div>
-              {redirectDa ? (
+              {redirectFs ? (
                 ""
               ) : (
                 <div className="h-[160px]">
