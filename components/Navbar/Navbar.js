@@ -179,7 +179,7 @@ const Navbar = ({ link, event, ads, redirectDs, redirectFs, redirectDa }) => {
         <div className={styles.right}>
           {ads ? (
             <Link href={actualLink}>
-              <button>Start Learning</button>
+              <button id={idBtnB}>Start Learning</button>
             </Link>
           ) : event ? (
             <>
@@ -209,7 +209,7 @@ const Navbar = ({ link, event, ads, redirectDs, redirectFs, redirectDa }) => {
                 <a href="/blog">Blog</a>
               </span>
               <Link href={actualLink} id={idBtnB}>
-                <button>Start Learning</button>
+                <button id={idBtnB}>Start Learning</button>
               </Link>
             </>
           )}

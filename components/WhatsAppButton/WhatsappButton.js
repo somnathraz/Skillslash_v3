@@ -5,7 +5,7 @@ const WhatsappButton = ({ redirectDs, redirectFs, redirectDa }) => {
   const [idBtnW, setIdBtnW] = useState("org-wdv");
 
   return (
-    <div>
+    <div id={idBtnW}>
       <div className={styles.btnWhatsappPulse} id={idBtnW}>
         <a href="https://wa.me/+918391911911?text=ChatWithUs" id={idBtnW}>
           <FaWhatsapp className="text-4xl text-white" id={idBtnW} />
