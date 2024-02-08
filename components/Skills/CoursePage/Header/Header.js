@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import { useRouter } from "next/router";
 import Image from "next/image";
 import {
   MdOutlineAccessAlarms,
@@ -30,14 +29,9 @@ const Header = ({
   redirectFs,
   redirectDa,
 }) => {
-  const router = useRouter();
   const [show, setShow] = useState(false);
   const showVideo = (data) => {
-    if (redirectDa) {
-      setShow(data);
-    } else {
-      router.push(link);
-    }
+    setShow(data);
   };
   const [idBtnO, setIdBtnO] = useState("org-slo");
   const [idBtnDV, setIdBtnDV] = useState("org-wdv");
@@ -45,7 +39,15 @@ const Header = ({
 
   return (
     <div className="grid grid-cols-[60%,39%] max-sm:flex max-sm:flex-col gap-5 max-sm:mb-[750px] bg-[#111621] w-full mt-[70px] px-28 max-sm:px-5 py-[100px] pb-[70px] max-sm:py-14 relative">
-      {show && <VideoPlaylist setShow={showVideo} show={show} />}
+      {show && (
+        <VideoPlaylist
+          setShow={showVideo}
+          show={show}
+          redirectDs={redirectDs}
+          redirectFs={redirectFs}
+          redirectDa={redirectDa}
+        />
+      )}
 
       <div className="absolute gradient top-0 left-0 h-full w-[60%] max-sm:w-full z-0"></div>
       <div className="flex flex-col gap-2 relative z-[1]">
