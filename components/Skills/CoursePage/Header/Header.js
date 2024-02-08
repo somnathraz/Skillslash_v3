@@ -36,7 +36,7 @@ const Header = ({
   const [idBtnO, setIdBtnO] = useState("org-slo");
   const [idBtnDV, setIdBtnDV] = useState("org-wdv");
   const [idBtnV, setIdBtnV] = useState("org-dv");
-
+  console.log(redirectDs, redirectFs, redirectDa);
   return (
     <div className="grid grid-cols-[60%,39%] max-sm:flex max-sm:flex-col gap-5 max-sm:mb-[750px] bg-[#111621] w-full mt-[70px] px-28 max-sm:px-5 py-[100px] pb-[70px] max-sm:py-14 relative">
       {show && (

@@ -13,18 +13,25 @@ const VideoPlaylist = ({
   const [activeVideo, setActiveVideo] = useState(
     TabData[changeArray].desc[0].link
   );
+
   const handelOpen = () => {
     setShow(false);
   };
   useEffect(() => {
     if (redirectDs) {
-      setChangeArray(1);
+      console.log("ds");
+      setChangeArray(2);
+      setActiveVideo(TabData[2].desc[0].link);
     }
     if (redirectDa) {
+      console.log("da");
       setChangeArray(0);
+      setActiveVideo(TabData[0].desc[0].link);
     }
     if (redirectFs) {
-      setChangeArray(2);
+      console.log("fs");
+      setChangeArray(1);
+      setActiveVideo(TabData[1].desc[0].link);
     }
   }, [redirectDs, redirectFs, redirectDa]);
   useEffect(() => {
