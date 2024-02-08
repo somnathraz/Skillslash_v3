@@ -26,15 +26,8 @@ const MegaMenu = dynamic(() => import("../MegaMenu/MegaMenu"));
 //   return timeLeft;
 // };
 const Navbar = ({ link, event, ads, redirectDs, redirectFs, redirectDa }) => {
-  const [idBtnB, setIdBtnW] = useState("DABCORG-SLB");
-  useEffect(() => {
-    if (redirectDs) {
-      setIdBtnW("DSBCORG-SLB");
-    }
-    if (redirectFs) {
-      setIdBtnW("DSABCORG-SLB");
-    }
-  }, [redirectDs, redirectFs, redirectDa]);
+  const [idBtnB, setIdBtnW] = useState("org-slb");
+
   const [show, setShow] = useState(false);
   const [icon, setIcon] = useState(false);
   const [popups, setPopups] = useState(false);

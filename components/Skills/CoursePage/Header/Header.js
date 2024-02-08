@@ -39,21 +39,10 @@ const Header = ({
       router.push(link);
     }
   };
-  const [idBtnO, setIdBtnO] = useState("DABCORG-SLO");
-  const [idBtnDV, setIdBtnDV] = useState("DABCORG-DV");
-  const [idBtnV, setIdBtnV] = useState("DABCORG-V");
-  useEffect(() => {
-    if (redirectDs) {
-      setIdBtnO("DSBCORG-SLO");
-      setIdBtnDV("DSBCORG-DV");
-      setIdBtnV("DSBCORG-V");
-    }
-    if (redirectFs) {
-      setIdBtnO("DSABCORG-SLB");
-      setIdBtnDV("DSABCORG-DV");
-      setIdBtnV("DSABCORG-V");
-    }
-  }, [redirectDs, redirectFs, redirectDa]);
+  const [idBtnO, setIdBtnO] = useState("org-slo");
+  const [idBtnDV, setIdBtnDV] = useState("org-wdv");
+  const [idBtnV, setIdBtnV] = useState("org-dv");
+
   return (
     <div className="grid grid-cols-[60%,39%] max-sm:flex max-sm:flex-col gap-5 max-sm:mb-[750px] bg-[#111621] w-full mt-[70px] px-28 max-sm:px-5 py-[100px] pb-[70px] max-sm:py-14 relative">
       {show && <VideoPlaylist setShow={showVideo} show={show} />}
