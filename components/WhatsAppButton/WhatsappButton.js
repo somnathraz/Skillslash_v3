@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./WhatsAppButtons.module.css";
 import { FaWhatsapp } from "react-icons/fa";
 const WhatsappButton = ({ redirectDs, redirectFs, redirectDa }) => {
-  const [idBtnW, setIdBtnW] = useState("org-wdv");
+  const [idBtnW, setIdBtnW] = useState("org-wa");
 
   return (
     <div id={idBtnW}>
