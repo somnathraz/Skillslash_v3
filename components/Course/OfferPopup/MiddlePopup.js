@@ -99,9 +99,11 @@ const MiddlePopup = ({ redirectFs, redirectDs, redirectDa, newDsa }) => {
           )}
 
           {newDsa ? (
-            <h3 className="text-[27px] text-[#4f419a] max-sm:text-[21px] font-medium text-center">
+            <h3 className="text-[27px] text-black max-sm:text-[21px] font-medium text-center">
               {data.title}{" "}
-              <span className="text-black font-bold">{data.spanTitle} </span>
+              <span className="font-bold text-[#4f419a]">
+                {data.spanTitle}{" "}
+              </span>
               {data.link}
             </h3>
           ) : (
