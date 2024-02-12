@@ -13,6 +13,7 @@
     "discount": "37%",
     "certification": "3",
     "dataScience": false,
+    "newDsa": false,
     "FullStack": true,
     "dataAnalytics": false,
     "firstPoint": "DSA: Arrays, Sorting, Trees, DP, Linked Lists, Graphs, Advanced Structures.",
