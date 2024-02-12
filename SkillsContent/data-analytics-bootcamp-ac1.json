@@ -1,25 +1,26 @@
 {
   "header": {
-    "title": "Data Science & AI Bootcamp",
+    "title": "Data Analytics Bootcamp",
     "spanTitleText": "Live Project based Self-paced Learning",
     "desc": "Microsoft guided triple certification blended learning course with video lessons and live doubt sessions and live project sessions.",
-    "imgSrc": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/data-science-header.png",
+    "imgSrc": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/Header/data-analytics-header.webp",
+    "hour": "206+",
+    "noProject": "18+ ",
+    "otherHr": "10",
+    "liveHr": "180+",
+    "link": "https://courses.skillslash.com/learn/Data-Analytics-Bootcamp",
+    "offerPrice": "₹ 4,999",
+    "actualPrice": "₹ 7,999",
+    "discount": "37%",
+    "newDsa": true,
     "dataScience": true,
     "FullStack": false,
-    "hour": "228+",
-    "noProject": "30+ ",
-    "otherHr": "15",
-    "liveHr": "200+",
-    "link": "https://courses.skillslash.com/learn/Data-Science-AI-Bootcamp",
-    "offerPrice": "₹ 6,999",
-    "newDsa": false,
-    "actualPrice": "₹ 11,999",
-    "discount": "42%",
+    "dataAnalytics": true,
     "certification": "3",
     "firstPoint": "Foundations: Programming, Stats, Python Basics, Data Types.",
-    "secondPoint": "Data Analysis: Numpy, Pandas, Matplotlib, ML.",
-    "thirdPoint": "Advanced: Deep Learning, NLP, Reinforcement Learning, Big Data.",
-    "fourthPoint": "Tools: Excel, SQL, Cloud Deployment, BI: Tableau, Power BI."
+    "secondPoint": "Data Manipulation: Numpy, Pandas, Matplotlib.",
+    "thirdPoint": "Machine Learning: Regression, Classification, Clustering.",
+    "fourthPoint": "Tools & Visualization: SQL, Excel, Tableau, Power BI."
   },
   "seoSyllabus": [
     {
@@ -239,373 +240,10 @@
         "open": false
       }
     },
+
     {
       "Module0": {
         "title": "Module 3 ",
-        "project": false,
-        "title1": "Advance Machine Learning",
-        "descS": "Explore cutting-edge algorithms, model optimization, and deep learning architectures, all while gaining practical experience through hands-on projects. ",
-        "content": [
-          {
-            "chap": {
-              "title": "Chapter 1:A primer on Machine Learning ( 3 hrs )",
-              "desc": [
-                "Types of Learning - Supervised, Unsupervised and Reinforcement",
-                "Statistics vs Machine Learning",
-                "Types of Analysis - Descriptive, Predictive, and Prescriptive",
-                "Bias Variance Tradeoff - Overfitting vs Underfitting"
-              ]
-            }
-          },
-          {
-            "chap": {
-              "title": "Chapter 2: Regression",
-              "desc": [
-                "Correlation vs Causation",
-                "Simple and Multiple linear regression",
-                "Linear regression with Polynomial features",
-                "What is linear in Linear Regression?",
-                "OLS Estimation and Gradient descent",
-                "Model Evaluation Metrics for regression problems - MAE, RMSE, MSE, and MAP"
-              ]
-            }
-          },
-          {
-            "chap": {
-              "title": "Chapter 3: Classification",
-              "desc": [
-                "Introduction to Classification problems",
-                "Logistic Regression for Binary problems",
-                "Maximum Likelihood estimation",
-                "Data Imbalance and redressal methodology",
-                "Up sampling, Down sampling and SMOTE"
-              ]
-            }
-          },
-          {
-            "chap": {
-              "title": "Chapter 4: Clustering-K means",
-              "desc": [
-                "Introduction to Unsupervised Learning",
-                "Hierarchical and Non-Hierarchical techniques",
-                "K Means Algorithms - Partition based model for clustering",
-                "Model Evaluation metrics – Clustering"
-              ]
-            }
-          },
-          {
-            "chap": {
-              "title": "Chapter 5: KNN",
-              "desc": [
-                "Introduction to KNNs",
-                "KNNs as a classifier",
-                "Non-Parametric algorithms and Lazy learning ideology",
-                "Applications in Missing value imputes and Balancing datasets"
-              ]
-            }
-          },
-          {
-            "chap": {
-              "title": "Chapter 6: Advance Regression Model",
-              "desc": [
-                "Introduction to regularization",
-                "Understanding ridge regression",
-                "Working with Lasso regression",
-                "Tackling multicollinearitywith regression"
-              ]
-            }
-          },
-          {
-            "chap": {
-              "title": "Chapter 7: Decision Trees",
-              "desc": [
-                "Nonlinear models for classification",
-                "Intro to decision trees",
-                "Why are they called Greedy Algorithms?",
-                "Information Theory - Measures of Impurity"
-              ]
-            }
-          },
-          {
-            "chap": {
-              "title": "Chapter 8: Ensemble Techniques",
-              "desc": [
-                "Introduction to Bagging as an Ensemble technique",
-                "Bootstrap Aggregation and Out of Bag error",
-                "Random Forests and its Applications in Feature selection",
-                "How Bagging overcomes the overfitting problem?",
-                "Scent and Boosting",
-                "How Boosting overcomes the Bias - Variance Tradeoff",
-                "Gradient Boosting and Xgboost as regularised boosting"
-              ]
-            }
-          },
-
-          {
-            "chap": {
-              "title": "Chapter 11: Time-series Analysis",
-              "desc": [
-                "Intro to Time series",
-                "Autocorrelation and ACF/PACF plots",
-                "The Random Walk model and Stationarity of Time Series",
-                "Tests for Stationarity - ADF and Dickey- Fuller test, AR, MA, ARIMA, SARIMA models",
-                "A regression approach to time series forecasting."
-              ]
-            }
-          },
-          {
-            "chap": {
-              "title": "Chapter 12: Machine Learning Pipeline & auto ML",
-              "desc": [
-                "Feature engineering & selection techniques",
-                "Principal Component Analysis",
-                "Linear Discriminant Analysis",
-                "Serving the model via Rest API & Keras."
-              ]
-            }
-          }
-        ],
-        "id": 3,
-        "open": false
-      }
-    },
-    {
-      "Module0": {
-        "title": "Module 4 ",
-        "project": true,
-        "projectImgSrc": [
-          {
-            "id": 1,
-            "src": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/Google_logo.webp",
-            "width": "95",
-            "height": "50"
-          },
-          {
-            "id": 2,
-            "src": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/Uber.webp",
-            "width": "70",
-            "height": "36"
-          },
-          {
-            "id": 3,
-            "src": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/Youtube.webp",
-            "width": "107",
-            "height": "50"
-          }
-        ],
-        "projectInfo": [
-          {
-            "id": 1,
-            "src": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/Google_logo.webp",
-            "title": "Mobility data ",
-            "width": "95",
-            "height": "50"
-          },
-          {
-            "id": 2,
-            "src": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/Uber.webp",
-            "title": "Fare prediction",
-            "width": "70",
-            "height": "50"
-          },
-          {
-            "id": 3,
-            "src": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/Youtube.webp",
-            "title": "Video analytics",
-            "width": "149",
-            "height": "62"
-          }
-        ],
-        "title1": "Deep Learning ",
-        "descS": "Gain the skills and knowledge you need to make the most of deep learning for everything from image recognition to natural language processing and predictive modeling. Get to know the ins and outs of AI, deep learning, CNNs, RNNs, and other cutting-edge techniques.",
-        "content": [
-          {
-            "chap": {
-              "title": "Chapter 1:- Neural Networks",
-              "desc": [
-                "Introduction to Neural Networks",
-                "Layered Neural networks",
-                "Activation Functions and their application",
-                "Backpropagation and Gradient Descent"
-              ]
-            }
-          },
-          {
-            "chap": {
-              "title": "Chapter 2: Tensor Flow",
-              "desc": [
-                "Introduction to TensorFlow",
-                "Working with TensorFlow",
-                "Linear regression with TensorFlow",
-                "Logistic regression with TensorFlow"
-              ]
-            }
-          },
-
-          {
-            "chap": {
-              "title": "Chapter 4: Convolutional Neural networks",
-              "desc": [
-                "Architecture and design of a Convolutional network,",
-                "Deep convolutional models & image augmentation"
-              ]
-            }
-          },
-          {
-            "chap": {
-              "title": "Chapter 5: Recurrent Neural networks and LSTMs.",
-              "desc": [
-                "RN N & LSTM structure, Bidirectional RNNs and Applications on Sequential data",
-                "Advanced Time series forecasting using RNNs with LSTMs",
-                "LSTMs vs GRUs."
-              ]
-            }
-          },
-          {
-            "chap": {
-              "title": "Chapter 6: Restricted Boltzmann Machines and Autoencoders.",
-              "desc": [
-                "Intro to RBMs, Autoencoders",
-                "Application of RBMs in Collaborative filtering",
-                "Autoencoders for Anomaly detection",
-                "Capstone Project -Self-driving cars, Facial recognization."
-              ]
-            }
-          }
-        ],
-        "id": 4,
-        "open": false
-      }
-    },
-    {
-      "Module0": {
-        "title": "Module 5",
-        "title1": "NLP",
-        "project": true,
-        "projectImgSrc": [
-          {
-            "id": 1,
-            "src": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/Razorpay.webp",
-            "width": "107",
-            "height": "50"
-          },
-          {
-            "id": 3,
-            "src": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/amazon.png",
-            "width": "93",
-            "height": "28"
-          },
-          {
-            "id": 2,
-            "src": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/mercedez-inline-logo.png",
-            "width": "110",
-            "height": "28"
-          }
-        ],
-        "projectInfo": [
-          {
-            "id": 1,
-            "src": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/Razorpay.webp",
-            "title": "Understand mobile banking",
-            "width": "107",
-            "height": "50"
-          },
-          {
-            "id": 2,
-            "src": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/mercedez-inline-logo.png",
-            "title": "Reduce time",
-            "width": "110",
-            "height": "28"
-          },
-          {
-            "id": 3,
-            "src": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/amazon.png",
-            "title": "Food Reviews",
-            "width": "93",
-            "height": "28"
-          }
-        ],
-        "descS": "This module will help you figure out the ins and outs of text data. You'll learn the basics of analyzing, manipulating, and extracting meaning from text, so you can create smart apps, make decisions based on data, and improve your data science abilities.",
-        "content": [
-          {
-            "chap": {
-              "title": "Chapter 1:- Language modelling",
-              "desc": [
-                "Intro to the NLTK library",
-                "N-gram Language models: Perplexity and Smoothing",
-                "Introduction to Hidden Markov models, Viterbi algorithms",
-                "MEMMs and CRFs for named entity recognition",
-                "Neural Language models",
-                "Application of LSTMs to predict the next word."
-              ]
-            }
-          },
-          {
-            "chap": {
-              "title": "Chapter 2: Vector space models ",
-              "desc": [
-                "Explicit and Implicit matrix factorization",
-                "Word2vec and Doc2vec models."
-              ]
-            }
-          },
-          {
-            "chap": {
-              "title": "Chapter 3: Sequence to Sequence tasks",
-              "desc": [
-                "Introduction to Machine translation",
-                "Natural language processing",
-                "NLP with machine translation for text analysis",
-                "Word Alignment models",
-                "Encoder-Decoder Architecture",
-                "How to implement a conversational Chatbot"
-              ]
-            }
-          },
-          {
-            "chap": {
-              "title": "Chapter 4: Capstone Project",
-              "desc": [
-                "Fully functional chatbot",
-                " Front end",
-                "backend and  deployment process for chatbot"
-              ]
-            }
-          }
-        ],
-        "id": 5,
-        "open": false
-      }
-    },
-
-    {
-      "Module0": {
-        "title": "Module 6",
-        "project": false,
-        "title1": "Computer Vision",
-        "descS": "Whether you're interested in object detection, image classification, facial recognition, or the countless other applications of Computer Vision, this module will equip you with the knowledge and skills to tackle real-world data challenges and unlock the potential of visual data in the field of data science.",
-        "content": [
-          {
-            "chap": {
-              "title": "",
-              "desc": [
-                "Mathematics for Computer",
-                "Vision Intro to Transfer Learning",
-                "R-CNN and RetinaNet models for Object detection using Tensorflow",
-                "FCN architecture for Image segmentation",
-                "IoU and Dice score for model evaluation",
-                "Face detection with OpenCV"
-              ]
-            }
-          }
-        ],
-        "id": 6,
-        "open": false
-      }
-    },
-    {
-      "Module0": {
-        "title": "Module 7 ",
         "title1": "SQL",
         "project": false,
 
@@ -726,13 +364,13 @@
             }
           }
         ],
-        "id": 7,
+        "id": 3,
         "open": false
       }
     },
     {
       "Module0": {
-        "title": "Module 8 ",
+        "title": "Module 4 ",
         "title1": "Tableau",
         "project": false,
 
@@ -822,13 +460,13 @@
             }
           }
         ],
-        "id": 8,
+        "id": 4,
         "open": false
       }
     },
     {
       "Module0": {
-        "title": "Module 9  ",
+        "title": "Module 5  ",
         "title1": "Power BI",
         "project": false,
 
@@ -916,7 +554,7 @@
             }
           }
         ],
-        "id": 9,
+        "id": 5,
         "open": false
       }
     }
@@ -944,9 +582,9 @@
     },
     {
       "id": 7,
-      "ques": "What kind of Certification does the Data Science training in Bangalore provide?",
+      "ques": "What kind of Certification does the Data Analytics training in Bangalore provide?",
 
-      "ans": "Most importantly, by getting our Data science course training in Bangalore, you will not just obtain any ordinary type of certification or academic degree. Instead, we offer a globally recognized real work experience certificate from companies and Microsoft Certification for Data scientist for completing the Data Science training. The firm with which you completed your industrial project can also give you direct certifications. ",
+      "ans": "Most importantly, by getting our Data Analytics course training in Bangalore, you will not just obtain any ordinary type of certification or academic degree. Instead, we offer a globally recognized real work experience certificate from companies and Microsoft Certification for Data scientist for completing the Data Analytics training. The firm with which you completed your industrial project can also give you direct certifications. ",
       "open": false
     },
     {
