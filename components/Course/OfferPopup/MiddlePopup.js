@@ -72,7 +72,7 @@ const MiddlePopup = ({ redirectFs, redirectDs, redirectDa, newDsa }) => {
     }
     if (redirectFs) {
       setData({
-        title: "Now get Data & System Design Bootcamp @3,999",
+        title: "Now get DSA & System Design Bootcamp @3,999",
         spanTitle: "Coupon code: RGHTTLNT50",
         link: "/selfpaced/dsa-system-design-bootcamp",
       });
