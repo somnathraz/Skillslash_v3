@@ -191,7 +191,11 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}
         redirectFs={DataScienceCourseData.data.header.FullStack}
       />
-      {/* <MiddlePopup /> */}
+      <MiddlePopup
+        redirectDs={DataScienceCourseData.data.header.dataScience}
+        redirectDa={DataScienceCourseData.data.header.dataAnalytics}
+        redirectFs={DataScienceCourseData.data.header.FullStack}
+      />
     </div>
   );
 };
