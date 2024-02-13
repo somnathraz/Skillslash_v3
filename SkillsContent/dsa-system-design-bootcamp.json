@@ -11,6 +11,7 @@
     "offerPrice": "₹ 4,999",
     "actualPrice": "₹ 7,999",
     "discount": "37%",
+    "newDs": false,
     "certification": "3",
     "dataScience": false,
     "newDsa": false,

@@ -196,6 +196,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}
         redirectFs={DataScienceCourseData.data.header.FullStack}
         newDsa={DataScienceCourseData.data.header.newDsa}
+        newDs={DataScienceCourseData.data.header.newDs}
       />
     </div>
   );
