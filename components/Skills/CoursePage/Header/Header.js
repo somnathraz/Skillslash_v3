@@ -150,7 +150,7 @@ const Header = ({
                 {actualPrice}
               </span>
             </p>
-            <Image
+            {/* <Image
               src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/discount.png"
               alt="discount"
               width={20}
@@ -158,13 +158,13 @@ const Header = ({
               priority
               style={{ height: "20px" }}
             />
-            <p className="text-[#f18350] font-bold">({discount} Off)</p>
+            <p className="text-[#f18350] font-bold">({discount} Off)</p> */}
           </div>
           <div className="flex flex-col gap-5 max-sm:px-4">
-            {/* <p className="text-[#B32D0F] text-[14px] flex gap-2 items-center">
+            <p className="text-[#B32D0F] text-[14px] flex gap-2 items-center">
               <MdOutlineAccessAlarms />
-              Valid Till <b>Today</b>
-            </p> */}
+              Limited Time <b>Offer</b>
+            </p>
             <Link href={link}>
               <button
                 className="w-full px-4 bg-[#f18350] text-white rounded py-3 font-bold text-xl flex justify-center items-center"
