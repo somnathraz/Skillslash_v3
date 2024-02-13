@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { MdClose } from "react-icons/md";
 
-const MiddlePopup = ({ redirectFs, redirectDs, redirectDa, newDsa }) => {
+const MiddlePopup = ({ redirectFs, redirectDs, redirectDa, newDsa, newDs }) => {
   const [open, setOpen] = useState(false);
   const [code, setCode] = useState("");
   const [onetime, setOnetime] = useState(true);
@@ -55,28 +55,37 @@ const MiddlePopup = ({ redirectFs, redirectDs, redirectDa, newDsa }) => {
       });
       setCode("RGHTTLNT50");
     }
+    if (newDs) {
+      setData({
+        title: "Now get Data Science & AI Bootcamp @5,999",
+        spanTitle: "Coupon code: HYPR4999",
+        link: "/selfpaced/data-science-&-aI-bootcamp",
+      });
+      setCode("HYPR4999");
+    }
     if (redirectDa) {
       setData({
         title: "Now get Data Analytics Bootcamp @3,999",
-        spanTitle: "Coupon code: RGHTTLNT50",
+        spanTitle: "Coupon code: HYPR3999",
         link: "/selfpaced/data-analytics-bootcamp",
       });
-      setCode("RGHTTLNT50");
+      setCode("HYPR3999");
     }
     if (newDsa) {
       setData({
         title: "Apply the coupon code",
-        spanTitle: "HYPRDISCNT3499",
+        spanTitle: "HYPR3499",
         link: "to get Data Analytics Bootcamp @3499 just for today",
       });
+      setCode("HYPR3499");
     }
     if (redirectFs) {
       setData({
         title: "Now get DSA & System Design Bootcamp @3,999",
-        spanTitle: "Coupon code: RGHTTLNT50",
+        spanTitle: "Coupon code: TLNT50",
         link: "/selfpaced/dsa-system-design-bootcamp",
       });
-      setCode("RGHTTLNT50");
+      setCode("TLNT50");
     }
     let timeOut;
     if (onetime)
