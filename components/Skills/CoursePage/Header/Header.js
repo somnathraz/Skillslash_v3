@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import Image from "next/image";
 import {
@@ -13,6 +13,7 @@ import {
   MdLockOpen,
 } from "react-icons/md";
 import { PiCertificateBold } from "react-icons/pi";
+import VideoPlaylist from "../../Global/VideoPlaylist/VideoPlaylist";
 
 const Header = ({
   title,
@@ -26,9 +27,28 @@ const Header = ({
   link,
   redirectDs,
   redirectFs,
+  redirectDa,
 }) => {
+  const [show, setShow] = useState(false);
+  const showVideo = (data) => {
+    setShow(data);
+  };
+  const [idBtnO, setIdBtnO] = useState("org-slo");
+  const [idBtnDV, setIdBtnDV] = useState("org-wdv");
+  const [idBtnV, setIdBtnV] = useState("org-dv");
+  console.log(redirectDs, redirectFs, redirectDa);
   return (
     <div className="grid grid-cols-[60%,39%] max-sm:flex max-sm:flex-col gap-5 max-sm:mb-[750px] bg-[#111621] w-full mt-[70px] px-28 max-sm:px-5 py-[100px] pb-[70px] max-sm:py-14 relative">
+      {show && (
+        <VideoPlaylist
+          setShow={showVideo}
+          show={show}
+          redirectDs={redirectDs}
+          redirectFs={redirectFs}
+          redirectDa={redirectDa}
+        />
+      )}
+
       <div className="absolute gradient top-0 left-0 h-full w-[60%] max-sm:w-full z-0"></div>
       <div className="flex flex-col gap-2 relative z-[1]">
         <div className="flex gap-3 text-[#F18350] font-bold items-center max-sm:hidden">
@@ -99,19 +119,29 @@ const Header = ({
             className="mx-auto"
           />
         </div>
-        <Link href={link}>
-          <button className="bg-[#f18350] px-3 py-2 mt-4">
+        <div onClick={() => showVideo(true)}>
+          <button className="bg-[#f18350] px-3 py-2 mt-4" id={idBtnDV}>
             Watch Demo Videos
           </button>
-        </Link>
+        </div>
       </div>
       <div className="flex flex-col gap-7 relative">
         <div className="bg-white px-11 py-3 max-sm:px-0 rounded shadow flex flex-col w-full z-[1] absolute mt-28">
           <div className="absolute w-[413px]  max-sm:w-[313px] h-[290px] max-sm:h-[220px] top-[-120px] max-sm:top-[-100px] left-12 min-[1440px]:left-8 max-sm:left-7 max-sm:flex max-sm:justify-center">
-            <Link href={link}>
-              <Image src={imgSrc} alt="headerImg" fill priority quality={40} />
-              <MdOutlinePlayCircleOutline className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer " />
-            </Link>
+            <div onClick={() => showVideo(true)} id={idBtnV}>
+              <Image
+                src={imgSrc}
+                alt="headerImg"
+                fill
+                priority
+                quality={40}
+                id={idBtnV}
+              />
+              <MdOutlinePlayCircleOutline
+                className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
+                id={idBtnV}
+              />
+            </div>
           </div>
           <div className="flex gap-2 w-full items-center mt-[180px] max-sm:mt-[120px] max-sm:px-4">
             <p className="text-[#000000] flex gap-4 text-2xl font-bold items-center mr-3">
@@ -120,7 +150,7 @@ const Header = ({
                 {actualPrice}
               </span>
             </p>
-            <Image
+            {/* <Image
               src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/discount.png"
               alt="discount"
               width={20}
@@ -128,15 +158,18 @@ const Header = ({
               priority
               style={{ height: "20px" }}
             />
-            <p className="text-[#f18350] font-bold">({discount} Off)</p>
+            <p className="text-[#f18350] font-bold">({discount} Off)</p> */}
           </div>
           <div className="flex flex-col gap-5 max-sm:px-4">
             <p className="text-[#B32D0F] text-[14px] flex gap-2 items-center">
               <MdOutlineAccessAlarms />
-              Valid Till <b>Today</b>
+              Limited Time <b>Offer</b>
             </p>
             <Link href={link}>
-              <button className="w-full px-4 bg-[#f18350] text-white rounded py-3 font-bold text-xl flex justify-center items-center">
+              <button
+                className="w-full px-4 bg-[#f18350] text-white rounded py-3 font-bold text-xl flex justify-center items-center"
+                id={idBtnO}
+              >
                 Start Learning
               </button>
             </Link>

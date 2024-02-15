@@ -100,7 +100,12 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           content={DataScienceCourseData.data.header.desc}
         />
       </Head>
-      <Navbar link={DataScienceCourseData.data.header.link} />
+      <Navbar
+        link={DataScienceCourseData.data.header.link}
+        redirectDs={DataScienceCourseData.data.header.dataScience}
+        redirectDa={DataScienceCourseData.data.header.dataAnalytics}
+        redirectFs={DataScienceCourseData.data.header.FullStack}
+      />
       <Header
         title={DataScienceCourseData.data.header.title}
         desc={DataScienceCourseData.data.header.desc}
@@ -113,6 +118,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         discount={DataScienceCourseData.data.header.discount}
         link={DataScienceCourseData.data.header.link}
         redirectDs={DataScienceCourseData.data.header.dataScience}
+        redirectDa={DataScienceCourseData.data.header.dataAnalytics}
       />
       <Learn
         firstPoint={DataScienceCourseData.data.header.firstPoint}
@@ -131,6 +137,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         <WhyUsAnimate
           redirectDa={DataScienceCourseData.data.header.dataAnalytics}
           redirectDs={DataScienceCourseData.data.header.dataScience}
+          redirectFs={DataScienceCourseData.data.header.FullStack}
         />
       </div>
       {DataScienceCourseData.data.header.FullStack ? (
@@ -179,8 +186,18 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         <FAQ heading="Frequently Asked Questions" FaqData={FaqDATA} />
       </div>
       <Footer />
-      <WhatsappButton />
-      {/* <MiddlePopup /> */}
+      <WhatsappButton
+        redirectDs={DataScienceCourseData.data.header.dataScience}
+        redirectDa={DataScienceCourseData.data.header.dataAnalytics}
+        redirectFs={DataScienceCourseData.data.header.FullStack}
+      />
+      <MiddlePopup
+        redirectDs={DataScienceCourseData.data.header.dataScience}
+        redirectDa={DataScienceCourseData.data.header.dataAnalytics}
+        redirectFs={DataScienceCourseData.data.header.FullStack}
+        newDsa={DataScienceCourseData.data.header.newDsa}
+        newDs={DataScienceCourseData.data.header.newDs}
+      />
     </div>
   );
 };

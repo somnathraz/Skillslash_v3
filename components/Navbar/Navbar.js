@@ -25,7 +25,9 @@ const MegaMenu = dynamic(() => import("../MegaMenu/MegaMenu"));
 
 //   return timeLeft;
 // };
-const Navbar = ({ link, event, ads }) => {
+const Navbar = ({ link, event, ads, redirectDs, redirectFs, redirectDa }) => {
+  const [idBtnB, setIdBtnW] = useState("org-slb");
+
   const [show, setShow] = useState(false);
   const [icon, setIcon] = useState(false);
   const [popups, setPopups] = useState(false);
@@ -137,7 +139,9 @@ const Navbar = ({ link, event, ads }) => {
           )}
 
           <Link href={actualLink}>
-            <button className="hidden max-sm:block">Start Learning</button>
+            <button className="hidden max-sm:block" id={idBtnB}>
+              Start Learning
+            </button>
           </Link>
           {ads ? (
             ""
@@ -175,7 +179,7 @@ const Navbar = ({ link, event, ads }) => {
         <div className={styles.right}>
           {ads ? (
             <Link href={actualLink}>
-              <button>Start Learning</button>
+              <button id={idBtnB}>Start Learning</button>
             </Link>
           ) : event ? (
             <>
@@ -204,8 +208,8 @@ const Navbar = ({ link, event, ads }) => {
               <span>
                 <a href="/blog">Blog</a>
               </span>
-              <Link href={actualLink}>
-                <button>Start Learning</button>
+              <Link href={actualLink} id={idBtnB}>
+                <button id={idBtnB}>Start Learning</button>
               </Link>
             </>
           )}

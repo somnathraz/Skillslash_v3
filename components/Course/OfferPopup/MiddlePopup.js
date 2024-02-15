@@ -2,20 +2,14 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { MdClose } from "react-icons/md";
 
-const MiddlePopup = ({
-  redirectFs,
-  redirectDs,
-  redirectBa,
-  redirectWeb,
-  redirectDSA,
-}) => {
+const MiddlePopup = ({ redirectFs, redirectDs, redirectDa, newDsa, newDs }) => {
   const [open, setOpen] = useState(false);
-  const [popups, setPopups] = useState(false);
+  const [code, setCode] = useState("");
   const [onetime, setOnetime] = useState(true);
   const [showCross, setShowCross] = useState(false);
   const [data, setData] = useState({
-    title: "Explore our top selling ",
-    spanTitle: "Data Science course",
+    title: "Now get Data Science & AI Bootcamp @5,999",
+    spanTitle: "Coupon code: RGHTTLNT50",
     link: "/selfpaced/data-science-&-aI-bootcamp",
   });
   const handelOpen = () => {
@@ -39,27 +33,59 @@ const MiddlePopup = ({
       };
     }
   }, [open]);
+  const [isCopied, setIsCopied] = useState(false);
+
+  const handleCopyClick = () => {
+    navigator.clipboard
+      .writeText(code)
+      .then(() => {
+        setIsCopied(true);
+        setTimeout(() => setIsCopied(false), 1500);
+      })
+      .catch((err) => {
+        console.error("Error copying to clipboard:", err);
+      });
+  };
   useEffect(() => {
     if (redirectDs) {
       setData({
-        title: "Explore our top selling ",
-        spanTitle: "Data Science course",
+        title: "Now get Data Science & AI Bootcamp @5,999",
+        spanTitle: "Coupon code: RGHTTLNT50",
         link: "/selfpaced/data-science-&-aI-bootcamp",
       });
+      setCode("RGHTTLNT50");
     }
-    if (redirectBa) {
+    if (newDs) {
       setData({
-        title: "Explore our top selling",
-        spanTitle: "Data Analytics course",
+        title: "Now get Data Science & AI Bootcamp @5,999",
+        spanTitle: "Coupon code: HYPR4999",
+        link: "/selfpaced/data-science-&-aI-bootcamp",
+      });
+      setCode("HYPR4999");
+    }
+    if (redirectDa) {
+      setData({
+        title: "Now get Data Analytics Bootcamp @3,999",
+        spanTitle: "Coupon code: HYPR3999",
         link: "/selfpaced/data-analytics-bootcamp",
       });
+      setCode("HYPR3999");
+    }
+    if (newDsa) {
+      setData({
+        title: "Apply the coupon code",
+        spanTitle: "HYPR3499",
+        link: "to get Data Analytics Bootcamp @3499 just for today",
+      });
+      setCode("HYPR3499");
     }
     if (redirectFs) {
       setData({
-        title: "Explore our top selling",
-        spanTitle: "DSA & System Design course",
+        title: "Now get DSA & System Design Bootcamp @3,999",
+        spanTitle: "Coupon code: TLNT50",
         link: "/selfpaced/dsa-system-design-bootcamp",
       });
+      setCode("TLNT50");
     }
     let timeOut;
     if (onetime)
@@ -73,7 +99,7 @@ const MiddlePopup = ({
   return (
     open && (
       <div className="fixed overflow-hidden h-screen w-screen bg-[#00000062] left-0 top-0 z-[1001] flex items-center justify-center">
-        <div className="bg-white w-[50%] max-sm:w-[90%] h-max rounded-lg flex  flex-col items-center justify-center px-16 py-10 gap-5 relative">
+        <div className="bg-white w-[50%] max-sm:w-[90%] h-max rounded-lg flex  flex-col items-center justify-center px-16 max-sm:px-8 py-10 gap-5 relative">
           {showCross && (
             <MdClose
               className="absolute right-[5px] top-[4px] text-xl text-black"
@@ -81,22 +107,31 @@ const MiddlePopup = ({
             />
           )}
 
-          <h3 className="text-4xl max-sm:text-2xl font-medium  text-center flex flex-col gap-2">
-            {data.title}
-            <br />
-            <span className="text-[#f18350] font-bold text-4xl">
-              {data.spanTitle}
-            </span>
-          </h3>
+          {newDsa ? (
+            <h3 className="text-[27px] text-black max-sm:text-[21px] font-medium text-center">
+              {data.title}{" "}
+              <span className="font-bold text-[#4f419a]">
+                {data.spanTitle}{" "}
+              </span>
+              {data.link}
+            </h3>
+          ) : (
+            <h3 className="text-[27px] max-sm:text-[21px] font-medium text-center flex flex-col gap-2">
+              {data.title}
+              <br />
+              <span className="text-[#4f419a] font-semibold text-3xl max-sm:text-2xl">
+                {data.spanTitle}
+              </span>
+            </h3>
+          )}
 
-          <Link href={data.link}>
-            <button
-              className="bg-[#4f419a] cursor-pointer"
-              style={{ padding: "8px 15px" }}
-            >
-              Explore Course
-            </button>
-          </Link>
+          <button
+            className="bg-[#f18350] cursor-pointer"
+            style={{ padding: "8px 17px" }}
+            onClick={handleCopyClick}
+          >
+            {isCopied ? "Copied!" : "Copy Coupon Code"}
+          </button>
         </div>
       </div>
     )
