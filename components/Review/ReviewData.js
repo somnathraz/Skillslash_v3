@@ -1,7 +1,7 @@
 export const dsReview = [
   {
     id: 1,
-    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/Mirnal_sahay_review.webp",
+    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Review/mirnal-sahay.webp",
     name: "Mrinal Sahay",
     alt: "Mrinal Sahay review",
     rating: "high",
@@ -10,7 +10,7 @@ export const dsReview = [
   },
   {
     id: 2,
-    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/Gautum_skillslash_review.webp",
+    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Review/gautum-review.webp",
     name: "Gautam",
     alt: "Gautam review",
     rating: "high",
@@ -19,7 +19,7 @@ export const dsReview = [
   },
   {
     id: 3,
-    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/sameer-ahemed-skillslash-review.webp",
+    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Review/sameer-ahemed.webp",
     name: "Sammer Ahmed",
     alt: "Sammer Ahmed review",
     rating: "high",
@@ -28,7 +28,7 @@ export const dsReview = [
   },
   {
     id: 4,
-    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/Tilak-rao-skillslash-review.webp",
+    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Review/Tilak-rao.webp",
     name: "Tilak Rao",
     alt: "Tilak Rao review",
     rating: "medium",
@@ -37,7 +37,7 @@ export const dsReview = [
   },
   {
     id: 5,
-    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/priya-khatun-data-science-review.webp",
+    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Review/priya-khatun.webp",
     name: "Priya Khatun",
     alt: "Priya Khatin",
     rating: "medium",
@@ -45,17 +45,8 @@ export const dsReview = [
     desc: "The instructor are very friendly and cheerful. They thought us amazing knowledge about how to create components. the session was good. They start from basic and it is an perfect learning for freshers. Thank you Skillslash Academy..!",
   },
   {
-    id: 6,
-    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/priya-khatun-data-science-review.webp",
-    name: "Krishan Gupta",
-    alt: "Krishan Gupta",
-    rating: "medium",
-    para: "It's was overall a good experience to attend Priyanka mam class about practical hands-on class on data visualization",
-    desc: "It's was overall a good experience to attend Priyanka mam class about practical hands-on class on data visualization tool called as Tableau.. Thanks for your valuable time and special thanks to skillslash academy for such a fantastic initiative.",
-  },
-  {
     id: 7,
-    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/rishi-data-science-review.webp",
+    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Review/Rishi+Bhaisare.webp",
     name: "Rishi Bhaisare",
     alt: "Rishi Bhaisare",
     rating: "medium",
@@ -64,7 +55,7 @@ export const dsReview = [
   },
   {
     id: 8,
-    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/ashmita-data-science-review.webp",
+    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Review/Ashmita+Chakraborty.webp",
     name: "Ashmita Chakraborty",
     alt: "Ashmita Chakraborty",
     rating: "medium",
@@ -73,7 +64,7 @@ export const dsReview = [
   },
   {
     id: 9,
-    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/JayeshRajPrasadReviewBA.webp",
+    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Review/Jayesh+Raj+Prasad.webp",
     name: "Jayesh Raj Prasad",
     alt: "Jayesh Raj Prasad",
     rating: "medium",
@@ -82,7 +73,7 @@ export const dsReview = [
   },
   {
     id: 10,
-    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/AkshayaSobananReviewBA.webp",
+    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Review/Akshaya+Sobanan.webp",
     name: "Akshaya Sobanan",
     alt: "Akshaya Sobanan",
     rating: "medium",
@@ -100,7 +91,7 @@ export const dsReview = [
   },
   {
     id: 12,
-    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/NahazNabbuReviewBA.webp",
+    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Review/Nahaz+Nabbu.webp",
     name: "Nahaz Nabbu",
     alt: "Nahaz Nabbu",
     rating: "medium",
@@ -110,7 +101,7 @@ export const dsReview = [
 
   {
     id: 14,
-    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/PrathanapatelReviewBA.webp",
+    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Review/parthana-patel.webp",
     name: "Prathana Patel",
     alt: "Prathana Patel",
     rating: "medium",
@@ -119,7 +110,7 @@ export const dsReview = [
   },
   {
     id: 15,
-    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/SumanthReviewBA.webp",
+    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Review/sumanthkolluri.webp",
     name: "SUMANTH KOLLURI",
     alt: "SUMANTH KOLLURI",
     rating: "medium",
@@ -205,7 +196,7 @@ export const webReview = [
 export const fsReview = [
   {
     id: 1,
-    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/PANKAJ_CHOWDHURY.webp",
+    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Review/pankaj-chowdhury.webp",
     name: "Pankaj Chowdhury",
     alt: "Pankaj Chowdhury review",
     rating: "high",
@@ -215,7 +206,7 @@ export const fsReview = [
 
   {
     id: 3,
-    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/Manisha_singh.webp",
+    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Review/manisha.webp",
     name: "Manisha Singh",
     alt: "Manisha singh review",
     rating: "high",
@@ -224,7 +215,7 @@ export const fsReview = [
   },
   {
     id: 4,
-    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/Muralikrishna_Alichetty.webp",
+    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Review/muralikrishna.webp",
     name: "Muralikrishna",
     alt: "Muralikrishna review",
     rating: "medium",
@@ -233,7 +224,7 @@ export const fsReview = [
   },
   {
     id: 5,
-    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/GIRISH_BALLAMPALLI.webp",
+    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Review/girish.webp",
     name: "Girisih",
     alt: "Girisih review",
     rating: "medium",
@@ -242,7 +233,7 @@ export const fsReview = [
   },
   {
     id: 6,
-    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/Anukalp_Desai.webp",
+    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Review/anukalp-desai.webp",
     name: "Anukalp Desai",
     alt: "Anukalp Desai review",
     rating: "low",
@@ -251,7 +242,7 @@ export const fsReview = [
   },
   {
     id: 7,
-    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/Anurag_Sinha.webp",
+    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Review/anurag-sinha.webp",
     name: "Anurag Sinha",
     alt: "Anurag Sinha review",
     rating: "medium",
@@ -260,7 +251,7 @@ export const fsReview = [
   },
   {
     id: 8,
-    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/Ankur_Singh.webp",
+    img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Review/ankur-sigh.webp",
     name: "Ankur Singh",
     alt: "Ankur review",
     rating: "low",

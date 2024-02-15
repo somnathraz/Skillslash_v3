@@ -11,12 +11,12 @@ const WhyUs = ({ redirectDs, home, redirectDa }) => {
   });
 
   const imageSrc = [
-    "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Certificate/Certificate+Of+Internship.webp",
+    "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Certificate+Of+Internship.webp",
     // Add other image URLs as needed
-    "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/project-experience.webp",
+    "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/project-experience.webp",
     redirectDa
-      ? "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/data-sample-certificate.webp"
-      : "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/Microsoft-certificate-data-science-without-border.webp",
+      ? "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/microsoft-data-analytics.webp"
+      : "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/microsft-data-science.webp",
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animateState, setAnimateState] = useState(true);
@@ -165,9 +165,9 @@ const WhyUs = ({ redirectDs, home, redirectDa }) => {
             </motion.div>
           </div>
 
-          <div className="relative h-[415px] max-[1281px]:h-[390px] mt-[-85px]">
+          <div className="relative h-[390px] max-[1281px]:h-[390px] mt-[-60px]">
             <Image
-              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/why-us-image.webp"
+              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/why-choose-us.webp"
               alt="why choose"
               fill
             />
@@ -222,35 +222,6 @@ const WhyUs = ({ redirectDs, home, redirectDa }) => {
                 />
               </motion.svg>
             </div>
-            {/* <div
-              onMouseEnter={() => setAnimateState(false)}
-              onMouseLeave={() => setAnimateState(true)}
-              className="absolute top-0  z-10 h-full w-full flex items-end justify-end"
-            >
-              {animateState ? (
-                <motion.div
-                  ref={intervalIdRef}
-                  id="slide"
-                  variants={variants}
-                  initial="initial"
-                  animate="animate"
-                  onMouseEnter={() => setAnimateState(false)}
-                  onMouseOver={() => setAnimateState(false)}
-                  onMouseLeave={() => setAnimateState(true)}
-                  className="bg-[#0000005e] h-full border-l-8 border-black relative z-10"
-                >
-                  <div className="h-[40px] w-10 bg-black flex items-center justify-center z-20 absolute top-[41%] left-[-25px] rounded-full">
-                    <IoIosArrowBack className="text-3xl text-white" />
-                  </div>
-                </motion.div>
-              ) : (
-                <div className="bg-[#0000005e] w-[130px]  h-full border-l-8 border-black relative z-10">
-                  <div className="h-[40px] w-10 bg-black flex items-center justify-center z-20 absolute top-[41%] left-[-25px] rounded-full">
-                    <IoIosArrowBack className="text-3xl text-white" />
-                  </div>
-                </div>
-              )}
-            </div> */}
 
             <div className="flex flex-col gap-4 items-center">
               <h3 className="text-4xl text-[#4f419a] font-bold">

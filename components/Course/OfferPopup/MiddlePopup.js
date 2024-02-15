@@ -57,7 +57,7 @@ const MiddlePopup = ({ redirectFs, redirectDs, redirectDa, newDsa, newDs }) => {
     }
     if (newDs) {
       setData({
-        title: "Now get Data Science & AI Bootcamp @5,999",
+        title: "Now get Data Science & AI Bootcamp @4,999",
         spanTitle: "Coupon code: HYPR4999",
         link: "/selfpaced/data-science-&-aI-bootcamp",
       });
@@ -66,10 +66,10 @@ const MiddlePopup = ({ redirectFs, redirectDs, redirectDa, newDsa, newDs }) => {
     if (redirectDa) {
       setData({
         title: "Now get Data Analytics Bootcamp @3,999",
-        spanTitle: "Coupon code: HYPR3999",
+        spanTitle: "Coupon code: TLNT50",
         link: "/selfpaced/data-analytics-bootcamp",
       });
-      setCode("HYPR3999");
+      setCode("TLNT50");
     }
     if (newDsa) {
       setData({
