@@ -71,7 +71,7 @@ function YourComponent() {
           <div className="flex flex-col gap-4">
             <div className="px-3 py-2 bg-[#EEEBFF] rounded w-[31%] max-sm:w-[70%]">
               <Image
-                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powered+by+microsoft.png"
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Header/Powered+by+microsoft+tag+webp.webp"
                 alt="PoweredByMicrosoft"
                 width={mobile ? 180 : 230}
                 height={mobile ? 19 : 24}
@@ -129,7 +129,7 @@ function YourComponent() {
           </div>
           <div className="absolute right-[-150px] top-[50px] max-sm:left-[10px] max-sm:top-[-60px] max-sm:right-[10px] max-sm:flex max-sm:items-center max-sm:justify-center ">
             <Image
-              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/data-science-header.png"
+              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Home/coursesection/data-science-header.webp"
               alt="data-science-course"
               height={294}
               width={mobile ? 290 : 416}
@@ -178,7 +178,7 @@ function YourComponent() {
           <div className="flex flex-col gap-4">
             <div className="px-3 py-2 bg-[#EEEBFF] rounded w-[47%] max-sm:w-[80%]">
               <Image
-                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powered+by+microsoft.png"
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Header/Powered+by+microsoft+tag+webp.webp"
                 alt="PoweredByMicrosoft"
                 width={mobile ? 180 : 230}
                 height={mobile ? 19 : 24}
@@ -236,8 +236,8 @@ function YourComponent() {
           </div>
           <div className="absolute left-[-165px] top-[52px] max-sm:left-[10px] max-sm:top-[-60px] max-sm:right-[10px] max-sm:flex max-sm:items-center max-sm:justify-center">
             <Image
-              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/data-analytics-header.png"
-              alt="data-science-course"
+              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Home/coursesection/data-analytics-header.webp"
+              alt="data-analytics-course"
               height={294}
               width={mobile ? 290 : 416}
             />
@@ -278,21 +278,21 @@ function YourComponent() {
           />
         </motion.svg>
         <Image
-          src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Course_icon/data-analytics-non-tech-pro.png"
+          src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Home/coursesection/data-analytics-non-tech-pro.png"
           width="40"
           height="40"
           className="z-10 absolute left-[85px] top-[69%] max-sm:hidden"
           alt="data analytics"
         />
         <Image
-          src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Course_icon/data-science-for-clg-icon.png"
+          src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Home/coursesection/data-science-for-clg-icon.png"
           width="40"
           height="40"
           className="z-10 absolute top-[37.8%] right-[-16.7%] max-sm:hidden"
           alt="data analytics"
         />
         <Image
-          src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Course_icon/job-icon.webp"
+          src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Home/coursesection/job-icon.webp"
           width="40"
           height="40"
           className="z-10 absolute left-[49px] top-[75px] max-sm:hidden"
@@ -305,12 +305,12 @@ function YourComponent() {
           </div> */}
 
           <div className="flex flex-col gap-4">
-            <div className="w-[32%] max-sm:w-[100%]">
+            <div className="w-[45%] max-sm:w-[100%] bg-[#f3f1ff] py-3 px-3 rounded top-[10px]">
               <Image
-                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/FAANG+Software+Developer+as+Trainers.png"
-                alt="PoweredByMicrosoft"
-                width={230}
-                height={24}
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Home/coursesection/FAANG%2BSoftware%2BDeveloper%2Bas%2BTrainers.webp"
+                alt="FAANG trainers"
+                width={300}
+                height={31}
               />
             </div>
             <h3 className="text-4xl max-sm:text-2xl font-bold text-[#f18350] w-[70%] max-sm:w-[100%] ">
@@ -363,9 +363,9 @@ function YourComponent() {
               </Link>
             </div>
           </div>
-          <div className="absolute right-[-150px] top-[52px] max-sm:left-[10px] max-sm:top-[-60px] max-sm:right-[10px] max-sm:flex max-sm:items-center max-sm:justify-center">
+          <div className="absolute right-[-150px] top-[75px] max-sm:left-[10px] max-sm:top-[-60px] max-sm:right-[10px] max-sm:flex max-sm:items-center max-sm:justify-center">
             <Image
-              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/dsa+header.png"
+              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Home/coursesection/dsa%2Bheader.webp"
               alt="data-science-course"
               height={294}
               width={mobile ? 290 : 416}

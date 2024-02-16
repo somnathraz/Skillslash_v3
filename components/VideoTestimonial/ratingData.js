@@ -2,7 +2,7 @@ export const ratingData = [
   {
     width: "100",
     height: "70",
-    src: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/course-report.webp",
+    src: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Header/course-report-v.webp",
   },
   {
     width: "120",

@@ -123,7 +123,7 @@ const ReviewSwiper = ({ event, review }) => {
               }}
             >
               <Image
-                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/review-bg.png"
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/review-bg.png"
                 fill
                 alt="review bg"
                 className="z-[-1]"

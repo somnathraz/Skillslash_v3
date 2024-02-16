@@ -8,7 +8,7 @@ const CTA = ({ redirectDSA }) => {
     <div className={styles.CtaWrapper}>
       <div className={styles.firstCta}>
         <Image
-          src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Skillslash%2BNew%2BLogo%2B(white).webp"
+          src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Header/Skillslash%2BNew%2BLogo%2B(white).webp"
           alt="Getting confused ask directly to a expert"
           style={{ objectFit: "contain" }}
           width={137}
@@ -27,7 +27,7 @@ const CTA = ({ redirectDSA }) => {
         <a href="tel:+91-8391-911-911">
           <button>
             <Image
-              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/chat-gif.gif"
+              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Header/chat-with-us.gif"
               width={30}
               height={30}
             />

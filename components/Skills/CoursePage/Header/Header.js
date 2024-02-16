@@ -67,7 +67,7 @@ const Header = ({
             {/* <Image src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/powered-by-microsoft-(White).png" alt="PoweredByMicrosoft" width={200} height={22}/> */}
 
             <Image
-              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powered+by+microsoft.png"
+              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Header/Powered+by+microsoft+tag+webp.webp"
               alt="PoweredByMicrosoft"
               width={200}
               height={22}
@@ -95,7 +95,7 @@ const Header = ({
         </p>
         <div className="grid grid-cols-3 gap-2 border-[1px] mt-3 w-[75%] max-sm:w-[97%] rounded items-center px-4 py-1 justify-center">
           <Image
-            src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/Header/Google_review.png"
+            src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/googlereview-new.webp"
             alt="Goole_RReviews"
             width={150}
             height={23}
@@ -103,7 +103,7 @@ const Header = ({
             className="mx-auto"
           />
           <Image
-            src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/Header/switchup_review.png"
+            src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Header/switch-up.webp"
             alt="switchup_RReviews"
             width={150}
             height={23}
@@ -111,7 +111,7 @@ const Header = ({
             className="mx-auto"
           />
           <Image
-            src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/CR_review.png"
+            src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/course-report.webp"
             alt="CR_RReviews"
             width={150}
             height={23}
