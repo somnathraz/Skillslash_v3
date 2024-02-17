@@ -107,7 +107,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}
         redirectFs={DataScienceCourseData.data.header.FullStack}
       />
-      {/* <Header
+      <Header
         title={DataScienceCourseData.data.header.title}
         desc={DataScienceCourseData.data.header.desc}
         redirectFs={DataScienceCourseData.data.header.FullStack}
@@ -120,7 +120,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         link={DataScienceCourseData.data.header.link}
         redirectDs={DataScienceCourseData.data.header.dataScience}
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}
-      /> */}
+      />
       <Learn
         firstPoint={DataScienceCourseData.data.header.firstPoint}
         redirectFs={DataScienceCourseData.data.header.FullStack}
