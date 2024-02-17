@@ -12,12 +12,12 @@ const WhyUsAnimate = ({ redirectDa, redirectDs, home, redirectFs }) => {
     target: ref,
   });
   const imageSrc = [
-    "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Certificate/Certificate+Of+Internship.webp",
+    "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Certificate+Of+Internship.webp",
     // Add other image URLs as needed
-    "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/project-experience.webp",
+    "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/project-experience.webp",
     redirectDa
-      ? "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/data-sample-certificate.webp"
-      : "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/Microsoft-certificate-data-science-without-border.webp",
+      ? "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/microsoft-data-analytics.webp"
+      : "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/microsft-data-science.webp",
   ];
   return (
     <>
@@ -77,8 +77,8 @@ const WhyUsAnimate = ({ redirectDa, redirectDs, home, redirectFs }) => {
               <h3 className="text-3xl text-[#4f419a] font-bold">
                 Triple Certification
               </h3>
-              <div className="grid grid-cols-1 gap-3">
-                <div className="bg-white shadow rounded-lg px-7 py-4 flex flex-col gap-3">
+              <div className="grid grid-cols-1 gap-3 items-center">
+                <div className="bg-white shadow rounded-lg px-7 py-4 flex flex-col gap-3 min-[481px]:w-[75%]">
                   <div className="relative w-full h-[180px]  ">
                     <Image src={imageSrc[2]} fill alt="certificate image" />
                   </div>
@@ -89,7 +89,7 @@ const WhyUsAnimate = ({ redirectDa, redirectDs, home, redirectFs }) => {
                   </p>
                 </div>
 
-                <div className="bg-white shadow rounded-lg px-7 py-4 flex flex-col gap-3">
+                <div className="bg-white shadow rounded-lg px-7 py-4 flex flex-col gap-3 min-[481px]:w-[75%]">
                   <div className="relative w-full h-[180px]  ">
                     <Image src={imageSrc[1]} fill alt="certificate image" />
                   </div>
@@ -100,7 +100,7 @@ const WhyUsAnimate = ({ redirectDa, redirectDs, home, redirectFs }) => {
                     projects you
                   </p>
                 </div>
-                <div className="bg-white shadow rounded-lg px-7 py-4 flex flex-col gap-3">
+                <div className="bg-white shadow rounded-lg px-7 py-4 flex flex-col gap-3 min-[481px]:w-[75%]">
                   <div className="relative w-full h-[180px]  ">
                     <Image src={imageSrc[0]} fill alt="certificate image" />
                   </div>

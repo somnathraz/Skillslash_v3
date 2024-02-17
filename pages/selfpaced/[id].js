@@ -16,6 +16,7 @@ import Footer from "../../components/Footer/Footer";
 import WhatsappButton from "../../components/WhatsAppButton/WhatsappButton";
 import CTA from "../../components/CTA/CTA";
 import MiddlePopup from "../../components/Course/OfferPopup/MiddlePopup";
+import BottomPrice from "../../components/Skills/BottomPrice/BottomPrice";
 
 const DataSciencePage = ({ DataScienceCourseData }) => {
   const FaqDATA = [
@@ -106,7 +107,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}
         redirectFs={DataScienceCourseData.data.header.FullStack}
       />
-      <Header
+      {/* <Header
         title={DataScienceCourseData.data.header.title}
         desc={DataScienceCourseData.data.header.desc}
         redirectFs={DataScienceCourseData.data.header.FullStack}
@@ -119,7 +120,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         link={DataScienceCourseData.data.header.link}
         redirectDs={DataScienceCourseData.data.header.dataScience}
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}
-      />
+      /> */}
       <Learn
         firstPoint={DataScienceCourseData.data.header.firstPoint}
         redirectFs={DataScienceCourseData.data.header.FullStack}
@@ -191,6 +192,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}
         redirectFs={DataScienceCourseData.data.header.FullStack}
       />
+      <BottomPrice />
       {/* <MiddlePopup
         redirectDs={DataScienceCourseData.data.header.dataScience}
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}

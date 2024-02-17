@@ -112,6 +112,9 @@
     font-size: 24px;
     margin-bottom: 0px !important;
   }
+  .quesWrap {
+    margin: 0px 10px;
+  }
 }
 @media (max-width: 481px) {
   .FAQ {

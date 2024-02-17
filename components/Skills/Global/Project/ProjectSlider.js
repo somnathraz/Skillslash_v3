@@ -136,7 +136,7 @@ const ProjectSlider = ({
     <div className={styles.projectWrap}>
       <div className={styles.projectHeader}>
         <div className={styles.leftWrap}>
-          <h2 className="text-4xl font-bold">
+          <h2 className="text-4xl font-bold max-[641px]:text-2xl">
             {noProject}
 
             {heading}

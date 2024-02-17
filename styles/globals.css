@@ -62,7 +62,9 @@ h2 {
   margin: 21px;
 }
 
-.slideAnimation {animation: scrollAnimation 16s linear infinite;}
+.slideAnimation {
+  animation: scrollAnimation 16s linear infinite;
+}
 /* @keyframes scrollAnimation {
   from {
     transform: translateX(50%);
@@ -620,6 +622,9 @@ button {
 @media (max-width: 801px) {
   h4 {
     font-size: 24px;
+  }
+  .grid-col {
+    grid-template-columns: 43% 16% 16% 19%;
   }
   .wrapperHeading h4 {
     font-size: 24px;
