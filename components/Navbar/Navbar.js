@@ -139,7 +139,7 @@ const Navbar = ({ link, event, ads, redirectDs, redirectFs, redirectDa }) => {
           )}
 
           <Link href={actualLink}>
-            <button className="hidden max-sm:block" id={idBtnB}>
+            <button className={styles.mLearn} id={idBtnB}>
               Start Learning
             </button>
           </Link>

@@ -166,7 +166,11 @@
     flex-flow: column;
   }
 }
-
+@media (min-width: 1600px) {
+  .ReviewTop {
+    padding: 30px 150px 0 150px;
+  }
+}
 @media (max-width: 481px) {
   .ReviewSlider {
     padding: 20px 20px;

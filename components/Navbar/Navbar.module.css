@@ -14,6 +14,9 @@
   align-items: center;
   justify-content: space-between;
 }
+.mLearn {
+  display: none !important;
+}
 .mbtn {
   display: none !important;
 }
@@ -359,7 +362,9 @@
     justify-content: space-between;
     gap: 0px;
   }
-
+  .mLearn {
+    display: flex !important;
+  }
   .left button {
     padding: 8px 10px;
     outline: none;
