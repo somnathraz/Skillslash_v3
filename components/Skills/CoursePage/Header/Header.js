@@ -38,8 +38,8 @@ const Header = ({
   const [idBtnV, setIdBtnV] = useState("org-dv");
   console.log(redirectDs, redirectFs, redirectDa);
   return (
-    <div className="grid grid-cols-[60%,39%] max-sm:flex max-sm:flex-col gap-5 max-sm:mb-[10px] bg-[#111621] w-full mt-[40px] min-[1600px]:mt-[70px] px-28 min-[1600px]:px-48 max-sm:px-5 py-[100px] min-[1600px]:py-[90px] pb-[70px] max-sm:pb-[30px] max-sm:py-4 relative">
-      <div className="flex gap-3 text-[#F18350] font-bold items-center max-sm:mb-[-8px] min-[482px]:hidden ">
+    <div className="grid grid-cols-[60%,39%] max-sm:flex max-sm:flex-col gap-5 max-sm:mb-[10px] bg-[#111621] w-full mt-[40px] max-sm:mt-[60px] max-sm:pt-6 min-[1600px]:mt-[70px] px-28 min-[1600px]:px-48 max-sm:px-5 py-[100px] min-[1600px]:py-[90px] pb-[70px] max-sm:pb-[30px] max-sm:py-4 relative">
+      <div className="flex gap-3 text-[#F18350] font-bold items-center max-sm:mb-[-8px] min-[482px]:hidden">
         <p className="text-[#F18350] font-semibold min-[1600px]:text-[20px] max-sm:text-[15px] max-sm:font-medium">
           Self-Paced
         </p>
@@ -78,7 +78,7 @@ const Header = ({
 
       <div className="absolute gradient top-0 left-0 h-full w-[60%] max-sm:w-full z-0"></div>
       <div className="flex flex-col gap-2 relative z-[1]">
-        <div className="flex gap-3 text-[#F18350] font-bold items-center max-sm:mb-[-8px] ">
+        <div className="flex gap-3 text-[#F18350] font-bold items-center max-sm:mb-[-8px] max-sm:hidden">
           <p className="text-[#F18350] font-semibold min-[1600px]:text-[20px] max-sm:text-[15px] max-sm:font-medium">
             Self-Paced
           </p>
