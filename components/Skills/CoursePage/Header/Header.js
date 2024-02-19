@@ -45,12 +45,12 @@ const Header = ({
         </p>
         <MdKeyboardArrowRight className="text-white min-[1600px]:text-[20px]" />
         <p className="text-[#F18350] font-semibold max-sm:text-[15px] min-[1600px]:text-[20px] max-sm:font-medium">
-          {title}
+          Bootcamp
         </p>
         {/* <MdKeyboardArrowRight className="text-[white]" />
           <p>Data Science</p> */}
       </div>
-      <div className="w-[110%] ml-[-19px] h-[280px] relative flex justify-center min-[482px]:hidden">
+      <div className="w-[110%] max-[361px]:h-[250px] ml-[-19px] h-[280px] relative flex justify-center min-[482px]:hidden">
         <div onClick={() => showVideo(true)} id={idBtnV}>
           <Image
             src={imgSrc}
@@ -84,22 +84,24 @@ const Header = ({
           </p>
           <MdKeyboardArrowRight className="text-white min-[1600px]:text-[20px]" />
           <p className="text-[#F18350] font-semibold max-sm:text-[15px] min-[1600px]:text-[20px] max-sm:font-medium">
-            {title}
+            Bootcamp
           </p>
           {/* <MdKeyboardArrowRight className="text-[white]" />
           <p>Data Science</p> */}
         </div>
         {redirectDs && (
-          <div className="px-4 py-[6px] mt-4 bg-white w-max rounded">
+          <div className=" mt-4  w-max rounded flex items-center gap-2">
+            <p className="text-white font-medium">Powered by</p>
             {/* <Image src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/powered-by-microsoft-(White).png" alt="PoweredByMicrosoft" width={200} height={22}/> */}
-
-            <Image
-              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Header/Powered+by+microsoft+tag+webp.webp"
-              alt="PoweredByMicrosoft"
-              width={255}
-              height={28}
-              priority
-            />
+            <div className="bg-white px-4 py-[6px] rounded-[4px]">
+              <Image
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Home/coursesection/microsoft.webp"
+                alt="PoweredByMicrosoft"
+                width={90}
+                height={19}
+                priority
+              />
+            </div>
           </div>
         )}
         {redirectFs && (
@@ -114,12 +116,9 @@ const Header = ({
             />
           </div>
         )}
-        <h1 className="text-5xl max-[901px]:text-2xl text-white font-bold leading-[58px] max-[1281px]:text-3xl max-sm:leading-[45px]">
+        <h1 className="text-5xl max-[901px]:text-2xl text-white font-bold leading-[58px] max-[1281px]:text-3xl   max-sm:text-4xl max-sm:leading-[40px]">
           {title}
         </h1>
-        <p className="text-[#cccccc] w-[91%] min-[1600px]:w-[75%] text-[17px] max-sm:text-[16px] max-[1281px]:text-[16px] leading-[28px] max-sm:leading-[24px] font-light mt-2 max-sm:mt-0 min-[1600px]:text-[20px]">
-          {desc}
-        </p>
         <div className="grid grid-cols-3 gap-2 min-[1600px]:gap-0 border-[1px] mt-3 w-[75%] min-[1600px]:w-[60%] max-sm:w-[97%] rounded items-center px-4 py-1 justify-center">
           <Image
             src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/googlereview-new.webp"
@@ -146,14 +145,18 @@ const Header = ({
             className="mx-auto"
           />
         </div>
-        <div onClick={() => showVideo(true)}>
+        <p className="text-[#cccccc] w-[91%] min-[1600px]:w-[75%] text-[17px] max-sm:text-[16px] max-[1281px]:text-[16px] leading-[28px] max-sm:leading-[24px] font-light mt-2 max-sm:mt-2 min-[1600px]:text-[20px]">
+          {desc}
+        </p>
+
+        {/* <div onClick={() => showVideo(true)}>
           <button
             className="bg-[#f18350] px-3 py-2 mt-4 max-sm:hidden"
             id={idBtnDV}
           >
             Watch Demo Videos
           </button>
-        </div>
+        </div> */}
       </div>
       <div className="flex flex-col gap-7 relative w-full items-end justify-end">
         <div className="bg-white top-0 px-11 max-[1024px]:px-5 py-3 max-sm:px-0 rounded shadow flex flex-col w-full z-[1] max-sm:hidden absolute mt-28 max-[741px]:w-[52%] max-[741px]:top-0 max-[741px]:right-[-15px]">
