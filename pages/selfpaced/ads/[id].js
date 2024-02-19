@@ -139,11 +139,11 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
 
   useEffect(() => {
     console.log(1);
-    if (device && latitude && longitude) {
+    if (device) {
       console.log("hello");
       sendDataToAPI();
     }
-  }, [device, latitude, longitude]);
+  }, [device]);
 
   const sendDataToAPI = async () => {
     try {
