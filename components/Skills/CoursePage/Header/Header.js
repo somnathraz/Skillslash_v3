@@ -36,10 +36,10 @@ const Header = ({
   const [idBtnO, setIdBtnO] = useState("org-slo");
   const [idBtnDV, setIdBtnDV] = useState("org-wdv");
   const [idBtnV, setIdBtnV] = useState("org-dv");
-  console.log(redirectDs, redirectFs, redirectDa);
+
   return (
-    <div className="grid grid-cols-[60%,39%] max-sm:flex max-sm:flex-col gap-5 max-sm:mb-[10px] bg-[#111621] w-full mt-[70px] min-[1600px]:mt-[70px] px-28 min-[1600px]:px-48 max-sm:px-5 py-[100px] min-[1600px]:py-[90px] pb-[70px] max-sm:pb-[30px] max-sm:py-4 relative">
-      <div className="flex gap-3 text-[#F18350] font-bold items-center max-sm:mb-[-8px] ">
+    <div className="grid grid-cols-[60%,39%] max-[741px]:flex max-[741px]:flex-col max-[901px]:grid-cols-[55%,44%] max-sm:flex max-sm:flex-col gap-5 max-sm:mb-[10px] bg-[#111621] w-full mt-[40px] max-sm:mt-[60px] max-sm:pt-6 min-[1600px]:mt-[70px] px-28 max-[1024px]:px-10 min-[1600px]:px-48 max-sm:px-5 py-[100px] min-[1600px]:py-[90px] pb-[70px] max-sm:pb-[30px] max-sm:py-4 relative">
+      <div className="flex gap-3 text-[#F18350] font-bold items-center max-sm:mb-[-8px] min-[482px]:hidden">
         <p className="text-[#F18350] font-semibold min-[1600px]:text-[20px] max-sm:text-[15px] max-sm:font-medium">
           Self-Paced
         </p>
@@ -78,6 +78,17 @@ const Header = ({
 
       <div className="absolute gradient top-0 left-0 h-full w-[60%] max-sm:w-full z-0"></div>
       <div className="flex flex-col gap-2 relative z-[1]">
+        <div className="flex gap-3 text-[#F18350] font-bold items-center max-sm:mb-[-8px] max-sm:hidden">
+          <p className="text-[#F18350] font-semibold min-[1600px]:text-[20px] max-sm:text-[15px] max-sm:font-medium">
+            Self-Paced
+          </p>
+          <MdKeyboardArrowRight className="text-white min-[1600px]:text-[20px]" />
+          <p className="text-[#F18350] font-semibold max-sm:text-[15px] min-[1600px]:text-[20px] max-sm:font-medium">
+            {title}
+          </p>
+          {/* <MdKeyboardArrowRight className="text-[white]" />
+          <p>Data Science</p> */}
+        </div>
         {redirectDs && (
           <div className="px-4 py-[6px] mt-4 bg-white w-max rounded">
             {/* <Image src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/powered-by-microsoft-(White).png" alt="PoweredByMicrosoft" width={200} height={22}/> */}
@@ -103,7 +114,7 @@ const Header = ({
             />
           </div>
         )}
-        <h1 className="text-5xl text-white font-bold leading-[58px] max-[1281px]:text-3xl max-sm:leading-[45px]">
+        <h1 className="text-5xl max-[901px]:text-2xl text-white font-bold leading-[58px] max-[1281px]:text-3xl max-sm:leading-[45px]">
           {title}
         </h1>
         <p className="text-[#cccccc] w-[91%] min-[1600px]:w-[75%] text-[17px] max-sm:text-[16px] max-[1281px]:text-[16px] leading-[28px] max-sm:leading-[24px] font-light mt-2 max-sm:mt-0 min-[1600px]:text-[20px]">
@@ -144,9 +155,9 @@ const Header = ({
           </button>
         </div>
       </div>
-      <div className="flex flex-col gap-7 relative">
-        <div className="bg-white px-11 py-3 max-sm:px-0 rounded shadow flex flex-col w-full min-[1600px]:w-[90%] z-[1] max-sm:hidden absolute mt-28">
-          <div className="absolute w-[413px]  max-sm:w-[313px] h-[290px] max-sm:h-[220px] top-[-120px] max-sm:top-[-100px] left-12 min-[1600px]:left-20 max-sm:left-7 max-sm:flex max-sm:justify-center">
+      <div className="flex flex-col gap-7 relative w-full items-end justify-end">
+        <div className="bg-white px-11 max-[1024px]:px-5 py-3 max-sm:px-0 rounded shadow flex flex-col w-full z-[1] max-sm:hidden absolute mt-28 max-[741px]:w-[52%] max-[741px]:top-0 max-[741px]:right-[-15px]">
+          <div className="relative w-full  max-sm:w-[313px] h-[270px] max-[1281px]:h-[200px] max-sm:h-[220px] top-[-120px] max-sm:top-[-100px]  min-[1600px]:h-[320px] max-sm:left-7 max-sm:flex max-sm:justify-center">
             <div onClick={() => showVideo(true)} id={idBtnV}>
               <Image
                 src={imgSrc}
@@ -162,7 +173,7 @@ const Header = ({
               />
             </div>
           </div>
-          <div className="flex gap-2 w-full items-center mt-[180px] max-sm:mt-[120px] max-sm:px-4">
+          <div className="flex gap-2 w-full items-center mt-[-100px] max-sm:mt-[120px] max-sm:px-4">
             <p className="text-[#000000] flex gap-4 text-2xl font-bold items-center mr-3">
               {offerPrice}
               <span className="line-through text-lg font-normal text-[#646464]">
@@ -196,7 +207,7 @@ const Header = ({
           <div className="flex flex-col gap-2 py-4">
             <h3 className="text-xl font-bold px-5 py-1">Course Content</h3>
             <hr />
-            <div className="flex flex-col gap-2 px-7">
+            <div className="flex flex-col gap-2 px-7 max-[741px]:px-3">
               <p className="flex gap-2 items-center justify-between py-2">
                 <span className="flex gap-2 items-center">
                   <MdOutlineVideocam className="text-xl" />

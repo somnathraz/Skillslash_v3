@@ -44,7 +44,7 @@
   width: 100%;
   text-align: center;
 }
-@media (min-width: 482px) {
+@media (min-width: 642px) {
   .wrap {
     display: none;
   }
