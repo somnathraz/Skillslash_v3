@@ -1,0 +1,51 @@
+.wrap {
+  position: fixed;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 30% 67%;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+
+  background-color: white;
+  width: 100%;
+  z-index: 999;
+}
+.left {
+  margin-bottom: 15px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.ofPr {
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+}
+.acPr {
+  text-decoration: line-through;
+}
+.right {
+  margin-bottom: 15px;
+}
+.right button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f18350;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+.refund {
+  position: absolute;
+  bottom: 2px;
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 642px) {
+  .wrap {
+    display: none;
+  }
+}

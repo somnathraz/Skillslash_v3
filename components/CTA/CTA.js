@@ -8,7 +8,7 @@ const CTA = ({ redirectDSA }) => {
     <div className={styles.CtaWrapper}>
       <div className={styles.firstCta}>
         <Image
-          src="  https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/Skillslash+New+Logo+(white)+3.webp"
+          src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Header/Skillslash%2BNew%2BLogo%2B(white).webp"
           alt="Getting confused ask directly to a expert"
           style={{ objectFit: "contain" }}
           width={137}
@@ -27,7 +27,7 @@ const CTA = ({ redirectDSA }) => {
         <a href="tel:+91-8391-911-911">
           <button>
             <Image
-              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/chat-gif.gif"
+              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Header/chat-with-us.gif"
               width={30}
               height={30}
             />
@@ -38,7 +38,7 @@ const CTA = ({ redirectDSA }) => {
       <div className={styles.rightCta}>
         <div className={styles.imgwrap}>
           <Image
-            src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/200_finance+%5BConverted%5D-01-011+1.webp"
+            src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/call-icon.webp"
             alt="Getting confused ask directly to a expert"
             style={{ objectFit: "contain" }}
             width={235}

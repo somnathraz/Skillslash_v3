@@ -17,7 +17,7 @@ export default function Document() {
         ></link> */}
         <link
           rel="icon"
-          href="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/favicon.ico"
+          href="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/favicon.webp"
         />
         <meta name="theme-color" content="#4f419a" />
         <meta

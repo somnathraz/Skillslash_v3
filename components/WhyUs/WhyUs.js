@@ -11,12 +11,12 @@ const WhyUs = ({ redirectDs, home, redirectDa }) => {
   });
 
   const imageSrc = [
-    "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Certificate/Certificate+Of+Internship.webp",
+    "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Certificate+Of+Internship.webp",
     // Add other image URLs as needed
-    "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/project-experience.webp",
+    "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/project-experience.webp",
     redirectDa
-      ? "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/data-sample-certificate.webp"
-      : "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/Microsoft-certificate-data-science-without-border.webp",
+      ? "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/microsoft-data-analytics.webp"
+      : "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/microsft-data-science.webp",
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animateState, setAnimateState] = useState(true);
@@ -38,13 +38,13 @@ const WhyUs = ({ redirectDs, home, redirectDa }) => {
   }, [currentIndex, imageSrc]);
 
   return (
-    <div className="py-14 flex flex-col gap-11 max-sm:hidden">
-      <h2 className="px-28 max-[1281px]:px-20 max-sm:px-5 text-3xl max-sm:text-2xl">
+    <div className="py-14 flex flex-col gap-11 max-sm:hidden min-[1600px]:px-[150px] max-[741px]:mt-[70px] ">
+      <h2 className="px-28 max-[1281px]:px-20 max-[1024px]:px-10 max-sm:px-5 text-3xl max-sm:text-2xl">
         Why Choose Us?
       </h2>
-      <div className="px-28 max-[1281px]:px-20 bg-gradient-to-t from-[#f3f1fffe] from-8 0% to-white w-full to-20% flex flex-col h-max">
-        <div className="bg-black h-[330px] max-[1281px]:h-[305px]  rounded grid grid-cols-[48%,48.5%] max-[1281px]:grid-cols-[43%,53%] gap-10 pl-16 relative max-[1281px]:pl-10">
-          <div className="absolute bottom-0 h-[190px] bg-gradient-to-t from-[#000000] from-10% to-transparent w-[55%] to-70% z-20 max-[1281px]:w-[56%]"></div>
+      <div className="px-28 max-[1281px]:px-20 max-[1024px]:px-10 bg-gradient-to-t from-[#f3f1fffe] from-8 0% to-white w-full to-20% flex flex-col h-max">
+        <div className="bg-black h-[330px] max-[1281px]:h-[305px]  rounded grid grid-cols-[48%,48.5%] min-[1600px]:grid-cols-[48%,45%] min-[1600px]:gap-24 max-[1281px]:grid-cols-[43%,53%] gap-10 pl-16 relative max-[1281px]:pl-10">
+          <div className="absolute bottom-0 h-[190px] bg-gradient-to-t from-[#000000] from-10% to-transparent w-[55%] to-70% z-20 max-[1281px]:w-[56%] max-[1024px]:hidden"></div>
           <div className="relative overflow-x-scroll hideScroll w-[87vw]">
             {/* <div className="absolute top-[-96px] left-5 z-0 h-[800px]">
               <hr className=" w-[1px] bg-white z-[0] h-[800px]" />
@@ -150,7 +150,7 @@ const WhyUs = ({ redirectDs, home, redirectDa }) => {
                     <span>::</span>
                   </div>
                 </div>
-                <div className="text-[#e1e1e1]">
+                <div className="text-[#e1e1e1] max-[1281px]:w-[40%] max-[1024px]:w-[80%]">
                   <h3 className="text-white text-[28px] font-bold max-[1281px]:text-[24px]">
                     <span className="text-[#f18350]"> Career </span>
                     Support
@@ -165,9 +165,9 @@ const WhyUs = ({ redirectDs, home, redirectDa }) => {
             </motion.div>
           </div>
 
-          <div className="relative h-[415px] max-[1281px]:h-[390px] mt-[-85px]">
+          <div className="relative h-[390px] max-[1281px]:h-[330px] mt-[-60px] max-[1281px]:mt-[-25px] max-[1024px]:hidden">
             <Image
-              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/why-us-image.webp"
+              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/why-choose-us.webp"
               alt="why choose"
               fill
             />
@@ -175,10 +175,10 @@ const WhyUs = ({ redirectDs, home, redirectDa }) => {
         </div>
         {(redirectDs || home) && (
           <div
-            className="flex flex-col relative px-28 max-sm:px-5 h-[550px] max-[1281px]:px-24  items-center gap-10 pb-[60px]  pt-10"
+            className="flex flex-col relative px-28 max-sm:px-5 h-[550px] max-[901px]:h-[900px] max-[1281px]:px-0  items-center gap-10 pb-[60px]  pt-10 "
             ref={certRef}
           >
-            <div className="absolute top-[0px] h-[666px] left-[80px] max-[1281px]:left-[58px] z-10">
+            <div className="absolute top-[0px] h-[666px] max-[801px]:h-[1000px] left-[80px] max-[1281px]:left-[58px] z-10">
               <motion.svg
                 preserveAspectRatio="xMidYMax meet"
                 className="h-[870px] w-[650px] max-sm:hidden max-[1281px]:hidden"
@@ -222,41 +222,12 @@ const WhyUs = ({ redirectDs, home, redirectDa }) => {
                 />
               </motion.svg>
             </div>
-            {/* <div
-              onMouseEnter={() => setAnimateState(false)}
-              onMouseLeave={() => setAnimateState(true)}
-              className="absolute top-0  z-10 h-full w-full flex items-end justify-end"
-            >
-              {animateState ? (
-                <motion.div
-                  ref={intervalIdRef}
-                  id="slide"
-                  variants={variants}
-                  initial="initial"
-                  animate="animate"
-                  onMouseEnter={() => setAnimateState(false)}
-                  onMouseOver={() => setAnimateState(false)}
-                  onMouseLeave={() => setAnimateState(true)}
-                  className="bg-[#0000005e] h-full border-l-8 border-black relative z-10"
-                >
-                  <div className="h-[40px] w-10 bg-black flex items-center justify-center z-20 absolute top-[41%] left-[-25px] rounded-full">
-                    <IoIosArrowBack className="text-3xl text-white" />
-                  </div>
-                </motion.div>
-              ) : (
-                <div className="bg-[#0000005e] w-[130px]  h-full border-l-8 border-black relative z-10">
-                  <div className="h-[40px] w-10 bg-black flex items-center justify-center z-20 absolute top-[41%] left-[-25px] rounded-full">
-                    <IoIosArrowBack className="text-3xl text-white" />
-                  </div>
-                </div>
-              )}
-            </div> */}
 
             <div className="flex flex-col gap-4 items-center">
               <h3 className="text-4xl text-[#4f419a] font-bold">
                 Triple Certification
               </h3>
-              <div className="grid grid-cols-3 gap-3">
+              <div className="grid grid-cols-3 gap-3 max-[961px]:grid-cols-2">
                 <div className="bg-white shadow rounded-lg px-7 py-4 flex flex-col gap-3">
                   <div className="relative w-full h-[180px]  ">
                     <Image src={imageSrc[2]} fill alt="certificate image" />

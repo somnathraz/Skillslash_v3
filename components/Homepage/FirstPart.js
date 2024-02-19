@@ -24,9 +24,7 @@ const FirstPart = ({ homePage }) => {
         spanTitleText=""
         homePage={homePage}
         desc="Get real work experience and certifications. Learn from industry experts and get placed in top product companies!"
-        backgroundImg="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/header-home-page-skillslash.webp"
-        rightImg="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/skillslash-first-header-side.webp"
-        iconImg="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/HomepageDataCollection.webp"
+        backgroundImg="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Home/header/header-home-page-skillslash.webp"
         usp1=" Live Interactive "
         usp2=" Company "
         usp3=" Microsoft"

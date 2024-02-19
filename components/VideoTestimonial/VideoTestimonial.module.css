@@ -12,7 +12,6 @@
 .ReviewSlider h4 {
   margin-bottom: 0;
 }
-
 .headings p {
   color: #4f419a;
   font-weight: 600;
@@ -123,7 +122,7 @@
 @media (max-width: 1281px) {
   .ReviewSlider {
     padding: 0px 40px;
-    margin-top: 70px;
+    margin-top: 0px;
   }
   .ReviewTop {
     padding: 0px 20px;
@@ -157,6 +156,14 @@
   .siteReview {
     margin: 30px 20px;
   }
+  .ReviewSlider {
+    margin: 40px 0px;
+  }
+  .ratingText h2 {
+    font-size: 27px;
+    color: white;
+  }
+
   .profileWrapper {
     height: 227px;
   }
@@ -189,6 +196,9 @@
   .ReviewRight h4 {
     font-size: 24px;
   }
+  .headings h2 {
+    font-size: 32px;
+  }
   .ReviewSlider h4 {
     font-size: 24px;
   }
@@ -217,6 +227,10 @@
     background-color: #111621;
     align-items: center;
     flex-flow: column;
+  }
+  .headings h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
   }
   .nameWrap {
     padding: 10px;

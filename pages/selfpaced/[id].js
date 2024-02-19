@@ -16,6 +16,7 @@ import Footer from "../../components/Footer/Footer";
 import WhatsappButton from "../../components/WhatsAppButton/WhatsappButton";
 import CTA from "../../components/CTA/CTA";
 import MiddlePopup from "../../components/Course/OfferPopup/MiddlePopup";
+import BottomPrice from "../../components/Skills/BottomPrice/BottomPrice";
 
 const DataSciencePage = ({ DataScienceCourseData }) => {
   const FaqDATA = [
@@ -191,13 +192,14 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}
         redirectFs={DataScienceCourseData.data.header.FullStack}
       />
-      <MiddlePopup
+      <BottomPrice />
+      {/* <MiddlePopup
         redirectDs={DataScienceCourseData.data.header.dataScience}
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}
         redirectFs={DataScienceCourseData.data.header.FullStack}
         newDsa={DataScienceCourseData.data.header.newDsa}
         newDs={DataScienceCourseData.data.header.newDs}
-      />
+      /> */}
     </div>
   );
 };

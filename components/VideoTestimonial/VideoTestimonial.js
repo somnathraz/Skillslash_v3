@@ -32,7 +32,7 @@ const VideoTestimonial = ({
 
       <div className={styles.ReviewSlider}>
         <div className={styles.headings}>
-          <h2 className="text-center flex flex-col  mb-10">
+          <h2 className="text-center flex flex-col  mb-10 max-[1281px]:text-[42px] gap-3">
             {heading}
             <span className="text-[#f18350]">{spanText}</span>
           </h2>

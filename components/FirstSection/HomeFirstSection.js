@@ -9,15 +9,15 @@ const HomeFirstSection = ({ deskTopPara, backgroundImg }) => {
   const [courseTitles, setCourseTitles] = useState([
     {
       title: "Data Science & AI Bootcamp",
-      img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Ai-icon-first-header.webp",
+      img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Home/header/ai-icon.webp",
     },
     {
       title: "Data Analytics Course",
-      img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Course+Header/data-science-chat.png",
+      img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Home/header/chat-gpt.webp",
     },
     {
       title: "DSA + SD (FAANG)",
-      img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Course+Header/data-science-course-chat.png",
+      img: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Home/header/chat-icon.webp",
     },
 
     // Add more course titles as needed
@@ -79,7 +79,7 @@ const HomeFirstSection = ({ deskTopPara, backgroundImg }) => {
         {/* <Image src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/header-img-home-page.png" /> */}
         <span className={styles.typeText}>
           <Image
-            src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powered+by+microsoft.png"
+            src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Header/Powered+by+microsoft+tag+webp.webp"
             alt="PoweredByMicrosoft"
             width={230}
             height={24}

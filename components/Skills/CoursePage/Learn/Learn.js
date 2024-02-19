@@ -12,9 +12,9 @@ const Learn = ({
 }) => {
   return (
     <div>
-      <div className="grid grid-cols-[60%,39%] gap-5 px-28 max-sm:px-6 py-7 max-sm:py-4 max-sm:flex">
+      <div className="grid grid-cols-[60%,39%] max-[901px]:grid-cols-[52%,39%] gap-5 px-28 max-[1024px]:px-10  max-[741px]:px-5 max-[741px]:grid-cols-[48%,39%] max-sm:px-6 py-7 max-sm:py-4 max-sm:flex">
         <div className="flex flex-col gap-5 max-sm:gap-0">
-          <div className="flex gap-3 max-sm:hidden">
+          <div className="flex gap-3 max-sm:hidden w-[full] flex-wrap">
             <Link href="#features">
               <span className="border-[#f18350] text-[#f18350] border-2 px-5 py-1 w-max rounded">
                 Features
@@ -68,8 +68,8 @@ const Learn = ({
           <div className="grid grid-cols-[14%,14%,14%,14%,14%,14%] gap-2">
             <div className="bg-[#f18350] rounded flex items-center justify-center py-2">
               <Image
-                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/sql-icon.png"
-                alt="headerImg"
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Header/sql.png"
+                alt="SQL icon"
                 width={24}
                 height={34}
               />
@@ -79,7 +79,7 @@ const Learn = ({
                 src={
                   redirectFs
                     ? "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/java+icon.png"
-                    : "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/python-icon.png"
+                    : "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Header/python.png"
                 }
                 alt="headerImg"
                 width={34}
@@ -91,7 +91,7 @@ const Learn = ({
                 src={
                   redirectFs
                     ? "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/c%2B%2B+icon.png"
-                    : "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/tabluae-icon.png"
+                    : "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Header/tablue.png"
                 }
                 alt="headerImg"
                 width={redirectFs ? 34 : 59}
@@ -103,7 +103,7 @@ const Learn = ({
                 src={
                   redirectFs
                     ? "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/js+icon.png"
-                    : "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/powerbi-icon.png"
+                    : "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Header/powerBi.png"
                 }
                 alt="headerImg"
                 width={redirectFs ? 34 : 54}
@@ -112,15 +112,15 @@ const Learn = ({
             </div>
             <div className="bg-[#EEEAFF] rounded flex items-center justify-center py-2">
               <Image
-                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/mongoDb-icon.png"
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Header/mongoDb.png"
                 alt="headerImg"
                 width={21}
                 height={38}
               />
             </div>
-            <div className="bg-[#EEEAFF] rounded flex items-center justify-center py-2">
+            <div className="bg-[#EEEAFe] rounded flex items-center justify-center py-2">
               <Image
-                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/git-icon.png"
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Header/git.png"
                 alt="headerImg"
                 width={33}
                 height={33}

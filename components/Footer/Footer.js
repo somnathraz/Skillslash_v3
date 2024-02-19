@@ -24,7 +24,7 @@ const Footer = () => {
             aria-label="Go to the Home Page of skillslash"
           >
             <Image
-              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/Skillslash-new-white-new-logo.webp"
+              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Skillslash-Logo-(white).webp"
               alt="Skillslash"
               quality={100}
               style={{ objectFit: "contain" }}

@@ -118,7 +118,7 @@ const Navbar = ({ link, event, ads, redirectDs, redirectFs, redirectDa }) => {
           </div>
           {ads ? (
             <Image
-              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/Skillslash-logo-new.png"
+              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Skillslash-logo.webp"
               alt="Skillslash"
               quality={100}
               style={{ objectFit: "contain" }}
@@ -128,7 +128,7 @@ const Navbar = ({ link, event, ads, redirectDs, redirectFs, redirectDa }) => {
           ) : (
             <a href="/">
               <Image
-                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/Skillslash-logo-new.png"
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Skillslash-logo.webp"
                 alt="Skillslash"
                 quality={100}
                 style={{ objectFit: "contain" }}
@@ -139,7 +139,7 @@ const Navbar = ({ link, event, ads, redirectDs, redirectFs, redirectDa }) => {
           )}
 
           <Link href={actualLink}>
-            <button className="hidden max-sm:block" id={idBtnB}>
+            <button className={styles.mLearn} id={idBtnB}>
               Start Learning
             </button>
           </Link>
