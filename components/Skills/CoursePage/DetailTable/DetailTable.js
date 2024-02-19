@@ -55,7 +55,7 @@ const DetailTable = ({
         </div>
         <div className="flex flex-col gap-[15px] max-sm:gap-[15px] items-center ">
           <Image
-            src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/Skillslash-New-Logo-(white)1.webp"
+            src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Home/coursesection/skillsalsh-favicon-white.png"
             width={40}
             height={40}
             alt="skillslash-logo"
