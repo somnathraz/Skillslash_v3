@@ -268,6 +268,7 @@
   .ReviewSlider {
     padding: 20px 20px;
     margin-top: 30px;
+    margin-bottom: 0;
   }
   .siteReview {
     display: flex;

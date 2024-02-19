@@ -91,6 +91,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
       open: false,
     },
   ];
+
   return (
     <div>
       <Head>
