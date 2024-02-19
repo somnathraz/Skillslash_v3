@@ -98,7 +98,7 @@ function DataScienceSyllabus({
                                   </h4>
                                   {content.chap.desc.map((desc, i) => {
                                     return (
-                                      <div key={desc}>
+                                      <div key={desc} className="max-sm:hidden">
                                         {desc === "" ? (
                                           ""
                                         ) : (

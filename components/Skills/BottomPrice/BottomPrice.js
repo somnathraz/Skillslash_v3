@@ -2,15 +2,15 @@ import React from "react";
 import styles from "./BottomPrice.module.css";
 import Link from "next/link";
 
-const BottomPrice = () => {
+const BottomPrice = ({ offerPrice, actualPrice, link }) => {
   return (
     <div className={styles.wrap}>
       <div className={styles.left}>
-        <p className={styles.ofPr}>₹ 5,999</p>
-        <p className={styles.acPr}>₹ 11,999</p>
+        <p className={styles.ofPr}>{offerPrice}</p>
+        <p className={styles.acPr}>{actualPrice}</p>
       </div>
       <div className={styles.right}>
-        <Link href="#">
+        <Link href={link}>
           <button>Start Learning</button>
         </Link>
       </div>
