@@ -156,7 +156,7 @@ const Header = ({
         </div>
       </div>
       <div className="flex flex-col gap-7 relative w-full items-end justify-end">
-        <div className="bg-white px-11 max-[1024px]:px-5 py-3 max-sm:px-0 rounded shadow flex flex-col w-full z-[1] max-sm:hidden absolute mt-28 max-[741px]:w-[52%] max-[741px]:top-0 max-[741px]:right-[-15px]">
+        <div className="bg-white top-0 px-11 max-[1024px]:px-5 py-3 max-sm:px-0 rounded shadow flex flex-col w-full z-[1] max-sm:hidden absolute mt-28 max-[741px]:w-[52%] max-[741px]:top-0 max-[741px]:right-[-15px]">
           <div className="relative w-full  max-sm:w-[313px] h-[270px] max-[1281px]:h-[200px] max-sm:h-[220px] top-[-120px] max-sm:top-[-100px]  min-[1600px]:h-[320px] max-sm:left-7 max-sm:flex max-sm:justify-center">
             <div onClick={() => showVideo(true)} id={idBtnV}>
               <Image
