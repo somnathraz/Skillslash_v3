@@ -12,6 +12,7 @@ import VideoTestimonial from "../../../components/VideoTestimonial/VideoTestimon
 import Reviews from "../../../components/Review/Reviews";
 import DetailTable from "../../../components/Skills/CoursePage/DetailTable/DetailTable";
 import Learn from "../../../components/Skills/CoursePage/Learn/Learn";
+import { useState, useEffect } from "react";
 // import Footer from "../../components/Footer/Footer";
 import WhatsappButton from "../../../components/WhatsAppButton/WhatsappButton";
 import CTA from "../../../components/CTA/CTA";
@@ -91,6 +92,83 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
       open: false,
     },
   ];
+  const [device, setDevice] = useState("");
+  const [latitude, setLatitude] = useState(null);
+  const [longitude, setLongitude] = useState(null);
+  const [error, setError] = useState(null);
+  useEffect(() => {
+    const detectDevice = () => {
+      const userAgent = navigator.userAgent;
+      if (/Android/i.test(userAgent)) {
+        setDevice("Android");
+      } else if (/iPhone|iPad|iPod/i.test(userAgent)) {
+        setDevice("iOS");
+      } else if (/Windows Phone/i.test(userAgent)) {
+        setDevice("Windows Phone");
+      } else if (/Macintosh|MacIntel|MacPPC|Mac68K/i.test(userAgent)) {
+        setDevice("Mac Desktop");
+      } else if (/Windows/i.test(userAgent)) {
+        setDevice("Windows Desktop");
+      } else {
+        setDevice("Other");
+      }
+    };
+
+    detectDevice();
+  }, []);
+
+  useEffect(() => {
+    const getLocation = () => {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          (position) => {
+            setLatitude(position.coords.latitude);
+            setLongitude(position.coords.longitude);
+          },
+          (error) => {
+            setError(error.message);
+          }
+        );
+      } else {
+        setError("Geolocation is not supported by this browser.");
+      }
+    };
+
+    getLocation();
+  }, []);
+
+  useEffect(() => {
+    console.log(1);
+    if (device && latitude && longitude) {
+      console.log("hello");
+      sendDataToAPI();
+    }
+  }, [device, latitude, longitude]);
+
+  const sendDataToAPI = async () => {
+    try {
+      const response = await fetch("/api/getData", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          device: device,
+          latitude: latitude,
+          longitude: longitude,
+        }),
+      });
+
+      if (!response.ok) {
+        console.log(response);
+        throw new Error("Error sending data to server");
+      }
+
+      console.log("Data sent successfully");
+    } catch (error) {
+      console.error("Error sending data to server:", error);
+    }
+  };
 
   return (
     <div>
