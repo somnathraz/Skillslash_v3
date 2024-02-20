@@ -102,7 +102,7 @@ const Header = ({
             {/* <Image src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/powered-by-microsoft-(White).png" alt="PoweredByMicrosoft" width={200} height={22}/> */}
 
             <Image
-              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/FAANG+Software+Developer+as+Trainers.png"
+              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Header/FAANG+Software+Developer+as+Trainers.webp"
               alt="FAANG Operators"
               fill
               priority
@@ -143,7 +143,7 @@ const Header = ({
         </p>
         <div className="min-[642px]:hidden text-white flex flex-col gap-2 mt-3">
           <p className="text-2xl text-white font-semibold max-[361px]:text-[20px]">
-            {hrs} recorded sessions with
+            {hrs} hrs recorded sessions with
           </p>
           <p className="text-white flex gap-2 item-center ml-3">
             <BsBroadcast className="text-[20px]" /> Live Doubt Sessions
