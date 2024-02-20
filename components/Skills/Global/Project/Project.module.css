@@ -301,7 +301,7 @@
     width: 130px;
   }
   .categoryBar {
-    overflow-x: scroll;
+    flex-wrap: wrap;
   }
   .line {
     padding: 20px;
@@ -336,11 +336,11 @@
   }
   .categoryBar {
     width: 100%;
-    overflow: scroll;
   }
   .categoryWrap {
     width: 100%;
-    overflow: scroll;
+    flex-wrap: wrap;
+    gap: 5px;
   }
   .span {
     font-size: 14px;

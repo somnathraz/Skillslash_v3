@@ -6,8 +6,8 @@ const FourthFeature = () => {
   const [ref, inView] = useInView();
   console.log(inView);
   return (
-    <motion.div className="grid grid-cols-[8%,81%] item-center gap-7 ">
-      <motion.span
+    <motion.div className="grid grid-cols-[100%] item-center gap-7 ">
+      {/* <motion.span
         initial={{
           scale: 1,
           height: "20px",
@@ -45,9 +45,9 @@ const FourthFeature = () => {
         className="flex text-3xl h-[40px] w-[40px] rounded-full text-white font-semibold bg-transparent border-[1px] border-[#f18350] items-center justify-center"
       >
         4
-      </motion.span>
+      </motion.span> */}
       <motion.div
-        className="flex flex-col justify-center gap-3"
+        className="flex flex-col justify-center gap-7"
         ref={ref}
         initial={{ y: 160, opacity: 0 }}
         animate={
@@ -60,20 +60,20 @@ const FourthFeature = () => {
         }
         transition={{ duration: 1, delay: 1, type: "spring" }}
       >
-        <h3 className="text-5xl text-white font-semibold max-sm:text-2xl">
+        <h3 className="text-5xl text-white font-semibold max-sm:text-[27px]">
           Career <span className="text-[#f18350]">Support</span>
         </h3>
-        <div className="flex flex-col gap-3 ">
-          <p className="grid grid-cols-[10%,89%] gap-3 text-[20px] text-white ">
-            <FaCircleCheck className="text-[#10c168] text-[18px]" /> Live resume
-            & LinkedIn profile building session with expert
+        <div className="flex flex-col gap-3 ml-2">
+          <p className="grid grid-cols-[10%,89%] gap-3 text-[16px] text-white ">
+            <FaCircleCheck className="text-[#10c168] text-[15px] mt-1" /> Live
+            resume & LinkedIn profile building session with expert
           </p>
-          <p className="grid grid-cols-[10%,89%] gap-3 text-[20px] text-white ">
-            <FaCircleCheck className="text-[#10c168] text-[18px]" /> Multiple
-            mock interviews sessions with mentors
+          <p className="grid grid-cols-[10%,89%] gap-3 text-[16px] text-white ">
+            <FaCircleCheck className="text-[#10c168] text-[15px] mt-1" />{" "}
+            Multiple mock interviews sessions with mentors
           </p>
-          <p className="grid grid-cols-[10%,89%] gap-3 text-[20px] text-white ">
-            <FaCircleCheck className="text-[#10c168] text-[18px]" />
+          <p className="grid grid-cols-[10%,89%] gap-3 text-[16px] text-white ">
+            <FaCircleCheck className="text-[#10c168] text-[15px] mt-1" />
             Job opening & job application support
           </p>
         </div>

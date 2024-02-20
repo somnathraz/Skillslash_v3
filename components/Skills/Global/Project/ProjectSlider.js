@@ -21,7 +21,6 @@ const ProjectSlider = ({
   heading,
   noProject,
 }) => {
-  console.log(noProject);
   const [swiperData, setSwiperData] = useState(
     DsProject.filter((DsProject) => {
       return DsProject.domainName === "BFSI";
