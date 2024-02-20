@@ -41,7 +41,7 @@ const Learn = ({
               </span>
             </Link>
           </div>
-          <h2 className="text-4xl font-bold max-[1281px]:text-3xl">
+          <h2 className="text-4xl font-bold max-[1281px]:text-3xl max-[361px]:text-2xl">
             What will you learn?
           </h2>
           <div>
@@ -62,7 +62,7 @@ const Learn = ({
               {fourthPoint}
             </p>
           </div>
-          <h2 className="text-4xl font-bold mt-3 max-[1281px]:text-2xl">
+          <h2 className="text-4xl font-bold mt-3 max-[1281px]:text-2xl  max-[361px]:text-[20px]">
             Courses based on Topics
           </h2>
           <div className="grid grid-cols-[14%,14%,14%,14%,14%,14%] gap-2">

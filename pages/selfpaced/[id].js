@@ -18,6 +18,7 @@ import WhatsappButton from "../../components/WhatsAppButton/WhatsappButton";
 import CTA from "../../components/CTA/CTA";
 import MiddlePopup from "../../components/Course/OfferPopup/MiddlePopup";
 import BottomPrice from "../../components/Skills/BottomPrice/BottomPrice";
+import SkillsContent from "../../components/Skills/CoursePage/SkillsContent/SkillsContent";
 
 const DataSciencePage = ({ DataScienceCourseData }) => {
   const FaqDATA = [
@@ -129,6 +130,10 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         secondPoint={DataScienceCourseData.data.header.secondPoint}
         thirdPoint={DataScienceCourseData.data.header.thirdPoint}
         fourthPoint={DataScienceCourseData.data.header.fourthPoint}
+      />
+      <SkillsContent
+        certification={DataScienceCourseData.data.header.certification}
+        hrs={DataScienceCourseData.data.header.hour}
       />
       <div id="certificate">
         <WhyUs

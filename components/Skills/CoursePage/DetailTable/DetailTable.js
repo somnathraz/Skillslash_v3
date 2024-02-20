@@ -13,10 +13,11 @@ const DetailTable = ({
 }) => {
   return (
     <div className="px-40 py-10 flex flex-col gap-5 max-[1281px]:px-24 relative max-sm:px-5 max-sm:overflow-scroll bg-[#111621] max-[801px]:px-8">
-      <h2 className="text-white font-bold text-4xl text-center max-sm:text-2xl">
-        Skillslash Bootcamp
+      <h2 className="text-white font-bold text-4xl text-center max-sm:text-2xl ">
+        Skill<span style={{ borderBottom: "1px solid white" }}>slash Boo</span>
+        tcamp
       </h2>
-      <div className="border-[1px] border-[#ffffff] rounded-lg gridBox grid  grid-cols-[35%,16%,16%,16%] grid-col max-[1281px]:gird-cols-[35%,17%,17%,19%]  max-[801px]:gap-[20px] gap-[44px] px-5 py-5 justify-center max-sm:w-max max-sm:overflow-scroll ">
+      <div className="border-[1px] border-[#ffffff] max-sm:border-[0px] rounded-lg gridBox grid  grid-cols-[35%,16%,16%,16%] grid-col max-[1281px]:gird-cols-[35%,17%,17%,19%]  max-[801px]:gap-[20px] gap-[44px] px-5 py-5 justify-center max-sm:w-max max-sm:overflow-scroll ">
         <div
           className={`flex flex-col ${
             redirectDs ? "gap-[13px]" : "gap-[14px]"
@@ -53,7 +54,7 @@ const DetailTable = ({
           <hr className="w-[60%] bg-[#646464] text-[#646464] border-[#646464]" />
           <p className="text-white">Average Pricing</p>
         </div>
-        <div className="flex flex-col gap-[15px] max-sm:gap-[15px] items-center ">
+        <div className="flex flex-col gap-[15px] max-sm:gap-[10px] items-center ">
           <Image
             src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Home/coursesection/skillsalsh-favicon-white.png"
             width={40}
@@ -105,7 +106,7 @@ const DetailTable = ({
           <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
           <p className="text-white max-sm:py-2">{offerPrice}</p>
         </div>
-        <div className="flex flex-col gap-[15px] max-sm:gap-[15px] items-center">
+        <div className="flex flex-col gap-[15px] max-sm:gap-[10px] items-center">
           <p className="mb-[25px] max-[1024px]:mb-[5px] max-sm:mb-[5px] text-white text-center">
             Others-Recorded
           </p>
@@ -156,7 +157,7 @@ const DetailTable = ({
           <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
           <p className="text-white max-sm:py-2">500-6,500</p>
         </div>
-        <div className="flex flex-col gap-[15px] max-sm:gap-[15px] items-center">
+        <div className="flex flex-col gap-[15px] max-sm:gap-[10px] items-center">
           <p className="mb-[25px] max-[1024px]:mb-[5px] max-sm:mb-[5px]  text-white text-center">
             Others-Live classes
           </p>
