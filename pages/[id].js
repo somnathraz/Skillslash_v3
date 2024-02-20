@@ -787,13 +787,13 @@ export default function Home({
         <FloatIcon />
         {/* <Newsletter /> */}
         {/* <CustomPopup />*/}
-        <MiddlePopup
+        {/* <MiddlePopup
           redirectDs={DataScienceCourseData.data.form.dataScience}
           redirectFs={DataScienceCourseData.data.form.FullStack}
           redirectBa={DataScienceCourseData.data.form.BusinessAnalytics}
           redirectDSA={DataScienceCourseData.data.form.dsa}
           redirectWeb={DataScienceCourseData.data.form.webDevelopment}
-        />
+        /> */}
         <Footer />
       </div>
     </>

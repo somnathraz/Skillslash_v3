@@ -50,7 +50,7 @@ const Header = ({
         {/* <MdKeyboardArrowRight className="text-[white]" />
           <p>Data Science</p> */}
       </div>
-      <div className="w-[110%] max-[361px]:h-[250px] ml-[-19px] h-[280px] relative flex justify-center min-[482px]:hidden">
+      <div className="w-[110%] max-[361px]:h-[250px] ml-[-19px] h-[310px] relative flex justify-center min-[482px]:hidden">
         <div onClick={() => showVideo(true)} id={idBtnV}>
           <Image
             src={imgSrc}
@@ -58,10 +58,6 @@ const Header = ({
             fill
             priority
             quality={40}
-            id={idBtnV}
-          />
-          <MdOutlinePlayCircleOutline
-            className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
             id={idBtnV}
           />
         </div>
@@ -160,7 +156,7 @@ const Header = ({
       </div>
       <div className="flex flex-col gap-7 relative w-full items-end justify-end">
         <div className="bg-white top-0 px-11 max-[1024px]:px-5 py-3 max-sm:px-0 rounded shadow flex flex-col w-full z-[1] max-sm:hidden absolute mt-28 max-[741px]:w-[52%] max-[741px]:top-0 max-[741px]:right-[-15px]">
-          <div className="relative w-full  max-sm:w-[313px] h-[270px] max-[1281px]:h-[200px] max-sm:h-[220px] top-[-120px] max-sm:top-[-100px]  min-[1600px]:h-[320px] max-sm:left-7 max-sm:flex max-sm:justify-center">
+          <div className="relative w-full  max-sm:w-[313px] h-[290px] max-[1281px]:h-[200px] max-sm:h-[220px] top-[-120px] max-sm:top-[-100px]  min-[1600px]:h-[320px] max-sm:left-7 max-sm:flex max-sm:justify-center">
             <div onClick={() => showVideo(true)} id={idBtnV}>
               <Image
                 src={imgSrc}
@@ -168,10 +164,6 @@ const Header = ({
                 fill
                 priority
                 quality={40}
-                id={idBtnV}
-              />
-              <MdOutlinePlayCircleOutline
-                className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
                 id={idBtnV}
               />
             </div>

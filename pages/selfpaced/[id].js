@@ -77,7 +77,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
     {
       id: 8,
       ques: "Is there any refund policy?      ",
-      ans: "Yes, this course has a refund policy. The refund can be claimed within 3 working days from the purchase of the product. The course should not been accessed by more than 10%.",
+      ans: "Yes, this course has a refund policy. The refund can be claimed within 15 days from the purchase of the product. The course should not been accessed by more than 10%.",
       open: false,
     },
     {

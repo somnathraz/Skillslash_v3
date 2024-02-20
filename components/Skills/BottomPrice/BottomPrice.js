@@ -14,7 +14,7 @@ const BottomPrice = ({ offerPrice, actualPrice, link }) => {
           <button>Start Learning</button>
         </Link>
       </div>
-      <p className={styles.refund}>15 Days refundable</p>
+      <p className={styles.refund}>15 Days refundable**</p>
     </div>
   );
 };
