@@ -31,6 +31,9 @@ const Header = ({
 }) => {
   const [show, setShow] = useState(false);
   const showVideo = (data) => {
+    console.log("====================================");
+    console.log("hello");
+    console.log("====================================");
     setShow(data);
   };
   const [idBtnO, setIdBtnO] = useState("org-slo");
@@ -50,7 +53,10 @@ const Header = ({
         {/* <MdKeyboardArrowRight className="text-[white]" />
           <p>Data Science</p> */}
       </div>
-      <div className="w-[100%]  max-[361px]:h-[250px]  h-[310px] relative flex justify-center min-[482px]:hidden ">
+      <div
+        className="w-[100%]  max-[361px]:h-[250px]  h-[310px] relative flex justify-center min-[482px]:hidden "
+        onClick={() => showVideo(true)}
+      >
         <div onClick={() => showVideo(true)} id={idBtnV}>
           <Image
             src={imgSrc}
@@ -59,6 +65,7 @@ const Header = ({
             priority
             quality={40}
             id={idBtnV}
+            onClick={() => showVideo(true)}
           />
         </div>
       </div>
@@ -72,7 +79,6 @@ const Header = ({
         />
       )}
 
-      <div className="absolute gradient top-0 left-0 h-full w-[60%] max-sm:w-full z-0"></div>
       <div className="flex flex-col gap-2 relative z-[1] max-sm:px-5">
         <div className="flex gap-3 text-[#F18350] font-bold items-center max-sm:mb-[-8px] max-sm:hidden">
           <p className="text-[#F18350] font-semibold min-[1600px]:text-[20px] max-sm:text-[15px] max-sm:font-medium">
