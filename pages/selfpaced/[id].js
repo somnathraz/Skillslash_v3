@@ -16,8 +16,9 @@ import Learn from "../../components/Skills/CoursePage/Learn/Learn";
 import Footer from "../../components/Footer/Footer";
 import WhatsappButton from "../../components/WhatsAppButton/WhatsappButton";
 import CTA from "../../components/CTA/CTA";
-import MiddlePopup from "../../components/Course/OfferPopup/MiddlePopup";
+
 import BottomPrice from "../../components/Skills/BottomPrice/BottomPrice";
+
 import SkillsContent from "../../components/Skills/CoursePage/SkillsContent/SkillsContent";
 
 const DataSciencePage = ({ DataScienceCourseData }) => {
@@ -94,6 +95,29 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
       open: false,
     },
   ];
+  const [actualPrice, setActualPrice] = useState(
+    DataScienceCourseData.data.header.actualPrice
+  );
+  const [offerPrice, setOfferPrice] = useState(
+    DataScienceCourseData.data.header.offerPrice
+  );
+  useEffect(() => {
+    const checkRegion = async () => {
+      const response = await fetch("/api/checkRegion");
+      const data = await response.json();
+      console.log(data);
+      if (data.allowed) {
+        // User is in the US
+        setActualPrice(DataScienceCourseData.data.header.NigeriaActualPrice);
+        setOfferPrice(DataScienceCourseData.data.header.NigeriaOfferPrice);
+      } else {
+        setActualPrice(DataScienceCourseData.data.header.actualPrice);
+        setOfferPrice(DataScienceCourseData.data.header.offerPrice);
+      }
+    };
+
+    checkRegion();
+  }, []);
 
   return (
     <div>
@@ -117,8 +141,8 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         imgSrc={DataScienceCourseData.data.header.imgSrc}
         hrs={DataScienceCourseData.data.header.hour}
         certification={DataScienceCourseData.data.header.certification}
-        offerPrice={DataScienceCourseData.data.header.offerPrice}
-        actualPrice={DataScienceCourseData.data.header.actualPrice}
+        offerPrice={offerPrice}
+        actualPrice={actualPrice}
         discount={DataScienceCourseData.data.header.discount}
         link={DataScienceCourseData.data.header.link}
         redirectDs={DataScienceCourseData.data.header.dataScience}
@@ -161,7 +185,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
 
       <Reviews redirectFs={DataScienceCourseData.data.header.FullStack} />
       <DetailTable
-        offerPrice={DataScienceCourseData.data.header.actualPrice}
+        offerPrice={actualPrice}
         hrs={DataScienceCourseData.data.header.hour}
         otherHr={DataScienceCourseData.data.header.otherHr}
         liveHr={DataScienceCourseData.data.header.liveHr}
@@ -200,8 +224,8 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         redirectFs={DataScienceCourseData.data.header.FullStack}
       />
       <BottomPrice
-        offerPrice={DataScienceCourseData.data.header.offerPrice}
-        actualPrice={DataScienceCourseData.data.header.actualPrice}
+        offerPrice={offerPrice}
+        actualPrice={actualPrice}
         link={DataScienceCourseData.data.header.link}
       />
       {/* <MiddlePopup
