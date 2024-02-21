@@ -150,7 +150,7 @@ const Header = ({
           {desc}
         </p>
         <div className="min-[642px]:hidden text-white flex flex-col gap-2 mt-3">
-          <p className="text-2xl text-white font-semibold max-[361px]:text-[19px]">
+          <p className="text-[20px] text-white font-semibold max-[361px]:text-[19px]">
             {hrs} hrs recorded sessions with
           </p>
           {redirectFs ? (
