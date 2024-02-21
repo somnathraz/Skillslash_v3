@@ -173,14 +173,6 @@ const Header = ({
             Live Project Sessions
           </p>
         </div>
-        {/* <div onClick={() => showVideo(true)}>
-          <button
-            className="bg-[#f18350] px-3 py-2 mt-4 max-sm:hidden"
-            id={idBtnDV}
-          >
-            Watch Demo Videos
-          </button>
-        </div> */}
       </div>
       <div className="flex flex-col gap-7 relative w-full items-end justify-end">
         <div className="bg-white top-0 px-11 max-[1024px]:px-5 py-3 max-sm:px-0 rounded shadow flex flex-col w-full z-[1] max-sm:hidden absolute mt-28 max-[741px]:w-[52%] max-[741px]:top-0 max-[741px]:right-[-15px]">
@@ -207,15 +199,6 @@ const Header = ({
                 {actualPrice}
               </span>
             </p>
-            {/* <Image
-              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/discount.png"
-              alt="discount"
-              width={20}
-              height={20}
-              priority
-              style={{ height: "20px" }}
-            />
-            <p className="text-[#f18350] font-bold">({discount} Off)</p> */}
           </div>
           <div className="flex flex-col gap-5 max-sm:px-4">
             <p className="text-[#B32D0F] text-[14px] flex gap-2 items-center">
