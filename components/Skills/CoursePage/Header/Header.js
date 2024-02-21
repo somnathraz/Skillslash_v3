@@ -9,8 +9,9 @@ import {
   MdOutlineWorkHistory,
   MdLockOpen,
   MdOutlineBroadcastOnHome,
+  MdOutlinePlayCircleOutline,
 } from "react-icons/md";
-
+import { LiaUserAstronautSolid } from "react-icons/lia";
 import { BsBroadcast } from "react-icons/bs";
 import { PiCertificateBold, PiMedal } from "react-icons/pi";
 import VideoPlaylist from "../../Global/VideoPlaylist/VideoPlaylist";
@@ -66,6 +67,10 @@ const Header = ({
             quality={40}
             id={idBtnV}
             onClick={() => showVideo(true)}
+          />
+          <MdOutlinePlayCircleOutline
+            className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
+            id={idBtnV}
           />
         </div>
       </div>
@@ -148,19 +153,27 @@ const Header = ({
           {desc}
         </p>
         <div className="min-[642px]:hidden text-white flex flex-col gap-2 mt-3">
-          <p className="text-2xl text-white font-semibold max-[361px]:text-[20px]">
+          <p className="text-2xl text-white font-semibold max-[361px]:text-[19px]">
             {hrs} hrs recorded sessions with
           </p>
+          {redirectFs ? (
+            <p className="text-white flex gap-2 item-center ml-3">
+              <LiaUserAstronautSolid className="text-[20px]" />
+              FAANG Instructors
+            </p>
+          ) : (
+            <p className="text-white flex gap-2 item-center ml-3">
+              <PiMedal className="text-[20px]" />
+              Microsoft Certifications
+            </p>
+          )}
+
           <p className="text-white flex gap-2 item-center ml-3">
             <BsBroadcast className="text-[20px]" /> Live Doubt Sessions
           </p>
           <p className="text-white flex gap-2 item-center ml-3">
-            <PiMedal className="text-[20px]" />
-            Microsoft certifications
-          </p>
-          <p className="text-white flex gap-2 item-center ml-3">
             <MdOutlineBroadcastOnHome className="text-[20px]" />
-            Live project sessions
+            Live Project Sessions
           </p>
         </div>
         {/* <div onClick={() => showVideo(true)}>
@@ -182,6 +195,10 @@ const Header = ({
                 fill
                 priority
                 quality={40}
+                id={idBtnV}
+              />
+              <MdOutlinePlayCircleOutline
+                className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
                 id={idBtnV}
               />
             </div>
