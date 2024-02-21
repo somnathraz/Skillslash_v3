@@ -71,7 +71,7 @@ function YourComponent() {
           <div className="flex flex-col gap-4">
             <div className="px-3 py-2 bg-[#EEEBFF] rounded w-[31%] max-sm:w-[70%]">
               <Image
-                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Header/Powered+by+microsoft+tag+webp.webp"
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Home/coursesection/powered+by+microsoft-home.webp"
                 alt="PoweredByMicrosoft"
                 width={mobile ? 180 : 230}
                 height={mobile ? 19 : 24}
@@ -178,7 +178,7 @@ function YourComponent() {
           <div className="flex flex-col gap-4">
             <div className="px-3 py-2 bg-[#EEEBFF] rounded w-[47%] max-sm:w-[80%]">
               <Image
-                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Header/Powered+by+microsoft+tag+webp.webp"
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Home/coursesection/powered+by+microsoft-home.webp"
                 alt="PoweredByMicrosoft"
                 width={mobile ? 180 : 230}
                 height={mobile ? 19 : 24}

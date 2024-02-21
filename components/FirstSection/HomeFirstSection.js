@@ -79,7 +79,7 @@ const HomeFirstSection = ({ deskTopPara, backgroundImg }) => {
         {/* <Image src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/header-img-home-page.png" /> */}
         <span className={styles.typeText}>
           <Image
-            src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Header/Powered+by+microsoft+tag+webp.webp"
+            src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Home/coursesection/powered+by+microsoft-home.webp"
             alt="PoweredByMicrosoft"
             width={230}
             height={24}
