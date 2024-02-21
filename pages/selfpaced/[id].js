@@ -105,7 +105,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
     const checkRegion = async () => {
       const response = await fetch("/api/checkRegion");
       const data = await response.json();
-
+      console.log(data);
       if (data.allowed) {
         // User is in the US
         setActualPrice(DataScienceCourseData.data.header.NigeriaActualPrice);

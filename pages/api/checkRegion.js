@@ -3,6 +3,7 @@ import geoip from "geoip-lite";
 export default async function handler(req, res) {
   const ip = req.headers["x-forwarded-for"] || req.socket.remoteAddress;
   const geo = geoip.lookup(ip);
+  console.log(ip);
 
   if (geo && geo.country === "NG") {
     // 'NG' is the ISO code for Nigeria
