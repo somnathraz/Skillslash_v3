@@ -32,9 +32,6 @@ const Header = ({
 }) => {
   const [show, setShow] = useState(false);
   const showVideo = (data) => {
-    console.log("====================================");
-    console.log("hello");
-    console.log("====================================");
     setShow(data);
   };
   const [idBtnO, setIdBtnO] = useState("org-slo");
