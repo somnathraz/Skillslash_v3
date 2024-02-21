@@ -1,18 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import Image from "next/image";
-import {
-  MdOutlineAccessAlarms,
-  MdOutlinePlayCircleOutline,
-} from "react-icons/md";
+import { MdOutlineAccessAlarms } from "react-icons/md";
 import Link from "next/link";
 import {
   MdOutlineVideocam,
   MdLiveTv,
   MdOutlineWorkHistory,
   MdLockOpen,
+  MdOutlineBroadcastOnHome,
+  MdOutlinePlayCircleOutline,
 } from "react-icons/md";
-import { PiCertificateBold } from "react-icons/pi";
+import { LiaUserAstronautSolid } from "react-icons/lia";
+import { BsBroadcast } from "react-icons/bs";
+import { PiCertificateBold, PiMedal } from "react-icons/pi";
 import VideoPlaylist from "../../Global/VideoPlaylist/VideoPlaylist";
 
 const Header = ({
@@ -31,6 +32,9 @@ const Header = ({
 }) => {
   const [show, setShow] = useState(false);
   const showVideo = (data) => {
+    console.log("====================================");
+    console.log("hello");
+    console.log("====================================");
     setShow(data);
   };
   const [idBtnO, setIdBtnO] = useState("org-slo");
@@ -38,9 +42,9 @@ const Header = ({
   const [idBtnV, setIdBtnV] = useState("org-dv");
 
   return (
-    <div className="grid grid-cols-[60%,39%] max-[741px]:flex max-[741px]:flex-col max-[901px]:grid-cols-[55%,44%] max-sm:flex max-sm:flex-col gap-5 max-sm:mb-[10px] bg-[#111621] w-full mt-[40px] max-sm:mt-[60px] max-sm:pt-6 min-[1600px]:mt-[70px] px-28 max-[1024px]:px-10 min-[1600px]:px-48 max-sm:px-5 py-[100px] min-[1600px]:py-[90px] pb-[70px] max-sm:pb-[30px] max-sm:py-4 relative">
+    <div className="grid grid-cols-[60%,39%] max-[741px]:flex max-[741px]:flex-col max-[901px]:grid-cols-[55%,44%] max-sm:flex max-sm:flex-col gap-5 max-sm:mb-[10px] bg-[#111621] w-full mt-[40px] max-sm:mt-[60px] max-sm:pt-6 min-[1600px]:mt-[70px] px-28 max-[1024px]:px-10 min-[1600px]:px-48 max-sm:px-0 py-[100px] min-[1600px]:py-[90px] pb-[70px] max-sm:pb-[30px] max-sm:py-4 relative">
       <div className="flex gap-3 text-[#F18350] font-bold items-center max-sm:mb-[-8px] min-[482px]:hidden">
-        <p className="text-[#F18350] font-semibold min-[1600px]:text-[20px] max-sm:text-[15px] max-sm:font-medium">
+        <p className="text-[#F18350] font-semibold min-[1600px]:text-[20px] max-sm:text-[15px] max-sm:font-medium max-sm:px-2">
           Self-Paced
         </p>
         <MdKeyboardArrowRight className="text-white min-[1600px]:text-[20px]" />
@@ -50,7 +54,10 @@ const Header = ({
         {/* <MdKeyboardArrowRight className="text-[white]" />
           <p>Data Science</p> */}
       </div>
-      <div className="w-[110%] max-[361px]:h-[250px] ml-[-19px] h-[310px] relative flex justify-center min-[482px]:hidden">
+      <div
+        className="w-[100%]  max-[361px]:h-[250px]  h-[310px] relative flex justify-center min-[482px]:hidden "
+        onClick={() => showVideo(true)}
+      >
         <div onClick={() => showVideo(true)} id={idBtnV}>
           <Image
             src={imgSrc}
@@ -58,6 +65,11 @@ const Header = ({
             fill
             priority
             quality={40}
+            id={idBtnV}
+            onClick={() => showVideo(true)}
+          />
+          <MdOutlinePlayCircleOutline
+            className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
             id={idBtnV}
           />
         </div>
@@ -72,8 +84,7 @@ const Header = ({
         />
       )}
 
-      <div className="absolute gradient top-0 left-0 h-full w-[60%] max-sm:w-full z-0"></div>
-      <div className="flex flex-col gap-2 relative z-[1]">
+      <div className="flex flex-col gap-2 relative z-[1] max-sm:px-5">
         <div className="flex gap-3 text-[#F18350] font-bold items-center max-sm:mb-[-8px] max-sm:hidden">
           <p className="text-[#F18350] font-semibold min-[1600px]:text-[20px] max-sm:text-[15px] max-sm:font-medium">
             Self-Paced
@@ -82,13 +93,10 @@ const Header = ({
           <p className="text-[#F18350] font-semibold max-sm:text-[15px] min-[1600px]:text-[20px] max-sm:font-medium">
             Bootcamp
           </p>
-          {/* <MdKeyboardArrowRight className="text-[white]" />
-          <p>Data Science</p> */}
         </div>
         {redirectDs && (
           <div className=" mt-4  w-max rounded flex items-center gap-2">
             <p className="text-white font-medium">Powered by</p>
-            {/* <Image src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/powered-by-microsoft-(White).png" alt="PoweredByMicrosoft" width={200} height={22}/> */}
             <div className="bg-white px-4 py-[6px] rounded-[4px]">
               <Image
                 src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Home/coursesection/microsoft.webp"
@@ -105,17 +113,17 @@ const Header = ({
             {/* <Image src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/powered-by-microsoft-(White).png" alt="PoweredByMicrosoft" width={200} height={22}/> */}
 
             <Image
-              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/FAANG+Software+Developer+as+Trainers.png"
+              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Header/FAANG+Software+Developer+as+Trainers.webp"
               alt="FAANG Operators"
               fill
               priority
             />
           </div>
         )}
-        <h1 className="text-5xl max-[901px]:text-2xl text-white font-bold leading-[58px] max-[1281px]:text-3xl   max-sm:text-4xl max-sm:leading-[40px]">
+        <h1 className="text-5xl max-[901px]:text-2xl text-white font-bold leading-[58px] max-[1281px]:text-3xl   max-sm:text-4xl max-sm:leading-[40px] max-[361px]:text-3xl">
           {title}
         </h1>
-        <div className="grid grid-cols-3 gap-2 min-[1600px]:gap-0 border-[1px] mt-3 w-[75%] min-[1600px]:w-[60%] max-sm:w-[97%] rounded items-center px-4 py-1 justify-center">
+        <div className="grid grid-cols-3 gap-2 min-[1600px]:gap-0 border-[1px] mt-3 w-[75%] min-[1600px]:w-[60%] max-sm:w-[97%] rounded items-center px-4 py-1 justify-center max-sm:py-1 max-sm:px-2">
           <Image
             src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/googlereview-new.webp"
             alt="Goole_RReviews"
@@ -141,10 +149,33 @@ const Header = ({
             className="mx-auto"
           />
         </div>
-        <p className="text-[#cccccc] w-[91%] min-[1600px]:w-[75%] text-[17px] max-sm:text-[16px] max-[1281px]:text-[16px] leading-[28px] max-sm:leading-[24px] font-light mt-2 max-sm:mt-2 min-[1600px]:text-[20px]">
+        <p className="text-[#cccccc] w-[91%] min-[1600px]:w-[75%] text-[17px] max-sm:text-[16px] max-[1281px]:text-[16px] leading-[28px] max-sm:leading-[24px] font-light mt-2 max-sm:mt-2 min-[1600px]:text-[20px] max-[642px]:hidden">
           {desc}
         </p>
+        <div className="min-[642px]:hidden text-white flex flex-col gap-2 mt-3">
+          <p className="text-2xl text-white font-semibold max-[361px]:text-[19px]">
+            {hrs} hrs recorded sessions with
+          </p>
+          {redirectFs ? (
+            <p className="text-white flex gap-2 item-center ml-3">
+              <LiaUserAstronautSolid className="text-[20px]" />
+              FAANG Instructors
+            </p>
+          ) : (
+            <p className="text-white flex gap-2 item-center ml-3">
+              <PiMedal className="text-[20px]" />
+              Microsoft Certifications
+            </p>
+          )}
 
+          <p className="text-white flex gap-2 item-center ml-3">
+            <BsBroadcast className="text-[20px]" /> Live Doubt Sessions
+          </p>
+          <p className="text-white flex gap-2 item-center ml-3">
+            <MdOutlineBroadcastOnHome className="text-[20px]" />
+            Live Project Sessions
+          </p>
+        </div>
         {/* <div onClick={() => showVideo(true)}>
           <button
             className="bg-[#f18350] px-3 py-2 mt-4 max-sm:hidden"
@@ -164,6 +195,10 @@ const Header = ({
                 fill
                 priority
                 quality={40}
+                id={idBtnV}
+              />
+              <MdOutlinePlayCircleOutline
+                className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
                 id={idBtnV}
               />
             </div>

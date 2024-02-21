@@ -764,6 +764,6 @@ button {
   }
   .gridBox {
     padding: 10px;
-    grid-template-columns: 26% 18% 18% 18%;
+    grid-template-columns: 40% 18% 18% 18%;
   }
 }

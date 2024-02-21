@@ -6,8 +6,8 @@ const SecondFeature = () => {
   const [ref, inView] = useInView();
   console.log(inView);
   return (
-    <motion.div className="grid grid-cols-[8%,81%] item-center gap-7 ">
-      <motion.span
+    <motion.div className="grid grid-cols-[100%] item-center gap-7 ">
+      {/* <motion.span
         initial={{
           scale: 1,
           height: "20px",
@@ -19,12 +19,12 @@ const SecondFeature = () => {
         animate={
           inView
             ? {
-                scale: 1.3,
+                scale: 1.1,
                 height: "30px",
                 width: "30px",
-                fontSize: "25px",
-                background: "#f18359",
-                border: "0",
+                padding: "10px",
+                fontSize: "16px",
+                border: "1px solid white",
               }
             : {
                 scale: 1,
@@ -45,9 +45,9 @@ const SecondFeature = () => {
         className="flex text-3xl h-[40px] w-[40px] rounded-full text-white font-semibold bg-transparent border-[1px] border-[#f18350] items-center justify-center"
       >
         2
-      </motion.span>
+      </motion.span> */}
       <motion.div
-        className="flex flex-col justify-center gap-3"
+        className="flex flex-col justify-center gap-7"
         ref={ref}
         initial={{ y: 160, opacity: 0 }}
         animate={
@@ -60,21 +60,21 @@ const SecondFeature = () => {
         }
         transition={{ duration: 1, delay: 1, type: "spring" }}
       >
-        <h3 className="text-5xl text-white font-semibold max-sm:text-2xl">
+        <h3 className="text-5xl text-white font-semibold max-sm:text-[27px] mt-2">
           Live Doubt
           <span className="text-[#f18350]"> Sessions</span>
         </h3>
-        <div className="flex flex-col gap-3 ">
-          <p className="grid grid-cols-[10%,89%] gap-3 text-[20px] text-white ">
-            <FaCircleCheck className="text-[#10c168] text-[18px]" /> Live
-            interactive sessions
+        <div className="flex flex-col gap-3  ml-2">
+          <p className="grid grid-cols-[10%,89%] gap-3 text-[16px] text-white ">
+            <FaCircleCheck className="text-[#10c168] text-[18px] max-[361px]:text-[16px]" />
+            Live interactive sessions
           </p>
-          <p className="grid grid-cols-[10%,89%] gap-3 text-[20px] text-white ">
-            <FaCircleCheck className="text-[#10c168] text-[18px]" /> Unlimited
-            doubt sessions
+          <p className="grid grid-cols-[10%,89%] gap-3 text-[16px] text-white ">
+            <FaCircleCheck className="text-[#10c168] text-[18px] max-[361px]:text-[16px]" />
+            Unlimited doubt sessions
           </p>
-          <p className="grid grid-cols-[10%,89%] gap-3 text-[20px] text-white ">
-            <FaCircleCheck className="text-[#10c168] text-[18px]" />
+          <p className="grid grid-cols-[10%,89%] gap-3 text-[16px] text-white ">
+            <FaCircleCheck className="text-[#10c168] text-[18px] max-[361px]:text-[16px]" />
             Weekly sessions
           </p>
         </div>
