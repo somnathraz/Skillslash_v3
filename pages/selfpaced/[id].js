@@ -101,23 +101,23 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
   const [offerPrice, setOfferPrice] = useState(
     DataScienceCourseData.data.header.offerPrice
   );
-  useEffect(() => {
-    const checkRegion = async () => {
-      const response = await fetch("/api/checkRegion");
-      const data = await response.json();
-      console.log(data);
-      if (data.allowed) {
-        // User is in the US
-        setActualPrice(DataScienceCourseData.data.header.NigeriaActualPrice);
-        setOfferPrice(DataScienceCourseData.data.header.NigeriaOfferPrice);
-      } else {
-        setActualPrice(DataScienceCourseData.data.header.actualPrice);
-        setOfferPrice(DataScienceCourseData.data.header.offerPrice);
-      }
-    };
+  // useEffect(() => {
+  //   const checkRegion = async () => {
+  //     const response = await fetch("/api/checkRegion");
+  //     const data = await response.json();
+  //     console.log(data);
+  //     if (data.allowed) {
+  //       // User is in the US
+  //       setActualPrice(DataScienceCourseData.data.header.NigeriaActualPrice);
+  //       setOfferPrice(DataScienceCourseData.data.header.NigeriaOfferPrice);
+  //     } else {
+  //       setActualPrice(DataScienceCourseData.data.header.actualPrice);
+  //       setOfferPrice(DataScienceCourseData.data.header.offerPrice);
+  //     }
+  //   };
 
-    checkRegion();
-  }, []);
+  //   checkRegion();
+  // }, []);
 
   return (
     <div>
