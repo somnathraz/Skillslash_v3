@@ -101,23 +101,36 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
   const [offerPrice, setOfferPrice] = useState(
     DataScienceCourseData.data.header.offerPrice
   );
-  // useEffect(() => {
-  //   const checkRegion = async () => {
-  //     const response = await fetch("/api/checkRegion");
-  //     const data = await response.json();
-  //     console.log(data);
-  //     if (data.allowed) {
-  //       // User is in the US
-  //       setActualPrice(DataScienceCourseData.data.header.NigeriaActualPrice);
-  //       setOfferPrice(DataScienceCourseData.data.header.NigeriaOfferPrice);
-  //     } else {
-  //       setActualPrice(DataScienceCourseData.data.header.actualPrice);
-  //       setOfferPrice(DataScienceCourseData.data.header.offerPrice);
-  //     }
-  //   };
-
-  //   checkRegion();
-  // }, []);
+  useEffect(() => {
+    const fetchLocation = async () => {
+      return fetch("https://ipinfo.io/json?token=0fac06a7890a4e")
+        .then((response) => {
+          if (response.status === 429) {
+            throw new Error("Rate limit exceeded. Too many requests.");
+          }
+          if (!response.ok) {
+            throw new Error(
+              `Failed to fetch location: ${response.status} ${response.statusText}`
+            );
+          }
+          return response.json();
+        })
+        .then((data) => {
+          console.log("API Response:", data);
+          const { country, region, city } = data;
+          Object.entries(query).forEach(([key, value]) => {
+            formData.append(key, value);
+          });
+          formData.append("country", country);
+          formData.append("city", city);
+          formData.append("region", region);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    };
+    fetchLocation;
+  }, []);
 
   return (
     <div>

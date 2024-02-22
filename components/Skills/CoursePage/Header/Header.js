@@ -52,7 +52,7 @@ const Header = ({
           <p>Data Science</p> */}
       </div>
       <div
-        className="w-[100%]  max-[361px]:h-[250px]  h-[310px] relative flex justify-center min-[482px]:hidden "
+        className="w-[100%]  max-[361px]:h-[250px] max-sm:h-[280px] h-[310px] relative flex justify-center min-[482px]:hidden "
         onClick={() => showVideo(true)}
       >
         <div onClick={() => showVideo(true)} id={idBtnV}>
@@ -150,7 +150,7 @@ const Header = ({
           {desc}
         </p>
         <div className="min-[642px]:hidden text-white flex flex-col gap-2 mt-3">
-          <p className="text-[20px] text-white font-semibold max-[361px]:text-[19px]">
+          <p className="text-[20px] text-white font-semibold max-[361px]:text-[19px] max-[320px]:text-[16px] ">
             {hrs} hrs recorded sessions with
           </p>
           {redirectFs ? (
