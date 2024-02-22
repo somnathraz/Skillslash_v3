@@ -12,7 +12,7 @@ const Learn = ({
 }) => {
   return (
     <div>
-      <div className="grid grid-cols-[60%,39%] max-[901px]:grid-cols-[52%,39%] gap-5 px-28 max-[1024px]:px-10  max-[741px]:px-5 max-[741px]:grid-cols-[48%,39%] max-sm:px-6 py-7 max-sm:py-4 max-sm:flex">
+      <div className="grid grid-cols-[60%,39%] max-[901px]:grid-cols-[52%,39%] gap-5 px-28 max-[1024px]:px-10  max-[741px]:px-5 max-[741px]:grid-cols-[48%,39%] max-sm:px-6 py-7 max-sm:py-4 max-sm:flex mt-2">
         <div className="flex flex-col gap-5 max-sm:gap-0">
           <div className="flex gap-3 max-sm:hidden w-[full] flex-wrap">
             <Link href="#features">
@@ -41,19 +41,19 @@ const Learn = ({
               </span>
             </Link>
           </div>
-          <h2 className="text-4xl font-bold max-[1281px]:text-3xl max-[361px]:text-2xl">
+          <h2 className="text-4xl font-bold max-[1281px]:text-3xl max-[361px]:text-2xl mt-5">
             What will you learn?
           </h2>
           <div>
-            <p className="grid max-sm:grid-cols-[8%,88%] grid-cols-[3%,97%] gap-2 items-center max-sm:items-start max-sm:text-[15px] max-sm:w-[98%]">
+            <p className="grid max-sm:grid-cols-[8%,88%] grid-cols-[3%,97%] gap-2 items-center max-sm:items-start max-sm:text-[15px] max-sm:w-[98%] mb-[5px]">
               <MdCheck className="text-[#10C168] max-sm:text-[25px]" />
               {firstPoint}
             </p>
-            <p className="grid max-sm:grid-cols-[8%,88%] grid-cols-[3%,97%] gap-2 items-center  max-sm:items-start max-sm:text-[15px]  max-sm:w-[98%]">
+            <p className="grid max-sm:grid-cols-[8%,88%] grid-cols-[3%,97%] gap-2 items-center  max-sm:items-start max-sm:text-[15px]  max-sm:w-[98%] mb-[5px]">
               <MdCheck className="text-[#10C168] max-sm:text-[25px]" />
               {secondPoint}
             </p>
-            <p className="grid max-sm:grid-cols-[8%,88%] grid-cols-[3%,97%] gap-2 items-center  max-sm:items-start max-sm:text-[15px] max-sm:w-[98%]">
+            <p className="grid max-sm:grid-cols-[8%,88%] grid-cols-[3%,97%] gap-2 items-center  max-sm:items-start max-sm:text-[15px] max-sm:w-[98%] mb-[5px]">
               <MdCheck className="text-[#10C168] max-sm:text-[25px]" />
               {thirdPoint}
             </p>
@@ -62,7 +62,7 @@ const Learn = ({
               {fourthPoint}
             </p>
           </div>
-          <h2 className="text-4xl font-bold mt-3 max-[1281px]:text-2xl  max-[361px]:text-[20px]">
+          <h2 className="text-4xl font-bold mt-3 max-[1281px]:text-2xl  max-[361px]:text-[20px] mb-2">
             Courses based on Topics
           </h2>
           <div className="grid grid-cols-[14%,14%,14%,14%,14%,14%] gap-2">

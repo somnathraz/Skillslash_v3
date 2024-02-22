@@ -13,9 +13,18 @@ const DetailTable = ({
 }) => {
   return (
     <div className="px-40 py-10 flex flex-col gap-5 max-[1281px]:px-24 relative max-sm:px-5 max-sm:overflow-scroll bg-[#111621] max-[801px]:px-8">
-      <h2 className="text-white font-bold text-4xl text-center max-sm:text-2xl ">
-        Skill<span style={{ borderBottom: "1px solid white" }}>slash Boo</span>
+      <h2 className="text-white font-bold text-4xl text-center max-sm:text-2xl min-[642px]:hidden">
+        Skill
+        <span
+          className="border-b-2 border-solid border-white pb-[10px]"
+          // style={{ borderBottom: "2px solid white", paddingBottom: "10px" }}
+        >
+          slash Boo
+        </span>
         tcamp
+      </h2>
+      <h2 className="text-white font-bold text-4xl text-center max-sm:text-2xl max-[642px]:hidden">
+        Skillslash Bootcamp
       </h2>
       <div className="border-[1px] border-[#ffffff] max-sm:border-[0px] rounded-lg gridBox grid  grid-cols-[35%,16%,16%,16%] grid-col max-[1281px]:gird-cols-[35%,17%,17%,19%]  max-[801px]:gap-[20px] gap-[44px] px-5 py-5 justify-center max-sm:w-max max-sm:overflow-scroll ">
         <div

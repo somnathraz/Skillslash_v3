@@ -38,7 +38,7 @@ const WhyUs = ({ redirectDs, home, redirectDa }) => {
   }, [currentIndex, imageSrc]);
 
   return (
-    <div className="py-14 flex flex-col gap-11 max-sm:hidden min-[1600px]:px-[150px] max-[741px]:mt-[70px] ">
+    <div className="py-14 flex flex-col gap-11 max-sm:hidden min-[1600px]:px-[150px] max-[741px]:mt-[70px] mt-[-20px] ">
       <h2 className="px-28 max-[1281px]:px-20 max-[1024px]:px-10 max-sm:px-5 text-3xl max-sm:text-2xl">
         Why Choose Us?
       </h2>
