@@ -52,7 +52,7 @@ const Header = ({
           <p>Data Science</p> */}
       </div>
       <div
-        className="w-[100%]  max-[361px]:h-[250px]  h-[310px] relative flex justify-center min-[482px]:hidden "
+        className="w-[100%]  max-[361px]:h-[250px] max-sm:h-[280px] h-[310px] relative flex justify-center min-[482px]:hidden "
         onClick={() => showVideo(true)}
       >
         <div onClick={() => showVideo(true)} id={idBtnV}>

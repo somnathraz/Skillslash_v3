@@ -567,71 +567,76 @@
       "id": 1,
       "ques": "Is this an Advanced level or beginner level course?",
 
-      "ans": " Our premium self-paced course leaves no stone unturned in covering all the topics from basic to advanced level. With each module taught in detail by industry experts, you can be confident in your ability to master the content. ",
+      "ans": "This a basic to advanced level course that is designed in collaboration with Microsoft to make you interview-ready for Data Analytics jobs. Each module is taught in detail by tenured Data Analysts to give you in-depth knowledge and with latest industry practice. Note the content of this course is not static, which means the lessons are updated frequently with current topics & best practices in the field of Data Analytics.",
       "open": true
     },
     {
       "id": 2,
-      "ques": "Can a fresher do this course?",
-      "ans": "This course is designed to meet the needs of both seasoned professionals and college goers/fresh graduates, providing comprehensive coverage of topics across all levels - from basic to advanced. ",
+      "ques": "Can a fresher do this course?      ",
+      "ans": " This course is designed to meet the needs of both experienced professionals and college goers/fresh graduates, providing comprehensive coverage of topics across all levels - from basic to advanced.",
       "open": false
     },
     {
       "id": 3,
       "ques": "How can I enroll in this course?",
 
-      "ans": "Select the course you are interested in. Navigate to the course page by clicking on 'View Details' for more information. Click on 'Buy Now' to make a purchase. Before buying, feel free to watch the preview and the first video of the course for free.",
+      "ans": "Click on 'Start Learning' on this page. Then click on 'Buy Now'. Fill up your details and click on 'Pay Securely'. Complete the payment process on our Razorpay platform and start your Data Analytics career journey. Note: the payment gateway system is encrypted by Razorpay, hence making it safe and compliant with all banks and financial institutes across the globe.",
       "open": false
     },
     {
       "id": 7,
-      "ques": "What kind of Certification does the Data Analytics training in Bangalore provide?",
+      "ques": "How can I get my doubts cleared?",
 
-      "ans": "Most importantly, by getting our Data Analytics course training in Bangalore, you will not just obtain any ordinary type of certification or academic degree. Instead, we offer a globally recognized real work experience certificate from companies and Microsoft Certification for Data scientist for completing the Data Analytics training. The firm with which you completed your industrial project can also give you direct certifications. ",
+      "ans": " Every weekend we conduct Trainer-led live clearing sessions where you can unmute and ask your doubts. You can attend unlimited doubt sessions for the next 2 years.",
       "open": false
     },
     {
       "id": 4,
-      "ques": " How can I get my doubts cleared?",
-      "ans": "We host live interactive doubt-clearing sessions led by our instructor during weekends. Additionally, for instant replies to your questions, we offer a community forum where you can post your doubts throughout the day and receive instant clarification.",
+      "ques": "How will I do the live projects?      ",
+      "ans": "Every weekend we conduct Trainer-led live project sessions, where projects mentioned above on this page will be done live in the class. These Data Analytics projects are from various domains like BFSI, Healthcare, Manufacturing, Retail, Sales, HR & many more. If you are stuck somewhere you can unmute and ask. You can attend unlimited project sessions for the next 2 years from the day of your enrollment.",
       "open": false
     },
     {
       "id": 5,
-      "ques": "Does this course have any live class features?",
-
-      "ans": "Yes, we do. The project sessions will be fully instructor-led live interactive sessions.  Additionally, the doubt-clearing sessions are live sessions scheduled to take place on weekends.",
+      "ques": "Is it a recorded course or live course?",
+      "ans": "All lessons are recorded, live classes only for doubt-clearing and project sessions",
       "open": false
     },
     {
       "id": 6,
-      "ques": "What can I expect from this course?",
+      "ques": "How soon can I complete the course?",
 
-      "ans": "Access self-paced sessions anytime, led by top faculty and industry experts. Also polish your skills by completing the assignments and tests at the end of each module. All-day doubt-clearing support. You will also get a live doubt-clearing session with the instructor on weekends. Get to work on instructor-led Live Projects during weekends. On completing the Live projects you will be eligible to get a shareable Live Project certification which you can showcase in your resume and LinkedIn profile. Also get an Internship certificate on completing two projects. We support your career by helping you build an impactful professional Resume/CV and LinkedIn profile.",
+      "ans": "This course offers 216 hrs of recorded lessons which you can do at your own pace, on average it takes 3 months to complete. Where you will have access to all recorded lessons for lifetime and live doubt & project sessions for the next 2 years from the date of purchase.",
       "open": false
     },
     {
       "id": 10,
-      "ques": "Is there a time limit to complete this course?",
-      "ans": "This course has a subscription of 2 years. We expect you to complete the entire course at least within 2 years",
+      "ques": "Is there any refund policy?",
+      "ans": "Yes, this course has a refund policy. You can take the refund within 15 days from the purchase date of the product and the course should not be accessed by more than 10%. With no questions ask policy.",
       "open": false
     },
     {
       "id": 8,
-      "ques": "Is there any refund policy?",
-      "ans": "Yes, this course has a refund policy. The refund can be claimed within 3 working days from the purchase of the product. The course should not been accessed by more than 10%.",
+      "ques": "Can I access this course on mobile and tablet?",
+      "ans": "Absolutely! Our device-friendly platform allows you to access and learn from our courses on various devices, including smartphones, tablets, laptops, or desktops.",
       "open": false
     },
     {
       "id": 9,
-      "ques": "Can I access this course on mobile and tablet?",
-      "ans": "Absolutely! Our platform is designed to be mobile-responsive, allowing you to access and learn from our courses on various devices, including smartphones and tablets.",
+      "ques": "Will I get a internship certificate in this bootcamp?",
+      "ans": "Yes, after you complete at least 3 projects you will get an internship certificate and 3 respective project experience certificates. Once you add these certificates to your resume it will show the hiring manager that you are not new to Data Analytics.",
       "open": false
     },
     {
       "id": 12,
-      "ques": "How can I do the internship provided along with this bootcamp?",
-      "ans": "After enrolling, proceed through our self-paced video recordings, and complete quizzes, and assignments. Following that, you'll have access to live project sessions led by our instructors. Upon completion of three live projects, you will get an internship certificate.",
+      "ques": "Is there any validity of the course?",
+      "ans": "Once you enroll you have lifetime access to the course content.",
+      "open": false
+    },
+    {
+      "id": 13,
+      "ques": "Is Microsoft certificate included in this course?",
+      "ans": "Yes, the Microsoft certificate is included in the course fees. You don't need to pay extra for the Microsoft certificate.",
       "open": false
     }
   ]
