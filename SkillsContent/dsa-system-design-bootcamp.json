@@ -12,8 +12,8 @@
     "actualPrice": "₹ 7,999",
     "USDActualPrice": " $ 200",
     "USDOfferPrice": "$ 100",
-    "NigeriaActualPrice": "₦  5,806,310",
-    "NigeriaOfferPrice": "₦ 2,903,155",
+    "NigeriaActualPrice": "₦  300,000",
+    "NigeriaOfferPrice": "₦ 150,000",
     "discount": "37%",
     "newDs": false,
     "certification": "3",
@@ -149,7 +149,6 @@
       "ques": "Can a fresher do this course?",
       "ans": "This course is designed to meet the needs of both experienced software developers working in service-based companies and college goers/fresh graduates who aspire to be a software developer in a product-based company, This course provides comprehensive coverage of topics across all levels - from basic to advanced.",
       "open": false
-      
     },
     {
       "id": 3,
