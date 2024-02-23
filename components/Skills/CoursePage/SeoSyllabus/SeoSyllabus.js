@@ -16,7 +16,7 @@ function DataScienceSyllabus({
   title,
   redirectDs,
   redirectFs,
-  NigeriaForm ,
+  NigeriaForm,
 }) {
   const [popups, setPopups] = useState(false);
 
@@ -133,55 +133,55 @@ function DataScienceSyllabus({
       </div>
 
       <div>
-
-        {NigeriaForm ? (  <div className={styles.syllabusRight}>
-         <Form ngForm={true}/>
-         
-        </div>):( <div className={styles.syllabusRight}>
-          <h5 className={styles.rightHeading}>
-            {title} <span>Curriculum</span>
-          </h5>
-          <p className={styles.rightDesc}>
-            {title} Syllabus are curated by leading faculties and industry
-            leaders.
-          </p>
-          <div className={styles.feature}>
-            <BiTimeFive className={styles.clockIcon} />
-            <div className={styles.fContent}>
-              <p className={styles.fHeading}>{hour} Hrs</p>
-              <span className="text-sm">Recorded classes</span>
-            </div>
+        {NigeriaForm ? (
+          <div className={styles.syllabusRight}>
+            <h5 className={styles.rightHeading}>
+              Have doubts!! <span>Talk to us</span>
+            </h5>
+            <Form ngForm={true} />
           </div>
-          <div className={styles.feature}>
-            <AiOutlineTool className={styles.settingIcon} />
-            <div className={styles.fContent}>
-              <p className={styles.fHeading}>{redirectDs ? "30+" : "15+"}</p>
-              <span>Live Project</span>
-            </div>
-          </div>
-          <Link
-            href="https://wa.me/+918391911911?text=ChatWithUs"
-            className={styles.feature}
-          >
-            <div className="flex items-center justify-center">
-              <Image
-                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Header/chat-with-us.gif"
-                width={50}
-                height={50}
-              />
+        ) : (
+          <div className={styles.syllabusRight}>
+            <h5 className={styles.rightHeading}>
+              {title} <span>Curriculum</span>
+            </h5>
+            <p className={styles.rightDesc}>
+              {title} Syllabus are curated by leading faculties and industry
+              leaders.
+            </p>
+            <div className={styles.feature}>
+              <BiTimeFive className={styles.clockIcon} />
               <div className={styles.fContent}>
-                <p className="text-xl font-medium text-black ml-6">
-                  Chat With Us
-                </p>
+                <p className={styles.fHeading}>{hour} Hrs</p>
+                <span className="text-sm">Recorded classes</span>
               </div>
             </div>
-          </Link>
-        </div>)}
-    
-
-
-       
-       
+            <div className={styles.feature}>
+              <AiOutlineTool className={styles.settingIcon} />
+              <div className={styles.fContent}>
+                <p className={styles.fHeading}>{redirectDs ? "30+" : "15+"}</p>
+                <span>Live Project</span>
+              </div>
+            </div>
+            <Link
+              href="https://wa.me/+918391911911?text=ChatWithUs"
+              className={styles.feature}
+            >
+              <div className="flex items-center justify-center">
+                <Image
+                  src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Header/chat-with-us.gif"
+                  width={50}
+                  height={50}
+                />
+                <div className={styles.fContent}>
+                  <p className="text-xl font-medium text-black ml-6">
+                    Chat With Us
+                  </p>
+                </div>
+              </div>
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );

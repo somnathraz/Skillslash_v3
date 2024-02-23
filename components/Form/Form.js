@@ -39,7 +39,7 @@ const Form = ({
   //offset to maintain time zone difference
 
   const [loading, setLoading] = useState(false);
-  const [phoneNumber, setPhoneNumber] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState("");
   const [value, setValue] = useState();
   const [redirectionZoom, setRedirectionZoom] = useState(false);
   const [query, setQuery] = useState({
@@ -79,15 +79,15 @@ const Form = ({
   if (redirectWeb) {
     endPoint = " https:/`/getform.io/f/7287ef4b-b2a9-48f8-aca8-8bcfc7c00216";
   }
-  if(ngForm){
-    endPoint="https://getform.io/f/kaz127eJ";
+  if (ngForm) {
+    endPoint = "https://getform.io/f/kaz127eJ";
   }
   // Form Submit function
   const formSubmit = (e) => {
     setLoading(true);
     e.preventDefault();
-    setStartDate(null); 
-    setPhoneNumber('');
+    setStartDate(null);
+    setPhoneNumber("");
 
     const formData = new FormData();
     Object.entries(query).forEach(([key, value]) => {
@@ -123,8 +123,8 @@ const Form = ({
     if (redirectFs && placement != true) {
       router.push("/Thankyou/full-stack");
     }
-    if (ngForm === true){
-      alert ("You Form has been Sucessfully Submited ");
+    if (ngForm === true) {
+      alert("You Form has been Sucessfully Submited ");
     }
     if (redirectDSA && placement != true) {
       router.push("/Thankyou/dsa");
@@ -167,6 +167,9 @@ const Form = ({
   let btnText = "Apply Now";
   if (event) {
     btnText = "Register Now";
+  }
+  if (ngForm) {
+    btnText = "Schedule Now";
   }
   return (
     <div className={styles.App}>
@@ -251,44 +254,49 @@ const Form = ({
                   ? styles.syllabusPhone
                   : styles.Phone
               }
-            
               required
               value={phoneNumber}
               onChange={setPhoneNumber}
             />
           </fieldset>
         </div>
-        {ngForm ? (""):( <div
-          className={popup ? styles.formWrappers : styles.formWrapper}
-          style={event ? { width: "100%" } : { width: "80%" }}
-        >
-          <fieldset style={syllabus ? { color: "white" } : { color: "black" }}>
-            <legend>Work Experience*</legend>
-            <select
-              name="workExperience"
-              required
+        {ngForm ? (
+          ""
+        ) : (
+          <div
+            className={popup ? styles.formWrappers : styles.formWrapper}
+            style={event ? { width: "100%" } : { width: "80%" }}
+          >
+            <fieldset
               style={syllabus ? { color: "white" } : { color: "black" }}
-              value={query.workExperience}
-              onChange={handleParam()}
             >
-              <option value=""></option>
-              {event ? (
-                ""
-              ) : (
-                <option value="College Students">College Students</option>
-              )}
+              <legend>Work Experience*</legend>
+              <select
+                name="workExperience"
+                required
+                style={syllabus ? { color: "white" } : { color: "black" }}
+                value={query.workExperience}
+                onChange={handleParam()}
+              >
+                <option value=""></option>
+                {event ? (
+                  ""
+                ) : (
+                  <option value="College Students">College Students</option>
+                )}
 
-              <option value="Fresher ( less than 1 year)">
-                Fresher ( less than 1 year)
-              </option>
-              <option value="1 to 3 year">1 to 3 year</option>
-              <option value="3 to 7 year">3 to 7 year</option>
-              <option value="7 to 12 year">7 to 12 year</option>
-              <option value="12+ year">12+ year</option>
-            </select>
-          </fieldset>
-        </div>)}
-       
+                <option value="Fresher ( less than 1 year)">
+                  Fresher ( less than 1 year)
+                </option>
+                <option value="1 to 3 year">1 to 3 year</option>
+                <option value="3 to 7 year">3 to 7 year</option>
+                <option value="7 to 12 year">7 to 12 year</option>
+                <option value="12+ year">12+ year</option>
+              </select>
+            </fieldset>
+          </div>
+        )}
+
         <input type="hidden" id="url" name="url" value={router.asPath}></input>
         {downloadBrochure || event ? (
           ""
