@@ -28,15 +28,18 @@ const Form = ({
   redirectDSA,
   redirectWeb,
   changeRedirect,
+  ngForm,
 }) => {
   const router = useRouter();
-  const [startDate, setStartDate] = useState();
+  const [startDate, setStartDate] = useState(new Date());
   let today = new Date();
   let time =
     today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
 
   //offset to maintain time zone difference
+
   const [loading, setLoading] = useState(false);
+  const [phoneNumber, setPhoneNumber] = useState('');
   const [value, setValue] = useState();
   const [redirectionZoom, setRedirectionZoom] = useState(false);
   const [query, setQuery] = useState({
@@ -76,10 +79,15 @@ const Form = ({
   if (redirectWeb) {
     endPoint = " https:/`/getform.io/f/7287ef4b-b2a9-48f8-aca8-8bcfc7c00216";
   }
+  if(ngForm){
+    endPoint="https://getform.io/f/kaz127eJ";
+  }
   // Form Submit function
   const formSubmit = (e) => {
     setLoading(true);
     e.preventDefault();
+    setStartDate(null); 
+    setPhoneNumber('');
 
     const formData = new FormData();
     Object.entries(query).forEach(([key, value]) => {
@@ -114,6 +122,9 @@ const Form = ({
     }
     if (redirectFs && placement != true) {
       router.push("/Thankyou/full-stack");
+    }
+    if (ngForm === true){
+      alert ("You Form has been Sucessfully Submited ");
     }
     if (redirectDSA && placement != true) {
       router.push("/Thankyou/dsa");
@@ -240,13 +251,14 @@ const Form = ({
                   ? styles.syllabusPhone
                   : styles.Phone
               }
-              value={value}
+            
               required
-              onChange={setValue}
+              value={phoneNumber}
+              onChange={setPhoneNumber}
             />
           </fieldset>
         </div>
-        <div
+        {ngForm ? (""):( <div
           className={popup ? styles.formWrappers : styles.formWrapper}
           style={event ? { width: "100%" } : { width: "80%" }}
         >
@@ -275,7 +287,8 @@ const Form = ({
               <option value="12+ year">12+ year</option>
             </select>
           </fieldset>
-        </div>
+        </div>)}
+       
         <input type="hidden" id="url" name="url" value={router.asPath}></input>
         {downloadBrochure || event ? (
           ""

@@ -6,6 +6,7 @@ import Image from "next/image";
 import { AiOutlineTool } from "react-icons/ai";
 import { BiCheck, BiTimeFive } from "react-icons/bi";
 import { BsDot } from "react-icons/bs";
+import Form from "../../../Form/Form";
 
 function DataScienceSyllabus({
   seoSyllabus,
@@ -15,6 +16,7 @@ function DataScienceSyllabus({
   title,
   redirectDs,
   redirectFs,
+  NigeriaForm ,
 }) {
   const [popups, setPopups] = useState(false);
 
@@ -131,7 +133,11 @@ function DataScienceSyllabus({
       </div>
 
       <div>
-        <div className={styles.syllabusRight}>
+
+        {NigeriaForm ? (  <div className={styles.syllabusRight}>
+         <Form ngForm={true}/>
+         
+        </div>):( <div className={styles.syllabusRight}>
           <h5 className={styles.rightHeading}>
             {title} <span>Curriculum</span>
           </h5>
@@ -170,7 +176,12 @@ function DataScienceSyllabus({
               </div>
             </div>
           </Link>
-        </div>
+        </div>)}
+    
+
+
+       
+       
       </div>
     </section>
   );
