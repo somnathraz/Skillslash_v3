@@ -45,14 +45,14 @@
   scroll-behavior: smooth;
   font-size: 16px;
   position: fixed;
-  top: 0px;
+  top: 70px;
   text-align: center;
   z-index: 999;
   background-color: black;
   color: white;
-  height: max-content;
+  height: 40px;
   padding: 5px 50px;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 }
@@ -345,12 +345,20 @@
     scroll-behavior: smooth;
     font-size: 14px;
     position: fixed;
-    top: 0px;
+    top: 60px;
     z-index: 999;
     text-align: center;
-    background-color: white;
+    background: #e8e4ff;
+    /* background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(239, 239, 255, 1) 8%,
+      rgba(239, 239, 255, 1) 48%,
+      rgba(239, 239, 255, 1) 91%,
+      rgba(0, 0, 0, 1) 100%
+    ); */
     color: #4f419a;
-    height: 60px;
+    height: 20px;
     padding: 0px 20px;
     display: flex;
     align-items: center;

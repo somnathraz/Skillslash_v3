@@ -203,7 +203,7 @@ const Header = ({
           <div className="flex flex-col gap-5 max-sm:px-4">
             <p className="text-[#B32D0F] text-[14px] flex gap-2 items-center">
               <MdOutlineAccessAlarms />
-              Limited Time <b>Offer</b>
+              <b> &nbsp;6 hours left at </b>this prices
             </p>
             <Link href={link}>
               <button
