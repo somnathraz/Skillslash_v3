@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import styles from "./Navbar.module.css";
+import { MdOutlineAccessAlarms } from "react-icons/md";
 import Link from "next/link";
 import { FaBars } from "react-icons/fa";
 import dynamic from "next/dynamic";
@@ -215,10 +216,12 @@ const Navbar = ({ link, event, ads, redirectDs, redirectFs, redirectDa }) => {
           )}
         </div>
       </nav>
-      {/* <main className={styles.TopBar}>
-        Use code <b className="text-[#f18350] pl-[4px] pr-[4px]"> NEWYEAR50 </b>{" "}
-        to get 50% flat discount.
-      </main> */}
+      <main className={styles.TopBar}>
+        <p className="text-[#B32D0F] text-[14px] flex  items-center  w-full text-center justify-center">
+          <MdOutlineAccessAlarms />
+          <b> &nbsp;6 hours left at </b> &nbsp;this prices
+        </p>
+      </main>
     </div>
   );
 };
