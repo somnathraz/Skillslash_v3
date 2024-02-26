@@ -3,7 +3,7 @@ import styles from "./BottomPrice.module.css";
 import Link from "next/link";
 import { MdOutlineAccessAlarms } from "react-icons/md";
 
-const BottomPrice = ({ offerPrice, actualPrice, checkoutLink, link }) => {
+const BottomPrice = ({ offerPrice, actualPrice, checkoutLink }) => {
   const [idBtnO, setIdBtnO] = useState("org-slo");
   return (
     <div className={styles.bottomBar}>
