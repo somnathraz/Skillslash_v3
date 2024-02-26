@@ -3,7 +3,7 @@ import styles from "./BottomPrice.module.css";
 import Link from "next/link";
 import { MdOutlineAccessAlarms } from "react-icons/md";
 
-const BottomPrice = ({ offerPrice, actualPrice, link }) => {
+const BottomPrice = ({ offerPrice, actualPrice, checkoutLink, link }) => {
   const [idBtnO, setIdBtnO] = useState("org-slo");
   return (
     <div className={styles.bottomBar}>
@@ -13,8 +13,8 @@ const BottomPrice = ({ offerPrice, actualPrice, link }) => {
           <p className={styles.acPr}>{actualPrice}</p>
         </div>
         <div className={styles.right} id={idBtnO}>
-          <Link href={link} id={idBtnO}>
-            <button id={idBtnO}>Start Learning</button>
+          <Link href={checkoutLink} id={idBtnO}>
+            <button id={idBtnO}>Buy Now</button>
           </Link>
         </div>
       </div>
