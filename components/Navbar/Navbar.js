@@ -219,7 +219,7 @@ const Navbar = ({ link, event, ads, redirectDs, redirectFs, redirectDa }) => {
       <main className={styles.TopBar}>
         <p className="text-[#B32D0F] text-[14px] flex  items-center  w-full text-center justify-center">
           <MdOutlineAccessAlarms />
-          <b> &nbsp;6 hours left at </b> &nbsp;this prices
+          <b> &nbsp;7 coupon left at</b> &nbsp;this prices
         </p>
       </main>
     </div>
