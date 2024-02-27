@@ -1,6 +1,6 @@
 .wrap {
   display: grid;
-  grid-template-columns: 36% 59%;
+  grid-template-columns: 41% 54%;
   align-items: center;
   justify-content: center;
   gap: 15px;
@@ -20,7 +20,7 @@
   justify-content: center;
 }
 .ofPr {
-  font-size: 24px;
+  font-size: 22px;
   color: black;
   font-weight: bold;
 }
