@@ -53,9 +53,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           setShowNigeriaForm(true);
           setActualPrice(DataScienceCourseData.data.header.NigeriaActualPrice);
           setOfferPrice(DataScienceCourseData.data.header.NigeriaOfferPrice);
-          if (DataScienceCourseData.data.header.dataScience) {
-            setLink(DataScienceCourseData.data.header.ngCheckout);
-          }
+          setLink(DataScienceCourseData.data.header.ngCheckout);
 
           console.log("User is in Nigeria. Prices updated.");
         }
@@ -63,10 +61,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           setShowNigeriaForm(false);
           setActualPrice(DataScienceCourseData.data.header.actualPrice);
           setOfferPrice(DataScienceCourseData.data.header.offerPrice);
-          if (DataScienceCourseData.data.header.dataScience) {
-            console.log("in");
-            setLink(DataScienceCourseData.data.header.indCheckout);
-          }
+          setLink(DataScienceCourseData.data.header.indCheckout);
 
           console.log("User is in India. Prices updated.");
         }
