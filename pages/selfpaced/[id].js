@@ -30,8 +30,7 @@ const DataSciencePage = ({ DataScienceCourseData, country }) => {
       setActualPrice(DataScienceCourseData.data.header.NigeriaActualPrice);
       setOfferPrice(DataScienceCourseData.data.header.NigeriaOfferPrice);
       console.log("User is in Nigeria. Prices updated.");
-    }
-    if (country === "IN") {
+    } else if (country === "IN") {
       setShowNigeriaForm(false);
       setActualPrice(DataScienceCourseData.data.header.actualPrice);
       setOfferPrice(DataScienceCourseData.data.header.offerPrice);
