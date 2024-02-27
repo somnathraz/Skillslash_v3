@@ -47,7 +47,8 @@
   display: flex;
 }
 @media (min-width: 642px) {
-  .wrap {
+  .wrap,
+  .bottomBar {
     display: none;
   }
 }

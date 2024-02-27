@@ -27,6 +27,9 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
   const [offerPrice, setOfferPrice] = useState(
     DataScienceCourseData.data.header.USDOfferPrice
   );
+  const [link, setLink] = useState(
+    DataScienceCourseData.data.header.checkoutLink
+  );
 
   useEffect(() => {
     const fetchLocation = async () => {
@@ -50,12 +53,21 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           setShowNigeriaForm(true);
           setActualPrice(DataScienceCourseData.data.header.NigeriaActualPrice);
           setOfferPrice(DataScienceCourseData.data.header.NigeriaOfferPrice);
+          if (DataScienceCourseData.data.header.dataScience) {
+            setLink(DataScienceCourseData.data.header.ngCheckout);
+          }
+
           console.log("User is in Nigeria. Prices updated.");
         }
         if (country === "IN") {
           setShowNigeriaForm(false);
           setActualPrice(DataScienceCourseData.data.header.actualPrice);
           setOfferPrice(DataScienceCourseData.data.header.offerPrice);
+          if (DataScienceCourseData.data.header.dataScience) {
+            console.log("in");
+            setLink(DataScienceCourseData.data.header.indCheckout);
+          }
+
           console.log("User is in India. Prices updated.");
         }
       } catch (error) {
@@ -64,7 +76,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
     };
 
     fetchLocation();
-  }, []);
+  }, [link]);
 
   return (
     <div>
@@ -90,7 +102,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         certification={DataScienceCourseData.data.header.certification}
         offerPrice={offerPrice}
         actualPrice={actualPrice}
-        checkoutLink={DataScienceCourseData.data.header.checkoutLink}
+        checkoutLink={link}
         discount={DataScienceCourseData.data.header.discount}
         link={DataScienceCourseData.data.header.link}
         redirectDs={DataScienceCourseData.data.header.dataScience}
