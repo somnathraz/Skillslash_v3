@@ -19,26 +19,51 @@ import CTA from "../../components/CTA/CTA";
 import BottomPrice from "../../components/Skills/BottomPrice/BottomPrice";
 import SkillsContent from "../../components/Skills/CoursePage/SkillsContent/SkillsContent";
 
-const DataSciencePage = ({ DataScienceCourseData, country }) => {
+const DataSciencePage = ({ DataScienceCourseData }) => {
   const [showNigeriaForm, setShowNigeriaForm] = useState(false);
-  const [actualPrice, setActualPrice] = useState("loading");
-  const [offerPrice, setOfferPrice] = useState("loading");
+  const [actualPrice, setActualPrice] = useState(
+    DataScienceCourseData.data.header.USDActualPrice
+  );
+  const [offerPrice, setOfferPrice] = useState(
+    DataScienceCourseData.data.header.USDOfferPrice
+  );
 
   useEffect(() => {
-    if (country === "NG") {
-      setShowNigeriaForm(true);
-      setActualPrice(DataScienceCourseData.data.header.NigeriaActualPrice);
-      setOfferPrice(DataScienceCourseData.data.header.NigeriaOfferPrice);
-      console.log("User is in Nigeria. Prices updated.");
-    } else if (country === "IN") {
-      setShowNigeriaForm(false);
-      setActualPrice(DataScienceCourseData.data.header.actualPrice);
-      setOfferPrice(DataScienceCourseData.data.header.offerPrice);
-      console.log("User is in India. Prices updated.");
-    } else {
-      setActualPrice(DataScienceCourseData.data.header.USDActualPrice);
-      setOfferPrice(DataScienceCourseData.data.header.USDOfferPrice);
-    }
+    const fetchLocation = async () => {
+      try {
+        const response = await fetch(
+          "https://ipinfo.io/json?token=0fac06a7890a4e"
+        );
+        if (response.status === 429) {
+          throw new Error("Rate limit exceeded. Too many requests.");
+        }
+        if (!response.ok) {
+          throw new Error(
+            `Failed to fetch location: ${response.status} ${response.statusText}`
+          );
+        }
+        const data = await response.json();
+        console.log("API Response:", data);
+        const { country } = data;
+
+        if (country === "NG") {
+          setShowNigeriaForm(true);
+          setActualPrice(DataScienceCourseData.data.header.NigeriaActualPrice);
+          setOfferPrice(DataScienceCourseData.data.header.NigeriaOfferPrice);
+          console.log("User is in Nigeria. Prices updated.");
+        }
+        if (country === "IN") {
+          setShowNigeriaForm(false);
+          setActualPrice(DataScienceCourseData.data.header.actualPrice);
+          setOfferPrice(DataScienceCourseData.data.header.offerPrice);
+          console.log("User is in India. Prices updated.");
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    fetchLocation();
   }, []);
 
   return (
@@ -178,35 +203,9 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const DataScienceCourseData = getPostData(params.id);
-  const fetchLocation = async () => {
-    try {
-      const response = await fetch(
-        "https://ipinfo.io/json?token=0fac06a7890a4e"
-      );
-      if (response.status === 429) {
-        throw new Error("Rate limit exceeded. Too many requests.");
-      }
-      if (!response.ok) {
-        throw new Error(
-          `Failed to fetch location: ${response.status} ${response.statusText}`
-        );
-      }
-      const data = await response.json();
-
-      const { country } = data;
-
-      return country;
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  const country = await fetchLocation();
-  console.log(country, "before");
   return {
     props: {
       DataScienceCourseData,
-      country,
     },
   };
 }
