@@ -20,6 +20,91 @@ function YourComponent() {
   const { scrollYProgress } = useScroll({
     target: ref,
   });
+  const [datasciencePrice, setdatasciencePrice] = useState("$150"); // Default actual price
+  const [datascienceactualPrice, setdatascienceactualPrice] = useState("$300");
+  const [dataanalyticsPrice, setdataanalyticsPrice] = useState("$100"); // Default actual price
+  const [dataanalyticsactualPrice, setdataanalyticsactualPrice] =
+    useState("$200");
+
+  const [DSAPrice, setDSAPrice] = useState("$100"); // Default actual price
+  const [DSAactualPrice, setDSAactualPrice] = useState("$200");
+  const [link, setLink] = useState("");
+  const [showNigeriaForm, setShowNigeriaForm] = useState(false);
+
+  useEffect(() => {
+    let width = window.innerWidth;
+    if (width < 600) {
+      setMobile(true);
+    } else {
+      setMobile(false);
+    }
+  }, []);
+
+  // const [datasciencePrice, setdatasciencePrice] = useState("$150"); // Default actual price
+  // const [offerPrice, setOfferPrice] = useState(11999);
+  // const [link, setLink] = useState("");
+  // const [showNigeriaForm, setShowNigeriaForm] = useState(false);
+
+  useEffect(() => {
+    const fetchLocation = async () => {
+      try {
+        const response = await fetch(
+          "https://ipinfo.io/json?token=0fac06a7890a4e"
+        );
+        if (response.status === 429) {
+          throw new Error("Rate limit exceeded. Too many requests.");
+        }
+        if (!response.ok) {
+          throw new Error(
+            `Failed to fetch location: ${response.status} ${response.statusText}`
+          );
+        }
+        const data = await response.json();
+        console.log("API Response:", data);
+        const { country } = data;
+
+        if (country === "NL") {
+          setShowNigeriaForm(true);
+          setdatasciencePrice("₦ 200,000");
+          setdatascienceactualPrice("₦ 400,000");
+
+          // dataanalyticsPrice
+
+          setdataanalyticsPrice("₦ 150,000");
+          setdataanalyticsactualPrice("₦300,000");
+
+          setDSAPrice("₦ 150,000");
+          setDSAactualPrice("₦ 300,000 ");
+          setLink(DataScienceCourseData.data.header.ngCheckout);
+          console.log("User is in Nigeria. Prices updated.");
+        } else if (country === "IN") {
+          setShowNigeriaForm(false);
+          setdatasciencePrice("₹6,999");
+          setdatascienceactualPrice("₹11,999");
+          // dataanalyticsPrice
+
+          setdataanalyticsPrice("₹4,999");
+          setdataanalyticsactualPrice("₹7,999");
+          setDSAPrice("₹4,999");
+          setDSAactualPrice("₹7,999");
+
+          setLink(DataScienceCourseData.data.header.indCheckout);
+          console.log("User is in India. Prices updated.");
+        } else {
+          // Default to USA
+          setShowNigeriaForm(false);
+          setdatasciencePrice("$150");
+          setOfferPrice(11999);
+          setLink(DataScienceCourseData.data.header.usaCheckout);
+          console.log("User is in default location (USA). Prices updated.");
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    fetchLocation();
+  }, [link]);
   return (
     <div
       className="h-[1800px] max-sm:h-[2320px] px-28 py-10 bg-[#fff7f3] flex flex-col max-sm:px-5 max-sm:py-5"
@@ -114,9 +199,9 @@ function YourComponent() {
             <div className="flex max-sm:flex-col gap-5 max-sm:gap-3 items-center max-sm:items-start">
               <div>
                 <p className="font-semibold flex gap-4 items-center text-[#f18350] text-2xl mt-4 max-sm:mt-3">
-                  ₹6,999{" "}
+                  {datasciencePrice}{" "}
                   <span className=" text-[#4D4D4D] line-through text-lg max-sm:text-[16px] max-sm:font-">
-                    ₹11,999
+                    {datascienceactualPrice}
                   </span>
                 </p>
               </div>
@@ -221,9 +306,9 @@ function YourComponent() {
             <div className="flex max-sm:flex-col gap-5 max-sm:gap-3 items-center max-sm:items-start">
               <div>
                 <p className="font-semibold flex gap-4 items-center text-[#f18350] text-2xl mt-4 max-sm:mt-3">
-                  ₹4,999{" "}
+                  {dataanalyticsPrice}
                   <span className=" text-[#4D4D4D] line-through text-lg max-sm:text-[16px] max-sm:font-">
-                    ₹7,999
+                    {dataanalyticsactualPrice}
                   </span>
                 </p>
               </div>
@@ -350,9 +435,9 @@ function YourComponent() {
             <div className="flex max-sm:flex-col gap-5 max-sm:gap-3 items-center max-sm:items-start">
               <div>
                 <p className="font-semibold flex gap-4 items-center text-[#f18350] text-2xl mt-4 max-sm:mt-3">
-                  ₹4,999
+                  {DSAPrice}
                   <span className=" text-[#4D4D4D] line-through text-lg max-sm:text-[16px] max-sm:font-">
-                    ₹7,999
+                    {DSAactualPrice}
                   </span>
                 </p>
               </div>

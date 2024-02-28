@@ -65,11 +65,11 @@ const ProjectSwiper = ({ swiperData, redirectFs, redirectDs, redirectBa }) => {
           spaceBetween: 20,
         },
         641: {
-          slidesPerView: 2,
+          slidesPerView: 1,
           spaceBetween: 20,
         },
         481: {
-          slidesPerView: 2.2,
+          slidesPerView: 1,
           spaceBetween: 10,
         },
         200: {

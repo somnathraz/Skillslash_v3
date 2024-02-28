@@ -216,12 +216,12 @@ const Navbar = ({ link, event, ads, redirectDs, redirectFs, redirectDa }) => {
           )}
         </div>
       </nav>
-      <main className={styles.TopBar}>
+      {/* <main className={styles.TopBar}>
         <p className="text-[#B32D0F] text-[14px] flex  items-center  w-full text-center justify-center">
           <MdOutlineAccessAlarms />
           <b> &nbsp;7 coupon left at</b> &nbsp;this prices
         </p>
-      </main>
+      </main> */}
     </div>
   );
 };
