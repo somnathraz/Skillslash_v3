@@ -63,7 +63,7 @@ function YourComponent() {
         console.log("API Response:", data);
         const { country } = data;
 
-        if (country === "NL") {
+        if (country === "NG") {
           setShowNigeriaForm(true);
           setdatasciencePrice("₦ 200,000");
           setdatascienceactualPrice("₦ 400,000");
