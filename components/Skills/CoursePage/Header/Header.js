@@ -15,6 +15,7 @@ import { LiaUserAstronautSolid } from "react-icons/lia";
 import { BsBroadcast } from "react-icons/bs";
 import { PiCertificateBold, PiMedal } from "react-icons/pi";
 import VideoPlaylist from "../../Global/VideoPlaylist/VideoPlaylist";
+import WaveButton from "../../../ButtonWaveAnimation/WaveAnimation";
 
 const Header = ({
   title,
@@ -66,10 +67,13 @@ const Header = ({
             id={idBtnV}
             onClick={() => showVideo(true)}
           />
-          <MdOutlinePlayCircleOutline
+          {/* <MdOutlinePlayCircleOutline
             className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
             id={idBtnV}
-          />
+          /> */}
+           <WaveButton className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
+                id={idBtnV}/>
+            
         </div>
       </div>
       {show && (
@@ -187,10 +191,12 @@ const Header = ({
                 quality={40}
                 id={idBtnV}
               />
-              <MdOutlinePlayCircleOutline
+              {/* <MdOutlinePlayCircleOutline
                 className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
                 id={idBtnV}
-              />
+              /> */}
+              <WaveButton className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
+                id={idBtnV}/>
             </div>
           </div>
           <div className="flex gap-2 w-full items-center mt-[-100px] max-sm:mt-[120px] max-sm:px-4">
