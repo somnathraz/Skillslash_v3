@@ -64,7 +64,7 @@ const VideoPlaylist = ({
         ></iframe>
         <div className="flex flex-col overflow-y-scroll mt-8  ">
           <div className="w-full h-max flex flex-col">
-            <h3 className="text-white font-bold">Sample Videos</h3>
+            <h3 className="text-white font-bold">Demo Videos</h3>
             {TabData[changeArray].desc.map((data, i) => {
               const src = `https://www.youtube-nocookie.com/embed/${data.link}`;
               return (
