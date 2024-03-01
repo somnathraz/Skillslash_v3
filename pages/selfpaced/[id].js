@@ -183,7 +183,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         redirectFs={DataScienceCourseData.data.header.FullStack}
       />
       <BottomPrice
-        checkoutLink={DataScienceCourseData.data.header.checkoutLink}
+        checkoutLink={DataScienceCourseData.data.header.indCheckout}
         offerPrice={offerPrice}
         actualPrice={actualPrice}
         link={DataScienceCourseData.data.header.link}

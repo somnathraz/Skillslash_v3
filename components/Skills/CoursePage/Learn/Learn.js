@@ -63,7 +63,7 @@ const Learn = ({
             </p>
           </div>
           <h2 className="text-4xl font-bold mt-3 max-[1281px]:text-2xl  max-[361px]:text-[20px]">
-            Courses based on Topics
+            Tools Covered
           </h2>
           <div className="grid grid-cols-[14%,14%,14%,14%,14%,14%] gap-2">
             <div className="bg-[#f18350] rounded flex items-center justify-center py-2">
