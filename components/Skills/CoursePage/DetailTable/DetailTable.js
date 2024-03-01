@@ -10,6 +10,7 @@ const DetailTable = ({
   liveHr,
   redirectDs,
   redirectFs,
+  redirectDa,
 }) => {
   return (
     <div className="px-40 py-10 flex flex-col gap-5 max-[1281px]:px-24 relative max-sm:px-5 max-sm:overflow-scroll bg-[#111621] max-[801px]:px-8">
@@ -77,7 +78,7 @@ const DetailTable = ({
               <hr className="w-[60%] bg-[#646464] text-[#646464] border-[#646464]" />
             </>
           )}
-          <p className="text-white">{redirectDs ? "30" : "15"}</p>
+          <p className="text-white">{redirectDa ? "18" : "30"}</p>
           <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
           {redirectDs && (
             <>
@@ -177,7 +178,7 @@ const DetailTable = ({
             <FaCircleCheck className="text-[#12c168] " />
           </p>
           <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
-          <p className="text-white">{redirectDs ? "30" : "15"}</p>
+          <p className="text-white">{redirectDa ? "18" : "30"}</p>
           <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />
           {redirectDs && (
             <>
