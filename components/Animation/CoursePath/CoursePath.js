@@ -20,7 +20,7 @@ function YourComponent() {
   const { scrollYProgress } = useScroll({
     target: ref,
   });
-  const [datasciencePrice, setdatasciencePrice] = useState("₹6,999"); // Default actual price
+  const [datasciencePrice, setdatasciencePrice] = useState("₹5,999"); // Default actual price
   const [datascienceactualPrice, setdatascienceactualPrice] = useState("₹11,999");
   const [dataanalyticsPrice, setdataanalyticsPrice] = useState("₹4,999"); // Default actual price
   const [dataanalyticsactualPrice, setdataanalyticsactualPrice] =
