@@ -145,9 +145,10 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         otherHr={DataScienceCourseData.data.header.otherHr}
         liveHr={DataScienceCourseData.data.header.liveHr}
         redirectDs={DataScienceCourseData.data.header.dataScience}
+        redirectDa={DataScienceCourseData.data.header.dataAnalytics}
         redirectFs={DataScienceCourseData.data.header.FullStack}
       />
-      <CTA />
+
       <div id="modules">
         <DataScienceSyllabus
           NigeriaForm={showNigeriaForm}
