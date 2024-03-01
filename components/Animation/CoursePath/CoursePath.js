@@ -20,14 +20,14 @@ function YourComponent() {
   const { scrollYProgress } = useScroll({
     target: ref,
   });
-  const [datasciencePrice, setdatasciencePrice] = useState("$150"); // Default actual price
-  const [datascienceactualPrice, setdatascienceactualPrice] = useState("$300");
-  const [dataanalyticsPrice, setdataanalyticsPrice] = useState("$100"); // Default actual price
+  const [datasciencePrice, setdatasciencePrice] = useState("₹6,999"); // Default actual price
+  const [datascienceactualPrice, setdatascienceactualPrice] = useState("₹11,999");
+  const [dataanalyticsPrice, setdataanalyticsPrice] = useState("₹4,999"); // Default actual price
   const [dataanalyticsactualPrice, setdataanalyticsactualPrice] =
-    useState("$200");
+    useState("₹7,999");
 
-  const [DSAPrice, setDSAPrice] = useState("$100"); // Default actual price
-  const [DSAactualPrice, setDSAactualPrice] = useState("$200");
+  const [DSAPrice, setDSAPrice] = useState("₹4,999"); // Default actual price
+  const [DSAactualPrice, setDSAactualPrice] = useState("₹7,999");
   const [link, setLink] = useState("");
   const [showNigeriaForm, setShowNigeriaForm] = useState(false);
 
@@ -45,69 +45,69 @@ function YourComponent() {
   // const [link, setLink] = useState("");
   // const [showNigeriaForm, setShowNigeriaForm] = useState(false);
 
-  useEffect(() => {
-    const fetchLocation = async () => {
-      try {
-        const response = await fetch(
-          "https://ipinfo.io/json?token=0fac06a7890a4e"
-        );
-        if (response.status === 429) {
-          throw new Error("Rate limit exceeded. Too many requests.");
-        }
-        if (!response.ok) {
-          throw new Error(
-            `Failed to fetch location: ${response.status} ${response.statusText}`
-          );
-        }
-        const data = await response.json();
-        console.log("API Response:", data);
-        const { country } = data;
+  // useEffect(() => {
+  //   const fetchLocation = async () => {
+  //     try {
+  //       const response = await fetch(
+  //         "https://ipinfo.io/json?token=0fac06a7890a4e"
+  //       );
+  //       if (response.status === 429) {
+  //         throw new Error("Rate limit exceeded. Too many requests.");
+  //       }
+  //       if (!response.ok) {
+  //         throw new Error(
+  //           `Failed to fetch location: ${response.status} ${response.statusText}`
+  //         );
+  //       }
+  //       const data = await response.json();
+  //       console.log("API Response:", data);
+  //       const { country } = data;
 
-        if (country === "NG") {
-          setShowNigeriaForm(true);
-          setdatasciencePrice("₦ 200,000");
-          setdatascienceactualPrice("₦ 400,000");
+  //       if (country === "NG") {
+  //         setShowNigeriaForm(true);
+  //         setdatasciencePrice("₦ 200,000");
+  //         setdatascienceactualPrice("₦ 400,000");
 
-          // dataanalyticsPrice
+  //         // dataanalyticsPrice
 
-          setdataanalyticsPrice("₦ 150,000");
-          setdataanalyticsactualPrice("₦300,000");
+  //         setdataanalyticsPrice("₦ 150,000");
+  //         setdataanalyticsactualPrice("₦300,000");
 
-          setDSAPrice("₦ 150,000");
-          setDSAactualPrice("₦ 300,000 ");
-          setLink(DataScienceCourseData.data.header.ngCheckout);
-          console.log("User is in Nigeria. Prices updated.");
-        } else if (country === "IN") {
-          setShowNigeriaForm(false);
-          setdatasciencePrice("₹6,999");
-          setdatascienceactualPrice("₹11,999");
-          // dataanalyticsPrice
+  //         setDSAPrice("₦ 150,000");
+  //         setDSAactualPrice("₦ 300,000 ");
+  //         setLink(DataScienceCourseData.data.header.ngCheckout);
+  //         console.log("User is in Nigeria. Prices updated.");
+  //       } else if (country === "IN") {
+  //         setShowNigeriaForm(false);
+  //         setdatasciencePrice("₹6,999");
+  //         setdatascienceactualPrice("₹11,999");
+  //         // dataanalyticsPrice
 
-          setdataanalyticsPrice("₹4,999");
-          setdataanalyticsactualPrice("₹7,999");
-          setDSAPrice("₹4,999");
-          setDSAactualPrice("₹7,999");
+  //         setdataanalyticsPrice("₹4,999");
+  //         setdataanalyticsactualPrice("₹7,999");
+  //         setDSAPrice("₹4,999");
+  //         setDSAactualPrice("₹7,999");
 
-          setLink(DataScienceCourseData.data.header.indCheckout);
-          console.log("User is in India. Prices updated.");
-        } else {
-          // Default to USA
-          setShowNigeriaForm(false);
-          setdatasciencePrice("$150");
-          setOfferPrice(11999);
-          setLink(DataScienceCourseData.data.header.usaCheckout);
-          console.log("User is in default location (USA). Prices updated.");
-        }
-      } catch (error) {
-        console.log(error);
-      }
-    };
+  //         setLink(DataScienceCourseData.data.header.indCheckout);
+  //         console.log("User is in India. Prices updated.");
+  //       } else {
+  //         // Default to USA
+  //         setShowNigeriaForm(false);
+  //         setdatasciencePrice("$150");
+  //         setOfferPrice(11999);
+  //         setLink(DataScienceCourseData.data.header.usaCheckout);
+  //         console.log("User is in default location (USA). Prices updated.");
+  //       }
+  //     } catch (error) {
+  //       console.log(error);
+  //     }
+  //   };
 
-    fetchLocation();
-  }, [link]);
+  //   fetchLocation();
+  // }, [link]);
   return (
     <div
-      className="h-[1800px] max-sm:h-[2320px] px-28 py-10 bg-[#fff7f3] flex flex-col max-sm:px-5 max-sm:py-5"
+      className="h-[1800px] max-sm:h-[2320px] max-[376px]:h-[2500px] px-28 py-10 bg-[#fff7f3] flex flex-col max-sm:px-5 max-sm:py-5"
       ref={ref}
     >
       <h2 className="text-[#FDDACE] text-8xl max-sm:text-3xl font-bold uppercase text-left ml-7 max-sm:ml-0 max-sm:text-center">
