@@ -1,0 +1,234 @@
+import { useState, useEffect } from "react";
+import { FaFlag } from "react-icons/fa";
+import PhoneInput from "react-phone-number-input";
+import "react-phone-number-input/style.css";
+import DatePicker from "react-datepicker";
+import { setHours, setMinutes, addDays, subDays, getDay } from "date-fns";
+import { isSaturday } from "date-fns";
+
+const countries = [
+  { value: "US", label: "United States (+1)", icon: <FaFlag /> },
+  { value: "GB", label: "United Kingdom (+44)", icon: <FaFlag /> },
+  // Add more countries as needed
+];
+
+const ContactForm = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phoneNumber: "",
+    startDate: "",
+    endDate: "",
+  });
+
+  const [startDate, setStartDate] = useState(new Date());
+
+  const [formActive, setFormActive] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+  useEffect(() => {
+    setFormData({ ...formData, dateTime: startDate });
+  }, [startDate]);
+  const isWeekday = (date) => {
+    const day = getDay(date);
+    return day !== 0;
+  };
+  const filterPassedTime = (time) => {
+    const currentDate = new Date();
+    const selectedDate = new Date(time);
+
+    return currentDate.getTime() < selectedDate.getTime();
+  };
+
+  const handlePhoneChange = (value) => {
+    setFormData((prevState) => ({
+      ...prevState,
+      phoneNumber: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Log the form data to the console
+    console.log("Form Data:", formData);
+
+    const formDataToSend = new FormData();
+    Object.entries(formData).forEach(([key, value]) => {
+      formDataToSend.append(key, value);
+    });
+
+    fetch("https://getform.io/f/b02fa8c8-ceea-4f3c-a4bb-407a8a83ad8a", {
+      method: "POST",
+      body: formDataToSend,
+    }).then(() =>
+      setFormData({
+        name: "",
+        email: "",
+        phoneNumber: "",
+        startDate: "",
+        endDate: "",
+      })
+    );
+    alert("Form submitted successfully!");
+  };
+
+  const handleInputFocus = () => {
+    setFormActive(true);
+  };
+
+  const handleInputBlur = () => {
+    setFormActive(false);
+  };
+  const filterDate = (date) => {
+    // Enable all Saturdays and disable other days
+    return isSaturday(date);
+  };
+  return (
+    <div>
+      <h2 className="text-center m-10">One-one  Doubt Session</h2>
+      <div
+        className={`d-flex justify-center max-w-md mx-auto bg-white rounded-lg overflow-hidden shadow-lg ${
+          formActive ? "form-active" : ""
+        }`}
+      >
+        <form onSubmit={handleSubmit} className="px-6 py-4">
+          <div className="mb-4">
+            <label
+              htmlFor="name"
+              className="block text-gray-700 text-sm font-bold mb-2"
+            >
+              Name:
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              onFocus={handleInputFocus}
+              onBlur={handleInputBlur}
+              required
+              className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            />
+          </div>
+          <div className="mb-4">
+            <label
+              htmlFor="email"
+              className="block text-gray-700 text-sm font-bold mb-2"
+            >
+              Email:
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              onFocus={handleInputFocus}
+              onBlur={handleInputBlur}
+              required
+              className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            />
+          </div>
+          <div className="mb-4">
+            <label
+              htmlFor="phoneNumber"
+              className="block text-gray-700 text-sm font-bold mb-2"
+            >
+              Phone Number:
+            </label>
+            <PhoneInput
+              id="phoneNumber"
+              name="phoneNumber"
+              placeholder="Enter phone number"
+              value={formData.phoneNumber}
+              onChange={handlePhoneChange}
+              onFocus={handleInputFocus}
+              onBlur={handleInputBlur}
+              className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              defaultCountry="IN"
+              required
+            />
+          </div>
+          <div className="flex flex-row justify-between">
+            <div className="mb-4">
+              <label
+                htmlFor="startDate"
+                className="block text-gray-700 text-sm font-bold mb-2"
+              >
+                Start Date:
+              </label>
+              {/* <input 
+              type="date" 
+              id="startDate" 
+              name="startDate" 
+              value={formData.startDate} 
+              onChange={handleChange} 
+              onFocus={handleInputFocus}
+              onBlur={handleInputBlur}
+              required 
+              className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              min={getNextSaturday()} // Set the minimum allowed date to the next Saturday
+              max={getNextSaturday()} // Set the maximum allowed date to the next Saturday
+           
+           /> */}
+              <DatePicker
+                selected={startDate}
+                name="dateTime"
+                id="dateTime"
+                onChange={(date) => setStartDate(date)}
+                showTimeSelect
+                timeIntervals={15}
+                // includeDateIntervals={[
+                //   {
+                //     start: subDays(new Date(), 1),
+                //     end: addDays(new Date(), 5),
+                //   },
+                // ]}
+                filterDate={filterDate} // use the custom function for filtering
+                filterTime={filterPassedTime}
+                dateFormat="MMMM d, yyyy h:mm aa"
+                required
+                popperPlacement="top"
+                popperModifiers={[
+                  {
+                    name: "offset",
+                    options: {
+                      offset: [5, 10],
+                    },
+                  },
+                  {
+                    name: "preventOverflow",
+                    options: {
+                      rootBoundary: "viewport",
+                      tether: false,
+                      altAxis: true,
+                    },
+                  },
+                ]}
+                style={{ width: "100% !important" }}
+                minTime={setHours(setMinutes(new Date(), 0), 12)} // Set minimum time to
+                maxTime={setHours(setMinutes(new Date(), 0), 14)} // Set maximum time to 5:00 PM
+              />
+            </div>
+          </div>
+          <button
+            type="submit"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  );
+};
+
+export default ContactForm;
