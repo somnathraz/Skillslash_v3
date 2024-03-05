@@ -92,7 +92,7 @@ const ContactForm = () => {
   };
   return (
     <div>
-      <h2 className="text-center m-10">One-one  Doubt Session</h2>
+      <h2 className="text-center m-10">One-one Doubt Session</h2>
       <div
         className={`d-flex justify-center max-w-md mx-auto bg-white rounded-lg overflow-hidden shadow-lg ${
           formActive ? "form-active" : ""
@@ -157,13 +157,13 @@ const ContactForm = () => {
               required
             />
           </div>
-          <div className="flex flex-row justify-between">
+          <div className="flex flex-row justify-between items-center gap-2">
             <div className="mb-4">
               <label
-                htmlFor="startDate"
+                htmlFor="dateTime"
                 className="block text-gray-700 text-sm font-bold mb-2"
               >
-                Start Date:
+                Select Date
               </label>
               {/* <input 
               type="date" 
@@ -179,43 +179,57 @@ const ContactForm = () => {
               max={getNextSaturday()} // Set the maximum allowed date to the next Saturday
            
            /> */}
-              <DatePicker
-                selected={startDate}
-                name="dateTime"
-                id="dateTime"
-                onChange={(date) => setStartDate(date)}
-                showTimeSelect
-                timeIntervals={15}
-                // includeDateIntervals={[
-                //   {
-                //     start: subDays(new Date(), 1),
-                //     end: addDays(new Date(), 5),
-                //   },
-                // ]}
-                filterDate={filterDate} // use the custom function for filtering
-                filterTime={filterPassedTime}
-                dateFormat="MMMM d, yyyy h:mm aa"
-                required
-                popperPlacement="top"
-                popperModifiers={[
-                  {
-                    name: "offset",
-                    options: {
-                      offset: [5, 10],
+              <div className="w-full border-[1px] border-solid  rounded px-2 py-1">
+                <DatePicker
+                  selected={startDate}
+                  name="dateTime"
+                  id="dateTime"
+                  onChange={(date) => setStartDate(date)}
+                  timeIntervals={15}
+                  // includeDateIntervals={[
+                  //   {
+                  //     start: subDays(new Date(), 1),
+                  //     end: addDays(new Date(), 5),
+                  //   },
+                  // ]}
+                  filterDate={filterDate} // use the custom function for filtering
+                  filterTime={filterPassedTime}
+                  dateFormat="MMMM d, yyyy"
+                  required
+                  popperPlacement="top"
+                  popperModifiers={[
+                    {
+                      name: "offset",
+                      options: {
+                        offset: [5, 10],
+                      },
                     },
-                  },
-                  {
-                    name: "preventOverflow",
-                    options: {
-                      rootBoundary: "viewport",
-                      tether: false,
-                      altAxis: true,
+                    {
+                      name: "preventOverflow",
+                      options: {
+                        rootBoundary: "viewport",
+                        tether: false,
+                        altAxis: true,
+                      },
                     },
-                  },
-                ]}
-                style={{ width: "100% !important" }}
-                minTime={setHours(setMinutes(new Date(), 0), 12)} // Set minimum time to
-                maxTime={setHours(setMinutes(new Date(), 0), 14)} // Set maximum time to 5:00 PM
+                  ]}
+                  style={{ width: "100% !important" }}
+                  minTime={setHours(setMinutes(new Date(), 0), 15)} // Set minimum time to
+                  maxTime={setHours(setMinutes(new Date(), 0), 17)} // Set maximum time to 5:00 PM
+                />
+              </div>
+            </div>
+            <div className="mb-4">
+              <label
+                htmlFor="dateTime"
+                className="block text-gray-700 text-sm font-bold mb-2"
+              >
+                Time
+              </label>
+              <input
+                readOnly
+                placeholder="12PM to 2PM"
+                className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               />
             </div>
           </div>
