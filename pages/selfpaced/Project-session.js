@@ -91,10 +91,16 @@ const ContactForm = () => {
     return isSaturday(date);
   };
   return (
-    <div>
-      <h2 className="text-center m-10">Project Session</h2>
+    <div className="flex flex-col items-center justify-center">
+      <h2 className="text-center m-10">
+        Live Project Session registration form
+      </h2>
+      <p className="w-[50%] text-center max-sm:w-[98%]">
+        Trainer led Live Project Session is available every Saturday from 3PM to
+        5PM. Please use your registered email id to fill up the form
+      </p>
       <div
-        className={`d-flex justify-center max-w-md mx-auto bg-white rounded-lg overflow-hidden shadow-lg ${
+        className={`d-flex justify-center mx-4 max-w-md  bg-white rounded-lg overflow-hidden shadow-lg ${
           formActive ? "form-active" : ""
         }`}
       >
@@ -157,8 +163,8 @@ const ContactForm = () => {
               required
             />
           </div>
-          <div className="flex flex-row justify-between items-center gap-2">
-            <div className="mb-4">
+          <div className="flex flex-row justify-between items-center gap-2 max-sm:flex-col">
+            <div className="mb-4 w-full">
               <label
                 htmlFor="dateTime"
                 className="block text-gray-700 text-sm font-bold mb-2"
@@ -219,7 +225,7 @@ const ContactForm = () => {
                 />
               </div>
             </div>
-            <div className="mb-4">
+            <div className="mb-4 w-full">
               <label
                 htmlFor="dateTime"
                 className="block text-gray-700 text-sm font-bold mb-2"

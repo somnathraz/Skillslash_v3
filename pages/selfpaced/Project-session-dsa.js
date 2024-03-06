@@ -64,7 +64,7 @@ const ContactForm = () => {
       formDataToSend.append(key, value);
     });
 
-    fetch("https://getform.io/f/b02fa8c8-ceea-4f3c-a4bb-407a8a83ad8a", {
+    fetch("https://getform.io/f/a4094670-598c-4a19-bc07-eed426bf1dc4", {
       method: "POST",
       body: formDataToSend,
     }).then(() =>
@@ -92,13 +92,15 @@ const ContactForm = () => {
   };
   return (
     <div className="flex flex-col items-center justify-center">
-      <h2 className="text-center m-10">Live Doubt Session registration form</h2>
+      <h2 className="text-center m-10">
+        Live Project Session registration form
+      </h2>
       <p className="w-[50%] text-center max-sm:w-[98%]">
-        Trainer led Live Doubt clearing session is available every Saturday from
-        12PM to 2PM. Please use your registered email id to fill up the form
+        Trainer led Live Project Session is available every Saturday from 3PM to
+        5PM. Please use your registered email id to fill up the form
       </p>
       <div
-        className={`d-flex justify-center max-w-md mx-4 bg-white rounded-lg overflow-hidden shadow-lg ${
+        className={`d-flex justify-center mx-4 max-w-md mx-auto bg-white rounded-lg overflow-hidden shadow-lg ${
           formActive ? "form-active" : ""
         }`}
       >
@@ -162,7 +164,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="flex flex-row justify-between items-center gap-2 max-sm:flex-col">
-            <div className="mb-4">
+            <div className="mb-4 w-full">
               <label
                 htmlFor="dateTime"
                 className="block text-gray-700 text-sm font-bold mb-2"
@@ -223,7 +225,7 @@ const ContactForm = () => {
                 />
               </div>
             </div>
-            <div className="mb-4">
+            <div className="mb-4 w-full">
               <label
                 htmlFor="dateTime"
                 className="block text-gray-700 text-sm font-bold mb-2"
@@ -232,7 +234,7 @@ const ContactForm = () => {
               </label>
               <input
                 readOnly
-                placeholder="12PM to 2PM"
+                placeholder="3PM to 5PM"
                 className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               />
             </div>
