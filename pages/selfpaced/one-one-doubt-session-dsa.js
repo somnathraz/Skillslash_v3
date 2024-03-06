@@ -64,7 +64,7 @@ const ContactForm = () => {
       formDataToSend.append(key, value);
     });
 
-    fetch("https://getform.io/f/b02fa8c8-ceea-4f3c-a4bb-407a8a83ad8a", {
+    fetch("https://getform.io/f/pbnrorgb", {
       method: "POST",
       body: formDataToSend,
     }).then(() =>
@@ -170,19 +170,19 @@ const ContactForm = () => {
                 Select Date
               </label>
               {/* <input 
-              type="date" 
-              id="startDate" 
-              name="startDate" 
-              value={formData.startDate} 
-              onChange={handleChange} 
-              onFocus={handleInputFocus}
-              onBlur={handleInputBlur}
-              required 
-              className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              min={getNextSaturday()} // Set the minimum allowed date to the next Saturday
-              max={getNextSaturday()} // Set the maximum allowed date to the next Saturday
-           
-           /> */}
+            type="date" 
+            id="startDate" 
+            name="startDate" 
+            value={formData.startDate} 
+            onChange={handleChange} 
+            onFocus={handleInputFocus}
+            onBlur={handleInputBlur}
+            required 
+            className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            min={getNextSaturday()} // Set the minimum allowed date to the next Saturday
+            max={getNextSaturday()} // Set the maximum allowed date to the next Saturday
+         
+         /> */}
               <div className="w-full border-[1px] border-solid  rounded px-2 py-1">
                 <DatePicker
                   selected={startDate}
