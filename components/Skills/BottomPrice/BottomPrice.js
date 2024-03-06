@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./BottomPrice.module.css";
 import Link from "next/link";
-import { MdOutlineAccessAlarms } from "react-icons/md";
 
 const BottomPrice = ({ offerPrice, actualPrice, checkoutLink }) => {
   const [idBtnO, setIdBtnO] = useState("org-slo");
@@ -18,7 +17,7 @@ const BottomPrice = ({ offerPrice, actualPrice, checkoutLink }) => {
           </Link>
         </div>
       </div>
-      <p className={styles.refund}>15 Days refundable**</p>
+      <p className={styles.refund}>15-Days Money-Back Guarantee</p>
       {/* <div className={styles.info}>
         <p className="text-[#B32D0F] text-[14px] flex gap-2 items-center">
           <MdOutlineAccessAlarms />6 hours left at <b>this prices</b>
