@@ -89,7 +89,7 @@ const Form = ({
       router.push("/Thankyou/dsa");
     }
     if (redirectDa) {
-      router.push("/Thankyou/data-engineering");
+      router.push("/Thankyou/business-analytics");
     }
   };
   let btnText = "Apply Now";

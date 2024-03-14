@@ -223,7 +223,7 @@ const Header = ({
             </div>
           </div>
           <div className="flex gap-2 w-full items-center mt-[-100px] max-sm:mt-[120px] max-sm:px-4">
-            <p className="text-[#000000] flex gap-4 text-2xl font-bold items-center mr-3">
+            <p className="text-[#000000] flex gap-4 text-2xl font-bold items-center mr-3 mb-2">
               {offerPrice}
               {/* {newDataScience && (
                 <span className="line-through text-lg font-normal text-[#646464]">
