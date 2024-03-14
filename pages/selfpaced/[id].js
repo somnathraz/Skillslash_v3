@@ -113,6 +113,9 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
       <SkillsContent
         certification={DataScienceCourseData.data.header.certification}
         hrs={DataScienceCourseData.data.header.hour}
+        redirectDs={DataScienceCourseData.data.header.dataScience}
+        redirectFs={DataScienceCourseData.data.header.FullStack}
+        redirectDa={DataScienceCourseData.data.header.dataAnalytics}
       />
       <div id="certificate">
         <WhyUs
@@ -120,13 +123,13 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           redirectDa={DataScienceCourseData.data.header.dataAnalytics}
         />
       </div>
-      <div id="certificate">
+      {/* <div id="certificate">
         <WhyUsAnimate
           redirectDa={DataScienceCourseData.data.header.dataAnalytics}
           redirectDs={DataScienceCourseData.data.header.dataScience}
           redirectFs={DataScienceCourseData.data.header.FullStack}
         />
-      </div>
+      </div> */}
       {DataScienceCourseData.data.header.FullStack ? (
         ""
       ) : (
@@ -187,6 +190,9 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         checkoutLink={DataScienceCourseData.data.header.indCheckout}
         offerPrice={offerPrice}
         actualPrice={actualPrice}
+        redirectDs={DataScienceCourseData.data.header.dataScience}
+        redirectFs={DataScienceCourseData.data.header.FullStack}
+        redirectDa={DataScienceCourseData.data.header.dataAnalytics}
         link={DataScienceCourseData.data.header.link}
       />
       {/* <MiddlePopup

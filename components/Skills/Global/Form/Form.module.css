@@ -16,7 +16,8 @@
   padding-bottom: 0;
   margin: 0;
   outline: none;
-  border-style: solid;
+  padding: 0 10px;
+  border: 1px solid #646464;
   border-radius: 4px;
 }
 
@@ -24,10 +25,10 @@
 .formWrappers legend {
   font-size: 13px;
   font-weight: 500;
+  color: #4f419a;
 }
 
 .formWrapper input {
-  appearance: none;
 }
 .formWrappers {
   margin-bottom: 10px;
