@@ -3,19 +3,17 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import Image from "next/image";
 import { MdOutlineAccessAlarms } from "react-icons/md";
 import Link from "next/link";
+import Popup from "../../Global/Popup/Popup";
+import Form from "../../Global/Form/Form";
 import {
   MdOutlineVideocam,
   MdLiveTv,
   MdOutlineWorkHistory,
   MdLockOpen,
-  MdOutlineBroadcastOnHome,
-  MdOutlinePlayCircleOutline,
 } from "react-icons/md";
-import { LiaUserAstronautSolid } from "react-icons/lia";
-import { BsBroadcast } from "react-icons/bs";
+import ButtonWaveAnimation from "../../../ButtonWaveAnimation/WaveAnimation";
 import { PiCertificateBold, PiMedal } from "react-icons/pi";
 import VideoPlaylist from "../../Global/VideoPlaylist/VideoPlaylist";
-import WaveButton from "../../../ButtonWaveAnimation/WaveAnimation";
 
 const Header = ({
   title,
@@ -26,22 +24,46 @@ const Header = ({
   offerPrice,
   actualPrice,
   discount,
-  checkoutLink,
   link,
+  checkoutLink,
+  changeHeading,
   redirectDs,
   redirectFs,
   redirectDa,
+  newDataScience,
 }) => {
   const [show, setShow] = useState(false);
   const showVideo = (data) => {
     setShow(data);
   };
   const [idBtnO, setIdBtnO] = useState("org-slo");
-  const [idBtnDV, setIdBtnDV] = useState("org-wdv");
   const [idBtnV, setIdBtnV] = useState("org-dv");
-
+  const [popups, setPopups] = useState(false);
+  const popupShow = (demoClass, changeText) => {
+    setPopups(true);
+  };
   return (
-    <div className="grid grid-cols-[60%,39%] max-[741px]:flex max-[741px]:flex-col max-[901px]:grid-cols-[55%,44%] max-sm:flex max-sm:flex-col gap-5 max-sm:mb-[10px] bg-[#111621] w-full mt-[40px] max-sm:mt-[60px] max-sm:pt-4 min-[1600px]:mt-[70px] px-28 max-[1024px]:px-10 min-[1600px]:px-48 max-sm:px-0 py-[50px] min-[1600px]:py-[90px] pb-[70px] max-sm:pb-[30px] max-sm:py-4 relative">
+    <div className="grid grid-cols-[60%,39%] max-[741px]:flex max-[741px]:flex-col max-[901px]:grid-cols-[55%,44%] max-sm:flex max-sm:flex-col gap-5 max-sm:mb-[10px] bg-[#111621] w-full mt-[40px] max-sm:mt-[60px] max-sm:pt-4 min-[1600px]:mt-[70px] px-28 max-[1024px]:px-10 min-[1600px]:px-48 max-sm:px-0 py-[60px] min-[1600px]:py-[90px] pb-[70px] max-sm:pb-[30px] max-sm:py-4 relative">
+      <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
+        <div className="RightPopup">
+          {changeHeading ? (
+            <h5>Download Program Handbook</h5>
+          ) : (
+            <h5>
+              Get a chance to understand this course in detail from our
+              counsellors
+            </h5>
+          )}
+          <p>Fill the below Details to get started</p>
+          <Form
+            popup={true}
+            setTrigger={setPopups}
+            redirectDs={redirectDs}
+            redirectFs={redirectFs}
+            redirectDa={redirectDa}
+          />
+        </div>
+      </Popup>
       <div className="flex gap-3 text-[#F18350] font-bold items-center max-sm:mb-[-8px] min-[482px]:hidden">
         <p className="text-[#F18350] font-semibold min-[1600px]:text-[20px] max-sm:text-[15px] max-sm:font-medium max-sm:px-2">
           Self-Paced
@@ -53,10 +75,7 @@ const Header = ({
         {/* <MdKeyboardArrowRight className="text-[white]" />
           <p>Data Science</p> */}
       </div>
-      <div
-        className="w-[100%]  max-[361px]:h-[250px] max-sm:h-[280px] h-[310px] relative flex justify-center min-[482px]:hidden "
-        onClick={() => showVideo(true)}
-      >
+      <div className="w-[100%]  max-[361px]:h-[250px]  h-[310px] relative flex justify-center min-[500px]:hidden ">
         <div onClick={() => showVideo(true)} id={idBtnV}>
           <Image
             src={imgSrc}
@@ -65,13 +84,13 @@ const Header = ({
             priority
             quality={40}
             id={idBtnV}
-            onClick={() => showVideo(true)}
           />
           {/* <MdOutlinePlayCircleOutline
             className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
             id={idBtnV}
-          /> */}
-          <WaveButton
+          />
+           */}
+          <ButtonWaveAnimation
             className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
             id={idBtnV}
           />
@@ -87,6 +106,7 @@ const Header = ({
         />
       )}
 
+      {/* <div className="absolute gradient top-0 left-0 h-full w-[60%] max-sm:w-full z-0"></div> */}
       <div className="flex flex-col gap-2 relative z-[1] max-sm:px-5">
         <div className="flex gap-3 text-[#F18350] font-bold items-center max-sm:mb-[-8px] max-sm:hidden">
           <p className="text-[#F18350] font-semibold min-[1600px]:text-[20px] max-sm:text-[15px] max-sm:font-medium">
@@ -155,8 +175,8 @@ const Header = ({
         <p className="text-[#cccccc] w-[91%] min-[1600px]:w-[75%] text-[17px] max-sm:text-[16px] max-[1281px]:text-[16px] leading-[28px] max-sm:leading-[24px] font-light mt-2 max-sm:mt-2 min-[1600px]:text-[20px] max-[642px]:hidden">
           {desc}
         </p>
-        <div className="min-[642px]:hidden text-white flex flex-col gap-2 mt-3">
-          <p className="text-[20px] text-white font-semibold max-[361px]:text-[19px] max-[320px]:text-[16px] ">
+        {/* <div className="min-[642px]:hidden text-white flex flex-col gap-2 mt-3">
+          <p className="text-[20px] text-white font-semibold max-[361px]:text-[19px] max-[320px]:text-[16px]">
             {hrs} hrs recorded sessions with
           </p>
           {redirectFs ? (
@@ -178,7 +198,7 @@ const Header = ({
             <MdOutlineBroadcastOnHome className="text-[20px]" />
             Live Project Sessions
           </p>
-        </div>
+        </div> */}
       </div>
       <div className="flex flex-col gap-7 relative w-full items-end justify-end">
         <div className="bg-white top-0 px-11 max-[1024px]:px-5 py-3 max-sm:px-0 rounded shadow flex flex-col w-full z-[1] max-sm:hidden absolute mt-28 max-[741px]:w-[52%] max-[741px]:top-0 max-[741px]:right-[-15px]">
@@ -196,25 +216,42 @@ const Header = ({
                 className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
                 id={idBtnV}
               /> */}
-              <WaveButton
+              <ButtonWaveAnimation
                 className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
                 id={idBtnV}
               />
             </div>
           </div>
           <div className="flex gap-2 w-full items-center mt-[-100px] max-sm:mt-[120px] max-sm:px-4">
-            <p className="text-[#000000] flex gap-4 text-2xl font-bold items-center mr-3">
+            <p className="text-[#000000] flex gap-4 text-2xl font-bold items-center mr-3 mb-2">
               {offerPrice}
-              <span className="line-through text-lg font-normal text-[#646464]">
-                {actualPrice}
-              </span>
+              {/* {newDataScience && (
+                <span className="line-through text-lg font-normal text-[#646464]">
+                  {actualPrice}
+                </span>
+              )} */}
             </p>
+            {/* <Image
+              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/discount.png"
+              alt="discount"
+              width={20}
+              height={20}
+              priority
+              style={{ height: "20px" }}
+            />
+            <p className="text-[#f18350] font-bold">({discount} Off)</p> */}
           </div>
+
           <div className="flex flex-col gap-5 max-sm:px-4">
-            <p className="text-[#B32D0F] text-[14px] flex gap-2 items-center">
-              <MdOutlineAccessAlarms />
-              Limited time <b>offer </b>
-            </p>
+            {/* {newDataScience ? (
+              <p className="text-[#B32D0F] text-[14px] flex gap-1 items-center">
+                <MdOutlineAccessAlarms />
+                Valid for<b>Today </b>
+              </p>
+            ) : (
+              ""
+            )} */}
+
             <Link href={checkoutLink}>
               <button
                 className="w-full px-4 bg-[#f18350] text-white rounded py-3 font-bold text-xl flex justify-center items-center"

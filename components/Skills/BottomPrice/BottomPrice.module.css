@@ -1,19 +1,17 @@
 .wrap {
+  position: fixed;
+  bottom: 0;
   display: grid;
   grid-template-columns: 41% 54%;
   align-items: center;
-  justify-content: center;
-  gap: 15px;
-}
-.bottomBar {
-  position: fixed;
-  bottom: 0;
-  z-index: 999;
-  background-color: white;
+  gap: 20px;
   padding: 10px 20px;
+  background-color: white;
   width: 100%;
+  z-index: 999;
 }
 .left {
+  margin-bottom: 15px;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -27,9 +25,9 @@
 .acPr {
   text-decoration: line-through;
 }
-/* .right {
+.right {
   margin-bottom: 15px;
-} */
+}
 .right button {
   width: 100%;
   display: flex;
@@ -40,15 +38,27 @@
     rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
 .refund {
-  font-size: 14px;
+  position: absolute;
+  bottom: 2px;
+  width: 100%;
   text-align: center;
 }
-.info {
-  display: flex;
-}
 @media (min-width: 642px) {
-  .wrap,
-  .bottomBar {
+  .wrap {
     display: none;
+  }
+}
+@media (max-width: 361px) {
+  .right button {
+    padding: 5px 8px;
+  }
+  .wrap {
+    padding: 10px;
+    gap: 0px;
+  }
+}
+@media (max-width: 320px) {
+  .ofPr {
+    font-size: 20px;
   }
 }

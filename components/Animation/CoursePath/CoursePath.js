@@ -20,13 +20,14 @@ function YourComponent() {
   const { scrollYProgress } = useScroll({
     target: ref,
   });
-  const [datasciencePrice, setdatasciencePrice] = useState("₹5,999"); // Default actual price
-  const [datascienceactualPrice, setdatascienceactualPrice] = useState("₹11,999");
-  const [dataanalyticsPrice, setdataanalyticsPrice] = useState("₹4,999"); // Default actual price
+  const [datasciencePrice, setdatasciencePrice] = useState("₹9,999"); // Default actual price
+  const [datascienceactualPrice, setdatascienceactualPrice] =
+    useState("₹11,999");
+  const [dataanalyticsPrice, setdataanalyticsPrice] = useState("₹7,999"); // Default actual price
   const [dataanalyticsactualPrice, setdataanalyticsactualPrice] =
     useState("₹7,999");
 
-  const [DSAPrice, setDSAPrice] = useState("₹4,999"); // Default actual price
+  const [DSAPrice, setDSAPrice] = useState("₹7,999"); // Default actual price
   const [DSAactualPrice, setDSAactualPrice] = useState("₹7,999");
   const [link, setLink] = useState("");
   const [showNigeriaForm, setShowNigeriaForm] = useState(false);
@@ -200,9 +201,9 @@ function YourComponent() {
               <div>
                 <p className="font-semibold flex gap-4 items-center text-[#f18350] text-2xl mt-4 max-sm:mt-3">
                   {datasciencePrice}{" "}
-                  <span className=" text-[#4D4D4D] line-through text-lg max-sm:text-[16px] max-sm:font-">
+                  {/* <span className=" text-[#4D4D4D] line-through text-lg max-sm:text-[16px] max-sm:font-">
                     {datascienceactualPrice}
-                  </span>
+                  </span> */}
                 </p>
               </div>
               <Link href="/selfpaced/data-science-&-aI-bootcamp">
@@ -307,9 +308,9 @@ function YourComponent() {
               <div>
                 <p className="font-semibold flex gap-4 items-center text-[#f18350] text-2xl mt-4 max-sm:mt-3">
                   {dataanalyticsPrice}
-                  <span className=" text-[#4D4D4D] line-through text-lg max-sm:text-[16px] max-sm:font-">
+                  {/* <span className=" text-[#4D4D4D] line-through text-lg max-sm:text-[16px] max-sm:font-">
                     {dataanalyticsactualPrice}
-                  </span>
+                  </span> */}
                 </p>
               </div>
               <Link href="/selfpaced/data-analytics-bootcamp">
@@ -436,9 +437,9 @@ function YourComponent() {
               <div>
                 <p className="font-semibold flex gap-4 items-center text-[#f18350] text-2xl mt-4 max-sm:mt-3">
                   {DSAPrice}
-                  <span className=" text-[#4D4D4D] line-through text-lg max-sm:text-[16px] max-sm:font-">
+                  {/* <span className=" text-[#4D4D4D] line-through text-lg max-sm:text-[16px] max-sm:font-">
                     {DSAactualPrice}
-                  </span>
+                  </span> */}
                 </p>
               </div>
               <Link href="/selfpaced/dsa-system-design-bootcamp">

@@ -12,7 +12,7 @@ const Learn = ({
 }) => {
   return (
     <div>
-      <div className="grid grid-cols-[60%,39%] max-[901px]:grid-cols-[52%,39%] gap-5 px-28 max-[1024px]:px-10  max-[741px]:px-5 max-[741px]:grid-cols-[48%,39%] max-sm:px-6 py-7 max-sm:py-4 max-sm:flex">
+      <div className="grid grid-cols-[60%,39%] max-[901px]:grid-cols-[52%,39%] gap-5 px-28 max-[1024px]:px-10  max-[741px]:px-5 max-[741px]:grid-cols-[48%,39%] max-sm:px-6 py-7 max-sm:py-4 max-sm:hidden">
         <div className="flex flex-col gap-5 max-sm:gap-0">
           <div className="flex gap-3 max-sm:hidden w-[full] flex-wrap">
             <Link href="#features">
