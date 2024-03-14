@@ -22,7 +22,7 @@ export default function ThankYou({ DataScienceCourseData }) {
           <div className={styles.left}>
             <h4 className={styles.hptop}>
               <b>Thank you</b>
-              <br />
+
               {DataScienceCourseData.data.bold}
             </h4>
             <p className={styles.Ptop}>{DataScienceCourseData.data.para}</p>
@@ -36,29 +36,8 @@ export default function ThankYou({ DataScienceCourseData }) {
                     </button>
                   </Link>
                 </div>
-                <div>
-                  {DataScienceCourseData.data.url === "" ? (
-                    ""
-                  ) : (
-                    <Link href={DataScienceCourseData.data.url} passHref>
-                      <button className={styles.Button}>
-                        <AiOutlineDownload className="bIcons" />
-                        Download Brochure
-                      </button>
-                    </Link>
-                  )}
-                </div>
               </div>
             </div>
-          </div>
-          <div className={styles.right}>
-            <Image
-              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/thank-you.png"
-              alt="data-science-course"
-              quality={100}
-              width="500"
-              height="550"
-            />
           </div>
         </section>
       </div>

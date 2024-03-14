@@ -47,15 +47,9 @@ const BottomPrice = ({
         {/* {newDataScience && <p className={styles.acPr}>{actualPrice}</p>} */}
       </div>
       <div className={styles.right} id={idBtnO}>
-        {newDataScience ? (
-          <Link href={checkoutLink} id={idBtnO}>
-            <button id={idBtnO}>Buy Now</button>
-          </Link>
-        ) : (
-          <button id={idBtnO} onClick={() => popupShow()}>
-            Free Counselling
-          </button>
-        )}
+        <Link href={checkoutLink} id={idBtnO}>
+          <button id={idBtnO}>Buy Now</button>
+        </Link>
       </div>
       <p className={styles.refund}>15-Days Money-Back Guarantee</p>
     </div>

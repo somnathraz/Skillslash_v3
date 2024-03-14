@@ -225,11 +225,11 @@ const Header = ({
           <div className="flex gap-2 w-full items-center mt-[-100px] max-sm:mt-[120px] max-sm:px-4">
             <p className="text-[#000000] flex gap-4 text-2xl font-bold items-center mr-3">
               {offerPrice}
-              {newDataScience && (
+              {/* {newDataScience && (
                 <span className="line-through text-lg font-normal text-[#646464]">
                   {actualPrice}
                 </span>
-              )}
+              )} */}
             </p>
             {/* <Image
               src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/discount.png"
@@ -243,32 +243,23 @@ const Header = ({
           </div>
 
           <div className="flex flex-col gap-5 max-sm:px-4">
-            {newDataScience ? (
+            {/* {newDataScience ? (
               <p className="text-[#B32D0F] text-[14px] flex gap-1 items-center">
                 <MdOutlineAccessAlarms />
                 Valid for<b>Today </b>
               </p>
             ) : (
               ""
-            )}
-            {newDataScience ? (
-              <Link href={checkoutLink}>
-                <button
-                  className="w-full px-4 bg-[#f18350] text-white rounded py-3 font-bold text-xl flex justify-center items-center"
-                  id={idBtnO}
-                >
-                  Buy Now
-                </button>
-              </Link>
-            ) : (
+            )} */}
+
+            <Link href={checkoutLink}>
               <button
                 className="w-full px-4 bg-[#f18350] text-white rounded py-3 font-bold text-xl flex justify-center items-center"
                 id={idBtnO}
-                onClick={() => popupShow()}
               >
-                Free Counselling
+                Buy Now
               </button>
-            )}
+            </Link>
           </div>
           <div className="flex flex-col gap-2 py-4">
             <h3 className="text-xl font-bold px-5 py-1">Course Content</h3>

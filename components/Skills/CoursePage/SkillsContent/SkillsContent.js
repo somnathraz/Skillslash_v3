@@ -113,17 +113,6 @@ const SkillsContent = ({
           </p>
         </div>
       </div>
-      {newDataScience ? (
-        ""
-      ) : (
-        <div className="flex flex-col px-5 mt-[20px] gap-4">
-          <div className={styles.right} id={idBtnO}>
-            <button id={idBtnO} onClick={() => popupShow()}>
-              Free Counselling
-            </button>
-          </div>
-        </div>
-      )}
     </div>
   );
 };
