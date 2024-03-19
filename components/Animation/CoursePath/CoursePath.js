@@ -20,14 +20,14 @@ function YourComponent() {
   const { scrollYProgress } = useScroll({
     target: ref,
   });
-  const [datasciencePrice, setdatasciencePrice] = useState("₹9,999"); // Default actual price
+  const [datasciencePrice, setdatasciencePrice] = useState("₹19,999"); // Default actual price
   const [datascienceactualPrice, setdatascienceactualPrice] =
     useState("₹11,999");
-  const [dataanalyticsPrice, setdataanalyticsPrice] = useState("₹7,999"); // Default actual price
+  const [dataanalyticsPrice, setdataanalyticsPrice] = useState("₹14,999"); // Default actual price
   const [dataanalyticsactualPrice, setdataanalyticsactualPrice] =
     useState("₹7,999");
 
-  const [DSAPrice, setDSAPrice] = useState("₹7,999"); // Default actual price
+  const [DSAPrice, setDSAPrice] = useState("₹14,999"); // Default actual price
   const [DSAactualPrice, setDSAactualPrice] = useState("₹7,999");
   const [link, setLink] = useState("");
   const [showNigeriaForm, setShowNigeriaForm] = useState(false);

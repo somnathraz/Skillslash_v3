@@ -40,7 +40,7 @@ const FirstPart = ({ homePage }) => {
       <ProgramInfo homePage={homePage} />
       <Slider />
       <CoursePath />
-      <CourseSlider />
+      {/* <CourseSlider /> */}
       <div ref={ref}>
         <WhyUs scrollYProgress={scrollYProgress} home={true} />
       </div>
