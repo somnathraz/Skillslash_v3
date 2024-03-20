@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import styles from "./SeoSyllabus.module.css";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
-import Link from "next/link";
-import Image from "next/image";
-import { AiOutlineTool } from "react-icons/ai";
-import { BiCheck, BiTimeFive } from "react-icons/bi";
-import { BsDot } from "react-icons/bs";
-import Form from "../../../Form/Form";
+import { BiCheck } from "react-icons/bi";
+import { IoRemoveOutline } from "react-icons/io5";
+import { MdOutlinePlayCircle } from "react-icons/md";
+import Form from "../../Global/Form/Form";
+import Popup from "../../Global/Popup/Popup";
 
 function DataScienceSyllabus({
   seoSyllabus,
@@ -16,15 +15,13 @@ function DataScienceSyllabus({
   title,
   redirectDs,
   redirectFs,
-  NigeriaForm,
+  redirectDa,
 }) {
+  const [state, setState] = useState(seoSyllabus);
   const [popups, setPopups] = useState(false);
-
-  const popupShow = () => {
+  const popupShow = (demoClass, changeText) => {
     setPopups(true);
   };
-  const [state, setState] = useState(seoSyllabus);
-
   const handleChange = (index) => {
     setState(
       state.map((faq, i) => {
@@ -40,12 +37,29 @@ function DataScienceSyllabus({
 
   return (
     <section className={styles.Syllabus}>
+      <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
+        <div className="RightPopup">
+          <h5>Download Program Handbook</h5>
+          <p>Fill the below Details to get started</p>
+          <Form
+            popup={true}
+            setTrigger={setPopups}
+            redirectDs={redirectDs}
+            redirectFs={redirectFs}
+            redirectDa={redirectDa}
+          />
+        </div>
+      </Popup>
       <div className={styles.syllabusLeft}>
         <div className={styles.Syllabusbutton}>
           <div>
-            <h2>{heading}</h2>
+            <h2 className="text-[#f18350]">{heading}</h2>
           </div>
-          <div></div>
+          <div>
+            <button onClick={() => popupShow()} id="clck-download-syllabus">
+              Download Syllabus
+            </button>
+          </div>
         </div>
         <p>{syllabusDesc}</p>
         <ul>
@@ -54,39 +68,43 @@ function DataScienceSyllabus({
 
             return (
               <li className={styles.pointA} key={Module0.title}>
-                <BsDot className={styles.dot} />
-                <span className={styles.line}></span>
                 <div className={styles.FaqWrapper} key={Module0.title}>
                   {/* {Module0.open ? ( */}
 
-                  <div className={styles.ques} style={{ borderBottom: "0" }}>
+                  <div
+                    className={styles.ques}
+                    style={{ borderBottom: "0" }}
+                    onClick={() => {
+                      let id = i;
+                      handleChange(id);
+                    }}
+                  >
                     <div className={styles.headWrap}>
-                      <h3>{Module0.title}</h3>
-
-                      <p className={styles.sTitle}>{Module0.title1}</p>
-                      <p className={styles.sDesc}>{Module0.descS}</p>
+                      <div>
+                        <p className={styles.sTitle}>{Module0.title1}</p>
+                        <h3 className="flex gap-1 items-center ">
+                          <MdOutlinePlayCircle />
+                          {Module0.hrs} +hrs lessons
+                        </h3>
+                      </div>
                     </div>
+                    <span>
+                      {Module0.open ? (
+                        <MdKeyboardArrowUp className="icon" />
+                      ) : (
+                        <MdKeyboardArrowDown className="icon" />
+                      )}
+                    </span>
                   </div>
                   {Module0.content.length === 0 ? (
                     ""
                   ) : (
-                    <div className={styles.ans}>
-                      <div
-                        className={styles.innerAns}
-                        onClick={() => {
-                          let id = i;
-                          handleChange(id);
-                        }}
-                      >
-                        <p className={styles.accorDHead}>Module Content</p>
-                        <span>
-                          {Module0.open ? (
-                            <MdKeyboardArrowUp className="icon" />
-                          ) : (
-                            <MdKeyboardArrowDown className="icon" />
-                          )}
-                        </span>
-                      </div>
+                    <div
+                      className={styles.ans}
+                      style={
+                        Module0.open ? { padding: "10px" } : { padding: "0px" }
+                      }
+                    >
                       {Module0.open ? (
                         <div>
                           <p>{Module0.desc}</p>
@@ -94,19 +112,23 @@ function DataScienceSyllabus({
                           {Module0.content.map((content, i) => {
                             return (
                               <div key={content.chap.title}>
-                                <ul className={styles.syllabusHead}>
+                                <ul
+                                  className={styles.syllabusHead}
+                                  key={content.chap.title}
+                                >
                                   <h4 className={styles.chapHead}>
+                                    <MdOutlinePlayCircle className="text-2xl  text-[#cd201f]" />{" "}
                                     {content.chap.title}
                                   </h4>
                                   {content.chap.desc.map((desc, i) => {
                                     return (
-                                      <div key={desc} className="max-sm:hidden">
+                                      <div key={desc}>
                                         {desc === "" ? (
                                           ""
                                         ) : (
                                           <li key={i} className={styles.points}>
                                             {" "}
-                                            <BiCheck
+                                            <IoRemoveOutline
                                               className={styles.check}
                                             />{" "}
                                             {desc}
@@ -119,6 +141,15 @@ function DataScienceSyllabus({
                               </div>
                             );
                           })}
+                          <div className="flex gap-2 items-center mt-3">
+                            <p>For more details </p>
+                            <button
+                              onClick={() => popupShow()}
+                              className="px-4 py-[8px] text-sm font-normal"
+                            >
+                              Download Syllabus
+                            </button>
+                          </div>
                         </div>
                       ) : (
                         ""
@@ -133,55 +164,18 @@ function DataScienceSyllabus({
       </div>
 
       <div>
-        {NigeriaForm ? (
-          <div className={styles.syllabusRight}>
-            <h5 className={styles.rightHeading}>
-              Have doubts!! <span>Talk to us</span>
-            </h5>
-            <Form ngForm={true} />
+        <div className={styles.syllabusRight}>
+          <h5 className={styles.rightHeading}>
+            Understand the complete program in 15 mins
+          </h5>
+          <p className={styles.rightDesc}>
+            Speak with out counsellors to understand the program in details and
+            clarify your doubts
+          </p>
+          <div>
+            <Form />
           </div>
-        ) : (
-          <div className={styles.syllabusRight}>
-            <h5 className={styles.rightHeading}>
-              {title} <span>Curriculum</span>
-            </h5>
-            <p className={styles.rightDesc}>
-              {title} Syllabus are curated by leading faculties and industry
-              leaders.
-            </p>
-            <div className={styles.feature}>
-              <BiTimeFive className={styles.clockIcon} />
-              <div className={styles.fContent}>
-                <p className={styles.fHeading}>{hour} Hrs</p>
-                <span className="text-sm">Recorded classes</span>
-              </div>
-            </div>
-            <div className={styles.feature}>
-              <AiOutlineTool className={styles.settingIcon} />
-              <div className={styles.fContent}>
-                <p className={styles.fHeading}>{redirectDs ? "30+" : "15+"}</p>
-                <span>Live Project</span>
-              </div>
-            </div>
-            <Link
-              href="https://wa.me/+918391911911?text=ChatWithUs"
-              className={styles.feature}
-            >
-              <div className="flex items-center justify-center">
-                <Image
-                  src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Header/chat-with-us.gif"
-                  width={50}
-                  height={50}
-                />
-                <div className={styles.fContent}>
-                  <p className="text-xl font-medium text-black ml-6">
-                    Chat With Us
-                  </p>
-                </div>
-              </div>
-            </Link>
-          </div>
-        )}
+        </div>
       </div>
     </section>
   );

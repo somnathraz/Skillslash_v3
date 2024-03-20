@@ -1,7 +1,9 @@
 .Syllabus {
   display: grid;
   grid-template-columns: 70% 30%;
-  margin: 80px 100px 100px 100px;
+  margin-top: 60px;
+  padding: 40px 100px 40px 100px;
+  background-color: #000;
 }
 .syllabusLeft ul {
   margin: 0;
@@ -197,24 +199,13 @@
   display: flex;
   justify-content: space-between;
   background-color: transparent;
-  padding: 15px 20px 10px 40px;
+  padding: 10px;
   align-items: center;
   cursor: pointer;
   /* height: 60px; */
 }
 .ques span {
   color: #6555be;
-}
-.FaqWrapper:nth-child(odd) .ques {
-  background: transparent;
-}
-
-.FaqWrapper:nth-child(odd) .ques0 {
-  background: #f9f8ff;
-  font-size: 45px;
-}
-.FaqWrapper:nth-child(even) .ques0 {
-  background: white;
 }
 
 .quesO {
@@ -246,16 +237,10 @@
   padding-bottom: 25px;
   border-bottom: 4px solid #4f419a;
 }
+
 .ans {
-  margin-bottom: 5px;
-}
-.ans {
-  border-radius: 4px;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
-  border: solid 1px #dde3e7;
-  background-color: #fff;
-  margin: 0px 20px 20px 34px;
-  padding: 7px 20px;
+  margin: 0px;
+  padding: 7px 40px;
 }
 .accorDHead {
   font-size: 16px;
@@ -272,9 +257,7 @@
 .innerAns span {
   color: #6555be;
 }
-.FaqWrapper:nth-child(even) .ans {
-  background: white !important;
-}
+
 .ansV {
   display: none;
 }
@@ -294,22 +277,15 @@
   z-index: 1;
   margin-left: 28px;
 }
-.FaqWrapper:first-child .line {
-  top: 35px;
-}
-.FaqWrapper:last-child .line {
-  height: 35px;
-}
+
 .FaqWrapper {
-  margin-top: 22px;
-  background-color: transparent;
+  width: 100%;
+  margin-top: 0;
   margin-bottom: 10px;
-  padding-bottom: 10px;
-  margin-left: 0px;
-  padding-top: 2px;
-  padding-left: 0px;
-  z-index: 0;
-  position: relative;
+  padding-bottom: 0;
+  background-color: #fff9f6;
+  border: 1px solid white;
+  border-radius: 10px;
 }
 
 .syllabusRight {
@@ -317,7 +293,8 @@
   position: -webkit-sticky;
   top: 80px;
   gap: 15px;
-  background-color: #f9f8ff;
+  border-radius: 16px;
+  background-color: #fafafa;
   margin: 0px 10px;
   padding: 20px;
   display: flex;
@@ -366,12 +343,17 @@
   color: #6f6f6f;
 }
 .check {
-  color: #01c705;
-  font-size: 22px;
-}
-.chapHead {
+  color: #5eb623;
   font-size: 16px;
-  margin: 20px 0px;
+  margin-top: 5px;
+}
+
+.chapHead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  margin: 20px 0px 0px 0px;
 }
 
 @media (max-width: 1281px) {
@@ -427,6 +409,7 @@
 @media (max-width: 961px) {
   .rightHeading {
     font-size: 18px;
+    margin: 0;
   }
   .syllabusLeft h2 {
     font-size: 27px;
@@ -490,31 +473,40 @@
 
 @media (max-width: 481px) {
   .Syllabus {
-    display: grid;
-    grid-template-columns: auto;
-    margin: 50px 10px;
+    display: flex;
+    flex-flow: column-reverse;
+    padding: 20px 10px 10px 10px;
+    margin: 0;
     gap: 20px;
+    background-color: #000;
   }
+
   .chapHead {
+    display: grid;
+    grid-template-columns: 8% 90%;
+    gap: 5px;
+    line-height: 24px;
+    align-items: flex-start;
     font-size: 14px;
-    font-weight: normal;
+    font-weight: 600;
     margin: 3px 0;
   }
   .Syllabusbutton {
-    flex-flow: column;
-    margin-bottom: 0;
+    margin-bottom: 10;
   }
   .projectSyllabus button {
     padding: 5px 10px;
     font-size: 12px;
   }
   .syllabusLeft {
-    margin: 0px 0px 30px 0px;
+    margin: 10px 0;
+
     position: inherit;
   }
   .syllabusLeft h2 {
     font-size: 32px;
     font-weight: bold;
+    margin-bottom: 0;
   }
   .line {
     margin-top: 15px;
@@ -538,6 +530,7 @@
     display: grid !important;
     grid-template-columns: 5% 94%;
     gap: 8px;
+    width: 100%;
     align-items: flex-start;
   }
   .PProgramMain {
@@ -559,9 +552,17 @@
     margin-bottom: 10px;
   }
   .FaqWrapper {
-    padding-left: 10px;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    background-color: #fff9f6;
+    border: 0;
+    border-radius: 10px;
   }
-
+  .quesO {
+    border-bottom: 1px solid #000;
+  }
   .syllabusRight {
     margin: 0;
     margin-top: -50px;
@@ -575,5 +576,26 @@
     left: 29px;
     height: 53px;
     margin-top: -29px;
+  }
+  .dot {
+    display: none;
+  }
+  .line {
+    display: none;
+  }
+  .ques {
+    width: 100%;
+    padding: 10px;
+  }
+  .ans {
+    margin: 0;
+    padding: 10px;
+    border: 0;
+    box-shadow: none;
+  }
+  .syllabusRight {
+    margin-top: 30px;
+    background: #f5f5f5;
+    border-radius: 12px;
   }
 }

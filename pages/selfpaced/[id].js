@@ -18,6 +18,10 @@ import WhatsappButton from "../../components/WhatsAppButton/WhatsappButton";
 import CTA from "../../components/CTA/CTA";
 import BottomPrice from "../../components/Skills/BottomPrice/BottomPrice";
 import SkillsContent from "../../components/Skills/CoursePage/SkillsContent/SkillsContent";
+import PricingSection from "../../components/Skills/CoursePage/PricingSection/PricingSection"
+import CareerSupport from "../../components/Skills/CoursePage/CareerSupport/CareerSupport"
+import ToolsCovered from "../../components/Skills/CoursePage/ToolsCovered/ToolsCovered";
+import PriceCompare from "../../components/Skills/CoursePage/PriceCompare/PriceCompare";
 
 const DataSciencePage = ({ DataScienceCourseData }) => {
   const [showNigeriaForm, setShowNigeriaForm] = useState(false);
@@ -117,6 +121,51 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         redirectFs={DataScienceCourseData.data.header.FullStack}
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}
       />
+      <PricingSection
+        offerPrice={offerPrice}
+        actualPrice={actualPrice}
+        redirectDs={DataScienceCourseData.data.header.dataScience}
+        redirectFs={DataScienceCourseData.data.header.FullStack}
+        redirectDa={DataScienceCourseData.data.header.dataAnalytics}
+      />
+          <CareerSupport />
+          <div id="modules">
+        <DataScienceSyllabus
+          NigeriaForm={showNigeriaForm}
+          title={DataScienceCourseData.data.header.title}
+          seoSyllabus={DataScienceCourseData.data.seoSyllabus}
+          heading="Syllabus"
+          hour={DataScienceCourseData.data.header.hour}
+          redirectFs={DataScienceCourseData.data.header.FullStack}
+          redirectDs={DataScienceCourseData.data.header.dataScience}
+          redirectDa={DataScienceCourseData.data.header.dataAnalytics}
+        />
+      </div>
+      <ToolsCovered />
+      <WhyUsAnimate
+          redirectDa={DataScienceCourseData.data.header.dataAnalytics}
+          redirectDs={DataScienceCourseData.data.header.dataScience}
+          redirectFs={DataScienceCourseData.data.header.FullStack}
+        />
+      
+      <div id="projects">
+        <ProjectSlider
+          noProject={DataScienceCourseData.data.header.noProject}
+          redirectBa={DataScienceCourseData.data.header.dataAnalytics}
+          heading="Hands-on Projects"
+          redirectDs={DataScienceCourseData.data.header.dataScience}
+          redirectFs={DataScienceCourseData.data.header.FullStack}
+        />
+      </div>
+      <PriceCompare
+        hrs={DataScienceCourseData.data.header.hour}
+        offerPrice={offerPrice}
+        otherHr={DataScienceCourseData.data.header.otherHr}
+        liveHr={DataScienceCourseData.data.header.liveHr}
+        redirectDs={DataScienceCourseData.data.header.dataScience}
+        redirectFs={DataScienceCourseData.data.header.FullStack}
+        redirectDa={DataScienceCourseData.data.header.dataAnalytics}
+      />
       <div id="certificate">
         <WhyUs
           redirectDs={DataScienceCourseData.data.header.dataScience}
@@ -142,38 +191,12 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
       )}
 
       <Reviews redirectFs={DataScienceCourseData.data.header.FullStack} />
-      <DetailTable
-        offerPrice={actualPrice}
-        hrs={DataScienceCourseData.data.header.hour}
-        otherHr={DataScienceCourseData.data.header.otherHr}
-        liveHr={DataScienceCourseData.data.header.liveHr}
-        redirectDs={DataScienceCourseData.data.header.dataScience}
-        redirectDa={DataScienceCourseData.data.header.dataAnalytics}
-        redirectFs={DataScienceCourseData.data.header.FullStack}
-      />
+     
 
-      <div id="modules">
-        <DataScienceSyllabus
-          NigeriaForm={showNigeriaForm}
-          title={DataScienceCourseData.data.header.title}
-          seoSyllabus={DataScienceCourseData.data.seoSyllabus}
-          heading="Course Modules"
-          hour={DataScienceCourseData.data.header.hour}
-          redirectFs={DataScienceCourseData.data.header.FullStack}
-          redirectDs={DataScienceCourseData.data.header.dataScience}
-        />
-      </div>
+   
       {/* <WhyUsAnimate /> */}
       {/* <CourseDetails hour={DataScienceCourseData.data.header.hour} /> */}
-      <div id="projects">
-        <ProjectSlider
-          noProject={DataScienceCourseData.data.header.noProject}
-          redirectBa={DataScienceCourseData.data.header.dataAnalytics}
-          heading="Hands-on Projects"
-          redirectDs={DataScienceCourseData.data.header.dataScience}
-          redirectFs={DataScienceCourseData.data.header.FullStack}
-        />
-      </div>
+  
       <div id="faq">
         <FAQ
           heading="Frequently Asked Questions"

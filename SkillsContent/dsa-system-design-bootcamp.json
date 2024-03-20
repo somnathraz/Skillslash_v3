@@ -66,7 +66,7 @@
         "content": [
           {
             "chap": {
-              "title": "Chapter 1: System Design fundamentals",
+              "title": "Lesson 1: System Design fundamentals",
               "desc": [
                 "OOD : Object-oriented analysis and design , Design patterns",
                 "CAP Theorem in distributed Computer Systems",
@@ -80,34 +80,12 @@
           },
           {
             "chap": {
-              "title": "Chapter 2: High Level Design With Projects",
+              "title": "Lesson 2: High Level Design With Projects",
               "desc": [
                 "Introduction to common MicroService design patterns",
                 "Microservices & System components in real world",
                 "Event Driven, Domain Driven, Rest API driven Architectures",
                 "3 Real time projects"
-              ]
-            }
-          },
-          {
-            "chap": {
-              "title": "Chapter 3: Low Level Design With Projects",
-              "desc": [
-                "OOD and Design Patterns",
-                "API Design",
-                "DB Schema Design for NoSQL and SQL",
-                "Common LLD and API design questions"
-              ]
-            }
-          },
-          {
-            "chap": {
-              "title": "Chapter 4: Mini Projects :",
-              "desc": [
-                "Designing Facebook news feed",
-                "Designing web crawler",
-                "Designing Uber Backend",
-                "Designing youtube"
               ]
             }
           }
