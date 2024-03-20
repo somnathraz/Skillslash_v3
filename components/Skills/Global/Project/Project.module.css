@@ -2,7 +2,6 @@
   display: flex;
   flex-flow: column;
   width: 100%;
-
   margin: 30px 0;
 }
 .projectHeader {
@@ -96,6 +95,12 @@
   background-color: #ffece4;
   align-items: flex-start;
   justify-content: center;
+}
+.ReviewBox:nth-child(even) .header {
+  background-color: #e9e5ff;
+}
+.ReviewBox:nth-child(even) .header h3 {
+  color: #4f419a;
 }
 .body {
   padding: 0px 30px;
@@ -256,7 +261,6 @@
   .categoryWrap {
     display: flex;
     flex-flow: row;
-    flex-wrap: wrap;
   }
 }
 

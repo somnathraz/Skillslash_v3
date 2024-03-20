@@ -1,0 +1,39 @@
+.headWrap {
+  margin: 20px;
+  padding: 20px 20px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background-color: #f5f3ff;
+}
+.headWrap h2 {
+  color: #4f419a;
+  font-weight: 700;
+}
+.contentWrap {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  gap: 20px;
+}
+.iconsWrap {
+  font-size: 35px;
+  color: #4f419a;
+}
+.contentDiv {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.contentDiv h3 {
+  font-size: 14px;
+  text-align: center;
+  color: #646464;
+}
+@media (min-width: 642px) {
+  .headWrap {
+    display: none;
+  }
+}
