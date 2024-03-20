@@ -23,7 +23,7 @@ import CareerSupport from "../../components/Skills/CoursePage/CareerSupport/Care
 import ToolsCovered from "../../components/Skills/CoursePage/ToolsCovered/ToolsCovered";
 import PriceCompare from "../../components/Skills/CoursePage/PriceCompare/PriceCompare";
 
-const DataSciencePage = ({ DataScienceCourseData }) => {
+const DataSciencePage = ({ DataScienceCourseData, }) => {
   const [showNigeriaForm, setShowNigeriaForm] = useState(false);
   const [actualPrice, setActualPrice] = useState(
     DataScienceCourseData.data.header.actualPrice
@@ -127,6 +127,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         redirectDs={DataScienceCourseData.data.header.dataScience}
         redirectFs={DataScienceCourseData.data.header.FullStack}
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}
+        checkoutLink={DataScienceCourseData.data.header.indCheckout}
       />
           <CareerSupport />
           <div id="modules">

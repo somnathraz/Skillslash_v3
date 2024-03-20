@@ -226,24 +226,31 @@ const Header = ({
 
           <div className="flex flex-col gap-5 max-sm:px-4">
             {newDataScience ? (
-              <Link href={checkoutLink}>
-                <button
-                  className="w-full px-4 bg-[#f18350] text-white rounded py-3 font-bold text-xl flex justify-center items-center"
-                  id={idBtnO}
-                >
-                  Buy Now
-                </button>
-              </Link>
+              <>
+                <Link href={checkoutLink}>
+                  <button
+                    className="w-full px-4 bg-[#f18350] text-white rounded py-3 font-bold text-xl flex justify-center items-center"
+                    id={idBtnO}
+                  >
+                    Buy Now
+                  </button>
+                </Link>
+
+              </>
             ) : (
+              <>
               <Link href={checkoutLink}>
               <button
-                className="w-full px-4 bg-[#f18350] text-white rounded py-3 font-bold text-xl flex justify-center items-center"
-                id={idBtnO}
-                
-              >
-             Buy Now
-              </button>
+    className="w-full px-4 bg-[#f18350] text-white rounded py-3 font-bold text-xl flex justify-center items-center cursor-pointer transition duration-300 ease-in-out transform hover:bg-[#d76940] hover-animation"
+    id={idBtnO}
+>
+    Buy Now
+</button>
+
+               
               </Link>
+               <p className="w-full d-flex justify-center items-center text-center ">15-Days Money-Back Guarantee</p>
+               </>
             )}
           </div>
           <div className="flex flex-col gap-2 py-4">
