@@ -49,8 +49,9 @@ const SkillsContent = ({
       </div>
     </Popup>
     <div className="flex flex-col gap-[2px] py-4 px-5 bg-[#fff9f7] mx-4 max-sm:bg-white max-sm:border-[0px] rounded-2xl border-[1px] border-solid border-[#f18350]">
+   
       <h3 className="text-xl max-sm:text-[28px] font-bold text-left py-1 w-max max-sm:mb-4">
-        Course Content
+        Course Content    
       </h3>
       {/* <hr className="border-b-4 border-b-[#f18350] rounded-2xl w-[130px]" /> */}
       <div className="flex flex-col gap-2 px-7 max-[741px]:px-3 max-sm:px-0">

@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import Popup from "../../Global/Popup/Popup";
 import Form from "../../Global/Form/Form";
+import Link from "next/link";
 
 const PricingSection = ({
   actualPrice,
   redirectDs,
   redirectDa,
   redirectFs,
+  checkoutLink
 }) => {
   const [popups, setPopups] = useState(false);
   const popupShow = (demoClass, changeText) => {
@@ -41,13 +43,15 @@ const PricingSection = ({
 
         <div className="flex flex-col mt-[20px] gap-4 w-full">
           <div>
+          <Link href={`${checkoutLink}`}>
             <button
               className="flex flex-col justify-center items-center bg-[#f18350] py-2 w-full"
-              onClick={() => popupShow()}
+              // onClick={() => popupShow()}
               id="clck-apply-now-fees"
             >
-              Apply Now
+             Buy Now
             </button>
+            </Link>
             {/* <hr className="border-b-2 border-b-[#2e2e2e] rounded-2xl w-full" /> */}
           </div>
         </div>
