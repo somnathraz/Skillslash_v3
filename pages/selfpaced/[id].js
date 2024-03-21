@@ -106,6 +106,7 @@ const DataSciencePage = ({ DataScienceCourseData, }) => {
         link={DataScienceCourseData.data.header.link}
         redirectDs={DataScienceCourseData.data.header.dataScience}
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}
+        nomicrosoft={DataScienceCourseData.data.header.nomicrosoft}
       />
       <Learn
         firstPoint={DataScienceCourseData.data.header.firstPoint}
@@ -120,6 +121,8 @@ const DataSciencePage = ({ DataScienceCourseData, }) => {
         redirectDs={DataScienceCourseData.data.header.dataScience}
         redirectFs={DataScienceCourseData.data.header.FullStack}
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}
+        nomicrosoft={DataScienceCourseData.data.header.nomicrosoft}
+
       />
       <PricingSection
         offerPrice={offerPrice}
@@ -147,6 +150,7 @@ const DataSciencePage = ({ DataScienceCourseData, }) => {
           redirectDa={DataScienceCourseData.data.header.dataAnalytics}
           redirectDs={DataScienceCourseData.data.header.dataScience}
           redirectFs={DataScienceCourseData.data.header.FullStack}
+          nomicrosoft={DataScienceCourseData.data.header.nomicrosoft}
         />
       
       <div id="projects">
@@ -166,11 +170,13 @@ const DataSciencePage = ({ DataScienceCourseData, }) => {
         redirectDs={DataScienceCourseData.data.header.dataScience}
         redirectFs={DataScienceCourseData.data.header.FullStack}
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}
+        nomicrosoft={DataScienceCourseData.data.header.dataAnalytics}
       />
       <div id="certificate">
         <WhyUs
           redirectDs={DataScienceCourseData.data.header.dataScience}
           redirectDa={DataScienceCourseData.data.header.dataAnalytics}
+          nomicrosoft={DataScienceCourseData.data.header.nomicrosoft}
         />
       </div>
       {/* <div id="certificate">
@@ -193,7 +199,15 @@ const DataSciencePage = ({ DataScienceCourseData, }) => {
 
       <Reviews redirectFs={DataScienceCourseData.data.header.FullStack} />
      
-
+      <DetailTable
+        offerPrice={actualPrice}
+        hrs={DataScienceCourseData.data.header.hour}
+        otherHr={DataScienceCourseData.data.header.otherHr}
+        liveHr={DataScienceCourseData.data.header.liveHr}
+        redirectDs={DataScienceCourseData.data.header.dataScience}
+        redirectFs={DataScienceCourseData.data.header.FullStack}
+        redirectDa={DataScienceCourseData.data.header.dataAnalytics}
+      />
    
       {/* <WhyUsAnimate /> */}
       {/* <CourseDetails hour={DataScienceCourseData.data.header.hour} /> */}

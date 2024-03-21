@@ -6,7 +6,7 @@ import FourthFeature from "./FourthFeature";
 import Image from "next/image";
 import { motion, useScroll } from "framer-motion";
 
-const WhyUsAnimate = ({ redirectDa, redirectDs, home, redirectFs }) => {
+const WhyUsAnimate = ({ redirectDa, redirectDs, home, redirectFs, nomicrosoft }) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -18,6 +18,14 @@ const WhyUsAnimate = ({ redirectDa, redirectDs, home, redirectFs }) => {
     redirectDa
       ? "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/microsoft-data-analytics.webp"
       : "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/microsft-data-science.webp",
+  ];
+  const imageSrcselfpaced= [
+    "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/certificate/VISHANT-VERMAWed-Jan-31-2024-12-36-01-GMT-0000--Coordinated-Universal-Time--325722i0gu.pdf.png",
+    // Add other image URLs as needed
+    "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/certificate/VISHANT-VERMAWed-Jan-31-2024-12-36-01-GMT-0000--Coordinated-Universal-Time--325722i0gu.pdf.png",
+    redirectDa
+      ? "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/certificate/VISHANT-VERMAWed-Jan-31-2024-12-36-01-GMT-0000--Coordinated-Universal-Time--325722i0gu.pdf.png"
+      : "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/certificate/VISHANT-VERMAWed-Jan-31-2024-12-36-01-GMT-0000--Coordinated-Universal-Time--325722i0gu.pdf.png",
   ];
   return (
     <>
@@ -56,7 +64,25 @@ const WhyUsAnimate = ({ redirectDa, redirectDs, home, redirectFs }) => {
       {(redirectDs || home) && (
         <div className="hidden max-sm:flex flex-col relative px-28 max-sm:px-5  max-[1281px]:px-24  items-start gap-10 pb-[10px]  pt-10 overflow-scroll">
           <div className="flex flex-col gap-4 items-start">
-            <h3 className="text-3xl  font-bold">Triple Certification</h3>
+          {nomicrosoft ?(<>
+            <h3 className="text-3xl  font-bold">Course completion Certification</h3>
+            <div className="flex grid-cols-[70%,70%,70%] max-[321px]:grid-cols-[60%,60%,60%] gap-2 items-center">
+              <div className="bg-black shadow rounded-lg px-7 py-4 flex flex-col gap-3 min-[481px]:w-[75%]">
+                <div className="relative w-full h-[180px]  border-[1px] border-white">
+                  <Image src={imageSrcselfpaced[2]} fill alt="certificate image" />
+                </div>
+                <h3 className="font-bold text-[#f18350]">
+                  skillslash Certificate
+                </h3>
+                <p className="text-white">
+                  Enhance your resume and LinkedIn profile with the
+                  certificate from globally recognized institute.
+                </p>
+              </div>
+
+         
+            </div></>):(<> 
+              <h3 className="text-3xl  font-bold">Triple Certification</h3>
             <div className="grid grid-cols-[70%,70%,70%] max-[321px]:grid-cols-[60%,60%,60%] gap-2 items-center">
               <div className="bg-black shadow rounded-lg px-7 py-4 flex flex-col gap-3 min-[481px]:w-[75%]">
                 <div className="relative w-full h-[180px]  border-[1px] border-white">
@@ -98,7 +124,8 @@ const WhyUsAnimate = ({ redirectDa, redirectDs, home, redirectFs }) => {
                   experience.
                 </p>
               </div>
-            </div>
+            </div></>)}
+           
           </div>
         </div>
       )}

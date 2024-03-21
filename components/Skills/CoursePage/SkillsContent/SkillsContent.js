@@ -20,6 +20,7 @@ const SkillsContent = ({
   redirectFs,
   redirectDa,
   newDataScience,
+  nomicrosoft ,
 }) => {
   const [idBtnO, setIdBtnO] = useState("program-slo");
   const [popups, setPopups] = useState(false);
@@ -60,31 +61,36 @@ const SkillsContent = ({
             <MdOutlineVideocam className="text-2xl text-[#4f419a]" />
             Learning Mode
           </span>
-          <span>
-            <b>Blended</b>
-          </span>
+          
+          {nomicrosoft ? (<> <span>
+                  <b>Self-paced</b>
+                </span></>):( <span>
+                  <b>Blended</b>
+                </span>)}
+               
         </p>
-        <hr />
-        <p className="flex gap-2 items-center justify-between py-2">
-          <span className="flex gap-2 items-center">
-            <MdLiveTv className="text-2xl text-[#4f419a]" />
-            1:1 Doubt Session
-          </span>
-          <span>
-            <b>Daily</b>
-          </span>
-        </p>
-        <hr />
-        <p className="flex gap-2 items-center justify-between py-2">
-          <span className="flex gap-2 items-center">
-            <MdLiveTv className="text-2xl text-[#4f419a]" />
-            Live Project Sessions
-          </span>
-          <span>
-            <b>Weekly</b>
-          </span>
-        </p>
-        <hr />
+        {nomicrosoft ?(<></>):(<>
+              <hr />
+              <p className="flex gap-2 items-center justify-between py-2">
+                <span className="flex gap-2 items-center">
+                  <MdLiveTv className="text-xl" />
+                  1:1 Doubt Session
+                </span>
+                <span>
+                  <b>Daily</b>
+                </span>
+              </p></>)
+} {nomicrosoft ?(<></>):(<>
+              <hr />
+               <p className="flex gap-2 items-center justify-between py-2">
+                <span className="flex gap-2 items-center">
+                  <MdLiveTv className="text-xl" />
+                  Live Project Sessions
+                </span>
+                <span>
+                  <b>Weekly</b>
+                </span>
+              </p></>)}
         <p className="flex gap-2 items-center justify-between py-2">
           <span className="flex gap-2 items-center">
             <MdOutlineWorkHistory className="text-2xl text-[#4f419a]" />
@@ -106,13 +112,17 @@ const SkillsContent = ({
         </p>
         <hr />
         <p className="flex gap-2 items-center justify-between py-2">
+        
           <span className="flex gap-2 items-center">
             <PiCertificateBold className="text-2xl text-[#4f419a]" />
             Certifications
           </span>
-          <span>
+          {nomicrosoft ? (<><span>
+            <b>1</b>
+          </span></>):(<><span>
             <b>{certification}</b>
-          </span>
+          </span></>)}
+          
         </p>
       </div>
     </div>
