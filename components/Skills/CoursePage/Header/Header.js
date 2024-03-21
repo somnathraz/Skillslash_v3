@@ -33,6 +33,7 @@ const Header = ({
   redirectFs,
   redirectDa,
   newDataScience,
+  nomicrosoft,
 }) => {
   const [show, setShow] = useState(false);
   const showVideo = (data) => {
@@ -88,7 +89,7 @@ const Header = ({
             Bootcamp
           </p>
         </div>
-        {redirectDs && (
+        {nomicrosoft ? (<></>):(<> {redirectDs && (
           <div className=" mt-4  w-max rounded flex items-center gap-2">
             <p className="text-white font-medium">Powered by</p>
             <div className="bg-white px-3 py-[3px] rounded-[4px]">
@@ -101,7 +102,8 @@ const Header = ({
               />
             </div>
           </div>
-        )}
+        )}</>)}
+       
         {redirectFs && (
           <div className="relative w-[348px] max-sm:w-[310px] h-[32px] max-sm:h-[29px] mt-3 max-sm:mt-12 ">
             {/* <Image src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/powered-by-microsoft-(White).png" alt="PoweredByMicrosoft" width={200} height={22}/> */}
@@ -262,10 +264,14 @@ const Header = ({
                   <MdOutlineVideocam className="text-xl" />
                   Learning Mode
                 </span>
-                <span>
+                {nomicrosoft ? (<> <span>
+                  <b>Self-paced</b>
+                </span></>):( <span>
                   <b>Blended</b>
-                </span>
+                </span>)}
+               
               </p>
+              {nomicrosoft ?(<></>):(<>
               <hr />
               <p className="flex gap-2 items-center justify-between py-2">
                 <span className="flex gap-2 items-center">
@@ -275,9 +281,10 @@ const Header = ({
                 <span>
                   <b>Daily</b>
                 </span>
-              </p>
+              </p></>)
+} {nomicrosoft ?(<></>):(<>
               <hr />
-              <p className="flex gap-2 items-center justify-between py-2">
+               <p className="flex gap-2 items-center justify-between py-2">
                 <span className="flex gap-2 items-center">
                   <MdLiveTv className="text-xl" />
                   Live Project Sessions
@@ -285,7 +292,8 @@ const Header = ({
                 <span>
                   <b>Weekly</b>
                 </span>
-              </p>
+              </p></>)}
+             
               <hr />
               <p className="flex gap-2 items-center justify-between py-2">
                 <span className="flex gap-2 items-center">
@@ -312,9 +320,12 @@ const Header = ({
                   <PiCertificateBold className="text-xl" />
                   Certifications
                 </span>
-                <span>
+                {nomicrosoft ? (<> <span>
+                  <b>1</b>
+                </span></>):(<>  <span>
                   <b>{certification}</b>
-                </span>
+                </span></>)}
+              
               </p>
             </div>
           </div>

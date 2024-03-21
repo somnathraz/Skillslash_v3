@@ -1,0 +1,660 @@
+{
+    "header": {
+      "title": "Data Science & AI Self-paced",
+      "spanTitleText": "Live Project based Self-paced Learning",
+      "desc": "Microsoft guided triple certification blended learning course with video lessons and live doubt sessions and live project sessions.",
+      "imgSrc": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Header/data-science-header+webp.webp",
+      "dataScience": true,
+      "FullStack": false,
+      "hour": "228+",
+      "noProject": "30+ ",
+      "otherHr": "15",
+      "liveHr": "200+",
+      "newDs": false,
+      "link": "https://courses.skillslash.com/learn/Data-Science-AI-Bootcamp",
+      "checkoutLink": "https://courses.skillslash.com/learn/fast-checkout/178295?priceId=124747",
+      "indCheckout": "https://courses.skillslash.com/learn/fast-checkout/178295?priceId=125930",
+      "ngCheckout": "https://courses.skillslash.com/learn/fast-checkout/178295?priceId=120103",
+      "offerPrice": "₹ 19,999",
+      "newDsa": false,
+      "actualPrice": "₹ 19,999",
+      "USDActualPrice": " $ 300",
+      "USDOfferPrice": "$ 150",
+      "NigeriaActualPrice": "₦ 400,000",
+      "NigeriaOfferPrice": "₦ 200,000",
+      "discount": "42%",
+      "certification": "3",
+      "firstPoint": "Foundations: Programming, Stats, Python Basics, Data Types.",
+      "secondPoint": "Data Analysis: Numpy, Pandas, Matplotlib, ML.",
+      "thirdPoint": "Advanced: Deep Learning, NLP, Reinforcement Learning, Big Data.",
+      "fourthPoint": "Tools: Excel, SQL, Cloud Deployment, BI: Tableau, Power BI.",
+      "nomicrosoft":true
+    },
+    "price":{},
+    "seoSyllabus": [
+      {
+        "Module0": {
+          "title": "Module 0",
+          "project": false,
+          "hrs": 9,
+          "title1": "Preparatory Course",
+          "descS": "",
+          "content": [
+            {
+              "chap": {
+                "title": "Lesson 1:Introduction to Programming (3 hrs)",
+                "desc": [
+                  "Source code Vs bytecode Vs machine code, Compiler Vs Interpreter, C/C++, Java Vs Python."
+                ]
+              }
+            },
+            {
+              "chap": {
+                "title": "Lesson 2: Code editors basics (1 hr)",
+                "desc": [
+                  "Different type of code editors in python, Introduction to Anaconda and IDEs."
+                ]
+              }
+            },
+            {
+              "chap": {
+                "title": "Lesson 3: Python basics (1 hr)",
+                "desc": ["Variable Vs Identifiers, Strings Operators Vs Operand, Procedure oriented Vs Modular programming."]
+              }
+            },
+            {
+              "chap": {
+                "title": "Lesson 4: Statistics basics & probability (1 hr)",
+                "desc": ["Measures of Central Tendency & dispersion, Inferential statistics and Sampling theory."]
+              }
+            }
+          ],
+          "id": 0,
+          "open": false
+        }
+      },
+      {
+        "Module0": {
+          "title": "Module 1 ",
+          "project": false,
+          "hrs": 67,
+          "title1": "Python for Data Science",
+          "descS": "Through a hands-on approach, you will learn key programming concepts of Python, MatplotLib, Seaborn and languages commonly used in the data science field. Whether you're aspiring to become a data scientist or simply seeking to harness the power of programming for data analysis, this module equips you with the essential skills to manipulate, analyze, and visualize data effectively.",
+          "content": [
+            {
+              "chap": {
+                "title": "Lesson 1:PROGRAMMING INTRODUCTION ( 3 hrs )",
+                "desc": [
+                  "Different types of Programming Language.",
+                  "What is Compiler?",
+                  "What is an Interpreter?"
+                ]
+              }
+            },
+            {
+              "chap": {
+                "title": "Lesson 2: PYTHON INTRODUCTION (1 hrs)",
+                "desc": [
+                  "How a Python Program runs on our system?",
+                  "Features of Python Memory Management in Python,",
+                  "Different Implementations of Python."
+                ]
+              }
+            },
+            {
+              "chap": {
+                "title": "Lesson 3: CONDITIONAL AND LOOPS (1 hrs)",
+                "desc": ["Conditional Statement", "Loop Statement."]
+              }
+            }
+          ],
+          "id": 1,
+          "open": false
+        }
+      },
+      {
+        "Module0": {
+          "title": "Module 2 ",
+          "project": false,
+          "title1": "ML & Applied Statistics",
+          "hrs": 52,
+          "descS": "By the end of the module, you will have mastered statistical tools such as probabilistic theory, hypothesis testing and regression analysis, all in the context of practical data science applications and the knowledge they need to be at the forefront of data science and lead data-driven innovations.",
+          "content": [
+            {
+              "chap": {
+                "title": "Lesson 1:- Probability theory and Statistical Inferences ( 4 hrs )",
+                "desc": [
+                  "Introduction to Probability Principles",
+                  "Random Variables and Probability principles",
+                  "Discrete Probability Distributions - Binomial, Poisson etc",
+                  "Continuous Probability Distributions - Gaussian, Normal, etc",
+                  "Joint and Conditional Probabilities",
+                  "Bayes theorem and its applications",
+                  "Central Limit Theorem and Applications"
+                ]
+              }
+            },
+            {
+              "chap": {
+                "title": "Lesson 2: Statistics Foundations (1 hrs)",
+                "desc": [
+                  "Elements of Descriptive Statistics",
+                  "Measures of Central tendency and Dispersion",
+                  "Inferential Statistics fundamentals",
+                  "Sampling theory and scales of measurement",
+                  "Covariance and correlation"
+                ]
+              }
+            }
+          ],
+          "id": 2,
+          "open": false
+        }
+      },
+      {
+        "Module0": {
+          "title": "Module 3",
+          "project": true,
+          "hrs": 32,
+          "projectImgSrc": [
+            {
+              "id": 1,
+              "src": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/Google_logo.webp",
+              "width": "95",
+              "height": "50"
+            },
+            {
+              "id": 2,
+              "src": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/Uber.webp",
+              "width": "70",
+              "height": "36"
+            },
+            {
+              "id": 3,
+              "src": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/Youtube.webp",
+              "width": "107",
+              "height": "50"
+            }
+          ],
+          "projectInfo": [
+            {
+              "id": 1,
+              "src": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/Google_logo.webp",
+              "title": "Mobility data ",
+              "width": "95",
+              "height": "50"
+            },
+            {
+              "id": 2,
+              "src": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/Uber.webp",
+              "title": "Fare prediction",
+              "width": "70",
+              "height": "50"
+            },
+            {
+              "id": 3,
+              "src": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/Youtube.webp",
+              "title": "Video analytics",
+              "width": "149",
+              "height": "62"
+            }
+          ],
+          "title1": "Deep Learning ",
+          "descS": "Gain the skills and knowledge you need to make the most of deep learning for everything from image recognition to natural language processing and predictive modeling. Get to know the ins and outs of AI, deep learning, CNNs, RNNs, and other cutting-edge techniques.",
+          "content": [
+            {
+              "chap": {
+                "title": "Lesson 1:- Neural Networks",
+                "desc": [
+                  "Introduction to Neural Networks",
+                  "Layered Neural networks",
+                  "Activation Functions and their application",
+                  "Backpropagation and Gradient Descent"
+                ]
+              }
+            },
+            {
+              "chap": {
+                "title": "Lesson 2: Tensor Flow",
+                "desc": [
+                  "Introduction to TensorFlow",
+                  "Working with TensorFlow",
+                  "Linear regression with TensorFlow",
+                  "Logistic regression with TensorFlow"
+                ]
+              }
+            },
+            {
+              "chap": {
+                "title": "Lesson 4: Convolutional Neural networks",
+                "desc": [
+                  "Architecture and design of a Convolutional network,",
+                  "Deep convolutional models & image augmentation"
+                ]
+              }
+            }
+          ],
+          "id": 4,
+          "open": false
+        }
+      },
+      {
+        "Module0": {
+          "title": "Module 4",
+          "title1": "NLP",
+          "hrs": 11,
+          "project": true,
+          "projectImgSrc": [
+            {
+              "id": 1,
+              "src": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/Razorpay.webp",
+              "width": "107",
+              "height": "50"
+            },
+            {
+              "id": 3,
+              "src": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/amazon.png",
+              "width": "93",
+              "height": "28"
+            },
+            {
+              "id": 2,
+              "src": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/mercedez-inline-logo.png",
+              "width": "110",
+              "height": "28"
+            }
+          ],
+          "projectInfo": [
+            {
+              "id": 1,
+              "src": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/Razorpay.webp",
+              "title": "Understand mobile banking",
+              "width": "107",
+              "height": "50"
+            },
+            {
+              "id": 2,
+              "src": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/mercedez-inline-logo.png",
+              "title": "Reduce time",
+              "width": "110",
+              "height": "28"
+            },
+            {
+              "id": 3,
+              "src": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/amazon.png",
+              "title": "Food Reviews",
+              "width": "93",
+              "height": "28"
+            }
+          ],
+          "descS": "This module will help you figure out the ins and outs of text data. You'll learn the basics of analyzing, manipulating, and extracting meaning from text, so you can create smart apps, make decisions based on data, and improve your data science abilities.",
+          "content": [
+            {
+              "chap": {
+                "title": "Lesson 1:- Language modelling",
+                "desc": [
+                  "Intro to the NLTK library",
+                  "N-gram Language models: Perplexity and Smoothing",
+                  "Introduction to Hidden Markov models, Viterbi algorithms",
+                  "MEMMs and CRFs for named entity recognition",
+                  "Neural Language models",
+                  "Application of LSTMs to predict the next word."
+                ]
+              }
+            },
+            {
+              "chap": {
+                "title": "Lesson 2: Vector space models ",
+                "desc": [
+                  "Explicit and Implicit matrix factorization",
+                  "Word2vec and Doc2vec models."
+                ]
+              }
+            },
+            {
+              "chap": {
+                "title": "Lesson 3: Sequence to Sequence tasks",
+                "desc": [
+                  "Introduction to Machine translation",
+                  "Natural language processing",
+                  "NLP with machine translation for text analysis",
+                  "Word Alignment models",
+                  "Encoder-Decoder Architecture",
+                  "How to implement a conversational Chatbot"
+                ]
+              }
+            }
+          ],
+          "id": 5,
+          "open": false
+        }
+      },
+      {
+        "Module0": {
+          "title": "Module 5",
+          "project": false,
+          "hrs": 9,
+          "title1": "Computer Vision",
+          "descS": "Whether you're interested in object detection, image classification, facial recognition, or the countless other applications of Computer Vision, this module will equip you with the knowledge and skills to tackle real-world data challenges and unlock the potential of visual data in the field of data science.",
+          "content": [
+            {
+              "chap": {
+                "title": "",
+                "desc": [
+                  "Mathematics for Computer",
+                  "Vision Intro to Transfer Learning",
+                  "R-CNN and RetinaNet models for Object detection using Tensorflow",
+                  "FCN architecture for Image segmentation",
+                  "IoU and Dice score for model evaluation",
+                  "Face detection with OpenCV"
+                ]
+              }
+            }
+          ],
+          "id": 6,
+          "open": false
+        }
+      },
+      {
+        "Module0": {
+          "title": "Module 6  ",
+          "title1": "Power BI",
+          "hrs": 9,
+          "project": false,
+          "descS": "Unlock the full potential of data science with our comprehensive module on essential tools: Excel, SQL, Tableau, and Power BI and more. Dive into the world of data manipulation, analysis, visualization, and reporting with hands-on training in these industry-standard applications. ",
+          "content": [
+            {
+              "chap": {
+                "title": "Lesson 1: Introducation To Power BI",
+                "desc": [
+                  "Why Power BI?",
+                  "Account Types.",
+                  "Installing Power BI.",
+                  "Understanding the Power BI Desktop Workflow.",
+                  "Exploring the Interface of the Data Model.",
+                  "Understanding the Query Editor Interface."
+                ]
+              }
+            },
+            {
+              "chap": {
+                "title": "Lesson 2: Query Editor",
+                "desc": [
+                  "Connecting Power BI Desktop to Source Files.",
+                  "Keeping & Removing Rows.",
+                  "Removing Empty Rows.",
+                  "Create calculate columns.",
+                  "Make first row as headers.",
+                  "Change Data type.",
+                  "Rearrange the columns.",
+                  "Remove duplicates.",
+                  "Unpivot columns and split columns.",
+                  "Working with filters.",
+                  "Appending queries.",
+                  "Working with columns.",
+                  "Replacing values.",
+                  "Splitting columns.",
+                  "Formatting data & handling formatting errors.",
+                  "Pivoting & unpivoting data.",
+                  "Query duplicates vs references"
+                ]
+              }
+            }
+          ],
+          "id": 9,
+          "open": false
+        }
+      },
+      {
+        "Module0": {
+          "title": "Module 7 ",
+          "title1": "Tableau",
+          "project": false,
+          "hrs": 17,
+          "descS": "Unlock the full potential of data science with our comprehensive module on essential tools: Excel, SQL, Tableau, and Power BI and more. Dive into the world of data manipulation, analysis, visualization, and reporting with hands-on training in these industry-standard applications. ",
+          "content": [
+            {
+              "chap": {
+                "title": "Lesson 1: Introduction To Tableau",
+                "desc": [
+                  "What is TABLEAU?",
+                  "Why to use TABLEAU?",
+                  "Installation of TABLEAU.",
+                  "Connecting to data source.",
+                  "Navigating Tableau.",
+                  "Creating Calculated Fields.",
+                  "Adding Colours",
+                  "Adding Labels and Formatting.",
+                  "Exporting Your Worksheet.",
+                  "Creating dashboard pages.",
+                  "Different charts on TABLEAU (Bar graphs, Line graphs, Scatter graphs, Crosstabs, Histogram, Heatmap, Tree maps, Bullet graphs, etc.)",
+                  "Dashboard Tricks.",
+                  "Hands on exercises."
+                ]
+              }
+            },
+            {
+              "chap": {
+                "title": "Lesson 2: Data Types in Tableau",
+                "desc": [
+                  "Pre-attentive processing.",
+                  "Length and position.",
+                  "Reference Lines.",
+                  "Parameters.",
+                  "Tooltips.",
+                  "Data over time.",
+                  "Implementation.",
+                  "Advance table calculations.",
+                  "Creating multiple joins in Tableau.",
+                  "Relationships vs Joins.",
+                  "Calculated Fields vs Table calculations.",
+                  "Creating advanced table calculations.",
+                  "Saving a Quick table calculation.",
+                  "Writing your own Table calculations.",
+                  "Adding a second layer moving average.",
+                  "Trendlines for power-insights."
+                ]
+              }
+            },
+            {
+              "chap": {
+                "title": "Lesson 3: Mapping and Analytics",
+                "desc": [
+                  "Getting started with visual analytics.",
+                  "Geospatial data.",
+                  "Mapping workspace.",
+                  "Map layers.",
+                  "Custom territories.",
+                  "Common mapping issues.",
+                  "Creating a map, working with hierarchies.",
+                  "Coordinate points.",
+                  "Plotting latitude and longitude.",
+                  "Custom geocoding.",
+                  "Polygon Maps.",
+                  "WMS and Background.",
+                  "Image Creating a Scatter Plot, Applying Filters to Multiple Worksheets."
+                ]
+              }
+            }
+          ],
+          "id": 8,
+          "open": false
+        }
+      },
+      {
+        "Module0": {
+          "title": "Module 8 ",
+          "title1": "SQL",
+          "project": false,
+          "hrs": 27,
+          "descS": "Unlock the full potential of data science with our comprehensive module on essential tools: Excel, SQL, Tableau, and Power BI and more. Dive into the world of data manipulation, analysis, visualization, and reporting with hands-on training in these industry-standard applications. ",
+          "content": [
+            {
+              "chap": {
+                "title": "Lesson 1: Introduction to SQL",
+                "desc": [
+                  "What is a Database?",
+                  "Why SQL?",
+                  "All about SQL Difference between SQL & MongoDB.",
+                  "Different Structured Query languages Why MySQL?",
+                  "Installation of MySQL.",
+                  "DDL.",
+                  "SQL Keywords.",
+                  "DCL.",
+                  "TCL.",
+                  "Database Vs Excel Sheets.",
+                  "Relational and database schema.",
+                  "Foreign and Primary Keys.",
+                  "Database manipulation, management, and administration."
+                ]
+              }
+            },
+            {
+              "chap": {
+                "title": "Lesson 2: SQL Databases",
+                "desc": [
+                  "Introduction to database",
+                  "Creating Data base, Dropping Database",
+                  "Using Database",
+                  "Introduction to Tables",
+                  "Data types in SQL",
+                  "Use case of different data",
+                  "Working with tables",
+                  "Coding best practices in SQL"
+                ]
+              }
+            },
+            {
+              "chap": {
+                "title": "Lesson 3: SQL Fundamantel Statement",
+                "desc": [
+                  "SELECT Statement.",
+                  "COUNT.",
+                  "SELECT WHERE.",
+                  "ORDER BY.",
+                  "IN, NOT IN.",
+                  "NULL and NOT_NULL.",
+                  "Comparison Operators (=, >, >=, <=).",
+                  "MySQL Warnings (Understand and Debug)."
+                ]
+              }
+            }
+          ],
+          "id": 7,
+          "open": false
+        }
+      },
+      {
+        "Module0": {
+          "title": "Module 9",
+          "title1": "Deployment",
+          "project": false,
+          "hrs": 8,
+          "descS": "",
+          "content": [
+            {
+              "chap": {
+                "title": "Lesson 1: Getting Started with AWS and Azure Machine Learning Services",
+                "desc": [
+                  "Intro to AWS SageMaker and Azure Machine Learning",
+                  "Key features and advantages",
+                  "Machine learning algorithms and Use Cases"
+                ]
+              }
+            },
+            {
+              "chap": {
+                "title": "Lesson 2: Configuring and Setting up the Environments",
+                "desc": [
+                  "Creating accounts with AWS and Azure",
+                  "Setting the tools and SDKs (AWS CLI, Azure CLI, Azure PowerShell)",
+                  "Training and deploying models (EC2 instances, GPU instances, Azure ML Compute)"
+                ]
+              }
+            }
+          ],
+          "id": 10,
+          "open": false
+        }
+      }
+    ],
+    "FaqDATA": [
+      {
+        "id": 1,
+        "ques": "Is this an Advanced level or beginner level course?",
+  
+        "ans": "This a basic to advanced level course that is designed in collaboration with Microsoft to make you interview-ready for Data Science jobs. Each module is taught in detail by tenured Data science professionals to give you in-depth knowledge and with latest industry practice. Note the content of this course is not static, which means the lessons are updated frequently with current topics & best practices in the field of Data Science. ",
+        "open": true
+      },
+      {
+        "id": 2,
+        "ques": "Can a fresher do this course?      ",
+        "ans": " This course is designed to meet the needs of both experienced professionals and college goers/fresh graduates, providing comprehensive coverage of topics across all levels - from basic to advanced.",
+        "open": false
+      },
+      {
+        "id": 3,
+        "ques": "How can I enroll in this course?",
+  
+        "ans": "Click on 'Start Learning' on this page. Then click on 'Buy Now'. Fill up your details and click on 'Pay Securely'. Complete the payment process on our Razorpay platform and start your Data Science career journey. Note: the payment gateway system is encrypted by Razorpay, hence making it safe and compliant with all banks and financial institutes across the globe.",
+        "open": false
+      },
+      {
+        "id": 7,
+        "ques": "How can I get my doubts cleared?",
+  
+        "ans": "Every weekend we conduct Trainer-led live clearing sessions where you can unmute and ask your doubts. You can attend unlimited doubt sessions for the next 2 years. ",
+        "open": false
+      },
+      {
+        "id": 4,
+        "ques": "How will I do the live projects?      ",
+        "ans": "Every weekend we conduct Trainer-led live project sessions, where projects mentioned above on this page will be done live in the class. These Data Science projects are from various domains like BFSI, Healthcare, Manufacturing, Retail, Sales, HR & many more. If you are stuck somewhere you can unmute and ask. You can attend unlimited project sessions for the next 2 years from the day of your enrollment.",
+        "open": false
+      },
+      {
+        "id": 5,
+        "ques": "Is it a recorded course or live course?",
+        "ans": "All lessons are recorded, live classes only for doubt-clearing and project sessions",
+        "open": false
+      },
+      {
+        "id": 6,
+        "ques": "How soon can I complete the course?",
+  
+        "ans": "This course offers 228 hrs of recorded lessons which you can do at your own pace, on average it takes 3 months to complete. Where you will have access to all recorded lessons for lifetime and live doubt & project sessions for the next 2 years from the date of purchase.",
+        "open": false
+      },
+      {
+        "id": 10,
+        "ques": "Is there any refund policy?",
+        "ans": "Yes, this course has a refund policy. You can take the refund within 15 days from the purchase date of the product and the course should not be accessed by more than 10%. With no questions ask policy.",
+        "open": false
+      },
+      {
+        "id": 8,
+        "ques": "Can I access this course on mobile and tablet?",
+        "ans": "Absolutely! Our device-friendly platform allows you to access and learn from our courses on various devices, including smartphones, tablets, laptops, or desktops.",
+        "open": false
+      },
+      {
+        "id": 9,
+        "ques": "Will I get a internship certificate in this bootcamp?",
+        "ans": "Yes, after you complete at least 3 projects you will get an internship certificate and 3 respective project experience certificates. Once you add these certificates to your resume it will show the hiring manager that you are not new to Data science.",
+        "open": false
+      },
+      {
+        "id": 12,
+        "ques": "Is there any validity of the course?",
+        "ans": "Once you enroll you have lifetime access to the course content.",
+        "open": false
+      },
+      {
+        "id": 13,
+        "ques": "Is Microsoft certificate included in this course?",
+        "ans": "Yes, the Microsoft certificate is included in the course fees. You don't need to pay extra for the Microsoft certificate.",
+        "open": false
+      }
+    ]
+  }
+  
