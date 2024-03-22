@@ -255,7 +255,7 @@ const WhyUs = ({ redirectDs, home, redirectDa, nomicrosoft }) => {
                   </h3><div className="grid grid-cols-3 gap-3 max-[961px]:grid-cols-2">
                     <div className="bg-white shadow rounded-lg px-7 py-4 flex flex-col gap-3">
                       <div className="relative w-full h-[180px]  ">
-                        <Image src={imageSrc[2]} fill alt="certificate image" />
+                        <Image src={imageSrc[2]} fill alt="certificate image"  loading="lazy"/>
                       </div>
                       <h3 className="font-bold">Microsoft Certificate</h3>
                       <p>
@@ -265,7 +265,7 @@ const WhyUs = ({ redirectDs, home, redirectDa, nomicrosoft }) => {
                     </div>
                     <div className="bg-white shadow rounded-lg px-7 py-4 flex flex-col gap-3">
                       <div className="relative w-full h-[180px]  ">
-                        <Image src={imageSrc[1]} fill alt="certificate image" />
+                        <Image src={imageSrc[1]} fill alt="certificate image"  loading="lazy"/>
                       </div>
                       <h3 className="font-bold">Project Experience Certificate</h3>
                       <p>
@@ -276,7 +276,7 @@ const WhyUs = ({ redirectDs, home, redirectDa, nomicrosoft }) => {
                     </div>
                     <div className="bg-white shadow rounded-lg px-7 py-4 flex flex-col gap-3">
                       <div className="relative w-full h-[180px]  ">
-                        <Image src={imageSrc[0]} fill alt="certificate image" />
+                        <Image src={imageSrc[0]} fill alt="certificate image"  loading="lazy"/>
                       </div>
                       <h3 className="font-bold"> Internship Certificate</h3>
                       <p>

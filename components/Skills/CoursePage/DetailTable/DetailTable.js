@@ -61,6 +61,7 @@ const DetailTable = ({
             width={40}
             height={40}
             alt="skillslash-logo"
+            loading="lazy"
           />
           <p className="text-white mt-2">Recorded</p>
           <hr className="w-[48%] bg-[#646464] text-[#646464] border-[#646464]" />

@@ -30,6 +30,7 @@ const Footer = () => {
               style={{ objectFit: "contain" }}
               width={210}
               height={60}
+              loading="lazy"
             />
           </a>
           <p className={styles.desc}>
