@@ -89,7 +89,7 @@ const Header = ({
             Bootcamp
           </p>
         </div>
-        {nomicrosoft ? (<></>):(<> {redirectDs && (
+        {nomicrosoft ? (<></>) : (<> {redirectDs && (
           <div className=" mt-4  w-max rounded flex items-center gap-2">
             <p className="text-white font-medium">Powered by</p>
             <div className="bg-white px-3 py-[3px] rounded-[4px]">
@@ -103,7 +103,7 @@ const Header = ({
             </div>
           </div>
         )}</>)}
-       
+
         {redirectFs && (
           <div className="relative w-[348px] max-sm:w-[310px] h-[32px] max-sm:h-[29px] mt-3 max-sm:mt-12 ">
             {/* <Image src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/powered-by-microsoft-(White).png" alt="PoweredByMicrosoft" width={200} height={22}/> */}
@@ -241,18 +241,19 @@ const Header = ({
               </>
             ) : (
               <>
-              <Link href={checkoutLink}>
-              <button
-    className="w-full px-4 bg-[#f18350] text-white rounded py-3 font-bold text-xl flex justify-center items-center cursor-pointer transition duration-300 ease-in-out transform hover:bg-[#d76940] hover-animation"
-    id={idBtnO}
->
-    Buy Now
-</button>
+                <Link href={checkoutLink}>
+                  <button
+                    className="w-full px-4 bg-[#f18350] text-white rounded py-3 font-bold text-xl flex justify-center items-center cursor-pointer transition duration-300 ease-in-out transform hover:bg-[#d76940] hover-animation"
+                    id={idBtnO}
+                  >
+                    Buy Now
+                  </button>
 
-               
-              </Link>
-               <p className="w-full d-flex justify-center items-center text-center ">15-Days Money-Back Guarantee</p>
-               </>
+
+                </Link>
+                {nomicrosoft ? (<> <p className="w-full d-flex justify-center items-center text-center ">7-Days Money-Back Guarantee</p></>) : (<>             <p className="w-full d-flex justify-center items-center text-center ">15-Days Money-Back Guarantee</p></>)}
+
+              </>
             )}
           </div>
           <div className="flex flex-col gap-2 py-4">
@@ -266,34 +267,34 @@ const Header = ({
                 </span>
                 {nomicrosoft ? (<> <span>
                   <b>Self-paced</b>
-                </span></>):( <span>
+                </span></>) : (<span>
                   <b>Blended</b>
                 </span>)}
-               
+
               </p>
-              {nomicrosoft ?(<></>):(<>
-              <hr />
-              <p className="flex gap-2 items-center justify-between py-2">
-                <span className="flex gap-2 items-center">
-                  <MdLiveTv className="text-xl" />
-                  1:1 Doubt Session
-                </span>
-                <span>
-                  <b>Daily</b>
-                </span>
-              </p></>)
-} {nomicrosoft ?(<></>):(<>
-              <hr />
-               <p className="flex gap-2 items-center justify-between py-2">
-                <span className="flex gap-2 items-center">
-                  <MdLiveTv className="text-xl" />
-                  Live Project Sessions
-                </span>
-                <span>
-                  <b>Weekly</b>
-                </span>
-              </p></>)}
-             
+              {nomicrosoft ? (<></>) : (<>
+                <hr />
+                <p className="flex gap-2 items-center justify-between py-2">
+                  <span className="flex gap-2 items-center">
+                    <MdLiveTv className="text-xl" />
+                    1:1 Doubt Session
+                  </span>
+                  <span>
+                    <b>Daily</b>
+                  </span>
+                </p></>)
+              } {nomicrosoft ? (<></>) : (<>
+                <hr />
+                <p className="flex gap-2 items-center justify-between py-2">
+                  <span className="flex gap-2 items-center">
+                    <MdLiveTv className="text-xl" />
+                    Live Project Sessions
+                  </span>
+                  <span>
+                    <b>Weekly</b>
+                  </span>
+                </p></>)}
+
               <hr />
               <p className="flex gap-2 items-center justify-between py-2">
                 <span className="flex gap-2 items-center">
@@ -322,10 +323,10 @@ const Header = ({
                 </span>
                 {nomicrosoft ? (<> <span>
                   <b>1</b>
-                </span></>):(<>  <span>
+                </span></>) : (<>  <span>
                   <b>{certification}</b>
                 </span></>)}
-              
+
               </p>
             </div>
           </div>

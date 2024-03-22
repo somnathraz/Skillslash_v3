@@ -14,6 +14,7 @@ const BottomPrice = ({
   redirectDa,
   changeHeading,
   newDataScience,
+  nomicrosoft,
 }) => {
   const [idBtnO, setIdBtnO] = useState("org-slo");
   const [popups, setPopups] = useState(false);
@@ -51,7 +52,10 @@ const BottomPrice = ({
           <button id={idBtnO}>Buy Now</button>
         </Link>
       </div>
-      <p className={styles.refund}>15-Days Money-Back Guarantee</p>
+      {nomicrosoft ? (<> <p className={styles.refund}>7-Days Money-Back Guarantee</p></>) : (<>      <p className={styles.refund}>15-Days Money-Back Guarantee</p></>)}
+
+
+
     </div>
   );
 };
