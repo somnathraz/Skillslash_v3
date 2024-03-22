@@ -90,8 +90,8 @@ const SkillsContent = ({
                 <span>
                   <b>Weekly</b>
                 </span>
-              </p></>)}
-        <p className="flex gap-2 items-center justify-between py-2">
+              </p>
+              <p className="flex gap-2 items-center justify-between py-2">
           <span className="flex gap-2 items-center">
             <MdOutlineWorkHistory className="text-2xl text-[#4f419a]" />
             Career Support
@@ -100,6 +100,8 @@ const SkillsContent = ({
             <b>Included</b>
           </span>
         </p>
+              </>)}
+     
         <hr />
         <p className="flex gap-2 items-center justify-between py-2">
           <span className="flex gap-2 items-center">
