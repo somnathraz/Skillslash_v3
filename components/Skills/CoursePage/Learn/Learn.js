@@ -72,6 +72,7 @@ const Learn = ({
                 alt="SQL icon"
                 width={24}
                 height={34}
+                loading="lazy"
               />
             </div>
             <div className="bg-[#EEEAFF] rounded flex items-center justify-center py-2">
@@ -84,6 +85,7 @@ const Learn = ({
                 alt="headerImg"
                 width={34}
                 height={34}
+                loading="lazy"
               />
             </div>
             <div className="bg-[#EEEAFF] rounded flex items-center justify-center py-2">
@@ -96,6 +98,7 @@ const Learn = ({
                 alt="headerImg"
                 width={redirectFs ? 34 : 59}
                 height={redirectFs ? 34 : 58}
+                loading="lazy"
               />
             </div>
             <div className="bg-[#EEEAFF] rounded flex items-center justify-center py-2">
@@ -108,6 +111,7 @@ const Learn = ({
                 alt="headerImg"
                 width={redirectFs ? 34 : 54}
                 height={redirectFs ? 34 : 58}
+                loading="lazy"
               />
             </div>
             <div className="bg-[#EEEAFF] rounded flex items-center justify-center py-2">
@@ -116,7 +120,9 @@ const Learn = ({
                 alt="headerImg"
                 width={21}
                 height={38}
+                loading="lazy"
               />
+
             </div>
             <div className="bg-[#EEEAFe] rounded flex items-center justify-center py-2">
               <Image
@@ -124,6 +130,7 @@ const Learn = ({
                 alt="headerImg"
                 width={33}
                 height={33}
+                loading="lazy"
               />
             </div>
           </div>
