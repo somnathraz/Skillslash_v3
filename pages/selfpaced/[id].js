@@ -232,6 +232,7 @@ const DataSciencePage = ({ DataScienceCourseData, }) => {
         redirectFs={DataScienceCourseData.data.header.FullStack}
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}
         link={DataScienceCourseData.data.header.link}
+        nomicrosoft={DataScienceCourseData.data.header.nomicrosoft}
       />
       {/* <MiddlePopup
         redirectDs={DataScienceCourseData.data.header.dataScience}

@@ -367,7 +367,7 @@ const MegaMenu = ({ handleIcon }) => {
               <a href="/selfpaced/data-science-&-ai-selfpaced">
                 <div className={styles.mInnerBoxDiv}>
                   <h5>Data Science & AI Self-paced</h5>
-                
+
                 </div>
               </a>
             </div>
@@ -378,11 +378,11 @@ const MegaMenu = ({ handleIcon }) => {
               >
                 <div className={styles.mInnerBoxDiv}>
                   <h5>Data Analytics Self-paced</h5>
-                
+
                 </div>
               </div>
             </a>
-          
+
           </div>
         ) : (
           ""
@@ -390,7 +390,7 @@ const MegaMenu = ({ handleIcon }) => {
         {software ? (
           <div className={styles.gridPanel}>
             <div className={styles.mInnerBox} onClick={() => handleIcon(false)}>
-            <a href="/selfpaced/data-science-&-aI-bootcamp">
+              <a href="/selfpaced/data-science-&-aI-bootcamp">
                 <div className={styles.mInnerBoxDiv}>
                   <h5>Data Science & AI Bootcamp</h5>
                   <span>

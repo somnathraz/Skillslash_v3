@@ -209,20 +209,17 @@ const ContactForm = ({ popup, setTrigger, syllabus, coupon }) => {
                 Select a course*
               </option>
 
-              <option value="Adv DS&AI-ProMax">
-                Advance Data Science & AI ProMax
+              <option value="Adv DS&AI-Bootcamp">
+                Advance Data Science & AI Bootcamp
               </option>
-              <option value="Adv DS&AI-Pro">
-                Advance Data Science & AI Pro
+              
+              <option value="DA-BootCamp">Data Analytics BootCamp</option>
+     
+            
+              <option value="FS-Bootcamp">
+            DSA &  System Design Bootcamp
               </option>
-              <option value="DA-ProMax">Data Analytics ProMax</option>
-              <option value="DA-Pro">Data Analytics Pro</option>
-              <option value="BA-ProMax">Business Analytics ProMax</option>
-              <option value="BA-Pro">Business Analytics Pro</option>
-              <option value="FS-ProMax">
-                FullStack Software Development ProMax
-              </option>
-              <option value="Web">Web Development</option>
+      
             </select>
           </fieldset>
         </div>
