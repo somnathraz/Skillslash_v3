@@ -132,8 +132,8 @@ const DataSciencePage = ({ DataScienceCourseData, }) => {
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}
         checkoutLink={DataScienceCourseData.data.header.indCheckout}
       />
-          <CareerSupport />
-          <div id="modules">
+      <CareerSupport />
+      <div id="modules">
         <DataScienceSyllabus
           NigeriaForm={showNigeriaForm}
           title={DataScienceCourseData.data.header.title}
@@ -147,12 +147,12 @@ const DataSciencePage = ({ DataScienceCourseData, }) => {
       </div>
       <ToolsCovered />
       <WhyUsAnimate
-          redirectDa={DataScienceCourseData.data.header.dataAnalytics}
-          redirectDs={DataScienceCourseData.data.header.dataScience}
-          redirectFs={DataScienceCourseData.data.header.FullStack}
-          nomicrosoft={DataScienceCourseData.data.header.nomicrosoft}
-        />
-      
+        redirectDa={DataScienceCourseData.data.header.dataAnalytics}
+        redirectDs={DataScienceCourseData.data.header.dataScience}
+        redirectFs={DataScienceCourseData.data.header.FullStack}
+        nomicrosoft={DataScienceCourseData.data.header.nomicrosoft}
+      />
+
       <div id="projects">
         <ProjectSlider
           noProject={DataScienceCourseData.data.header.noProject}
@@ -198,7 +198,7 @@ const DataSciencePage = ({ DataScienceCourseData, }) => {
       )}
 
       <Reviews redirectFs={DataScienceCourseData.data.header.FullStack} />
-     
+
       <DetailTable
         offerPrice={actualPrice}
         hrs={DataScienceCourseData.data.header.hour}
@@ -208,10 +208,10 @@ const DataSciencePage = ({ DataScienceCourseData, }) => {
         redirectFs={DataScienceCourseData.data.header.FullStack}
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}
       />
-   
+
       {/* <WhyUsAnimate /> */}
       {/* <CourseDetails hour={DataScienceCourseData.data.header.hour} /> */}
-  
+
       <div id="faq">
         <FAQ
           heading="Frequently Asked Questions"
