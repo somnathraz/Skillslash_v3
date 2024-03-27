@@ -173,7 +173,12 @@ function DataScienceSyllabus({
             clarify your doubts
           </p>
           <div>
-            <Form />
+            <Form 
+     
+  
+            redirectDs={redirectDs}
+            redirectFs={redirectFs}
+            redirectDa={redirectDa}/>
           </div>
         </div>
       </div>
