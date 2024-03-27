@@ -81,31 +81,16 @@ const ContactForm = ({ popup, setTrigger, syllabus, coupon }) => {
     setLoading(false);
 
     if (
-      query.selectCourse === "Adv DS&AI-ProMax" ||
-      query.selectCourse === "Adv DS&AI-Pro"
+      query.selectCourse === "Data Science & AI Bootcamp" 
     )
       router.push("/Thankyou/data-science");
 
-    if (query.selectCourse === "FS-ProMax") router.push("/Thankyou/full-stack");
-    if (
-      query.selectCourse === "Data Engineering Course with Industry Experience"
-    )
-      router.push("/Thankyou/data-engineering");
-    if (query.selectCourse === "Blockchain program and certification")
-      router.push("/Thankyou/blockchain");
-    if (
-      query.selectCourse === "BA-ProMax" ||
-      query.selectCourse === "BA-Pro" ||
-      query.selectCourse === "DA-Pro" ||
-      query.selectCourse === "DA-ProMax"
-    )
-      router.push("/Thankyou/business-analytics");
-    if (query.selectCourse === "DSA + System Design") {
+    if (query.selectCourse === "Data Analytics BootCamp") router.push("/Thankyou/business-analytics");
+   
+    if (query.selectCourse === "DSA and System Design Bootcamp")
       router.push("/Thankyou/dsa");
-    }
-    if (query.selectCourse === "Web") {
-      router.push("/Thankyou/web-development");
-    }
+   
+    
   };
 
   const isWeekday = (date) => {
@@ -209,15 +194,15 @@ const ContactForm = ({ popup, setTrigger, syllabus, coupon }) => {
                 Select a course*
               </option>
 
-              <option value="Adv DS&AI-Bootcamp">
-                Advance Data Science & AI Bootcamp
+              <option value="Data Science & AI Bootcamp">
+              Data Science & AI Bootcamp
               </option>
               
-              <option value="DA-BootCamp">Data Analytics BootCamp</option>
+              <option value="Data Analytics BootCamp">Data Analytics BootCamp</option>
      
             
-              <option value="FS-Bootcamp">
-            DSA &  System Design Bootcamp
+              <option value="DSA and System Design Bootcamp">
+              DSA and System Design Bootcamp
               </option>
       
             </select>
