@@ -22,7 +22,7 @@ const ContactUsPage = () => {
             </div>
             <div className={styles.rightFromSection}>
               <Image
-                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/contact-us.webp"
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/support-image.jpg"
                 width="542"
                 height="371"
                 alt="contact-us"
