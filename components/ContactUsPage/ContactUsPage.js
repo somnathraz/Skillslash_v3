@@ -7,6 +7,7 @@ import { BiPhoneCall } from "react-icons/bi";
 import Image from "next/image";
 import ContactForm from "../ContactusForm/ContactusForm";
 import styles from "../../styles/contact-us.module.css";
+import { HiBuildingOffice2 } from "react-icons/hi2";
 
 const ContactUsPage = () => {
   return (
@@ -73,12 +74,7 @@ const ContactUsPage = () => {
         <div className={styles.officeLocation}>
           <div className={styles.LocationBox}>
             <div className={styles.top}>
-              <Image
-                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/Bangalore+icon-02-01.png"
-                width="90"
-                height="90"
-                alt="Bangalore_icon"
-              />
+            <HiBuildingOffice2/>
             </div>
             <div className={styles.bottom}>
               <h5>Bangalore (HQ)</h5>
@@ -98,12 +94,7 @@ const ContactUsPage = () => {
           </div>
           <div className={styles.LocationBox}>
             <div className={styles.top}>
-              <Image
-                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/Mumbai.png"
-                width="110"
-                height="110"
-                alt="Bangalore_icon"
-              />
+            <HiBuildingOffice2/>
             </div>
             <div className={styles.bottom}>
               <h5>Mumbai</h5>
@@ -123,12 +114,7 @@ const ContactUsPage = () => {
           </div>
           <div className={styles.LocationBox}>
             <div className={styles.top}>
-              <Image
-                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/Hyderabad+icon-01.png"
-                width="90"
-                height="90"
-                alt="Hyderabad_icon"
-              />
+            <HiBuildingOffice2/>
             </div>
             <div className={styles.bottom}>
               <h5>Hyderabad</h5>
@@ -148,12 +134,7 @@ const ContactUsPage = () => {
           </div>
           <div className={styles.LocationBox}>
             <div className={styles.top}>
-              <Image
-                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/Austin+icon-02-01.png"
-                width="90"
-                height="90"
-                alt="Austin_icon"
-              />
+            <HiBuildingOffice2/>
             </div>
             <div className={styles.bottom}>
               <h5>Austin</h5>
@@ -173,12 +154,7 @@ const ContactUsPage = () => {
           </div>
           <div className={styles.LocationBox}>
             <div className={styles.top}>
-              <Image
-                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/Gurgaon+icon-02-01.png"
-                width="90"
-                height="90"
-                alt="Gurugram_icon"
-              />
+            <HiBuildingOffice2/>
             </div>
             <div className={styles.bottom}>
               <h5>Gurugram</h5>
