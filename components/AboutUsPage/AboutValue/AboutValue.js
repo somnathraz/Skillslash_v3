@@ -38,7 +38,7 @@ const AboutValue = () => {
           </div>
           <div className={styles.rightAbout}>
             <Image
-              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/about-us_header.webp"
+              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/about_us_1.jpg"
               width="631"
               height="591"
             />
@@ -48,7 +48,7 @@ const AboutValue = () => {
       <div className={styles.values}>
         <div className={styles.leftValues}>
           <Image
-            src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/core_values.webp"
+            src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/about_us_2.jpg"
             width="707"
             height="404"
           />
