@@ -22,7 +22,7 @@ const GoalCta = () => {
           science training.
         </p>
         <Image
-          src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/Goal_of_skillslash.webp"
+          src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/about_us_3.jpg"
           width="1000"
           height="304"
         />
