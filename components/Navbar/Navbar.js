@@ -155,9 +155,12 @@ const Navbar = ({ link, event, ads, redirectDs, redirectFs, redirectDa }) => {
           <button
             className={styles.mLearn}
             id={idBtnB}
-            onClick={() => showVideoF(true)}
+            onClick={() => {
+              setIcon(!icon);
+              setShow(false);
+            }}
           >
-            Watch Demo
+         Our Courses
           </button>
           {ads ? (
             ""
