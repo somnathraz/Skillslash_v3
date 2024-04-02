@@ -134,7 +134,7 @@ const MegaMenu = ({ handleIcon }) => {
                   className={styles.mInnerBox}
                   onClick={() => handleIcon(false)}
                 >
-                  <a href="/selfpaced/data-science-&-aI-bootcamp">
+                  <a href="/selfpaced/data-science-&-ai-selfpaced">
                     <div className={styles.mInnerBoxDiv}>
                       <h5>Data Science & AI  self-paced</h5>
                       <span>
