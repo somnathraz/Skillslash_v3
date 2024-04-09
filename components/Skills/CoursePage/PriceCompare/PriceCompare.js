@@ -10,16 +10,68 @@ const PriceCompare = ({
   otherHr,
   liveHr,
   offerPrice,
+  nomicrosoft,
 }) => {
   return (
     <>
-      <h2 className={styles.heading}>Skillslash Bootcamp</h2>
+      {nomicrosoft? (<></>):(<><h2 className={styles.heading}>Skillslash Bootcamp</h2></>)}
       <div className={styles.priceWrap}>
         <div className={styles.priceBox}>
           <div className={styles.priceHeader}>
             <h3>Skillslash</h3>
           </div>
-          <div className={styles.priceContent}>
+        {nomicrosoft ? (<>  <div className={styles.priceContent}>
+            <div className={styles.priceRow}>
+              <p>Lesson</p>
+              <p>Recorded</p>
+            </div>
+            <div className={styles.priceRow}>
+              <p>Duration</p>
+              <p>{hrs} Hrs</p>
+            </div>
+            <div className={styles.priceRow}>
+              <p>Live Projects</p>
+              <p>{redirectDa ? <MdOutlineClear className="text-[#ff5252] " />:   <MdOutlineClear className="text-[#ff5252] " />}</p>
+            </div>
+            {redirectDs && (
+              <>
+                <div className={styles.priceRow}>
+                  <p>Microsoft Course Certificate</p>
+                  <p>
+                  <MdOutlineClear className="text-[#ff5252] " />
+                  </p>
+                </div>
+                <div className={styles.priceRow}>
+                  <p>Project Experience Certificate</p>
+                  <p>
+                  <MdOutlineClear className="text-[#ff5252] " />
+                  </p>
+                </div>
+                <div className={styles.priceRow}>
+                  <p>Internship Certificate</p>
+                  <p>
+                  <MdOutlineClear className="text-[#ff5252] " />
+                  </p>
+                </div>
+                <div className={styles.priceRow}>
+                  <p>Final Year Project Assistance</p>
+                  <p>
+                  <MdOutlineClear className="text-[#ff5252] " />
+                  </p>
+                </div>
+              </>
+            )}
+            <div className={styles.priceRow}>
+              <p>Career Support</p>
+              <p>
+              <MdOutlineClear className="text-[#ff5252] " />
+              </p>
+            </div>
+            <div className={styles.priceRow}>
+              <p>Average Pricing</p>
+              <p>{offerPrice}</p>
+            </div>
+          </div></>):(<>  <div className={styles.priceContent}>
             <div className={styles.priceRow}>
               <p>Lesson</p>
               <p>Recorded</p>
@@ -70,7 +122,7 @@ const PriceCompare = ({
               <p>Average Pricing</p>
               <p>{offerPrice}</p>
             </div>
-          </div>
+          </div></>)}
         </div>
         <div className={styles.priceBox}>
           <div className={styles.priceHeader}>
