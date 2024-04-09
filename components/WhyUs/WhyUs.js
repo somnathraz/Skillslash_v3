@@ -47,11 +47,11 @@ const WhyUs = ({ redirectDs, home, redirectDa, nomicrosoft }) => {
 
   return (
     <div className="py-14 flex flex-col gap-11 max-sm:hidden min-[1600px]:px-[150px] max-[741px]:mt-[70px] ">
-      <h2 className="px-28 max-[1281px]:px-20 max-[1024px]:px-10 max-sm:px-5 text-3xl max-sm:text-2xl">
-        Why Choose Us?
-      </h2>
+    {nomicrosoft ? (<></>):(<>  <h2 className="px-28 max-[1281px]:px-20 max-[1024px]:px-10 max-sm:px-5 text-3xl max-sm:text-2xl">
+     Why Choose Us?   
+      </h2></>)}
       <div className="px-28 max-[1281px]:px-20 max-[1024px]:px-10 bg-gradient-to-t from-[#f3f1fffe] from-8 0% to-white w-full to-20% flex flex-col h-max">
-        <div className="bg-black h-[330px] max-[1281px]:h-[305px]  rounded grid grid-cols-[48%,48.5%] min-[1600px]:grid-cols-[48%,45%] min-[1600px]:gap-24 max-[1281px]:grid-cols-[43%,53%] gap-10 pl-16 relative max-[1281px]:pl-10">
+     {nomicrosoft ? (<></>):(<>   <div className="bg-black h-[330px] max-[1281px]:h-[305px]  rounded grid grid-cols-[48%,48.5%] min-[1600px]:grid-cols-[48%,45%] min-[1600px]:gap-24 max-[1281px]:grid-cols-[43%,53%] gap-10 pl-16 relative max-[1281px]:pl-10">
           <div className="absolute bottom-0 h-[190px] bg-gradient-to-t from-[#000000] from-10% to-transparent w-[55%] to-70% z-20 max-[1281px]:w-[56%] max-[1024px]:hidden"></div>
           <div className="relative overflow-x-scroll hideScroll w-[87vw]">
             {/* <div className="absolute top-[-96px] left-5 z-0 h-[800px]">
@@ -180,13 +180,13 @@ const WhyUs = ({ redirectDs, home, redirectDa, nomicrosoft }) => {
               fill
             />
           </div>
-        </div>
+        </div></>)}
         {(redirectDs || home) && (
           <div
             className="flex flex-col relative px-28 max-sm:px-5 h-[550px] max-[901px]:h-[900px] max-[1281px]:px-0  items-center gap-10 pb-[60px]  pt-10 "
             ref={certRef}
           >
-            <div className="absolute top-[0px] h-[666px] max-[801px]:h-[1000px] left-[80px] max-[1281px]:left-[58px] z-10">
+      {nomicrosoft ? (<></>):(<>      <div className="absolute top-[0px] h-[666px] max-[801px]:h-[1000px] left-[80px] max-[1281px]:left-[58px] z-10">
               <motion.svg
                 preserveAspectRatio="xMidYMax meet"
                 className="h-[870px] w-[650px] max-sm:hidden max-[1281px]:hidden"
@@ -229,7 +229,7 @@ const WhyUs = ({ redirectDs, home, redirectDa, nomicrosoft }) => {
                   style={{ pathLength: scrollYProgress }}
                 />
               </motion.svg>
-            </div>
+            </div></>)}
 
             <div className="flex flex-col gap-4 items-center">
 

@@ -5,7 +5,7 @@ const Bootcamp = () => {
   return (
     <div className="flex flex-col px-28 py-10 bg-[#F6F6F6] max-sm:px-5">
       <h2 className="text-4xl font-bold max-sm:text-2xl">
-        Skillslash Bootcamp
+   Skillslash Bootcamp     
       </h2>
       <div
         className="mt-[20px] w-full"

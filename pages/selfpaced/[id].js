@@ -170,7 +170,7 @@ const DataSciencePage = ({ DataScienceCourseData, }) => {
         redirectDs={DataScienceCourseData.data.header.dataScience}
         redirectFs={DataScienceCourseData.data.header.FullStack}
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}
-        nomicrosoft={DataScienceCourseData.data.header.dataAnalytics}
+        nomicrosoft={DataScienceCourseData.data.header.nomicrosoft}
       />
       <div id="certificate">
         <WhyUs
@@ -207,6 +207,7 @@ const DataSciencePage = ({ DataScienceCourseData, }) => {
         redirectDs={DataScienceCourseData.data.header.dataScience}
         redirectFs={DataScienceCourseData.data.header.FullStack}
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}
+        nomicrosoft={DataScienceCourseData.data.header.nomicrosoft}
       />
 
       {/* <WhyUsAnimate /> */}
