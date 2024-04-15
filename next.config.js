@@ -37,6 +37,11 @@ const nextConfig = {
         destination: "/selfpaced/data-analytics-bootcamp",
         permanent: true,
       },
+      {
+        source: "/full-stack-developer-course",
+        destination: "/selfpaced/dsa-system-design-bootcamp",
+        permanent: true,
+      },
       // {
       //   source: "/blog/ai-and-machine-learning",
       //   destination:
