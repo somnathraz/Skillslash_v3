@@ -21,6 +21,22 @@ const nextConfig = {
         destination: "/data-science-course-training-hyderabad",
         permanent: true,
       },
+
+      {
+        source: "/advanced-data-science-and-ai-course-with-real-work-experience",
+        destination: "/selfpaced/data-science-&-aI-bootcamp",
+        permanent: true,
+      },
+      {
+        source: "/data-science-course",
+        destination: "/selfpaced/data-science-&-aI-bootcamp",
+        permanent: true,
+      },
+      {
+        source: "/data-analytics-course",
+        destination: "/selfpaced/data-analytics-bootcamp",
+        permanent: true,
+      },
       // {
       //   source: "/blog/ai-and-machine-learning",
       //   destination:
