@@ -92,7 +92,7 @@ const ContactForm = () => {
   };
   return (
     <div className="flex flex-col items-center justify-center">
-      <h2 className="text-center m-10">Live Doubt Session registration form</h2>
+      <h2 className="text-center m-10">Project Doubt Session registration form</h2>
       <p className="w-[50%] text-center max-sm:w-[98%]">
         Trainer led Live Doubt clearing session is available every Saturday from
         12PM to 2PM. Please use your registered email id to fill up the form
