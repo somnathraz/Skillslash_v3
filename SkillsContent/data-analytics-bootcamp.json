@@ -21,7 +21,7 @@
     "NigeriaOfferPrice": "₦ 150,000",
     "discount": "37%",
     "newDsa": false,
-    "dataScience": true,
+    "dataScience": false,
     "FullStack": false,
     "dataAnalytics": true,
     "certification": "3",

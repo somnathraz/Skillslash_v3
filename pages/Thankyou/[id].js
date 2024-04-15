@@ -28,6 +28,9 @@ export default function ThankYou({ DataScienceCourseData }) {
             <p className={styles.Ptop}>{DataScienceCourseData.data.para}</p>
             <div>
               <div className={styles.mainb}>
+                <Link href={DataScienceCourseData.data.url}>
+                  <button className={styles.Button}>Download Brochure</button>
+                </Link>
                 <div>
                   <Link href={DataScienceCourseData.data.back}>
                     <button className={styles.Button}>
