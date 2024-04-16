@@ -21,7 +21,7 @@
     "NigeriaOfferPrice": "₦ 150,000",
     "discount": "37%",
     "newDsa": false,
-    "dataScience": false,
+    "dataScience": true,
     "FullStack": false,
     "dataAnalytics": true,
     "certification": "3",
@@ -29,6 +29,7 @@
     "secondPoint": "Data Manipulation: Numpy, Pandas, Matplotlib.",
     "thirdPoint": "Machine Learning: Regression, Classification, Clustering.",
     "fourthPoint": "Tools & Visualization: SQL, Excel, Tableau, Power BI."
+    
   },
   "seoSyllabus": [
     {
