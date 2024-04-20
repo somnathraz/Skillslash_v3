@@ -395,6 +395,39 @@
         "id": 6,
         "open": false
       }
+    },
+    {
+      "Module0": {
+        "title": "Module 10",
+        "title1": "TOOLS",
+        "project": false,
+        "hrs": 12,
+        "descS": "",
+        "content": [
+          {
+            "chap": {
+              "title": "Chapter 1: Excel Fundamentals",
+              "desc": [
+                "Introduction to Excel interface.",
+                "Customizing Excel Quick Access Toolbar.",
+                "Structure of Excel Workbook."
+              ]
+            }
+          },
+          {
+            "chap": {
+              "title": "Chapter 2: Worksheet Customization",
+              "desc": [
+                "Adjusting Page Margins and Orientation.",
+                "Creating Headers, Footers, and Page Numbers.",
+                "Adding Print Titles and Gridlines."
+              ]
+            }
+          }
+        ],
+        "id": 7,
+        "open": false
+      }
     }
   ],
   "FaqDATA": [
