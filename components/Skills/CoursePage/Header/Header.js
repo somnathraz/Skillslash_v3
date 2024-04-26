@@ -39,18 +39,22 @@ const Header = ({
   const showVideo = (data) => {
     setShow(data);
   };
-  const [idBtnO, setIdBtnO] = useState("program-slo");
-  const [idBtnV, setIdBtnV] = useState("program-dv");
+  const [idBtnO, setIdBtnO] = useState("org-slo");
+  const [idBtnV, setIdBtnV] = useState("org-dv");
   const [popups, setPopups] = useState(false);
   const popupShow = (demoClass, changeText) => {
     setPopups(true);
   };
   const rgbDataURL = (r, g, b) =>
-    `data:image/gif;base64,R0lGODlhAQABAPAA${triplet(0, r, g) + triplet(b, 255, 255)}/yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==`;
-    
-    const triplet = (r, g, b) => {
-      return String.fromCharCode(r) + String.fromCharCode(g) + String.fromCharCode(b);
-    };
+    `data:image/gif;base64,R0lGODlhAQABAPAA${
+      triplet(0, r, g) + triplet(b, 255, 255)
+    }/yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==`;
+
+  const triplet = (r, g, b) => {
+    return (
+      String.fromCharCode(r) + String.fromCharCode(g) + String.fromCharCode(b)
+    );
+  };
   return (
     <div className="grid grid-cols-[60%,39%] max-[741px]:flex max-[741px]:flex-col max-[901px]:grid-cols-[55%,44%] max-sm:flex max-sm:flex-col gap-5 max-sm:mb-[10px] bg-[#111621] w-full mt-[40px] max-sm:mt-[60px] max-sm:pt-4 min-[1600px]:mt-[70px] px-28 max-[1024px]:px-10 min-[1600px]:px-48 max-sm:px-0 py-[60px] min-[1600px]:py-[90px] pb-[70px] max-sm:pb-[30px] max-sm:py-4 relative">
       <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
@@ -95,20 +99,27 @@ const Header = ({
             Bootcamp
           </p>
         </div>
-        {nomicrosoft ? (<></>) : (<> {redirectDs && (
-          <div className=" mt-4  w-max rounded flex items-center gap-2">
-            <p className="text-white font-medium">Powered by</p>
-            <div className="bg-white px-3 py-[3px] rounded-[4px]">
-              <Image
-                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Home/coursesection/microsoft.webp"
-                alt="PoweredByMicrosoft"
-                width={90}
-                height={19}
-                priority
-              />
-            </div>
-          </div>
-        )}</>)}
+        {nomicrosoft ? (
+          <></>
+        ) : (
+          <>
+            {" "}
+            {redirectDs && (
+              <div className=" mt-4  w-max rounded flex items-center gap-2">
+                <p className="text-white font-medium">Powered by</p>
+                <div className="bg-white px-3 py-[3px] rounded-[4px]">
+                  <Image
+                    src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Home/coursesection/microsoft.webp"
+                    alt="PoweredByMicrosoft"
+                    width={90}
+                    height={19}
+                    priority
+                  />
+                </div>
+              </div>
+            )}
+          </>
+        )}
 
         {redirectFs && (
           <div className="relative w-[348px] max-sm:w-[310px] h-[32px] max-sm:h-[29px] mt-3 max-sm:mt-12 ">
@@ -201,9 +212,7 @@ const Header = ({
                 blurDataURL={rgbDataURL(237, 181, 6)}
                 priority
                 quality={40}
-                
                 id={idBtnV}
-                
               />
               {/* <MdOutlinePlayCircleOutline
                 className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
@@ -246,7 +255,6 @@ const Header = ({
                     Buy Now
                   </button>
                 </Link>
-
               </>
             ) : (
               <>
@@ -257,11 +265,22 @@ const Header = ({
                   >
                     Buy Now
                   </button>
-
-
                 </Link>
-                {nomicrosoft ? (<> <p className="w-full d-flex justify-center items-center text-center ">7-Days Money-Back Guarantee</p></>) : (<>             <p className="w-full d-flex justify-center items-center text-center ">15-Days Money-Back Guarantee</p></>)}
-
+                {nomicrosoft ? (
+                  <>
+                    {" "}
+                    <p className="w-full d-flex justify-center items-center text-center ">
+                      7-Days Money-Back Guarantee
+                    </p>
+                  </>
+                ) : (
+                  <>
+                    {" "}
+                    <p className="w-full d-flex justify-center items-center text-center ">
+                      15-Days Money-Back Guarantee
+                    </p>
+                  </>
+                )}
               </>
             )}
           </div>
@@ -274,48 +293,62 @@ const Header = ({
                   <MdOutlineVideocam className="text-xl" />
                   Learning Mode
                 </span>
-                {nomicrosoft ? (<> <span>
-                  <b>Self-paced</b>
-                </span></>) : (<span>
-                  <b>Blended</b>
-                </span>)}
-
+                {nomicrosoft ? (
+                  <>
+                    {" "}
+                    <span>
+                      <b>Self-paced</b>
+                    </span>
+                  </>
+                ) : (
+                  <span>
+                    <b>Blended</b>
+                  </span>
+                )}
               </p>
-              {nomicrosoft ? (<></>) : (<>
-                <hr />
-                <p className="flex gap-2 items-center justify-between py-2">
-                  <span className="flex gap-2 items-center">
-                    <MdLiveTv className="text-xl" />
-                    1:1 Doubt Session
-                  </span>
-                  <span>
-                    <b>Daily</b>
-                  </span>
-                </p></>)
-              } {nomicrosoft ? (<></>) : (<>
-                <hr />
-                <p className="flex gap-2 items-center justify-between py-2">
-                  <span className="flex gap-2 items-center">
-                    <MdLiveTv className="text-xl" />
-                    Live Project Sessions
-                  </span>
-                  <span>
-                    <b>Weekly</b>
-                  </span>
-                </p>
-                
-                <hr />
-              <p className="flex gap-2 items-center justify-between py-2">
-                <span className="flex gap-2 items-center">
-                  <MdOutlineWorkHistory className="text-xl" />
-                  Career Support
-                </span>
-                <span>
-                  <b>Included</b>
-                </span>
-              </p></>)}
+              {nomicrosoft ? (
+                <></>
+              ) : (
+                <>
+                  <hr />
+                  <p className="flex gap-2 items-center justify-between py-2">
+                    <span className="flex gap-2 items-center">
+                      <MdLiveTv className="text-xl" />
+                      1:1 Doubt Session
+                    </span>
+                    <span>
+                      <b>Daily</b>
+                    </span>
+                  </p>
+                </>
+              )}{" "}
+              {nomicrosoft ? (
+                <></>
+              ) : (
+                <>
+                  <hr />
+                  <p className="flex gap-2 items-center justify-between py-2">
+                    <span className="flex gap-2 items-center">
+                      <MdLiveTv className="text-xl" />
+                      Live Project Sessions
+                    </span>
+                    <span>
+                      <b>Weekly</b>
+                    </span>
+                  </p>
 
-          
+                  <hr />
+                  <p className="flex gap-2 items-center justify-between py-2">
+                    <span className="flex gap-2 items-center">
+                      <MdOutlineWorkHistory className="text-xl" />
+                      Career Support
+                    </span>
+                    <span>
+                      <b>Included</b>
+                    </span>
+                  </p>
+                </>
+              )}
               <hr />
               <p className="flex gap-2 items-center justify-between py-2">
                 <span className="flex gap-2 items-center">
@@ -332,12 +365,21 @@ const Header = ({
                   <PiCertificateBold className="text-xl" />
                   Certifications
                 </span>
-                {nomicrosoft ? (<> <span>
-                  <b>1</b>
-                </span></>) : (<>  <span>
-                  <b>{certification}</b>
-                </span></>)}
-
+                {nomicrosoft ? (
+                  <>
+                    {" "}
+                    <span>
+                      <b>1</b>
+                    </span>
+                  </>
+                ) : (
+                  <>
+                    {" "}
+                    <span>
+                      <b>{certification}</b>
+                    </span>
+                  </>
+                )}
               </p>
             </div>
           </div>
