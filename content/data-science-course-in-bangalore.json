@@ -400,27 +400,45 @@
       }
     ]
   },
-  "FirstSection": {
-    "deskTopPara": "India’s 1st",
-    "mTopPara": "India’s 1st",
+ 
+
+  "header": {
     "title": "Data Science Course in Bangalore",
     "spanTitleText": "Live Project Based Learning Partnered with Tech Companies",
     "desc": "Skillslash Offer Data Science course in Bangalore with Dual Certification. With help of this course student can learn 15+ data science tools by working on industry based capstone projects.",
-    "backgroundImg": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/advance-data-science-header-new-image.webp",
-    "mainHeaderImg": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/data-science-cover-image.webp",
-    "mainAlt": "Get Best Data Science Course in Bangalore",
-    "iconImg": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/HomepageDataCollection.webp",
-    "usp1": " Live Interactive ",
-    "usp2": " Company ",
-    "usp3": " EMI Starting @",
-    "usp4": " 100% Interview",
-    "usp1Span": "Classroom",
-    "usp2Span": "Exp Certifications",
-    "usp3Span": "7867/month",
-    "usp4Span": "Guarantee",
-    "width": "398",
-    "height": "391"
+    "imgSrc": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Header/data-science-header+webp.webp",
+    "dataScience": true,
+    "FullStack": false,
+    "hour": "228+",
+    "noProject": "30+ ",
+    "otherHr": "15",
+    "liveHr": "200+",
+    "newDs": false,
+    "link": "https://courses.skillslash.com/learn/Data-Science-AI-Bootcamp",
+    "checkoutLink": "https://courses.skillslash.com/learn/fast-checkout/178295?priceId=124747",
+    "indCheckout": "https://courses.skillslash.com/learn/fast-checkout/178295?priceId=125930",
+    "ngCheckout": "https://courses.skillslash.com/learn/fast-checkout/178295?priceId=120103",
+    "offerPrice": "₹ 19,999",
+    "newDsa": false,
+    "actualPrice": "₹ 19,999",
+    "USDActualPrice": " $ 300",
+    "USDOfferPrice": "$ 150",
+    "NigeriaActualPrice": "₦ 400,000",
+    "NigeriaOfferPrice": "₦ 200,000",
+    "discount": "42%",
+    "certification": "3",
+    "firstPoint": "Foundations: Programming, Stats, Python Basics, Data Types.",
+    "secondPoint": "Data Analysis: Numpy, Pandas, Matplotlib, ML.",
+    "thirdPoint": "Advanced: Deep Learning, NLP, Reinforcement Learning, Big Data.",
+    "fourthPoint": "Tools: Excel, SQL, Cloud Deployment, BI: Tableau, Power BI.",
+    "usp1": " Live Interactive "
   },
+
+
+
+
+
+
   "ProgramInfo": {
     "BatchDate": "29 January 2023",
     "BatchDuration": "09 Months",
@@ -2883,7 +2901,7 @@
     "desc1": "Skillslash's data science training in Bangalore are designed giving importance to affordability. The Data Science course fees is feasible to ensure fair reachability. Further, we provide you with options such as EMI to pay the course fees.",
     "BasicPrice": "₹ 65,000 + GST",
     "BasicDesc": "",
-    "ProPrice": "INR 1,70,000 + 18%GST",
+    "ProPrice": "₹ 19,999 ",
     "ProDesc": "",
     "ProMaxPrice": "₹ 1,49,999 + GST",
     "ProMaxDesc": "Guaranteed job referral"

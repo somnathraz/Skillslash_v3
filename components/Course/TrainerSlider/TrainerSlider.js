@@ -5,6 +5,7 @@ import { BsDownload } from "react-icons/bs";
 const Popup = dynamic(() => import("../../Popup/Popup"));
 const Form = dynamic(() => import("../../Form/Form"));
 import { fsTrainer, dsTrainer } from "./TrainerData";
+import Slider from "../../Animation/Slider/Slider";
 const TrainerSwiper = dynamic(() => import("./TrainerSwiper"));
 
 const TrainerSlider = ({
@@ -18,6 +19,7 @@ const TrainerSlider = ({
   seoPage,
   heading,
   trainerSlider,
+  NoTitle,
 }) => {
   const [swiperData, setSwiperData] = useState(dsTrainer);
   const [popups, setPopups] = useState(false);
@@ -53,6 +55,8 @@ const TrainerSlider = ({
         </div>
       </Popup>
       <h2 className={style.heading}>{heading}</h2>
+
+      <Slider NoTitle={NoTitle}/>
       {seoPage ? (
         <div
           dangerouslySetInnerHTML={{ __html: trainerSlider }}
@@ -64,7 +68,7 @@ const TrainerSlider = ({
 
       <div className={style.innerWrap}>
         <div className={style.slider}>
-          <TrainerSwiper swiperData={swiperData} />
+          {/* <TrainerSwiper swiperData={swiperData} /> */}
         </div>
         {/* <div className={style.button}>
           <button onClick={popupShow}>

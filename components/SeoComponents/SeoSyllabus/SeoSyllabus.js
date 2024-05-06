@@ -249,8 +249,8 @@ function DataScienceSyllabus({
           <div className={styles.feature}>
             <BiTimeFive className={styles.clockIcon} />
             <div className={styles.fContent}>
-              <p className={styles.fHeading}>350+ Hrs</p>
-              <span>Live classes</span>
+              <p className={styles.fHeading}>228+</p>
+              <span>Lessons</span>
             </div>
           </div>
 
