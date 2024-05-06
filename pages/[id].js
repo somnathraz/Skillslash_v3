@@ -41,7 +41,7 @@ const OfferPopup = dynamic(() =>
 const Emi = dynamic(() => import("../components/Course/EMI/Emi"));
 const BatchDates = dynamic(() => import("../components/Batch/BatchDates"));
 const ProjectSlider = dynamic(() =>
-  import("../components/Course/Project/ProjectSlider")
+  import("../components/Skills/Global/Project/ProjectSlider")
 );
 const CTA = dynamic(() => import("../components/CTA/CTA"));
 const NewPricingTable = dynamic(() =>
@@ -75,6 +75,10 @@ import { getAllPostIds, getPostData } from "../lib/page";
 import BatchProfile from "../components/Course/BatchProfile/BatchProfile";
 import RelatedInfo from "../components/SeoComponents/ReleteadInfo/RelatedInfo";
 import MiddlePopup from "../components/Course/OfferPopup/MiddlePopup";
+import Header from "../components/Skills/CoursePage/Header/Header";
+import Learn from "../components/Skills/CoursePage/Learn/Learn";
+import WhyUs from "../components/WhyUs/WhyUs";
+import Slider from "../components/Animation/Slider/Slider";
 // import Newsletter from "../components/Newsletter/Newsletter";
 const VideoTestimonial = dynamic(() =>
   import("../components/VideoTestimonial/VideoTestimonial")
@@ -405,46 +409,33 @@ export default function Home({
       )} */}
       <div className={styles.container}>
         <div className="WrapperDiv">
-          <FirstSection
-            redirectDs={DataScienceCourseData.data.form.dataScience}
-            redirectFs={DataScienceCourseData.data.form.FullStack}
-            redirectDe={DataScienceCourseData.data.form.DataEngineering}
-            redirectBa={DataScienceCourseData.data.form.BusinessAnalytics}
-            seoPage={DataScienceCourseData.data.form.seoPage}
-            deskTopPara={DataScienceCourseData.data.FirstSection.deskTopPara}
-            mTopPara={DataScienceCourseData.data.FirstSection.mTopPara}
-            redirectDSA={DataScienceCourseData.data.form.dsa}
-            redirectAI={DataScienceCourseData.data.form.ai}
-            title={DataScienceCourseData.data.FirstSection.title}
-            spanTitleText={
-              DataScienceCourseData.data.FirstSection.spanTitleText
-            }
-            desc={DataScienceCourseData.data.FirstSection.desc}
-            seoPara={DataScienceCourseData.data.FirstSection.FirstPara}
-            mainHeaderImg={
-              DataScienceCourseData.data.FirstSection.mainHeaderImg
-            }
-            mainAlt={DataScienceCourseData.data.FirstSection.mainAlt}
-            backgroundImg={
-              DataScienceCourseData.data.FirstSection.backgroundImg
-            }
-            iconImg={DataScienceCourseData.data.FirstSection.iconImg}
-            width={DataScienceCourseData.data.FirstSection.width}
-            height={DataScienceCourseData.data.FirstSection.height}
-            redirectWeb={DataScienceCourseData.data.form.webDevelopment}
-            usp1={DataScienceCourseData.data.FirstSection.usp1}
-            usp2={DataScienceCourseData.data.FirstSection.usp2}
-            usp3={DataScienceCourseData.data.FirstSection.usp3}
-            usp4={DataScienceCourseData.data.FirstSection.usp4}
-            usp1Span={DataScienceCourseData.data.FirstSection.usp1Span}
-            usp2Span={DataScienceCourseData.data.FirstSection.usp2Span}
-            usp3Span={DataScienceCourseData.data.FirstSection.usp3Span}
-            usp4Span={DataScienceCourseData.data.FirstSection.usp4Span}
+          <Header
+            title={DataScienceCourseData.data.header.title}
+            desc={DataScienceCourseData.data.header.desc}
+            redirectFs={DataScienceCourseData.data.header.FullStack}
+            imgSrc={DataScienceCourseData.data.header.imgSrc}
+            hrs={DataScienceCourseData.data.header.hour}
+            certification={DataScienceCourseData.data.header.certification}
+            offerPrice={DataScienceCourseData.data.header.offerPrice}
+            actualPrice={DataScienceCourseData.data.header.actualPrice}
+            checkoutLink={DataScienceCourseData.data.header.link}
+            discount={DataScienceCourseData.data.header.discount}
+            link={DataScienceCourseData.data.header.link}
+            redirectDs={DataScienceCourseData.data.header.dataScience}
+            redirectDa={DataScienceCourseData.data.header.dataAnalytics}
+            nomicrosoft={DataScienceCourseData.data.header.nomicrosoft}
+          />
+          <Learn
+            firstPoint={DataScienceCourseData.data.header.firstPoint}
+            redirectFs={DataScienceCourseData.data.header.FullStack}
+            secondPoint={DataScienceCourseData.data.header.secondPoint}
+            thirdPoint={DataScienceCourseData.data.header.thirdPoint}
+            fourthPoint={DataScienceCourseData.data.header.fourthPoint}
           />
 
           {/* <AutoPopUp /> */}
 
-          <div className={styles.program}>
+          {/* <div className={styles.program}>
             <ProgramInfo
               BatchDate={DataScienceCourseData.data.ProgramInfo.BatchDate}
               BatchDuration={
@@ -452,13 +443,13 @@ export default function Home({
               }
               redirectDSA={redirectDSA}
               redirectFs={redirectFs}
-              Emi={DataScienceCourseData.data.FirstSection.usp3Span}
+              Emi={DataScienceCourseData.data.header.usp3Span}
               redirectWeb={DataScienceCourseData.data.form.webDevelopment}
               Placement={DataScienceCourseData.data.ProgramInfo.Placement}
             />
-          </div>
+          </div> */}
 
-          <div id="trainer">
+          <div id="trainer" style={{ margin: "100px", marginTop: "100px" }}>
             <TrainerSlider
               heading={DataScienceCourseData.data.TrainerHeading}
               dataScience={false}
@@ -473,21 +464,26 @@ export default function Home({
               trainerSlider={
                 DataScienceCourseData.data.seoSection.trainerMentor
               }
+              NoTitle={DataScienceCourseData.data.header.NoTitle}
             />
+            {/* <Slider NoTitle={DataScienceCourseData.data.header.NoTitle}/> */}
           </div>
         </div>
         <div className="WrapperDiv">
           {DataScienceCourseData.data.form.seoPage ? (
             <SeoAbout
+              redirectFs={DataScienceCourseData.data.header.FullStack}
+              redirectDs={DataScienceCourseData.data.header.dataScience}
+              redirectDa={DataScienceCourseData.data.header.dataAnalytics}
               dataScience={false}
-              redirectDs={DataScienceCourseData.data.form.dataScience}
-              redirectFs={DataScienceCourseData.data.form.FullStack}
+              // redirectDs={DataScienceCourseData.data.form.dataScience}
+              // redirectFs={DataScienceCourseData.data.form.FullStack}
               redirectDe={DataScienceCourseData.data.form.DataEngineering}
               redirectBa={DataScienceCourseData.data.form.BusinessAnalytics}
               redirectDSA={DataScienceCourseData.data.form.dsa}
               redirectWeb={DataScienceCourseData.data.form.webDevelopment}
               seoAbout={DataScienceCourseData.data.seoAbout}
-              // seoAboutDesc={DataScienceCourseData.data.seoAboutDesc}
+              seoAboutDesc={DataScienceCourseData.data.seoAboutDesc}
               popupHead={DataScienceCourseData.data.popupHead}
               seoAboutHeading={
                 DataScienceCourseData.data.seoSection.seoAboutHeading
@@ -555,72 +551,15 @@ export default function Home({
             redirectDSA={DataScienceCourseData.data.form.dsa}
           /> */}
         </div>
-        {DataScienceCourseData.data.form.seoPage ? (
-          <SeoCertificate
-            dataScience={DataScienceCourseData.data.form.dataScience}
-            redirectDs={DataScienceCourseData.data.form.dataScience}
-            redirectFs={DataScienceCourseData.data.form.FullStack}
-            redirectDe={DataScienceCourseData.data.form.DataEngineering}
-            redirectBa={DataScienceCourseData.data.form.BusinessAnalytics}
-            redirectDSA={DataScienceCourseData.data.form.dsa}
-            redirectWeb={DataScienceCourseData.data.form.webDevelopment}
-            popupHead={
-              DataScienceCourseData.data.seoSection.SeoCertificate.popupHead
-            }
-            subheading={
-              DataScienceCourseData.data.seoSection.SeoCertificate.subheading
-            }
-            title={DataScienceCourseData.data.seoSection.SeoCertificate.title}
-            desc={DataScienceCourseData.data.seoSection.SeoCertificate.desc}
-            src={DataScienceCourseData.data.seoSection.SeoCertificate.src}
-            altM={DataScienceCourseData.data.seoSection.SeoCertificate.altM}
-            altR={DataScienceCourseData.data.seoSection.SeoCertificate.altR}
-            seoPage={DataScienceCourseData.data.form.seoPage}
-            MicrosoftPara={
-              DataScienceCourseData.data.seoSection.SeoCertificate.MicrosoftPara
-            }
-            CertificationPara={
-              DataScienceCourseData.data.seoSection.SeoCertificate
-                .CertificationPara
-            }
-            RealWorkPara={
-              DataScienceCourseData.data.seoSection.SeoCertificate.RealWorkPara
-            }
+
+        <div id="certificate">
+          <WhyUs
+            redirectDs={DataScienceCourseData.data.header.dataScience}
+            redirectDa={DataScienceCourseData.data.header.dataAnalytics}
+            nomicrosoft={DataScienceCourseData.data.header.nomicrosoft}
           />
-        ) : (
-          <div id="certificate">
-            {redirectFs ? (
-              ""
-            ) : (
-              <Certificate
-                dataScience={DataScienceCourseData.data.form.dataScience}
-                redirectDs={DataScienceCourseData.data.form.dataScience}
-                redirectFs={DataScienceCourseData.data.form.FullStack}
-                redirectDe={DataScienceCourseData.data.form.DataEngineering}
-                redirectBa={DataScienceCourseData.data.form.BusinessAnalytics}
-                redirectDSA={DataScienceCourseData.data.form.dsa}
-                redirectWeb={DataScienceCourseData.data.form.webDevelopment}
-                popupHead={DataScienceCourseData.data.Certificate.popupHead}
-                subheading={DataScienceCourseData.data.Certificate.subheading}
-                title={DataScienceCourseData.data.Certificate.title}
-                desc={DataScienceCourseData.data.Certificate.desc}
-                src={DataScienceCourseData.data.Certificate.src}
-                altM={DataScienceCourseData.data.Certificate.altM}
-                altR={DataScienceCourseData.data.Certificate.altR}
-                seoPage={DataScienceCourseData.data.form.seoPage}
-                MicrosoftPara={
-                  DataScienceCourseData.data.Certificate.MicrosoftPara
-                }
-                CertificationPara={
-                  DataScienceCourseData.data.Certificate.CertificationPara
-                }
-                RealWorkPara={
-                  DataScienceCourseData.data.Certificate.RealWorkPara
-                }
-              />
-            )}
-          </div>
-        )}
+        </div>
+        {DataScienceCourseData.data.form.seoPage ? <></> : <></>}
         <div className="WrapperDiv">
           {DataScienceCourseData.data.form.seoPage ? (
             <SeoSyllabus
@@ -655,20 +594,14 @@ export default function Home({
 
           {DataScienceCourseData.data.form.FullStack ? <ToolsCovered /> : ""}
         </div>
-        <div className="WrapperDiv">
-          <div id="project">
-            <ProjectSlider
-              heading={DataScienceCourseData.data.ProjectHeading}
-              redirectDs={DataScienceCourseData.data.form.dataScience}
-              redirectFs={DataScienceCourseData.data.form.FullStack}
-              redirectDe={DataScienceCourseData.data.form.DataEngineering}
-              redirectBa={DataScienceCourseData.data.form.BusinessAnalytics}
-              redirectDSA={DataScienceCourseData.data.form.dsa}
-              redirectWeb={DataScienceCourseData.data.form.webDevelopment}
-              seoPage={DataScienceCourseData.data.form.seoPage}
-              ProjectsPara={DataScienceCourseData.data.seoSection.ProjectsPara}
-            />
-          </div>
+        <div id="projects">
+          <ProjectSlider
+            noProject={DataScienceCourseData.data.header.noProject}
+            redirectBa={DataScienceCourseData.data.header.dataAnalytics}
+            heading="Hands-on Projects"
+            redirectDs={DataScienceCourseData.data.header.dataScience}
+            redirectFs={DataScienceCourseData.data.header.FullStack}
+          />
         </div>
         <div className="WrapperDiv">
           {redirectDs || redirectBa ? (

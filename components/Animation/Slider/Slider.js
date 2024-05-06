@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Slider.module.css";
 import Image from "next/image";
-const Slider = () => {
+const Slider = ({NoTitle}) => {
   const firstSlide = [
     {
       src: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Home/slider/Makemmytrip.png",
@@ -104,9 +104,10 @@ const Slider = () => {
   ];
   return (
     <div className="px-28 py-10 max-sm:px-5">
-      <h2 className="text-3xl font-semibold text-center mb-3 max-sm:text-xl">
+      {NoTitle ? (<></>):(<> <h2 className="text-3xl font-semibold text-center mb-3 max-sm:text-xl">
         Our Students at top tech companies
-      </h2>
+      </h2></>)}
+     
       <div className="relative overflow-hidden">
         <div
           className="absolute h-full w-[30%] z-10"
