@@ -123,7 +123,7 @@ const DataSciencePage = ({ DataScienceCourseData, }) => {
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}
         nomicrosoft={DataScienceCourseData.data.header.nomicrosoft}
 
-      />
+      /> 
       <PricingSection
         offerPrice={offerPrice}
         actualPrice={actualPrice}
