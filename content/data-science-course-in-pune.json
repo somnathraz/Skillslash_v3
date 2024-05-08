@@ -329,7 +329,27 @@
     ]
   },
  
-
+  "FirstSection": {
+    "deskTopPara": "India’s 1st",
+    "mTopPara": "India’s 1st",
+    "title": "Data Science Course in Australia",
+    "spanTitleText": "Live Project Based Learning Partnered with Tech Companies",
+    "desc": "Equip yourself with Data Science skills through live, interactive lectures guided by industry expert mentors",
+    "backgroundImg": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/advance-data-science-header-new-image.webp",
+    "mainHeaderImg": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/data-science-cover-image.webp",
+    "mainAlt": "Get Best Data Science Course in Australia",
+    "iconImg": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/web/New-UI/HomepageDataCollection.webp",
+    "usp1": " Live Interactive ",
+    "usp2": " Company ",
+    "usp3": " EMI Starting @",
+    "usp4": " 100% Interview",
+    "usp1Span": "Classroom",
+    "usp2Span": "Exp Certifications",
+    "usp3Span": "7867/month",
+    "usp4Span": "Guarantee",
+    "width": "398",
+    "height": "391"
+  },
   "header": {
     "title": "Data Science Course in Pune",
     "spanTitleText": "Live Project Based Learning Partnered with Tech Companies",
