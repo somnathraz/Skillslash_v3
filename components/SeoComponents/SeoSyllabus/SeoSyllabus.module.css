@@ -113,6 +113,7 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+  gap: 26px;
 }
 .Syllabusbutton h4 {
   margin-bottom: 0;
@@ -376,7 +377,7 @@
     margin: 85px 31px 0px 30px;
   }
   .syllabusLeft h2 {
-    font-size: 27px;
+    font-size: 24px;
   }
   .line {
     margin-left: 26px;

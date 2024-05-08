@@ -79,6 +79,9 @@ import Header from "../components/Skills/CoursePage/Header/Header";
 import Learn from "../components/Skills/CoursePage/Learn/Learn";
 import WhyUs from "../components/WhyUs/WhyUs";
 import Slider from "../components/Animation/Slider/Slider";
+import SkillsContent from "../components/Skills/CoursePage/SkillsContent/SkillsContent";
+import PricingSection from "../components/Skills/CoursePage/PricingSection/PricingSection";
+import BottomPrice from "../components/Skills/BottomPrice/BottomPrice";
 // import Newsletter from "../components/Newsletter/Newsletter";
 const VideoTestimonial = dynamic(() =>
   import("../components/VideoTestimonial/VideoTestimonial")
@@ -125,6 +128,17 @@ export default function Home({
   // const faq = useRef();
   // const cta = useRef();
   const today = new Date();
+
+  const [showNigeriaForm, setShowNigeriaForm] = useState(false);
+  const [actualPrice, setActualPrice] = useState(
+    DataScienceCourseData.data.header.actualPrice
+  );
+  const [offerPrice, setOfferPrice] = useState(
+    DataScienceCourseData.data.header.offerPrice
+  );
+  const [link, setLink] = useState(
+    DataScienceCourseData.data.header.indCheckout
+  );
 
   useEffect(() => {
     let width = window.innerWidth;
@@ -433,6 +447,23 @@ export default function Home({
             fourthPoint={DataScienceCourseData.data.header.fourthPoint}
           />
 
+          <SkillsContent
+            certification={DataScienceCourseData.data.header.certification}
+            hrs={DataScienceCourseData.data.header.hour}
+            redirectDs={DataScienceCourseData.data.header.dataScience}
+            redirectFs={DataScienceCourseData.data.header.FullStack}
+            redirectDa={DataScienceCourseData.data.header.dataAnalytics}
+            nomicrosoft={DataScienceCourseData.data.header.nomicrosoft}
+          />
+          <PricingSection
+            offerPrice={offerPrice}
+            actualPrice={actualPrice}
+            redirectDs={DataScienceCourseData.data.header.dataScience}
+            redirectFs={DataScienceCourseData.data.header.FullStack}
+            redirectDa={DataScienceCourseData.data.header.dataAnalytics}
+            checkoutLink={DataScienceCourseData.data.header.indCheckout}
+          />
+
           {/* <AutoPopUp /> */}
 
           {/* <div className={styles.program}>
@@ -449,7 +480,17 @@ export default function Home({
             />
           </div> */}
 
-          <div id="trainer" style={{ margin: "100px", marginTop: "100px" }}>
+          <div
+            id="trainer"
+            style={{
+              margin: "0",
+              marginTop: "0",
+              "@media only screen and (min-width: 768px)": {
+                margin: "100px",
+                marginTop: "100px",
+              },
+            }}
+          >
             <TrainerSlider
               heading={DataScienceCourseData.data.TrainerHeading}
               dataScience={false}
@@ -494,7 +535,7 @@ export default function Home({
           )}
 
           <div id="hired">
-            <MGetHired
+            {/* <MGetHired
               headingSection={DataScienceCourseData.data.AlumniHeading}
               heading1={DataScienceCourseData.data.GetHired.heading1}
               heading={DataScienceCourseData.data.GetHired.heading}
@@ -507,7 +548,7 @@ export default function Home({
               redirectWeb={DataScienceCourseData.data.form.webDevelopment}
               seoPage={DataScienceCourseData.data.form.seoPage}
               alumniPara={DataScienceCourseData.data.GetHired.alumniPara}
-            />
+            /> */}
           </div>
         </div>
         <div className="WrapperDiv">
@@ -690,7 +731,7 @@ export default function Home({
             />
           </div>
 
-          <BottomBar changeBottom={true} />
+          {/* <BottomBar changeBottom={true} /> */}
           {/* {mobile ? (
             ""
           ) : (
@@ -727,6 +768,16 @@ export default function Home({
           redirectDSA={DataScienceCourseData.data.form.dsa}
           redirectWeb={DataScienceCourseData.data.form.webDevelopment}
         /> */}
+        <BottomPrice
+          checkoutLink={DataScienceCourseData.data.header.indCheckout}
+          offerPrice={offerPrice}
+          actualPrice={actualPrice}
+          redirectDs={DataScienceCourseData.data.header.dataScience}
+          redirectFs={DataScienceCourseData.data.header.FullStack}
+          redirectDa={DataScienceCourseData.data.header.dataAnalytics}
+          link={DataScienceCourseData.data.header.link}
+          nomicrosoft={DataScienceCourseData.data.header.nomicrosoft}
+        />
         <Footer />
       </div>
     </>
