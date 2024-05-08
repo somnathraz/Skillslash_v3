@@ -679,7 +679,7 @@ export default function Home({
           />
         </div>
 
-        <div id="date">
+        {/* <div id="date">
           {batchDateData === "" ? (
             ""
           ) : batchDateData === null ? (
@@ -703,7 +703,7 @@ export default function Home({
               redirectWeb={DataScienceCourseData.data.form.webDevelopment}
             />
           )}
-        </div>
+        </div> */}
         {redirectDs || redirectBa ? (
           <BatchProfile
           // seoPage={   DataScienceCourseData.data.form.seoPage}
