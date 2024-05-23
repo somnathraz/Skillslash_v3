@@ -104,7 +104,7 @@ const verify = () => {
             src="https://embed.lottiefiles.com/animation/50465"
             frameBorder={0}
           ></iframe>
-          <embed
+          {/* <embed
             src={`${storeCertificate.downloadFile}#toolbar=0`}
             frameBorder={0}
             allowFullScreen
@@ -117,15 +117,17 @@ const verify = () => {
             src={storeCertificate.downloadFile}
             frameBorder={0}
             className={styles.mobileFrame}
-          ></iframe>
+          ></iframe> */}
 
           <h2>Your certificate is verified!</h2>
           {storeCertificate === null ? (
             ""
           ) : (
-            <button>
-              <a href={storeCertificate.downloadFile}>Download certificate</a>
-            </button>
+            // <button>
+            //   <a href={storeCertificate.downloadFile}>Download certificate</a>
+            // </button>
+            ""
+            
           )}
         </div>
       ) : (
