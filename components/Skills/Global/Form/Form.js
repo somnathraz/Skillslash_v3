@@ -15,6 +15,7 @@ const Form = ({
   redirectDs,
   redirectFs,
   redirectDa,
+  redirectDM
 }) => {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
@@ -49,6 +50,9 @@ const Form = ({
   }
   if (redirectFs) {
     endPoint = "https://getform.io/f/e11a9831-3aef-43af-9b1a-93b36c58f7fb";
+  }
+  if(redirectDM){
+    endPoint="https://getform.io/f/kaz127eJ";
   }
 
   // Form Submit function
@@ -90,6 +94,9 @@ const Form = ({
     }
     if (redirectDa) {
       router.push("/Thankyou/business-analytics");
+    }
+    if (redirectDM){
+      router.push("/Thankyou/digital-marketing");
     }
   };
   let btnText = "Apply Now";

@@ -14,6 +14,7 @@ const VideoTestimonial = ({
   spanText,
   redirectDs,
   redirectDa,
+  dmPage,
 }) => {
   const [review, setReview] = useState(dsReview);
 
@@ -31,13 +32,13 @@ const VideoTestimonial = ({
       {/* <VideoPopup triggers={video} setTriggers={setVideo} ids="iT54dOHPQpU" /> */}
 
       <div className={styles.ReviewSlider}>
-        <div className={styles.headings}>
+      {dmPage ? (<></>):(<>  <div className={styles.headings}>
           <h2 className="text-center flex flex-col  mb-10 max-[1281px]:text-[42px] gap-3">
             {heading}
             <span className="text-[#f18350]">{spanText}</span>
           </h2>
         </div>
-        <VideoTestimonialSwiper review={review} />
+        <VideoTestimonialSwiper review={review} /></>)}
         <Rating ratingData={ratingData} />
       </div>
     </>

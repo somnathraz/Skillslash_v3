@@ -8,7 +8,9 @@ const PricingSection = ({
   redirectDs,
   redirectDa,
   redirectFs,
-  checkoutLink
+  redirectDM,
+  checkoutLink,
+  dmPage,
 }) => {
   const [popups, setPopups] = useState(false);
   const popupShow = (demoClass, changeText) => {
@@ -26,6 +28,7 @@ const PricingSection = ({
             redirectDs={redirectDs}
             redirectFs={redirectFs}
             redirectDa={redirectDa}
+            redirectDM={redirectDM}
           />
         </div>
       </Popup>
@@ -41,7 +44,22 @@ const PricingSection = ({
           </span>
         </h3>
 
+       {dmPage ? (<>
+       
         <div className="flex flex-col mt-[20px] gap-4 w-full">
+          <div>
+          
+            <button
+              className="flex flex-col justify-center items-center bg-[#f18350] py-2 w-full"
+              onClick={() => popupShow()}
+              id="clck-apply-now-fees"
+            >
+             Apply Counselling
+            </button>
+       
+            {/* <hr className="border-b-2 border-b-[#2e2e2e] rounded-2xl w-full" /> */}
+          </div>
+        </div></>):(<> <div className="flex flex-col mt-[20px] gap-4 w-full">
           <div>
           <Link href={`${checkoutLink}`}>
             <button
@@ -54,7 +72,7 @@ const PricingSection = ({
             </Link>
             {/* <hr className="border-b-2 border-b-[#2e2e2e] rounded-2xl w-full" /> */}
           </div>
-        </div>
+        </div></>)}
       </div>
     </div>
   );

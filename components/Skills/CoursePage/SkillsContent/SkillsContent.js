@@ -19,8 +19,10 @@ const SkillsContent = ({
   redirectDs,
   redirectFs,
   redirectDa,
+  redirectDM,
   newDataScience,
   nomicrosoft ,
+  dmPage ,
 }) => {
   const [idBtnO, setIdBtnO] = useState("program-slo");
   const [popups, setPopups] = useState(false);
@@ -46,6 +48,7 @@ const SkillsContent = ({
           redirectDs={redirectDs}
           redirectFs={redirectFs}
           redirectDa={redirectDa}
+          redirectDM={redirectDM}
         />
       </div>
     </Popup>
@@ -55,18 +58,89 @@ const SkillsContent = ({
         Course Content    
       </h3>
       {/* <hr className="border-b-4 border-b-[#f18350] rounded-2xl w-[130px]" /> */}
-      <div className="flex flex-col gap-2 px-7 max-[741px]:px-3 max-sm:px-0">
+   {dmPage ? (<>
+            <div className="flex flex-col gap-2 px-7 max-[741px]:px-3">
+              <p className="flex gap-2 items-center justify-between py-2">
+                <span className="flex gap-2 items-center">
+                  <MdOutlineVideocam className="text-xl" />
+                  Learning Mode
+                </span>
+
+                <span>
+                 <b>Live</b>
+                </span>
+              </p>
+             
+                
+                  <hr />
+                  <p className="flex gap-2 items-center justify-between py-2">
+                    <span className="flex gap-2 items-center">
+                      <MdLiveTv className="text-xl" />
+                      Tools
+                    </span>
+                    <span>
+                      <b>100+</b>
+                    </span>
+                  </p>
+              
+           
+          
+                  <hr />
+                  <p className="flex gap-2 items-center justify-between py-2">
+                    <span className="flex gap-2 items-center">
+                      <MdLiveTv className="text-xl" />
+                      Certificates
+                    </span>
+                    <span>
+                      <b>10+</b>
+                    </span>
+                  </p>
+
+              
+                
+              
+              <hr />
+              <p className="flex gap-2 items-center justify-between py-2">
+                <span className="flex gap-2 items-center">
+                  <MdLockOpen className="text-xl" />
+                  Branded Case-Studies
+                </span>
+                <span>
+                  <b>30+</b>
+                </span>
+              </p>
+              <hr />
+              <p className="flex gap-2 items-center justify-between py-2">
+                <span className="flex gap-2 items-center">
+                  <PiCertificateBold className="text-xl" />
+                  1:1 Doubt Session-
+                </span>
+              <span><b>Daily</b></span>
+              </p>
+
+            
+              <hr />
+              <p className="flex gap-2 items-center justify-between py-2">
+                <span className="flex gap-2 items-center">
+                  <PiCertificateBold className="text-xl" />
+                  Premium Career Support
+                </span>
+              <span><b>Included</b></span>
+              </p>
+            </div></>):(<> 
+   
+     <div className="flex flex-col gap-2 px-7 max-[741px]:px-3 max-sm:px-0">
         <p className="flex gap-2 items-center justify-between py-2">
           <span className="flex gap-2 items-center">
             <MdOutlineVideocam className="text-2xl text-[#4f419a]" />
             Learning Mode
           </span>
-          
-          {nomicrosoft ? (<> <span>
+           {nomicrosoft ? ( <span>
                   <b>Self-paced</b>
-                </span></>):( <span>
+                </span>):( <span>
                   <b>Blended</b>
                 </span>)}
+         
                
         </p>
         {nomicrosoft ?(<></>):(<>
@@ -126,7 +200,7 @@ const SkillsContent = ({
           </span></>)}
           
         </p>
-      </div>
+      </div></>)}
     </div>
     {/* {newDataScience ? (
       ""

@@ -12,6 +12,7 @@ const MegaMenu = ({ handleIcon }) => {
   const [popular, setPopular] = useState(true);
   const [DataScience, setDataScience] = useState(false);
   const [software, setSoftware] = useState(false);
+  const [dM, setDM] = useState(false)
 
   const [mobile, setMobile] = useState(false);
   useEffect(() => {
@@ -192,15 +193,37 @@ const MegaMenu = ({ handleIcon }) => {
                 setPopular(false);
                 setDataScience(false);
                 setSoftware(true);
+                setDM(false)
+         
               }}
             >
               <div className={styles.innerSpan}>
                 <MdOutlineLiveTv className={styles.MenuIcon} />
                 <div>Blended</div>
               </div>
+              
+
+              
               <IoIosArrowDown />
             </span>
-            {software ? (
+            <span
+              className={dM ? styles.activeSpan : styles.normalSpan}
+              onClick={() => {
+                setPopular(false);
+                setDataScience(false);
+                setSoftware(false);
+                setDM(true)
+              }}
+            >
+              <div className={styles.innerSpan}>
+                <MdOutlineLiveTv className={styles.MenuIcon} />
+                <div>Digital Marketing</div>
+              </div>
+
+              
+              <IoIosArrowDown />
+            </span>
+            {dM ? (
               <div className={styles.gridPanel}>
                
                 <div className={styles.gridPanel}>
@@ -208,47 +231,15 @@ const MegaMenu = ({ handleIcon }) => {
                   className={styles.mInnerBox}
                   onClick={() => handleIcon(false)}
                 >
-                  <a href="/selfpaced/data-science-&-aI-bootcamp">
+                  <a href="/liveclass/master-digital-marketing-course">
                     <div className={styles.mInnerBoxDiv}>
-                      <h5>Data Science & AI Bootcamp</h5>
-                      <span>
-                        <div>2 Live Projects</div>
-                        <BsDot className={styles.dot} />
-                        <div>self-paced videos</div>
-                      </span>
+                      <h5>Master Digital Marketing Course</h5>
+                      
                     </div>
                   </a>
                 </div>
-                <a href="/selfpaced/dsa-system-design-bootcamp">
-                  <div
-                    className={styles.mInnerBox}
-                    onClick={() => handleIcon(false)}
-                  >
-                    <div className={styles.mInnerBoxDiv}>
-                      <h5>DSA & System Design Bootcamp</h5>
-                      <span>
-                        <div>2 Live Projects</div>
-                        <BsDot className={styles.dot} />
-                        <div>self-paced videos</div>
-                      </span>
-                    </div>
-                  </div>
-                </a>
-                <a href="/selfpaced/data-analytics-bootcamp">
-                  <div
-                    className={styles.mInnerBox}
-                    onClick={() => handleIcon(false)}
-                  >
-                    <div className={styles.mInnerBoxDiv}>
-                      <h5>Data Analytics Bootcamp</h5>
-                      <span>
-                        <div>2 Live Projects</div>
-                        <BsDot className={styles.dot} />
-                        <div>self-paced videos</div>
-                      </span>
-                    </div>
-                  </div>
-                </a>
+              
+             
               </div>
               </div>
             ) : (
@@ -256,12 +247,14 @@ const MegaMenu = ({ handleIcon }) => {
             )}
           </>
         ) : (
+          <>
           <span
             className={software ? styles.activeSpan : styles.normalSpan}
             onClick={() => {
               setPopular(false);
               setDataScience(false);
               setSoftware(true);
+              setDM(false)
             }}
           >
             <div className={styles.innerSpan}>
@@ -270,7 +263,27 @@ const MegaMenu = ({ handleIcon }) => {
             </div>
             <IoIosArrowForward />
           </span>
+
+             <span
+            className={dM ? styles.activeSpan : styles.normalSpan}
+            onClick={() => {
+              setPopular(false);
+              setDataScience(false);
+              setSoftware(false);
+              setDM(true)
+            }}
+          >
+
+            <div className={styles.innerSpan}>
+              <MdOutlineLiveTv className={styles.MenuIcon} />
+              <div>Digital Marketing</div>
+            </div>
+            <IoIosArrowForward />
+          </span>
+          </>
         )}
+
+        
       </div>
       <div className={styles.MiddleMenu}>
         <h6>Learn from top experts</h6>
@@ -319,6 +332,7 @@ const MegaMenu = ({ handleIcon }) => {
               </div>
             </a>
           </div>
+          
         ) : (
           ""
         )}
@@ -349,6 +363,7 @@ const MegaMenu = ({ handleIcon }) => {
           ""
         )}
         {software ? (
+          
           <div className={styles.gridPanel}>
             <div className={styles.mInnerBox} onClick={() => handleIcon(false)}>
               <a href="/selfpaced/data-science-&-aI-bootcamp">
@@ -396,7 +411,26 @@ const MegaMenu = ({ handleIcon }) => {
         ) : (
           ""
         )}
+             {dM ? (
+          
+          <div className={styles.gridPanel}>
+            <div className={styles.mInnerBox} onClick={() => handleIcon(false)}>
+              <a href="/liveclass/master-digital-marketing-course">
+                <div className={styles.mInnerBoxDiv}>
+                  <h5>Master Digital Marketing Course</h5>
+               
+                </div>
+              </a>
+            </div>
+       
+            
+          </div>
+        ) : (
+          ""
+        )}
+        
       </div>
+      
     </div>
   );
 };

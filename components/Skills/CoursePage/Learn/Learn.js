@@ -9,6 +9,7 @@ const Learn = ({
   thirdPoint,
   fourthPoint,
   redirectFs,
+  dmPage ,
 }) => {
   return (
     <div>
@@ -65,7 +66,60 @@ const Learn = ({
           <h2 className="text-4xl font-bold mt-3 max-[1281px]:text-2xl  max-[361px]:text-[20px]">
             Tools Covered
           </h2>
-          <div className="grid grid-cols-[14%,14%,14%,14%,14%,14%] gap-2">
+       {dmPage ? (<>
+       
+        <div className="grid grid-cols-[14%,14%,14%,14%,14%,14%] gap-2">
+            <div className="bg-[#4f419a] rounded flex items-center justify-center py-2">
+              <Image
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/semrush-logo.webp "
+                alt="Semrush "
+                width={200}
+                height={150}
+                loading="lazy"
+              />
+            </div>
+          
+            <div className="bg-[#EEEAFF] rounded flex items-center justify-center py-2">
+              <Image
+                src=" https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/google-icon.webp"
+                alt="Google"
+                width={ 150}
+                height={ 80}
+                loading="lazy"
+              />
+            </div>
+            <div className="bg-[#EEEAFF] rounded flex items-center justify-center py-2">
+              <Image
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/Meta-Logo.webp"
+                alt="Meta"
+                width={90}
+                height={50}
+                loading="lazy"
+              />
+            </div>
+            <div className="bg-[#EEEAFF] rounded flex items-center justify-center py-2">
+              <Image
+                src=" https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/LinkedIn-logo.webp"
+                alt="LinkdIn"
+                width={90}
+                height={80}
+                loading="lazy"
+              />
+            </div>
+            <div className="bg-[#EEEAFF] rounded flex items-center justify-center py-2">
+              <Image
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/hubspot-logo.webp   "
+                alt="HubSpot"
+                width={90}
+                height={60}
+                loading="lazy"
+              />
+
+            </div>
+            <div className="bg-[#EEEAFe] rounded flex items-center justify-center py-2">
+              <p><b>100+ Tools</b></p>
+            </div>
+          </div></>):(<>   <div className="grid grid-cols-[14%,14%,14%,14%,14%,14%] gap-2">
             <div className="bg-[#f18350] rounded flex items-center justify-center py-2">
               <Image
                 src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Header/sql.png"
@@ -133,7 +187,7 @@ const Learn = ({
                 loading="lazy"
               />
             </div>
-          </div>
+          </div></>)}
         </div>
       </div>
     </div>

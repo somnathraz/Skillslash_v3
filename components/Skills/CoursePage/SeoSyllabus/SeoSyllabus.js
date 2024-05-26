@@ -16,6 +16,7 @@ function DataScienceSyllabus({
   redirectDs,
   redirectFs,
   redirectDa,
+  redirectDM,
 }) {
   const [state, setState] = useState(seoSyllabus);
   const [popups, setPopups] = useState(false);
@@ -47,6 +48,7 @@ function DataScienceSyllabus({
             redirectDs={redirectDs}
             redirectFs={redirectFs}
             redirectDa={redirectDa}
+            redirectDM={redirectDM}
           />
         </div>
       </Popup>
@@ -178,7 +180,9 @@ function DataScienceSyllabus({
   
             redirectDs={redirectDs}
             redirectFs={redirectFs}
-            redirectDa={redirectDa}/>
+            redirectDa={redirectDa}
+            redirectDM={redirectDM}
+            />
           </div>
         </div>
       </div>

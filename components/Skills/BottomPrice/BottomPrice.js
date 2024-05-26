@@ -15,6 +15,8 @@ const BottomPrice = ({
   changeHeading,
   newDataScience,
   nomicrosoft,
+  dmPage,
+  redirectDM,
 }) => {
   const [idBtnO, setIdBtnO] = useState("org-slo");
   const [popups, setPopups] = useState(false);
@@ -40,6 +42,7 @@ const BottomPrice = ({
             redirectDs={redirectDs}
             redirectFs={redirectFs}
             redirectDa={redirectDa}
+            redirectDM={redirectDM}
           />
         </div>
       </Popup>
@@ -47,11 +50,17 @@ const BottomPrice = ({
         <p className={styles.ofPr}>{offerPrice}</p>
         {/* {newDataScience && <p className={styles.acPr}>{actualPrice}</p>} */}
       </div>
-      <div className={styles.right} id={idBtnO}>
+      {dmPage ? (<>    <div className={styles.right} id={idBtnO}>
+   
+          <button id={idBtnO} onClick={popupShow}>Apply Counselling</button>
+   
+      </div></>):(<>    <div className={styles.right} id={idBtnO}>
         <Link href={checkoutLink} id={idBtnO}>
           <button id={idBtnO}>Buy Now</button>
         </Link>
-      </div>
+      </div></>)}
+    
+
       {nomicrosoft ? (<> <p className={styles.refund}>7-Days Money-Back Guarantee</p></>) : (<>      <p className={styles.refund}>15-Days Money-Back Guarantee</p></>)}
 
 
