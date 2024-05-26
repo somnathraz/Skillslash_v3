@@ -30,10 +30,10 @@ const WhyUs = ({ redirectDs, home, redirectDa, nomicrosoft, dmPage, redirectDM }
   const imageSrcDM = [
     "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Google-Ads-Display.webp",
     // Add other image URLs as needed
-    "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/semrush-cer.png",
+    "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/meta.jpeg",
     redirectDM
       ? "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/semrush-cer.png"
-      : "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/meta.jpeg",
+      : "",
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animateState, setAnimateState] = useState(true);
@@ -305,7 +305,7 @@ const WhyUs = ({ redirectDs, home, redirectDa, nomicrosoft, dmPage, redirectDM }
                    <div className="bg-white shadow rounded-lg px-7 py-4 flex flex-col gap-3">
                       <div className="relative w-full h-[180px]  ">
                         <Image
-                          src={imageSrcDM[2]}
+                          src={imageSrcDM[1]}
                           fill
                           alt="certificate image"
                           loading="lazy"
@@ -368,7 +368,7 @@ const WhyUs = ({ redirectDs, home, redirectDa, nomicrosoft, dmPage, redirectDM }
                   {dmPage ? (<>  <div className="bg-white shadow rounded-lg px-7 py-4 flex flex-col gap-3">
                       <div className="relative w-full h-[180px]  ">
                         <Image
-                          src={imageSrcDM[1]}
+                          src={imageSrcDM[2]}
                           fill
                           alt="certificate image"
                           loading="lazy"
