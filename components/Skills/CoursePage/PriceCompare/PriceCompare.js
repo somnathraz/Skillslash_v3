@@ -11,10 +11,11 @@ const PriceCompare = ({
   liveHr,
   offerPrice,
   nomicrosoft,
+  dmPage,
 }) => {
   return (
     <>
-      {nomicrosoft? (<></>):(<><h2 className={styles.heading}>Skillslash Bootcamp</h2></>)}
+   {dmPage ? (<></>):(<>   {nomicrosoft? (<></>):(<><h2 className={styles.heading}>Skillslash Bootcamp</h2></>)}</>)}
       <div className={styles.priceWrap}>
         <div className={styles.priceBox}>
           <div className={styles.priceHeader}>
