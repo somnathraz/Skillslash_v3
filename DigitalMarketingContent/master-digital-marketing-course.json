@@ -1,7 +1,7 @@
 {
   "header": {
-    "title": "Digital Marketing Master ",
-    "titletwo":"Course ",
+    "title": "Digital Marketing Master Course ",
+    "titletwo": " ",
     "spanTitleText": "Live Project based Self-paced Learning",
     "desc": "Complete Digital Marketing Course with Live sessions, 100+ Tools, 10+ Branded Certificate, guaranteed Internship and assured placement assistance.      ",
     "imgSrc": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Home/coursesection/data-analytics-header.webp",
@@ -14,25 +14,24 @@
     "checkoutLink": "https://courses.skillslash.com/learn/fast-checkout/178294?priceId=124746",
     "indCheckout": "https://courses.skillslash.com/learn/fast-checkout/178294?priceId=125932",
     "ngCheckout": "https://courses.skillslash.com/learn/fast-checkout/178294?priceId=120106",
-    "offerPrice": "₹ 50,000",
-    "actualPrice": "₹ 50,000",
+    "offerPrice": "₹ 65,000",
+    "actualPrice": "₹ 65,000",
     "USDActualPrice": " $ 200",
     "USDOfferPrice": "$ 100",
     "NigeriaActualPrice": "₦  300,000",
     "NigeriaOfferPrice": "₦ 150,000",
     "discount": "37%",
     "newDsa": false,
-    "dataScience":false,
-    "FullStack":false,
+    "dataScience": false,
+    "FullStack": false,
     "dataAnalytics": false,
-    "digitalmarketing":true,
+    "digitalmarketing": true,
     "certification": "3",
     "firstPoint": "Creating professional website on WordPress/Shopify and hoisting the same.      ",
     "secondPoint": "Email Marketing and Social media marketing   ",
     "thirdPoint": "SEO, SEM, GTM and application of  Gen-AI      ",
     "fourthPoint": "Performance Marketing - Google Ads, Google Analytics      ",
     "dmPage": true
-
   },
   "seoSyllabus": [
     {
@@ -47,7 +46,6 @@
             "chap": {
               "title": "Lesson 1:What is Digital Marketing (1 hr)",
               "desc": []
-              
             }
           },
           {
@@ -60,14 +58,12 @@
             "chap": {
               "title": "Lesson 3: Customer Journey (1 hr)",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 4: Marketing Funnel (1 hr)",
               "desc": []
-              
             }
           },
           {
@@ -129,14 +125,12 @@
             "chap": {
               "title": "Lesson 3: Create Theme Customisation (1 hrs)",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 4: Creating images using Canva(1 hrs)",
               "desc": []
-              
             }
           }
         ],
@@ -150,32 +144,24 @@
         "project": false,
         "hrs": 52,
         "title1": "Graphics Designing 1.0",
-        
+
         "content": [
           {
             "chap": {
               "title": "Lesson 1:- Introduction ( 4 hrs )",
-              "desc": [
-                "Overview of Canva and Looka, basic design principles."
-              
-              ]
+              "desc": ["Overview of Canva and Looka, basic design principles."]
             }
           },
           {
             "chap": {
               "title": "Lesson 2: Design Essentials (2 hrs)",
-              "desc": [
-                "Color theory, palettes, and typography basics."
-                
-              ]
+              "desc": ["Color theory, palettes, and typography basics."]
             }
           },
           {
             "chap": {
               "title": "Lesson 3: Layout and Composition (1 hrs)",
-              "desc": [
-                "Effective layout techniques using Canva."
-              ]
+              "desc": ["Effective layout techniques using Canva."]
             }
           },
           {
@@ -205,9 +191,7 @@
           {
             "chap": {
               "title": "Lesson 7: Portfolio Development (2 hrs)",
-              "desc": [
-                "Building a portfolio in Canva and presentation skills."
-              ]
+              "desc": ["Building a portfolio in Canva and presentation skills."]
             }
           }
         ],
@@ -228,7 +212,6 @@
               "title": "Lesson 1: Introduction",
               "desc": [
                 "Understanding the role of content in digital marketing, an overview of ChatGPT and Scrib"
-                
               ]
             }
           },
@@ -298,7 +281,6 @@
               "title": "Lesson 1: Introduction",
               "desc": [
                 "Overview of SEO & evolution of search engines, impact of SEO in digital marketing"
-                
               ]
             }
           },
@@ -469,7 +451,6 @@
               "title": "Lesson 1: Meta Ads Part-1",
               "desc": [
                 "Create a business page, Meta Pixel, events, dynamic ad creative, A/B testing, targeting, advantage budget, cost caps & bidding strategies"
-                
               ]
             }
           },
@@ -506,7 +487,7 @@
             }
           }
         ],
-        
+
         "id": 7,
         "open": false
       }
@@ -783,56 +764,48 @@
             "chap": {
               "title": "Lesson 1: How to generate blog posts, social media updates, and email newsletters using ChatGPT",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 2: Use ChatGPT to craft engaging social media content",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 3: Creates subject lines, email copy, and CTAs for more compelling and personalized campaigns",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 4: Use ChatGPT to analyze user data to deliver personalized content recommendations, enhancing user experiences",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 5: Identifying hashtags, topics, and keywords for social media posts",
               "desc": []
-
             }
           },
           {
             "chap": {
               "title": "Lesson 6: Create an effective Customer Persona using ChatGPT Facebook, Google, and LinkedIn ads",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 7: Learn how to use prompts in Chat GPT for digital marketing tasks",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 8: Use ChatGPT to generate insights from marketing metrics",
               "desc": []
-              
             }
           }
         ],
@@ -852,63 +825,54 @@
             "chap": {
               "title": "Lesson 1: Introduction to CRM",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 2: Setting Up Your Zoho CRM Account",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 3: Managing Contacts",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 4: Managing Leads",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 5: Managing Deals and Opportunities",
               "desc": []
-
             }
           },
           {
             "chap": {
               "title": "Lesson 6: Managing Accounts",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 7: Activities and Tasks",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 8: Workflow Automation",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 9: Integration and Collaboration",
               "desc": []
-              
             }
           }
         ],
@@ -1018,56 +982,48 @@
             "chap": {
               "title": "Lesson 1: Introduction & why it is used",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 2: GTM account setup",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 3: Installing GTM on WordPress",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 4: Creating Tags, Trigger & Variables",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 5: Introduction to Data Layers",
               "desc": []
-
             }
           },
           {
             "chap": {
               "title": "Lesson 6: Custom HTML Tags",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 7: Implementing GTM for various platforms (Google Ads, Google Analytics, Meta & other platforms)",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 8: Conversion tracking & Debugging",
               "desc": []
-              
             }
           }
         ],
@@ -1374,14 +1330,12 @@
             "chap": {
               "title": "Lesson 1: Understand Indian digital trends: demographics, devices, and multi-screening.",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 2: Apply marketing principles like F and Purchase Cycle to guide strategy",
               "desc": []
-            
             }
           },
           {
@@ -1394,7 +1348,6 @@
             "chap": {
               "title": "Lesson 4: Capitalize on digital 'AHA Moments' in the customer journey.",
               "desc": []
-              
             }
           },
           {
@@ -1438,14 +1391,12 @@
             "chap": {
               "title": "Lesson 1: Finetune digital marketing strategies based on results",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 2: Creating digital measurement strategies in Omniture",
               "desc": []
-            
             }
           },
           {
@@ -1458,10 +1409,8 @@
             "chap": {
               "title": "Lesson 4: Measuring the ROI of different marketing channels",
               "desc": []
-              
             }
           }
-          
         ],
         "id": 21,
         "open": false
@@ -1479,14 +1428,12 @@
             "chap": {
               "title": "Lesson 1: Media Buying & Planning",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 2: Setting up the objectives & Budget",
               "desc": []
-            
             }
           },
           {
@@ -1499,17 +1446,14 @@
             "chap": {
               "title": "Lesson 4: Best practice to execute the campaigns",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 5: Create multiple formats according to the targeted digital platforms",
               "desc": []
-              
             }
           }
-          
         ],
         "id": 22,
         "open": false
@@ -1527,14 +1471,12 @@
             "chap": {
               "title": "Lesson 1: Real-time bidding",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 2: Understand DSP & SSP",
               "desc": []
-            
             }
           },
           {
@@ -1547,17 +1489,14 @@
             "chap": {
               "title": "Lesson 4: Types of Programmatic Advertising",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 5: Advantages and Challenges",
               "desc": []
-              
             }
           }
-          
         ],
         "id": 23,
         "open": false
@@ -1575,14 +1514,12 @@
             "chap": {
               "title": "Lesson 1: How to find profitable offers",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 2: Spy on other affiliates",
               "desc": []
-            
             }
           },
           {
@@ -1595,10 +1532,8 @@
             "chap": {
               "title": "Lesson 4: Scale successful campaigns to multiply earnings",
               "desc": []
-              
             }
           }
-          
         ],
         "id": 24,
         "open": false
@@ -1616,14 +1551,12 @@
             "chap": {
               "title": "Lesson 1: Introduction to ORM",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 2: Understanding the Importance of Online Reputation Management (ORM)",
               "desc": []
-            
             }
           },
           {
@@ -1636,108 +1569,92 @@
             "chap": {
               "title": "Lesson 4: Monitoring and Protecting Your Online Reputation",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 5: Improving Your Online Reputation",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 6: Contacting Review Websites",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 7: How to deal with Negative Reviews",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 8: Contacting the Negative Reviewer",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 9: The REALLY Bad Way of Handling Negative Business Reviews",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 10: How to Earn Better Reviews For Your Business",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 11: How to Build Positive Reviews exponentially",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 12: Identifying potential online reputation threats.",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 13: Creating a basic crisis response plan.",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 14: Strategies for generating positive online content..",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 15: Quick overview of influencer partnerships.",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 16: Utilizing user-generated content for reputation enhancement.",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 17: Defining key performance indicators (KPIs).",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 18: Analyzing metrics from ORM tools.",
               "desc": []
-              
             }
           }
-          
         ],
         "id": 25,
         "open": false
@@ -1755,14 +1672,12 @@
             "chap": {
               "title": "Lesson 1: What is Influencer Marketing",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 2: Benefits Influencer Marketing",
               "desc": []
-            
             }
           },
           {
@@ -1775,35 +1690,30 @@
             "chap": {
               "title": "Lesson 4: How to find influencers in Instagram, TikTok, YouTube, LinkedIn & Twitter",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 5: How to pick the right influencer",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 6: How to use influencers for Branding, engagement, or sales",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 7: How to create & negotiate commercial deals with Influencers based on the Marketing objective",
               "desc": []
-              
             }
           },
           {
             "chap": {
               "title": "Lesson 8: Create influencer campaigns",
               "desc": []
-              
             }
           }
         ],
@@ -1931,9 +1841,7 @@
           {
             "chap": {
               "title": "Lesson 6: User Engagement and Activation",
-              "desc": [
-                "Metrics analysis, Activation strategies, Case studies"
-              ]
+              "desc": ["Metrics analysis, Activation strategies, Case studies"]
             }
           },
           {
@@ -2117,9 +2025,7 @@
           {
             "chap": {
               "title": "Lesson 6: User Engagement and Activation",
-              "desc": [
-                "Metrics analysis, Activation strategies, Case studies"
-              ]
+              "desc": ["Metrics analysis, Activation strategies, Case studies"]
             }
           },
           {
@@ -2762,7 +2668,6 @@
         "open": false
       }
     }
-  
   ],
   "FaqDATA": [
     {
@@ -2842,5 +2747,4 @@
       "open": false
     }
   ]
-
 }

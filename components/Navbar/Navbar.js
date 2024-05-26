@@ -26,7 +26,15 @@ const MegaMenu = dynamic(() => import("../MegaMenu/MegaMenu"));
 
 //   return timeLeft;
 // };
-const Navbar = ({ link, event, ads, redirectDs, redirectFs, redirectDa, redirectDM }) => {
+const Navbar = ({
+  link,
+  event,
+  ads,
+  redirectDs,
+  redirectFs,
+  redirectDa,
+  redirectDM,
+}) => {
   const [idBtnB, setIdBtnW] = useState("org-slb");
 
   const [show, setShow] = useState(false);
@@ -161,7 +169,7 @@ const Navbar = ({ link, event, ads, redirectDs, redirectFs, redirectDa, redirect
               setShow(false);
             }}
           >
-         Our Courses
+            Our Courses
           </button>
           {ads ? (
             ""

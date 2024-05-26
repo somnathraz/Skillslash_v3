@@ -25,15 +25,24 @@ import PriceCompare from "../../components/Skills/CoursePage/PriceCompare/PriceC
 
 const DataSciencePage = ({ DataScienceCourseData }) => {
   const [showNigeriaForm, setShowNigeriaForm] = useState(false);
-  const [actualPrice, setActualPrice] = useState(DataScienceCourseData.data.header.actualPrice);
-  const [offerPrice, setOfferPrice] = useState(DataScienceCourseData.data.header.offerPrice);
-  const [link, setLink] = useState(DataScienceCourseData.data.header.indCheckout);
+  const [actualPrice, setActualPrice] = useState(
+    DataScienceCourseData.data.header.actualPrice
+  );
+  const [offerPrice, setOfferPrice] = useState(
+    DataScienceCourseData.data.header.offerPrice
+  );
+  const [link, setLink] = useState(
+    DataScienceCourseData.data.header.indCheckout
+  );
 
   return (
     <div>
       <Head>
         <title>{DataScienceCourseData.data.header.title}</title>
-        <meta name="description" content={DataScienceCourseData.data.header.desc} />
+        <meta
+          name="description"
+          content={DataScienceCourseData.data.header.desc}
+        />
       </Head>
       <Navbar
         link={DataScienceCourseData.data.header.link}
@@ -113,13 +122,11 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           redirectDM={DataScienceCourseData.data.header.digitalmarketing}
         />
       </div>
-     
+
       <div id="certificate">
         <WhyUs
           redirectDs={DataScienceCourseData.data.header.dataScience}
           redirectDa={DataScienceCourseData.data.header.dataAnalytics}
-
-     
           nomicrosoft={DataScienceCourseData.data.header.nomicrosoft}
           redirectDM={DataScienceCourseData.data.header.digitalmarketing}
           dmPage={DataScienceCourseData.data.header.dmPage}
@@ -138,16 +145,18 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         ""
       ) : (
         <VideoTestimonial
-  dmPage={DataScienceCourseData.data.header.dmPage}
+          dmPage={DataScienceCourseData.data.header.dmPage}
           redirectDa={DataScienceCourseData.data.header.dataAnalytics}
           redirectDs={DataScienceCourseData.data.header.dataScience}
-          
           heading="What is it like to train with us?"
           spanText="our learners say it best."
         />
       )}
       <div id="faq">
-        <FAQ heading="Frequently Asked Questions" FaqData={DataScienceCourseData.data.FaqDATA} />
+        <FAQ
+          heading="Frequently Asked Questions"
+          FaqData={DataScienceCourseData.data.FaqDATA}
+        />
       </div>
       <Footer />
       <WhatsappButton
@@ -164,7 +173,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}
         link={DataScienceCourseData.data.header.link}
         nomicrosoft={DataScienceCourseData.data.header.nomicrosoft}
-        dmPage ={DataScienceCourseData.data.header.dmPage }
+        dmPage={DataScienceCourseData.data.header.dmPage}
         redirectDM={DataScienceCourseData.data.header.digitalmarketing}
       />
     </div>
