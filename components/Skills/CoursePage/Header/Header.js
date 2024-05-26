@@ -14,6 +14,7 @@ import {
 } from "react-icons/md";
 import ButtonWaveAnimation from "../../../ButtonWaveAnimation/WaveAnimation";
 import { PiCertificateBold, PiMedal } from "react-icons/pi";
+import { TbRelationOneToMany } from "react-icons/tb";
 import VideoPlaylist from "../../Global/VideoPlaylist/VideoPlaylist";
 import { ratingData } from "../../../../components/VideoTestimonial/ratingData";
 
@@ -230,54 +231,70 @@ const Header = ({
           >
             Free Counselling
           </button>
-         {dmPage ? (<> </>):(<> <button
-            className="w-full min-[642px]:w-max text-[15px] px-3 border-[1px] bg-transparent border-solid border-[#fff] text-white rounded py-2 font-medium  flex justify-center items-center 
+          {dmPage ? (
+            <> </>
+          ) : (
+            <>
+              {" "}
+              <button
+                className="w-full min-[642px]:w-max text-[15px] px-3 border-[1px] bg-transparent border-solid border-[#fff] text-white rounded py-2 font-medium  flex justify-center items-center 
           max-sm:text-[12px] max-sm:px-2"
-            onClick={() => showVideo(true)}
-            id="clck-watch-demo"
-          >
-            Watch Demo{" "}
-            <FaYoutube className="text-[#FF0000] text-[24px] max-sm:text-[16px]" />
-          </button></>)}
+                onClick={() => showVideo(true)}
+                id="clck-watch-demo"
+              >
+                Watch Demo{" "}
+                <FaYoutube className="text-[#FF0000] text-[24px] max-sm:text-[16px]" />
+              </button>
+            </>
+          )}
         </div>
       </div>
       <div className="flex flex-col gap-7 relative w-full items-end justify-end">
         <div className="bg-white top-0 px-11 max-[1024px]:px-5 py-3 max-sm:px-0 rounded shadow flex flex-col w-full z-[1] max-sm:hidden absolute mt-28 max-[741px]:w-[52%] max-[741px]:top-0 max-[741px]:right-[-15px]">
           <div className="relative w-full  max-sm:w-[313px] h-[290px] max-[1281px]:h-[200px] max-sm:h-[220px] top-[-120px] max-sm:top-[-100px]  min-[1600px]:h-[320px] max-sm:left-7 max-sm:flex max-sm:justify-center">
-           {dmPage ? (<> <div >
-              <Image
-                src={imgSrc}
-                alt="headerImg"
-                fill
-                blurDataURL={rgbDataURL(237, 181, 6)}
-                priority
-                quality={40}
-                id={idBtnV}
-              />
-              {/* <MdOutlinePlayCircleOutline
+            {dmPage ? (
+              <>
+                {" "}
+                <div>
+                  <Image
+                    src={imgSrc}
+                    alt="headerImg"
+                    fill
+                    blurDataURL={rgbDataURL(237, 181, 6)}
+                    priority
+                    quality={40}
+                    id={idBtnV}
+                  />
+                  {/* <MdOutlinePlayCircleOutline
                 className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
                 id={idBtnV}
               /> */}
-            
-            </div></>):(<> <div onClick={() => showVideo(true)} id={idBtnV}>
-              <Image
-                src={imgSrc}
-                alt="headerImg"
-                fill
-                blurDataURL={rgbDataURL(237, 181, 6)}
-                priority
-                quality={40}
-                id={idBtnV}
-              />
-              {/* <MdOutlinePlayCircleOutline
+                </div>
+              </>
+            ) : (
+              <>
+                {" "}
+                <div onClick={() => showVideo(true)} id={idBtnV}>
+                  <Image
+                    src={imgSrc}
+                    alt="headerImg"
+                    fill
+                    blurDataURL={rgbDataURL(237, 181, 6)}
+                    priority
+                    quality={40}
+                    id={idBtnV}
+                  />
+                  {/* <MdOutlinePlayCircleOutline
                 className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
                 id={idBtnV}
               /> */}
-              <ButtonWaveAnimation
-                className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
-                id={idBtnV}
-              />
-            </div></>)}
+                  <ButtonWaveAnimation
+                    className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
+                    id={idBtnV}
+                  />
+                </div>
+              </>
+            )}
           </div>
           <div className="flex gap-2 w-full items-center mt-[-100px] max-sm:mt-[120px] max-sm:px-4">
             <p className="text-[#000000] flex gap-4 text-2xl font-bold items-center mr-3 mb-2">
@@ -298,102 +315,110 @@ const Header = ({
             />
             <p className="text-[#f18350] font-bold">({discount} Off)</p> */}
           </div>
-{dmPage ? (<>
-  <div className="flex flex-col gap-5 max-sm:px-4">
-            {newDataScience ? (
-              <>
-                <Link href={checkoutLink}>
-                  <button
-                    className="w-full px-4 bg-[#f18350] text-white rounded py-3 font-bold text-xl flex justify-center items-center"
-                    id={idBtnO}
-                  >
-                    Buy Now
-                  </button>
-                </Link>
-              </>
-            ) : (
-              <>
-              
-                  <button     onClick={() => popupShow()}
-                    className="w-full px-4 bg-[#f18350] text-white rounded py-3 font-bold text-xl flex justify-center items-center cursor-pointer transition duration-300 ease-in-out transform hover:bg-[#d76940] hover-animation"
-                    id={idBtnO}
-                  >
-                 Apply For Counselling
-                  </button>
-     
-                <>
-                  {dmPage ? (
-                    <p className="w-full d-flex justify-center items-center text-center"></p>
-                  ) : (
-                    <p className="w-full d-flex justify-center items-center text-center">
-                      {nomicrosoft ? (
-                        <>7-Days Money-Back Guarantee</>
-                      ) : (
-                        <>15-Days Money-Back Guarantee</>
-                      )}
-                    </p>
-                  )}
-                </>
-              </>
-            )}
-          </div>
+          {dmPage ? (
+            <>
+              <div className="flex flex-col gap-5 max-sm:px-4">
+                {newDataScience ? (
+                  <>
+                    <Link href={checkoutLink}>
+                      <button
+                        className="w-full px-4 bg-[#f18350] text-white rounded py-3 font-bold text-xl flex justify-center items-center"
+                        id={idBtnO}
+                      >
+                        Buy Now
+                      </button>
+                    </Link>
+                  </>
+                ) : (
+                  <>
+                    <button
+                      onClick={() => popupShow()}
+                      className="w-full px-4 bg-[#f18350] text-white rounded py-3 font-bold text-xl flex justify-center items-center cursor-pointer transition duration-300 ease-in-out transform hover:bg-[#d76940] hover-animation"
+                      id={idBtnO}
+                    >
+                      Apply For Counselling
+                    </button>
 
-</>):(<> <div className="flex flex-col gap-5 max-sm:px-4">
-            {newDataScience ? (
-              <>
-                <Link href={checkoutLink}>
-                  <button
-                    className="w-full px-4 bg-[#f18350] text-white rounded py-3 font-bold text-xl flex justify-center items-center"
-                    id={idBtnO}
-                  >
-                    Buy Now
-                  </button>
-                </Link>
-              </>
-            ) : (
-              <>
-                <Link href={checkoutLink}>
-                  <button
-                    className="w-full px-4 bg-[#f18350] text-white rounded py-3 font-bold text-xl flex justify-center items-center cursor-pointer transition duration-300 ease-in-out transform hover:bg-[#d76940] hover-animation"
-                    id={idBtnO}
-                  >
-                    Buy Now
-                  </button>
-                </Link>
-                <>
-                  {dmPage ? (
-                    <p className="w-full d-flex justify-center items-center text-center"></p>
-                  ) : (
-                    <p className="w-full d-flex justify-center items-center text-center">
-                      {nomicrosoft ? (
-                        <>7-Days Money-Back Guarantee</>
+                    <>
+                      {dmPage ? (
+                        <p className="w-full d-flex justify-center items-center text-center"></p>
                       ) : (
-                        <>15-Days Money-Back Guarantee</>
+                        <p className="w-full d-flex justify-center items-center text-center">
+                          {nomicrosoft ? (
+                            <>7-Days Money-Back Guarantee</>
+                          ) : (
+                            <>15-Days Money-Back Guarantee</>
+                          )}
+                        </p>
                       )}
-                    </p>
-                  )}
-                </>
-              </>
-            )}
-          </div></>)}
-         
+                    </>
+                  </>
+                )}
+              </div>
+            </>
+          ) : (
+            <>
+              {" "}
+              <div className="flex flex-col gap-5 max-sm:px-4">
+                {newDataScience ? (
+                  <>
+                    <Link href={checkoutLink}>
+                      <button
+                        className="w-full px-4 bg-[#f18350] text-white rounded py-3 font-bold text-xl flex justify-center items-center"
+                        id={idBtnO}
+                      >
+                        Buy Now
+                      </button>
+                    </Link>
+                  </>
+                ) : (
+                  <>
+                    <Link href={checkoutLink}>
+                      <button
+                        className="w-full px-4 bg-[#f18350] text-white rounded py-3 font-bold text-xl flex justify-center items-center cursor-pointer transition duration-300 ease-in-out transform hover:bg-[#d76940] hover-animation"
+                        id={idBtnO}
+                      >
+                        Buy Now
+                      </button>
+                    </Link>
+                    <>
+                      {dmPage ? (
+                        <p className="w-full d-flex justify-center items-center text-center"></p>
+                      ) : (
+                        <p className="w-full d-flex justify-center items-center text-center">
+                          {nomicrosoft ? (
+                            <>7-Days Money-Back Guarantee</>
+                          ) : (
+                            <>15-Days Money-Back Guarantee</>
+                          )}
+                        </p>
+                      )}
+                    </>
+                  </>
+                )}
+              </div>
+            </>
+          )}
+
           <div className="flex flex-col gap-2 py-4">
             <h3 className="text-xl font-bold px-5 py-1">Course Content</h3>
             <hr />
 
-          {dmPage ? (<>  <div className="flex flex-col gap-2 px-7 max-[741px]:px-3">
-              <p className="flex gap-2 items-center justify-between py-2">
-                <span className="flex gap-2 items-center">
-                  <MdOutlineVideocam className="text-xl" />
-                  Learning Mode
-                </span>
+            {dmPage ? (
+              <>
+                {" "}
+                <div className="flex flex-col gap-2 px-7 max-[741px]:px-3">
+                  <p className="flex gap-2 items-center justify-between py-2">
+                    <span className="flex gap-2 items-center">
+                      <MdOutlineVideocam className="text-xl" />
+                      Learning Mode
+                    </span>
 
-                <span>
-                 <b>Live</b>
-                </span>
-              </p>
-             
-                
+                    <span>
+                      <b>Live</b>
+                    </span>
+                  </p>
+
                   <hr />
                   <p className="flex gap-2 items-center justify-between py-2">
                     <span className="flex gap-2 items-center">
@@ -404,13 +429,11 @@ const Header = ({
                       <b>100+</b>
                     </span>
                   </p>
-              
-           
-          
+
                   <hr />
                   <p className="flex gap-2 items-center justify-between py-2">
                     <span className="flex gap-2 items-center">
-                      <MdLiveTv className="text-xl" />
+                      <PiCertificateBold className="text-xl" />
                       Certificates
                     </span>
                     <span>
@@ -418,131 +441,138 @@ const Header = ({
                     </span>
                   </p>
 
-              
-                
-              
-              <hr />
-              <p className="flex gap-2 items-center justify-between py-2">
-                <span className="flex gap-2 items-center">
-                  <MdLockOpen className="text-xl" />
-                  Branded Case-Studies
-                </span>
-                <span>
-                  <b>30+</b>
-                </span>
-              </p>
-              <hr />
-              <p className="flex gap-2 items-center justify-between py-2">
-                <span className="flex gap-2 items-center">
-                  <PiCertificateBold className="text-xl" />
-                  1:1 Doubt Session-
-                </span>
-              <span><b>Daily</b></span>
-              </p>
-
-            
-              <hr />
-              <p className="flex gap-2 items-center justify-between py-2">
-                <span className="flex gap-2 items-center">
-                  <PiCertificateBold className="text-xl" />
-                  Premium Career Support
-                </span>
-              <span><b>Included</b></span>
-              </p>
-            </div></>):(<>  <div className="flex flex-col gap-2 px-7 max-[741px]:px-3">
-              <p className="flex gap-2 items-center justify-between py-2">
-                <span className="flex gap-2 items-center">
-                  <MdOutlineVideocam className="text-xl" />
-                  Learning Mode
-                </span>
-
-                <span>
-                  {nomicrosoft ? (
-                    <>
-                      {" "}
-                      <b>Self-paced</b>
-                    </>
-                  ) : (
-                    <b>Blended</b>
-                  )}
-                </span>
-              </p>
-              {nomicrosoft ? (
-                <></>
-              ) : (
-                <>
                   <hr />
                   <p className="flex gap-2 items-center justify-between py-2">
                     <span className="flex gap-2 items-center">
-                      <MdLiveTv className="text-xl" />
-                      1:1 Doubt Session
+                      <MdLockOpen className="text-xl" />
+                      Branded Case-Studies
+                    </span>
+                    <span>
+                      <b>30+</b>
+                    </span>
+                  </p>
+                  <hr />
+                  <p className="flex gap-2 items-center justify-between py-2">
+                    <span className="flex gap-2 items-center">
+                      <TbRelationOneToMany className="text-xl" />
+                      1:1 Doubt Session-
                     </span>
                     <span>
                       <b>Daily</b>
                     </span>
                   </p>
-                </>
-              )}{" "}
-              {nomicrosoft ? (
-                <></>
-              ) : (
-                <>
-                  <hr />
-                  <p className="flex gap-2 items-center justify-between py-2">
-                    <span className="flex gap-2 items-center">
-                      <MdLiveTv className="text-xl" />
-                      Live Project Sessions
-                    </span>
-                    <span>
-                      <b>Weekly</b>
-                    </span>
-                  </p>
 
                   <hr />
                   <p className="flex gap-2 items-center justify-between py-2">
                     <span className="flex gap-2 items-center">
-                      <MdOutlineWorkHistory className="text-xl" />
-                      Career Support
+                      <PiCertificateBold className="text-xl" />
+                      Premium Career Support
                     </span>
                     <span>
                       <b>Included</b>
                     </span>
                   </p>
-                </>
-              )}
-              <hr />
-              <p className="flex gap-2 items-center justify-between py-2">
-                <span className="flex gap-2 items-center">
-                  <MdLockOpen className="text-xl" />
-                  Course Access
-                </span>
-                <span>
-                  <b>Lifetime</b>
-                </span>
-              </p>
-              <hr />
-              <p className="flex gap-2 items-center justify-between py-2">
-                <span className="flex gap-2 items-center">
-                  <PiCertificateBold className="text-xl" />
-                  Certifications
-                </span>
-                {nomicrosoft ? (
-                  <>
-                    {" "}
-                    <span>
-                      <b>1</b>
+                </div>
+              </>
+            ) : (
+              <>
+                {" "}
+                <div className="flex flex-col gap-2 px-7 max-[741px]:px-3">
+                  <p className="flex gap-2 items-center justify-between py-2">
+                    <span className="flex gap-2 items-center">
+                      <MdOutlineVideocam className="text-xl" />
+                      Learning Mode
                     </span>
-                  </>
-                ) : (
-                  <>
-                    {" "}
+
                     <span>
-                      <b>{certification}</b>
+                      {nomicrosoft ? (
+                        <>
+                          {" "}
+                          <b>Self-paced</b>
+                        </>
+                      ) : (
+                        <b>Blended</b>
+                      )}
                     </span>
-                  </>
-                )}
-              </p>
-            </div></>)}
+                  </p>
+                  {nomicrosoft ? (
+                    <></>
+                  ) : (
+                    <>
+                      <hr />
+                      <p className="flex gap-2 items-center justify-between py-2">
+                        <span className="flex gap-2 items-center">
+                          <MdLiveTv className="text-xl" />
+                          1:1 Doubt Session
+                        </span>
+                        <span>
+                          <b>Daily</b>
+                        </span>
+                      </p>
+                    </>
+                  )}{" "}
+                  {nomicrosoft ? (
+                    <></>
+                  ) : (
+                    <>
+                      <hr />
+                      <p className="flex gap-2 items-center justify-between py-2">
+                        <span className="flex gap-2 items-center">
+                          <MdLiveTv className="text-xl" />
+                          Live Project Sessions
+                        </span>
+                        <span>
+                          <b>Weekly</b>
+                        </span>
+                      </p>
+
+                      <hr />
+                      <p className="flex gap-2 items-center justify-between py-2">
+                        <span className="flex gap-2 items-center">
+                          <MdOutlineWorkHistory className="text-xl" />
+                          Career Support
+                        </span>
+                        <span>
+                          <b>Included</b>
+                        </span>
+                      </p>
+                    </>
+                  )}
+                  <hr />
+                  <p className="flex gap-2 items-center justify-between py-2">
+                    <span className="flex gap-2 items-center">
+                      <MdLockOpen className="text-xl" />
+                      Course Access
+                    </span>
+                    <span>
+                      <b>Lifetime</b>
+                    </span>
+                  </p>
+                  <hr />
+                  <p className="flex gap-2 items-center justify-between py-2">
+                    <span className="flex gap-2 items-center">
+                      <PiCertificateBold className="text-xl" />
+                      Certifications
+                    </span>
+                    {nomicrosoft ? (
+                      <>
+                        {" "}
+                        <span>
+                          <b>1</b>
+                        </span>
+                      </>
+                    ) : (
+                      <>
+                        {" "}
+                        <span>
+                          <b>{certification}</b>
+                        </span>
+                      </>
+                    )}
+                  </p>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </div>
