@@ -12,7 +12,7 @@ const MegaMenu = ({ handleIcon }) => {
   const [popular, setPopular] = useState(true);
   const [DataScience, setDataScience] = useState(false);
   const [software, setSoftware] = useState(false);
-  const [dM, setDM] = useState(false)
+  const [dM, setDM] = useState(false);
 
   const [mobile, setMobile] = useState(false);
   useEffect(() => {
@@ -137,11 +137,8 @@ const MegaMenu = ({ handleIcon }) => {
                 >
                   <a href="/selfpaced/data-science-&-ai-selfpaced">
                     <div className={styles.mInnerBoxDiv}>
-                      <h5>Data Science & AI  self-paced</h5>
-                      <span>
-                        
-                     
-                      </span>
+                      <h5>Data Science & AI self-paced</h5>
+                      <span></span>
                     </div>
                   </a>
                 </div>
@@ -152,18 +149,11 @@ const MegaMenu = ({ handleIcon }) => {
                   >
                     <div className={styles.mInnerBoxDiv}>
                       <h5>Data Analytics Self-paced</h5>
-                      <span>
-              
-                      
-                      </span>
+                      <span></span>
                     </div>
                   </div>
                 </a>
-                <a href="/selfpaced/data-analytics-selfpaced">
-              
-                </a>
-
-            
+                <a href="/selfpaced/data-analytics-selfpaced"></a>
               </div>
             ) : (
               ""
@@ -193,17 +183,14 @@ const MegaMenu = ({ handleIcon }) => {
                 setPopular(false);
                 setDataScience(false);
                 setSoftware(true);
-                setDM(false)
-         
+                setDM(false);
               }}
             >
               <div className={styles.innerSpan}>
                 <MdOutlineLiveTv className={styles.MenuIcon} />
                 <div>Blended</div>
               </div>
-              
 
-              
               <IoIosArrowDown />
             </span>
             <span
@@ -212,7 +199,7 @@ const MegaMenu = ({ handleIcon }) => {
                 setPopular(false);
                 setDataScience(false);
                 setSoftware(false);
-                setDM(true)
+                setDM(true);
               }}
             >
               <div className={styles.innerSpan}>
@@ -220,27 +207,22 @@ const MegaMenu = ({ handleIcon }) => {
                 <div>Digital Marketing</div>
               </div>
 
-              
               <IoIosArrowDown />
             </span>
             {dM ? (
               <div className={styles.gridPanel}>
-               
                 <div className={styles.gridPanel}>
-                <div
-                  className={styles.mInnerBox}
-                  onClick={() => handleIcon(false)}
-                >
-                  <a href="/liveclass/master-digital-marketing-course">
-                    <div className={styles.mInnerBoxDiv}>
-                      <h5>Master Digital Marketing Course</h5>
-                      
-                    </div>
-                  </a>
+                  <div
+                    className={styles.mInnerBox}
+                    onClick={() => handleIcon(false)}
+                  >
+                    <a href="/liveclass/master-digital-marketing-course">
+                      <div className={styles.mInnerBoxDiv}>
+                        <h5>Master Digital Marketing Course</h5>
+                      </div>
+                    </a>
+                  </div>
                 </div>
-              
-             
-              </div>
               </div>
             ) : (
               ""
@@ -248,42 +230,39 @@ const MegaMenu = ({ handleIcon }) => {
           </>
         ) : (
           <>
-          <span
-            className={software ? styles.activeSpan : styles.normalSpan}
-            onClick={() => {
-              setPopular(false);
-              setDataScience(false);
-              setSoftware(true);
-              setDM(false)
-            }}
-          >
-            <div className={styles.innerSpan}>
-              <MdOutlineLiveTv className={styles.MenuIcon} />
-              <div>Blended</div>
-            </div>
-            <IoIosArrowForward />
-          </span>
+            <span
+              className={software ? styles.activeSpan : styles.normalSpan}
+              onClick={() => {
+                setPopular(false);
+                setDataScience(false);
+                setSoftware(true);
+                setDM(false);
+              }}
+            >
+              <div className={styles.innerSpan}>
+                <MdOutlineLiveTv className={styles.MenuIcon} />
+                <div>Blended</div>
+              </div>
+              <IoIosArrowForward />
+            </span>
 
-             <span
-            className={dM ? styles.activeSpan : styles.normalSpan}
-            onClick={() => {
-              setPopular(false);
-              setDataScience(false);
-              setSoftware(false);
-              setDM(true)
-            }}
-          >
-
-            <div className={styles.innerSpan}>
-              <MdOutlineLiveTv className={styles.MenuIcon} />
-              <div>Digital Marketing</div>
-            </div>
-            <IoIosArrowForward />
-          </span>
+            <span
+              className={dM ? styles.activeSpan : styles.normalSpan}
+              onClick={() => {
+                setPopular(false);
+                setDataScience(false);
+                setSoftware(false);
+                setDM(true);
+              }}
+            >
+              <div className={styles.innerSpan}>
+                <MdOutlineLiveTv className={styles.MenuIcon} />
+                <div>Digital Marketing</div>
+              </div>
+              <IoIosArrowForward />
+            </span>
           </>
         )}
-
-        
       </div>
       <div className={styles.MiddleMenu}>
         <h6>Learn from top experts</h6>
@@ -332,7 +311,6 @@ const MegaMenu = ({ handleIcon }) => {
               </div>
             </a>
           </div>
-          
         ) : (
           ""
         )}
@@ -342,7 +320,6 @@ const MegaMenu = ({ handleIcon }) => {
               <a href="/selfpaced/data-science-&-ai-selfpaced">
                 <div className={styles.mInnerBoxDiv}>
                   <h5>Data Science & AI Self-paced</h5>
-
                 </div>
               </a>
             </div>
@@ -353,17 +330,14 @@ const MegaMenu = ({ handleIcon }) => {
               >
                 <div className={styles.mInnerBoxDiv}>
                   <h5>Data Analytics Self-paced</h5>
-
                 </div>
               </div>
             </a>
-
           </div>
         ) : (
           ""
         )}
         {software ? (
-          
           <div className={styles.gridPanel}>
             <div className={styles.mInnerBox} onClick={() => handleIcon(false)}>
               <a href="/selfpaced/data-science-&-aI-bootcamp">
@@ -411,26 +385,20 @@ const MegaMenu = ({ handleIcon }) => {
         ) : (
           ""
         )}
-             {dM ? (
-          
+        {dM ? (
           <div className={styles.gridPanel}>
             <div className={styles.mInnerBox} onClick={() => handleIcon(false)}>
               <a href="/liveclass/master-digital-marketing-course">
                 <div className={styles.mInnerBoxDiv}>
                   <h5>Master Digital Marketing Course</h5>
-               
                 </div>
               </a>
             </div>
-       
-            
           </div>
         ) : (
           ""
         )}
-        
       </div>
-      
     </div>
   );
 };
