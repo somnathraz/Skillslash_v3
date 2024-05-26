@@ -8,6 +8,7 @@ const PricingSection = ({
   redirectDs,
   redirectDa,
   redirectFs,
+  redirectDM,
   checkoutLink,
   dmPage,
 }) => {
@@ -27,6 +28,7 @@ const PricingSection = ({
             redirectDs={redirectDs}
             redirectFs={redirectFs}
             redirectDa={redirectDa}
+            redirectDM={redirectDM}
           />
         </div>
       </Popup>

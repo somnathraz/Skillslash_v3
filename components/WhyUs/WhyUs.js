@@ -4,7 +4,7 @@ import Image from "next/image";
 import { IoIosArrowBack } from "react-icons/io";
 import { motion, useScroll } from "framer-motion";
 
-const WhyUs = ({ redirectDs, home, redirectDa, nomicrosoft, dmPage }) => {
+const WhyUs = ({ redirectDs, home, redirectDa, nomicrosoft, dmPage, redirectDM }) => {
   const certRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: certRef.current,
@@ -25,6 +25,15 @@ const WhyUs = ({ redirectDs, home, redirectDa, nomicrosoft, dmPage }) => {
     redirectDa
       ? "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/certificate/VISHANT-VERMAWed-Jan-31-2024-12-36-01-GMT-0000--Coordinated-Universal-Time--325722i0gu.pdf.png"
       : "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/certificate/VISHANT-VERMAWed-Jan-31-2024-12-36-01-GMT-0000--Coordinated-Universal-Time--325722i0gu.pdf.png",
+  ];
+
+  const imageSrcDM = [
+    "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Google-Ads-Display.webp",
+    // Add other image URLs as needed
+    "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/semrush-cer.png",
+    redirectDM
+      ? "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/semrush-cer.png"
+      : "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/meta.jpeg",
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animateState, setAnimateState] = useState(true);
@@ -206,7 +215,7 @@ const WhyUs = ({ redirectDs, home, redirectDa, nomicrosoft, dmPage }) => {
             )}
           </>
         )}
-        {(redirectDs || home) && (
+        {(redirectDs || redirectDM || home) && (
           <div
             className="flex flex-col relative px-28 max-sm:px-5 h-[550px] max-[901px]:h-[900px] max-[1281px]:px-0  items-center gap-10 pb-[60px]  pt-10 "
             ref={certRef}
@@ -264,7 +273,132 @@ const WhyUs = ({ redirectDs, home, redirectDa, nomicrosoft, dmPage }) => {
             )}
 
             <div className="flex flex-col gap-4 items-center">
-              {nomicrosoft ? (
+              {dmPage ? (<>   {nomicrosoft ? (
+                <>
+                  <h3 className="text-4xl text-[#4f419a] font-bold">
+                    Course completion Certification
+                  </h3>
+                  <div className="grid grid-cols-1 mx-20 w-[500px]   gap-3 max-[961px]:grid-cols-2">
+                    <div className="bg-white shadow rounded-lg px-7 py-4 flex flex-col gap-3">
+                      <div className="relative w-full h-[310px]  ">
+                        <Image
+                          src={imageSrcselfpaced[2]}
+                          fill
+                          alt="certificate image"
+                        />
+                      </div>
+                      <h3 className="font-bold">skillslash Certificate</h3>
+                      <p>
+                        Enhance your resume and LinkedIn profile with the
+                        certificate from globally recognized institute.
+                      </p>
+                    </div>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <h3 className="text-4xl text-[#4f419a] font-bold">
+                    skillslash Certification
+                  </h3>
+                  <div className="grid grid-cols-3 gap-3 max-[961px]:grid-cols-2">
+                   {dmPage ? (<> 
+                   <div className="bg-white shadow rounded-lg px-7 py-4 flex flex-col gap-3">
+                      <div className="relative w-full h-[180px]  ">
+                        <Image
+                          src={imageSrcDM[2]}
+                          fill
+                          alt="certificate image"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h3 className="font-bold">Meta Certificate</h3>
+                      <p>
+                      Upgrade your resume and LinkedIn with a Meta-certified digital marketing course. Elevate your career with a globally recognized certification.
+                      </p>
+                    </div></>):(<> <div className="bg-white shadow rounded-lg px-7 py-4 flex flex-col gap-3">
+                      <div className="relative w-full h-[180px]  ">
+                        <Image
+                          src={imageSrc[2]}
+                          fill
+                          alt="certificate image"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h3 className="font-bold">Microsoft Certificate</h3>
+                      <p>
+                        Enhance your resume and LinkedIn profile with the
+                        certificate from global leader in this technology.
+                      </p>
+                    </div></>)}
+                    {dmPage ? (<><div className="bg-white shadow rounded-lg px-7 py-4 flex flex-col gap-3">
+                      <div className="relative w-full h-[180px]  ">
+                        <Image
+                          src={imageSrcDM[0]}
+                          fill
+                          alt="certificate image"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h3 className="font-bold">
+                      Google Ads Certification
+                      </h3>
+                      <p>
+                        Micro validation of your internship experience from
+                        Skill-AI, showcase the hiring manager the list of
+                        real-life projects you
+                      </p>
+                    </div></>):(<><div className="bg-white shadow rounded-lg px-7 py-4 flex flex-col gap-3">
+                      <div className="relative w-full h-[180px]  ">
+                        <Image
+                          src={imageSrc[1]}
+                          fill
+                          alt="certificate image"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h3 className="font-bold">
+                        Project Experience Certificate
+                      </h3>
+                      <p>
+                        Micro validation of your internship experience from
+                        Skill-AI, showcase the hiring manager the list of
+                        real-life projects you
+                      </p>
+                    </div></>)}
+                  {dmPage ? (<>  <div className="bg-white shadow rounded-lg px-7 py-4 flex flex-col gap-3">
+                      <div className="relative w-full h-[180px]  ">
+                        <Image
+                          src={imageSrcDM[1]}
+                          fill
+                          alt="certificate image"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h3 className="font-bold"> Semrush Certification</h3>
+                      <p>
+                        Showcase experience to recruiters with internship
+                        certificate from Skill-AI. Stand out of the crowd with
+                        experience.
+                      </p>
+                    </div></>):(<>  <div className="bg-white shadow rounded-lg px-7 py-4 flex flex-col gap-3">
+                      <div className="relative w-full h-[180px]  ">
+                        <Image
+                          src={imageSrc[0]}
+                          fill
+                          alt="certificate image"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h3 className="font-bold"> Internship Certificate</h3>
+                      <p>
+                        Showcase experience to recruiters with internship
+                        certificate from Skill-AI. Stand out of the crowd with
+                        experience.
+                      </p>
+                    </div></>)}
+                  </div>
+                </>
+              )}</>):(<>   {nomicrosoft ? (
                 <>
                   <h3 className="text-4xl text-[#4f419a] font-bold">
                     Course completion Certification
@@ -343,7 +477,8 @@ const WhyUs = ({ redirectDs, home, redirectDa, nomicrosoft, dmPage }) => {
                     </div>
                   </div>
                 </>
-              )}
+              )}</>)}
+           
             </div>
             <div className="w-full h-[220px] flex gap-2"></div>
           </div>

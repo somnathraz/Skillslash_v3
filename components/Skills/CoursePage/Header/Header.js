@@ -36,6 +36,7 @@ const Header = ({
   nomicrosoft,
   dmPage,
   titletwo,
+  redirectDM,
 }) => {
   const [show, setShow] = useState(false);
   const showVideo = (data) => {
@@ -76,6 +77,7 @@ const Header = ({
             redirectDs={redirectDs}
             redirectFs={redirectFs}
             redirectDa={redirectDa}
+            redirectDM={redirectDM}
           />
         </div>
       </Popup>
@@ -87,6 +89,7 @@ const Header = ({
           redirectDs={redirectDs}
           redirectFs={redirectFs}
           redirectDa={redirectDa}
+          redirectDM={redirectDM}
         />
       )}
 

@@ -19,6 +19,7 @@ const SkillsContent = ({
   redirectDs,
   redirectFs,
   redirectDa,
+  redirectDM,
   newDataScience,
   nomicrosoft ,
   dmPage ,
@@ -47,6 +48,7 @@ const SkillsContent = ({
           redirectDs={redirectDs}
           redirectFs={redirectFs}
           redirectDa={redirectDa}
+          redirectDM={redirectDM}
         />
       </div>
     </Popup>

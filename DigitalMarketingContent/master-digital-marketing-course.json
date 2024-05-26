@@ -1,7 +1,7 @@
 {
   "header": {
-    "title": "Digital Marketing ",
-    "titletwo":"Master Course ",
+    "title": "Digital Marketing Master ",
+    "titletwo":"Course ",
     "spanTitleText": "Live Project based Self-paced Learning",
     "desc": "Complete Digital Marketing Course with Live sessions, 100+ Tools, 10+ Branded Certificate, guaranteed Internship and assured placement assistance.      ",
     "imgSrc": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Home/coursesection/data-analytics-header.webp",
@@ -22,9 +22,10 @@
     "NigeriaOfferPrice": "₦ 150,000",
     "discount": "37%",
     "newDsa": false,
-    "dataScience": false,
-    "FullStack": false,
-    "dataAnalytics": true,
+    "dataScience":false,
+    "FullStack":false,
+    "dataAnalytics": false,
+    "digitalmarketing":true,
     "certification": "3",
     "firstPoint": "Creating professional website on WordPress/Shopify and hoisting the same.      ",
     "secondPoint": "Email Marketing and Social media marketing   ",
