@@ -218,7 +218,7 @@ const MegaMenu = ({ handleIcon }) => {
                   >
                     <a href="/liveclass/digital-marketing-master-course">
                       <div className={styles.mInnerBoxDiv}>
-                        <h5>Master Digital Marketing Course</h5>
+                        <h5> Digital Marketing Master Course</h5>
                       </div>
                     </a>
                   </div>
