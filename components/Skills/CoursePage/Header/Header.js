@@ -339,10 +339,9 @@ const Header = ({
                       Apply For Counselling
                     </button>
 
-                    <>
-                      {dmPage ? (
-                        <p className="w-full d-flex justify-center items-center text-center"></p>
-                      ) : (
+              
+                     
+                  
                         <p className="w-full d-flex justify-center items-center text-center">
                           {nomicrosoft ? (
                             <>7-Days Money-Back Guarantee</>
@@ -350,8 +349,8 @@ const Header = ({
                             <>15-Days Money-Back Guarantee</>
                           )}
                         </p>
-                      )}
-                    </>
+                    
+                  
                   </>
                 )}
               </div>

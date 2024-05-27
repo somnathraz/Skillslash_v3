@@ -73,8 +73,8 @@ const Learn = ({
               <Image
                 src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/semrush-logo.webp "
                 alt="Semrush "
-                width={200}
-                height={150}
+                width={90}
+                height={50}
                 loading="lazy"
               />
             </div>
@@ -83,7 +83,7 @@ const Learn = ({
               <Image
                 src=" https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/google-icon.webp"
                 alt="Google"
-                width={ 150}
+                width={ 90}
                 height={ 80}
                 loading="lazy"
               />
@@ -110,7 +110,7 @@ const Learn = ({
               <Image
                 src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/hubspot-logo.webp   "
                 alt="HubSpot"
-                width={90}
+                width={70}
                 height={60}
                 loading="lazy"
               />
