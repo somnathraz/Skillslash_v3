@@ -216,7 +216,7 @@ const MegaMenu = ({ handleIcon }) => {
                     className={styles.mInnerBox}
                     onClick={() => handleIcon(false)}
                   >
-                    <a href="/liveclass/master-digital-marketing-course">
+                    <a href="/liveclass/digital-marketing-master-course">
                       <div className={styles.mInnerBoxDiv}>
                         <h5>Master Digital Marketing Course</h5>
                       </div>
@@ -388,7 +388,7 @@ const MegaMenu = ({ handleIcon }) => {
         {dM ? (
           <div className={styles.gridPanel}>
             <div className={styles.mInnerBox} onClick={() => handleIcon(false)}>
-              <a href="/liveclass/master-digital-marketing-course">
+              <a href="/liveclass/digital-marketing-master-course">
                 <div className={styles.mInnerBoxDiv}>
                   <h5>Master Digital Marketing Course</h5>
                 </div>
