@@ -52,7 +52,7 @@ const BottomPrice = ({
           {offerPrice}
         
         </p>
-        <span className="text-sm font-normal	mt-[6px]	 text-[#363636]">
+        <span className="text-base font-normal	mt-[6px]	 text-[#363636]">
             {gst}
           </span>
         {/* {newDataScience && <p className={styles.acPr}>{actualPrice}</p>} */}
