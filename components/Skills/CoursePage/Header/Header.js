@@ -300,7 +300,7 @@ const Header = ({
           <div className="flex gap-2 w-full items-center mt-[-100px] max-sm:mt-[120px] max-sm:px-4">
             <p className="text-[#000000] flex gap-4 text-2xl font-bold  items-center mr-3 mb-2">
               {offerPrice}
-              <span className="text-sm font-normal ml-[-10px]	text-[#363636]">
+              <span className="text-base font-normal ml-[-10px]	text-[#363636]">
                 {gst}
               </span>
               {/* {newDataScience && (
