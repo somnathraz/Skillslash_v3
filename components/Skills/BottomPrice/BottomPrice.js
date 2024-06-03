@@ -17,6 +17,7 @@ const BottomPrice = ({
   nomicrosoft,
   dmPage,
   redirectDM,
+  gst,
 }) => {
   const [idBtnO, setIdBtnO] = useState("org-slo");
   const [popups, setPopups] = useState(false);
@@ -47,24 +48,39 @@ const BottomPrice = ({
         </div>
       </Popup>
       <div className={styles.left}>
-        <p className={styles.ofPr}>{offerPrice}</p>
+        <p className={styles.ofPr}>
+          {offerPrice}
+        
+        </p>
+        <span className="text-sm font-normal	mt-[6px]	 text-[#363636]">
+            {gst}
+          </span>
         {/* {newDataScience && <p className={styles.acPr}>{actualPrice}</p>} */}
       </div>
-      {dmPage ? (<>    <div className={styles.right} id={idBtnO}>
-   
-          <button id={idBtnO} onClick={popupShow}>Apply Counselling</button>
-   
-      </div></>):(<>    <div className={styles.right} id={idBtnO}>
-        <Link href={checkoutLink} id={idBtnO}>
-          <button id={idBtnO}>Buy Now</button>
-        </Link>
-      </div></>)}
-    
+      {dmPage ? (
+        <>
+          {" "}
+          <div className={styles.right} id={idBtnO}>
+            <button id={idBtnO} onClick={popupShow}>
+              Apply Counselling
+            </button>
+          </div>
+        </>
+      ) : (
+        <>
+          {" "}
+          <div className={styles.right} id={idBtnO}>
+            <Link href={checkoutLink} id={idBtnO}>
+              <button id={idBtnO}>Buy Now</button>
+            </Link>
+          </div>
+        </>
+      )}
 
-      {nomicrosoft ? (<> <p className={styles.refund}>7-Days Money-Back Guarantee</p></>) : (<>      <p className={styles.refund}>15-Days Money-Back Guarantee</p></>)}
-
-
-
+      <>
+        {" "}
+        <p className={styles.refund}>7-Days Money-Back Guarantee</p>
+      </>
     </div>
   );
 };

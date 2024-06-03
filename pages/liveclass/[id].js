@@ -69,6 +69,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         nomicrosoft={DataScienceCourseData.data.header.nomicrosoft}
         dmPage={DataScienceCourseData.data.header.dmPage}
         redirectDM={DataScienceCourseData.data.header.digitalmarketing}
+        gst={DataScienceCourseData.data.header.gst}
       />
       <Learn
         firstPoint={DataScienceCourseData.data.header.firstPoint}
@@ -175,6 +176,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         nomicrosoft={DataScienceCourseData.data.header.nomicrosoft}
         dmPage={DataScienceCourseData.data.header.dmPage}
         redirectDM={DataScienceCourseData.data.header.digitalmarketing}
+        gst={DataScienceCourseData.data.header.gst}
       />
     </div>
   );
