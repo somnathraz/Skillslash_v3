@@ -14,8 +14,8 @@
     "checkoutLink": "https://courses.skillslash.com/learn/fast-checkout/178294?priceId=124746",
     "indCheckout": "https://courses.skillslash.com/learn/fast-checkout/178294?priceId=125932",
     "ngCheckout": "https://courses.skillslash.com/learn/fast-checkout/178294?priceId=120106",
-    "offerPrice": "₹ 69,900",
-    "actualPrice": "₹ 69,900",
+    "offerPrice": "₹ 69,900 ",
+    "actualPrice": "₹ 69,900 ",
     "USDActualPrice": " $ 200",
     "USDOfferPrice": "$ 100",
     "NigeriaActualPrice": "₦  300,000",
@@ -31,7 +31,8 @@
     "secondPoint": "Email Marketing and Social media marketing   ",
     "thirdPoint": "SEO, SEM, GTM and application of  Gen-AI      ",
     "fourthPoint": "Performance Marketing - Google Ads, Google Analytics      ",
-    "dmPage": true
+    "dmPage": true,
+    "gst":"+18% GST"
   },
   "seoSyllabus": [
     {

@@ -38,6 +38,7 @@ const Header = ({
   dmPage,
   titletwo,
   redirectDM,
+  gst,
 }) => {
   const [show, setShow] = useState(false);
   const showVideo = (data) => {
@@ -297,14 +298,18 @@ const Header = ({
             )}
           </div>
           <div className="flex gap-2 w-full items-center mt-[-100px] max-sm:mt-[120px] max-sm:px-4">
-            <p className="text-[#000000] flex gap-4 text-2xl font-bold items-center mr-3 mb-2">
+            <p className="text-[#000000] flex gap-4 text-2xl font-bold  items-center mr-3 mb-2">
               {offerPrice}
+              <span className="text-sm font-normal ml-[-10px]	text-[#363636]">
+                {gst}
+              </span>
               {/* {newDataScience && (
                 <span className="line-through text-lg font-normal text-[#646464]">
                   {actualPrice}
                 </span>
               )} */}
             </p>
+
             {/* <Image
               src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/discount.png"
               alt="discount"
@@ -339,18 +344,13 @@ const Header = ({
                       Apply For Counselling
                     </button>
 
-              
-                     
-                  
-                        <p className="w-full d-flex justify-center items-center text-center">
-                          {nomicrosoft ? (
-                            <>7-Days Money-Back Guarantee</>
-                          ) : (
-                            <>15-Days Money-Back Guarantee</>
-                          )}
-                        </p>
-                    
-                  
+                    <p className="w-full d-flex justify-center items-center text-center">
+                      {nomicrosoft ? (
+                        <>7-Days Money-Back Guarantee</>
+                      ) : (
+                        <>7-Days Money-Back Guarantee</>
+                      )}
+                    </p>
                   </>
                 )}
               </div>
