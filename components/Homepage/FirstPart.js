@@ -3,11 +3,9 @@ import HomeFirstSection from "../FirstSection/HomeFirstSection";
 import { useRef } from "react";
 import { useScroll } from "framer-motion";
 import WhyUs from "../WhyUs/WhyUs";
-import CoursePath from "../Animation/CoursePath/CoursePath";
-import CourseSlider from "../CourseSlider/CourseSlider";
+
 import Slider from "../Animation/Slider/Slider";
-import WhyUsAnimate from "../Skills/CoursePage/WhyUsAnimate/WhyUsAnimate";
-import CompanyLogo from "../DigitalMarketing/compnayLogo/CompanyLogo";
+
 import Demand from "../DigitalMarketing/Demand/Demand";
 import WhyChooseUs from "../DigitalMarketing/WhyChooseUs/DmChoose";
 
