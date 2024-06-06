@@ -179,6 +179,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           spanText="our learners say it best."
         />
       )}
+
       <div id="faq">
         <FAQ
           heading="Frequently Asked Questions"
