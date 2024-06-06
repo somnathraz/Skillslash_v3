@@ -219,3 +219,14 @@
         font-size: 15px;
     }
 }
+
+@media only screen and (max-width: 419px) {
+.formhead {
+    gap: 5px;
+    font-size: 16px;
+}
+.formhead p{
+    font-size: 16px;
+}
+
+}
