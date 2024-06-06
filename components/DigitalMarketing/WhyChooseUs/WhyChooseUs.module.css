@@ -1,0 +1,140 @@
+.mainus {
+  margin-top: 176px;
+  padding: 28px 0 90px 0;
+
+  background: rgba(102, 89, 184, 0.1);
+}
+.mainus h2 {
+  display: flex;
+  justify-content: center;
+}
+.boxgroup {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 60px 300px;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 31.693px;
+  border: 2.827px solid #000;
+  background: #fffff5;
+  box-shadow: 5.654px 5.654px 0px 0px #000;
+  padding: 51px 38px;
+  text-align: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.box p {
+  color: #000;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.box h4 {
+  color: #6659b8;
+  text-align: center;
+
+  font-size: 45.848px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.downbox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  border: 3px solid #000;
+  background: #fff;
+  box-shadow: 8px 8px 0px 0px #000;
+  padding: 10px 30px;
+}
+
+/* Demand.module.css */
+
+.maindownbox {
+  display: flex;
+  justify-content: center;
+}
+
+.downbox {
+  display: flex;
+  position: relative;
+  justify-content: start;
+  align-items: center;
+  justify-items: center;
+  width: 940px;
+  height: 100px;
+  overflow: hidden; /* Ensure content stays within the box */
+}
+
+.backgroundImageWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Ensure the background is behind the content */
+}
+
+.content {
+  position: relative;
+  z-index: 1; /* Ensure the content is above the background */
+  color: white; /* Adjust text color for better readability */
+}
+
+.span {
+  color: #6659b8;
+
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.pup {
+  color: #000;
+  text-align: center;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 600px) {
+  .boxgroup {
+    display: grid;
+    flex-direction: column;
+    margin: 0;
+    grid-template-columns: 40% 40%;
+    margin-bottom: 40px;
+  }
+  .box {
+    padding: 12px 22px;
+  }
+  .maindownbox {
+    margin: 0px 28px;
+  }
+  .pup{
+    text-align:start;
+ 
+}
+.mainus {
+    margin-top: 36px;
+}
+.box h4 {
+    margin-bottom: 0;
+}
+}

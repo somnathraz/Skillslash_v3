@@ -27,8 +27,7 @@
   font-weight: 600;
   color: #4f419a;
 }
-.rightEmi h5 span {
-}
+
 .list {
   display: flex;
   flex-flow: column;
@@ -61,8 +60,8 @@
   justify-content: space-between;
   padding: 20px 30px;
   background: #4f419a;
-  background: linear-gradient(260deg, #6458a3 34%, #4f419a 83%);
-  border-radius: 8px;
+  background: linear-gradient(260deg, #6458a3 34%, #212121 83%);
+    border-radius: 8px;
   border: 1px solid rgb(255, 245, 233);
 }
 .top h6 {

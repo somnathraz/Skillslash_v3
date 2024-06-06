@@ -64,7 +64,7 @@ export default function Home() {
         ) : (
           ""
         )}
-        <FirstPart homePage={true} />
+        <FirstPart homePage={true} redirectDM={true} />
         <SecondPart homePage={true} />
         <WhatsappButton />
         {/* <CustomPopup />*/}
