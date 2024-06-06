@@ -6,7 +6,6 @@ import Popup from "../Skills/Global/Popup/Popup";
 import { useState } from "react";
 import Link from "next/link";
 
-
 const HomeFirstSection = ({
   title,
   deskTopPara,
@@ -20,15 +19,15 @@ const HomeFirstSection = ({
   redirectDM,
   gst,
 }) => {
-
   const [popups, setPopups] = useState(false);
   const popupShow = (demoClass, changeText) => {
     setPopups(true);
   };
-  const GenImg = "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/Bard_Dm.webp"
+  const GenImg =
+    "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/Bard_Dm.webp";
   return (
     <>
-       <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
+      <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
         <div className="RightPopup">
           {changeHeading ? (
             <h5>Download Program Handbook</h5>
@@ -54,63 +53,83 @@ const HomeFirstSection = ({
           <div className={Styles.leftdiv}>
             <div className={Styles.top}>
               <span> {deskTopPara}</span>
-             {homePage ? (<> <Image
-                src={GenImg}
-                width={30}
-                height={20}
-                alt="Bard"
-              /></>):(<></>)}
+              {homePage ? (
+                <>
+                  {" "}
+                  <Image src={GenImg} width={30} height={20} alt="Bard" />
+                </>
+              ) : (
+                <></>
+              )}
             </div>
 
             <h1>{title}</h1>
-            {dmPage ? (<><div className={Styles.EleCourse}>
-              <p>With Gen AI</p>
-              <Image
-                src={GenImg}
-                width={30}
-                height={20}
-                alt="Bard"
-              />
-
-
-     
-
-              </div>
-
+            {dmPage ? (
+              <>
+                <div className={Styles.EleCourse}>
+                  <p>With Gen AI</p>
+                  <Image src={GenImg} width={30} height={20} alt="Bard" />
+                </div>
 
                 <p className={Styles.para}>{spanTitleText}</p>
-        
               </>
-              
-              ):(<div className={Styles.Desc}>
-              <p>Students | Professionals | Entrepreneurs</p>
-            </div>)}
-            {dmPage ? (<>    <button  id="clck-free-counselling"
-            onClick={() => popupShow()} className={Styles.btn}>Apply for Counselling</button></>):(<>    <button  className={Styles.btn}>Explore course</button></>)}
+            ) : (
+              <div className={Styles.Desc}>
+                <p>Students | Professionals | Entrepreneurs</p>
+              </div>
+            )}
+            {dmPage ? (
+              <>
+                {" "}
+                <button
+                  id="clck-free-counselling"
+                  onClick={() => popupShow()}
+                  className={Styles.btn}
+                >
+                  Apply for Counselling
+                </button>
+              </>
+            ) : (
+              <>
+                {" "}
+                <Link href="/liveclass/digital-marketing-master-course">
+                <button className={Styles.btn}>Explore course</button>
+                </Link>
+              </>
+            )}
+          </div>
+          {homePage ? (
+            <>
+              {" "}
+              <div className={Styles.rytdiv}>
+                <Image
+                  src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/first_right.webp"
+                  width={500}
+                  height={800}
+                  quality={100}
+                  alt="Skillslash-Digital Marketing"
+                />
+              </div>
+              <Link href="/liveclass/digital-marketing-master-course">
+                <button className={Styles.btnmbl}>Explore course</button>
+              </Link>
+            </>
+          ) : (
+            <>
+              <div className={Styles.formDiv}>
+                <h2 className={Styles.formhead}>
+                  <p>Free Counselling</p> with Experts
+                </h2>
 
-        
-          </div>
- {homePage ? (<>  <div className={Styles.rytdiv}>
-            <Image
-              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/first_right.webp"
-              width={500}
-              height={800}
-              quality={100}
-              alt="Skillslash-Digital Marketing"
-            />
-          </div>
-          <Link href="/liveclass/digital-marketing-master-course">
-          <button  className={Styles.btnmbl}>Explore course</button></Link></>):(<>
-          <div className={Styles.formDiv}>
-<h2 className={Styles.formhead}><p>Free Counselling</p> with Experts</h2>
-
-          <Form  
-             redirectDs={redirectDs}
-             redirectFs={redirectFs}
-             redirectDa={redirectDa}
-             redirectDM={redirectDM}/>
-          </div>
-          </>)}
+                <Form
+                  redirectDs={redirectDs}
+                  redirectFs={redirectFs}
+                  redirectDa={redirectDa}
+                  redirectDM={redirectDM}
+                />
+              </div>
+            </>
+          )}
         </div>
 
         <div className={Styles.icons}>

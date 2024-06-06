@@ -69,3 +69,15 @@ font-weight: 500;
 line-height: normal;
 text-transform: capitalize;
 }
+
+@media only screen and (max-width: 600px) {
+
+
+
+    .headus {
+        font-size: 28px;
+    }
+    .headus span {
+        font-size: 28px;
+    }
+}
