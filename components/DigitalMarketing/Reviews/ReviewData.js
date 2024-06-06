@@ -7,8 +7,8 @@ const reviewsData = [
     },
     {
       id: 2,
-      src: "   https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/Review_Four.webp",
-      alt: "Review"
+      src: "   https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/review_two.webp",
+      alt: "Review Digital marketing"
     },
     {
       id: 3,
