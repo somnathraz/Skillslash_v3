@@ -71,7 +71,7 @@ const Learn = ({
         <div className="grid grid-cols-[14%,14%,14%,14%,14%,14%] gap-2">
             <div className="bg-[#4f419a] rounded flex items-center justify-center py-2">
               <Image
-                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/semrush-logo.webp "
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/Semrush_Icon.webp "
                 alt="Semrush "
                 width={90}
                 height={50}
@@ -81,7 +81,7 @@ const Learn = ({
           
             <div className="bg-[#EEEAFF] rounded flex items-center justify-center py-2">
               <Image
-                src=" https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/google-icon.webp"
+                src=" https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/Google.webp"
                 alt="Google"
                 width={ 90}
                 height={ 80}
@@ -90,7 +90,7 @@ const Learn = ({
             </div>
             <div className="bg-[#EEEAFF] rounded flex items-center justify-center py-2">
               <Image
-                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/Meta-Logo.webp"
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/Meta.webp"
                 alt="Meta"
                 width={90}
                 height={50}
@@ -99,7 +99,7 @@ const Learn = ({
             </div>
             <div className="bg-[#EEEAFF] rounded flex items-center justify-center py-2">
               <Image
-                src=" https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/LinkedIn-logo.webp"
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/LinkedIn.webp"
                 alt="LinkdIn"
                 width={90}
                 height={80}
@@ -108,7 +108,7 @@ const Learn = ({
             </div>
             <div className="bg-[#EEEAFF] rounded flex items-center justify-center py-2">
               <Image
-                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/hubspot-logo.webp   "
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/Hubspot_icon.webp  "
                 alt="HubSpot"
                 width={70}
                 height={60}
