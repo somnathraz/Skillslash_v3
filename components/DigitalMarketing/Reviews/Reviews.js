@@ -34,7 +34,7 @@ const Reviews = () => {
           {reviewsData.map((review) => (
             <SwiperSlide key={review.id}>
               <div className={styles.slidercard}>
-                <Image src={review.src} width={300} height={400} alt={review.alt} loading='lazy' />
+                <Image src={review.src} width={300} height={300} alt={review.alt} loading='lazy' />
               </div>
             </SwiperSlide>
           ))}
