@@ -22,6 +22,11 @@ import PricingSection from "../../components/Skills/CoursePage/PricingSection/Pr
 import CareerSupport from "../../components/Skills/CoursePage/CareerSupport/CareerSupport";
 import ToolsCovered from "../../components/Skills/CoursePage/ToolsCovered/ToolsCovered";
 import PriceCompare from "../../components/Skills/CoursePage/PriceCompare/PriceCompare";
+import HomeFirstSection from "../../components/FirstSection/HomeFirstSection";
+import NewChoose from "../../components/DigitalMarketing/Course/newChoose/NewChoose";
+import Tools from "../../components/DigitalMarketing/Course/Tools/Tools";
+import Talk from "../../components/DigitalMarketing/Talk/Talk";
+import Emi from "../../components/Course/EMI/Emi";
 
 const DataSciencePage = ({ DataScienceCourseData }) => {
   const [showNigeriaForm, setShowNigeriaForm] = useState(false);
@@ -51,7 +56,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         redirectFs={DataScienceCourseData.data.header.FullStack}
         redirectDM={DataScienceCourseData.data.header.digitalmarketing}
       />
-      <Header
+      {/* <Header
         title={DataScienceCourseData.data.header.title}
         titletwo={DataScienceCourseData.data.header.titletwo}
         desc={DataScienceCourseData.data.header.desc}
@@ -70,15 +75,21 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         dmPage={DataScienceCourseData.data.header.dmPage}
         redirectDM={DataScienceCourseData.data.header.digitalmarketing}
         gst={DataScienceCourseData.data.header.gst}
+      /> */}
+      <HomeFirstSection title={DataScienceCourseData.data.header.title}
+      dmPage={DataScienceCourseData.data.header.dmPage}
+      spanTitleText={DataScienceCourseData.data.header.spanTitleText}
+      redirectDM={DataScienceCourseData.data.header.digitalmarketing}
       />
-      <Learn
+     
+      {/* <Learn
         firstPoint={DataScienceCourseData.data.header.firstPoint}
         redirectFs={DataScienceCourseData.data.header.FullStack}
         secondPoint={DataScienceCourseData.data.header.secondPoint}
         thirdPoint={DataScienceCourseData.data.header.thirdPoint}
         fourthPoint={DataScienceCourseData.data.header.fourthPoint}
         dmPage={DataScienceCourseData.data.header.dmPage}
-      />
+      /> */}
       <SkillsContent
         certification={DataScienceCourseData.data.header.certification}
         hrs={DataScienceCourseData.data.header.hour}
@@ -99,6 +110,10 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         checkoutLink={DataScienceCourseData.data.header.indCheckout}
         dmPage={DataScienceCourseData.data.header.dmPage}
       />
+       <NewChoose/>
+
+      <Tools/>
+      
       <CareerSupport />
       <div id="modules">
         <DataScienceSyllabus
@@ -113,6 +128,17 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           redirectDM={DataScienceCourseData.data.header.digitalmarketing}
         />
       </div>
+      <div id="fee">
+          <Emi
+     
+            price={DataScienceCourseData.data.Fee.ProPrice}
+            emi={DataScienceCourseData.data.Fee.emi}
+            redirectDM={DataScienceCourseData.data.header.digitalmarketing}
+         
+           
+       
+          />
+        </div>
       <div id="projects">
         <ProjectSlider
           noProject={DataScienceCourseData.data.header.noProject}
@@ -159,6 +185,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           FaqData={DataScienceCourseData.data.FaqDATA}
         />
       </div>
+      <Talk/>
       <Footer />
       <WhatsappButton
         redirectDs={DataScienceCourseData.data.header.dataScience}

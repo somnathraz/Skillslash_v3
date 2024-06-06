@@ -37,6 +37,7 @@ const MegaMenu = ({ handleIcon }) => {
                 setPopular(true);
                 setDataScience(false);
                 setSoftware(false);
+                setDM(false)
               }}
             >
               <div className={styles.innerSpan}>
@@ -51,47 +52,14 @@ const MegaMenu = ({ handleIcon }) => {
                   className={styles.mInnerBox}
                   onClick={() => handleIcon(false)}
                 >
-                  <a href="/selfpaced/data-science-&-aI-bootcamp">
-                    <div className={styles.mInnerBoxDiv}>
-                      <h5>Data Science & AI Bootcamp</h5>
-                      <span>
-                        <div>2 Live Projects</div>
-                        <BsDot className={styles.dot} />
-                        <div>self-paced videos</div>
-                      </span>
-                    </div>
-                  </a>
+                     <a href="/liveclass/digital-marketing-master-course">
+                      <div className={styles.mInnerBoxDiv}>
+                        <h5>Digital Marketing Master Course</h5>
+                      </div>
+                    </a>
                 </div>
-                <a href="/selfpaced/dsa-system-design-bootcamp">
-                  <div
-                    className={styles.mInnerBox}
-                    onClick={() => handleIcon(false)}
-                  >
-                    <div className={styles.mInnerBoxDiv}>
-                      <h5>DSA & System Design Bootcamp</h5>
-                      <span>
-                        <div>2 Live Projects</div>
-                        <BsDot className={styles.dot} />
-                        <div>self-paced videos</div>
-                      </span>
-                    </div>
-                  </div>
-                </a>
-                <a href="/selfpaced/data-analytics-bootcamp">
-                  <div
-                    className={styles.mInnerBox}
-                    onClick={() => handleIcon(false)}
-                  >
-                    <div className={styles.mInnerBoxDiv}>
-                      <h5>Data Analytics Bootcamp</h5>
-                      <span>
-                        <div>2 Live Projects</div>
-                        <BsDot className={styles.dot} />
-                        <div>self-paced videos</div>
-                      </span>
-                    </div>
-                  </div>
-                </a>
+               
+                
               </div>
             ) : (
               ""
@@ -269,7 +237,7 @@ const MegaMenu = ({ handleIcon }) => {
         {popular ? (
           <div className={styles.gridPanel}>
             <div className={styles.mInnerBox} onClick={() => handleIcon(false)}>
-              <a href="/selfpaced/data-science-&-aI-bootcamp">
+              {/* <a href="/selfpaced/data-science-&-aI-bootcamp">
                 <div className={styles.mInnerBoxDiv}>
                   <h5>Data Science & AI Bootcamp</h5>
                   <span>
@@ -278,38 +246,15 @@ const MegaMenu = ({ handleIcon }) => {
                     <div>Live Project Sessions</div>
                   </span>
                 </div>
+              </a> */}
+               <a href="/liveclass/digital-marketing-master-course">
+                <div className={styles.mInnerBoxDiv}>
+                  <h5>Digital Marketing Master Course</h5>
+                </div>
               </a>
             </div>
-            <a href="/selfpaced/dsa-system-design-bootcamp">
-              <div
-                className={styles.mInnerBox}
-                onClick={() => handleIcon(false)}
-              >
-                <div className={styles.mInnerBoxDiv}>
-                  <h5>DSA & System Design Bootcamp</h5>
-                  <span>
-                    <div>Live Doubt Sessions</div>
-                    <BsDot className={styles.dot} />
-                    <div>Live Project Sessions</div>
-                  </span>
-                </div>
-              </div>
-            </a>
-            <a href="/selfpaced/data-analytics-bootcamp">
-              <div
-                className={styles.mInnerBox}
-                onClick={() => handleIcon(false)}
-              >
-                <div className={styles.mInnerBoxDiv}>
-                  <h5>Data Analytics Bootcamp</h5>
-                  <span>
-                    <div>Live Doubt Sessions</div>
-                    <BsDot className={styles.dot} />
-                    <div>Live Project Sessions</div>
-                  </span>
-                </div>
-              </div>
-            </a>
+          
+            
           </div>
         ) : (
           ""

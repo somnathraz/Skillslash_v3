@@ -1,0 +1,74 @@
+/* Tools.module.css */
+
+.toolsdiv {
+    border-radius: 40px;
+    background: #212121;
+    margin: 10px 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+    gap: 30px;
+  }
+  
+  .toolsdiv h2 {
+    color: #FFF;
+
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: capitalize;
+  }
+  .toolsdiv span {
+    color: #6659B8;
+text-align: center;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: capitalize;
+  }
+  .toolsdiv p {
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .andMore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF; /* Keep the text color consistent */
+    font-size: 24px; /* Match the existing font size */
+    width: 800px;
+    text-align: center;
+  }
+  
+  .andMore::before,
+  .andMore::after {
+    content: '';
+    flex: 1;
+    height: 1px; /* Set height for the pseudo-elements */
+    margin: 0 10px; /* Adjust the spacing as needed */
+  }
+  
+  .andMore::before {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(153, 153, 153, 1) 100%);
+  }
+  
+  .andMore::after {
+    background: linear-gradient(90deg, rgba(153, 153, 153, 1) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    .toolsdiv {
+      display: none;
+    }
+  }
+  

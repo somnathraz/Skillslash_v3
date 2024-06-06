@@ -17,6 +17,7 @@ const Emi = ({
   redirectFs,
   redirectDe,
   redirectBa,
+  redirectDM
 }) => {
   const [popups, setPopups] = useState(false);
   const [mobile, setMobile] = useState(false);
@@ -63,6 +64,7 @@ const Emi = ({
             redirectDe={redirectDe}
             redirectWeb={redirectWeb}
             redirectDSA={redirectDSA}
+            redirectDM={redirectDM}
           />
         </div>
       </Popup>

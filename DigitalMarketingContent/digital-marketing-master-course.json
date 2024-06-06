@@ -1,8 +1,9 @@
 {
   "header": {
-    "title": "Digital Marketing Master Course ",
+    "title": "Be a Global Leader in  Digital Marketing  ",
     "titletwo": " ",
-    "spanTitleText": "Live Project based Self-paced Learning",
+    
+    "spanTitleText": "Complete Digital Marketing Course with Live sessions, 100+ Tools, 10+ Branded Certificate, guaranteed Internship and assured placement assistance.",
     "desc": "Complete Digital Marketing Course with Live sessions, 100+ Tools, 10+ Branded Certificate, guaranteed Internship and assured placement assistance.      ",
     "imgSrc": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Home/coursesection/data-analytics-header.webp",
     "hour": "216+",
@@ -33,6 +34,16 @@
     "fourthPoint": "Performance Marketing - Google Ads, Google Analytics      ",
     "dmPage": true,
     "gst": "+18% GST"
+  },
+  "Fee": {
+    "desc": " The Data science course fees in Bangalore start from INR 65,000 (Excluding  GST). We aim to deliver to you quality education considering the aspect of feasibility.",
+    "desc1": "Skillslash's data science training in Bangalore are designed giving importance to affordability. The Data Science course fees is feasible to ensure fair reachability. Further, we provide you with options such as EMI to pay the course fees.",
+    "BasicPrice": "₹ 65,000 + GST",
+    "BasicDesc": "",
+    "ProPrice": "₹ 69,900 + GST ",
+    "ProDesc": "",
+    "ProMaxPrice": "₹ 1,49,999 + GST",
+    "ProMaxDesc": "Guaranteed job referral"
   },
   "seoSyllabus": [
     {

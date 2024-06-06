@@ -1,0 +1,118 @@
+/* Talk.module.css */
+
+.talkHead {
+  display: flex;
+  justify-content: center;
+margin: 20px 160px;
+}
+
+.talkMain {
+  position: relative;
+  width: 100%; /* Adjust to your desired width */
+  height: fit-content; /* Adjust to your desired height */
+  overflow: hidden; /* Ensure content stays within the box */
+  margin-bottom: 20px;
+  padding: 90px 80px; /* Keep the desktop padding */
+  border-radius: 40px; /* Keep the desktop border radius */
+}
+
+.backgroundImageWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Ensure the background is behind the content */
+  border-radius: 15px; /* Match border radius */
+  overflow: hidden; /* Ensure child elements don't overflow */
+}
+
+.content {
+  position: relative;
+  color: white;
+  display: grid;
+  grid-template-columns: 50%;
+}
+
+.gotspan {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.teamh5 {
+  color: #FFF;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 60px;
+}
+
+.para {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  width: 260px; /* Adjust width for mobile */
+}
+
+.btn {
+  display: flex;
+  width: fit-content;
+  border-radius: 41.5px;
+  border: 2px solid #000;
+  background: #FFF;
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+padding: 11px 46px;
+  box-shadow: -6px 6px 0px 0px #6659B8;
+}
+
+.icon {
+  color: #6659B8;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .talkHead {
+      margin: 50px 20px; /* Adjust margin for mobile */
+  }
+
+  .talkMain {
+      padding: 20px; /* Adjust padding for mobile */
+      border-radius: 15px; /* Adjust border radius for mobile */
+      margin: 50px 20px; /* Adjust margin for mobile */
+  }
+
+  .teamh5 {
+      font-size: 16px; /* Adjust font size for mobile */
+  }
+
+  .para {
+      font-size: 12px; /* Adjust font size for mobile */
+      width: 260px; /* Adjust width for mobile */
+  }
+
+  .btn {
+      font-size: 10px; /* Adjust font size for mobile */
+      padding: 10px 20px; /* Adjust padding for mobile */
+      border-radius: 20px; /* Adjust border radius for mobile */
+      box-shadow: -4px 4px 0px 0px #6659B8; /* Adjust shadow for mobile */
+  }
+
+  .icon {
+      font-size: 16px; /* Adjust font size for mobile */
+  }
+}

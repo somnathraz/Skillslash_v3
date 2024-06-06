@@ -7,10 +7,14 @@ import CoursePath from "../Animation/CoursePath/CoursePath";
 import CourseSlider from "../CourseSlider/CourseSlider";
 import Slider from "../Animation/Slider/Slider";
 import WhyUsAnimate from "../Skills/CoursePage/WhyUsAnimate/WhyUsAnimate";
+import CompanyLogo from "../DigitalMarketing/compnayLogo/CompanyLogo";
+import Demand from "../DigitalMarketing/Demand/Demand";
+import WhyChooseUs from "../DigitalMarketing/WhyChooseUs/DmChoose";
+
 const ProgramInfo = dynamic(() => import("../Course/ProgramInfo/ProgramInfo"));
 // const BoxAnimation = dynamic(() => import("../BoxAnimation/BoxAnimation"));
 
-const FirstPart = ({ homePage }) => {
+const FirstPart = ({ homePage,redirectDM }) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -18,9 +22,10 @@ const FirstPart = ({ homePage }) => {
   return (
     <>
       <HomeFirstSection
-        deskTopPara="India’s 1st"
-        mTopPara="India’s 1st"
-        title="Project Based Experiential Learning Platform"
+        deskTopPara="Gen AI Exclusive Course"
+        mTopPara=""
+
+        title="Be a Global Leader in Digital Marketing"
         spanTitleText=""
         homePage={homePage}
         desc="Get real work experience and certifications. Learn from industry experts and get placed in top product companies!"
@@ -35,16 +40,22 @@ const FirstPart = ({ homePage }) => {
         usp4Span="Guarantee"
         width="405"
         height="404"
+        btnTitle="Explore Courses"
+
       />
 
-      <ProgramInfo homePage={homePage} />
-      <Slider />
-      <CoursePath />
+<Slider />
+      <Demand redirectDM={redirectDM}/>
+      <WhyChooseUs/>
+
+      {/* <ProgramInfo homePage={homePage} /> */}
+    
+      {/* <CoursePath /> */}
       {/* <CourseSlider /> */}
-      <div ref={ref}>
+      {/* <div ref={ref}>
         <WhyUs scrollYProgress={scrollYProgress} home={true} />
-      </div>
-      <WhyUsAnimate home={true} />
+      </div> */}
+      {/* <WhyUsAnimate home={true} /> */}
       {/* <BoxAnimation /> */}
     </>
   );
