@@ -2,7 +2,8 @@ import React from "react";
 import dynamic from "next/dynamic";
 import VideoTestimonial from "../VideoTestimonial/VideoTestimonial";
 import Talk from "../DigitalMarketing/Talk/Talk";
-const Reviews = dynamic(() => import("../Review/Reviews"));
+import Reviews from "../DigitalMarketing/Reviews/Reviews";
+
 const Footer = dynamic(() => import("../Footer/Footer"));
 
 // const Newsletter = dynamic(() => import("../Newsletter/Newsletter"));
@@ -19,11 +20,7 @@ const SecondPart = ({ homePage }) => {
 "
         spanText="Our learners say it best"
       />
-      <Reviews
-        home={homePage}
-        title="Our Mission Is To Provide World-Class Education"
-        desc="Our courses are designed for both students and working professionals. Hear from our students to know more."
-      />
+<Reviews/>
       {/* <MiddlePageCta homePage={homePage} /> */}
       
       {/* <OurEvents /> */}
