@@ -138,6 +138,7 @@
   }
   .pup{
     text-align:start;
+    font-size: 20px;
  
 }
 .mainus {
@@ -145,5 +146,34 @@
 }
 .box h4 {
     margin-bottom: 0;
+}
+.rytdiv img {
+  top: 0;
+  width: 300px;
+  height: auto;
+  padding-bottom: 12px;
+}
+.boxgroup {
+gap: 30px 14px;
+
+
+}
+.box{
+  padding: 38px 5px;
+  max-width: 150px;
+  max-height: 190px;
+  gap: 4px;
+  border-radius: 16px;
+  background: #fff;
+
+}
+.box h4 {
+  font-size: 25px;
+}
+.box p {
+  font-size: 14px;
+}
+.span {
+  font-size: 20px;
 }
 }
