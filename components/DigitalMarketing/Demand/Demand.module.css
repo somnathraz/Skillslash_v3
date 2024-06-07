@@ -26,13 +26,18 @@
 .content {
   position: relative;
   z-index: 1;
-  max-width: 750px;
+  max-width: 690px;
+  max-height: 360px;
   border-radius: 40px;
   border: 2px solid #000;
   background: #FFF;
   box-shadow: -16px 16px 0px 0px #6659B8;
   padding: 36px 40px;
-  left: 90px;
+  left: 60px;
+
+}
+.content h2 {
+  font-size: 26px;
 }
 
 .h2 {
@@ -55,7 +60,7 @@
   -webkit-text-fill-color: transparent;
   font-weight: 600;
   font-size: 20px;
-  margin: 20px 0;
+margin: 3px 0px 18px 0;
 }
 
 .list {
@@ -67,12 +72,12 @@
 .details {
   display: grid;
   grid-template-columns: 37% 50%;
-  gap: 18px 20px;
+  gap: 10px 52px;
 }
 
 .list p {
   color: #313131;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 155%; /* 38.75px */
@@ -93,10 +98,12 @@
 
 .btn {
   display: grid;
-  grid-template-columns: 50% 20%;
-  gap: 60px;
+  grid-template-columns: 50% 40%;
+  gap: 57px;
+  width: -moz-fit-content;
   width: fit-content;
-  margin: 20px 0;
+  margin: 20px 0 0;
+
 }
 
 .btnryt {
@@ -140,7 +147,7 @@
   }
 
   .content {
-    max-width: 90%;
+    max-width: 100%;
     padding: 20px;
     left: 0;
     box-shadow: -8px 8px 0px 0px #6659B8;
@@ -173,7 +180,7 @@
   .btn {
     display: flex;
     justify-content: center;
-    margin: 10px 0;
+margin: 10px 20px 0;
     gap: 10px;
   }
 
