@@ -197,6 +197,7 @@
         padding: 10px;
         border-radius: 24px;
         flex-direction: column;
+        gap: 0;
     }
     .gridDiv h1 {
         font-size: 30px;
@@ -248,5 +249,9 @@
 .formhead p{
     font-size: 16px;
 }
+.main {
+    padding-top: 80px;
+}
+
 
 }
