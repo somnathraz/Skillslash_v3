@@ -47,7 +47,7 @@ const Demand = ({
           <Image 
   src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/Demand_bg.webp"
   layout="responsive"
-  width={120} // Set the width of your image
+  width={10} // Set the width of your image
   height={10} // Set the height of your image
   objectFit="cover"
   alt="bg Demand" 

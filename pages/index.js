@@ -45,7 +45,7 @@ export default function Home() {
 
   return (
     <div>
-      <Navbar course={false} link="https://courses.skillslash.com/learn" />
+      <Navbar course={false} link="https://courses.skillslash.com/learn"  homePage={true} redirectDM={true} />
       <div className={styles.container}>
         <Head>
           <title>Skillslash - Project Based Learning Platform.</title>

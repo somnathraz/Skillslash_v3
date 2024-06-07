@@ -8,13 +8,13 @@
 /* Grid container */
 .gridDiv {
     display: grid;
-    grid-template-columns: 55% 40%;
-    align-items: center;
+    grid-template-columns: 52% 40%;
+    /* align-items: center; */
     border-radius: 50px;
     margin: 0px 100px;
     background: rgba(217, 217, 217, 0.05);
-    padding: 20px 60px;
-    gap: 40px;
+    padding: 50px 60px;
+    gap: 100px;
 }
 
 /* Heading */
@@ -36,6 +36,13 @@
     -webkit-text-fill-color: transparent;
     font-weight: 600;
     font-size: 18px;
+}
+.headline h2 {
+    color: #F18350;
+font-size: 40px;
+font-style: normal;
+font-weight: 600;
+line-height: 127.182%;
 }
 
 /* Right side image */
@@ -131,35 +138,35 @@
 .EleCourse {
     display: flex;
     gap: 10px;
-    align-items: baseline;    
+    align-items:center;    
 }
 
 /* Element course text */
 .EleCourse p {
-    background: linear-gradient(90deg, #018DF2 0%, #A041FF 49.5%, #FF6B00 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 148.5%; /* 51.975px */
+    background: linear-gradient(90deg, #EED182 0%, #F99600 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 148.5%; /* 37.125px */
 }
 
 /* Paragraph text */
 .para {
     color: #FFF;
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 20px;
     font-style: normal;
     font-weight: 200;
-    line-height: 127.182%; /* 27.98px */
+    line-height: 127.182%;
 }
 
 /* Form container */
 .formDiv {
     background-color: #FFF;
-    padding: 60px 0;
+    padding: 40px 0;
     margin: 0 20px;
     border-radius: 24px;
     background: #FFF;
@@ -216,16 +223,14 @@
         padding: 20px 60px;
         margin-bottom: 50px;
         font-size: 24px;
-
     }
-
-    .btnmbl :hover {
+    .btnmbl:hover {
         border-radius: 62px;
-        border: 1px solid black;
-        box-shadow: 6px 6px 0px 0px #4f419a;
-        padding: 20px 50px;
-        background-color: #fff;
-        color: #4f419a;
+    border: 1px solid black;
+    box-shadow: 6px 6px 0px 0px #4f419a;
+    padding: 20px 50px;
+    background-color: #fff;
+    color: #4f419a;
     }
     .icondivs p {
         font-size: 14px;
@@ -237,6 +242,13 @@
     }
     .para {
         font-size: 15px;
+    }
+    .leftdiv {
+        margin-top: 40px;
+        gap: 10px;
+    }
+    .headline h2 {
+        font-size: 30px;
     }
 }
 

@@ -59,17 +59,13 @@ Sessions</p>
 
 
       <div className={styles.downbox}>
-        <div className={styles.backgroundImageWrapper}>
-          <Image 
-            src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/choose.webp"
-            layout="fill"
-            objectFit="cover"
-            alt='bg img'
-            loading="lazy"
-          />
-        </div>
+   
         <div className={styles.content}>
           <p className={styles.pup}>guaranteed <span className={styles.span}>Internship</span></p>
+        </div>
+        <div className={styles.rytdiv}>
+<Image  src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/black-white-man.webp" alt='choose' width={280} height={300} loading='lazy'/>
+
         </div>
       </div>
 

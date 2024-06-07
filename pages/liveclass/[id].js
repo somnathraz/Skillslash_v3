@@ -22,11 +22,11 @@ import PricingSection from "../../components/Skills/CoursePage/PricingSection/Pr
 import CareerSupport from "../../components/Skills/CoursePage/CareerSupport/CareerSupport";
 import ToolsCovered from "../../components/Skills/CoursePage/ToolsCovered/ToolsCovered";
 import PriceCompare from "../../components/Skills/CoursePage/PriceCompare/PriceCompare";
-import HomeFirstSection from "../../components/FirstSection/HomeFirstSection";
 import NewChoose from "../../components/DigitalMarketing/Course/newChoose/NewChoose";
 import Tools from "../../components/DigitalMarketing/Course/Tools/Tools";
 import Talk from "../../components/DigitalMarketing/Talk/Talk";
 import Emi from "../../components/Course/EMI/Emi";
+import CourseHeader from "../../components/DigitalMarketing/Course/FirstSection/CourseHeader";
 
 const DataSciencePage = ({ DataScienceCourseData }) => {
   const [showNigeriaForm, setShowNigeriaForm] = useState(false);
@@ -76,10 +76,11 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         redirectDM={DataScienceCourseData.data.header.digitalmarketing}
         gst={DataScienceCourseData.data.header.gst}
       /> */}
-      <HomeFirstSection title={DataScienceCourseData.data.header.title}
+      <CourseHeader title={DataScienceCourseData.data.header.title}
       dmPage={DataScienceCourseData.data.header.dmPage}
       spanTitleText={DataScienceCourseData.data.header.spanTitleText}
       redirectDM={DataScienceCourseData.data.header.digitalmarketing}
+      subtitle={DataScienceCourseData.data.header.subtitle}
       />
      
       {/* <Learn

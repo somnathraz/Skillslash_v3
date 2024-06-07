@@ -6,7 +6,10 @@ import Link from "next/link";
 import { FaBars } from "react-icons/fa";
 import dynamic from "next/dynamic";
 import VideoPlaylist from "../Skills/Global/VideoPlaylist/VideoPlaylist";
+import Popup from "../Skills/Global/Popup/Popup";
+import Form from "../Skills/Global/Form/Form";
 const MegaMenu = dynamic(() => import("../MegaMenu/MegaMenu"));
+
 // import CountDownTimer from "../CountdownTimer/CountdownTimer";
 
 // const calculateTimeLeft = () => {
@@ -34,6 +37,7 @@ const Navbar = ({
   redirectFs,
   redirectDa,
   redirectDM,
+  changeHeading,
 }) => {
   const [idBtnB, setIdBtnW] = useState("org-slb");
 
@@ -78,9 +82,31 @@ const Navbar = ({
   const handleIcon = (data) => {
     setIcon(data);
   };
+  
 
   return (
     <div>
+      <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
+        <div className="RightPopup">
+          {changeHeading ? (
+            <h5>Download Program Handbook</h5>
+          ) : (
+            <h5>
+              Get a chance to understand this course in detail from our
+              counsellors
+            </h5>
+          )}
+          <p>Fill the below Details to get started</p>
+          <Form
+            popup={true}
+            setTrigger={setPopups}
+            redirectDs={redirectDs}
+            redirectFs={redirectFs}
+            redirectDa={redirectDa}
+            redirectDM={redirectDM}
+          />
+        </div>
+      </Popup>
       <nav className={styles.nav}>
         {showVideo && (
           <VideoPlaylist
@@ -151,7 +177,7 @@ const Navbar = ({
           ) : (
             <a href="/">
               <Image
-                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Skillslash-logo.webp"
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/skillslsash_logo.webp"
                 alt="Skillslash"
                 quality={100}
                 style={{ objectFit: "contain" }}
@@ -211,7 +237,7 @@ const Navbar = ({
               id={idBtnB}
               onClick={() => showVideoF(true)}
             >
-              Watch Demo
+           
             </button>
           ) : event ? (
             <>
@@ -241,8 +267,9 @@ const Navbar = ({
                 <a href="/blog">Blog</a>
               </span>
 
-              <button id={idBtnB} onClick={() => showVideoF(true)}>
-                Watch Demo
+              <button  id="clck-free-counselling"
+                  onClick={() => popupShow()}>
+            Apply for Counselling
               </button>
             </>
           )}
