@@ -1,13 +1,14 @@
 .mainus {
   margin-top: 176px;
   padding: 28px 0 90px 0;
-
   background: rgba(102, 89, 184, 0.1);
 }
+
 .mainus h2 {
   display: flex;
   justify-content: center;
 }
+
 .boxgroup {
   display: flex;
   justify-content: center;
@@ -15,6 +16,7 @@
   margin: 60px 300px;
   margin-bottom: 100px;
 }
+
 .box {
   display: flex;
   flex-direction: column;
@@ -22,23 +24,24 @@
   justify-content: center;
   border-radius: 31.693px;
   border: 2.827px solid #000;
-
   box-shadow: 5.654px 5.654px 0px 0px #000;
   padding: 51px 38px;
   text-align: center;
   width: 100%;
   gap: 10px;
+  transition: transform 0.1s ease-out; /* Added for smooth animation */
+  background-color: #fff;
 }
 
 .box p {
   color: #000;
-
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   text-transform: capitalize;
 }
+
 .box h4 {
   color: #6659B8;
   text-align: center;
@@ -57,13 +60,10 @@
   justify-content: center;
   border: 3px solid #000;
   border-radius: 65.5px;
-  border: 3px solid #000;
   background: linear-gradient(90deg, #6659B8 0%, #2D2852 100%);
   box-shadow: 8px 8px 0px 0px #000;
   padding: 10px 30px;
 }
-
-/* Demand.module.css */
 
 .maindownbox {
   display: flex;
@@ -77,21 +77,20 @@
   justify-items: center;
   width: 940px;
   height: 100px;
-  /* overflow: hidden; */
   justify-content: space-around;
 }
 
-    .rytdiv {
-      position: relative;
-      top: 0;
-      bottom: 0;
-    }
+.rytdiv {
+  position: relative;
+  top: 0;
+  bottom: 0;
+}
 
-    .rytdiv img {
-      position: relative;
-      top: -40px;
-      bottom: 0;
-    }
+.rytdiv img {
+  position: relative;
+  top: -40px;
+  bottom: 0;
+}
 
 .content {
   position: relative;
@@ -100,7 +99,6 @@
 }
 
 .span {
-
   color: #FFF;
   text-align: center;
   -webkit-text-stroke-width: 1;
@@ -130,50 +128,56 @@
     grid-template-columns: 40% 40%;
     margin-bottom: 40px;
   }
+
   .box {
     padding: 12px 22px;
   }
+
   .maindownbox {
     margin: 0px 28px;
   }
-  .pup{
-    text-align:start;
+
+  .pup {
+    text-align: start;
     font-size: 20px;
- 
-}
-.mainus {
+  }
+
+  .mainus {
     margin-top: 36px;
-}
-.box h4 {
+  }
+
+  .box h4 {
     margin-bottom: 0;
-}
-.rytdiv img {
-  top: 0;
-  width: 300px;
-  height: auto;
-  padding-bottom: 12px;
-}
-.boxgroup {
-gap: 30px 14px;
+  }
 
+  .rytdiv img {
+    top: 0;
+    width: 300px;
+    height: auto;
+    padding-bottom: 12px;
+  }
 
-}
-.box{
-  padding: 38px 5px;
-  max-width: 150px;
-  max-height: 190px;
-  gap: 4px;
-  border-radius: 16px;
-  background: #fff;
+  .boxgroup {
+    gap: 30px 14px;
+  }
 
-}
-.box h4 {
-  font-size: 25px;
-}
-.box p {
-  font-size: 14px;
-}
-.span {
-  font-size: 20px;
-}
+  .box {
+    padding: 38px 5px;
+    max-width: 150px;
+    max-height: 190px;
+    gap: 4px;
+    border-radius: 16px;
+  }
+
+  .box h4 {
+    font-size: 25px;
+  }
+
+  .box p {
+    font-size: 14px;
+  }
+
+  .span {
+    font-size: 20px;
+  }
 }
