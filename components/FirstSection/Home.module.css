@@ -11,10 +11,11 @@
     grid-template-columns: 55% 40%;
     align-items: center;
     border-radius: 50px;
-    margin: 0px 100px;
-    background: rgba(217, 217, 217, 0.05);
+    background: hsla(0, 0%, 85%, .05);
     padding: 20px 60px;
     gap: 40px;
+    width: 1200px;
+    margin: auto;
 }
 
 /* Heading */
@@ -198,6 +199,7 @@
         border-radius: 24px;
         flex-direction: column;
         gap: 0;
+        width: fit-content;
     }
     .gridDiv h1 {
         font-size: 30px;

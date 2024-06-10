@@ -108,6 +108,7 @@ const Navbar = ({
         </div>
       </Popup>
       <nav className={styles.nav}>
+        <div className={styles.innerdiv}>
         {showVideo && (
           <VideoPlaylist
             setShow={showVideoF}
@@ -273,6 +274,7 @@ const Navbar = ({
               </button>
             </>
           )}
+        </div>
         </div>
       </nav>
       {/* <main className={styles.TopBar}>
