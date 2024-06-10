@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 const VideoTestimonialSwiper = dynamic(() =>
   import("./VideoTestimonialSwiper")
 );
-import { ratingData } from "./ratingData";
+
 
 const VideoTestimonial = ({
   event,
@@ -39,7 +39,7 @@ const VideoTestimonial = ({
           </h2>
         </div>
         <VideoTestimonialSwiper review={review} /></>)}
-        <Rating ratingData={ratingData} />
+      
       </div>
     </>
   );
