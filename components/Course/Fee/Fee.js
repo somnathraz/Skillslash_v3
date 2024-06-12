@@ -8,7 +8,7 @@ import dynamic from "next/dynamic";
 // import { pPartner } from "../PartnerSlider/PartnerSliderData";
 import { FiArrowRight } from "react-icons/fi";
 const Popup = dynamic(() => import("../../Popup/Popup"));
-const Form = dynamic(() => import("../../Form/Form"));
+const Form = dynamic(() => import("../../Skills/Global/Form/Form"));
 
 const Fee = ({
   changeFee,
@@ -25,6 +25,7 @@ const Fee = ({
   redirectDe,
   redirectBa,
   redirectBl,
+  redirectDM
 }) => {
   const [popups, setPopups] = useState(false);
   const [mobile, setMobile] = useState(false);
@@ -55,22 +56,23 @@ const Fee = ({
   return (
     <div className={styles.FeeS}>
       <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
-        <div className="leftPopup">
-          <div className="whiteP" />
-        </div>
         <div className="RightPopup">
-          <h5>Apply For Counselling</h5>
+          {changeHeading ? (
+            <h5>Download Program Handbook</h5>
+          ) : (
+            <h5>
+              Get a chance to understand this course in detail from our
+              counsellors
+            </h5>
+          )}
           <p>Fill the below Details to get started</p>
           <Form
             popup={true}
             setTrigger={setPopups}
-            dataScience={dataScience}
             redirectDs={redirectDs}
             redirectFs={redirectFs}
-            redirectBa={redirectBa}
-            redirectBl={redirectBl}
-            redirectWeb={redirectWeb}
-            redirectDe={redirectDe}
+            redirectDa={redirectDs}
+            redirectDM={redirectDM}
           />
         </div>
       </Popup>

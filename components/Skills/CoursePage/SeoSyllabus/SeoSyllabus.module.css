@@ -480,6 +480,10 @@
     gap: 20px;
     background-color: #000;
   }
+  .syllabusLeft p {
+    font-size: 8px;
+    line-height: 16px;
+  }
 
   .chapHead {
     display: grid;
@@ -504,7 +508,7 @@
     position: inherit;
   }
   .syllabusLeft h2 {
-    font-size: 32px;
+    font-size: 25px;
     font-weight: bold;
     margin-bottom: 0;
   }
@@ -599,3 +603,9 @@
     border-radius: 12px;
   }
 }
+@media (max-width: 350px) {
+    .syllabusLeft button {
+      font-size: 12px;
+    }
+}
+

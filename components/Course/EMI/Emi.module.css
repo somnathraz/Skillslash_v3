@@ -195,6 +195,10 @@
   .leftEmi {
     display: none;
   }
+  .emi button {
+    font-size: 12px;
+    padding: 10px;
+  }
 }
 @media (max-width: 641px) {
   .EmiWrapper {
@@ -214,6 +218,7 @@
   .top {
     display: flex;
     flex-flow: column;
+    gap: 10px;
   }
   .top h6 {
     font-size: 18px;

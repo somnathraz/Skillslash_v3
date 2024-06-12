@@ -197,7 +197,7 @@ const Footer = () => {
         </div>
       </div>
       <hr />
-      <div className={styles.thirdFooter}>
+      {/* <div className={styles.thirdFooter}>
         <h5>Data Science Course In Other Cities</h5>
         <div className={styles.top}>
           {DataScienceData.map((data) => {
@@ -251,7 +251,7 @@ const Footer = () => {
             );
           })}
         </div>
-      </div>
+      </div> */}
 
       <p className={styles.rights}>
         © 2019-2023 – Skillslash. All Rights Reserved.

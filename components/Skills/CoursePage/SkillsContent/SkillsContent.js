@@ -118,7 +118,7 @@ const SkillsContent = ({
               <p className="flex gap-2 items-center justify-between py-2">
                 <span className="flex gap-2 items-center">
                   <PiCertificateBold className="text-xl" />
-                  Premium Career Support
+                   Career Support
                 </span>
                 <span>
                   <b>Included</b>
