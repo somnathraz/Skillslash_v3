@@ -32,13 +32,13 @@ const PricingSection = ({
           />
         </div>
       </Popup>
-      <div className="flex flex-col py-4 px-5 bg-[#fff5f1]  rounded w-[90%] relative">
-        <h3 className="text-[16px] font-bold text-left py-1 w-max mb-2">
+      <div className="flex flex-col py-4 px-5 bg-[#212121]  rounded w-[90%] relative">
+        <h3 className="text-[16px]  text-[#fff] font-bold text-left py-1 w-max mb-2">
           Course Fees
         </h3>
-        <h3 className="text-[32px] flex gap-7 font-bold w-max text-[#4b4b4b]">
+        <h3 className="text-[32px] flex gap-7 font-bold w-max text-[#fff]">
           {actualPrice}{" "}
-          <span className="text-[16px] font-medium text-[#646464]">
+          <span className="text-[16px] font-medium text-[#fff]">
             including
             <br /> 18% GST
           </span>

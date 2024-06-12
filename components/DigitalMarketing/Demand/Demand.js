@@ -40,12 +40,9 @@ const Demand = ({
         </div>
       </Popup>
       <div className={styles.DemandHead}>
-        <div className={styles.headline}>   <h2  className={styles.h2}>Our In-demand Course</h2></div>
-     
-        <div className={styles.DemandMain}>
-          <div className={styles.backgroundImageWrapper}>
+         <div className={styles.backgroundImageWrapper}>
           <Image 
-  src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/Demand_bg.webp"
+  src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/demand_bg_1.webp"
   layout="responsive"
   width={10} // Set the width of your image
   height={10} // Set the height of your image
@@ -55,6 +52,10 @@ const Demand = ({
 />
 
           </div>
+        <div className={styles.headline}>   <h2  className={styles.h2}>Our In-demand Course</h2></div>
+     
+        <div className={styles.DemandMain}>
+         
           <div className={styles.contentMainDiv}>
           <div className={styles.content}>
             <h2>Digital Marketing Master Course</h2>

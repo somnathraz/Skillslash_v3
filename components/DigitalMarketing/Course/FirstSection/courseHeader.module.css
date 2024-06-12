@@ -73,6 +73,33 @@ line-height: 127.182%;
     background-color: #fff;
     color: #4f419a;
 }
+.btnDemo{
+    border-radius: 62px;
+    border: 1px solid black;
+    box-shadow: 6px 6px 0px 0px #4f419a;
+    padding: 20px 50px;
+    background-color: #fff;
+    color: #4f419a;
+}
+.btnDemo:hover{
+    border-radius: 62px;
+    border: 1px solid black;
+    box-shadow: 6px 6px 0px 0px #FFF;
+    padding: 20px 50px;
+    transition: all 1s ease; 
+    background-color:#4f419a ;
+    color: #fff;
+}
+
+.buttondiv {
+    display: flex;
+    gap: 20px;
+}
+
+.IconYou {
+    color: red;
+    font-size: 30px;
+  }
 
 /* Mobile button */
 .btnmbl {
@@ -203,12 +230,20 @@ line-height: 148.5%; /* 37.125px */
 
         padding-top: 70px;
     }
+    .btn {
+        border-radius: 16px;
+    border: 1px solid black;
+    box-shadow: none;
+    padding: 20px 50px;
+    transition: all 1s ease;
+    }
     .gridDiv {
         margin: 10px;
         display: flex;
         padding: 10px;
         border-radius: 24px;
         flex-direction: column;
+        gap: 30px;
     }
     .gridDiv h1 {
         font-size: 30px;
@@ -218,7 +253,24 @@ line-height: 148.5%; /* 37.125px */
         height: auto;
     }
     .btn {
-        display: none;
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    .buttondiv{
+        margin-top: 20px;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 40% 40%;
+        gap: 29px;
+    }
+    .btnDemo {
+        font-size: 12px;
+    padding: 10px 20px;
+    border-radius: 16px;
+    border: 1px solid black;
+    box-shadow: none;
+    background-color: #fff;
+    color: #4f419a;
     }
     .btnmbl {
         display: block;
@@ -227,7 +279,12 @@ line-height: 148.5%; /* 37.125px */
         box-shadow: -6px 6px 0px 0px #FFF;
         padding: 20px 60px;
         margin-bottom: 50px;
-        font-size: 24px;
+     
+        
+        padding: 13px 16px;
+        font-size: 12px;
+        border-radius: 12px;
+    
     }
     .btnmbl:hover {
         border-radius: 62px;
@@ -264,6 +321,9 @@ line-height: 148.5%; /* 37.125px */
 }
 .formhead p{
     font-size: 16px;
+}
+.EleCourse {
+    gap: 0;
 }
 
 }

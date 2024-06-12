@@ -74,10 +74,11 @@ text-transform: capitalize;
 
 
 
-    .headus {
-        font-size: 28px;
+    .headus  h2{
+        font-size: 19px;
     }
     .headus span {
-        font-size: 28px;
+        font-size: 19px;
+    margin-right: 6px;
     }
 }

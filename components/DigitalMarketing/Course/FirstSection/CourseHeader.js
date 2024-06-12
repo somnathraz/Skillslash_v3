@@ -5,6 +5,8 @@ import Form from "../../../Skills/Global/Form/Form";
 import Popup from "../../../Skills/Global/Popup/Popup";
 import { useState } from "react";
 import Link from "next/link";
+import {FaYoutube} from "react-icons/fa"
+import VideoPlaylist from "../../../Skills/Global/VideoPlaylist/VideoPlaylist"
 
 const CourseHeader = ({
   title,
@@ -24,6 +26,12 @@ const CourseHeader = ({
   const popupShow = (demoClass, changeText) => {
     setPopups(true);
   };
+  const [show, setShow] = useState(false);
+  const showVideo = (data) => {
+    setShow(data);
+  };
+  const [idBtnO, setIdBtnO] = useState("org-slo");
+  const [idBtnV, setIdBtnV] = useState("org-dv");
   const GenImg =
     "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/Internship_course.webp";
   return (
@@ -49,6 +57,16 @@ const CourseHeader = ({
           />
         </div>
       </Popup>
+      {show && (
+        <VideoPlaylist
+          setShow={showVideo}
+          show={show}
+          redirectDs={redirectDs}
+          redirectFs={redirectFs}
+          redirectDa={redirectDa}
+          redirectDM={redirectDM}
+        />
+      )}
       <div className={Styles.main}>
         <div className={Styles.gridDiv}>
           <div className={Styles.leftdiv}>
@@ -73,6 +91,7 @@ const CourseHeader = ({
             {dmPage ? (
               <>
                 {" "}
+                <div className={Styles.buttondiv}>
                 <button
                   id="clck-free-counselling"
                   onClick={() => popupShow()}
@@ -80,6 +99,15 @@ const CourseHeader = ({
                 >
                   Apply for Counselling
                 </button>
+                <button
+                  id="clck-free-counselling"
+                  onClick={() => showVideo(true)}
+                  className={Styles.btnDemo}
+                >
+                 DEMO
+                 <FaYoutube className={Styles.IconYou} />
+                </button>
+                </div>
               </>
             ) : (
               <>

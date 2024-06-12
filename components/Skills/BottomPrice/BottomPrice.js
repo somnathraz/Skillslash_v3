@@ -36,7 +36,7 @@ const BottomPrice = ({
               counsellors
             </h5>
           )}
-          <p>Fill the below Details to get started</p>
+          {/* <p>Fill the below Details to get started</p> */}
           <Form
             popup={true}
             setTrigger={setPopups}
@@ -47,40 +47,18 @@ const BottomPrice = ({
           />
         </div>
       </Popup>
-      <div className={styles.left}>
-        <p className={styles.ofPr}>
-          {offerPrice}
-        
-        </p>
-        <span className="text-base font-normal	mt-[6px]	 text-[#363636]">
-            {gst}
-          </span>
-        {/* {newDataScience && <p className={styles.acPr}>{actualPrice}</p>} */}
-      </div>
-      {dmPage ? (
-        <>
-          {" "}
-          <div className={styles.right} id={idBtnO}>
-            <button id={idBtnO} onClick={popupShow}>
+      
+    
+     
+            <div id={idBtnO} className={styles.BottomPricebutton} onClick={popupShow}>
               Apply Counselling
-            </button>
-          </div>
-        </>
-      ) : (
-        <>
-          {" "}
-          <div className={styles.right} id={idBtnO}>
-            <Link href={checkoutLink} id={idBtnO}>
-              <button id={idBtnO}>Buy Now</button>
-            </Link>
-          </div>
-        </>
-      )}
+            </div>
+ 
+     
+      
 
-      <>
-        {" "}
-        <p className={styles.refund}>7-Days Money-Back Guarantee</p>
-      </>
+
+    
     </div>
   );
 };

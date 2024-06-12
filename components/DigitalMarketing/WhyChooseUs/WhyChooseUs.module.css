@@ -1,5 +1,5 @@
 .mainus {
-  margin-top: 176px;
+  margin-top: 113px;
   padding: 28px 0 90px 0;
   background: rgba(102, 89, 184, 0.1);
 }
@@ -12,9 +12,9 @@
 .boxgroup {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  margin: 60px 300px;
-  margin-bottom: 100px;
+  gap: 50px;
+  width: 1200px;
+  margin: 100px auto;
 }
 
 .box {
@@ -27,7 +27,8 @@
   box-shadow: 5.654px 5.654px 0px 0px #000;
   padding: 51px 38px;
   text-align: center;
-  width: 100%;
+  max-width: 600px;
+  max-height: 190px;
   gap: 10px;
   transition: transform 0.1s ease-out; /* Added for smooth animation */
   background-color: #fff;
@@ -158,7 +159,11 @@
   }
 
   .boxgroup {
-    gap: 30px 14px;
+    gap: 20px 10px;
+    width: -moz-fit-content;
+    width: auto;
+
+
   }
 
   .box {

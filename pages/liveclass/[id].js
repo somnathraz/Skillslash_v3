@@ -27,6 +27,7 @@ import Tools from "../../components/DigitalMarketing/Course/Tools/Tools";
 import Talk from "../../components/DigitalMarketing/Talk/Talk";
 import Emi from "../../components/Course/EMI/Emi";
 import CourseHeader from "../../components/DigitalMarketing/Course/FirstSection/CourseHeader";
+import CaseStudy from "../../components/DigitalMarketing/Course/CaseStudy/CaseStudy";
 
 const DataSciencePage = ({ DataScienceCourseData }) => {
   const [showNigeriaForm, setShowNigeriaForm] = useState(false);
@@ -76,13 +77,14 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         redirectDM={DataScienceCourseData.data.header.digitalmarketing}
         gst={DataScienceCourseData.data.header.gst}
       /> */}
-      <CourseHeader title={DataScienceCourseData.data.header.title}
-      dmPage={DataScienceCourseData.data.header.dmPage}
-      spanTitleText={DataScienceCourseData.data.header.spanTitleText}
-      redirectDM={DataScienceCourseData.data.header.digitalmarketing}
-      subtitle={DataScienceCourseData.data.header.subtitle}
+      <CourseHeader
+        title={DataScienceCourseData.data.header.title}
+        dmPage={DataScienceCourseData.data.header.dmPage}
+        spanTitleText={DataScienceCourseData.data.header.spanTitleText}
+        redirectDM={DataScienceCourseData.data.header.digitalmarketing}
+        subtitle={DataScienceCourseData.data.header.subtitle}
       />
-     
+
       {/* <Learn
         firstPoint={DataScienceCourseData.data.header.firstPoint}
         redirectFs={DataScienceCourseData.data.header.FullStack}
@@ -111,10 +113,10 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         checkoutLink={DataScienceCourseData.data.header.indCheckout}
         dmPage={DataScienceCourseData.data.header.dmPage}
       />
-       <NewChoose/>
+      <NewChoose />
 
-      <Tools/>
-      
+      <Tools />
+
       <CareerSupport />
       <div id="modules">
         <DataScienceSyllabus
@@ -127,20 +129,23 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           redirectDs={DataScienceCourseData.data.header.dataScience}
           redirectDa={DataScienceCourseData.data.header.dataAnalytics}
           redirectDM={DataScienceCourseData.data.header.digitalmarketing}
+          redirectgrowth={DataScienceCourseData.data.header.redirectgrowth}
+          redirectsocialSeo={DataScienceCourseData.data.header.redirectgrowth}
+          redirectPerforSocia={DataScienceCourseData.data.header.redirectgrowth}
+          redirectPSeo={DataScienceCourseData.data.header.redirectgrowth}
         />
       </div>
       <div id="fee">
-          <Emi
-     
-            price={DataScienceCourseData.data.Fee.ProPrice}
-            emi={DataScienceCourseData.data.Fee.emi}
-            redirectDM={DataScienceCourseData.data.header.digitalmarketing}
-         
-           
-       
-          />
-        </div>
-      <div id="projects">
+        <Emi
+          price={DataScienceCourseData.data.Fee.ProPrice}
+          emi={DataScienceCourseData.data.Fee.emi}
+          redirectDM={DataScienceCourseData.data.header.digitalmarketing}
+        />
+      </div>
+      <CaseStudy 
+         redirectDM={DataScienceCourseData.data.header.digitalmarketing}
+         redirectCaseS={DataScienceCourseData.data.header.redirectgrowth}/>
+      {/* <div id="projects">
         <ProjectSlider
           noProject={DataScienceCourseData.data.header.noProject}
           redirectBa={DataScienceCourseData.data.header.dataAnalytics}
@@ -149,7 +154,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           redirectFs={DataScienceCourseData.data.header.FullStack}
           redirectDM={DataScienceCourseData.data.header.digitalmarketing}
         />
-      </div>
+      </div> */}
 
       <div id="certificate">
         <WhyUs
@@ -187,13 +192,13 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           FaqData={DataScienceCourseData.data.FaqDATA}
         />
       </div>
-      <Talk/>
+      <Talk />
       <Footer />
-      <WhatsappButton
+      {/* <WhatsappButton
         redirectDs={DataScienceCourseData.data.header.dataScience}
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}
         redirectFs={DataScienceCourseData.data.header.FullStack}
-      />
+      /> */}
       <BottomPrice
         checkoutLink={DataScienceCourseData.data.header.indCheckout}
         offerPrice={offerPrice}

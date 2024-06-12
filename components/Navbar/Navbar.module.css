@@ -1,5 +1,5 @@
 .nav {
-  width: 100%;
+  width: 100vw;
   scroll-behavior: smooth;
   font-size: 14px;
   backdrop-filter: blur(16px) saturate(180%);
@@ -15,6 +15,12 @@
   justify-content: space-evenly;
   gap: 100px;
 
+}
+.innerdiv {
+  width: 1200px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
 }
 
 .mLearn {
@@ -346,6 +352,11 @@
     grid-template-columns: 100%;
     align-items: center;
   }
+  .innerdiv{
+    width: fit-content;
+    gap: 20px;
+    justify-content: center;
+  }
   .TopBar {
     width: 100vw;
     scroll-behavior: smooth;
@@ -374,7 +385,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 0px;
+    gap: 30px;
   }
   .mLearn {
     display: flex !important;
