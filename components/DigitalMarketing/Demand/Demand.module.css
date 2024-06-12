@@ -214,3 +214,38 @@ margin: 10px 20px 0;
   
 }
 }
+@media (max-width: 380px){
+  .contentMainDiv{
+    border-radius: 0;
+    margin: 50px 0;
+
+  }
+  .list p{
+    font-size: 12px;
+  }
+  .content h2 {
+    font-size: 18px;
+  }
+  .btn{
+    justify-content: center;
+    margin: 0px 0px 0;
+    gap: 10px;
+
+    
+  }
+  .content{
+        justify-content: center;
+        margin: 10px 20px 0;
+        gap: 10px;
+        flex-direction: column;
+        gap: 21px;
+        align-items: center;
+    
+  }
+  .btnleft {
+    font-size: 8px;
+  }
+  .btnryt{
+    font-size: 8px;
+  }
+}

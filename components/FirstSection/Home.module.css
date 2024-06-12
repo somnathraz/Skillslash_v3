@@ -257,3 +257,21 @@
 
 
 }
+
+@media (max-width: 360px){
+    .gridDiv{
+        margin: 0;
+        padding: 6px;
+        padding-top: 40px;
+    }
+    .gridDiv h1 {
+        font-size: 20px;
+    }
+    .leftdiv {
+
+        gap: 40px;
+    }
+    .btnmbl{
+        font-size: 14px;
+    }
+  }
