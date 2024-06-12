@@ -133,7 +133,7 @@ const CaseStudy = ({
                   <p key={index}>{para}</p>
                 ))}
                 <div className={styles.icons}>
-                  <h4 className="text-[20px] sm:mb-0">Tools:</h4>
+                  <h4 className="text-[20px] sm:mb-0 sm:text-[10px]">Tools:</h4>
                   {tabs[activeTab].iconsImage.map((icon, index) => (
                     <Image
                       key={index}

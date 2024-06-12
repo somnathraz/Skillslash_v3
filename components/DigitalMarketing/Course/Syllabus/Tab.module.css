@@ -101,9 +101,9 @@ background-color: #4f419a;
 
     }
     .tab button {
-        padding: 6px 6px;
-        font-size: 10px;
-        width: 80px;
+      padding: 4px;
+      font-size: 9px;
+      width: 80px;
         
     }
   }
