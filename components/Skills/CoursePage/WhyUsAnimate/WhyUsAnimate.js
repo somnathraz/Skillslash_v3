@@ -91,7 +91,7 @@ const WhyUsAnimate = ({ redirectDa, redirectDs, home, redirectFs, nomicrosoft , 
 
          
             </div></>):(<> 
-              <h3 className="text-3xl  font-bold">Triple Certification</h3>
+              <h3 className="text-3xl  font-bold">10+ Certificates</h3>
             <div className="grid grid-cols-[70%,70%,70%] max-[321px]:grid-cols-[60%,60%,60%] gap-2 items-center">
               {dmPage ? (<> 
                    <div className="bg-black shadow rounded-lg px-7 py-4 flex flex-col gap-3 min-[481px]:w-[75%]">

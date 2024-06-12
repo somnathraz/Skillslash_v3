@@ -5,7 +5,7 @@ import Image from "next/image";
 import { TiTick } from "react-icons/ti";
 import dynamic from "next/dynamic";
 const Popup = dynamic(() => import("../../Popup/Popup"));
-const Form = dynamic(() => import("../../Form/Form"));
+const Form = dynamic(() => import("../../Skills/Global/Form/Form"));
 
 const Emi = ({
   price,

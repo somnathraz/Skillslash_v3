@@ -93,17 +93,17 @@ background-color: #4f419a;
   @media only screen and (max-width: 600px) {
 
     .tab {
-        display: grid;
-    grid-template-columns: 12% 21% 25% 25%;
-    font-size: 12px;
-    gap: 20px;
-    padding: 0;
+      display: grid;
+      grid-template-columns: 9% 19% 22% 25%;
+      font-size: 12px;
+      gap: 20px;
+      padding: 0;
 
     }
     .tab button {
         padding: 6px 6px;
         font-size: 10px;
-        width: 100px;
+        width: 80px;
         
     }
   }

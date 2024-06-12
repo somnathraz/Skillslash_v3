@@ -327,3 +327,37 @@ line-height: 148.5%; /* 37.125px */
 }
 
 }
+@media only screen and (max-width: 320px) {
+
+    .EleCourse p{
+        font-size: 14px;
+    }
+    .btn .btnDemo {
+        padding: 10px;
+        font-size: 8px;
+    }
+    .formhead p{
+        font-size: 12px;
+    
+        
+    
+    
+    }
+    .formhead {
+        font-size: 12px;
+    }
+    
+}
+
+@media only screen and (max-width: 320px) {
+
+    .btnDemo {
+
+
+        font-size: 8px;
+    }
+    .btn {
+        font-size: 8px;
+    }
+
+}

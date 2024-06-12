@@ -3,27 +3,31 @@ const TabData = [
     id: "Data Analytics",
     title: "Data Analytics",
     desc: [
+      
       {
         id: 1,
-        name: "Keyword Reserach Seo Tool",
-        time: "9:30",
+        name: "Create ads copy for Google and Meta ads using ChatGPT        ",
+        time: "27:05",
+        link: "HTXeZmG71PE",
+      },
+     
+  
+       {
+        id: 2,
+
+        name: "Cross Platform Remarketing Ads",
+        time: "30:38",
+        link: "SN5Xl5irh4k",
+        mode: "online live class",
+      },
+      {
+        id: 3,
+        name: "Keyword Reserach  using free  Seo Tool",
+        time: "14:39",
         link: "9IECl5_B5HE",
       },
-      // {
-      //   id: 2,
-      //   name: "Ada Boost in ML",
-      //   time: "10:57",
-      //   link: "qBK7NZtbG_Y",
-      // },
-      // {
-      //   id: 3,
-
-      //   name: "Visualization in POWER BI",
-      //   time: "06:42",
-      //   link: "rLVJNgenPmQ",
-      //   mode: "online live class",
-      // },
     ],
+  
   },
   {
     id: "DSA",

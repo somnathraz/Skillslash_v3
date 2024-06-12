@@ -133,7 +133,7 @@ const CaseStudy = ({
                   <p key={index}>{para}</p>
                 ))}
                 <div className={styles.icons}>
-                  <h4 className="text-[20px]">Tools:</h4>
+                  <h4 className="text-[20px] sm:mb-0">Tools:</h4>
                   {tabs[activeTab].iconsImage.map((icon, index) => (
                     <Image
                       key={index}
@@ -150,7 +150,7 @@ const CaseStudy = ({
           ) : (
             <div className={styles.moreContent}>
               <div className="bg-white py-6 px-4 rounded-lg d-flex flex-col gap-5 m-4">
-                <p className="text-[#4f419a] mb-4 font-semibold">
+                <p className="text-[#4f419a] mb-4 font-semibold ">
                   Download all case studies <span className="text-[#F18350]">NOW</span>
                 </p>
                 <Image
