@@ -62,14 +62,14 @@ line-height: 127.182%;
     border-radius: 62px;
     border: 1px solid black;
     box-shadow: 6px 6px 0px 0px #FFF;
-    padding: 20px 50px;
+    padding: 8px 30px;
     transition: all 1s ease; 
 }
 .btn:hover {
     border-radius: 62px;
     border: 1px solid black;
     box-shadow: 6px 6px 0px 0px #4f419a;
-    padding: 20px 50px;
+    padding: 8px 30px;
     background-color: #fff;
     color: #4f419a;
 }
