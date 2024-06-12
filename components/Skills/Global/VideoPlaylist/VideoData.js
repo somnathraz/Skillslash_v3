@@ -5,24 +5,24 @@ const TabData = [
     desc: [
       {
         id: 1,
-        name: "Concatenate & Merge Data Frame",
+        name: "Keyword Reserach Seo Tool",
         time: "9:30",
-        link: "8LKRvqxvxlw",
+        link: "9IECl5_B5HE",
       },
-      {
-        id: 2,
-        name: "Ada Boost in ML",
-        time: "10:57",
-        link: "qBK7NZtbG_Y",
-      },
-      {
-        id: 3,
+      // {
+      //   id: 2,
+      //   name: "Ada Boost in ML",
+      //   time: "10:57",
+      //   link: "qBK7NZtbG_Y",
+      // },
+      // {
+      //   id: 3,
 
-        name: "Visualization in POWER BI",
-        time: "06:42",
-        link: "rLVJNgenPmQ",
-        mode: "online live class",
-      },
+      //   name: "Visualization in POWER BI",
+      //   time: "06:42",
+      //   link: "rLVJNgenPmQ",
+      //   mode: "online live class",
+      // },
     ],
   },
   {

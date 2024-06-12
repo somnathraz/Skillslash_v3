@@ -34,6 +34,7 @@ export default function index({ eventData }) {
           name="description"
           content="Enroll in Full stack and and data science masterclass for free and learn from industry experts."
         />
+        
       </Head>
       <Navbar course={false} />
 

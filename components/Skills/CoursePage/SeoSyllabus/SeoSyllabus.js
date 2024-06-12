@@ -3,9 +3,10 @@ import styles from "./SeoSyllabus.module.css";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import { BiCheck } from "react-icons/bi";
 import { IoRemoveOutline } from "react-icons/io5";
-import { MdOutlinePlayCircle } from "react-icons/md";
+import { MdOutlineOnlinePrediction } from "react-icons/md";
 import Form from "../../Global/Form/Form";
 import Popup from "../../Global/Popup/Popup";
+import Tabs from "../../../DigitalMarketing/Course/Syllabus/Tab";
 
 function DataScienceSyllabus({
   seoSyllabus,
@@ -17,6 +18,9 @@ function DataScienceSyllabus({
   redirectFs,
   redirectDa,
   redirectDM,
+  redirectgrowth,
+  redirectsocialSeo,
+  redirectPerforSocia,
 }) {
   const [state, setState] = useState(seoSyllabus);
   const [popups, setPopups] = useState(false);
@@ -49,6 +53,8 @@ function DataScienceSyllabus({
             redirectFs={redirectFs}
             redirectDa={redirectDa}
             redirectDM={redirectDM}
+    
+           
           />
         </div>
       </Popup>
@@ -85,7 +91,7 @@ function DataScienceSyllabus({
                       <div>
                         <p className={styles.sTitle}>{Module0.title1}</p>
                         <h3 className="flex gap-1 items-center ">
-                          <MdOutlinePlayCircle />
+                          <MdOutlineOnlinePrediction />
                           {Module0.hrs} +hrs lessons
                         </h3>
                       </div>
@@ -119,7 +125,7 @@ function DataScienceSyllabus({
                                   key={content.chap.title}
                                 >
                                   <h4 className={styles.chapHead}>
-                                    <MdOutlinePlayCircle className="text-2xl  text-[#cd201f]" />{" "}
+                                    <MdOutlineOnlinePrediction className="text-2xl  text-[#cd201f]" />{" "}
                                     {content.chap.title}
                                   </h4>
                                   {content.chap.desc.map((desc, i) => {
@@ -163,6 +169,9 @@ function DataScienceSyllabus({
             );
           })}
         </ul>
+        <h2 className="text-[#f18350]">Specilaztion</h2>
+        <Tabs redirectgrowth={redirectgrowth}
+        redirectsocialSeo={redirectsocialSeo}/>
       </div>
 
       <div>
@@ -175,13 +184,14 @@ function DataScienceSyllabus({
             clarify your doubts
           </p>
           <div>
-            <Form 
-     
-  
-            redirectDs={redirectDs}
-            redirectFs={redirectFs}
-            redirectDa={redirectDa}
-            redirectDM={redirectDM}
+            <Form
+              redirectDs={redirectDs}
+              redirectFs={redirectFs}
+              redirectDa={redirectDa}
+              redirectDM={redirectDM}
+              redirectgrowth={redirectgrowth}
+              redirectsocialSeo={redirectsocialSeo}
+              redirectPerforSocia={redirectPerforSocia}
             />
           </div>
         </div>

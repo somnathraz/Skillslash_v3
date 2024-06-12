@@ -15,7 +15,12 @@ const Form = ({
   redirectDs,
   redirectFs,
   redirectDa,
-  redirectDM
+  redirectDM,
+  redirectgrowth,
+  redirectsocialSeo,
+  redirectPerforSocia,
+  redirectPSeo,
+  redirectCaseS,
 }) => {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
@@ -24,6 +29,7 @@ const Form = ({
     name: "",
     email: "",
     phone: value,
+    workExperience:"",
     url: router.asPath,
   });
 
@@ -54,6 +60,11 @@ const Form = ({
   if(redirectDM){
     endPoint="https://getform.io/f/kaz127eJ";
   }
+  if(redirectgrowth || redirectsocialSeo || redirectPerforSocia || redirectPSeo || redirectCaseS ){
+    endPoint="https://getform.io/f/kaz127eJ";
+  }
+
+
 
   // Form Submit function
   const formSubmit = (e) => {
@@ -97,6 +108,21 @@ const Form = ({
     }
     if (redirectDM){
       router.push("/Thankyou/digital-marketing");
+    }
+    if (redirectgrowth){
+      router.push("/Thankyou/growth-marketing");
+    }
+    if (redirectsocialSeo){
+      router.push("/Thankyou/seo-social-media")
+    }
+    if(redirectPerforSocia){
+      router.push("/Thankyou/performance-and-social-media")
+    }
+    if (redirectPSeo){
+      router.push("/Thankyou/performance-and-seo")
+    }
+    if (redirectCaseS){
+      router.push("/Thankyou/case-study")
     }
   };
   let btnText = "Apply Now";
@@ -179,6 +205,31 @@ const Form = ({
               required
               onChange={setValue}
             />
+          </fieldset>
+        </div>
+        <div className={styles.formWrapper}>
+          <fieldset style={syllabus ? { color: "white" } : { color: "black" }}>
+            <legend>Work Experience*</legend>
+            <select
+              name="workExperience"
+              required
+              value={query.workExperience}
+              onChange={handleParam()}
+            >
+              <option className={styles.option} value="">
+                Select Your Work Experience*
+              </option>
+
+              <option value="College Students">College Students</option>
+
+              <option value="Fresher ( less than 1 year)">
+                Fresher ( less than 1 year)
+              </option>
+              <option value="1 to 3 year">1 to 3 year</option>
+              <option value="3 to 7 year">3 to 7 year</option>
+              <option value="7 to 12 year">7 to 12 year</option>
+              <option value="12+ year">12+ year</option>
+            </select>
           </fieldset>
         </div>
 

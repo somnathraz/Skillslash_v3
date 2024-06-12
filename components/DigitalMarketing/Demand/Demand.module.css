@@ -135,6 +135,9 @@ margin: 3px 0px 18px 0;
     height: auto; /* Adjust height for mobile view */
     margin-bottom: 10px;
   }
+  .DemandMain{
+    width: fit-content;
+  }
 
   .backgroundImageWrapper {
     width: 100%;
@@ -143,12 +146,13 @@ margin: 3px 0px 18px 0;
 
   .contentMainDiv {
     flex-direction: column-reverse;
-        padding: 20px;
-        background: #212121;
-        border-radius: 40px;
-        margin: 13px;
-        margin-top: 40px;
-        padding-bottom: 45px;
+    padding: 20px;
+    background: #212121;
+    border-radius: 40px;
+    margin: 13px;
+    margin-top: 70px;
+    padding-bottom: 45px;
+    width: fit-content;
     
   }
 
@@ -198,6 +202,9 @@ margin: 10px 20px 0;
   .supportImg img {
     width: 240px;
     height: auto;
+    top: 70px;
+    position: relative;
+
   }
   .backgroundImageWrapper img {
     display: none;

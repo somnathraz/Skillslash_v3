@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react";
 import { AiFillCloseCircle } from "react-icons/ai";
 import TabData from "./VideoData";
 import { FaYoutube } from "react-icons/fa";
+
 const VideoPlaylist = ({
   setShow,
   show,
   redirectDs,
   redirectFs,
   redirectDa,
+  redirectDM,
 }) => {
   const [changeArray, setChangeArray] = useState(0);
   const [activeVideo, setActiveVideo] = useState(
@@ -33,7 +35,7 @@ const VideoPlaylist = ({
       setChangeArray(1);
       setActiveVideo(TabData[1].desc[0].link);
     }
-  }, [redirectDs, redirectFs, redirectDa]);
+  }, [redirectDs, redirectFs, redirectDa, redirectDM]);
   useEffect(() => {
     if (show) {
       // Add a class to disable scrolling on the body
