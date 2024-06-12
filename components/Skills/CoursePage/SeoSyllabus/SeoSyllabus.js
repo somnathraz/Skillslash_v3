@@ -169,7 +169,7 @@ function DataScienceSyllabus({
             );
           })}
         </ul>
-        <h2 className="text-[#f18350]">Specilaztion</h2>
+        <h2 className="text-[#f18350]">Specialization</h2>
         <Tabs redirectgrowth={redirectgrowth}
         redirectsocialSeo={redirectsocialSeo}/>
       </div>

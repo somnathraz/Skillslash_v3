@@ -173,6 +173,8 @@ background-color: #4f419a;
     }
     .CaseStudyhead h2 {
       text-align: center;
+      font-size: 19px;
+      margin-top: 20px;
     }
     .tabButton img {
       width: 100px;

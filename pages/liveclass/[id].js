@@ -135,13 +135,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           redirectPSeo={DataScienceCourseData.data.header.redirectgrowth}
         />
       </div>
-      <div id="fee">
-        <Emi
-          price={DataScienceCourseData.data.Fee.ProPrice}
-          emi={DataScienceCourseData.data.Fee.emi}
-          redirectDM={DataScienceCourseData.data.header.digitalmarketing}
-        />
-      </div>
+   
       <CaseStudy 
          redirectDM={DataScienceCourseData.data.header.digitalmarketing}
          redirectCaseS={DataScienceCourseData.data.header.redirectgrowth}/>
