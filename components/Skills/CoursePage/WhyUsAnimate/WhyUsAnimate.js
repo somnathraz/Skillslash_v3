@@ -109,9 +109,11 @@ const WhyUsAnimate = ({
         </div>
       </Popup>
       <div className="mb-10">
-      <h3 className="text-3xl mt-6 font-bold text-center">10+ Certificates</h3>
+     
         {(redirectDs || redirectDM || home) && (
+          
           <div className="hidden max-sm:flex flex-col relative px-28 max-sm:px-5  max-[1281px]:px-24  items-start gap-10 pb-[10px]  pt-10 overflow-scroll">
+             <h3 className="text-3xl mt-6 font-bold text-center">10+ Certificates</h3>
             <div className="flex flex-col gap-4 items-start">
               {nomicrosoft ? (
                 <>
