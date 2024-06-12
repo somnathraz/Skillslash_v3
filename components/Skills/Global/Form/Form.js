@@ -21,6 +21,7 @@ const Form = ({
   redirectPerforSocia,
   redirectPSeo,
   redirectCaseS,
+  redirectCertificate,
 }) => {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
@@ -60,7 +61,7 @@ const Form = ({
   if(redirectDM){
     endPoint="https://getform.io/f/kaz127eJ";
   }
-  if(redirectgrowth || redirectsocialSeo || redirectPerforSocia || redirectPSeo || redirectCaseS ){
+  if(redirectgrowth || redirectsocialSeo || redirectPerforSocia || redirectPSeo || redirectCaseS || redirectCertificate){
     endPoint="https://getform.io/f/kaz127eJ";
   }
 
@@ -123,6 +124,9 @@ const Form = ({
     }
     if (redirectCaseS){
       router.push("/Thankyou/case-study")
+    }
+    if (redirectCertificate){
+      router.push("/Thankyou/digital-marketing-certificates")
     }
   };
   let btnText = "Apply Now";

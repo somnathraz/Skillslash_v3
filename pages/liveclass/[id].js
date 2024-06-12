@@ -157,6 +157,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           nomicrosoft={DataScienceCourseData.data.header.nomicrosoft}
           redirectDM={DataScienceCourseData.data.header.digitalmarketing}
           dmPage={DataScienceCourseData.data.header.dmPage}
+          redirectCertificate={DataScienceCourseData.data.header.redirectCertificate}
         />
       </div>
       <div id="certificate">
@@ -166,6 +167,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           redirectFs={DataScienceCourseData.data.header.FullStack}
           dmPage={DataScienceCourseData.data.header.dmPage}
           redirectDM={DataScienceCourseData.data.header.digitalmarketing}
+          redirectCertificate={DataScienceCourseData.data.header.redirectCertificate}
         />
       </div>
       {DataScienceCourseData.data.header.FullStack ? (
