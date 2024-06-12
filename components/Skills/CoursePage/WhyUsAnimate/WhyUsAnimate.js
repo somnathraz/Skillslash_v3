@@ -86,7 +86,7 @@ const WhyUsAnimate = ({
         <div></div>
       </div>
     </div> */}
-     <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
+      <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
         <div className="RightPopup">
           {changeHeading ? (
             <h5>Download Program Handbook</h5>
@@ -109,6 +109,7 @@ const WhyUsAnimate = ({
         </div>
       </Popup>
       <div className="mb-10">
+      <h3 className="text-3xl mt-6 font-bold text-center">10+ Certificates</h3>
         {(redirectDs || redirectDM || home) && (
           <div className="hidden max-sm:flex flex-col relative px-28 max-sm:px-5  max-[1281px]:px-24  items-start gap-10 pb-[10px]  pt-10 overflow-scroll">
             <div className="flex flex-col gap-4 items-start">
@@ -117,6 +118,7 @@ const WhyUsAnimate = ({
                   <h3 className="text-3xl  font-bold">
                     Course completion Certification
                   </h3>
+                  
                   <div className="flex grid-cols-[70%,70%,70%] max-[321px]:grid-cols-[60%,60%,60%] gap-2 items-center">
                     <div className="bg-black shadow rounded-lg px-7 py-4 flex flex-col gap-3 min-[481px]:w-[75%]">
                       <div className="relative w-full h-[180px]  border-[1px] border-white">
@@ -139,12 +141,12 @@ const WhyUsAnimate = ({
                 </>
               ) : (
                 <>
-                  <h3 className="text-3xl  font-bold">10+ Certificates</h3>
-                  <div className="grid grid-cols-[50%,50%,50%,50%] max-[321px]:grid-cols-[60%,60%,60%, 60%] gap-2 items-center">
+   
+                  <div className="grid grid-cols-[40%,50%,50%,50%] max-[321px]:grid-cols-[60%,60%,60%, 60%] gap-2 items-center">
                     {dmPage ? (
                       <>
                         <div className="bg-black shadow rounded-lg px-7 py-4 flex flex-col gap-3 min-[481px]:w-[75%]">
-                          <div className="relative w-full h-[180px] border-[1px] border-white   ">
+                          <div className="relative w-full h-[160px] border-[1px] border-white   ">
                             <Image
                               src={imageSrcDM[1]}
                               fill
@@ -153,16 +155,13 @@ const WhyUsAnimate = ({
                             />
                           </div>
                           <h3 className="font-bold text-[#f18350]">
-                            Meta Certificate
+                           
                           </h3>
                           <p className="text-white">
-                            Upgrade your resume and LinkedIn with a
-                            Meta-certified digital marketing course. Elevate
-                            your career with a globally recognized
-                            certification.
+                            Upgrade your resume and LinkedIn profile with out
+                            Meta Certified Digital Marketing Course
                           </p>
                         </div>
-                        
                       </>
                     ) : (
                       <>
@@ -200,12 +199,10 @@ const WhyUsAnimate = ({
                             />
                           </div>
                           <h3 className="font-bold text-[#f18350]">
-                            Google Ads Certification
+                       
                           </h3>
                           <p className="text-white">
-                            Micro validation of your internship experience from
-                            Skill-AI, showcase the hiring manager the list of
-                            real-life projects you
+                       Show recruiters your proficiency over googles ads with google ads certificates
                           </p>
                         </div>
                       </>
@@ -245,12 +242,11 @@ const WhyUsAnimate = ({
                           </div>
                           <h3 className="font-bold text-[#f18350]">
                             {" "}
-                            Semrush Certification
+                     
                           </h3>
                           <p className="text-white">
-                            Showcase experience to recruiters with internship
-                            certificate from Skill-AI. Stand out of the crowd
-                            with experience.
+                          Display your capability in SEO to the hiring manager with the certificate from the best SEO tool
+
                           </p>
                         </div>
                       </>
@@ -276,22 +272,19 @@ const WhyUsAnimate = ({
                             with experience.
                           </p>
                         </div>
-                        
                       </>
-                      
                     )}
-                 
-                      <>
-                        <div className="bg-black shadow d-flex justify-center items-center text-center rounded-lg px-7 py-4 flex flex-col gap-3 min-[481px]:w-[75%] h-[95%]">
-                         
-                     <h2 className="text-white">Download All 10+ Certificates </h2>
-                          <button onClick={() => popupShow()}>Download  <FaDownload/></button>
-                        </div>
-                      </>
-                  
-              
-             
-                 
+
+                    <>
+                      <div className="bg-black shadow d-flex justify-center items-center text-center rounded-lg px-7 py-4 flex flex-col gap-3 min-[481px]:w-[75%] h-[100%]">
+                        <h2 className="text-white">
+                          Download All 10+ Certificates{" "}
+                        </h2>
+                        <button onClick={() => popupShow()}>
+                          Download <FaDownload />
+                        </button>
+                      </div>
+                    </>
                   </div>
                 </>
               )}

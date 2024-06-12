@@ -328,7 +328,7 @@ const WhyUs = ({ redirectDs, home, redirectDa, nomicrosoft, dmPage, redirectDM, 
               ) : (
                 <>
                   <h3 className="text-4xl text-[#4f419a] font-bold text-center items-center">
-                    skillslash Certification
+               10+ Certificates
                   </h3>
                   <div className="grid grid-cols-3 gap-3 max-[961px]:grid-cols-2">
                    {dmPage ? (<> 
@@ -341,9 +341,10 @@ const WhyUs = ({ redirectDs, home, redirectDa, nomicrosoft, dmPage, redirectDM, 
                           loading="lazy"
                         />
                       </div>
-                      <h3 className="font-bold">Meta Certificate</h3>
+                      <h3 className="font-bold"></h3>
                       <p>
-                      Upgrade your resume and LinkedIn with a Meta-certified digital marketing course. Elevate your career with a globally recognized certification.
+                      Upgrade your resume and LinkedIn profile with out Meta Certified Digital Marketing Course
+
                       </p>
                     </div></>):(<> <div className="bg-white shadow rounded-lg px-7 py-4 flex flex-col gap-3">
                       <div className="relative w-full h-[180px]  ">
@@ -370,12 +371,10 @@ const WhyUs = ({ redirectDs, home, redirectDa, nomicrosoft, dmPage, redirectDM, 
                         />
                       </div>
                       <h3 className="font-bold">
-                      Google Ads Certification
+                  
                       </h3>
                       <p>
-                        Micro validation of your internship experience from
-                        Skill-AI, showcase the hiring manager the list of
-                        real-life projects you
+                      Show recruiters your proficiency over googles ads with google ads certificates
                       </p>
                     </div></>):(<><div className="bg-white shadow rounded-lg px-7 py-4 flex flex-col gap-3">
                       <div className="relative w-full h-[180px]  ">
@@ -404,11 +403,9 @@ const WhyUs = ({ redirectDs, home, redirectDa, nomicrosoft, dmPage, redirectDM, 
                           loading="lazy"
                         />
                       </div>
-                      <h3 className="font-bold"> Semrush Certification</h3>
+                      <h3 className="font-bold"></h3>
                       <p>
-                        Showcase experience to recruiters with internship
-                        certificate from Skill-AI. Stand out of the crowd with
-                        experience.
+                      Display your capability in SEO to the hiring manager with the certificate from the best SEO tool
                       </p>
                     </div></>):(<>  <div className="bg-white shadow rounded-lg px-7 py-4 flex flex-col gap-3">
                       <div className="relative w-full h-[180px]  ">
