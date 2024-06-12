@@ -136,9 +136,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         />
       </div>
    
-      <CaseStudy 
-         redirectDM={DataScienceCourseData.data.header.digitalmarketing}
-         redirectCaseS={DataScienceCourseData.data.header.redirectgrowth}/>
+
       {/* <div id="projects">
         <ProjectSlider
           noProject={DataScienceCourseData.data.header.noProject}
@@ -181,6 +179,9 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           spanText="our learners say it best."
         />
       )}
+            <CaseStudy 
+         redirectDM={DataScienceCourseData.data.header.digitalmarketing}
+         redirectCaseS={DataScienceCourseData.data.header.redirectgrowth}/>
 
       <div id="faq">
         <FAQ
