@@ -1,10 +1,13 @@
 import React, { useEffect, useState, useRef } from "react";
-import { FaRegCirclePlay } from "react-icons/fa6";
+import { FaDownLong, FaRegCirclePlay } from "react-icons/fa6";
 import Image from "next/image";
 import { IoIosArrowBack } from "react-icons/io";
 import { motion, useScroll } from "framer-motion";
+import { FaDownload } from "react-icons/fa";
+import Form from "../Skills/Global/Form/Form";
+import Popup from "../Skills/Global/Popup/Popup";
 
-const WhyUs = ({ redirectDs, home, redirectDa, nomicrosoft, dmPage, redirectDM }) => {
+const WhyUs = ({ redirectDs, home, redirectDa, nomicrosoft, dmPage, redirectDM, changeHeading,redirectFs, redirectCertificate }) => {
   const certRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: certRef.current,
@@ -54,8 +57,35 @@ const WhyUs = ({ redirectDs, home, redirectDa, nomicrosoft, dmPage, redirectDM }
     return () => clearInterval(intervalId);
   }, [currentIndex, imageSrc]);
 
+  const [popups, setPopups] = useState(false);
+  const popupShow = (demoClass, changeText) => {
+    setPopups(true);
+  };
   return (
+    
     <div className="py-14 flex flex-col gap-11 max-sm:hidden min-[1600px]:px-[150px] max-[741px]:mt-[70px] ">
+        <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
+        <div className="RightPopup">
+          {changeHeading ? (
+            <h5>Download Program Handbook</h5>
+          ) : (
+            <h5>
+              Get a chance to understand this course in detail from our
+              counsellors
+            </h5>
+          )}
+          <p>Fill the below Details to get started</p>
+          <Form
+            popup={true}
+            setTrigger={setPopups}
+            redirectDs={redirectDs}
+            redirectFs={redirectFs}
+            redirectDa={redirectDa}
+            redirectDM={redirectDM}
+            redirectCertificate={redirectCertificate}
+          />
+        </div>
+      </Popup>
       {dmPage ? (<></>):(<> {nomicrosoft ? (
         <></>
       ) : (
@@ -272,10 +302,10 @@ const WhyUs = ({ redirectDs, home, redirectDa, nomicrosoft, dmPage, redirectDM }
               </>
             )}
 
-            <div className="flex flex-col gap-4 items-center">
+            <div className="flex flex-col gap-4">
               {dmPage ? (<>   {nomicrosoft ? (
                 <>
-                  <h3 className="text-4xl text-[#4f419a] font-bold">
+                  <h3 className="text-4xl text-[#4f419a] text-center items-center font-bold">
                     Course completion Certification
                   </h3>
                   <div className="grid grid-cols-1 mx-20 w-[500px]   gap-3 max-[961px]:grid-cols-2">
@@ -297,7 +327,7 @@ const WhyUs = ({ redirectDs, home, redirectDa, nomicrosoft, dmPage, redirectDM }
                 </>
               ) : (
                 <>
-                  <h3 className="text-4xl text-[#4f419a] font-bold">
+                  <h3 className="text-4xl text-[#4f419a] font-bold text-center items-center">
                     skillslash Certification
                   </h3>
                   <div className="grid grid-cols-3 gap-3 max-[961px]:grid-cols-2">
@@ -397,6 +427,7 @@ const WhyUs = ({ redirectDs, home, redirectDa, nomicrosoft, dmPage, redirectDM }
                       </p>
                     </div></>)}
                   </div>
+
                 </>
               )}</>):(<>   {nomicrosoft ? (
                 <>
@@ -478,9 +509,13 @@ const WhyUs = ({ redirectDs, home, redirectDa, nomicrosoft, dmPage, redirectDM }
                   </div>
                 </>
               )}</>)}
-           
+         <div className="flex justify-end">
+                     <button onClick={() => popupShow()} className="cursor-pointer">All Certificates <FaDownload/></button>
+                     </div>
             </div>
+            
             <div className="w-full h-[220px] flex gap-2"></div>
+            
           </div>
         )}
       </div>
