@@ -6,7 +6,7 @@ import Popup from "../../../Skills/Global/Popup/Popup";
 import { MdDownload } from "react-icons/md";
 
 
-const TabSection = ({ changeHeading, tabs }) => {
+const TabSection = ({ changeHeading,  }) => {
   const [activeTab, setActiveTab] = useState(0);
 
   const tabs = [

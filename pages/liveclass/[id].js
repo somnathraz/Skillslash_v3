@@ -134,7 +134,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           redirectsocialSeo={DataScienceCourseData.data.header.redirectgrowth}
           redirectPerforSocia={DataScienceCourseData.data.header.redirectgrowth}
           redirectPSeo={DataScienceCourseData.data.header.redirectgrowth}
-          tabs={DataScienceCourseData.data.tabs.tabs}
+ 
         />
       </div>
    
