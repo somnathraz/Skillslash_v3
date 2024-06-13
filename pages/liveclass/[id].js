@@ -170,6 +170,14 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           redirectCertificate={DataScienceCourseData.data.header.redirectCertificate}
         />
       </div>
+      <div id="fee">
+          <Emi
+    
+            price={DataScienceCourseData.data.Fee.ProPrice}
+            emi={DataScienceCourseData.data.Fee.emi}
+            redirectDM={DataScienceCourseData.data.header.digitalmarketing}/>
+        </div>
+   
       {DataScienceCourseData.data.header.FullStack ? (
         ""
       ) : (

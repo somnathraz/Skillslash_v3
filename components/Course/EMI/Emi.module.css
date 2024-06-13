@@ -185,8 +185,9 @@
   }
 }
 @media (max-width: 641px) {
+
   .EmiWrapper {
-    display: flex;
+    display: none;
     flex-flow: column;
     align-items: center;
     gap: 20px;
@@ -202,7 +203,7 @@
 }
 @media (max-width: 641px) {
   .EmiWrapper {
-    display: flex;
+    display: none;
     flex-flow: column;
     align-items: center;
     gap: 20px;
