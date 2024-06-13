@@ -5,94 +5,8 @@ import Form from "../../../Skills/Global/Form/Form";
 import Popup from "../../../Skills/Global/Popup/Popup";
 import { MdDownload } from "react-icons/md";
 
-
-const TabSection = ({ changeHeading }) => {
+const TabSection = ({ changeHeading, tabs }) => {
   const [activeTab, setActiveTab] = useState(0);
-
-  const tabs = [
-    {
-      title: "Growth",
-      content: [
-        "Growth Marketing",
-        "Email Marketing 1.1",
-        "Online Reputation Management",
-        "Social Media Ads 1.1",
-        "Google Tag Manager",
-        "Search Engine Marketing 1.1",
-        "Search Engine Optimization 1.1",
-        "Content Writing 1.1",
-        "Voice Search Optimization",
-        "Influencer marketing",
-        "Video Marketing",
-        "Social Commerce",
-        "E-commerce Optimization",
-        "Content Personalization",
-        "Mobile Marketing",
-        "Voice and Audio Marketing",
-        "Affiliate Marketing",
-      ],
-      para: ["Growth marketing Specialization"],
-      redirect: { redirectgrowth: true }
-    },
-    {
-      title: "Performance & SEO",
-      content: [
-        "Social Media Ads 1.1",
-        "Google Tag Manager",
-        "Search Engine Marketing 1.1",
-        "Media Buying",
-        "Programmatic Marketing",
-        "Advance Performace Marketing",
-        "Search Engine Optimization 1.1",
-        "Content Writing 1.1",
-        "Voice Search Optimization",
-        "E-commerce Optimization",
-        "Mobile Marketing",
-        "Voice and Audio Marketing",
-      ],
-      para: ["Performance & SEO marketing Specialization"],
-      redirect: { redirectPSeo: true }
-    },
-    {
-      title: "Performance & Social Media",
-      content: [
-        "Social Media Ads 1.1",
-        "Google Tag Manager",
-        "Search Engine Marketing 1.1",
-        "Media Buying",
-        "Programmatic Marketing",
-        "Advance Performace Marketing",
-        "Influencer marketing",
-        "Video Marketing",
-        "Social Commerce",
-        "E-commerce Optimization",
-        "Content Personalization",
-        "Mobile Marketing",
-        "Voice and Audio Marketing",
-      ],
-      para: ["Performance & Social Media marketing Specialization"],
-      redirect: { redirectPerforSocia: true }
-    },
-    {
-      title: "SEO & Social Media",
-      content: [
-        "Search Engine Optimization 1.1",
-        "Content Writing 1.1",
-        "Voice Search Optimization",
-        "Social Media Ads 1.1",
-        "Influencer marketing",
-        "Video Marketing",
-        "Social Commerce",
-        "E-commerce Optimization",
-        "Content Personalization",
-        "Mobile Marketing",
-        "Voice and Audio Marketing",
-        "Affiliate Marketing",
-      ],
-      para: ["SEO & Social Media marketing Specialization"],
-      redirect: { redirectsocialSeo: true }
-    },
-  ];
 
   const [popups, setPopups] = useState(false);
   const popupShow = () => {
@@ -153,7 +67,7 @@ const TabSection = ({ changeHeading }) => {
                 className={styles.syllbtn}
               >
                 Syllabus
-                <MdDownload/>
+                <MdDownload />
               </button>
             </div>
           ))}
