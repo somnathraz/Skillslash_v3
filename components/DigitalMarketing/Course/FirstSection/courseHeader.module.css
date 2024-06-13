@@ -62,7 +62,7 @@
   border-radius: 62px;
   border: 1px solid black;
   box-shadow: 6px 6px 0px 0px #fff;
-  padding: 8px 30px;
+  padding: 8px 50px;
   transition: all 1s ease;
 }
 .btn:hover {
@@ -237,7 +237,7 @@
     -webkit-text-fill-color: transparent;
     font-weight: 600;
     font-size: 18px;
-    color: #059f42;
+    color: #08db5d;
   }
   .togglelist p {
     color: #fff;
@@ -358,7 +358,7 @@
     -webkit-text-fill-color: transparent;
     font-weight: 600;
     font-size: 18px;
-    color: #059f42;
+
   }
   .togglelist p {
     color: #fff;

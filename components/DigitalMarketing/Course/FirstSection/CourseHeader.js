@@ -126,7 +126,7 @@ const CourseHeader = ({
               onClick={() => popupShow()}
               className={Styles.btn}
             >
-              brochure
+              Brochure
               <FaDownload/>
             </button>
             <button
