@@ -10,6 +10,7 @@ import FAQ from "../../components/Skills/Global/FAQ/FAQ";
 import WhyUsAnimate from "../../components/Skills/CoursePage/WhyUsAnimate/WhyUsAnimate";
 import WhyUs from "../../components/WhyUs/WhyUs";
 import VideoTestimonial from "../../components/VideoTestimonial/VideoTestimonial";
+import Reviews from "../../components/Review/Reviews";
 import DetailTable from "../../components/Skills/CoursePage/DetailTable/DetailTable";
 import Learn from "../../components/Skills/CoursePage/Learn/Learn";
 import Footer from "../../components/Footer/Footer";
@@ -133,7 +134,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           redirectsocialSeo={DataScienceCourseData.data.header.redirectgrowth}
           redirectPerforSocia={DataScienceCourseData.data.header.redirectgrowth}
           redirectPSeo={DataScienceCourseData.data.header.redirectgrowth}
-          tabs={DataScienceCourseData.data.tabs}
+          tabs={DataScienceCourseData.data.tabs.tabs}
         />
       </div>
    
