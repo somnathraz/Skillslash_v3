@@ -45,7 +45,7 @@ const Tools = () => {
         />
       )}
       <div className={styles.andMore}>
-        <p>and more</p>
+        <p>and 100 more</p>
       </div>
     </div>
   );

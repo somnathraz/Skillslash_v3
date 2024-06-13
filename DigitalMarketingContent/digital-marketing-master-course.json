@@ -957,40 +957,39 @@
       }
     }
   ],
- 
 
   "FaqDATA": [
     {
       "id": 1,
-      "ques": "Who should take this course ?",
+      "ques": "Who should take this digital marketing course?      ",
 
       "ans": "This course is ideal for Student, Freshers, Sales & Marketing Professional, Product Managers, Senior Manager & VPs, Freelancers,Homemakers and entrepreneur.",
       "open": true
     },
     {
       "id": 2,
-      "ques": "What will I learn in this course?",
-      "ans": "This course provides complete knowledge on Digital Marketing including the  sub-domains like - Performance marketing,Growth marketing SEO, SEM, Graphic Desiging, Email marketing, Affiliate & Content marketing and Social Media marketing and implementation of Gen-AI.",
+      "ques": "What will I learn in this digital marketing course?      ",
+      "ans": "This course provides complete knowledge on Digital Marketing including the  sub-domains like - Performance marketing,Growth marketing SEO, SEM, Graphic Desiging, Email marketing, Affiliate & Content marketing and Social Media marketing and implementation of Gen-AI.      ",
       "open": false
     },
     {
       "id": 3,
-      "ques": "Are there any prerequisites for this course ?",
+      "ques": "Are there any prerequisites for this course?      ",
 
-      "ans": "There are no specific prerequisites. However, basic computer skills and familiarity with the internet will be helpful.",
+      "ans": "There are no specific prerequisites. However, basic computer skills and familiarity with the internet will be helpful.      ",
       "open": false
     },
     {
       "id": 4,
-      "ques": "Is the course available online ?",
+      "ques": "How long is the course?      ",
 
-      "ans": "Yes, the course is 100% live online. We will provide instructor based live classes wherein ou can understand all topics thoroughly and ask your doubts if you have any.",
+      "ans": "You can complete all the mandatory core modules in 3 months, then you will do a paid internship with an external company for at least 3 months. So roughly this digital marketing course you can complete in 6 months.      ",
       "open": false
     },
     {
       "id": 5,
-      "ques": "What kind of certification will I receive?      ",
-      "ans": "Upon successful completion of the course, you will receive 10+ branded certifications that can be added to your resume and LinkedIn profile.",
+      "ques": "Is the course available online?      ",
+      "ans": "Yes, this digital marketing course is 100% live online. We will provide instructor-based live classes wherein you can understand all topics thoroughly and ask your doubts if you have any.      ",
       "open": false
     },
     {
@@ -1001,39 +1000,65 @@
     },
     {
       "id": 6,
-      "ques": "How will this course benefit my career?",
+      "ques": "What kind of certification will I receive?      ",
 
-      "ans": "This course will equip you with essential digital marketing skills, making you more competitive in the job market. It opens up opportunities in various roles such as Digital Marketing Specialist, SEO Expert, Social Media Manager, Content Marketer, and more.",
+      "ans": " Upon successful completion of our digital marketing course, you will receive 10+ globally recognized certificates that can be added to your resume and LinkedIn profile.      ",
       "open": false
     },
     {
       "id": 10,
-      "ques": "What tools and platforms will I learn to use?",
-      "ans": "You will learn 100+ tools with 30+ projects and case-studies.",
+      "ques": "How much does the course cost?      ",
+      "ans": "This Digital Marketing course costs INR 69,900/- ",
       "open": false
     },
     {
       "id": 8,
-      "ques": "Does this course comes with Internship opportunity?",
-      "ans": "Yes, we provide 4 types of internships.",
+      "ques": "How will this course benefit my career?      ",
+      "ans": "This digital marketing course will equip you with essential digital marketing skills, making you more competitive in the job market. It opens up opportunities in various roles such as Digital Marketing Specialist, SEO Expert, Social Media Manager, Content Marketer, and more.      ",
       "open": false
     },
     {
       "id": 9,
-      "ques": "What is the duration for which I can access this course?",
-      "ans": "The duration of this course is 6 months.",
+      "ques": "What tools and platforms will I learn to use?      ",
+      "ans": "You will be hands-on 100+ tools and will work on 30+ branded case studies.      ",
       "open": false
     },
     {
       "id": 12,
-      "ques": "Is there a job placement assistance program?",
-      "ans": "Yes, We do provide guaranteed job assistance.",
+      "ques": "Does this course come with an Internship opportunity?      ",
+      "ans": "Yes, in our digital marketing course, we provide 4 types of internships, which you should choose based on your area of interest. They are growth Marketing, Performance & SEO, Performance & Social Media, SEO & Social Media.      ",
       "open": false
     },
     {
       "id": 13,
-      "ques": "Can I get a refund if I am not satisfied with the course?",
-      "ans": "Yes, this course has a refund policy. You can take the refund within 15 days from the purchase date of the product and the course should not be accessed by more than 10%. With no questions ask policy.",
+      "ques": "What is the duration for which I can access this course?      ",
+      "ans": "This digital marketing course you can complete it within 6 months but, you will have 2 years of unlimited live class access to all batches and all course material along with live class recordings will be with you for a lifetime.      ",
+      "open": false
+    },
+    {
+      "id": 13,
+      "ques": "What are the career opportunities after completing this course?      ",
+      "ans": "Career opportunities after completing our digital marketing course include roles like:   Digital Marketing Specialist, SEO Analyst, Social Media Manager, Content Marketing Strategist, PPC Specialist, Email Marketing Manager,  Analytics Expert          ",
+
+      "open": false
+    },
+    {
+      "id": 13,
+      "ques": "Is there a job placement assistance program?      ",
+      "ans": "Yes our digital marketing course comes with guaranteed end-to-end job assistance      ",
+      "open": false
+    },
+    {
+      "id": 13,
+      "ques": "Can I get a refund if I am not satisfied with the course?      ",
+      "ans": "Yes, this digital marketing course has a refund policy. You can take the refund within 7 days from your 1st live class and the course should not be accessed by more than 10%. With no questions ask policy.      ",
+      "open": false
+    },
+
+    {
+      "id": 13,
+      "ques": " About the course?      ",
+      "ans": "The Skillslash Digital Marketing Master Course is an excellent opportunity for anyone looking to excel in the field of digital marketing. This comprehensive digital marketing course covers all the essential aspects required to become a proficient digital marketer. The curriculum is meticulously designed to provide practical knowledge and hands-on experience in various domains of digital marketing.Course Overview The **digital marketing course** at Skillslash encompasses a wide range of topics that are crucial for mastering the art of digital marketing. These include Search Engine Optimization (SEO), Search Engine Marketing (SEM), Social Media Marketing (SMM), Email Marketing, Content Marketing, and more. The course is structured to ensure that learners gain a thorough understanding of each topic through interactive live sessions. Learning Outcomes Upon completing this digital marketing course, participants will be able to: - Develop effective SEO strategies to improve website rankings on search engines. - Execute successful SEM campaigns using platforms like Google Ads.  - Utilize social media channels to create engaging content and campaigns. - Craft compelling email marketing campaigns to boost engagement and conversions.  - Implement content marketing techniques to attract and retain a clearly defined audience.  Key Features  Live Sessions and Expert Mentorship The digital marketing course features live sessions conducted by industry experts. These sessions provide real-time interaction and immediate feedback, ensuring that learners can clarify their doubts and gain in-depth knowledge. The mentorship program is designed to guide students through their learning journey, providing personalized support and career advice. Access to Tools and Resources Students enrolled in the digital marketing course will have access to over 100+ marketing tools used by professionals. This hands-on experience with industry-standard tools is invaluable, allowing learners to apply their knowledge practically and effectively. Certifications and Internships  The course offers more than 10 certifications, including those from Google, HubSpot, and Facebook, which are highly regarded in the digital marketing industry. Additionally, Skillslash guarantees internships that provide real-world experience, making the transition from learning to professional practice seamless. Placement Assistance  One of the standout features of the digital marketing course is the robust placement assistance program. Skillslash offers support with resume building, interview preparation, and guaranteed interview calls with top companies. This comprehensive career support ensures that students are well-prepared to enter the job market and succeed. Why Choose Skillslash? The digital marketing course at Skillslash stands out due to its focus on practical learning, expert mentorship, and comprehensive career support. Whether you are a student, a professional looking to upskill, or someone looking to switch careers, this course offers the perfect blend of theoretical knowledge and practical application. Conclusion    Investing in the Skillslash Digital Marketing Master Course is a strategic move for anyone serious about a career in digital marketing. The course's comprehensive curriculum, expert-led live sessions, access to professional tools, and extensive career support make it an unmatched opportunity for aspiring digital marketers. With a keyword density of around 2%, this content ensures that it aligns with SEO best practices while providing valuable information about the course. For more details and to enroll. By enrolling in this digital marketing course, you are setting yourself up for a successful and rewarding career in one of the most dynamic and in-demand fields today.  ",
       "open": false
     }
   ]
