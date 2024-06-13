@@ -5,8 +5,13 @@ import Form from "../../../Skills/Global/Form/Form";
 import Popup from "../../../Skills/Global/Popup/Popup";
 import { useState } from "react";
 import Link from "next/link";
-import { FaYoutube } from "react-icons/fa";
+import { FaYoutube, FaToggleOn } from "react-icons/fa";
 import VideoPlaylist from "../../../Skills/Global/VideoPlaylist/VideoPlaylist";
+import { MdOutlineToggleOff } from "react-icons/md";
+import { IoToggleSharp } from "react-icons/io5";
+import { PiToggleRightThin } from "react-icons/pi";
+import { FaDownload } from "react-icons/fa6";
+
 
 const CourseHeader = ({
   title,
@@ -69,38 +74,75 @@ const CourseHeader = ({
               <span> {deskTopPara}</span>
             </div>
             <div className={Styles.headline}>
-              {" "}
               <h1>{title}</h1>
               <h2>{subtitle}</h2>
-            </div>
-
-            <>
               <div className={Styles.EleCourse}>
-                <p>with guaranteed internship </p>
-                <Image src={GenImg} width={30} height={20} alt="Bard"quality={50} priority />
+                <p>Powered by Gen-AI</p>
+                <Image
+                  src={GenImg}
+                  width={30}
+                  height={20}
+                  alt="Bard"
+                  quality={50}
+                  priority
+                />
               </div>
-
-              <p className={Styles.para}>{spanTitleText}</p>
-            </>
-
-            <div className={Styles.buttondiv}>
-              <button
-                id="clck-free-counselling"
-                onClick={() => popupShow()}
-                className={Styles.btn}
-              >
-                Apply for Counselling
-              </button>
-              <button
-                id="clck-free-counselling"
-                onClick={() => showVideo(true)}
-                className={Styles.btnDemo}
-              >
-                DEMO
-                <FaYoutube className={Styles.IconYou} />
-              </button>
             </div>
+            <ul className={Styles.listpoints}>
+              <li className={Styles.togglelist}>
+                <span>
+                  {" "}
+                  <IoToggleSharp className={Styles.listicon} />
+                </span>
+                <p>Guaranteed Internship</p>
+              </li>
+              <li className={Styles.togglelist}>
+                <IoToggleSharp className={Styles.listicon} />
+                <p> Assured Placement</p>
+              </li>
+              <li className={Styles.togglelist}>
+                {" "}
+                <IoToggleSharp className={Styles.listicon} />
+                <p> 200+ hrs of Live Sessions</p>
+              </li>
+              <li className={Styles.togglelist}>
+                <IoToggleSharp className={Styles.listicon} />
+                <p>20+ Branded Case Studies</p>
+              </li>
+              <li className={Styles.togglelist}>
+                <IoToggleSharp className={Styles.listicon} />
+                <p> 10+ Global Certificates</p>
+              </li>
+              <li className={Styles.togglelist}>
+                {" "}
+                <IoToggleSharp className={Styles.listicon} />
+                <p> 100+ Tools</p>
+              </li>
+            </ul>
+            {/* <p className={Styles.para}>{spanTitleText}</p> */}
+            <div className={Styles.buttondiv}>
+            <button
+              id="clck-free-counselling"
+              onClick={() => popupShow()}
+              className={Styles.btn}
+            >
+              brochure
+              <FaDownload/>
+            </button>
+            <button
+              id="clck-free-counselling"
+              onClick={() => showVideo(true)}
+              className={Styles.btnDemo}
+            >
+              DEMO
+              <FaYoutube className={Styles.IconYou} />
+            </button>
           </div>
+          </div>
+   
+         
+   
+       
 
           <>
             <div className={Styles.formDiv}>
@@ -117,7 +159,7 @@ const CourseHeader = ({
             </div>
           </>
         </div>
-
+{/* 
         <div className={Styles.icons}>
           <div className={Styles.icondivs}>
             <Image
@@ -150,11 +192,10 @@ const CourseHeader = ({
               height={60}
               loading="lazy"
               alt="icons"
-           
             />
             <p>Live Doubt & Project Sessions</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

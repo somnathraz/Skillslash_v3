@@ -1,363 +1,427 @@
 /* Main container */
 .main {
-    background: #212121;
-    padding-top: 100px;
-    padding-bottom: 50px;
+  background: #212121;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 /* Grid container */
 .gridDiv {
-    display: grid;
-    grid-template-columns: 52% 40%;
-    /* align-items: center; */
-    border-radius: 50px;
-    margin: 0px 100px;
-    background: rgba(217, 217, 217, 0.05);
-    padding: 50px 60px;
-    gap: 100px;
+  display: grid;
+  grid-template-columns: 52% 40%;
+  /* align-items: center; */
+  border-radius: 50px;
+  margin: 0px 100px;
+  background: rgba(217, 217, 217, 0.05);
+  padding: 50px 60px;
+  gap: 100px;
 }
 
 /* Heading */
 .gridDiv h1 {
-    color: #FFF;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 127.182%; /* 81.396px */
-    margin: 0;
-    margin-top: -38px;
+  color: #fff;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 127.182%; /* 81.396px */
+  margin: 0;
+  margin-top: -38px;
 }
 
 /* Gradient text span */
 .gridDiv span {
-    background: linear-gradient(90deg, #018DF2 0%, #884CEA 49.5%, #FF6B00 100%);
+  background: linear-gradient(90deg, #018df2 0%, #884cea 49.5%, #ff6b00 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  font-size: 18px;
+}
+.headline h2 {
+  color: #fff;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 127.182%;
+}
+
+/* Right side image */
+.rytdiv img {
+  height: 520px;
+  max-width: 860px;
+}
+
+/* Flex container */
+.top {
+  display: flex;
+  align-items: baseline;
+}
+
+/* Button */
+.btn {
+  border-radius: 62px;
+  border: 1px solid black;
+  box-shadow: 6px 6px 0px 0px #fff;
+  padding: 8px 30px;
+  transition: all 1s ease;
+}
+.btn:hover {
+  border-radius: 62px;
+  border: 1px solid black;
+  box-shadow: 6px 6px 0px 0px #4f419a;
+  padding: 8px 30px;
+  background-color: #fff;
+  color: #4f419a;
+}
+.btnDemo {
+  border-radius: 62px;
+  border: 1px solid black;
+  box-shadow: 6px 6px 0px 0px #4f419a;
+  padding: 20px 50px;
+  background-color: #fff;
+  color: #4f419a;
+}
+.btnDemo:hover {
+  border-radius: 62px;
+  border: 1px solid black;
+  box-shadow: 6px 6px 0px 0px #fff;
+  padding: 20px 50px;
+  transition: all 1s ease;
+  background-color: #4f419a;
+  color: #fff;
+}
+
+.buttondiv {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+
+}
+
+.IconYou {
+  color: red;
+  font-size: 30px;
+}
+
+/* Mobile button */
+.btnmbl {
+  display: none;
+}
+
+/* Left side container */
+.leftdiv {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+/* Icons container */
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin: 40px;
+}
+
+/* Horizontal rule for icons */
+.iconHr {
+  width: 1px;
+  height: 100px;
+  background-color: #ccc;
+  border: none;
+  margin: 0 10px;
+}
+
+/* Icon item container */
+.icondivs {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 230px;
+}
+
+/* Icon description */
+.icondivs p {
+  color: #e2e2e2;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 550;
+  line-height: 127.182%;
+}
+
+/* Description text */
+.Desc p {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 127.182%; /* 27.98px */
+  margin: 0 0 20px 0;
+}
+
+/* Element course container */
+.EleCourse {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+/* Element course text */
+.EleCourse p {
+  background: linear-gradient(90deg, #018df2 0%, #884cea 49.5%, #ff6b00 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* Paragraph text */
+.para {
+  color: #fff;
+  font-size: 18px;
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 127.182%;
+}
+
+/* Form container */
+.formDiv {
+  background-color: #fff;
+  padding: 40px 0;
+  margin: 0 20px;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0px 0px 3.74px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Form header */
+.formhead {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: #555;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 191.682%;
+  margin-bottom: 20px;
+}
+
+/* Form header text */
+.formhead p {
+  color: #6659b8;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 191.682%; /* 57.504px */
+}
+.togglelist {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+  }
+  .listicon {
+    background: linear-gradient(90deg, #018df2 0%, #884cea 49.5%, #ff6b00 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 600;
     font-size: 18px;
-}
-.headline h2 {
-    color: #F18350;
-font-size: 40px;
-font-style: normal;
-font-weight: 600;
-line-height: 127.182%;
-}
-
-/* Right side image */
-.rytdiv img {
-    height: 520px;
-    max-width: 860px;
-}
-
-/* Flex container */
-.top {
-    display: flex;
-    align-items: baseline;
-}
-
-/* Button */
-.btn {
-    border-radius: 62px;
-    border: 1px solid black;
-    box-shadow: 6px 6px 0px 0px #FFF;
-    padding: 8px 30px;
-    transition: all 1s ease; 
-}
-.btn:hover {
-    border-radius: 62px;
-    border: 1px solid black;
-    box-shadow: 6px 6px 0px 0px #4f419a;
-    padding: 8px 30px;
-    background-color: #fff;
-    color: #4f419a;
-}
-.btnDemo{
-    border-radius: 62px;
-    border: 1px solid black;
-    box-shadow: 6px 6px 0px 0px #4f419a;
-    padding: 20px 50px;
-    background-color: #fff;
-    color: #4f419a;
-}
-.btnDemo:hover{
-    border-radius: 62px;
-    border: 1px solid black;
-    box-shadow: 6px 6px 0px 0px #FFF;
-    padding: 20px 50px;
-    transition: all 1s ease; 
-    background-color:#4f419a ;
+    color: #059f42;
+  }
+  .togglelist p {
     color: #fff;
-}
-
-.buttondiv {
-    display: flex;
-    gap: 20px;
-}
-
-.IconYou {
-    color: red;
-    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 148.5%;
+  }
+  .listpoints {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    flex-direction: column;
+    gap: 18px;
   }
 
-/* Mobile button */
-.btnmbl {
-    display: none;
-}
-
-/* Left side container */
-.leftdiv {
-    display: flex;
-    flex-direction: column;
-    gap: 45px;
-}
-
-/* Icons container */
-.icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-    margin: 40px;
-}
-
-/* Horizontal rule for icons */
-.iconHr {
-    width: 1px;
-    height: 100px;
-    background-color: #ccc;
-    border: none;
-    margin: 0 10px;
-}
-
-/* Icon item container */
-.icondivs {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    width: 230px;
-}
-
-/* Icon description */
-.icondivs p {
-    color: #e2e2e2;
-    text-align: center;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 550;
-    line-height: 127.182%;
-}
-
-/* Description text */
-.Desc p {
-    color: #FFF;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 127.182%; /* 27.98px */
-    margin: 0 0 20px 0;
-}
-
-/* Element course container */
-.EleCourse {
-    display: flex;
-    gap: 10px;
-    align-items:center;    
-}
-
-/* Element course text */
-.EleCourse p {
-    background: linear-gradient(90deg, #EED182 0%, #F99600 100%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: 148.5%; /* 37.125px */
-}
-
-/* Paragraph text */
-.para {
-    color: #FFF;
-    font-size: 18px;
-    margin-top: 20px;
-    font-style: normal;
-    font-weight: 200;
-    line-height: 127.182%;
-}
-
-/* Form container */
-.formDiv {
-    background-color: #FFF;
-    padding: 40px 0;
-    margin: 0 20px;
-    border-radius: 24px;
-    background: #FFF;
-    box-shadow: 0px 0px 3.74px 0px rgba(0, 0, 0, 0.25);
-}
-
-/* Form header */
-.formhead {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    color: #555;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 191.682%;
-    margin-bottom: 20px;
-}
-
-/* Form header text */
-.formhead p {
-    color: #6659B8;
-    text-align: center;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 191.682%; /* 57.504px */
-}
 
 /* Media Queries for Mobile View */
 @media only screen and (max-width: 600px) {
-
-    .main {
-
-        padding-top: 70px;
-    }
-    .btn {
-        border-radius: 16px;
+  .main {
+    padding-top: 70px;
+  }
+  .btn {
+    border-radius: 16px;
     border: 1px solid black;
     box-shadow: none;
     padding: 20px 50px;
     transition: all 1s ease;
-    }
-    .gridDiv {
-        margin: 10px;
-        display: flex;
-        padding: 10px;
-        border-radius: 24px;
-        flex-direction: column;
-        gap: 30px;
-    }
-    .gridDiv h1 {
-        font-size: 30px;
-    }
-    .rytdiv img {
-        width: 100%;
-        height: auto;
-    }
-    .btn {
-        padding: 6px 10px;
-        font-size: 12px;
-    }
-    .buttondiv{
-        margin-top: 20px;
-        justify-content: center;
-        display: grid;
-        grid-template-columns: 40% 40%;
-        gap: 29px;
-    }
-    .btnDemo {
-        font-size: 12px;
-    padding: 10px 20px;
+  }
+  .gridDiv {
+    margin: 10px;
+    display: flex;
+    padding: 10px;
+    border-radius: 24px;
+    flex-direction: column;
+    gap: 56px;
+  }
+  .gridDiv h1 {
+    font-size: 30px;
+  }
+  .rytdiv img {
+    width: 100%;
+    height: auto;
+  }
+  .btn {
+    padding: 6px 20px;
+    font-size: 18px;
+}
+  .buttondiv {
+    margin-top: 20px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 29px;
+  }
+  .btnDemo {
+    font-size: 12px;
+    padding: 10px 26px;
     border-radius: 16px;
     border: 1px solid black;
     box-shadow: none;
     background-color: #fff;
     color: #4f419a;
-    }
-    .btnmbl {
-        display: block;
-        border-radius: 62px;
-        border: 1px solid black;
-        box-shadow: -6px 6px 0px 0px #FFF;
-        padding: 20px 60px;
-        margin-bottom: 50px;
-     
-        
-        padding: 13px 16px;
-        font-size: 12px;
-        border-radius: 12px;
-    
-    }
-    .btnmbl:hover {
-        border-radius: 62px;
+  }
+  .btnmbl {
+    display: block;
+    border-radius: 62px;
+    border: 1px solid black;
+    box-shadow: -6px 6px 0px 0px #fff;
+    padding: 20px 60px;
+    margin-bottom: 50px;
+
+    padding: 13px 16px;
+    font-size: 12px;
+    border-radius: 12px;
+  }
+  .btnmbl:hover {
+    border-radius: 62px;
     border: 1px solid black;
     box-shadow: 6px 6px 0px 0px #4f419a;
     padding: 20px 50px;
     background-color: #fff;
     color: #4f419a;
-    }
-    .icondivs p {
-        font-size: 14px;
-    }
-    .icons {
-        display: flex;
-        gap: 10px;
-        margin: 40px 10px;
-    }
-    .para {
-        font-size: 15px;
-    }
-    .leftdiv {
-        margin-top: 40px;
-        gap: 10px;
-    }
-    .headline h2 {
-        font-size: 24px;
-    }
+  }
+  .icondivs p {
+    font-size: 14px;
+  }
+  .icons {
+    display: flex;
+    gap: 10px;
+    margin: 40px 10px;
+  }
+  .para {
+    font-size: 15px;
+  }
+  .leftdiv {
+    margin-top: 40px;
+    gap: 10px;
+  }
+  .headline h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  .headline {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .togglelist {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+  }
+  .listicon {
+    background: linear-gradient(90deg, #018df2 0%, #884cea 49.5%, #ff6b00 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-size: 18px;
+    color: #059f42;
+  }
+  .togglelist p {
+    color: #fff;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 148.5%;
+  }
+  .listpoints {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin: 20px 0;
+  }
+  .EleCourse img {
+    width: 20px;
+  }
 }
 
 @media only screen and (max-width: 419px) {
-.formhead {
+  .formhead {
     gap: 5px;
     font-size: 16px;
-}
-.formhead p{
+  }
+  .formhead p {
     font-size: 16px;
-}
-.EleCourse {
-    gap: 0;
-}
-
+  }
+  .EleCourse {
+    gap: 6px;
+  }
 }
 @media only screen and (max-width: 320px) {
-
-    .EleCourse p{
-        font-size: 14px;
-    }
-    .btn .btnDemo {
-        padding: 10px;
-        font-size: 8px;
-    }
-    .formhead p{
-        font-size: 12px;
-    
-        
-    
-    
-    }
-    .formhead {
-        font-size: 12px;
-    }
-    
+  .EleCourse p {
+    font-size: 18px;
+  }
+  .btn .btnDemo {
+    padding: 10px;
+    font-size: 8px;
+  }
+  .formhead p {
+    font-size: 12px;
+  }
+  .formhead {
+    font-size: 12px;
+  }
 }
 
 @media only screen and (max-width: 320px) {
-
-    .btnDemo {
-
-
-        font-size: 8px;
-    }
-    .btn {
-        font-size: 8px;
-    }
-
+  .btnDemo {
+    font-size: 9px;
+    padding: 8px 20px;
+  }
+  .IconYou {
+    font-size: 15px;
+  }
+  .btn {
+    font-size: 14px;
+    height: fit-content;
+    padding: 10px 20px;
+  }
+  .btn:hover{
+    padding: 10px 20px;
+  }
+  .btnDemo:hover{
+    padding: 10px 20px;
+  }
 }
