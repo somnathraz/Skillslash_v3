@@ -5,22 +5,20 @@ import Form from "../../../Skills/Global/Form/Form";
 import Popup from "../../../Skills/Global/Popup/Popup";
 import { useState } from "react";
 import Link from "next/link";
-import {FaYoutube} from "react-icons/fa"
-import VideoPlaylist from "../../../Skills/Global/VideoPlaylist/VideoPlaylist"
+import { FaYoutube } from "react-icons/fa";
+import VideoPlaylist from "../../../Skills/Global/VideoPlaylist/VideoPlaylist";
 
 const CourseHeader = ({
   title,
   deskTopPara,
   spanTitleText,
-  homePage,
-  dmPage,
   changeHeading,
   redirectDs,
   redirectFs,
   redirectDa,
   redirectDM,
   subtitle,
-  gst,
+  GenImg,
 }) => {
   const [popups, setPopups] = useState(false);
   const popupShow = (demoClass, changeText) => {
@@ -30,10 +28,7 @@ const CourseHeader = ({
   const showVideo = (data) => {
     setShow(data);
   };
-  const [idBtnO, setIdBtnO] = useState("org-slo");
-  const [idBtnV, setIdBtnV] = useState("org-dv");
-  const GenImg =
-    "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/Internship_course.webp";
+
   return (
     <>
       <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
@@ -72,69 +67,55 @@ const CourseHeader = ({
           <div className={Styles.leftdiv}>
             <div className={Styles.top}>
               <span> {deskTopPara}</span>
-
-               
             </div>
-<div className={Styles.headline}>  <h1>{title}</h1>
-            <h2>{subtitle}</h2></div>
-          
-         
-              <>
-                <div className={Styles.EleCourse}>
-                  <p>with guaranteed internship </p>
-                  <Image src={GenImg} width={30} height={20} alt="Bard" />
-                </div>
-
-                <p className={Styles.para}>{spanTitleText}</p>
-              </>
-          
-            {dmPage ? (
-              <>
-                {" "}
-                <div className={Styles.buttondiv}>
-                <button
-                  id="clck-free-counselling"
-                  onClick={() => popupShow()}
-                  className={Styles.btn}
-                >
-                  Apply for Counselling
-                </button>
-                <button
-                  id="clck-free-counselling"
-                  onClick={() => showVideo(true)}
-                  className={Styles.btnDemo}
-                >
-                 DEMO
-                 <FaYoutube className={Styles.IconYou} />
-                </button>
-                </div>
-              </>
-            ) : (
-              <>
-                {" "}
-                <Link href="/liveclass/digital-marketing-master-course">
-                <button className={Styles.btn}>Explore course</button>
-                </Link>
-              </>
-            )}
-          </div>
-
+            <div className={Styles.headline}>
+              {" "}
+              <h1>{title}</h1>
+              <h2>{subtitle}</h2>
+            </div>
 
             <>
-              <div className={Styles.formDiv}>
-                <h2 className={Styles.formhead}>
-                  <p>Free Counselling</p> with Experts
-                </h2>
-
-                <Form
-                  redirectDs={redirectDs}
-                  redirectFs={redirectFs}
-                  redirectDa={redirectDa}
-                  redirectDM={redirectDM}
-                />
+              <div className={Styles.EleCourse}>
+                <p>with guaranteed internship </p>
+                <Image src={GenImg} width={30} height={20} alt="Bard"quality={50} priority />
               </div>
+
+              <p className={Styles.para}>{spanTitleText}</p>
             </>
-          
+
+            <div className={Styles.buttondiv}>
+              <button
+                id="clck-free-counselling"
+                onClick={() => popupShow()}
+                className={Styles.btn}
+              >
+                Apply for Counselling
+              </button>
+              <button
+                id="clck-free-counselling"
+                onClick={() => showVideo(true)}
+                className={Styles.btnDemo}
+              >
+                DEMO
+                <FaYoutube className={Styles.IconYou} />
+              </button>
+            </div>
+          </div>
+
+          <>
+            <div className={Styles.formDiv}>
+              <h2 className={Styles.formhead}>
+                <p>Free Counselling</p> with Experts
+              </h2>
+
+              <Form
+                redirectDs={redirectDs}
+                redirectFs={redirectFs}
+                redirectDa={redirectDa}
+                redirectDM={redirectDM}
+              />
+            </div>
+          </>
         </div>
 
         <div className={Styles.icons}>
@@ -169,6 +150,7 @@ const CourseHeader = ({
               height={60}
               loading="lazy"
               alt="icons"
+           
             />
             <p>Live Doubt & Project Sessions</p>
           </div>

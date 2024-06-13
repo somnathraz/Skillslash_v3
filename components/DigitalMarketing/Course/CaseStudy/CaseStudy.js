@@ -42,12 +42,12 @@ const CaseStudy = ({
       redirect: { redirectDM: true },
     },
     {
-      title: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/one_plus.webp",
+      title: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/onePlus.webp",
       content: [
         "Develop and implement an effective organic marketing strategy for OnePlus India's social media channels to increase brand visibility, audience engagement, and community interactions",
       ],
       moduletitle: "Module:",
-      para: ["Social Media Ads 1.0"],
+      para: [""],
       iconsImage: [
         "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/_tool.webp",
       ],
@@ -56,7 +56,7 @@ const CaseStudy = ({
     {
       title: "More 20+", // Title for the fourth tab
       content: [
-        "Optimize Nykaa Beauty's Meta Ads campaigns to improve key performance indicators (KPIs) such as reach, engagement rate, and conversion rate",
+        "",
       ],
       moduletitle: "Module: 1",
       para: ["Search Engine Optimization 1.0 "],

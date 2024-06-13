@@ -83,6 +83,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         spanTitleText={DataScienceCourseData.data.header.spanTitleText}
         redirectDM={DataScienceCourseData.data.header.digitalmarketing}
         subtitle={DataScienceCourseData.data.header.subtitle}
+        GenImg={DataScienceCourseData.data.header.GenImg}
       />
 
       {/* <Learn
@@ -133,6 +134,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           redirectsocialSeo={DataScienceCourseData.data.header.redirectgrowth}
           redirectPerforSocia={DataScienceCourseData.data.header.redirectgrowth}
           redirectPSeo={DataScienceCourseData.data.header.redirectgrowth}
+          tabs={DataScienceCourseData.data.tabs}
         />
       </div>
    

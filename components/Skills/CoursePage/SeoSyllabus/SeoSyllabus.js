@@ -21,6 +21,7 @@ function DataScienceSyllabus({
   redirectgrowth,
   redirectsocialSeo,
   redirectPerforSocia,
+  tabs,
 }) {
   const [state, setState] = useState(seoSyllabus);
   const [popups, setPopups] = useState(false);
@@ -170,7 +171,10 @@ function DataScienceSyllabus({
           })}
         </ul>
         <h2 className="text-[#f18350]">Specialization</h2>
-        <Tabs redirectgrowth={redirectgrowth}
+        <Tabs
+        tabs={tabs}
+        
+        redirectgrowth={redirectgrowth}
         redirectsocialSeo={redirectsocialSeo}/>
       </div>
 
