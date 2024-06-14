@@ -1,28 +1,28 @@
 import React, { useState, useEffect } from "react";
-
+import { useRouter } from "next/router";
 import styles from "./Emi.module.css";
-import Image from "next/image";
-import { TiTick } from "react-icons/ti";
 import dynamic from "next/dynamic";
 const Popup = dynamic(() => import("../../Popup/Popup"));
 const Form = dynamic(() => import("../../Skills/Global/Form/Form"));
 
 const Emi = ({
-  price,
-  web,
-  emi,
   redirectWeb,
   redirectDSA,
   redirectDs,
   redirectFs,
   redirectDe,
   redirectBa,
-  redirectDM
+  redirectDM,
+  price,
 }) => {
+  const router = useRouter();
+  const { id } = router.query;
+
   const [popups, setPopups] = useState(false);
   const [mobile, setMobile] = useState(false);
-  // const [slidesPerView, setSlidesPerView] = useState(5);
-  // const [spaceBetween, setSpaceBetween] = useState(70);
+  const [batches, setBatches] = useState([]);
+  const [web, setWeb] = useState('');
+  const [emi, setEmi] = useState('');
 
   const popupShow = () => {
     setPopups(true);
@@ -30,21 +30,39 @@ const Emi = ({
 
   useEffect(() => {
     let width = window.innerWidth;
-
-    // if (width < 801) {
-    //   setSlidesPerView(9);
-    //   setSpaceBetween(20);
-    // }
-    // if (width < 641) {
-    //   setSlidesPerView(5);
-    //   setSpaceBetween(20);
-    // }
     if (width < 481) {
-      // setSlidesPerView(3);
-      // setSpaceBetween(10);
       setMobile(true);
     }
-  });
+  }, []);
+
+  useEffect(() => {
+    if (id) {
+      // Replace this with actual data fetching logic based on `id`
+      // For example, using fetch or axios to get data from an API
+      const fetchData = async () => {
+        // Simulate an API call
+        const data = {
+
+          batches: [
+            { type: "Weekday", date: "1 July", time: "8pm - 10pm", isFilled: true },
+            { type: "Weekend", date: "22nd June", time: "11am - 1pm", isFilled: true },
+            { type: "Weekday", date: "15 July", time: "8pm - 10pm", isFilled: false },
+            { type: "Weekend", date: "21 July", time: "11am - 1pm", isFilled: true},
+          ],
+          web: "web-value",
+          emi: "emi-value",
+        };
+
+
+        setBatches(data.batches);
+        setWeb(data.web);
+        setEmi(data.emi);
+      };
+
+      fetchData();
+    }
+  }, [id]);
+
   return (
     <div className={styles.EmiWrapper}>
       <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
@@ -69,34 +87,21 @@ const Emi = ({
         </div>
       </Popup>
       <div className={styles.leftEmi}>
-        <h6>Why choose us?</h6>
+        <h6>Batch Details</h6>
         <div className={styles.list}>
-          <span>
-            <TiTick className={styles.tick} />
-            250+ Hours of Live class
-          </span>
-          <span>
-            <TiTick className={styles.tick} />
-            15+ Industry Project
-          </span>
-          <span>
-            <TiTick className={styles.tick} />
-            Guaranteed job referral
-          </span>
-          <span>
-            <TiTick className={styles.tick} />
-            Real Work Experience
-          </span>
-          <span>
-            <TiTick className={styles.tick} />
-            Learn From Industry Experts
-          </span>
-          <span>
-            <TiTick className={styles.tick} />
-            Life Time Accessability
-          </span>
+          {batches.map((batch, index) => (
+            <div className={styles.gridbox} key={index}>
+              <p className={styles.days}>{batch.type}</p>
+              <p className={styles.datetag}>{batch.date}</p>
+              <span>{batch.time}</span>
+              <p className={batch.isFilled ? styles.filled : styles.aval}>
+                {batch.isFilled ? "Filled" : "Available"}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
+
       <div className={styles.rightEmi}>
         <h5 className={styles.EmiHeading}>
           Prog<span>ram Fees</span>
@@ -109,7 +114,6 @@ const Emi = ({
         <div className={styles.top}>
           <div className={styles.topEmiLeft}>
             <h6>Course Fee {price} </h6>
-            {/* <p>EMI starting from: {emi}</p> */}
           </div>
           <div className={styles.topEmiRight}>
             <button onClick={popupShow}>Apply Now</button>
