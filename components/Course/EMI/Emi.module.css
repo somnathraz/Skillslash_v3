@@ -6,6 +6,84 @@
   margin: 30px 100px;
 }
 .leftEmi {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  position: relative;
+  padding: 20px;
+}
+
+.gridbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.days {
+  font-weight: 600;
+  color: #F18350;
+  margin-bottom: 12px;
+}
+.gridbox .datetag{
+  margin: 5px 0;
+  color: #414141;
+
+}
+
+.gridbox span {
+  margin-top: 10px;
+  color: #666;
+}
+
+.list::before,
+.list::after {
+  content: '';
+  position: absolute;
+  background: #9e9d9d;
+  opacity: 1;
+}
+
+.list::before {
+  width: 0.5px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.list::after {
+  width: 100%;
+  height: 0.5px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.datetag {
+  color: #888;
+}
+
+.filled {
+  color: red;
+  font-weight: 600;
+  text-align: start;
+  margin-top: 20px;
+}
+
+.aval {
+  color: green;
+  font-weight: 600;
+  text-align: start;
+  margin-top: 20px;
+}
+
+.leftEmi {
   display: flex;
   flex-flow: column;
   background-color: #f8f6ff;
@@ -29,7 +107,8 @@
 }
 
 .list {
-  display: flex;
+  display: grid;
+  grid-template-columns: 40% 40% ;
   flex-flow: column;
   justify-content: center;
 }
@@ -37,7 +116,8 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  margin-bottom: 18px;
+  margin: 0;
+  font-size: 14px;
 }
 .tick {
   font-size: 18px;
@@ -187,14 +267,18 @@
 @media (max-width: 641px) {
 
   .EmiWrapper {
-    display: none;
+    display: flex;
     flex-flow: column;
     align-items: center;
     gap: 20px;
     margin: 20px 30px;
   }
   .leftEmi {
-    display: none;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+
   }
   .emi button {
     font-size: 12px;
@@ -202,8 +286,11 @@
   }
 }
 @media (max-width: 641px) {
-  .EmiWrapper {
+  .rightEmi{
     display: none;
+  }
+  .EmiWrapper {
+    display: flex;
     flex-flow: column;
     align-items: center;
     gap: 20px;

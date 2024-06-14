@@ -31,6 +31,7 @@ const Form = ({
     email: "",
     phone: value,
     workExperience:"",
+    looking:"",
     url: router.asPath,
   });
 
@@ -86,6 +87,7 @@ const Form = ({
         email: "",
         phone: "",
         workExperience: "",
+        looking:"",
         dateTime: "",
         url: "",
         EventTitle: "",
@@ -234,6 +236,20 @@ const Form = ({
               <option value="7 to 12 year">7 to 12 year</option>
               <option value="12+ year">12+ year</option>
             </select>
+          </fieldset>
+        </div>
+        <div className={styles.formWrapper} style={{ width: "80%" }}>
+          <fieldset style={syllabus ? { color: "white" } : { color: "black" }}>
+            <legend>Are you looking for Digital Marketing Course ?</legend>
+            <input
+              type="text"
+              name="looking"
+              className={popup ? styles.NameInputs : styles.NameInput}
+              style={syllabus ? { color: "white" } : { color: "black" }}
+              required
+              value={query.looking}
+              onChange={handleParam()}
+            />
           </fieldset>
         </div>
 
