@@ -3,6 +3,7 @@
     position: relative;
   }
   
+  
   .tab {
     display: flex;
     position: relative;
@@ -90,11 +91,14 @@
 background-color: #4f419a;
     color: #FFF;
   }
+  .mobileTitle{
+    display: none;
+  }
   @media only screen and (max-width: 600px) {
 
     .tab {
       display: grid;
-      grid-template-columns: 9% 19% 22% 25%;
+      grid-template-columns: 20% 20% 20% 20%;
       font-size: 12px;
       gap: 20px;
       padding: 0;
@@ -105,5 +109,11 @@ background-color: #4f419a;
       font-size: 9px;
       width: 80px;
         
+    }
+    .mobileTitle{
+      display: block;
+    }
+    .desktopTitle{
+      display: none;
     }
   }
