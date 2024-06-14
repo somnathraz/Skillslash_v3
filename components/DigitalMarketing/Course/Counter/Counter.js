@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <div>
 
-      <h6 className={styles.text}>Student Trained -<p>{Math.round(count)}</p></h6>
+      <h6 className={styles.text}>Students Trained -<p>{Math.round(count)}</p></h6>
     </div>
   );
 }
