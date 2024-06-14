@@ -28,6 +28,7 @@ import Talk from "../../components/DigitalMarketing/Talk/Talk";
 import Emi from "../../components/Course/EMI/Emi";
 import CourseHeader from "../../components/DigitalMarketing/Course/FirstSection/CourseHeader";
 import CaseStudy from "../../components/DigitalMarketing/Course/CaseStudy/CaseStudy";
+import Review from "../../components/DigitalMarketing/Reviews/Reviews"
 
 const DataSciencePage = ({ DataScienceCourseData }) => {
   const [showNigeriaForm, setShowNigeriaForm] = useState(false);
@@ -115,10 +116,34 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         dmPage={DataScienceCourseData.data.header.dmPage}
       />
       <NewChoose />
+      <div id="certificate">
+        <WhyUs
+          redirectDs={DataScienceCourseData.data.header.dataScience}
+          redirectDa={DataScienceCourseData.data.header.dataAnalytics}
+          nomicrosoft={DataScienceCourseData.data.header.nomicrosoft}
+          redirectDM={DataScienceCourseData.data.header.digitalmarketing}
+          dmPage={DataScienceCourseData.data.header.dmPage}
+          redirectCertificate={DataScienceCourseData.data.header.redirectCertificate}
+        />
+      </div>
+      <div id="certificate">
+        <WhyUsAnimate
+          redirectDa={DataScienceCourseData.data.header.dataAnalytics}
+          redirectDs={DataScienceCourseData.data.header.dataScience}
+          redirectFs={DataScienceCourseData.data.header.FullStack}
+          dmPage={DataScienceCourseData.data.header.dmPage}
+          redirectDM={DataScienceCourseData.data.header.digitalmarketing}
+          redirectCertificate={DataScienceCourseData.data.header.redirectCertificate}
+        />
+      </div>
 
       <Tools />
-
+      <CaseStudy 
+         redirectDM={DataScienceCourseData.data.header.digitalmarketing}
+         redirectCaseS={DataScienceCourseData.data.header.redirectgrowth}/>
       <CareerSupport />
+
+
       <div id="modules">
         <DataScienceSyllabus
           NigeriaForm={showNigeriaForm}
@@ -150,26 +175,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         />
       </div> */}
 
-      <div id="certificate">
-        <WhyUs
-          redirectDs={DataScienceCourseData.data.header.dataScience}
-          redirectDa={DataScienceCourseData.data.header.dataAnalytics}
-          nomicrosoft={DataScienceCourseData.data.header.nomicrosoft}
-          redirectDM={DataScienceCourseData.data.header.digitalmarketing}
-          dmPage={DataScienceCourseData.data.header.dmPage}
-          redirectCertificate={DataScienceCourseData.data.header.redirectCertificate}
-        />
-      </div>
-      <div id="certificate">
-        <WhyUsAnimate
-          redirectDa={DataScienceCourseData.data.header.dataAnalytics}
-          redirectDs={DataScienceCourseData.data.header.dataScience}
-          redirectFs={DataScienceCourseData.data.header.FullStack}
-          dmPage={DataScienceCourseData.data.header.dmPage}
-          redirectDM={DataScienceCourseData.data.header.digitalmarketing}
-          redirectCertificate={DataScienceCourseData.data.header.redirectCertificate}
-        />
-      </div>
+     
       <div id="fee">
           <Emi
     
@@ -177,6 +183,8 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
             emi={DataScienceCourseData.data.Fee.emi}
             redirectDM={DataScienceCourseData.data.header.digitalmarketing}/>
         </div>
+
+        <Review/>
    
       {DataScienceCourseData.data.header.FullStack ? (
         ""
@@ -189,9 +197,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           spanText="our learners say it best."
         />
       )}
-            <CaseStudy 
-         redirectDM={DataScienceCourseData.data.header.digitalmarketing}
-         redirectCaseS={DataScienceCourseData.data.header.redirectgrowth}/>
+           
 
       <div id="faq">
         <FAQ
