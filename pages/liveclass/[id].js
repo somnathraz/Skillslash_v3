@@ -85,6 +85,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         redirectDM={DataScienceCourseData.data.header.digitalmarketing}
         subtitle={DataScienceCourseData.data.header.subtitle}
         GenImg={DataScienceCourseData.data.header.GenImg}
+        AdsDM={DataScienceCourseData.data.header.AdsDM} 
       />
 
       {/* <Learn

@@ -72,6 +72,7 @@ const MegaMenu = ({ handleIcon }) => {
               setPopular(true);
               setDataScience(false);
               setSoftware(false);
+              setDM(false);
             }}
           >
             <div className={styles.innerSpan}>
@@ -83,7 +84,7 @@ const MegaMenu = ({ handleIcon }) => {
         )}
         {mobile ? (
           <>
-            <span
+            {/* <span
               className={DataScience ? styles.activeSpan : styles.normalSpan}
               onClick={() => {
                 setPopular(false);
@@ -96,7 +97,7 @@ const MegaMenu = ({ handleIcon }) => {
                 <div>Self Paced</div>
               </div>
               <IoIosArrowDown />
-            </span>
+            </span> */}
             {DataScience ? (
               <div className={styles.gridPanel}>
                 <div
@@ -128,77 +129,79 @@ const MegaMenu = ({ handleIcon }) => {
             )}
           </>
         ) : (
-          <span
-            className={DataScience ? styles.activeSpan : styles.normalSpan}
-            onClick={() => {
-              setPopular(false);
-              setDataScience(true);
-              setSoftware(false);
-            }}
-          >
-            <div className={styles.innerSpan}>
-              <MdDataSaverOff className={styles.MenuIcon} />
-              <div>Self Paced</div>
-            </div>
-            <IoIosArrowForward />
-          </span>
+          // <span
+          //   className={DataScience ? styles.activeSpan : styles.normalSpan}
+          //   onClick={() => {
+          //     setPopular(false);
+          //     setDataScience(true);
+          //     setSoftware(false);
+          //   }}
+          // >
+          //   <div className={styles.innerSpan}>
+          //     <MdDataSaverOff className={styles.MenuIcon} />
+          //     <div>Self Paced</div>
+          //   </div>
+          //   <IoIosArrowForward />
+          // </span>
+          <></>
         )}
         {mobile ? (
-          <>
-            <span
-              className={software ? styles.activeSpan : styles.normalSpan}
-              onClick={() => {
-                setPopular(false);
-                setDataScience(false);
-                setSoftware(true);
-                setDM(false);
-              }}
-            >
-              <div className={styles.innerSpan}>
-                <MdOutlineLiveTv className={styles.MenuIcon} />
-                <div>Blended</div>
-              </div>
+          // <>
+          //   <span
+          //     className={software ? styles.activeSpan : styles.normalSpan}
+          //     onClick={() => {
+          //       setPopular(false);
+          //       setDataScience(false);
+          //       setSoftware(true);
+          //       setDM(false);
+          //     }}
+          //   >
+          //     <div className={styles.innerSpan}>
+          //       <MdOutlineLiveTv className={styles.MenuIcon} />
+          //       <div>Blended</div>
+          //     </div>
 
-              <IoIosArrowDown />
-            </span>
-            <span
-              className={dM ? styles.activeSpan : styles.normalSpan}
-              onClick={() => {
-                setPopular(false);
-                setDataScience(false);
-                setSoftware(false);
-                setDM(true);
-              }}
-            >
-              <div className={styles.innerSpan}>
-                <MdOutlineLiveTv className={styles.MenuIcon} />
-                <div>Digital Marketing</div>
-              </div>
+          //     <IoIosArrowDown />
+          //   </span>
+          //   <span
+          //     className={dM ? styles.activeSpan : styles.normalSpan}
+          //     onClick={() => {
+          //       setPopular(false);
+          //       setDataScience(false);
+          //       setSoftware(false);
+          //       setDM(true);
+          //     }}
+          //   >
+          //     <div className={styles.innerSpan}>
+          //       <MdOutlineLiveTv className={styles.MenuIcon} />
+          //       <div>Digital Marketing</div>
+          //     </div>
 
-              <IoIosArrowDown />
-            </span>
-            {dM ? (
-              <div className={styles.gridPanel}>
-                <div className={styles.gridPanel}>
-                  <div
-                    className={styles.mInnerBox}
-                    onClick={() => handleIcon(false)}
-                  >
-                    <a href="/liveclass/digital-marketing-master-course">
-                      <div className={styles.mInnerBoxDiv}>
-                        <h5>Digital Marketing Master Course</h5>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            ) : (
-              ""
-            )}
-          </>
+          //     <IoIosArrowDown />
+          //   </span>
+          //   {dM ? (
+          //     <div className={styles.gridPanel}>
+          //       <div className={styles.gridPanel}>
+          //         <div
+          //           className={styles.mInnerBox}
+          //           onClick={() => handleIcon(false)}
+          //         >
+          //           <a href="/liveclass/digital-marketing-master-course">
+          //             <div className={styles.mInnerBoxDiv}>
+          //               <h5>Digital Marketing Master Course</h5>
+          //             </div>
+          //           </a>
+          //         </div>
+          //       </div>
+          //     </div>
+          //   ) : (
+          //     ""
+          //   )}
+          // </>
+          <></>
         ) : (
           <>
-            <span
+            {/* <span
               className={software ? styles.activeSpan : styles.normalSpan}
               onClick={() => {
                 setPopular(false);
@@ -212,7 +215,7 @@ const MegaMenu = ({ handleIcon }) => {
                 <div>Blended</div>
               </div>
               <IoIosArrowForward />
-            </span>
+            </span> */}
 
             <span
               className={dM ? styles.activeSpan : styles.normalSpan}

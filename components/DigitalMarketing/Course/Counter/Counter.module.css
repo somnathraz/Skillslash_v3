@@ -1,0 +1,11 @@
+.text {
+    color: #fff;
+    margin-top: 20px;
+    display: flex;
+font-weight: 400;
+}
+.text p  {
+color: #08db5d;
+margin-left: 10px;
+font-weight: 600;
+}
