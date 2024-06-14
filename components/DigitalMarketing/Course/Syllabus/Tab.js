@@ -5,13 +5,13 @@ import Form from "../../../Skills/Global/Form/Form";
 import Popup from "../../../Skills/Global/Popup/Popup";
 import { MdDownload } from "react-icons/md";
 
-
-const TabSection = ({ changeHeading,  }) => {
+const TabSection = ({ changeHeading }) => {
   const [activeTab, setActiveTab] = useState(0);
 
   const tabs = [
     {
       title: "Growth",
+      Stitle: "Growth",
       content: [
         "Growth Marketing",
         "Email Marketing 1.1",
@@ -32,10 +32,11 @@ const TabSection = ({ changeHeading,  }) => {
         "Affiliate Marketing",
       ],
       para: ["Growth marketing Specialization"],
-      redirect: { redirectgrowth: true }
+      redirect: { redirectgrowth: true },
     },
     {
       title: "Performance & SEO",
+      Stitle: "Performance & SEO",
       content: [
         "Social Media Ads 1.1",
         "Google Tag Manager",
@@ -51,10 +52,11 @@ const TabSection = ({ changeHeading,  }) => {
         "Voice and Audio Marketing",
       ],
       para: ["Performance & SEO marketing Specialization"],
-      redirect: { redirectPSeo: true }
+      redirect: { redirectPSeo: true },
     },
     {
       title: "Performance & Social Media",
+      Stitle: "Performance & Social Media",
       content: [
         "Social Media Ads 1.1",
         "Google Tag Manager",
@@ -71,10 +73,11 @@ const TabSection = ({ changeHeading,  }) => {
         "Voice and Audio Marketing",
       ],
       para: ["Performance & Social Media marketing Specialization"],
-      redirect: { redirectPerforSocia: true }
+      redirect: { redirectPerforSocia: true },
     },
     {
       title: "SEO & Social Media",
+      Stitle: "SEO & Social Media",
       content: [
         "Search Engine Optimization 1.1",
         "Content Writing 1.1",
@@ -90,7 +93,7 @@ const TabSection = ({ changeHeading,  }) => {
         "Affiliate Marketing",
       ],
       para: ["SEO & Social Media marketing Specialization"],
-      redirect: { redirectsocialSeo: true }
+      redirect: { redirectsocialSeo: true },
     },
   ];
 
@@ -132,12 +135,16 @@ const TabSection = ({ changeHeading,  }) => {
             }`}
             onClick={() => handleTabClick(index)}
           >
-            {tab.title}
+            <span className={styles.desktopTitle}>{tab.title}</span>
+            <span className={styles.mobileTitle}>Type {index + 1}</span>
           </button>
         ))}
       </div>
       <div className={styles.tabContent}>
         <ul className={styles.pointsul}>
+          <li>
+            <strong>{tabs[activeTab].Stitle}</strong>
+          </li>
           {tabs[activeTab].content.map((point, index) => (
             <li key={index}>
               <VscFileSubmodule className={styles.liveicon} />
@@ -153,7 +160,7 @@ const TabSection = ({ changeHeading,  }) => {
                 className={styles.syllbtn}
               >
                 Syllabus
-                <MdDownload/>
+                <MdDownload />
               </button>
             </div>
           ))}
