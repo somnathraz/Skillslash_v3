@@ -1,7 +1,7 @@
 .toolsdiv {
   border-radius: 40px;
   background: #212121;
-  margin: 10px 170px;
+margin: 90px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,6 +10,7 @@
   gap: 30px;
   background-size: cover;
   background-position: center;
+  width: 1200px;
 }
 
 .toolsdiv h2 {
@@ -74,6 +75,7 @@
     margin: 20px;
     padding: 50px 40px;
     gap: 0;
+    width: fit-content;
   }
   .toolsdiv h2 {
     font-size: 20px;

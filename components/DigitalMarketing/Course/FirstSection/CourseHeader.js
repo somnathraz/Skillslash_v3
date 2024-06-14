@@ -12,6 +12,7 @@ import { IoToggleSharp } from "react-icons/io5";
 import { PiToggleRightThin } from "react-icons/pi";
 import { FaDownload } from "react-icons/fa6";
 
+import Counter from "../Counter/Counter"
 
 const CourseHeader = ({
   title,
@@ -24,6 +25,7 @@ const CourseHeader = ({
   redirectDM,
   subtitle,
   GenImg,
+  AdsDM,
 }) => {
   const [popups, setPopups] = useState(false);
   const popupShow = (demoClass, changeText) => {
@@ -87,7 +89,14 @@ const CourseHeader = ({
                   priority
                 />
               </div>
+              <div>
+                {AdsDM ? (     <Counter AdsDM={AdsDM}/>):(<></>)}
+
+           
+              </div>
+              
             </div>
+        
             <ul className={Styles.listpoints}>
               <li className={Styles.togglelist}>
                 <span>
