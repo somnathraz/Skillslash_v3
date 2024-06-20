@@ -1,0 +1,95 @@
+/* Form.module.css */
+
+.formContainer {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .formSection {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .formSection label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 400;
+    color: #4f419a;
+    font-size: 18px;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .formSection input {
+    width: 100%;
+    padding: 10px; /* Default padding for inputs */
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    transition: border-color 0.3s ease-out;
+    font-size: 16px; /* Adjust font size for mobile */
+  }
+  
+  .formSection input:focus {
+    border-color: #4f419a;
+    outline: none;
+  }
+  
+  .formSection input:focus + label {
+    transform: translateY(-40px); /* Move label up on focus */
+    position: absolute;
+    left: 10px; /* Adjust left position for label on focus */
+    top: -20px; /* Adjust top position for label on focus */
+    font-size: 14px; /* Adjust font size for label on focus */
+  }
+  
+  .submitButton {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4f419a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+  }
+  
+  .submitButton:hover {
+    background-color: #005bb5;
+  }
+  
+  .Title {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  /* Media Query for Mobile Devices */
+  @media (max-width: 768px) {
+    .formContainer {
+      padding: 15px; /* Reduce padding for smaller screens */
+    }
+  
+    .formSection {
+      margin-bottom: 15px; /* Reduce margin for smaller screens */
+    }
+  
+    .formSection label {
+      font-size: 16px; /* Adjust label font size for smaller screens */
+      position: static; /* Reset label position to static for default */
+    }
+  
+    .formSection input {
+      padding: 12px; /* Increase input padding for better touch targets on mobile */
+    }
+  
+    .submitButton {
+      padding: 10px 20px; /* Adjust button padding for smaller screens */
+      font-size: 14px; /* Adjust button font size for smaller screens */
+    }
+  
+    .Title {
+      font-size: 22px; /* Increase title font size for smaller screens */
+    }
+  }
+  
