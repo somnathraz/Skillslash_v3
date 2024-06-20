@@ -8,14 +8,14 @@ const Form = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phoneNumber: '', // This will store the formatted phone number
+    phoneNumber: '',
     jobTitle: '',
   });
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [success, setSuccess] = useState(false); // Optional: to show success message
-  const router = useRouter(); // Initialize useRouter hook
+  const [success, setSuccess] = useState(false); 
+  const router = useRouter(); 
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -52,7 +52,7 @@ const Form = () => {
         throw new Error('Network response was not ok');
       }
       setLoading(false);
-      setSuccess(true); // Optional: to show success message
+      setSuccess(true); 
       setFormData({
         name: '',
         email: '',
@@ -60,7 +60,7 @@ const Form = () => {
         jobTitle: '',
       });
       console.log('Form submission successful:', response);
-      router.push('/Thankyou/digital-marketing/webinar'); // Redirect to thank you page
+      router.push('/Thankyou/digital-marketing/webinar'); 
     })
     .catch(error => {
       setLoading(false);
