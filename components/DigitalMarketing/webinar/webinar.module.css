@@ -1,0 +1,51 @@
+/* webinar.module.css */
+
+.webinar {
+    display: grid;
+    grid-template-columns: 100%; /* Single column for mobile */
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between elements */
+    text-align: center; /* Center align for mobile */
+}
+
+.left {
+    margin-bottom: 20px; /* Add some space below the image */
+    margin-top: 0px;
+}
+
+.ryt {
+    margin-top: 20px; /* Reduce the top margin for the form */
+}
+
+@media (min-width: 768px) {
+    /* For tablets and larger screens */
+    .webinar {
+        grid-template-columns: 50% 50%; /* Two columns for tablets and larger screens */
+        text-align: left; /* Align text to the left in desktop view */
+    }
+
+    .ryt {
+        margin-top: 90px; /* Reset top margin for form in desktop view */
+    }
+
+    .left{
+        margin-top: 60px;
+    }
+
+}
+@media (max-width: 641px) {
+
+
+    .left{
+        margin-top: 60px;
+    }
+    .webinar{
+        gap: 0;
+    }
+    .ryt{
+
+        margin-top: -20px;
+        margin-bottom: 60px;
+    }
+
+}
