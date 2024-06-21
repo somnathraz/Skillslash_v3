@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { MdEmail } from 'react-icons/md'
 import Navbar from '../../../components/Navbar/Navbar'
+import Link from 'next/link'
 
 export default function ThankYou() {
   return (
@@ -14,10 +15,18 @@ export default function ThankYou() {
       <main className="flex flex-col items-center justify-center min-h-screen py-2">
         <div className="bg-white p-8 rounded-lg  max-w-md w-full mx-4 animate-fadeIn flex flex-col items-center">
           <MdEmail className="text-8xl text-gray-700 mb-4 animate-slideUp" />
-          <h1 className="text-6xl font-bold text-center text-gray-900">Thank You!</h1>
+          <h1 className="text-2xl font-bold text-center text-gray-900">Congratulation! you have successfully registered for Workshop</h1>
           <p className="mt-4 text-gray-700 text-center">
-            Your submission has been received. We will get back to you soon.
+          Please save the below link and use the same to join on 22nd June at 11 AM.
+
+
+    
           </p>
+          <br/>
+          <div className='m-2 flex flex-row items-center max-sm:flex-col '>
+<b>Link:</b>  <Link className="text-blue-500 ml-2" href="https://us06web.zoom.us/j/81451214111" target='_blank'>https://us06web.zoom.us/j/81451214111</Link>
+</div>
+
           <div className="mt-6 text-center">
             <a
               href="https://skillslash.com/liveclass/digital-marketing-master-course"
