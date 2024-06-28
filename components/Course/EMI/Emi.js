@@ -44,14 +44,17 @@ const Emi = ({
         const data = {
 
           batches: [
-            { type: "Weekday", date: "1 July", time: "8pm - 10pm", isFilled: true },
-            { type: "Weekend", date: "22nd June", time: "11am - 1pm", isFilled: true },
-            { type: "Weekday", date: "15 July", time: "8pm - 10pm", isFilled: false },
-            { type: "Weekend", date: "21 July", time: "11am - 1pm", isFilled: true},
+            { type: "Weekday", date: "12th July", time: "8pm - 10pm", isFilled: true },
+            { type: "Weekend", date: "21 July", time: "11am - 2pm", isFilled: true},
+            { type: "Weekday", date: "26 July", time: "8pm - 10pm", isFilled: false },
+            { type: "Weekend", date: "4th Aug", time: "11am - 2pm", isFilled: true },
+           ,
+           
           ],
           web: "web-value",
           emi: "emi-value",
         };
+
 
 
         setBatches(data.batches);
