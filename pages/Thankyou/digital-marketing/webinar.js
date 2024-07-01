@@ -10,7 +10,7 @@ export default function ThankYou() {
   const copyToClipboard = () => {
     navigator.clipboard
       .writeText(
-        "https://us06web.zoom.us/webinar/register/WN_ob4di7g3T2CUHHk-GJGjAQ"
+        "https://us06web.zoom.us/webinar/register/WN_7BwMBm6oRH-6cxw7JWVrqA"
       )
       .then(() => {
         setCopySuccess("Link copied!");
@@ -46,10 +46,10 @@ export default function ThankYou() {
             <b>Link:</b>
             <Link
               className="text-blue-500 ml-2"
-              href="https://us06web.zoom.us/webinar/register/WN_ob4di7g3T2CUHHk-GJGjAQ"
+              href="https://us06web.zoom.us/webinar/register/WN_7BwMBm6oRH-6cxw7JWVrqA"
               target="_blank"
             >
-              https://us06web.zoom.us/webinar/register
+            https://us06web.zoom.us/webinar/register
             </Link>
           </div>
           <button

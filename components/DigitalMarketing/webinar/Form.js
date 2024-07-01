@@ -42,6 +42,7 @@ const Form = () => {
     formDataToSend.append('email', formData.email);
     formDataToSend.append('phoneNumber', formData.phoneNumber);
     formDataToSend.append('jobTitle', formData.jobTitle);
+    formDataToSend.append( 'url',router.asPath,)
 
     fetch("https://getform.io/f/pbgxklza", {
       method: 'POST',
