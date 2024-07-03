@@ -20,7 +20,7 @@ const webinar = () => {
       <div className={styles.webinar}>
         <div className={styles.left}>
           <Image
-            src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/image-webinar.png"
+            src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/third_time.png"
             width={800}
             height={400}
             alt="form"
