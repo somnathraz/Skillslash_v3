@@ -1,0 +1,16 @@
+/* components/tableOfContents.module.css */
+
+.table-of-contents {
+    border-left: 2px solid #ddd;
+    padding-left: 20px;
+  }
+  
+  .table-of-contents ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .table-of-contents ul li {
+    margin-bottom: 10px;
+  }
+  
