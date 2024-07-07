@@ -3,9 +3,9 @@ import "../styles/globals.css";
 import "../styles/form.css";
 import Script from "next/script";
 import { GoogleTagManager } from "@next/third-parties/google";
-import { Montserrat } from "next/font/google";
+import { Raleway} from "next/font/google";
 
-const montserrat = Montserrat({
+const raleway= Raleway({
   weight: ["300", "400", "500", "600", "700", "800"],
   subsets: ["latin"],
   display: "swap",
@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }) {
         }}
         strategy="lazyOnload"
       /> */}
-      <main className={montserrat.className}>
+      <main className={raleway.className}>
         <Component {...pageProps} />
         <GoogleTagManager gtmId="GTM-WJVZHTB" />
       </main>

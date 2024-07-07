@@ -1,0 +1,61 @@
+/* components/BlogHeader.module.css */
+
+.blogHeader {
+    display: grid;
+    background-color: rgb(17 22 33);
+    color: #fff;
+    width: 100%;
+    grid-template-columns: 50% 40%;
+    height: -moz-fit-content;
+    padding: 50px 150px 50px 150px;
+    height: auto;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+
+  }
+  
+  .banner img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .titleAuthor {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .titleAuthor h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .titleAuthor p {
+    font-size: 16px;
+    color: #fff
+  }
+  .authordiv{
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  @media screen and (max-width: 480px) {
+.blogHeader{
+  display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 0;
+  }
+  .titleAuthor h1 {
+    font-size: 30px;
+  }
+  .titleAuthor{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+
+}

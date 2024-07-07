@@ -5,18 +5,15 @@ import { MdOutlineAccessAlarms } from "react-icons/md";
 import Link from "next/link";
 import Popup from "../../Global/Popup/Popup";
 import Form from "../../Global/Form/Form";
-import { FaYoutube } from "react-icons/fa";
-import {
-  MdOutlineVideocam,
-  MdLiveTv,
-  MdOutlineWorkHistory,
-  MdLockOpen,
-} from "react-icons/md";
+
 import ButtonWaveAnimation from "../../../ButtonWaveAnimation/WaveAnimation";
-import { PiCertificateBold, PiMedal } from "react-icons/pi";
-import { TbRelationOneToMany } from "react-icons/tb";
+
 import VideoPlaylist from "../../Global/VideoPlaylist/VideoPlaylist";
 import { ratingData } from "../../../../components/VideoTestimonial/ratingData";
+import ShareButtons from "../../../CityBlog/ShareButton";
+
+
+
 
 const Header = ({
   title,
@@ -38,6 +35,7 @@ const Header = ({
   dmPage,
   titletwo,
   redirectDM,
+
   gst,
 }) => {
   const [show, setShow] = useState(false);
@@ -60,8 +58,10 @@ const Header = ({
       String.fromCharCode(r) + String.fromCharCode(g) + String.fromCharCode(b)
     );
   };
+  
+  
   return (
-    <div className="grid grid-cols-[60%,39%] max-[741px]:flex max-[741px]:flex-col max-[901px]:grid-cols-[55%,44%] max-sm:flex max-sm:flex-col gap-5 max-sm:mb-[10px] bg-[#111621] w-full mt-[40px] max-sm:mt-[60px] max-sm:pt-4 min-[1600px]:mt-[70px] px-28 max-[1024px]:px-10 min-[1600px]:px-48 max-sm:px-0 py-[60px] min-[1600px]:py-[90px] pb-[70px] max-sm:pb-[30px] max-sm:py-4 relative">
+    <div className=" max-[741px]:flex max-[741px]:flex-col max-[901px]:grid-cols-[55%,44%] max-sm:flex max-sm:flex-col gap-5 max-sm:mb-[10px] bg-[#111621] w-full mt-[0px] max-sm:mt-[60px] max-sm:pt-4 min-[1600px]:mt-[0px] px-28 max-[1024px]:px-10 min-[1600px]:px-48 max-sm:px-0 py-[60px] min-[1600px]:py-[90px] pb-[70px] max-sm:pb-[30px] max-sm:py-4 relative">
       <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
         <div className="RightPopup">
           {changeHeading ? (
@@ -171,7 +171,7 @@ const Header = ({
         ) : (
           <>
             {" "}
-            <h1 className="text-5xl max-[901px]:text-2xl text-white font-bold leading-[58px] max-[1281px]:text-3xl   max-sm:text-4xl max-sm:leading-[40px] max-[361px]:text-3xl">
+            <h1 className="text-5xl max-[901px]:text-2xl text-center text-white font-bold leading-[58px] max-[1281px]:text-3xl   max-sm:text-4xl max-sm:leading-[40px] max-[361px]:text-3xl">
               {title}
             </h1>
           </>
@@ -195,7 +195,7 @@ const Header = ({
           })}
         </div>
 
-        <div className="grid grid-cols-3 gap-2 min-[1600px]:gap-0 border-[1px] mt-3 w-[75%] min-[1600px]:w-[60%] max-sm:w-[97%] rounded items-center px-4 py-1 justify-center max-sm:py-1 max-sm:px-2 max-sm:hidden">
+        {/* <div className="grid grid-cols-3 gap-2 min-[1600px]:gap-0 border-[1px] mt-3 w-[75%] min-[1600px]:w-[60%] max-sm:w-[97%] rounded items-center px-4 py-1 justify-center max-sm:py-1 max-sm:px-2 max-sm:hidden">
           <Image
             src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/googlereview-new.webp"
             alt="Goole_RReviews"
@@ -220,11 +220,13 @@ const Header = ({
             priority
             className="mx-auto"
           />
-        </div>
-        <p className="text-[#cccccc] w-[91%] min-[1600px]:w-[75%] text-[17px] max-sm:text-[16px] max-[1281px]:text-[16px] leading-[28px] max-sm:leading-[24px] font-light mt-2 max-sm:mt-2 min-[1600px]:text-[20px] max-sm:hidden">
+        </div> */}
+            <p className="text-[#cccccc] w-[91%] min-[1600px]:w-[75%] text-[17px] text-center max-sm:text-[16px] max-[1281px]:text-[16px] leading-[28px] max-sm:leading-[24px] font-light mt-2 max-sm:mt-2 min-[1600px]:text-[20px] max-sm:hidden">
           {desc}
         </p>
-        <div className="flex  gap-3  max-[642px]:w-[80%]">
+
+        
+        {/* <div className="flex  gap-3  max-[642px]:w-[80%]">
           <button
             className="w-full min-[642px]:w-max px-3 bg-[#f18350] text-[15px] text-white rounded py-2 font-medium  flex justify-center items-center max-sm:text-[12px] max-sm:px-2"
             id="clck-free-counselling"
@@ -248,9 +250,9 @@ const Header = ({
               </button>
             </>
           )}
-        </div>
+        </div> */}
       </div>
-      <div className="flex flex-col gap-7 relative w-full items-end justify-end">
+      {/* <div className="flex flex-col gap-7 relative w-full items-end justify-end">
         <div className="bg-white top-0 px-11 max-[1024px]:px-5 py-3 max-sm:px-0 rounded shadow flex flex-col w-full z-[1] max-sm:hidden absolute mt-28 max-[741px]:w-[52%] max-[741px]:top-0 max-[741px]:right-[-15px]">
           <div className="relative w-full  max-sm:w-[313px] h-[290px] max-[1281px]:h-[200px] max-sm:h-[220px] top-[-120px] max-sm:top-[-100px]  min-[1600px]:h-[320px] max-sm:left-7 max-sm:flex max-sm:justify-center">
             {dmPage ? (
@@ -266,10 +268,7 @@ const Header = ({
                     quality={40}
                     id={idBtnV}
                   />
-                  {/* <MdOutlinePlayCircleOutline
-                className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
-                id={idBtnV}
-              /> */}
+      
                 </div>
               </>
             ) : (
@@ -285,10 +284,7 @@ const Header = ({
                     quality={40}
                     id={idBtnV}
                   />
-                  {/* <MdOutlinePlayCircleOutline
-                className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
-                id={idBtnV}
-              /> */}
+             
                   <ButtonWaveAnimation
                     className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
                     id={idBtnV}
@@ -303,22 +299,10 @@ const Header = ({
               <span className="text-base font-normal ml-[-10px]	text-[#363636]">
                 {gst}
               </span>
-              {/* {newDataScience && (
-                <span className="line-through text-lg font-normal text-[#646464]">
-                  {actualPrice}
-                </span>
-              )} */}
+            
             </p>
 
-            {/* <Image
-              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/discount.png"
-              alt="discount"
-              width={20}
-              height={20}
-              priority
-              style={{ height: "20px" }}
-            />
-            <p className="text-[#f18350] font-bold">({discount} Off)</p> */}
+  
           </div>
           {dmPage ? (
             <>
@@ -574,7 +558,7 @@ const Header = ({
             )}
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
