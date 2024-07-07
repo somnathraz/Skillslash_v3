@@ -48,7 +48,7 @@ const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate }) => {
   };
 
   const handleAdClick = (url) => {
-    window.open(url, "_blank");
+    // window.open(url, "_blank");
   };
 
   const handleAdClose = (id) => {
@@ -124,7 +124,7 @@ const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate }) => {
             ) : (
               ad.closed && (
                 <div key={ad.id} className={`${styles.stickyAds} ${styles.adLink}`}>
-                  <Link href={ad.url} target="_blank">Click here to visit our sponsor <FaArrowCircleRight /></Link>
+                  <Link href={ad.url}>Click here to visit our sponsor <FaArrowCircleRight /></Link>
                 </div>
               )
             )
