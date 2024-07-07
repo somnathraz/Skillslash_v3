@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
-import styles from "./BlogContent.module.css";
+import styles from "./blogContent.module.css";
 import ShareButtons from "../ShareButton";
 import Link from "next/link";
 
