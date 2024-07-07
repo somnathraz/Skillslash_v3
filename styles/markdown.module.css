@@ -4,13 +4,16 @@
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #333;
-  list-style:circle
+  list-style: circle;
 }
-.markdown ul, li{
+.markdown ul,
+li {
   list-style: circle;
   margin: 10px 0;
 }
-
+.markdown {
+  list-style: disc;
+}
 .metadata {
   margin-bottom: 20px;
 }
@@ -18,4 +21,3 @@
 .metadata p {
   margin: 5px 0;
 }
-
