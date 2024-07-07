@@ -1,34 +1,41 @@
-// components/Header.js
+// components/CityBlog/BlogHeader/BlogHeader.js
+
+import Link from "next/link";
 import Image from 'next/image';
 import styles from './blogHeader.module.css';
-import ShareButtons from '../ShareButton';
-import Link from 'next/link';
+import { FaLinkedin } from "react-icons/fa";
 
-export default function Header({ title, author, linkedin, bannerImg }) {
+export default function BlogHeader({ title, author, linkedinId, bannerImg, authorPro }) {
   return (
     <header className={`${styles.blogHeader} grid grid-cols-2`}>
       <div className={`${styles.titleAuthor} font-bold`}>
         <h1>{title}</h1>
-        <div className='flex justify-between mx-10'>
-          <p>
+        <div className={styles.authordiv}>
+          <div className="flex items-center gap-2">
             <span className='text-[#F18350] font-semibold text-[16px]'>Author:</span>{" "}
-            {author}{" "}
-            {linkedin && (
-              <Link
-                href={linkedin}
-                target='_blank'
-                rel='noopener noreferrer'
-                className='text-blue-500 hover:underline'
-              >
-                (LinkedIn)
-              </Link>
-            )}
-          </p>
+            <div className="flex items-center gap-2">
+              <Link className="flex flex-row gap-1 items-center" href={`/author/${author}`}>
 
+                <Image className='rounded-[50%] ' src={authorPro} loading="lazy" width={30} height={30} alt="profile" />
+ 
+                <span>{author}</span>
+              </Link>
+            </div>
+          </div>
+          {linkedinId && (
+            <Link
+              href={linkedinId}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-blue-500 hover:underline flex items-center gap-1'
+            >
+      
+              <FaLinkedin />
+            </Link>
+          )}
         </div>
       </div>
       <div className={styles.banner}>
-        {/* Your banner image or content */}
         <Image width={600} height={600} loading='lazy' src={bannerImg} alt='Banner Image' />
       </div>
     </header>

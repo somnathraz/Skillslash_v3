@@ -1,12 +1,14 @@
 ---
 stitle: "Data Science Course in Mumbai | Skillslash"
 description: "Learn Data Science in Mumbai with hands-on projects, dual certification, and job referrals."
-author: "Sonalisha"
-linkedin: "https://www.linkedin.com/johndoe"
+author: "Amit"
+linkedinId: "https://www.linkedin.com/in/amit-ambi-axh08/"
+authorPro: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/amit_profile.jpeg"
 shareLink: "https://skillslash.com/data-science-course-in-mumbai"
 title: "Top 10 Data Science Course Training Institutes in Mumbai"
 bannerImg: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/top_10_logo.webp"
 lastUpdated: "04-07-2024"
+publishDate: "20-07-2023"
 ---
 
 Live Project Based Learning Partnered with Tech Companies
@@ -489,7 +491,7 @@ _<b>About:</b>_ In the present tech age, data science learning has become a gold
 
 TecStack Academy lays the basis for cutting-edge upskilling to develop a data-savvy career path with exciting gains. Its in-depth _<b><a href="https://www.techstack.in/data-science-course-mumbai/" target="_blank" rel="nofollow">data science courses</a></b>_ help you craft an absolute career path with global-level credit. Its alliance with Orangus India elevates success metrics with finite gains.
 
-If you’re willing to revise your career path and confound stagnancies, join here. Quality upskilling followed by definite career support services expands your earning limits with tempting hikes and perks. With this, you can join promising jobs at **_Amazon, Google, IBM, HCL, KPMG, Oppo, etc_**.
+If you’re willing to revise your career path and confound stagnancies, join here. Quality upskilling followed by definite career support services expands your earning limits with tempting hikes and perks. With this, you can join promising jobs at _<b>Amazon, Google, IBM, HCL, KPMG, Oppo, etc</b>_.
 
 For further details <a href="mailto:info@techstack.in" target="_blank" rel="nofollow">contact here.</a>
 

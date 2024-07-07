@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { BsCalendarCheck } from "react-icons/bs";
 
-const RelatedInfo = ({ aboutCity, pinCode, relatedArea, relatedBlog }) => {
+const RelatedInfo = ({ aboutCity, relatedArea, relatedBlog }) => {
   if (!aboutCity) {
     console.log("City data is not available.");
     return <p>City data not available.</p>;
