@@ -11,8 +11,12 @@ export default function AuthorPage({ author, posts }) {
         <Head>
           <title>Posts by {author}</title>
         </Head>
-        <h1 className="text-3xl font-bold text-center mb-8">Posts by {author}</h1>
-        <p className="text-center mt-8 text-gray-600">No posts found for this author.</p>
+        <h1 className="text-3xl font-bold text-center mb-8">
+          Posts by {author}
+        </h1>
+        <p className="text-center mt-8 text-gray-600">
+          No posts found for this author.
+        </p>
       </div>
     );
   }
@@ -23,8 +27,6 @@ export default function AuthorPage({ author, posts }) {
         <title>Posts by {author}</title>
       </Head>
       <h1 className="text-3xl font-bold text-center mb-8">Posts by {author}</h1>
-
-      {/* Banner Component */}
       <div className="bg-blue-500 text-white text-center p-4 mb-8 rounded-md">
         <p>This is a banner for {author}</p>
       </div>
@@ -32,9 +34,14 @@ export default function AuthorPage({ author, posts }) {
       {/* Grid of Posts */}
       <ul className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         {posts.map((post) => (
-          <li key={post.id} className="bg-white rounded-lg shadow-md p-4 hover:shadow-xl transition duration-300">
+          <li
+            key={post.id}
+            className="bg-white rounded-lg shadow-md p-4 hover:shadow-xl transition duration-300"
+          >
             <Link href={`/${post.id}`}>
-              <p className="block text-xl font-semibold text-blue-600 hover:text-blue-800">{post.title}</p>
+              <p className="block text-xl font-semibold text-blue-600 hover:text-blue-800">
+                {post.title}
+              </p>
             </Link>
           </li>
         ))}

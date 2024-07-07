@@ -6,9 +6,9 @@ import Link from "next/link";
 
 const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate }) => {
   const [headingElements, setHeadingElements] = useState([]);
+
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const contentRef = useRef(null);
-
   useEffect(() => {
     if (contentRef.current) {
       const headings = Array.from(contentRef.current.querySelectorAll("h2"));
