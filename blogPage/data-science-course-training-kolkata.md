@@ -7,7 +7,7 @@ authorPro: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/amit_pr
 shareLink: "https://example.com/share-article"
 title: "Top 10 Data Science Course Training Institutes in Kolkata"
 bannerImg: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/top_10_logo.webp"
-lastUpdated: "04-07-2024"
+lastUpdated: "04-05-2024"
 publishDate: "20-07-2023"
 ---
 

@@ -3,6 +3,8 @@
 import { getAllAuthors, getAllPostsByAuthor } from "../../lib/page";
 import Link from "next/link";
 import Head from "next/head";
+import Image from "next/image";
+import { FaLinkedinIn } from "react-icons/fa";
 
 export default function AuthorPage({ author, posts }) {
   if (!posts || posts.length === 0) {
@@ -27,25 +29,54 @@ export default function AuthorPage({ author, posts }) {
         <title>Posts by {author}</title>
       </Head>
       <h1 className="text-3xl font-bold text-center mb-8">Posts by {author}</h1>
-      <div className="bg-blue-500 text-white text-center p-4 mb-8 rounded-md">
+      {/* <div className="bg-blue-500 text-white text-center p-4 mb-8 rounded-md">
         <p>This is a banner for {author}</p>
-      </div>
+      </div> */}
 
       {/* Grid of Posts */}
-      <ul className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2">
         {posts.map((post) => (
-          <li
+          <div
             key={post.id}
-            className="bg-white rounded-lg shadow-md p-4 hover:shadow-xl transition duration-300"
+            className="bg-white gap-4 rounded-lg shadow-md p-4 hover:shadow-xl transition duration-300"
           >
-            <Link href={`/${post.id}`}>
-              <p className="block text-xl font-semibold text-blue-600 hover:text-blue-800">
-                {post.title}
-              </p>
-            </Link>
-          </li>
+            <div className="flex flex-col sm:flex-row">
+              <Image
+         
+                src={post.bannerImg}
+                width={260}
+                height={260}
+                alt="banner Image"
+                loading="lazy"
+                sizes="(max-width: 640px) 50vw, 260px"
+                className="w-full sm:w-64 h-auto p-2 rounded"
+              />
+              <Link href={`/${post.id}`}>
+                <div className="flex flex-col gap-2">
+                  <p className="block text-lg sm:text-xl font-semibold text-[#4f419a] hover:text-blue-800">
+                    {post.title}
+                  </p>
+                  <p className="text-[10px]">{post.description}</p>
+                </div>
+              </Link>
+            </div>
+            <div className="flex justify-between items-center">
+              <p className="text-[14px]">Last Updated: {post.lastUpdated}</p>
+              <div className="flex gap-2 items-center">
+                <Image
+                  className="rounded-full"
+                  src={post.authorPro}
+                  width={30}
+                  height={30}
+                  alt="profile"
+                  loading="lazy"
+                />
+                <p>{post.author}</p>
+              </div>
+            </div>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }
@@ -68,7 +99,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   try {
-    const posts = getAllPostsByAuthor(params.author);
+    const posts = await getAllPostsByAuthor(params.author);
 
     return {
       props: {
