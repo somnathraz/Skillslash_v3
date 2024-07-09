@@ -49,7 +49,7 @@ export default function AuthorPage({ author, posts }) {
                 alt="banner Image"
                 loading="lazy"
                 sizes="(max-width: 640px) 50vw, 260px"
-                className="w-full sm:w-64 h-auto p-2 rounded"
+                className="w-full sm:w-64 h-auto "
               />
               <Link href={`/${post.id}`}>
                 <div className="flex flex-col gap-2">
