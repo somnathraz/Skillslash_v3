@@ -32,7 +32,7 @@ export const DsData = [
   {
     id: 7,
     city: "Mumbai",
-    link: "/data-science-course-training-mumbai",
+    link: "/data-science-course-in-mumbai",
   },
   {
     id: 8,

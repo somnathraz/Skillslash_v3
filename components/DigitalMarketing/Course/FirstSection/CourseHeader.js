@@ -103,26 +103,26 @@ const CourseHeader = ({
                   {" "}
                   <IoToggleSharp className={Styles.listicon} />
                 </span>
-                <p>Guaranteed Internship</p>
+                <p>Assured Placement                </p>
               </li>
               <li className={Styles.togglelist}>
                 <IoToggleSharp className={Styles.listicon} />
-                <p> Assured Placement</p>
+                <p> Guaranteed Internship                </p>
               </li>
               <li className={Styles.togglelist}>
                 {" "}
                 <IoToggleSharp className={Styles.listicon} />
-                <p> 200+ hrs of Live Sessions</p>
+                <p>200+ hrs of live sessions                </p>
               </li>
-              <li className={Styles.togglelist}>
+              <li className= {`${Styles.togglelist} ${Styles.togglelisthide}`}>
                 <IoToggleSharp className={Styles.listicon} />
                 <p>20+ Branded Case Studies</p>
               </li>
-              <li className={Styles.togglelist}>
+              <li className= {`${Styles.togglelist} ${Styles.togglelisthide}`}>
                 <IoToggleSharp className={Styles.listicon} />
                 <p> 10+ Global Certificates</p>
               </li>
-              <li className={Styles.togglelist}>
+              <li className= {`${Styles.togglelist} ${Styles.togglelisthide}`}>
                 {" "}
                 <IoToggleSharp className={Styles.listicon} />
                 <p> 100+ Tools</p>
