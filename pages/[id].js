@@ -1,7 +1,7 @@
 import Head from "next/head";
 import BlogHeader from "../components/CityBlog/BlogHeader/BlogHeader";
 import BlogContent from "../components/CityBlog/BlogContent/BlogConent";
-import { getAllPostIds, getPostData } from "../lib/post";
+import { getAllPostIds, getPostData } from "../lib/page";
 import InternalLinking from "../components/InternalLinking/InternalLinking";
 import Footer from "../components/Footer/Footer";
 import RelatedInfo from "../components/SeoComponents/ReleteadInfo/RelatedInfo";
