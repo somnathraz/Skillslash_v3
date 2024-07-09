@@ -1,7 +1,7 @@
 import Head from "next/head";
 import BlogHeader from "../components/CityBlog/BlogHeader/BlogHeader";
 import BlogContent from "../components/CityBlog/BlogContent/BlogConent";
-import { getAllPostIds, getPostData } from "../lib/page";
+import { getAllPostIds, getPostData } from "../lib/post";
 import InternalLinking from "../components/InternalLinking/InternalLinking";
 import Footer from "../components/Footer/Footer";
 import RelatedInfo from "../components/SeoComponents/ReleteadInfo/RelatedInfo";
@@ -30,7 +30,6 @@ export default function Post({ postData, cityData }) {
           shareLink={postData.shareLink}
           lastUpdated={postData.lastUpdated}
           publishDate={postData.publishDate}
-
         />
       </div>
       <div>
@@ -47,9 +46,10 @@ export async function getStaticPaths() {
 
   return {
     paths,
-    fallback: false,
+    fallback: false, // Set to true if you want to enable fallback behavior
   };
 }
+
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
   let cityData = {};
@@ -57,11 +57,11 @@ export async function getStaticProps({ params }) {
   try {
     if (postData.city) {
       console.log(`Attempting to load city data for: ${postData.city}`);
-      const cityModule = await import(`../Data/Cities/${postData.city}`);
+      const cityModule = await import(`../../Data/Cities/${postData.city}`);
       cityData = cityModule.default;
       console.log("Successfully loaded city data:", cityData);
     } else {
-
+      // Handle case where postData.city is not defined
     }
   } catch (error) {
     console.error(`Error loading city data for ${postData.city}:`, error);
@@ -76,4 +76,3 @@ export async function getStaticProps({ params }) {
     },
   };
 }
-
