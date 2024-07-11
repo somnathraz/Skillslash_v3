@@ -42,9 +42,12 @@
       "altM": "",
       "altR": "",
       "CertificationPara": "",
-      "MicrosoftPara": " ",
-      "RealWorkPara": ""
+      "MicrosoftPara": " "
+
+
     },
+
+    
     "trainerMentor": "Introducing Skillslash’s trainers and mentors below, who are there to help you on your data science course journey. Each of them mentioned below are experts in their specific fields and continuously work with us to help give the best data science training experience and help you reach your goals and uncover your potential.",
     "ProjectsPara": "At Skillslash, our major aim is to give you the practical experience that you will need to succeed in the real world. Apart from just giving you the know-how of the theory we give you the real life training of how to use the theory learnt in actual projects. ",
     "CohortsPara": "The dates of our upcoming sessions for Skillslash’s data science course in Mumbai are out! Mark your calendars, to begin your data science training in Mumbai, and discover what’s waiting for you ahead!",
@@ -1863,7 +1866,11 @@
   },
 
   "header": {
-    "title": "Data Science Course in Mumbai",
+    "title": "Top 10 Data Science Course Training Institutes in Mumbai ",
+    "titleAuthor":"Amit",
+    "authorPro":"https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/amit_profile.jpeg",
+    "linkedinId":"https://www.linkedin.com/in/amit-ambi-axh08/",
+    "bannerImg":"https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/top_10_logo.webp",
     "spanTitleText": "Live Project Based Learning Partnered with Tech Companies",
     "desc": "Equip yourself with Data Science skills through live, interactive lectures guided by industry expert mentors",
     "imgSrc": "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Header/data-science-header+webp.webp",
@@ -1892,7 +1899,9 @@
     "thirdPoint": "Advanced: Deep Learning, NLP, Reinforcement Learning, Big Data.",
     "fourthPoint": "Tools: Excel, SQL, Cloud Deployment, BI: Tableau, Power BI.",
     "usp1": " Live Interactive ",
-    "NoTitle":"true"
+    "cityblogH":true,
+    "blogC":true
+
   },
   "ProgramInfo": {
     "BatchDate": "29 January 2023",

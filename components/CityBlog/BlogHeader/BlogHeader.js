@@ -7,19 +7,19 @@ import { FaLinkedin } from "react-icons/fa";
 
 export default function BlogHeader({ title, author, linkedinId, bannerImg, authorPro }) {
   return (
-    <header className={`${styles.blogHeader} grid grid-cols-2`}>
+    <header className={`${styles.blogHeader} grid grid-cols-2 `}>
       <div className={`${styles.titleAuthor} font-bold`}>
         <h1>{title}</h1>
         <div className={styles.authordiv}>
           <div className="flex items-center gap-2">
             <span className='text-[#F18350] font-semibold text-[16px]'>Author:</span>{" "}
             <div className="flex items-center gap-2">
-              <Link className="flex flex-row gap-1 items-center" href={`/author/${author}`}>
+         
 
                 <Image className='rounded-[50%] ' src={authorPro} loading="lazy" width={30} height={30} alt="profile" />
  
                 <span>{author}</span>
-              </Link>
+       
             </div>
           </div>
           {linkedinId && (

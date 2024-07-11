@@ -48,7 +48,7 @@ const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate }) => {
   };
 
   const handleAdClick = (url) => {
-    // window.open(url, "_blank");
+    window.open(url, "_blank");
   };
 
   const handleAdClose = (id) => {
