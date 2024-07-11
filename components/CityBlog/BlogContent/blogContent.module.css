@@ -16,7 +16,7 @@
 }
 .content {
   display: grid;
-  grid-template-columns: 25% 60% 20%;
+  grid-template-columns: 24% 60% 23%;
   gap: 10px 50px;
 }
 .content h2 {
@@ -110,9 +110,7 @@
     justify-content: center;
     margin: auto;
   }
-  .tableOfContents {
-    height: fit-content;
-  }
+ 
   .tableOfContents ul {
     display: none;
   }

@@ -380,7 +380,8 @@
     "thirdPoint": "Advanced: Deep Learning, NLP, Reinforcement Learning, Big Data.",
     "fourthPoint": "Tools: Excel, SQL, Cloud Deployment, BI: Tableau, Power BI.",
     "usp1": " Live Interactive ",
-    "NoTitle":"true"
+    "NoTitle":"true",
+    "blogC":true
   },
   "seoAbout": [
     {
