@@ -4,7 +4,7 @@
   font-size: 14px;
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(33, 33, 33, 0.5); /* RGBA for transparency */
+  /* background-color: rgba(33, 33, 33, 0.5);  */
   height: 70px;
   top: 0px;
   padding: 0px 50px;
@@ -14,6 +14,7 @@
   align-items: center;
   justify-content: space-evenly;
   gap: 100px;
+  background-color: #212121;
 
 }
 .innerdiv {

@@ -2,10 +2,12 @@ import React from 'react';
 import BlogHeader from '../components/CityBlog/BlogHeader/BlogHeader';
 import Navbar from '../components/Navbar/Navbar';
 import BlogContent from '../components/CityBlog/BlogContent/BlogConent'; // Corrected import path
-import mumbaiData from '../Data/Cities/KolkataData'; // Import the city data
+import kolkataData from '../Data/Cities/KolkataData'; // Import the city data
 import Head from 'next/head';
+import RelatedInfo from '../components/SeoComponents/ReleteadInfo/RelatedInfo';
+import InternalLinking from '../components/InternalLinking/InternalLinking';
 
-const Mumbai = () => {
+const Mumbai = ({data}) => {
   return (
     <div>
       <Head>
@@ -52,13 +54,28 @@ const Mumbai = () => {
         bannerImg="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/top_10_logo.webp"
       />
       <BlogContent 
-        contentHtml={mumbaiData.contentHtml} 
-        lastUpdated={mumbaiData.lastUpdated} 
-        shareLink={mumbaiData.shareLink} 
-        publishDate={mumbaiData.publishDate}
+        contentHtml={kolkataData.contentHtml} 
+        lastUpdated={kolkataData.lastUpdated} 
+        shareLink={kolkataData.shareLink} 
+        publishDate={kolkataData.publishDate}
       />
+        <RelatedInfo
+        pinCode={data.pinCode}
+        relatedArea={data.relatedArea}
+        relatedBlog={data.relatedBlog}
+        aboutCity={data.aboutCity}
+      />
+               <InternalLinking/>
     </div>
   );
 };
+export async function getStaticProps() {
+  // Since the data is already in a JS file, we can directly import it
+  return {
+    props: {
+      data: kolkataData
+    }
+  };
+}
 
 export default Mumbai;

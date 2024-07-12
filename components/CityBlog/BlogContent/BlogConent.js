@@ -4,6 +4,7 @@ import styles from "./blogContent.module.css";
 import ShareButtons from "../ShareButton";
 import Link from "next/link";
 import Image from "next/image";
+import ReactDOM from "react-dom";
 
 const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate }) => {
   const [headingElements, setHeadingElements] = useState([]);
@@ -12,14 +13,14 @@ const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate }) => {
     {
       id: 1,
       show: false,
-      url: "https://www.learnbay.co/datascience/data-science-and-ai-master-certification-program",
-      imgSrc: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/one_ads.jpeg",
+      url: "https://www.learnbay.co/submit-info",
+      imgSrc: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/side_ad.webp",
     },
     {
       id: 2,
       show: false,
-      url: "https://www.learnbay.co/",
-      imgSrc: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/ads_insta.jpeg",
+      url: "https://www.learnbay.co/submit-info",
+      imgSrc: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/side_ad.webp",
     }
   ]);
   const contentRef = useRef(null);
@@ -27,7 +28,30 @@ const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate }) => {
   useEffect(() => {
     if (contentRef.current) {
       const headings = Array.from(contentRef.current.querySelectorAll("h2"));
+      headings.forEach((heading, index) => {
+        heading.setAttribute("id", `heading-${index}`);
+      });
       setHeadingElements(headings);
+
+      // Replace placeholders with Next.js Image components
+      const placeholders = contentRef.current.querySelectorAll(".next-image-placeholder");
+      placeholders.forEach((placeholder) => {
+        const imgElement = document.createElement("div");
+        imgElement.setAttribute("style", "position:relative;width:200px;height:200px;");
+
+        ReactDOM.render(
+          <Image
+            src={placeholder.getAttribute("data-src")}
+            alt={placeholder.getAttribute("data-alt")}
+            width={parseInt(placeholder.getAttribute("data-width"))}
+            height={parseInt(placeholder.getAttribute("data-height"))}
+            // layout="responsive"
+          />,
+          imgElement
+        );
+
+        placeholder.replaceWith(imgElement);
+      });
     }
   }, [contentHtml]);
 
@@ -36,14 +60,15 @@ const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate }) => {
       setAds((prevAds) =>
         prevAds.map((ad) => ({ ...ad, show: true }))
       );
-    }, 3000); // 4 seconds delay for all ads
+    }, 3000); // 3 seconds delay for all ads
 
     return () => clearTimeout(timer);
   }, []);
 
-  const scrollToHeading = (index) => {
-    if (headingElements[index]) {
-      headingElements[index].scrollIntoView({ behavior: "smooth" });
+  const scrollToElement = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -58,8 +83,8 @@ const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate }) => {
   };
 
   return (
-    <div className={styles.maincontent}>
-      <div className={styles.metaInfo}>
+    <>
+         <div className={styles.metaInfo}>
         <div>
           <p className="text-[#F18350]">
             Publish Date: <span className="text-[#646464]">{publishDate}</span>
@@ -70,6 +95,8 @@ const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate }) => {
         </div>
         <ShareButtons url={shareLink} />
       </div>
+    <div className={styles.maincontent}>
+ 
       <div className={styles.content}>
         <div className={styles.tableOfContents}>
           <h3 onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
@@ -84,10 +111,10 @@ const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate }) => {
             {headingElements.map((heading, index) => (
               <li key={index}>
                 <Link
-                  href=""
+                  href={`#heading-${index}`}
                   onClick={(e) => {
                     e.preventDefault();
-                    scrollToHeading(index);
+                    scrollToElement(`heading-${index}`);
                   }}
                 >
                   {heading.textContent}
@@ -105,21 +132,21 @@ const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate }) => {
           {ads.map((ad) =>
             ad.show ? (
               <div key={ad.id} className={styles.stickyAds}>
-                <div className={styles.adContainer}>
-                  <FaTimes
+                {/* <div className={styles.adContainer}> */}
+                  {/* <FaTimes
                     className={styles.closeButton}
                     onClick={() => handleAdClose(ad.id)}
-                  />
+                  /> */}
                   <Image
                     title="Sponsored by Learnbay"
                     src={ad.imgSrc}
-                    width={400}
+                    width={300}
                     height={100}
                     loading="lazy"
                     alt="Loading Ads"
                     onClick={() => handleAdClick(ad.url)}
                   />
-                </div>
+                {/* </div> */}
               </div>
             ) : (
               ad.closed && (
@@ -132,6 +159,7 @@ const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate }) => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
