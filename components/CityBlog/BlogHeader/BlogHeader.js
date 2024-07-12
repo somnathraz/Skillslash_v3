@@ -1,43 +1,59 @@
-// components/CityBlog/BlogHeader/BlogHeader.js
-
 import Link from "next/link";
 import Image from 'next/image';
 import styles from './blogHeader.module.css';
 import { FaLinkedin } from "react-icons/fa";
 
-export default function BlogHeader({ title, author, linkedinId, bannerImg, authorPro }) {
+export default function BlogHeader({ title, subTitle, city, author, linkedinId, bannerImg, rytImg, authorPro }) {
   return (
-    <header className={`${styles.blogHeader} grid grid-cols-2 `}>
-      <div className={`${styles.titleAuthor} font-bold`}>
-        <h1>{title}</h1>
-        <div className={styles.authordiv}>
-          <div className="flex items-center gap-2">
-            <span className='text-[#F18350] font-semibold text-[16px]'>Author:</span>{" "}
-            <div className="flex items-center gap-2">
-         
-
-                <Image className='rounded-[50%] ' src={authorPro} loading="lazy" width={30} height={30} alt="profile" />
- 
-                <span>{author}</span>
-       
-            </div>
+    <header className={styles.Blog}>
+      <div className={`${styles.blogHeader} ${styles.desktopBackground}`}>
+        <div className={styles.backgroundImage}>
+          <Image
+            src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/mumbai_city_header+(1).webp"
+            layout="fill"
+            objectFit="contain"
+            alt="Desktop Background"
+            className={styles.desktopImage}
+          />
+          <Image
+            src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/mumbai_backgorund_mbl+(2).webp"
+            layout="fill"
+            objectFit="cover"
+            alt="Mobile Background"
+            className={styles.mobileImage}
+          />
+        </div>
+        <div className={`${styles.titleAuthor} font-bold`}>
+          <div>
+            <h1 className={styles.title}>
+              <span className={styles.subtitle}>{subTitle}</span><br className={styles.mobileBreak} /> {title} <span className={styles.city}>{city}</span>
+            </h1>
           </div>
-          {linkedinId && (
-            <Link
-              href={linkedinId}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='text-blue-500 hover:underline flex items-center gap-1'
-            >
-      
-              <FaLinkedin />
-            </Link>
-          )}
+          <div className={styles.authordiv}>
+            <div className="flex items-center gap-2">
+              <span className='text-[#Fff] font-bold text-[20px]'>Author:</span>{" "}
+              <div className="flex items-center gap-2">
+                <Image className='rounded-[50%]' src={authorPro} loading="lazy" width={30} height={30} alt="profile" />
+                <span>{author}</span>
+              </div>
+            </div>
+            {linkedinId && (
+              <Link
+                href={linkedinId}
+                target='_blank'
+                rel='noopener noreferrer'
+                className='text-blue-500 hover:underline flex items-center gap-1'
+              >
+                <FaLinkedin />
+              </Link>
+            )}
+          </div>
+        </div>
+        <div className={styles.rytImg}>
+          <Image width={500} height={400} loading='lazy' src={rytImg} alt='Banner Image' />
         </div>
       </div>
-      <div className={styles.banner}>
-        <Image width={600} height={600} loading='lazy' src={bannerImg} alt='Banner Image' />
-      </div>
+      <Image className={styles.mumbai} src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/mumba_city.webp" width={600} height={200} loading="lazy" alt="mumbai" />
     </header>
   );
 }
