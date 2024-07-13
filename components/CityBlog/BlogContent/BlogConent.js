@@ -16,12 +16,12 @@ const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate }) => {
       url: "https://www.learnbay.co/submit-info",
       imgSrc: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/side_ad.webp",
     },
-    {
-      id: 2,
-      show: false,
-      url: "https://www.learnbay.co/submit-info",
-      imgSrc: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/side_ad.webp",
-    }
+    // {
+    //   id: 2,
+    //   show: false,
+    //   url: "https://www.learnbay.co/submit-info",
+    //   imgSrc: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/side_ad.webp",
+    // }
   ]);
   const contentRef = useRef(null);
 
