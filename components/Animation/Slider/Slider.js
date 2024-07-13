@@ -103,7 +103,7 @@ const Slider = ({NoTitle}) => {
     },
   ];
   return (
-    <div className="px-28 py-10 max-sm:px-5 max-sm:w-[auto] w-[1200px] m-auto  mx-auto">
+<div className="px-28 py-10 max-sm:px-5 max-sm:w-full w-[1200px] m-auto mx-auto">
       {NoTitle ? (<></>):(<> <h2 className="text-3xl font-semibold text-center mb-3 max-sm:text-xl">
         Our Students at top tech companies
       </h2></>)}
