@@ -1,5 +1,6 @@
-const mumbaiData = {
+const MumbaiData = {
   contentHtml: `
+   
       <p>Imagine an engaging career path with proven skills in steering complex data sets, extracting insights, and making informed moves. In the bustling digital space of Mumbai, data science has become a radical force driving career growth. Amidst this change, experts with data-driven skills can only sustain. Hence, learning via a data science course in Mumbai unlocks stunning growth and success. </p>
      
      <i><b>Do you stress about your static career path and are eager to update it?</b> </i>
@@ -14,90 +15,90 @@ const mumbaiData = {
       <caption style="font-weight: bold; font-style: italic; margin:20px;">Top 11 Data Science Training Courses in Mumbai</caption>
       <thead style="background-color: #f0f0f0;">
         <tr>
-          <th style="border: 1px solid #ccc; padding: 8px;">Institute Name</th>
-          <th style="border: 1px solid #ccc; padding: 8px;">Fees Range</th>
-          <th style="border: 1px solid #ccc; padding: 8px;">Contact Details</th>
+          <th style="border: 1px solid #ccc; ">Institute Name</th>
+          <th style="border: 1px solid #ccc; ">Fees Range</th>
+          <th style="border: 1px solid #ccc; ">Contact Details</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td style="border: 1px solid #ccc; padding: 8px;">
+          <td style="border: 1px solid #ccc; ">
 <a href="#executive-program" style="color:black" onmouseover="this.style.color='#4f419a'" onmouseout="this.style.color='black'">Learnbay</a>
           </td>
-          <td style="border: 1px solid #ccc; padding: 8px;">INR 190,000 + 18% GST</td>
-          <td style="border: 1px solid #ccc; padding: 8px;">
+          <td style="border: 1px solid #ccc; ">INR 190,000 + 18% GST</td>
+          <td style="border: 1px solid #ccc; ">
             <a href="https://www.learnbay.co/datascience/executive-program-in-data-science-and-ai-by-iit-guwahati" target="_blank">Executive program in Data Science & AI</a>
           </td>
         </tr>
         <tr>
-          <td style="border: 1px solid #ccc; padding: 8px;">
+          <td style="border: 1px solid #ccc; ">
             <a href="#iit-bombay-program" style="color:black" onmouseover="this.style.color='#4f419a'" onmouseout="this.style.color='black'">IIT Bombay</a>
           </td>
-          <td style="border: 1px solid #ccc; padding: 8px;">NA</td>
-          <td style="border: 1px solid #ccc; padding: 8px;">call at: +919138596040</td>
+          <td style="border: 1px solid #ccc; ">NA</td>
+          <td style="border: 1px solid #ccc; ">call at: +919138596040</td>
         </tr>
         <tr>
-          <td style="border: 1px solid #ccc; padding: 8px;">
+          <td style="border: 1px solid #ccc; ">
             <a href="#simplilearn-program" style="color:black" onmouseover="this.style.color='#4f419a'" onmouseout="this.style.color='black'">Simplilearn</a>
           </td>
-          <td style="border: 1px solid #ccc; padding: 8px;">INR 57,000 inclusive of taxes</td>
-          <td style="border: 1px solid #ccc; padding: 8px;">call at: 1800-212-7688</td>
+          <td style="border: 1px solid #ccc; ">INR 57,000 inclusive of taxes</td>
+          <td style="border: 1px solid #ccc; ">call at: 1800-212-7688</td>
         </tr>
         <tr>
-          <td style="border: 1px solid #ccc; padding: 8px;">
+          <td style="border: 1px solid #ccc; ">
             <a href="#intellipaat-program" style="color:black" onmouseover="this.style.color='#4f419a'" onmouseout="this.style.color='black'">Intellipaat</a>
           </td>
-          <td style="border: 1px solid #ccc; padding: 8px;">INR 85,044</td>
-          <td style="border: 1px solid #ccc; padding: 8px;">call at:+91-7022374614</td>
+          <td style="border: 1px solid #ccc; ">INR 85,044</td>
+          <td style="border: 1px solid #ccc; ">call at:+91-7022374614</td>
         </tr>
         <tr>
-          <td style="border: 1px solid #ccc; padding: 8px;">
+          <td style="border: 1px solid #ccc; ">
             <a href="#scaler-program" style="color:black" onmouseover="this.style.color='#4f419a'" onmouseout="this.style.color='black'">Scaler</a>
           </td>
-          <td style="border: 1px solid #ccc; padding: 8px;">INR 3.69 lacs With INR 8,628 monthly EMIs</td>
-          <td style="border: 1px solid #ccc; padding: 8px;">info@scaler.com</td>
+          <td style="border: 1px solid #ccc; ">INR 3.69 lacs With INR 8,628 monthly EMIs</td>
+          <td style="border: 1px solid #ccc; ">info@scaler.com</td>
         </tr>
         <tr>
-          <td style="border: 1px solid #ccc; padding: 8px;">
+          <td style="border: 1px solid #ccc; ">
             <a href="#datamites-program" style="color:black" onmouseover="this.style.color='#4f419a'" onmouseout="this.style.color='black'">Datamites</a>
           </td>
-          <td style="border: 1px solid #ccc; padding: 8px;">INR 72,345 (With INR 12,058 monthly EMIs)</td>
-          <td style="border: 1px solid #ccc; padding: 8px;">Call at 1800-313-3434</td>
+          <td style="border: 1px solid #ccc; ">INR 72,345 (With INR 12,058 monthly EMIs)</td>
+          <td style="border: 1px solid #ccc; ">Call at 1800-313-3434</td>
         </tr>
         <tr>
-          <td style="border: 1px solid #ccc; padding: 8px;">
+          <td style="border: 1px solid #ccc; ">
             <a href="#great-learning-program" style="color:black" onmouseover="this.style.color='#4f419a'" onmouseout="this.style.color='black'">Great Learning</a>
           </td>
-          <td style="border: 1px solid #ccc; padding: 8px;">INR 350,000 plus 18% GST</td>
-          <td style="border: 1px solid #ccc; padding: 8px;">info@greatlearning.in</td>
+          <td style="border: 1px solid #ccc; ">INR 350,000 plus 18% GST</td>
+          <td style="border: 1px solid #ccc; ">info@greatlearning.in</td>
         </tr>
         <tr>
-          <td style="border: 1px solid #ccc; padding: 8px;">
+          <td style="border: 1px solid #ccc; ">
             <a href="#techstack-program" style="color:black" onmouseover="this.style.color='#4f419a'" onmouseout="this.style.color='black'">TechStack Academy</a>
           </td>
-          <td style="border: 1px solid #ccc; padding: 8px;">INR 11,000 per month</td>
-          <td style="border: 1px solid #ccc; padding: 8px;">info@techstack.in</td>
+          <td style="border: 1px solid #ccc; ">INR 11,000 per month</td>
+          <td style="border: 1px solid #ccc; ">info@techstack.in</td>
         </tr>
         <tr>
-          <td style="border: 1px solid #ccc; padding: 8px;">
+          <td style="border: 1px solid #ccc; ">
             <a href="#jio-institute-program" style="color:black" onmouseover="this.style.color='#4f419a'" onmouseout="this.style.color='black'">Jio Institute</a>
           </td>
-          <td style="border: 1px solid #ccc; padding: 8px;">INR 975,000 inclusive of taxes</td>
-          <td style="border: 1px solid #ccc; padding: 8px;">contact@jioinstitute.edu.in</td>
+          <td style="border: 1px solid #ccc; ">INR 975,000 inclusive of taxes</td>
+          <td style="border: 1px solid #ccc; ">contact@jioinstitute.edu.in</td>
         </tr>
         <tr>
-          <td style="border: 1px solid #ccc; padding: 8px;">
+          <td style="border: 1px solid #ccc; ">
             <a href="#aegis-program" style="color:black" onmouseover="this.style.color='#4f419a'" onmouseout="this.style.color='black'">Aegis</a>
           </td>
-          <td style="border: 1px solid #ccc; padding: 8px;">NA</td>
-          <td style="border: 1px solid #ccc; padding: 8px;">info@municampus.com</td>
+          <td style="border: 1px solid #ccc; ">NA</td>
+          <td style="border: 1px solid #ccc; ">info@municampus.com</td>
         </tr>
         <tr>
-          <td style="border: 1px solid #ccc; padding: 8px;">
+          <td style="border: 1px solid #ccc; ">
             <a href="#imarticus-program" style="color:black" onmouseover="this.style.color='#4f419a'" onmouseout="this.style.color='black'">Imarticus Learning</a>
           </td>
-          <td style="border: 1px solid #ccc; padding: 8px;">INR 198,000 inclusive of taxes</td>
-          <td style="border: 1px solid #ccc; padding: 8px;">info@imarticus.com</td>
+          <td style="border: 1px solid #ccc; ">INR 198,000 inclusive of taxes</td>
+          <td style="border: 1px solid #ccc; ">info@imarticus.com</td>
         </tr>
       </tbody>
     </table>
@@ -112,7 +113,8 @@ const mumbaiData = {
         });
       });
     </script>
-
+<a href="https://www.learnbay.co/submit-info">
+<span class="blog-center-image" data-src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/banner_c.webp" data-alt="Banner Image" data-width="800" data-height="400"></span></a>
 
 
 
@@ -715,31 +717,31 @@ Make a hassle-free career shift with job and placement support and land your dre
 
 
 
-<style>
-
-
-        /* Inline CSS for specific styles */
-        p {
-          color: #333;
-          font-size: 16px;
-          line-height: 1.6;
-
-        }
-        table {
-          margin-top: 20px;
-        }
-        th, td {
-          border: 1px solid #ccc;
-          padding: 10px;
-          text-align: left;
-        }
-           .custom-hover {
-        color: black;
-    }
-    .custom-hover:hover {
-        color: #4f419a;
-    }
-      </style>
+ <style>
+  
+  
+          /* Inline CSS for specific styles */
+          p {
+            color: #333;
+            font-size: 16px;
+            line-height: 1.6;
+  
+          }
+          table {
+            margin-top: 20px;
+          }
+          th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+          }
+             .custom-hover {
+          color: black;
+      }
+      .custom-hover:hover {
+          color: #4f419a;
+      }
+        </style>
     `,
   lastUpdated: "2024-07-10",
   shareLink: "https://skillslash.com/data-science-course-in-mumbai",
@@ -790,7 +792,16 @@ Make a hassle-free career shift with job and placement support and land your dre
     point: [""],
   },
 
+  Blogs: [
+    { image: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_side.webp", title: "Top 10 Data Science Course Training Institutes in Chandigarh", link:"https://skillslash.com/data-science-course-in-chandigarh" },
+    { image: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_side_2.webp", title: "Top 10 Data Science Course Training Institutes in Kolkata",link:"https://skillslash.com/data-science-course-training-kolkata" },
+    { image: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_side_3.webp", title: "Top 10 Data Science Course Training Institutes in Mumbai",link:"https://skillslash.com/data-science-course-in-mumbai" },
+
+    // Add more blog objects as needed
+  ],
+
   
 };
 
-export default mumbaiData;
+
+export default MumbaiData;

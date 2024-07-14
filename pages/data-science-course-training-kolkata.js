@@ -4,57 +4,62 @@ import React from "react";
 import Head from "next/head";
 import Navbar from "../components/Navbar/Navbar";
 import BlogHeader from "../components/CityBlog/BlogHeader/BlogHeader";
-import BlogContent from "../components/CityBlog/BlogContent/BlogConent"; // Corrected import
-import RelatedInfo from "../components/SeoComponents/ReleteadInfo/RelatedInfo"; // Assuming correct path
-import mumbaiData from "../Data/Cities/MumbaiData"; // Corrected import
+import BlogContent from "../components/CityBlog/BlogContent/BlogConent";
+import RelatedInfo from "../components/SeoComponents/ReleteadInfo/RelatedInfo";
+import KolkataData from "../Data/Cities/KolkataData";
 import Footer from "../components/Footer/Footer";
 import InternalLinking from "../components/InternalLinking/InternalLinking";
 
-const Mumbai = ({ data }) => {
+const Kolkata = ({ data }) => {
   return (
     <div>
       <Head>
-        <title>Top 10 Data Science Course Training Institutes in Mumbai</title>
+        <title>
+        Top 10 Data Science Course Training Institutes in Kolkata
+        </title>
         <meta
           name="description"
-          content="Offering one of the Best Data Science Course in Mumbai, with hands-on projects, dual certification and guaranteed job referrals for all Data Science aspirants"
+          content="Elevate your career, Learn Data Science. Choose from our Best Data Science Course in Kolkata designed by industry experts and earn a Microsoft Certification."
         />
         <meta
           name="keywords"
-          content="Data Science training, Data Science certification, Data Science course, Data Science institute, Data Science institute in Mumbai, data science courses in Mumbai, data science courses, data science course in Mumbai, data scientist course, data scientist course in Mumbai"
+          content="data science training institute in Kolkata, data science training, data science course in Kolkata, data science training institute,data science course,data science training,online data science"
         />
         <link
           rel="canonical"
-          href="https://skillslash.com/data-science-course-in-mumbai"
+          href="https://skillslash.com/data-science-course-training-kolkata"
         />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org/",
             "@type": "Product",
-            name: "Data science course in Mumbai",
-            brand: {
+            "name": "Data science course in Kolkata",
+            "brand": {
               "@type": "Brand",
-              name: "Skillslash",
+              "name": "Skillslash"
             },
-            aggregateRating: {
+            "aggregateRating": {
               "@type": "AggregateRating",
-              ratingValue: "9.9",
-              bestRating: "10",
-              worstRating: "1",
-              ratingCount: "25987",
+              "ratingValue": "9.9",
+              "bestRating": "10",
+              "worstRating": "1",
+              "ratingCount": "22880"
             },
           })}
         </script>
+
+ 
+       
+
       </Head>
 
       <Navbar />
 
       <BlogHeader
-        city="Mumbai"
-        desktopBackground="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/mumbai_city_header+(1).webp"
-        mobileBackground="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/mumbai_backgorund_mbl+(2).webp"
+      city="Kolkata"
+      noImg ={true}
         title=" Data Science Course Training Institutes in "
-        subTitle="Top 10"
+              subTitle="Top 10"
         titleAuthor="Amit"
         authorPro="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/ai_face.webp"
         linkedinId="https://www.linkedin.com/in/amit-ambi-axh08/"
@@ -67,7 +72,7 @@ const Mumbai = ({ data }) => {
         lastUpdated={data.lastUpdated}
         shareLink={data.shareLink}
         publishDate={data.publishDate}
-        MumbaiData={mumbaiData} // Passing MumbaiData to BlogContent
+        MumbaiData={KolkataData} // Adjusted prop name
       />
 
       <RelatedInfo
@@ -76,8 +81,7 @@ const Mumbai = ({ data }) => {
         relatedBlog={data.relatedBlog}
         aboutCity={data.aboutCity}
       />
-
-      <InternalLinking />
+         <InternalLinking/>
       <Footer />
     </div>
   );
@@ -87,9 +91,9 @@ export async function getStaticProps() {
   // Since the data is already in a JS file, we can directly import it
   return {
     props: {
-      data: mumbaiData,
+      data: KolkataData,
     },
   };
 }
 
-export default Mumbai;
+export default Kolkata;
