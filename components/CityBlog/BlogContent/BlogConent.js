@@ -4,9 +4,14 @@ import styles from "./blogContent.module.css";
 import ShareButtons from "../ShareButton";
 import Link from "next/link";
 import Image from "next/image";
+import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react"; // Import Swiper React components
 import ReactDOM from "react-dom";
+import "swiper/swiper-bundle.min.css";
 
-const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate }) => {
+SwiperCore.use([Navigation, Pagination, Autoplay]);
+
+const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate, MumbaiData }) => {
   const [headingElements, setHeadingElements] = useState([]);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [ads, setAds] = useState([
@@ -16,12 +21,6 @@ const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate }) => {
       url: "https://www.learnbay.co/submit-info",
       imgSrc: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/side_ad.webp",
     },
-    // {
-    //   id: 2,
-    //   show: false,
-    //   url: "https://www.learnbay.co/submit-info",
-    //   imgSrc: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/side_ad.webp",
-    // }
   ]);
   const contentRef = useRef(null);
 
@@ -33,25 +32,34 @@ const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate }) => {
       });
       setHeadingElements(headings);
 
-      // Replace placeholders with Next.js Image components
-      const placeholders = contentRef.current.querySelectorAll(".next-image-placeholder");
-      placeholders.forEach((placeholder) => {
-        const imgElement = document.createElement("div");
-        imgElement.setAttribute("style", "position:relative;width:200px;height:200px;");
+      // Function to replace placeholders with Next.js Image components
+      const replacePlaceholders = (placeholderClass, center = false) => {
+        const placeholders = contentRef.current.querySelectorAll(placeholderClass);
+        placeholders.forEach((placeholder) => {
+          const imgElement = document.createElement("div");
+          imgElement.classList.add(styles.contentImg);
+          if (center) {
+            imgElement.classList.add(styles.centerImg);
+          }
 
-        ReactDOM.render(
-          <Image
-            src={placeholder.getAttribute("data-src")}
-            alt={placeholder.getAttribute("data-alt")}
-            width={parseInt(placeholder.getAttribute("data-width"))}
-            height={parseInt(placeholder.getAttribute("data-height"))}
-            // layout="responsive"
-          />,
-          imgElement
-        );
+          ReactDOM.render(
+            <Image
+              src={placeholder.getAttribute("data-src")}
+              alt={placeholder.getAttribute("data-alt")}
+              width={parseInt(placeholder.getAttribute("data-width"))}
+              height={parseInt(placeholder.getAttribute("data-height"))}
+            />,
+            imgElement
+          );
 
-        placeholder.replaceWith(imgElement);
-      });
+          placeholder.replaceWith(imgElement);
+        });
+      };
+
+      // Replace specific placeholders
+      replacePlaceholders(".next-image-placeholder", true); // Center the image for this placeholder class
+      replacePlaceholders(".blog-center-image", true); // Another class for centered images
+      replacePlaceholders(".another-placeholder-class"); // Non-centered images
     }
   }, [contentHtml]);
 
@@ -84,7 +92,7 @@ const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate }) => {
 
   return (
     <>
-         <div className={styles.metaInfo}>
+      <div className={styles.metaInfo}>
         <div>
           <p className="text-[#F18350]">
             Publish Date: <span className="text-[#646464]">{publishDate}</span>
@@ -95,48 +103,69 @@ const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate }) => {
         </div>
         <ShareButtons url={shareLink} />
       </div>
-    <div className={styles.maincontent}>
- 
-      <div className={styles.content}>
-        <div className={styles.tableOfContents}>
-          <h3 onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
-            Table of Contents
-            <div
-              className={`${styles.icon} ${isDropdownOpen ? styles.active : ""}`}
-            >
-              {isDropdownOpen ? <FaAngleUp /> : <FaAngleDown />}
+      <div className={styles.maincontent}>
+        <div className={styles.content}>
+          <div className={styles.firstdiv}>
+            <div className={styles.tableOfContents}>
+              <h3 onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
+                Table of Contents
+                <div className={`${styles.icon} ${isDropdownOpen ? styles.active : ""}`}>
+                  {isDropdownOpen ? <FaAngleUp /> : <FaAngleDown />}
+                </div>
+              </h3>
+              <ul className={`${isDropdownOpen ? styles.open : ""}`}>
+                {headingElements.map((heading, index) => (
+                  <li key={index}>
+                    <Link
+                      href={`#heading-${index}`}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        scrollToElement(`heading-${index}`);
+                      }}
+                    >
+                      {heading.textContent}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
-          </h3>
-          <ul className={`${isDropdownOpen ? styles.open : ""}`}>
-            {headingElements.map((heading, index) => (
-              <li key={index}>
-                <Link
-                  href={`#heading-${index}`}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollToElement(`heading-${index}`);
-                  }}
-                >
-                  {heading.textContent}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <article
-          ref={contentRef}
-          className={`${styles.markdown} markdown`}
-          dangerouslySetInnerHTML={{ __html: contentHtml }}
-        />
-        <div className={styles.adsContainer}>
-          {ads.map((ad) =>
-            ad.show ? (
-              <div key={ad.id} className={styles.stickyAds}>
-                {/* <div className={styles.adContainer}> */}
-                  {/* <FaTimes
-                    className={styles.closeButton}
-                    onClick={() => handleAdClose(ad.id)}
-                  /> */}
+            <div className={styles.related}>
+              <h3>Related blogs</h3>
+              <Swiper
+                direction={'vertical'} // Set direction to vertical
+                spaceBetween={10}
+                slidesPerView={3}
+                // pagination={{ clickable: true }}
+                loop={true}
+                autoplay={{ delay: 3000, disableOnInteraction: false }}
+                mousewheel={true} // Enable mouse wheel scrolling
+                className={styles.swiperContainer} // Add this class for styling purposes
+              >
+                {MumbaiData.Blogs.map((blog, index) => (
+                  <SwiperSlide key={index}>
+                    <div className={styles.bloglist}>
+                      <Image src={blog.image} width={80} height={80} alt="blog" loading="lazy" />
+                      <div className={styles.bloglistryt}>
+                        <p>{blog.title}</p>
+                        <Link href={blog.link}>
+                          <button>read more</button>
+                        </Link>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          </div>
+          <article
+            ref={contentRef}
+            className={`${styles.markdown} markdown`}
+            dangerouslySetInnerHTML={{ __html: contentHtml }}
+          />
+          <div className={styles.adsContainer}>
+            {ads.map((ad) =>
+              ad.show ? (
+                <div key={ad.id} className={styles.stickyAds}>
                   <Image
                     title="Sponsored by Learnbay"
                     src={ad.imgSrc}
@@ -146,19 +175,18 @@ const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate }) => {
                     alt="Loading Ads"
                     onClick={() => handleAdClick(ad.url)}
                   />
-                {/* </div> */}
-              </div>
-            ) : (
-              ad.closed && (
-                <div key={ad.id} className={`${styles.stickyAds} ${styles.adLink}`}>
-                  <Link href={ad.url}>Click here to visit our sponsor <FaArrowCircleRight /></Link>
                 </div>
+              ) : (
+                ad.closed && (
+                  <div key={ad.id} className={`${styles.stickyAds} ${styles.adLink}`}>
+                    <Link href={ad.url}>Click here to visit our sponsor <FaArrowCircleRight /></Link>
+                  </div>
+                )
               )
-            )
-          )}
+            )}
+          </div>
         </div>
       </div>
-    </div>
     </>
   );
 };
