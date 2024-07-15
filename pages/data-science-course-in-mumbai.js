@@ -4,11 +4,12 @@ import React from "react";
 import Head from "next/head";
 import Navbar from "../components/Navbar/Navbar";
 import BlogHeader from "../components/CityBlog/BlogHeader/BlogHeader";
-import BlogContent from "../components/CityBlog/BlogContent/BlogConent"; // Corrected import
-import RelatedInfo from "../components/SeoComponents/ReleteadInfo/RelatedInfo"; // Assuming correct path
-import mumbaiData from "../Data/Cities/MumbaiData"; // Corrected import
+import BlogContent from "../components/CityBlog/BlogContent/BlogConent"; 
+import RelatedInfo from "../components/SeoComponents/ReleteadInfo/RelatedInfo"; 
+import mumbaiData from "../Data/Cities/MumbaiData";
 import Footer from "../components/Footer/Footer";
 import InternalLinking from "../components/InternalLinking/InternalLinking";
+import Popup from "../components/CityBlog/BlogPopup/Popup";
 
 const Mumbai = ({ data }) => {
   return (
@@ -51,8 +52,6 @@ const Mumbai = ({ data }) => {
 
       <BlogHeader
         city="Mumbai"
-        desktopBackground="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/mumbai_city_header+(1).webp"
-        mobileBackground="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/mumbai_backgorund_mbl+(2).webp"
         title=" Data Science Course Training Institutes in "
         subTitle="Top 10"
         titleAuthor="Amit"
@@ -60,6 +59,7 @@ const Mumbai = ({ data }) => {
         linkedinId="https://www.linkedin.com/in/amit-ambi-axh08/"
         rytImg="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/mumbai_top_10_comp.webp"
         backgroundImg="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_bg_mumbai.webp"
+        cityImg="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/mumbai_place.webp"
       />
 
       <BlogContent
@@ -79,6 +79,7 @@ const Mumbai = ({ data }) => {
 
       <InternalLinking />
       <Footer />
+      <Popup />
     </div>
   );
 };

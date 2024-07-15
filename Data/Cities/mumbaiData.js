@@ -3,6 +3,7 @@ const MumbaiData = {
    
       <p>Imagine an engaging career path with proven skills in steering complex data sets, extracting insights, and making informed moves. In the bustling digital space of Mumbai, data science has become a radical force driving career growth. Amidst this change, experts with data-driven skills can only sustain. Hence, learning via a data science course in Mumbai unlocks stunning growth and success. </p>
      
+
      <i><b>Do you stress about your static career path and are eager to update it?</b> </i>
      
       <p>Data science learning is a one-stop answer for your queries, fitting you with proven gains. Data science decides the fate of various working pros with its notable solutions. Data science learning is no longer limited to adding new skills to your career.</p>
@@ -27,7 +28,7 @@ const MumbaiData = {
           </td>
           <td style="border: 1px solid #ccc; ">INR 190,000 + 18% GST</td>
           <td style="border: 1px solid #ccc; ">
-            <a href="https://www.learnbay.co/datascience/executive-program-in-data-science-and-ai-by-iit-guwahati" target="_blank">Executive program in Data Science & AI</a>
+            <a href="https://www.learnbay.co/datascience/executive-program-in-data-science-and-ai-by-iit-guwahati?utm_source=skillslash&utm_medium=kolkata&utm_campaign=ds_blog_kolkata" target="_blank">Executive program in Data Science & AI</a>
           </td>
         </tr>
         <tr>
@@ -114,7 +115,7 @@ const MumbaiData = {
       });
     </script>
 <a href="https://www.learnbay.co/submit-info">
-<span class="blog-center-image" data-src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/banner_c.webp" data-alt="Banner Image" data-width="800" data-height="400"></span></a>
+<span class="next-image-placeholder" data-src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/banner_c.webp" data-alt="Banner Image" data-width="800" data-height="400"></span></a>
 
 
 
@@ -722,7 +723,7 @@ Make a hassle-free career shift with job and placement support and land your dre
   
           /* Inline CSS for specific styles */
           p {
-            color: #333;
+          
             font-size: 16px;
             line-height: 1.6;
   

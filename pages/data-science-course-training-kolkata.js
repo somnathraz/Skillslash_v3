@@ -9,6 +9,7 @@ import RelatedInfo from "../components/SeoComponents/ReleteadInfo/RelatedInfo";
 import KolkataData from "../Data/Cities/KolkataData";
 import Footer from "../components/Footer/Footer";
 import InternalLinking from "../components/InternalLinking/InternalLinking";
+import Popup from "../components/CityBlog/BlogPopup/Popup";
 
 const Kolkata = ({ data }) => {
   return (
@@ -65,6 +66,7 @@ const Kolkata = ({ data }) => {
         linkedinId="https://www.linkedin.com/in/amit-ambi-axh08/"
         rytImg="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/mumbai_top_10_comp.webp"
         backgroundImg="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_bg_mumbai.webp"
+        cityImg="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/kolkata_palce.webp"
       />
 
       <BlogContent
@@ -83,6 +85,7 @@ const Kolkata = ({ data }) => {
       />
          <InternalLinking/>
       <Footer />
+      <Popup/>
     </div>
   );
 };

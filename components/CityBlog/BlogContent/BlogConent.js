@@ -59,7 +59,7 @@ const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate, MumbaiD
       // Replace specific placeholders
       replacePlaceholders(".next-image-placeholder", true); // Center the image for this placeholder class
       replacePlaceholders(".blog-center-image", true); // Another class for centered images
-      replacePlaceholders(".another-placeholder-class"); // Non-centered images
+      replacePlaceholders(".another-placeholder-class", true); // Non-centered images
     }
   }, [contentHtml]);
 
@@ -107,6 +107,7 @@ const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate, MumbaiD
         <div className={styles.content}>
           <div className={styles.firstdiv}>
             <div className={styles.tableOfContents}>
+              <div className={styles.insidetable}>
               <h3 onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
                 Table of Contents
                 <div className={`${styles.icon} ${isDropdownOpen ? styles.active : ""}`}>
@@ -128,6 +129,7 @@ const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate, MumbaiD
                   </li>
                 ))}
               </ul>
+              </div>
             </div>
             <div className={styles.related}>
               <h3>Related blogs</h3>
