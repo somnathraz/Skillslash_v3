@@ -631,7 +631,7 @@ const KolkataData = {
         </style>
     `,
   lastUpdated: "2024-07-10",
-  shareLink: "https://skillslash.com/data-science-course-in-mumbai",
+  shareLink: "https://skillslash.com/data-science-course-training-kolkata",
   publishDate: "2024-07-01",
 
   pinCode: {
