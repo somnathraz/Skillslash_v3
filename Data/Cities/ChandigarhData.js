@@ -1,8 +1,12 @@
 const ChandigarhData = {
-    contentHtml: ` <i><b>Imagine a tech-savvy career in the digital realm that empowers you to harness the power of data science with endless growth options.</b></i>
+  contentHtml: ` <i><b>Imagine a tech-savvy career in the digital realm that empowers you to harness the power of data science with endless growth options.</b></i>
 
+   
+   
     <p>India is welcoming a fast-paced rise of digital hubs with infinite growth options. Northern India, especially Chandigarh marks a notable move with its modern infrastructure. Many startups and rising MNCs witness the alluring growth of a data-driven business culture. In the interim, a surge in demand for skilled data experts has become a notable topic of debate. Hence, upskilling via a <b>data science course in Chandigarh</b> takes the charge for effortless career shifts.</p>
- <div class="table-container" style="overflow-x: auto;">
+       <span class="blog-center-image" data-src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_second_img.webp" data-alt="Banner Image" data-width="800" data-height="400"></span></a>
+ 
+    <div class="table-container" style="overflow-x: auto;">
 <table style="border-collapse: collapse; width: 100%; border: 2px solid #ccc;">
 <caption style="font-weight: bold; font-style: italic; margin:20px;">Top 10 Data Science Training Courses in Chandigarh</caption>
 <thead style="background-color: #f0f0f0;">
@@ -613,62 +617,72 @@ const ChandigarhData = {
       }
         </style>
       `,
-    lastUpdated: "2024-07-10",
-    shareLink: "https://skillslash.com/data-science-course-in-chandigarh",
-    publishDate: "2024-07-01",
-  
-    pinCode: {
-      heading: "",
-      area: [
-        ""
-      ],
+  lastUpdated: "2024-07-10",
+  shareLink: "https://skillslash.com/data-science-course-in-chandigarh",
+  publishDate: "2024-07-01",
+
+  pinCode: {
+    heading: "",
+    area: [""],
+  },
+  relatedArea: {
+    heading: "",
+    area: [""],
+  },
+  relatedBlog: [
+    {
+      link: "/blog/data-science",
+      img: "/images/blog1.jpg",
+      title: "Data Science in 2024",
+      publishDate: "2024-07-11",
     },
-    relatedArea: {
-      heading: "",
-      area: [
-        ""
-      ],
+    {
+      link: "/blog/machine-learning",
+      img: "/images/blog2.jpg",
+      title: "Machine Learning Trends",
+      publishDate: "2024-07-10",
     },
-    relatedBlog: [
-      {
-        link: "/blog/data-science",
-        img: "/images/blog1.jpg",
-        title: "Data Science in 2024",
-        publishDate: "2024-07-11",
-      },
-      {
-        link: "/blog/machine-learning",
-        img: "/images/blog2.jpg",
-        title: "Machine Learning Trends",
-        publishDate: "2024-07-10",
-      },
-      {
-        link: "/blog/machine-learning",
-        img: "/images/blog2.jpg",
-        title: "Machine Learning Trends",
-        publishDate: "2024-07-10",
-      },
-      {
-        link: "/blog/machine-learning",
-        img: "/images/blog2.jpg",
-        title: "Machine Learning Trends",
-        publishDate: "2024-07-10",
-      },
-    ],
-    aboutCity: {
-      title: "",
-      desc: "",
-      pointView: false,
-      point: [""],
+    {
+      link: "/blog/machine-learning",
+      img: "/images/blog2.jpg",
+      title: "Machine Learning Trends",
+      publishDate: "2024-07-10",
     },
-    Blogs: [
-        { image: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_side.webp", title: "Top 10 Data Science Course Training Institutes in Chandigarh", link:"https://skillslash.com/data-science-course-in-chandigarh" },
-        { image: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_side_2.webp", title: "Top 10 Data Science Course Training Institutes in Kolkata",link:"https://skillslash.com/data-science-course-training-kolkata" },
-        { image: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_side_3.webp", title: "Top 10 Data Science Course Training Institutes in Mumbai",link:"https://skillslash.com/data-science-course-in-mumbai" },
-    
-        // Add more blog objects as needed
-      ],
-  };
-  
-  export default ChandigarhData;
-  
+    {
+      link: "/blog/machine-learning",
+      img: "/images/blog2.jpg",
+      title: "Machine Learning Trends",
+      publishDate: "2024-07-10",
+    },
+  ],
+  aboutCity: {
+    title: "",
+    desc: "",
+    pointView: false,
+    point: [""],
+  },
+  Blogs: [
+    {
+      image:
+        "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_side.webp",
+      title: "Top 10 Data Science Course Training Institutes in Chandigarh",
+      link: "https://skillslash.com/data-science-course-in-chandigarh",
+    },
+    {
+      image:
+        "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_side_2.webp",
+      title: "Top 10 Data Science Course Training Institutes in Kolkata",
+      link: "https://skillslash.com/data-science-course-training-kolkata",
+    },
+    {
+      image:
+        "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_side_3.webp",
+      title: "Top 10 Data Science Course Training Institutes in Mumbai",
+      link: "https://skillslash.com/data-science-course-in-mumbai",
+    },
+
+    // Add more blog objects as needed
+  ],
+};
+
+export default ChandigarhData;

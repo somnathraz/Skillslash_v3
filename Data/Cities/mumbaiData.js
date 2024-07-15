@@ -3,7 +3,7 @@ const MumbaiData = {
    
       <p>Imagine an engaging career path with proven skills in steering complex data sets, extracting insights, and making informed moves. In the bustling digital space of Mumbai, data science has become a radical force driving career growth. Amidst this change, experts with data-driven skills can only sustain. Hence, learning via a data science course in Mumbai unlocks stunning growth and success. </p>
      
-
+      <span class="blog-center-image" data-src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_second_img.webp" data-alt="Banner Image" data-width="800" data-height="400"></span></a>
      <i><b>Do you stress about your static career path and are eager to update it?</b> </i>
      
       <p>Data science learning is a one-stop answer for your queries, fitting you with proven gains. Data science decides the fate of various working pros with its notable solutions. Data science learning is no longer limited to adding new skills to your career.</p>
@@ -723,7 +723,7 @@ Make a hassle-free career shift with job and placement support and land your dre
   
           /* Inline CSS for specific styles */
           p {
-          
+            color: #333;
             font-size: 16px;
             line-height: 1.6;
   

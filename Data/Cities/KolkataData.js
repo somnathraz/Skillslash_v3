@@ -1,6 +1,7 @@
 const KolkataData = {
   contentHtml: ` <i><b>Picture a career at the vanguard of data-driven culture, unveiling data patterns and dragging facts for an impactful makeover. </b></i>
     <p>To your surprise, it’s a sheer truth you must accept to redefine yourself. The present tech age sees data science growth and its majesty in the business space. Concurrently, it sets the stage for a unique career shift having stunning growth. Thus, learning from a  data science course in Kolkata is vital for success.</p>
+          <span class="blog-center-image" data-src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_second_img.webp" data-alt="Banner Image" data-width="800" data-height="400"></span>
     <p>
     Kolkata is a heartthrob of eastern India with a glorifying history and invincible learning spirit. Meanwhile, the fast-paced rise of various startups and MNCs finds Kolkata, a hub full of data-driven talents. Are you seeking a career path that can bring you long-term growth and stability? Data science enters the limelight with career potential to help you reach a growth edge.</P>
     <p>
@@ -631,7 +632,7 @@ const KolkataData = {
         </style>
     `,
   lastUpdated: "2024-07-10",
-  shareLink: "https://skillslash.com/data-science-course-in-mumbai",
+  shareLink: "https://skillslash.com/data-science-course-training-kolkata",
   publishDate: "2024-07-01",
 
   pinCode: {

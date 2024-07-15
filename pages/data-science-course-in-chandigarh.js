@@ -77,12 +77,6 @@ const Chandigarh = ({ data }) => {
         MumbaiData={ChandigarhData} // Adjusted prop name
       />
 
-      <RelatedInfo
-        pinCode={data.pinCode}
-        relatedArea={data.relatedArea}
-        relatedBlog={data.relatedBlog}
-        aboutCity={data.aboutCity}
-      />
          <InternalLinking/>
       <Footer />
     </div>
