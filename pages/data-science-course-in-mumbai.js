@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar/Navbar";
 import BlogHeader from "../components/CityBlog/BlogHeader/BlogHeader";
 import BlogContent from "../components/CityBlog/BlogContent/BlogConent"; 
 import RelatedInfo from "../components/SeoComponents/ReleteadInfo/RelatedInfo"; 
-import mumbaiData from "../Data/Cities/MumbaiData";
+import mumbaiData from "../Data/Cities/mumbaiData";
 import Footer from "../components/Footer/Footer";
 import InternalLinking from "../components/InternalLinking/InternalLinking";
 import Popup from "../components/CityBlog/BlogPopup/Popup";
