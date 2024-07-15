@@ -70,12 +70,7 @@ const Mumbai = ({ data }) => {
         MumbaiData={mumbaiData} // Passing MumbaiData to BlogContent
       />
 
-      <RelatedInfo
-        pinCode={data.pinCode}
-        relatedArea={data.relatedArea}
-        relatedBlog={data.relatedBlog}
-        aboutCity={data.aboutCity}
-      />
+    
 
       <InternalLinking />
       <Footer />

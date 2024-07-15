@@ -77,12 +77,7 @@ const Kolkata = ({ data }) => {
         MumbaiData={KolkataData} // Adjusted prop name
       />
 
-      <RelatedInfo
-        pinCode={data.pinCode}
-        relatedArea={data.relatedArea}
-        relatedBlog={data.relatedBlog}
-        aboutCity={data.aboutCity}
-      />
+   
          <InternalLinking/>
       <Footer />
       <Popup/>
