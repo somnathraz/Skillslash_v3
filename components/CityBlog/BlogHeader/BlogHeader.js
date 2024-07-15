@@ -3,25 +3,25 @@ import Image from 'next/image';
 import styles from './blogHeader.module.css';
 import { FaLinkedin } from "react-icons/fa";
 
-export default function BlogHeader({ title, subTitle, city, author, linkedinId, bannerImg, rytImg, authorPro, desktopBackground, mobileBackgorund,  noImg }) {
+export default function BlogHeader({ title, subTitle, city, author, linkedinId, bannerImg, rytImg, authorPro, cityImg}) {
   return (
     <header className={styles.Blog}>
       <div className={`${styles.blogHeader} ${styles.desktopBackground}`}>
         <div className={styles.backgroundImage}>
-        {noImg ? (""):(<>  <Image
-            src={desktopBackground}
+ <Image
+            src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/mumbai_city_header+(1).webp"
             layout="fill"
             objectFit="contain"
           
             className={styles.desktopImage}
           />
           <Image
-            src={mobileBackgorund}
+            src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/mumbai_backgorund_mbl+(2).webp"
             layout="fill"
             objectFit="cover"
      
             className={styles.mobileImage}
-          /></>)}
+          />
         </div>
         <div className={`${styles.titleAuthor} font-bold`}>
           <div>
@@ -53,7 +53,7 @@ export default function BlogHeader({ title, subTitle, city, author, linkedinId, 
           <Image width={500} height={400} loading='lazy' src={rytImg} alt='Banner Image' />
         </div>
       </div>
-    {noImg ? (<></>):(<>  <Image className={styles.mumbai} src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/mumba_city.webp" width={600} height={200} loading="lazy" alt="mumbai" />  <Image className={styles.mumbai} src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/mumba_city.webp" width={600} height={200} loading="lazy" alt="mumbai" /></>)}
+ <Image className={styles.mumbai} src={cityImg} width={600} height={200} loading="lazy" alt="cities" />
     </header>
   );
 }

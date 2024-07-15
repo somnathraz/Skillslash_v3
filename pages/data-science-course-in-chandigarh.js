@@ -9,6 +9,7 @@ import RelatedInfo from "../components/SeoComponents/ReleteadInfo/RelatedInfo";
 import ChandigarhData from "../Data/Cities/ChandigarhData";
 import Footer from "../components/Footer/Footer";
 import InternalLinking from "../components/InternalLinking/InternalLinking";
+import Popup from "../components/CityBlog/BlogPopup/Popup";
 
 const Chandigarh = ({ data }) => {
   return (
@@ -54,7 +55,7 @@ const Chandigarh = ({ data }) => {
       </Head>
 
       <Navbar />
-
+<Popup/>
       <BlogHeader
       city="Chandigarh"
       noImg ={true}
@@ -65,6 +66,7 @@ const Chandigarh = ({ data }) => {
         linkedinId="https://www.linkedin.com/in/amit-ambi-axh08/"
         rytImg="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/mumbai_top_10_comp.webp"
         backgroundImg="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_bg_mumbai.webp"
+        cityImg="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/chandigarh_city.webp"
       />
 
       <BlogContent

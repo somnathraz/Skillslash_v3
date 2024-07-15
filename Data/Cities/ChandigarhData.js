@@ -19,56 +19,56 @@ const ChandigarhData = {
 
 
 <tr>
-<td style="border: 1px solid #ccc; ;">Learnbay</td>
+<td style="border: 1px solid #ccc; ;"> <a href="#Learnbay">Learnbay</a></td>
 <td style="border: 1px solid #ccc; ;">INR 75,000 to INR 325,000</td>
-<td style="border: 1px solid #ccc; ;">Yes</td>
+<td style="border: 1px solid #ccc; ;">Basic to Advanced</td>
 </tr>
 
 <tr>
-<td style="border: 1px solid #ccc; ;">Simplilearn</td>
+<td style="border: 1px solid #ccc; ;"> <a href="#Simplilearn">Simplilearn</a></td>
 <td style="border: 1px solid #ccc; ;">INR 57,000 inclusive of taxes</td>
-<td style="border: 1px solid #ccc; ;">Yes </td>
+<td style="border: 1px solid #ccc; ;">Basic to Advanced</td>
 </tr>
 <tr>
-<td style="border: 1px solid #ccc; ;">Datamites</td>
+<td style="border: 1px solid #ccc; ;"><a href="#Datamites">Datamites</a></td>
 <td style="border: 1px solid #ccc; ;">INR 72,345 to INR 75,790</td>
-<td style="border: 1px solid #ccc; ;">Yes</td>
+<td style="border: 1px solid #ccc; ;">Basic to Advanced</td>
 </tr>
 <tr>
-<td style="border: 1px solid #ccc; ;">ThinkNEXT</td>
+<td style="border: 1px solid #ccc; ;"><a href="#ThinkNEXT">ThinkNEXT</a></td>
 <td style="border: 1px solid #ccc; ;">NA</td>
-<td style="border: 1px solid #ccc; ;">Yes</td>
+<td style="border: 1px solid #ccc; ;">Intermediate</td>
 </tr>
 <tr>
-<td style="border: 1px solid #ccc; ;">Theta Academy</td>
+<td style="border: 1px solid #ccc; ;"><a href="#Theta Academy">Theta Academy</a></td>
 <td style="border: 1px solid #ccc; ;">INR 35,000 to INR 65,000</td>
-<td style="border: 1px solid #ccc; ;">Yes</td>
+<td style="border: 1px solid #ccc; ;">Advanced</td>
 </tr>
 <tr>
-<td style="border: 1px solid #ccc; ;">CBitss</td>
+<td style="border: 1px solid #ccc; ;"><a href="#CBitss">CBitss</a></td>
 <td style="border: 1px solid #ccc; ;">INR 50,000 to INR 150,000</td>
-<td style="border: 1px solid #ccc; ;">Yes</td>
+<td style="border: 1px solid #ccc; ;">Advanced</td>
 </tr>
 <tr>
-<td style="border: 1px solid #ccc; ;">Piford Technologies</td>
+<td style="border: 1px solid #ccc; ;"><a href="#Piford Technologies">Piford Technologies</a></td>
 <td style="border: 1px solid #ccc; ;">NA</td>
-<td style="border: 1px solid #ccc; ;">Yes</td>
+<td style="border: 1px solid #ccc; ;">Intermediate</td>
 </tr>
 <tr>
-<td style="border: 1px solid #ccc; ;">VproTech Digital</td>
+<td style="border: 1px solid #ccc; ;"><a href="#VproTech Digital">VproTech Digital</a></td>
 <td style="border: 1px solid #ccc; ;">NA</td>
-<td style="border: 1px solid #ccc; ;">Yes</td>
+<td style="border: 1px solid #ccc; ;">Intermediate</td>
 </tr>
 <tr>
-<td style="border: 1px solid #ccc; ;">TECHedo</td>
+<td style="border: 1px solid #ccc; ;"><a href="#TECHedo">TECHedo</a></td>
 <td style="border: 1px solid #ccc; ;">INR 300,000 inclusive of taxes</td>
-<td style="border: 1px solid #ccc; ;">Yes</td>
+<td style="border: 1px solid #ccc; ;">Advanced</td>
 </tr>
 
 <tr>
-<td style="border: 1px solid #ccc; ;">DigiPerform</td>
+<td style="border: 1px solid #ccc; ;"><a href="#DigiPerform">DigiPerform</a></td>
 <td style="border: 1px solid #ccc; ;">INR 122,720 inclusive of taxes</td>
-<td style="border: 1px solid #ccc; ;">Yes</td>
+<td style="border: 1px solid #ccc; ;">Basic to Advanced</td>
 </tr>
 
 
@@ -76,6 +76,8 @@ const ChandigarhData = {
 </table>
 </div>
 
+<a href="https://www.learnbay.co/submit-info">
+<span class="next-image-placeholder" data-src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/banner_c.webp" data-alt="Banner Image" data-width="800" data-height="400"></span></a>
 
 
 
@@ -91,7 +93,7 @@ const ChandigarhData = {
 
     <p><i>Let’s review them –</i></p>
 
-    <p>1.<i><b>Foundations:</b></i> IT/non-IT experts must learn basic data science concepts to update their skills and build a thriving career path.</p>
+    <p><i><b>1. Foundations:</b></i> IT/non-IT experts must learn basic data science concepts to update their skills and build a thriving career path.</p>
     
     <ul>
     <li><i>Programming</i></li>
@@ -100,7 +102,7 @@ const ChandigarhData = {
     <li><i>Data Types</i></li>
     </ul>
 
-    <p>2.<b>Data Analysis: Data science in Chandigarh</b> is trending and has become a solid weapon for fair data analysis that you must learn.</p>
+    <p><b>2. Data Analysis:</b> Data science in Chandigarh is trending and has become a solid weapon for fair data analysis that you must learn.</p>
     <ul>
     <li><i>ML</i></li>
     <li><i>Numpy</i></li>
@@ -108,7 +110,7 @@ const ChandigarhData = {
     <li><i>Matplotlib</i></li>
     </ul>
 
-    <p>3.<b>Advanced:</b> Experts willing for a 360-degree career makeover can join a <b>data science course in Chandigarh</b> and learn advanced concepts. </p>
+    <p><b>3. Advanced:</b> Experts willing for a 360-degree career makeover can join a <b>data science course in Chandigarh</b> and learn advanced concepts. </p>
     <ul>
     <li><i>Deep learning</i></li>
     <li><i>Big Data</i></li>
@@ -346,7 +348,7 @@ const ChandigarhData = {
 
     <h2>Top 10 Competitors with Data Science Courses in Chandigarh</h2>
 
-      <h3><b><b>1. Best Data Science Courses in Chandigarh by Learnbay</b> </b></h3>
+      <h3 id="Learnbay"><b><b>1. Best Data Science Courses in Chandigarh by Learnbay</b> </b></h3>
     <p><i><b>About:</b></i> In the data-driven age, Learnbay's <a href="https://www.learnbay.co/datascience/advance-data-science-certification-courses?utm_source=skillslash&utm_medium=chandigarh&utm_campaign=ds_blog_chandigarh" target="_blank" rel="nofollow">Data Science Courses in Chandigarh</a> mark a historic move with its career-driven offerings. Experts eager to overcome their static careers can join Learnbay and explore untapped options. Enroll in cutting-edge courses today and unleash exciting growth offers. Also, its alliance with IBM and Microsoft unlocks exciting options on a global scale. </p>
 
     <i><b>Course Highlights:</b></i>
@@ -368,9 +370,9 @@ const ChandigarhData = {
     <p><i><b>Certifications:</b></i>Attest IBM & MS credentials to your career and explore global-scale career growth offers with the leading firms.</p>
     
 
-    <i><b>Contact:</b><a href="contacts@learnbay.co" target="_blank" rel="nofollow"> contacts@learnbay.co</a></i>info@datamites.com
+    <i><b>Contact:</b><a href="contacts@learnbay.co" target="_blank" rel="nofollow"> contacts@learnbay.co</a></i>
 
-     <h3><b><b>2. Data Scientist Course in Chandigarh by Simplilearn</b> </b></h3>
+     <h3 id="Simplilearn"><b><b>2. Data Scientist Course in Chandigarh by Simplilearn</b> </b></h3>
     <p><i><b>About: </b></i>Simplilearn’s data scientist course in Chandigarh presents an inclusively designed syllabus to cater to learners’ growth expectations. As digital advances become crucial, demand for data science learning grows vital for experts. Hence, joining Simplilearn’s front-age courses unlocks exciting career gains. Also, its alliance with IBM enriches success metrics with global-level approval.</p>
 
     <i><b>Course Highlights:</b></i>
@@ -392,7 +394,7 @@ const ChandigarhData = {
 
     <p><i><b>Contact:</b></i> Call @1800-212-7688 or<a href="https://www.simplilearn.com/contact-us" target="_blank" rel="nofollow"> contact here</a></p>
 
-     <h3><b><b>3. Data Science Course in Chandigarh by Datamites</b> </b></h3>
+     <h3 id="Datamites"><b><b>3. Data Science Course in Chandigarh by Datamites</b> </b></h3>
     <p><i><b>About: </b></i> Today’s ever-evolving digital space in Chandigarh demands talented data experts to handle rising intricacies. Datamites offers leading-edge data science training programs in Chandigarh with definite success options. Also, its alliance with IABAC and FutureSkills paves the way for global-level gains.</p>
 
     <i><b>Course Highlights:</b></i>
@@ -419,7 +421,7 @@ const ChandigarhData = {
 
     <i><b>Contact:</b><a href="info@datamites.com" target="_blank" rel="nofollow"> info@datamites.com </a></i>
 
-     <h3><b><b>4. Data Science Training in Chandigarh by ThinkNEXT</b> </b></h3>
+     <h3 id="ThinkNEXT"><b><b>4. Data Science Training in Chandigarh by ThinkNEXT</b> </b></h3>
     <p><i><b>About:</b></i> Data science learning is inevitable. Yet, finding the best way to steer career success via proven training from experts. ThinkNEXT sets the basis for exciting career change with unique job-driven offers. Join the best <b>data science institute in Chandigarh</b> and explore the alluring gains.</p>
 
     <i><b>Course Highlights:</b></i>
@@ -442,7 +444,7 @@ const ChandigarhData = {
 
     <i><b>Contact:</b><a href="info@thinknext.co.in" target="_blank" rel="nofollow"> info@thinknext.co.in</a></i>
 
-     <h3><b><b>5.Data Science Course in Chandigarh by Theta Academy </b> </b></h3>
+     <h3 id="Theta Academy"><b><b>5.Data Science Course in Chandigarh by Theta Academy </b> </b></h3>
     <p><i><b>About:</b></i> In today’s data-driven age, data science learning has become crucial for many experts from diverse fields. <a href="https://thetacademy.com/" target="_blank" rel="nofollow"></a>Theta Academy is a well-known data science training center with career-driven offers. If you’re eager for skill upgrades, enroll in industry-driven data science courses and advance your career. </p>
 
     <i><b>Course Highlights:</b></i>
@@ -462,7 +464,7 @@ const ChandigarhData = {
 
     <i><b>Contact:</b><a href="info@thetaacademy.com" target="_blank" rel="nofollow"> info@thetaacademy.com </a></i>
 
-     <h3><b><b>6.Data Science Course in Chandigarh by CBitss</b> </b></h3>
+     <h3 id="CBitss"><b><b>6.Data Science Course in Chandigarh by CBitss</b> </b></h3>
     <p><i><b>About:</b></i> Amidst a fierce career growth race, <a href="https://www.cbitss.in/data_science_course_chandigarh/" target="_blank" rel="nofollow">CBitss</a> enters the upskilling space with its leading-edge <b>data science courses in Chandigarh</b>. Join its data science course in Chandigarh today and unleash your power to evolve. If you’re a fresher or experienced pro, learning with CBitss will never leave you stressed. Also, its approval by ISO and the Government of India unlocks endless career growth options. </p>
     <i><b>Course Highlights:</b></i>
     <ul>
@@ -479,7 +481,7 @@ const ChandigarhData = {
 
     <i><b>Contact:</b><a href="https://www.cbitss.in/contact-us/" target="_blank" rel="nofollow"> https://www.cbitss.in/contact-us/ </a></i>
 
-     <h3><b>7.Data Science with Python by Piford Technologies </b></h3>
+     <h3 id="Piford Technologies"><b>7.Data Science with Python by Piford Technologies </b></h3>
     <p><i><b>About:</b></i><a href="https://www.piford.com/datascience-training-course-in-chandigarh.php" target="_blank" rel="nofollow"> Piford Technologies</a> lays the basis for a data-driven career path with inspiring growth options. Its exclusive dive into unison of data science with Python paves the way toward exciting growth. Also, its constant approach to career advances guides learners to build a thriving career. </p>
 
     <i><b>Course Highlights: </b></i>
@@ -488,7 +490,7 @@ const ChandigarhData = {
     <li>Gain<i><b>in-depth knowledge</b></i>of basic and advanced data science concepts</li>
     <li>Develop<i><b>data science with Python</b></i>expertise for impactful career change</li>
     <li><i><b>Learn from industry experts</b></i>and build an absolute skills base</li>
-    <li>Certify your skills with<i><b>industry-paced credentials</b></i>from Piford Technologies</li>
+    <li>Certify your skills with <i><b>industry-paced credentials</b></i>from Piford Technologies</li>
     <li>Get placed with premier MNCs in Chandigarh via Piford’s hassle-free <i><b></b></i> career support services </li>
     </ul>
 
@@ -500,7 +502,7 @@ const ChandigarhData = {
 
     <p><i><b>Contact:</b></i><a href="info@piford.com" target="_blank" rel="nofollow"> info@piford.com </a> and <a href="sales@piford.com" target="_blank" rel="nofollow">sales@piford.com </a></p>
 
-     <h3><b>8.Best Data Science Training in Chandigarh by VproTech Digital </b></h3>
+     <h3 id="VproTech Digital" </b></h3>
     <p><i><b>About: </b></i><a href="https://vprotechdigital.com/data_science" target="_blank" rel="nofollow">VproTech</a> is popularly known for its front-age data science training in Chandigarh. Its all-inclusive training method boosts learners to acquire notable skills and develop abilities to decode data intricacies. Also, its industry alliance with top-notch MNCs unleashes a competitive career path.</p>
 
     <i><b>Course Highlights: </b></i>
@@ -522,8 +524,8 @@ const ChandigarhData = {
 
     <i><b>Contact:</b><a href="mailto:vprotechhead@gmail.com" target="_blank" rel="nofollow"> vprotechhead@gmail.com </a></i>
 
-     <h3><b>9.Data Science Course in Chandigarh by TECHedo </b></h3>
-    <p><i><b>About:</b></i><a href="https://techedo.com/data-Science-course-chandigarh.php" target="_blank" rel="nofollow"></a> TECHedo is a well-known upskilling space in Chandigarh with job-driven career gains. Its inclusively curated data science learning modules process real-time skill upgrades with exciting returns. Also, its alliance with IBM lifts your career growth metrics with finite success.</p>
+     <h3 id="TECHedo"><b>9.Data Science Course in Chandigarh by TECHedo </b></h3>
+    <p><i><b>About:</b></i><a href="https://techedo.com/data-Science-course-chandigarh.php" target="_blank" rel="nofollow">TECHedo</a>  is a well-known upskilling space in Chandigarh with job-driven career gains. Its inclusively curated data science learning modules process real-time skill upgrades with exciting returns. Also, its alliance with IBM lifts your career growth metrics with finite success.</p>
     <p></p>
 
     <p></p><i><b>Course Highlights: </b></i>
@@ -542,7 +544,7 @@ const ChandigarhData = {
 
     <p><i><b>Contact: Call </b>@ 0172-5265001</p></i> 
 
-     <h3><b>10.Data Science Training Program in Chandigarh by DIGIPerform </b></h3>
+     <h3 id="DigiPerform"><b>10.Data Science Training Program in Chandigarh by DIGIPerform </b></h3>
     <p><i><b>About:</b></i><a href="https://digiperform.com/master-program-in-ai-ml-analytics/" target="_blank" rel="nofollow"> DigiPerform</a> is one of the top-ranked data science training centers in Chandigarh. Its premier dive into career-driven skill upgrades via elementary and practical training is worth noting. Enroll today to master in-demand data science skills with global-level success. </p>
     
 

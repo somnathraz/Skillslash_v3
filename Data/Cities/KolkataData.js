@@ -6,6 +6,7 @@ const KolkataData = {
     <p>
     According to the <a href="https://www.financialexpress.com/business/industry/india-tech-industry-decentralising-to-26-cities-from-7-major-hubs-11-15-talent-in-tier-2-3-cities-report/3227815/" target="_blank" rel="nofollow">reports</a>, over 5.4 million talents for the rising tech industry are found across tier 1 & tier 2 cities including Kolkata. MNCs like Infosys, TCS, Wipro, IBM, HCL, etc look for exciting growth and upsurge in these cities. In the interim, the rise of data science creates plenty of growth options for many.</p>
  
+        <p>Thus, skill upgrades via an industry-focused data scientist course in Kolkata with utmost growth potential are crucial in today’s age. </p>
    <div class="table-container" style="overflow-x: auto;">
    <table style="border-collapse: collapse; width: 100%; border: 2px solid #ccc;">
          <caption style="font-weight: bold; font-style: italic; margin:20px;">Top Training Institutes in Kolkata </caption>
@@ -73,7 +74,9 @@ const KolkataData = {
       </table>
 </div>
 
-    <p>Thus, skill upgrades via an industry-focused data scientist course in Kolkata with utmost growth potential are crucial in today’s age. </p>
+<a href="https://www.learnbay.co/submit-info">
+<span class="next-image-placeholder" data-src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/banner_c.webp" data-alt="Banner Image" data-width="800" data-height="400"></span></a>
+
 
 <h2>What tech-driven concepts will you acquire with a <b>data science course in Kolkata?</b></h2>
     <p>No wonder, data science is trending now and then. Kolkata has become a prime hub for various startups, MNCs, and career aspirants eager to grow. Kolkata’s education legacy speaks for itself nurturing many careers with proven skills. Many experts leap forward to gain proven data science skills to rule in today’s tech space. Hence, learning from the <b>best institute for data science in Kolkata</b> brings career-driven gains.</p>
@@ -328,7 +331,7 @@ const KolkataData = {
 
     <h2>Insights Into Top 10 Data Science Training Institutes in Kolkata [2024 Update]</h2>
     <h3 id="Learnbay" ><b>1. Learnbay</b></h3>
-        <p>About: <a href="https://www.learnbay.co/datascience/india/data-science-course-training-in-kolkata" target="_blank" rel="nofollow">Learnbay</a> is a well-known data science training institute in Kolkata with hassle-free career growth. In today’s rapidly growing digital space, Learnbay envisions a world with proven data-driven skills. Many working experts join Learnbay aiming to accelerate career chances with alluring offers. </p>
+        <p>About: Learnbay is a well-known <a href="https://www.learnbay.co/datascience/india/data-science-course-training-in-kolkata?utm_source=skillslash&utm_medium=kolkata&utm_campaign=ds_blog_kolkata" target="_blank">data science training institute in Kolkata</a> with hassle-free career growth. In today’s rapidly growing digital space, Learnbay envisions a world with proven data-driven skills. Many working experts join Learnbay aiming to accelerate career chances with alluring offers. </p>
 
         <p>In the interim of data science growth, Learnbay presents foundational to master’s program with exciting career returns. Its creative move toward a data science career makeover ensures global-scale shifts. As a result, experts from diverse fields gain proven skills to get into top-notch MNCs. <p>
 
@@ -336,7 +339,7 @@ const KolkataData = {
         <i><b>Key Features:</b></i>
            <ul>
             <li>Wide range of career-oriented courses <b>(domain-specific, foundational, advanced, master’s certification, and master’s degree)</b></li>
-            <li><br>A Hybrid learning model</br> with definite access to learning materials, training recordings, and discussions</li>
+            <li><b>A Hybrid learning model</b> with definite access to learning materials, training recordings, and discussions</li>
             <li><b>Mentorship from eminent experts</b> with proven skills and expertise</li>
             <li>Affordable fee with up to 25% scholarship and flexible payment options</li>
             <li><b>Industry alliance</b> with 450+ MNCs/MAANG/FAANG</li>
@@ -346,7 +349,7 @@ const KolkataData = {
            
            <p><b>Fee:</b> If you want to switch your career to data science, join Learnbay’s cutting-edge upskilling courses. Here, you can enroll in any course ranging between INR 75,000 to INR 325,000.</p>
            <p><b>Mode of training:</b> Learnbay offers exclusively planned live instructor-led training on data science. Also, you can opt for offline project-handling sessions under the guidance of your mentor.</p>
-           <p><b>Certifications:</b> You can attest any of the IBM, Microsoft, E&ICT Academy, and IIT Guwahati certifications to your career for better gains. Also, experts opting for a master’s program will obtain a Woolf University-recognized degree.</p>
+           <p><b>Certifications:</b> You can attest any of the IBM, Microsoft, <i><b><a href="https://www.learnbay.co/datascience/executive-program-in-data-science-and-ai-by-iit-guwahati?utm_source=skillslash&utm_medium=kolkata&utm_campaign=ds_blog_kolkata" target="_blank" >E&ICT Academy</a></b></i>, and IIT Guwahati certifications to your career for better gains. Also, experts opting for a master’s program will obtain a Woolf University-recognized degree.</p>
            <p>Contact:<a href="contacts@learnbay.co" target="_blank" rel="nofollow">contacts@learnbay.co</a></p>
 
         <h3 id="NIIT"><b>2. NIIT</b></h3>
@@ -382,7 +385,7 @@ const KolkataData = {
 
           <h3 id="Praxis"><b>3. Praxis</b></h3>
             <p><b>About:</b> India’s rapidly growing tech space welcomes various startups and MNCs from diversified fields. Its rising reliance on digital space notices a rising demand for data science. Kolkata is on the verge of becoming the next IT hub in India with exciting career growth options in diverse domains.  In the interim, experts rethink their career path and plan to switch to a data science profile. </p>
-            <p><a href="https://praxis.ac.in/about-us/" target="_blank" rel="nofollow">Praxis</a> marks a historic milestone in the data science world via its leading-edge learning programs. Its aim to empower learners to excel in the rising tech space and attain global success allures many. <b>Data science in Kolkata</b> lays the basis for a tempting career revamp with job-driven offers. Praxis brings a set of PG programs in data science and related tech creations marking success.>/p> 
+            <p><a href="https://praxis.ac.in/about-us/" target="_blank" rel="nofollow">Praxis</a> marks a historic milestone in the data science world via its leading-edge learning programs. Its aim to empower learners to excel in the rising tech space and attain global success allures many. <b>Data science in Kolkata</b> lays the basis for a tempting career revamp with job-driven offers. Praxis brings a set of PG programs in data science and related tech creations marking success.</p> 
 
            <p> Praxis’ PG program with useful credentials supports hassle-free career shifts ensuring global-level growth chances. Also, its impactful training sessions with placement services help you redefine your career and land your dream job. Anyone eager to refine prior domain skills and boost their position can join this <b>data science institute in Kolkata.</b> </p>
 
@@ -419,7 +422,7 @@ const KolkataData = {
             <li>Get <b>lifetime access to Simplilearn’s learning portals</b> to have a hassle-free skill upgrade and keep yourself informed of the latest trends</li>
             <li>Get premier <b>networking scope with top-notch data science experts</b> from diverse fields to get insights into real-world cases</li>
             <li>Gain global-level job offers with <b>Simplilearn’s career-driven job assist program</b> and get noticed by notable tech leaders in Kolkata</li>
-            <li>Obtain two proven <p>data science certificates from Simplilearn in unison with IBM</b> and enrich your worth to revamp a static career</li>
+            <li>Obtain two proven <b>data science certificates from Simplilearn in unison with IBM</b> and enrich your worth to revamp a static career</li>
             </ul>
             <p><b>Fee:</b> Simplilearn’s front-age data science courses help you reform your career with a justified investment of approx INR 57,000. </p>
 
@@ -581,22 +584,22 @@ const KolkataData = {
 
               <p>No wonder, quality learning equips you with adequate skills to conquer global-level success. Unlike typical ones, joining a <b>data science course in Kolkata with placement</b> aid is worth investing in.</p>
             <h2>FAQs of Data Science Course Training in Kolkata: –</h2>
-            <h3>1. What are the different learning modes available for data science courses? </h3>
+            <h3><b>1. What are the different learning modes available for data science courses?</b> </h3>
               <p>Data science learning has become critical for freshers and busy working experts from diverse fields. Several training centers offer the best <b>data science course in Kolkata</b> to refine your skills. Hence, experts can opt for online or offline courses to build a career with career-driven gains. Online courses are time-saving and take less investment. On the other hand, a <b>data science course in Kolkata</b> offline can be costly and affect your other obligations. Experts eager to learn can choose the best-suited training mode as per their career goals.</p>
               
               
               
-              <h3>2. If I have to miss a lesson due to an emergency, would a make-up class be available? </h3>
+              <h3><b>2. If I have to miss a lesson due to an emergency, would a make-up class be available?</b></h3>
               <p><b>Data science training in Kolkata</b> offers endless access to learning portals with pre-recorded sessions. Hence, you can follow the resources and continue self-paced learning, if you miss a lesson due to an emergency. Also, you can consult your guide in case of any learning queries.</p>
               
 
             
-              <h3>3. Are there any fee discounts available for the Data Science Course in Kolkata? </h3>
+              <h3><b>3. Are there any fee discounts available for the Data Science Course in Kolkata? </b></h3>
               <p>Eligible learners can save a lot of money via group discounts while enrolling in a <b>data science course in Kolkata.</b> Also, learners can avail of scholarships that help them have effortless learning.</p>
               
 
               
-              <h3>4. What kind of certification does the online Data science course provide? </h3>
+              <h3><b>4. What kind of certification does the online Data science course provide? </b></h3>
               <p>Learning with a data science online course in Kolkata will attest to globally valued credentials to your career. Here, you will obtain course completion and a project certificate. These certificates are helpful for you to unlock suitable career rise options on a global scale. </p>
   
 
