@@ -42,6 +42,7 @@ const nextConfig = {
         destination: "/selfpaced/dsa-system-design-bootcamp",
         permanent: true,
       },
+     
       // {
       //   source: "/blog/ai-and-machine-learning",
       //   destination:

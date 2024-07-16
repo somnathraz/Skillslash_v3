@@ -54,7 +54,7 @@ const PricingSection = ({
               onClick={() => popupShow()}
               id="clck-apply-now-fees"
             >
-             Apply Counselling
+             Download Brochure
             </button>
        
             {/* <hr className="border-b-2 border-b-[#2e2e2e] rounded-2xl w-full" /> */}

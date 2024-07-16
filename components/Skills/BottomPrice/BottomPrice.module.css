@@ -2,13 +2,12 @@
   position: fixed;
   bottom: 0;
   display: grid;
-  /* grid-template-columns: 41% 54%; */
   align-items: center;
   gap: 20px;
   padding: 10px 20px;
   width: 100%;
   z-index: 999;
-  background: #F18350;
+  background: #f18350;
   color: #fff;
   text-align: center;
   justify-content: center;
@@ -54,10 +53,9 @@
   .wrap {
     display: none;
   }
-  .BottomPricebutton{
+  .BottomPricebutton {
     display: block;
   }
- 
   .wrap button {
     width: 100%;
   }
@@ -67,26 +65,23 @@
     padding: 5px 8px;
   }
   .wrap {
-    padding:0;
+    padding: 0;
     gap: 0px;
     display: block;
   }
-  .BottomPricebutton{
+  .BottomPricebutton {
     width: 100%;
-    background:#f18350;
+    background: #f18350;
     padding: 10px;
     text-align: center;
     color: #fff;
     font-weight: 600;
     border-radius: 20px 20px 0 0;
     font-size: 22px;
-    
   }
- 
 }
 @media (max-width: 320px) {
   .ofPr {
     font-size: 20px;
   }
-
 }

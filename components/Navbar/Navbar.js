@@ -38,6 +38,7 @@ const Navbar = ({
   redirectDa,
   redirectDM,
   changeHeading,
+  noHam ,
 }) => {
   const [idBtnB, setIdBtnW] = useState("org-slb");
 
@@ -127,7 +128,7 @@ const Navbar = ({
               setIcon(false);
             }}*/}
 
-          {!show ? (
+        {noHam ? (<></>):(<>  {!show ? (
             <FaBars
               className={styles.ham}
               onClick={() => {
@@ -146,7 +147,7 @@ const Navbar = ({
             >
               ⨯
             </p>
-          )}
+          )}</>)}
 
           <div className={show ? styles.mobileWrapper : styles.hide}>
             <div className={styles.mobileMenu}>
@@ -188,7 +189,7 @@ const Navbar = ({
             </a>
           )}
 
-          <button
+        {noHam ? (<></>):(<>  <button
             className={styles.mLearn}
             id={idBtnB}
             onClick={() => {
@@ -197,7 +198,7 @@ const Navbar = ({
             }}
           >
             Our Courses
-          </button>
+          </button></>)}
           {ads ? (
             ""
           ) : (

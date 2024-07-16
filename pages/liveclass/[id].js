@@ -57,6 +57,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}
         redirectFs={DataScienceCourseData.data.header.FullStack}
         redirectDM={DataScienceCourseData.data.header.digitalmarketing}
+        noHam ={DataScienceCourseData.data.header.digitalmarketing}
       />
       {/* <Header
         title={DataScienceCourseData.data.header.title}
