@@ -21,11 +21,33 @@ const BottomPrice = ({
 }) => {
   const [idBtnO, setIdBtnO] = useState("org-slo");
   const [popups, setPopups] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+
   const popupShow = (demoClass, changeText) => {
     setPopups(true);
   };
+
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY;
+    const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrollPercentage = (scrollPosition / windowHeight) * 100;
+
+    if (scrollPercentage >= 4) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className={styles.wrap}>
+    <div className={styles.wrap} style={{ display: isVisible ? "block" : "none" }}>
       <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
         <div className="RightPopup">
           {changeHeading ? (
@@ -36,7 +58,6 @@ const BottomPrice = ({
               counsellors
             </h5>
           )}
-          {/* <p>Fill the below Details to get started</p> */}
           <Form
             popup={true}
             setTrigger={setPopups}
@@ -47,18 +68,10 @@ const BottomPrice = ({
           />
         </div>
       </Popup>
-      
-    
-     
-            <div id={idBtnO} className={styles.BottomPricebutton} onClick={popupShow}>
-              Apply Counselling
-            </div>
- 
-     
-      
 
-
-    
+      <div id={idBtnO} className={styles.BottomPricebutton} onClick={popupShow}>
+        Apply Counselling
+      </div>
     </div>
   );
 };

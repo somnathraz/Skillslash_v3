@@ -59,7 +59,7 @@
 
 /* Button */
 .btn {
-  border-radius: 62px;
+  border-radius: 20px;
   border: 1px solid black;
   box-shadow: 6px 6px 0px 0px #fff;
   padding: 8px 50px;
@@ -74,7 +74,7 @@
   color: #4f419a;
 }
 .btnDemo {
-  border-radius: 62px;
+  border-radius: 20px;
   border: 1px solid black;
   box-shadow: 6px 6px 0px 0px #4f419a;
   padding: 20px 50px;
