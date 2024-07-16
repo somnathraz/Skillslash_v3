@@ -28,7 +28,7 @@ const MumbaiData = {
           </td>
           <td style="border: 1px solid #ccc; ">INR 190,000 + 18% GST</td>
           <td style="border: 1px solid #ccc; ">
-            <a href="https://www.learnbay.co/datascience/executive-program-in-data-science-and-ai-by-iit-guwahati?utm_source=skillslash&utm_medium=kolkata&utm_campaign=ds_blog_kolkata" target="_blank">Executive program in Data Science & AI</a>
+            <a href="https://www.learnbay.co/datascience/executive-program-in-data-science-and-ai-by-iit-guwahati?utm_source=skillslash&utm_medium=mumbai&utm_campaign=ds_blog_mumbai" target="_blank">Executive program in Data Science & AI</a>
           </td>
         </tr>
         <tr>

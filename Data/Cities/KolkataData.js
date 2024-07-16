@@ -351,7 +351,7 @@ const KolkataData = {
            <p><b>Fee:</b> If you want to switch your career to data science, join Learnbay’s cutting-edge upskilling courses. Here, you can enroll in any course ranging between INR 75,000 to INR 325,000.</p>
            <p><b>Mode of training:</b> Learnbay offers exclusively planned live instructor-led training on data science. Also, you can opt for offline project-handling sessions under the guidance of your mentor.</p>
            <p><b>Certifications:</b> You can attest any of the IBM, Microsoft, <i><b><a href="https://www.learnbay.co/datascience/executive-program-in-data-science-and-ai-by-iit-guwahati?utm_source=skillslash&utm_medium=kolkata&utm_campaign=ds_blog_kolkata" target="_blank" >E&ICT Academy</a></b></i>, and IIT Guwahati certifications to your career for better gains. Also, experts opting for a master’s program will obtain a Woolf University-recognized degree.</p>
-           <p>Contact:<a href="contacts@learnbay.co" target="_blank" rel="nofollow">contacts@learnbay.co</a></p>
+           <p>Contact:<a href="mailto:contacts@learnbay.co" target="_blank"">contacts@learnbay.co</a></p>
 
         <h3 id="NIIT"><b>2. NIIT</b></h3>
            <p><b>About:</b> In today’s digital age, firms strive to adopt data-driven practices for enriched gains. Kolkata is roaring with optimal growth options as data science replaces classic patterns with data-driven ones. Since firms indulge themselves in critical data-driven practices, skill upgrades are vital. Hence, enrolling in a <b>data science course in Kolkata</b> can enrich your growth chances.</p>  
@@ -381,7 +381,7 @@ const KolkataData = {
 
             <p><b>Certifications:</b> Attest NIIT certificates to your slow-paced career and increase your chances of getting into leading firms in Kolkata.</p> 
             
-            <p>Contact:<a href="corptraining@niit.com" target="_blank" rel="nofollow"> corptraining@niit.com</a></p>
+            <p>Contact:<a href="mailto:corptraining@niit.com" target="_blank" rel="nofollow"> corptraining@niit.com</a></p>
 
 
           <h3 id="Praxis"><b>3. Praxis</b></h3>
@@ -555,7 +555,7 @@ const KolkataData = {
               <p><b>Mode of training:</b> SkillEnable supports hassle-free learning with its online training model where you can upskill and reskill as per the latest tools. </p>
 
               <p><b>Certifications:</b> Attest industry-endorsed credentials to your career and explore attractive growth prospects enriching your future.</p>
-              <p><a href="mailto:contact@skillenable.com"target="_blank" rel="nofollow">Contact: contact@skillenable.com</a> </p>
+              <p> Contact: <a href="mailto:contact@skillenable.com"target="_blank" rel="nofollow">contact@skillenable.com</a> </p>
               
             <h3 id="Besant Technologies"><b>10. Besant Technologies</b></h3>
               <p><b>About:</b> Kolkata is gradually moving towards becoming a notable IT hub in India with endless growth options. In the interim, the rapid growth of data science brings an alluring change to the present tech space. Hence, experts prefer upskilling via a <b>data science course in Kolkata</b> owing to the changing trends. </p>
