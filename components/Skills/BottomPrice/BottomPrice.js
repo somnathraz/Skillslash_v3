@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import styles from "./BottomPrice.module.css";
-import Link from "next/link";
 import Popup from "../Global/Popup/Popup";
 import Form from "../Global/Form/Form";
 
@@ -23,7 +22,7 @@ const BottomPrice = ({
   const [popups, setPopups] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
 
-  const popupShow = (demoClass, changeText) => {
+  const popupShow = () => {
     setPopups(true);
   };
 

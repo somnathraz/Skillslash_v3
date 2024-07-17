@@ -16,50 +16,19 @@
   font-weight: 600;
   border-radius: 30px 30px 0 0;
 }
-.left {
-  margin-bottom: 15px;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-}
-.ofPr {
-  font-size: 22px;
-  color: black;
-  font-weight: bold;
-}
-.acPr {
-  text-decoration: line-through;
-}
-.right {
-  margin-bottom: 15px;
-}
-.right button {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f18350;
-  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
-    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
-}
-.refund {
-  position: absolute;
-  bottom: 2px;
-  width: 100%;
-  text-align: center;
-}
+
 @media (min-width: 642px) {
   .wrap {
-    display: none;
+    display: none !important; /* Hide on larger screens */
   }
   .BottomPricebutton {
-    display: block;
+    display: block; /* Show a button instead */
   }
   .wrap button {
-    width: 100%;
+    width: 100%; /* Button width */
   }
 }
+
 @media (max-width: 361px) {
   .right button {
     padding: 5px 8px;
@@ -80,6 +49,64 @@
     font-size: 22px;
   }
 }
+
+@media (max-width: 320px) {
+  .ofPr {
+    font-size: 20px;
+  }
+}
+.wrap {
+  position: fixed;
+  bottom: 0;
+  display: grid;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+  width: 100%;
+  z-index: 999;
+  background: #f18350;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 600;
+  border-radius: 30px 30px 0 0;
+}
+
+@media (min-width: 642px) {
+  .wrap {
+    display: none !important; /* Hide on larger screens */
+  }
+  .BottomPricebutton {
+    display: block; /* Show a button instead */
+  }
+  .wrap button {
+    width: 100%; /* Button width */
+  }
+}
+
+@media (max-width: 361px) {
+  .right button {
+    padding: 5px 8px;
+  }
+  .wrap {
+    padding: 0;
+    gap: 0px;
+    display: block;
+  }
+  .BottomPricebutton {
+    width: 100%;
+    background: #f18350;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 20px 20px 0 0;
+    font-size: 22px;
+  }
+}
+
 @media (max-width: 320px) {
   .ofPr {
     font-size: 20px;
