@@ -385,4 +385,10 @@ top: 100px;
   .related{
     display: none;
   }
+  .stickyAds img {
+    position: sticky;
+  }
+  .stickyAds{
+    position: relative;
+  }
 }
