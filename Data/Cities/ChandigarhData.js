@@ -4,7 +4,7 @@ const ChandigarhData = {
    
    
     <p>India is welcoming a fast-paced rise of digital hubs with infinite growth options. Northern India, especially Chandigarh marks a notable move with its modern infrastructure. Many startups and rising MNCs witness the alluring growth of a data-driven business culture. In the interim, a surge in demand for skilled data experts has become a notable topic of debate. Hence, upskilling via a <b>data science course in Chandigarh</b> takes the charge for effortless career shifts.</p>
-       <span class="blog-center-image" data-src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_second_img.webp" data-alt="Banner Image" data-width="800" data-height="400"></span></a>
+       <span class="blog-center-image" data-src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/chandigrah_banner.webp" data-alt="Banner Image" data-width="800" data-height="400"></span></a>
  
     <div class="table-container" style="overflow-x: auto;">
 <table style="border-collapse: collapse; width: 100%; border: 2px solid #ccc;">

@@ -3,7 +3,7 @@ const JaipurData = {
     <i><b>Imagine modern technology advancing into your daily operations and
       leveraging its effectiveness with limitless gains.</b>
     </i>
-          <span class="blog-center-image" data-src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_second_img.webp" data-alt="Banner Image" data-width="800" data-height="400"></span></a>
+          <span class="blog-center-image" data-src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/jaipur_banner.webp" data-alt="Banner Image" data-width="800" data-height="400"></span></a>
 
     <p>
       The fast-paced rise of data science anticipates a data-driven future with

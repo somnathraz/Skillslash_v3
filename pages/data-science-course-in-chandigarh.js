@@ -64,7 +64,7 @@ const Chandigarh = ({ data }) => {
         titleAuthor="Amit"
         authorPro="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/ai_face.webp"
         linkedinId="https://www.linkedin.com/in/amit-ambi-axh08/"
-        rytImg="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/mumbai_top_10_comp.webp"
+        rytImg="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/chandigarh_right.webp"
         backgroundImg="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_bg_mumbai.webp"
         cityImg="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/chandigarh_city.webp"
       />
