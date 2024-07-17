@@ -665,8 +665,8 @@ const ChandigarhData = {
     {
       image:
         "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_side.webp",
-      title: "Top 10 Data Science Course Training Institutes in Chandigarh",
-      link: "https://skillslash.com/data-science-course-in-chandigarh",
+      title: "Top 10 Data Science Course Training Institutes in Jaipur",
+      link: "https://skillslash.com/data-science-course-in-jaipur",
     },
     {
       image:
@@ -677,7 +677,7 @@ const ChandigarhData = {
     {
       image:
         "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_side_3.webp",
-      title: "Top 10 Data Science Course Training Institutes in Mumbai",
+      title: "Top 11 Data Science Course Training Institutes in Mumbai",
       link: "https://skillslash.com/data-science-course-in-mumbai",
     },
 

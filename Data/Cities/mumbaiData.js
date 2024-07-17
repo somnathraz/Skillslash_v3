@@ -515,7 +515,7 @@ Make a hassle-free career shift with job and placement support and land your dre
 <p>Datamites and its premier industry alliance with IABAC accredit your career worth and make you job-ready in today’s age. Enroll in Datamites’ courses to explore and acquire digital skills with global-scale success. Its data-rich course guides you to gain ample growth offers and build a thriving career.</p>
 
 <p>Grow rapidly with mastery to crack critical job roles at MNCs like Amazon, IBM, Microsoft, Infosys, Dell, Yahoo, etc. </p>
-<p>For further details, <a href="emaito:info@datamites.com" target="_blank" rel="nofollow">info@datamites.com</a> or <a href="https://datamites.com/data-science-course-training-mumbai/" target="_blank" rel="nofollow">visit website</a></p>
+<p>For further details, <a href="mailto:info@datamites.com" target="_blank" rel="nofollow">info@datamites.com</a> or <a href="https://datamites.com/data-science-course-training-mumbai/" target="_blank" rel="nofollow">visit website</a></p>
 <i><b>Course features:</b></i>
 <ul>
 
@@ -796,7 +796,7 @@ Make a hassle-free career shift with job and placement support and land your dre
   Blogs: [
     { image: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_side.webp", title: "Top 10 Data Science Course Training Institutes in Chandigarh", link:"https://skillslash.com/data-science-course-in-chandigarh" },
     { image: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_side_2.webp", title: "Top 10 Data Science Course Training Institutes in Kolkata",link:"https://skillslash.com/data-science-course-training-kolkata" },
-    { image: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_side_3.webp", title: "Top 10 Data Science Course Training Institutes in Mumbai",link:"https://skillslash.com/data-science-course-in-mumbai" },
+    { image: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_side_3.webp", title: "Top 10 Data Science Course Training Institutes in Jaipur",link:"https://skillslash.com/data-science-course-in-jaipur" },
 
     // Add more blog objects as needed
   ],

@@ -1,4 +1,4 @@
-// pages/mumbai.js
+
 
 import React from "react";
 import Head from "next/head";
@@ -6,16 +6,16 @@ import Navbar from "../components/Navbar/Navbar";
 import BlogHeader from "../components/CityBlog/BlogHeader/BlogHeader";
 import BlogContent from "../components/CityBlog/BlogContent/BlogConent"; 
 import RelatedInfo from "../components/SeoComponents/ReleteadInfo/RelatedInfo"; 
-import mumbaiData from "../Data/Cities/mumbaiData";
+import JaipurData from "../Data/Cities/jaipurData";
 import Footer from "../components/Footer/Footer";
 import InternalLinking from "../components/InternalLinking/InternalLinking";
 import Popup from "../components/CityBlog/BlogPopup/Popup";
 
-const Mumbai = ({ data }) => {
+const Jaipur  = ({ data }) => {
   return (
     <div>
       <Head>
-        <title>Top 11 Data Science Course Training Institutes in Mumbai</title>
+        <title>Top 10 Data Science Course Training Institutes in Jaipur</title>
         <meta
           name="description"
           content="Offering one of the Best Data Science Course in Mumbai, with hands-on projects, dual certification and guaranteed job referrals for all Data Science aspirants"
@@ -26,7 +26,7 @@ const Mumbai = ({ data }) => {
         />
         <link
           rel="canonical"
-          href="https://skillslash.com/data-science-course-in-mumbai"
+          href="https://skillslash.com/data-science-course-in-jaipur"
         />
         <script type="application/ld+json">
           {JSON.stringify({
@@ -51,9 +51,9 @@ const Mumbai = ({ data }) => {
       <Navbar />
 
       <BlogHeader
-        city="Mumbai"
+        city="Jaipur"
         title=" Data Science Course Training Institutes in "
-        subTitle="Top 11"
+        subTitle="Top 10"
         titleAuthor="Amit"
         authorPro="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/ai_face.webp"
         linkedinId="https://www.linkedin.com/in/amit-ambi-axh08/"
@@ -67,7 +67,7 @@ const Mumbai = ({ data }) => {
         lastUpdated={data.lastUpdated}
         shareLink={data.shareLink}
         publishDate={data.publishDate}
-        MumbaiData={mumbaiData} // Passing MumbaiData to BlogContent
+        MumbaiData={JaipurData} // Passing MumbaiData to BlogContent
       />
 
     
@@ -83,9 +83,9 @@ export async function getStaticProps() {
   // Since the data is already in a JS file, we can directly import it
   return {
     props: {
-      data: mumbaiData,
+      data: JaipurData,
     },
   };
 }
 
-export default Mumbai;
+export default Jaipur;
