@@ -681,8 +681,8 @@ const KolkataData = {
   },
   Blogs: [
     { image: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_side.webp", title: "Top 10 Data Science Course Training Institutes in Chandigarh", link:"https://skillslash.com/data-science-course-in-chandigarh" },
-    { image: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_side_2.webp", title: "Top 10 Data Science Course Training Institutes in Kolkata",link:"https://skillslash.com/data-science-course-training-kolkata" },
-    { image: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_side_3.webp", title: "Top 10 Data Science Course Training Institutes in Mumbai",link:"https://skillslash.com/data-science-course-in-mumbai" },
+    { image: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_side_2.webp", title: "Top 10 Data Science Course Training Institutes in Jaipur",link:"https://skillslash.com/data-science-course-in-jaipur" },
+    { image: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_side_3.webp", title: "Top 11 Data Science Course Training Institutes in Mumbai",link:"https://skillslash.com/data-science-course-in-mumbai" },
 
     // Add more blog objects as needed
   ],
