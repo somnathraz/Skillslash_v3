@@ -9,7 +9,7 @@ const Popup = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsPopupOpen(true);
-    }, 10000);
+    }, 30000);
 
     // Check if device is mobile
     const mobileCheck = () => {
