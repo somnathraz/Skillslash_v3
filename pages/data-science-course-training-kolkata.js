@@ -20,11 +20,11 @@ const Kolkata = ({ data }) => {
         </title>
         <meta
           name="description"
-          content="Elevate your career, Learn Data Science. Choose from our Best Data Science Course in Kolkata designed by industry experts and earn a Microsoft Certification."
+          content=" Discover the leading Data Science course Institutes in Kolkata. Choose from the best data science training in Kolkata and elevate your professional journey."
         />
         <meta
           name="keywords"
-          content="data science training institute in Kolkata, data science training, data science course in Kolkata, data science training institute,data science course,data science training,online data science"
+          content=" data science course in kolkata, data scientist course in kolkata, data science course in kolkata with placement, best data science course in kolkata, best data science training institute in kolkata, data science institute in kolkata, data science course in kolkata fees, data science course fees in kolkata, best institute for data science in kolkata, data science training in kolkata"
         />
         <link
           rel="canonical"

@@ -60,55 +60,55 @@
           "content": [
             {
               "chap": {
-                "title": "Lesson 1:What is Digital Marketing (1 hr)",
+                "title": "What is Digital Marketing ",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": "Lesson 2: Diff b/w Traditional Marketing & Digital Marketing (1 hr)",
+                "title": "Diff b/w Traditional Marketing & Digital Marketing ",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": "Lesson 3: Customer Journey (1 hr)",
+                "title": "Customer Journey ",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": "Lesson 4: Marketing Funnel (1 hr)",
+                "title": "Marketing Funnel ",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": " Lesson 5: Creating Buyer Persona (1 hr)",
+                "title": "Creating Buyer Persona ",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": " Lesson 6: Key Digital Marketing Metrics (1 hr)",
+                "title": "Key Digital Marketing Metrics ",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": " Lesson 7: Understanding Paid, Owned, Shared & Earned media (1 hr)",
+                "title": "Understanding Paid, Owned, Shared & Earned media ",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": " Lesson 8: Types of Digital Marketing Channels (1 hr)",
+                "title": "Types of Digital Marketing Channels ",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": " Lesson 9: Career paths in digital marketing (1 hr)",
+                "title": "Career paths in digital marketing ",
                 "desc": []
               }
             }
@@ -127,25 +127,25 @@
           "content": [
             {
               "chap": {
-                "title": "Lesson 1:Build a Professional Website, get a domain & host it for yourself. ( 3 hrs )",
+                "title": "Build a Professional Website, get a domain & host it for yourself. ( 3 hrs )",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": "Lesson 2: WordPress / Shopify installation (1 hrs)",
+                "title": "WordPress / Shopify installation (1 hrs)",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": "Lesson 3: Create Theme Customisation (1 hrs)",
+                "title": "Create Theme Customisation (1 hrs)",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": "Lesson 4: Creating images using Canva(1 hrs)",
+                "title": "Creating images using Canva(1 hrs)",
                 "desc": []
               }
             }
@@ -164,25 +164,25 @@
           "content": [
             {
               "chap": {
-                "title": "Lesson 1:- Introduction ( 4 hrs )",
+                "title": "Introduction",
                 "desc": ["Overview of Canva and Looka, basic design principles."]
               }
             },
             {
               "chap": {
-                "title": "Lesson 2: Design Essentials (2 hrs)",
+                "title": " Design Essentials",
                 "desc": ["Color theory, palettes, and typography basics."]
               }
             },
             {
               "chap": {
-                "title": "Lesson 3: Layout and Composition (1 hrs)",
+                "title": "Layout and Composition",
                 "desc": ["Effective layout techniques using Canva."]
               }
             },
             {
               "chap": {
-                "title": "Lesson 4: Image Editing (1 hrs)",
+                "title": "Image Editing",
                 "desc": [
                   "Enhancing images and incorporating them into designs using Canva."
                 ]
@@ -190,7 +190,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 5: Branding (1 hrs)",
+                "title": "Branding",
                 "desc": [
                   " Creating brand assets in Canva and logo design with Looka."
                 ]
@@ -198,7 +198,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 6: Social Media Graphics (2 hrs)",
+                "title": "Social Media Graphics",
                 "desc": [
                   "Designing for social platforms and creating marketing materials."
                 ]
@@ -206,7 +206,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 7: Portfolio Development (2 hrs)",
+                "title": "Portfolio Development",
                 "desc": ["Building a portfolio in Canva and presentation skills."]
               }
             }
@@ -225,7 +225,7 @@
           "content": [
             {
               "chap": {
-                "title": "Lesson 1: Introduction",
+                "title": ": Introduction",
                 "desc": [
                   "Understanding the role of content in digital marketing, an overview of ChatGPT and Scrib"
                 ]
@@ -233,7 +233,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 2: Content Strategy and Planning",
+                "title": "Content Strategy and Planning",
                 "desc": [
                   "Developing a content strategy, using ChatGPT for content ideation."
                 ]
@@ -241,7 +241,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 3: SEO Writing Basics",
+                "title": "SEO Writing Basics",
                 "desc": [
                   "Introduction to SEO writing principles, leveraging ChatGPT for SEO content creation."
                 ]
@@ -249,7 +249,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 4: Blogging and Article Writing",
+                "title": "Blogging and Article Writing",
                 "desc": [
                   "Crafting engaging blog posts and articles, using Scrib for blog post outlines."
                 ]
@@ -257,7 +257,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 5: Social Media Content Creation",
+                "title": "Social Media Content Creation",
                 "desc": [
                   "Writing effective social media captions, and generating social media content ideas with ChatGPT."
                 ]
@@ -265,7 +265,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 6: Email Marketing Copywriting",
+                "title": "Email Marketing Copywriting",
                 "desc": [
                   "Crafting compelling email subject lines and body copy, utilizing Scrib for email marketing templates."
                 ]
@@ -273,7 +273,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 7: Content Optimization and Editing",
+                "title": "Content Optimization and Editing",
                 "desc": [
                   " Editing and proofreading techniques, improving content readability and flow with ChatGPT."
                 ]
@@ -294,7 +294,7 @@
           "content": [
             {
               "chap": {
-                "title": "Lesson 1: Introduction",
+                "title": " Introduction",
                 "desc": [
                   "Overview of SEO & evolution of search engines, impact of SEO in digital marketing"
                 ]
@@ -302,7 +302,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 2: Fundamentals of Search Engines",
+                "title": "Fundamentals of Search Engines",
                 "desc": [
                   "Backend workings, crawling, indexing, ranking, Google algorithm updates (Panda, Penguin, Hummingbird, etc.)"
                 ]
@@ -310,7 +310,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 3: Keyword Research",
+                "title": "Keyword Research",
                 "desc": [
                   " Importance, research techniques, long-tail keywords and intent analysis."
                 ]
@@ -318,7 +318,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 4: On-Page SEO",
+                "title": "On-Page SEO",
                 "desc": [
                   "Title tags, meta descriptions, header tags, URL structure, internal linking, image optimization, markup schema, page speed"
                 ]
@@ -326,7 +326,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 5: Off-Page SEO",
+                "title": "Off-Page SEO",
                 "desc": [
                   "Link building strategies (guest blogging, broken link building, etc.), social signals, canonical URLs, robot texts, backlink outreach campaigns"
                 ]
@@ -334,7 +334,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 6: Technical SEO",
+                "title": "Technical SEO",
                 "desc": [
                   "Website architecture, URL optimization, site speed, HTTPS and security, technical audits."
                 ]
@@ -342,7 +342,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 7: Local SEO",
+                "title": "Local SEO",
                 "desc": [
                   "Introduction, local keyword research, Google My Business, citation building, on-page optimization, local link building, local SEO for mobile"
                 ]
@@ -350,7 +350,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 8: Mobile SEO",
+                "title": "Mobile SEO",
                 "desc": [
                   "Mobile-friendly design, performance optimization, technical fundamentals, keyword research, content optimization, local mobile SEO"
                 ]
@@ -358,7 +358,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 9: SEO Analytics and Reporting",
+                "title": "SEO Analytics and Reporting",
                 "desc": [
                   "SEO audits (technical, on-page, off-page, local), competitor analysis, reporting, and recommendations"
                 ]
@@ -366,7 +366,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 10: Negative SEO",
+                "title": " Negative SEO",
                 "desc": [
                   "Manual penalties, algorithmic penalties, Google sandbox effect, deindexing"
                 ]
@@ -387,7 +387,7 @@
           "content": [
             {
               "chap": {
-                "title": "Lesson 1: Introduction to SEM",
+                "title": "Introduction to SEM",
                 "desc": [
                   "Overview of Search Engine Marketing, highlighting its significance in digital marketing"
                 ]
@@ -395,7 +395,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 2: Fundamentals of SEM",
+                "title": "Fundamentals of SEM",
                 "desc": [
                   "Setting Up a Google Ads Account, including keyword research, match types, and creating effective ad copies"
                 ]
@@ -403,7 +403,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 3: Google Search Ads Features",
+                "title": "Google Search Ads Features",
                 "desc": [
                   "Utilizing ad extensions, quality score, ad rank, and various targeting options such as demographics, locations, and devices"
                 ]
@@ -411,7 +411,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 4: Google Ads Editor",
+                "title": "Google Ads Editor",
                 "desc": [
                   "Maximizing efficiency through bulk editing and optimization techniques"
                 ]
@@ -419,7 +419,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 5: Display Advertising",
+                "title": " Display Advertising",
                 "desc": [
                   "Understanding display advertising, crafting impactful display ads, and optimizing display ad campaigns."
                 ]
@@ -427,7 +427,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 6: Video Advertising",
+                "title": " Video Advertising",
                 "desc": [
                   "Exploring YouTube advertising, creating compelling video ads, and optimizing video ad campaigns"
                 ]
@@ -435,7 +435,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 7: Shopping Campaigns",
+                "title": "Shopping Campaigns",
                 "desc": [
                   "Harnessing Google Shopping, setting up product listings, integrating with Merchant Center, and optimizing shopping campaigns"
                 ]
@@ -443,7 +443,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 8: SEM Analytics and Reporting",
+                "title": "SEM Analytics and Reporting",
                 "desc": [
                   " Leveraging Google Analytics for ads, tracking conversions, analyzing performance metrics, and generating insightful reports"
                 ]
@@ -464,7 +464,7 @@
           "content": [
             {
               "chap": {
-                "title": "Lesson 1: Meta Ads Part-1",
+                "title": "Meta Ads Part-1",
                 "desc": [
                   "Create a business page, Meta Pixel, events, dynamic ad creative, A/B testing, targeting, advantage budget, cost caps & bidding strategies"
                 ]
@@ -472,7 +472,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 2: Meta Ads Part-2",
+                "title": "Meta Ads Part-2",
                 "desc": [
                   "Core, custom & lookalike audience, FB ad placements, brand safety measures, headlines, and ad copies"
                 ]
@@ -480,7 +480,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 3: Meta Ads Part-3",
+                "title": "Meta Ads Part-3",
                 "desc": [
                   "Creative creation, remarketing audience, end-to-end campaign execution on Facebook and Instagram"
                 ]
@@ -488,7 +488,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 4: Meta Ad Part-4",
+                "title": " Meta Ad Part-4",
                 "desc": [
                   "Meta ads metrics, FB dashboard analysis, ROI & ROAS evaluation, FB ad reports customization, A/B testing on campaigns and ad sets"
                 ]
@@ -496,7 +496,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 5: LinkedIn Ads",
+                "title": "LinkedIn Ads",
                 "desc": [
                   "Introduction, LIVE campaigns creation, audience targeting, campaign structure practice, optimization, crucial metrics identification, and LinkedIn metrics analysis"
                 ]
@@ -518,7 +518,7 @@
           "content": [
             {
               "chap": {
-                "title": "Lesson 1: Introduction and Differentiation",
+                "title": "Introduction and Differentiation",
                 "desc": [
                   "Introduction to Social Media Organic Marketing, Differentiate between organic and paid social media, Identify strategies for a strong social media presence"
                 ]
@@ -526,7 +526,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 2: Organic Facebook & Instagram Marketing",
+                "title": " Organic Facebook & Instagram Marketing",
                 "desc": [
                   "Create business pages on Facebook and Instagram, Interpret algorithms' workings, Audit business pages, Create viral content, Setup business automation using META tools"
                 ]
@@ -534,7 +534,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 3: Organic LinkedIn & Twitter Marketing",
+                "title": "Organic LinkedIn & Twitter Marketing",
                 "desc": [
                   "Create LinkedIn business pages, Understand effective content types, Develop content strategies, Create lists, threads, & moments on Twitter"
                 ]
@@ -542,7 +542,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 4: YouTube Organic",
+                "title": " YouTube Organic",
                 "desc": [
                   "Establish YouTube Channels, Generate relevant ideas, Maximize views and subscribers, Monetize channels, Optimize for search engine, Measure success metrics"
                 ]
@@ -550,7 +550,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 5: Quora Marketing",
+                "title": "Quora Marketing",
                 "desc": [
                   "Create accounts, Conduct question research, Drive traffic, Avoid common mistakes, Branding strategies"
                 ]
@@ -558,7 +558,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 5: TikTok Marketing",
+                "title": "TikTok Marketing",
                 "desc": [
                   "Overview of TikTok, Account creation, Content creation, Community engagement, Performance tracking and analysis"
                 ]
@@ -579,7 +579,7 @@
           "content": [
             {
               "chap": {
-                "title": "Lesson 1: Introduction",
+                "title": "Introduction",
                 "desc": [
                   "Basics of Email Marketing, Importance of Email Marketing, Evolution of Email Marketing"
                 ]
@@ -587,7 +587,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 2: Email Marketing Strategy",
+                "title": "Email Marketing Strategy",
                 "desc": [
                   "Setting Objectives and Goals for your Email Marketing Campaign, Target Audience and Segmentation, Types of Email Campaigns"
                 ]
@@ -595,7 +595,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 3: Email Lists Building",
+                "title": " Email Lists Building",
                 "desc": [
                   "List Building Strategies, Create Opt-in Forms and Lead Magnets, Managing Email Lists, Segmentation and Personalization of Audience, Audience List Hygiene and Maintenance, GDPR and Compliance"
                 ]
@@ -603,7 +603,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 4: Crafting Compelling Email Content",
+                "title": "Crafting Compelling Email Content",
                 "desc": [
                   " Learn how to write Effective Copy, Understanding Your Audience, A/B Testing Subject Lines for better open-rate, Personalization and Dynamic Content, How to design Engaging Emails, Best Practices for Layout and Design, Learn Mobile Responsiveness email, Multimedia in Emails"
                 ]
@@ -611,7 +611,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 5: Email Automation and Sequences",
+                "title": " Email Automation and Sequences",
                 "desc": [
                   "Basics of Email Automation, Setting Up Automated Workflows, Drip Campaigns and Sequences, Process of lead nurturing via Email, Behavioral-based Triggers, Automated Campaign analysis & optimization"
                 ]
@@ -619,7 +619,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 6: Deliverability and Optimization",
+                "title": "Deliverability and Optimization",
                 "desc": [
                   "Email Deliverability components, Sender Reputation check & Management, Authentication Protocols (SPF, DKIM, DMARC), Avoiding Spam Traps, Testing and Optimization, A/B Testing for Campaigns, Analyzing Metrics (Open Rates, Click Rates), Email campaign optimization Strategies"
                 ]
@@ -627,7 +627,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 7: Integration with Other Marketing Channels",
+                "title": "Integration with Other Marketing Channels",
                 "desc": [
                   "Email and Social Media Integration, Cross-platform Campaigns, Social Sharing and Forwarding, Integrating email tool with CRM Systems, Leveraging existing customer data to curate new audience, Integrating Email Marketing with organization marketing goal"
                 ]
@@ -648,7 +648,7 @@
           "content": [
             {
               "chap": {
-                "title": "Lesson 1: Introduction",
+                "title": "Introduction",
                 "desc": [
                   "Basics of Inbound Marketing, Inbound vs. Outbound Marketing"
                 ]
@@ -656,7 +656,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 2: Inbound Methodology",
+                "title": " Inbound Methodology",
                 "desc": [
                   "Attract - Creating valuable Content, Convert - Upgrade visitors into Leads, Close - Upgrade Leads into Customers, Delight - Building Customer Loyalty"
                 ]
@@ -664,7 +664,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 3: Creating Buyer Personas",
+                "title": "Creating Buyer Personas",
                 "desc": [
                   "Definition and Importance of Buyer Personas, Buyers Persona Research, Creating and using Buyer Personas in Digital Marketing"
                 ]
@@ -672,7 +672,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 4: Content Creation and Marketing",
+                "title": "Content Creation and Marketing",
                 "desc": [
                   "Creating Content Strategy, Blogging, Visual Content Creation, Content development for SEO"
                 ]
@@ -680,7 +680,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 5: Conversion Optimization",
+                "title": "Conversion Optimization",
                 "desc": [
                   "What is Conversion Rate Optimization (CRO), Landing Page Design for maximum performance, A/B Testing for Inbound Marketing, Analyzing and Improving Conversion Rates"
                 ]
@@ -688,7 +688,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 6: Chatbot",
+                "title": "Chatbot",
                 "desc": [
                   " Introduction to Chatbots, Designing Conversational Flows, Building and Testing Chatbots, Deploying and Maintaining Chatbots"
                 ]
@@ -709,7 +709,7 @@
           "content": [
             {
               "chap": {
-                "title": "Lesson 1: Introduction",
+                "title": "Introduction",
                 "desc": [
                   "Introduction to Google Analytics, Creating a Google Analytics Account, Connecting Google Analytics with your website, Navigating the Google Analytics UI"
                 ]
@@ -717,7 +717,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 2: Setting Up Google Analytics",
+                "title": "Setting Up Google Analytics",
                 "desc": [
                   "Installing Google Analytics Tracking Code, Setting Up Goals and Conversions, Configuring E-commerce Tracking, Integrating Google Analytics with Other Google Platforms"
                 ]
@@ -725,7 +725,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 3: Understanding Basic Metrics",
+                "title": " Understanding Basic Metrics",
                 "desc": [
                   "Understand Key Metrics and Dimensions, Understand Audience Reports, Analyze Acquisition Reports, Interpreting Behavior Reports"
                 ]
@@ -733,7 +733,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 4: Advanced Reporting and Customization",
+                "title": " Advanced Reporting and Customization",
                 "desc": [
                   "Customization of Dashboards and Reports, Learn Advanced Segments, Creating Custom Reports, Creating & using Custom Dimensions and Metrics"
                 ]
@@ -741,7 +741,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 5: Campaign Tracking and Attribution",
+                "title": " Campaign Tracking and Attribution",
                 "desc": [
                   "Understanding UTM Parameters, Learn Bitly, Interpreting Campaign Reports, Understanding Multi-Channel Funnels"
                 ]
@@ -749,7 +749,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 6: Event Tracking and Enhanced E-commerce",
+                "title": " Event Tracking and Enhanced E-commerce",
                 "desc": [
                   "Configuring Event Tracking, Analyzing Events in Google Analytics, Configuring Enhanced E-commerce Tracking, Interpreting E-commerce Reports"
                 ]
@@ -757,7 +757,7 @@
             },
             {
               "chap": {
-                "title": "Lesson 7: Data Visualization and Exporting",
+                "title": " Data Visualization and Exporting",
                 "desc": [
                   "Creating Data Visualizations in Google Analytics, Exporting Data and Reports"
                 ]
@@ -778,49 +778,49 @@
           "content": [
             {
               "chap": {
-                "title": "Lesson 1: How to generate blog posts, social media updates, and email newsletters using ChatGPT",
+                "title": ": How to generate blog posts, social media updates, and email newsletters using ChatGPT",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": "Lesson 2: Use ChatGPT to craft engaging social media content",
+                "title": ": Use ChatGPT to craft engaging social media content",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": "Lesson 3: Creates subject lines, email copy, and CTAs for more compelling and personalized campaigns",
+                "title": ": Creates subject lines, email copy, and CTAs for more compelling and personalized campaigns",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": "Lesson 4: Use ChatGPT to analyze user data to deliver personalized content recommendations, enhancing user experiences",
+                "title": ": Use ChatGPT to analyze user data to deliver personalized content recommendations, enhancing user experiences",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": "Lesson 5: Identifying hashtags, topics, and keywords for social media posts",
+                "title": ": Identifying hashtags, topics, and keywords for social media posts",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": "Lesson 6: Create an effective Customer Persona using ChatGPT Facebook, Google, and LinkedIn ads",
+                "title": ": Create an effective Customer Persona using ChatGPT Facebook, Google, and LinkedIn ads",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": "Lesson 7: Learn how to use prompts in Chat GPT for digital marketing tasks",
+                "title": ": Learn how to use prompts in Chat GPT for digital marketing tasks",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": "Lesson 8: Use ChatGPT to generate insights from marketing metrics",
+                "title": ": Use ChatGPT to generate insights from marketing metrics",
                 "desc": []
               }
             }
@@ -839,55 +839,55 @@
           "content": [
             {
               "chap": {
-                "title": "Lesson 1: Introduction to CRM",
+                "title": ": Introduction to CRM",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": "Lesson 2: Setting Up Your Zoho CRM Account",
+                "title": ": Setting Up Your Zoho CRM Account",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": "Lesson 3: Managing Contacts",
+                "title": ": Managing Contacts",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": "Lesson 4: Managing Leads",
+                "title": ": Managing Leads",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": "Lesson 5: Managing Deals and Opportunities",
+                "title": ": Managing Deals and Opportunities",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": "Lesson 6: Managing Accounts",
+                "title": ": Managing Accounts",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": "Lesson 7: Activities and Tasks",
+                "title": ": Activities and Tasks",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": "Lesson 8: Workflow Automation",
+                "title": ": Workflow Automation",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": "Lesson 9: Integration and Collaboration",
+                "title": ": Integration and Collaboration",
                 "desc": []
               }
             }
@@ -906,49 +906,49 @@
           "content": [
             {
               "chap": {
-                "title": "Lesson 1: Understand Indian digital trends: demographics, devices, and multi-screening.",
+                "title": "Understand Indian digital trends: demographics, devices, and multi-screening.",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": "Lesson 2: Apply marketing principles like F and Purchase Cycle to guide strategy",
+                "title": "Apply marketing principles like F and Purchase Cycle to guide strategy",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": "Lesson 3: Creating Marketing funnel and customer journey",
+                "title": "Creating Marketing funnel and customer journey",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": "Lesson 4: Capitalize on digital 'AHA Moments' in the customer journey.",
+                "title": "Capitalize on digital 'AHA Moments' in the customer journey.",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": "Lesson 5: Differentiate between branding and acquisition strategies.",
+                "title": "Differentiate between branding and acquisition strategies.",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": "Lesson 6: Use analytics for attribution and cross-device insights.",
+                "title": "Use analytics for attribution and cross-device insights.",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": "Lesson 7: Optimize campaigns through continuous testing and learning",
+                "title": "Optimize campaigns through continuous testing and learning",
                 "desc": []
               }
             },
             {
               "chap": {
-                "title": "Lesson 8: Embrace an iterative approach for ongoing refinement and success.",
+                "title": "Embrace an iterative approach for ongoing refinement and success.",
                 "desc": []
               }
             }
@@ -993,12 +993,7 @@
         "ans": "Yes, this digital marketing course is 100% live online. We will provide instructor-based live classes wherein you can understand all topics thoroughly and ask your doubts if you have any.      ",
         "open": false
       },
-      {
-        "id": 5,
-        "ques": "How much does the course cost?",
-        "ans": "The course costs INR 69900 plus GST",
-        "open": false
-      },
+      
       {
         "id": 6,
         "ques": "What kind of certification will I receive?      ",
