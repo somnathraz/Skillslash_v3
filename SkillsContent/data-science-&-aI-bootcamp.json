@@ -49,7 +49,7 @@
           },
           {
             "chap": {
-              "title": "Lesson 2: Code editors basics (1 hr)",
+              "title": "Lesson 2: Code editors basics ",
               "desc": [
                 "Different type of code editors in python, Introduction to Anaconda and IDEs."
               ]
@@ -57,13 +57,13 @@
           },
           {
             "chap": {
-              "title": "Lesson 3: Python basics (1 hr)",
+              "title": "Lesson 3: Python basics ",
               "desc": ["Variable Vs Identifiers, Strings Operators Vs Operand, Procedure oriented Vs Modular programming."]
             }
           },
           {
             "chap": {
-              "title": "Lesson 4: Statistics basics & probability (1 hr)",
+              "title": "Lesson 4: Statistics basics & probability ",
               "desc": ["Measures of Central Tendency & dispersion, Inferential statistics and Sampling theory."]
             }
           }
