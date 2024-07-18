@@ -20,11 +20,11 @@ const Chandigarh = ({ data }) => {
         </title>
         <meta
           name="description"
-          content="Best Data science course in Chandigarh at budget-friendly prices at Skillslash. Enrol in our data science course with placement support."
+          content="Looking for the best Data Science courses in Chandigarh? Check out the listed top data science training institutes in Chandigarh to boost your tech skills."
         />
         <meta
           name="keywords"
-          content="data science certification in Chandigarh, data science course in Chandigarh with placement guarantee, data science course in Chandigarh, data science training in Chandigarh, data science courses, data science courses in Chandigarh, data science course, data science training, data science institute, data science certification"
+          content="Looking for the best Data Science courses in Chandigarh? Check out the listed top data science training institutes in Chandigarh to boost your tech skills."
         />
         <link
           rel="canonical"

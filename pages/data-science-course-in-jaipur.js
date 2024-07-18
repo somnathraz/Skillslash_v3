@@ -18,11 +18,11 @@ const Jaipur  = ({ data }) => {
         <title>Top 10 Data Science Course Training Institutes in Jaipur</title>
         <meta
           name="description"
-          content="Offering one of the Best Data Science Course in Mumbai, with hands-on projects, dual certification and guaranteed job referrals for all Data Science aspirants"
+          content="Discover the best data science courses in Jaipur. Explore our top pics of data science Institutes in Jaipur and excel in your data science career!"
         />
         <meta
           name="keywords"
-          content="Data Science training, Data Science certification, Data Science course, Data Science institute, Data Science institute in Mumbai, data science courses in Mumbai, data science courses, data science course in Mumbai, data scientist course, data scientist course in Mumbai"
+          content="data science course in jaipur, data science course fees in jaipur, data science institute in jaipur, data science coaching in jaipur, data science in jaipur, data science course jaipur, data science training in jaipur, best data science course in jaipur, data science jaipur"
         />
         <link
           rel="canonical"

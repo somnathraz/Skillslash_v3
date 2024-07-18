@@ -18,11 +18,11 @@ const Mumbai = ({ data }) => {
         <title>Top 11 Data Science Course Training Institutes in Mumbai</title>
         <meta
           name="description"
-          content="Offering one of the Best Data Science Course in Mumbai, with hands-on projects, dual certification and guaranteed job referrals for all Data Science aspirants"
+          content="Top 11 data science course institutes in Mumbai revealed! Choose from the best data science courses in Mumbai to excel in your career."
         />
         <meta
           name="keywords"
-          content="Data Science training, Data Science certification, Data Science course, Data Science institute, Data Science institute in Mumbai, data science courses in Mumbai, data science courses, data science course in Mumbai, data scientist course, data scientist course in Mumbai"
+          content="data science course in mumbai, data scientist course in mumbai, data science course in mumbai with placement, data science course fees in mumbai, data science course in navi mumbai, data science course in mumbai fees, data science institute in mumbai, best data science course in mumbai, data science classes in mumbai, best institute for data science in mumbai"
         />
         <link
           rel="canonical"
