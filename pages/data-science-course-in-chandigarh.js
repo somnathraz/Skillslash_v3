@@ -24,7 +24,7 @@ const Chandigarh = ({ data }) => {
         />
         <meta
           name="keywords"
-          content="Looking for the best Data Science courses in Chandigarh? Check out the listed top data science training institutes in Chandigarh to boost your tech skills."
+          content="data science course in chandigarh, best institute for data science in chandigarh, data science institute in chandigarh, data science in chandigarh, data science chandigarh"
         />
         <link
           rel="canonical"
