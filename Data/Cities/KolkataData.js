@@ -58,7 +58,7 @@ const KolkataData = {
           </tr>
           <tr>
             <td style="border: 1px solid #ccc; "> <a href="#Scaler">Scaler</a></td>
-            <td style="border: 1px solid #ccc; ">INR 3.69 lacs8628</td>
+            <td style="border: 1px solid #ccc; ">INR 3.69 lacs</td>
           <td style="border: 1px solid #ccc; ">Scaler</td>
           </tr>
           <tr>
@@ -336,7 +336,7 @@ const KolkataData = {
 
         <p>In the interim of data science growth, Learnbay presents foundational to master’s program with exciting career returns. Its creative move toward a data science career makeover ensures global-scale shifts. As a result, experts from diverse fields gain proven skills to get into top-notch MNCs. <p>
 
-        <p>Global recognition from <b>IBM, Microsoft, E&ICT Academy, IIT Guwahati, and Woolf University</b> enriches your career value to attain splendid success. </p>
+        <p>Global recognition from <b>IBM, Microsoft, E&ICT Academy IIT Guwahati, and Woolf University</b> enriches your career value to attain splendid success. </p>
         <i><b>Key Features:</b></i>
            <ul>
             <li>Wide range of career-oriented courses <b>(domain-specific, foundational, advanced, master’s certification, and master’s degree)</b></li>
@@ -350,7 +350,7 @@ const KolkataData = {
            
            <p><b>Fee:</b> If you want to switch your career to data science, join Learnbay’s cutting-edge upskilling courses. Here, you can enroll in any course ranging between INR 75,000 to INR 325,000.</p>
            <p><b>Mode of training:</b> Learnbay offers exclusively planned live instructor-led training on data science. Also, you can opt for offline project-handling sessions under the guidance of your mentor.</p>
-           <p><b>Certifications:</b> You can attest any of the IBM, Microsoft, <i><b><a href="https://www.learnbay.co/datascience/executive-program-in-data-science-and-ai-by-iit-guwahati?utm_source=skillslash&utm_medium=kolkata&utm_campaign=ds_blog_kolkata" target="_blank" >E&ICT Academy</a></b></i>, and IIT Guwahati certifications to your career for better gains. Also, experts opting for a master’s program will obtain a Woolf University-recognized degree.</p>
+           <p><b>Certifications:</b> You can attest any of the IBM, Microsoft, <i><b><a href="https://www.learnbay.co/datascience/executive-program-in-data-science-and-ai-by-iit-guwahati?utm_source=skillslash&utm_medium=kolkata&utm_campaign=ds_blog_kolkata" target="_blank" >E&ICT Academy</a></b></i> and IIT Guwahati certifications to your career for better gains. Also, experts opting for a master’s program will obtain a Woolf University-recognized degree.</p>
            <p>Contact:<a href="mailto:contacts@learnbay.co" target="_blank"">contacts@learnbay.co</a></p>
 
         <h3 id="NIIT"><b>2. NIIT</b></h3>

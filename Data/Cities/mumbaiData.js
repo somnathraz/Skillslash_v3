@@ -391,7 +391,7 @@ Statistics</li>
 
 <p>Today’s tech era welcomes notable digital advances and their seamless integration into diverse sectors. Learnbay’s Executive Program in Data Science & AI sets the path toward a digital-friendly future. This <a href="https://www.learnbay.co/datascience/mumbai/data-science-course-training-in-mumbai?utm_source=Skillslash&utm_medium=mumbai&utm_campaign=ds_blog_mumbai" target="_blank">best institute for data science courses in Mumbai</a> foresees a global-scale career shift.</p>
 
-<p>The partnership with <a href="https://www.learnbay.co/datascience/executive-program-in-data-science-and-ai?utm_source=Skillslash&utm_medium=mumbai&utm_campaign=ds_blog_mumbai" target="_blank" >E&ICT Academy,</a> IIT Guwahati, & IBM offers a special career opportunity and proves your abilities for success worldwide. Once you complete the course, you can get into IBM, Amazon, HP, Dell, Microsoft, etc. </p>
+<p>The partnership with <a href="https://www.learnbay.co/datascience/executive-program-in-data-science-and-ai?utm_source=Skillslash&utm_medium=mumbai&utm_campaign=ds_blog_mumbai" target="_blank" >E&ICT Academy</a> IIT Guwahati, & IBM offers a special career opportunity and proves your abilities for success worldwide. Once you complete the course, you can get into IBM, Amazon, HP, Dell, Microsoft, etc. </p>
 <p>For further details <a href="mailto:contacts@learnbay.co" target="_blank">contacts@learnbay.co</a></p>
 
 <i><b>Course features:</b></i>
