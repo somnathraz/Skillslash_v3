@@ -38,9 +38,8 @@ const PricingSection = ({
         </h3>
         <h3 className="text-[32px] flex gap-7 font-bold w-max text-[#fff]">
           {actualPrice}{" "}
-          <span className="text-[16px] font-medium text-[#fff]">
-            including
-            <br />+ GST
+          <span className="text-[20px] font-medium flex text-[#fff] items-center">
+           + GST
           </span>
         </h3>
 
