@@ -328,7 +328,7 @@ _<b>Course features:</b>_
 - _<b>Career Service PRO</b>_ (_3 years of hassle-free job and placement aid_) available to enrich your growth metrics with alluring job offers
 - _<b>Globally recognized credentials</b>_ (_IBM_) to validate your skills and unleash your potential to land global-scale jobs.
 
-_<b>Program fee:</b>_ Invest INR 190,000 + 18% GST and kick-start a globally thriving career path with skills to reach the peak of success in your role.
+_<b>Program fee:</b>_ Invest INR 190,000 ++ GST and kick-start a globally thriving career path with skills to reach the peak of success in your role.
 
 _<b>Mode of training:</b>_ Gain online live instructor-led training sessions from eminent experts and update your skill sets as per the latest data science trends.
 
@@ -479,7 +479,7 @@ _<b>Course features:</b>_
 - Build a _<b>job-enriched resume, LinkedIn profile, and portfolio</b>_ to craft a unique career path in data science
 - Obtain a globally accredited _<b>PG certificate</b>_ from the Great Lakes and attain inspiring success
 
-_<b>Program fee:</b>_ This PG program costs around INR 350,000 plus 18% GST with flexible payment plans (INR 8,824 as monthly EMIs).
+_<b>Program fee:</b>_ This PG program costs around INR 350,000 plus+ GST with flexible payment plans (INR 8,824 as monthly EMIs).
 
 _<b>Mode of training:</b>_ Transform your career with an industry-paced <b>data science classroom course in Mumbai</b> to initiate interactive discussions and learning.
 

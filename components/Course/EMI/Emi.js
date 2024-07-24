@@ -44,10 +44,12 @@ const Emi = ({
         const data = {
 
           batches: [
-            { type: "Weekday", date: "12th July", time: "8pm - 10pm", isFilled: true },
-            { type: "Weekend", date: "21 July", time: "11am - 2pm", isFilled: true},
             { type: "Weekday", date: "26 July", time: "8pm - 10pm", isFilled: false },
             { type: "Weekend", date: "4th Aug", time: "11am - 2pm", isFilled: true },
+            { type: "Weekday", date: "16th Aug", time: "8pm - 10pm", isFilled: true },
+            { type: "Weekend", date: "31 Aug", time: "11am - 2pm", isFilled: true},
+          
+        
            ,
            
           ],
@@ -98,7 +100,7 @@ const Emi = ({
               <p className={styles.datetag}>{batch.date}</p>
               <span>{batch.time}</span>
               <p className={batch.isFilled ? styles.filled : styles.aval}>
-                {batch.isFilled ? "Filled" : "Available"}
+                {batch.isFilled ? "Filled" : "Few seats"}
               </p>
             </div>
           ))}
