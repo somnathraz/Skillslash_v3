@@ -6,44 +6,44 @@ import Navbar from "../components/Navbar/Navbar";
 import BlogHeader from "../components/CityBlog/BlogHeader/BlogHeader";
 import BlogContent from "../components/CityBlog/BlogContent/BlogConent"; 
 import RelatedInfo from "../components/SeoComponents/ReleteadInfo/RelatedInfo"; 
-import mumbaiData from "../Data/Cities/mumbai/MumbaiData";
+import BAMumbaiData from "../Data/Cities/mumbai/BAMumbaidata";
 import Footer from "../components/Footer/Footer";
 import InternalLinking from "../components/InternalLinking/InternalLinking";
 import Popup from "../components/CityBlog/BlogPopup/Popup";
 
-const Mumbai = ({ data }) => {
+const BAMumbai = ({ data }) => {
   return (
     <div>
       <Head>
-        <title>Top 11 Data Science Course Training Institutes in Mumbai</title>
+        <title> Top 7 Business Analytics Course Institutes in Mumbai [2024]        </title>
         <meta
           name="description"
-          content="Top 11 data science course institutes in Mumbai revealed! Choose from the best data science courses in Mumbai to excel in your career."
+          content=" Looking for the best business analytics institute in Mumbai? We have listed 7 top performing Business Analyst course Institutes in Mumbai. Read now!! "
         />
         <meta
           name="keywords"
-          content="data science course in mumbai, data scientist course in mumbai, data science course in mumbai with placement, data science course fees in mumbai, data science course in navi mumbai, data science course in mumbai fees, data science institute in mumbai, best data science course in mumbai, data science classes in mumbai, best institute for data science in mumbai"
+          content="Business Analyst course, Business Analyst certification, Business Analyst courses online, Business Analyst training, Business Analyst program, Business Analyst certification courses, Business Analyst certification online, Business Analyst classes, Business Analyst course in Mumbai, Business Analyst certification in Mumbai, Business Analyst training in Mumbai."
         />
         <link
           rel="canonical"
-          href="https://skillslash.com/data-science-course-in-mumbai"
+          href="https://skillslash.com/business-analytics-course-in-mumbai"
         />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org/",
             "@type": "Product",
-            name: "Data science course in Mumbai",
-            brand: {
+            "name": "Business analytics course in Mumbai",
+            "brand": {
               "@type": "Brand",
-              name: "Skillslash",
+              "name": "Skillslash"
             },
-            aggregateRating: {
+            "aggregateRating": {
               "@type": "AggregateRating",
-              ratingValue: "9.9",
-              bestRating: "10",
-              worstRating: "1",
-              ratingCount: "25987",
-            },
+              "ratingValue": "9.6",
+              "bestRating": "10",
+              "worstRating": "1",
+              "ratingCount": "22657"
+            }
           })}
         </script>
       </Head>
@@ -51,9 +51,9 @@ const Mumbai = ({ data }) => {
       <Navbar />
 
       <BlogHeader
-        city="Mumbai"
-        title=" Data Science Course Training Institutes in "
-        subTitle="Top 11"
+        city=" Mumbai"
+        title="Business Analytics Course Training Institutes"
+        subTitle="Top 7"
         titleAuthor="Amit"
         authorPro="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/ai_face.webp"
         linkedinId="https://www.linkedin.com/in/amit-ambi-axh08/"
@@ -67,7 +67,7 @@ const Mumbai = ({ data }) => {
         lastUpdated={data.lastUpdated}
         shareLink={data.shareLink}
         publishDate={data.publishDate}
-        MumbaiData={mumbaiData} // Passing MumbaiData to BlogContent
+        MumbaiData={BAMumbaiData} // Passing MumbaiData to BlogContent
       />
 
     
@@ -83,9 +83,9 @@ export async function getStaticProps() {
   // Since the data is already in a JS file, we can directly import it
   return {
     props: {
-      data: mumbaiData,
+      data: BAMumbaiData,
     },
   };
 }
 
-export default Mumbai;
+export default BAMumbai;
