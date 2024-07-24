@@ -40,7 +40,7 @@ const PricingSection = ({
           {actualPrice}{" "}
           <span className="text-[16px] font-medium text-[#fff]">
             including
-            <br /> 18% GST
+            <br />+ GST
           </span>
         </h3>
 

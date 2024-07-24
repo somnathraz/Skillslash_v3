@@ -26,7 +26,7 @@ const MumbaiData = {
           <td style="border: 1px solid #ccc; ">
 <a href="#executive-program" style="color:black" onmouseover="this.style.color='#4f419a'" onmouseout="this.style.color='black'">Learnbay</a>
           </td>
-          <td style="border: 1px solid #ccc; ">INR 190,000 + 18% GST</td>
+          <td style="border: 1px solid #ccc; ">INR 190,000 ++ GST</td>
           <td style="border: 1px solid #ccc; ">
             <a href="https://www.learnbay.co/datascience/executive-program-in-data-science-and-ai-by-iit-guwahati?utm_source=skillslash&utm_medium=mumbai&utm_campaign=ds_blog_mumbai" target="_blank">Executive program in Data Science & AI</a>
           </td>
@@ -70,7 +70,7 @@ const MumbaiData = {
           <td style="border: 1px solid #ccc; ">
             <a href="#great-learning-program" style="color:black" onmouseover="this.style.color='#4f419a'" onmouseout="this.style.color='black'">Great Learning</a>
           </td>
-          <td style="border: 1px solid #ccc; ">INR 350,000 plus 18% GST</td>
+          <td style="border: 1px solid #ccc; ">INR 350,000 plus+ GST</td>
           <td style="border: 1px solid #ccc; ">info@greatlearning.in</td>
         </tr>
         <tr>
@@ -404,7 +404,7 @@ Statistics</li>
 <li><i><b>Globally recognized credentials</b></i> (IBM) to validate your skills and unleash your potential to land global-scale jobs.</li>
 </ul>
 
-<p><i><b>Program fee:</b></i> Invest INR 190,000 + 18% GST and kick-start a globally thriving career path with skills to reach the peak of success in your role. </p>
+<p><i><b>Program fee:</b></i> Invest INR 190,000 ++ GST and kick-start a globally thriving career path with skills to reach the peak of success in your role. </p>
 <p><i><b>Mode of training:</b></i> Gain online live instructor-led training sessions from eminent experts and update your skill sets as per the latest data science trends.</p>
 <p><i><b>Certifications:</b></i> Attest a course certification (E&ICT Academy IIT Guwahati) and project certificate (IBM) to your career to unlock exciting gains. </p>
 
@@ -560,7 +560,7 @@ Make a hassle-free career shift with job and placement support and land your dre
 </ul>
 
 
-<p><i><b>Program fee:</b></i> This PG program costs around INR 350,000 plus 18% GST with flexible payment plans (INR 8,824 as monthly EMIs). </p>
+<p><i><b>Program fee:</b></i> This PG program costs around INR 350,000 plus+ GST with flexible payment plans (INR 8,824 as monthly EMIs). </p>
 
 <p><i><b>Mode of training:</b></i> Transform your career with an industry-paced data science classroom course in Mumbai to initiate interactive discussions and learning. 
 

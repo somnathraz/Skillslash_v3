@@ -22,7 +22,7 @@ const BAMumbaiData = {
       <tbody>
         <tr>
           <td style="border: 1px solid #ccc; padding: 8px"><a href="#Learnbay"><b>Learnbay </b></a></td>
-          <td style="border: 1px solid #ccc; padding: 8px">INR 95,000 + 18% GST</td>
+          <td style="border: 1px solid #ccc; padding: 8px">INR 95,000 ++ GST</td>
           <td style="border: 1px solid #ccc; padding: 8px">IBM & Microsoft</td>
         </tr>
         <tr>
@@ -297,7 +297,7 @@ const BAMumbaiData = {
     <li style="margin-bottom: 10px;">Attain global-level success and land your dream roles via <b>100% career support services</b> </li>
     <li style="margin-bottom: 10px;">Attest <b>globally-valued credentials </b>from IBM & Microsoft to your career for better returns</li>
 </ul>
-<p><b>Fee:</b> Learnbay’s <b>business analyst course Mumbai</b> costs INR 95,000 + 18% GST with flexible payment options. Here, you can opt for an installment option with INR 6,228 as monthly EMIs.</p>
+<p><b>Fee:</b> Learnbay’s <b>business analyst course Mumbai</b> costs INR 95,000 ++ GST with flexible payment options. Here, you can opt for an installment option with INR 6,228 as monthly EMIs.</p>
 <p><b>Mode of training:</b> Experts joining Learnbay get live instructor-led <b>business analyst training in Mumbai. </b></p>
 <p><b>Certifications:</b> Attest <b>IBM & Microsoft</b> certificates to your static career and enrich your worth with exciting gains. </p>
 <p><b>Contact:</b><a href="mailto:contacts@learnbay.co"> <i>contacts@learnbay.co </i></a></p>
