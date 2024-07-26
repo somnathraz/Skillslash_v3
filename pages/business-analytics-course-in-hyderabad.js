@@ -4,8 +4,8 @@ import React from "react";
 import Head from "next/head";
 import Navbar from "../components/Navbar/Navbar";
 import BlogHeader from "../components/CityBlog/BlogHeader/BlogHeader";
-import BlogContent from "../components/CityBlog/BlogContent/BlogConent"; 
-import RelatedInfo from "../components/SeoComponents/ReleteadInfo/RelatedInfo"; 
+import BlogContent from "../components/CityBlog/BlogContent/BlogConent";
+import RelatedInfo from "../components/SeoComponents/ReleteadInfo/RelatedInfo";
 import BAHyderabadData from "../Data/Cities/hyderabad/BAHyderabadData";
 import Footer from "../components/Footer/Footer";
 import InternalLinking from "../components/InternalLinking/InternalLinking";
@@ -15,7 +15,11 @@ const BAHyderabad = ({ data }) => {
   return (
     <div>
       <Head>
-        <title> Business analytics course with industry experience in Hyderabad - Skillslash</title>
+        <title>
+          {" "}
+          Business analytics course with industry experience in Hyderabad -
+          Skillslash
+        </title>
         <meta
           name="description"
           content=" Step up to get direct company certification under our Business analytics course in Hyderabad. Study in live-interactive classes."
@@ -32,18 +36,18 @@ const BAHyderabad = ({ data }) => {
           {JSON.stringify({
             "@context": "https://schema.org/",
             "@type": "Product",
-            "name": "Business analytics course in hyderabad",
-            "brand": {
+            name: "Business analytics course in hyderabad",
+            brand: {
               "@type": "Brand",
-              "name": "Skillslash"
+              name: "Skillslash",
             },
-            "aggregateRating": {
+            aggregateRating: {
               "@type": "AggregateRating",
-              "ratingValue": "9.6",
-              "bestRating": "10",
-              "worstRating": "1",
-              "ratingCount": "22657"
-            }
+              ratingValue: "9.6",
+              bestRating: "10",
+              worstRating: "1",
+              ratingCount: "22657",
+            },
           })}
         </script>
       </Head>
@@ -53,8 +57,8 @@ const BAHyderabad = ({ data }) => {
       <BlogHeader
         city=" Hyderabad"
         title="Business Analytics Course Training Institutes"
-        subTitle="Top 7"
-        titleAuthor="Amit"
+        subTitle="Top 7 "
+        titleAuthor="Siddharth"
         authorPro="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/ai_face.webp"
         linkedinId="https://www.linkedin.com/in/amit-ambi-axh08/"
         rytImg="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/mumbai_top_10_comp.webp"
@@ -67,10 +71,8 @@ const BAHyderabad = ({ data }) => {
         lastUpdated={data.lastUpdated}
         shareLink={data.shareLink}
         publishDate={data.publishDate}
-        MumbaiData={BAHyderabadData} 
+        MumbaiData={BAHyderabadData}
       />
-
-    
 
       <InternalLinking />
       <Footer />
@@ -80,10 +82,9 @@ const BAHyderabad = ({ data }) => {
 };
 
 export async function getStaticProps() {
-
   return {
     props: {
-      data:BAHyderabadData ,
+      data: BAHyderabadData,
     },
   };
 }
