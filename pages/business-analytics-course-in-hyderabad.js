@@ -51,7 +51,7 @@ const BAHyderabad = ({ data }) => {
       <Navbar />
 
       <BlogHeader
-        city=" Hyderabbad"
+        city=" Hyderabad"
         title="Business Analytics Course Training Institutes"
         subTitle="Top 7"
         titleAuthor="Amit"
