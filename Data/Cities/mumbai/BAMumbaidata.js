@@ -22,7 +22,7 @@ const BAMumbaiData = {
       <tbody>
         <tr>
           <td style="border: 1px solid #ccc; padding: 8px"><a href="#Learnbay"><b>Learnbay </b></a></td>
-          <td style="border: 1px solid #ccc; padding: 8px">INR 95,000 ++ GST</td>
+          <td style="border: 1px solid #ccc; padding: 8px">INR 95,000 + GST</td>
           <td style="border: 1px solid #ccc; padding: 8px">IBM & Microsoft</td>
         </tr>
         <tr>
