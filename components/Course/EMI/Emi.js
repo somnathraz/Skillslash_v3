@@ -21,8 +21,8 @@ const Emi = ({
   const [popups, setPopups] = useState(false);
   const [mobile, setMobile] = useState(false);
   const [batches, setBatches] = useState([]);
-  const [web, setWeb] = useState('');
-  const [emi, setEmi] = useState('');
+  const [web, setWeb] = useState("");
+  const [emi, setEmi] = useState("");
 
   const popupShow = () => {
     setPopups(true);
@@ -37,27 +37,39 @@ const Emi = ({
 
   useEffect(() => {
     if (id) {
-      // Replace this with actual data fetching logic based on `id`
-      // For example, using fetch or axios to get data from an API
       const fetchData = async () => {
-        // Simulate an API call
         const data = {
-
           batches: [
-            { type: "Weekday", date: "26 July", time: "8pm - 10pm", isFilled: false },
-            { type: "Weekend", date: "4th Aug", time: "11am - 2pm", isFilled: true },
-            { type: "Weekday", date: "16th Aug", time: "8pm - 10pm", isFilled: true },
-            { type: "Weekend", date: "31 Aug", time: "11am - 2pm", isFilled: true},
-          
-        
-           ,
-           
+            {
+              type: "Weekday",
+              date: "16th Aug",
+              time: "8pm - 10pm",
+              isFilled: true,
+            },
+            {
+              type: "Weekend",
+              date: "27th Aug",
+              time: "8pm - 10pm",
+              isFilled: false,
+            },
+            {
+              type: "Weekday",
+              date: "30th Aug",
+              time: "8pm - 10pm",
+              isFilled: false,
+            },
+            {
+              type: "Weekend",
+              date: "31 Aug",
+              time: "11am - 2pm",
+              isFilled: true,
+            },
+
+            ,
           ],
           web: "web-value",
           emi: "emi-value",
         };
-
-
 
         setBatches(data.batches);
         setWeb(data.web);
@@ -100,7 +112,7 @@ const Emi = ({
               <p className={styles.datetag}>{batch.date}</p>
               <span>{batch.time}</span>
               <p className={batch.isFilled ? styles.filled : styles.aval}>
-                {batch.isFilled ? "Filled" : "Few seats"}
+                {batch.isFilled ? "Filled" : "Open"}
               </p>
             </div>
           ))}
