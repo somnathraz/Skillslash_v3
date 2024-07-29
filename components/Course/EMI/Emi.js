@@ -46,12 +46,7 @@ const Emi = ({
               time: "8pm - 10pm",
               isFilled: true,
             },
-            {
-              type: "Weekend",
-              date: "27th Aug",
-              time: "8pm - 10pm",
-              isFilled: false,
-            },
+          
             {
               type: "Weekday",
               date: "30th Aug",
@@ -63,6 +58,12 @@ const Emi = ({
               date: "31 Aug",
               time: "11am - 2pm",
               isFilled: true,
+            },
+            {
+              type: "Weekday",
+              date: "27th Sep",
+              time: "8pm - 10pm",
+              isFilled: false,
             },
 
             ,
