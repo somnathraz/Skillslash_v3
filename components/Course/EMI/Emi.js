@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import styles from "./Emi.module.css";
 import dynamic from "next/dynamic";
-// const Popup = dynamic(() => import("../../Popup/Popup"));
-// const Form = dynamic(() => import("../../Skills/Global/Form/Form"));
+const Popup = dynamic(() => import("../../Popup/Popup"));
+const Form = dynamic(() => import("../../Skills/Global/Form/Form"));
 
 const Emi = ({
   redirectWeb,
