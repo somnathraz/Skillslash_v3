@@ -1,5 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
-import { FaAngleDown, FaAngleUp, FaTimes, FaArrowCircleRight } from "react-icons/fa";
+import {
+  FaAngleDown,
+  FaAngleUp,
+  FaTimes,
+  FaArrowCircleRight,
+} from "react-icons/fa";
 import styles from "./blogContent.module.css";
 import ShareButtons from "../ShareButton";
 import Link from "next/link";
@@ -11,7 +16,13 @@ import "swiper/swiper-bundle.min.css";
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
-const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate, MumbaiData }) => {
+const BlogContent = ({
+  contentHtml,
+  lastUpdated,
+  shareLink,
+  publishDate,
+  MumbaiData,
+}) => {
   const [headingElements, setHeadingElements] = useState([]);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [ads, setAds] = useState([
@@ -19,7 +30,8 @@ const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate, MumbaiD
       id: 1,
       show: false,
       url: "https://www.learnbay.co/submit-info",
-      imgSrc: "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/side_ad.webp",
+      imgSrc:
+        "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/side_ad.webp",
     },
   ]);
   const contentRef = useRef(null);
@@ -34,7 +46,8 @@ const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate, MumbaiD
 
       // Function to replace placeholders with Next.js Image components
       const replacePlaceholders = (placeholderClass, center = false) => {
-        const placeholders = contentRef.current.querySelectorAll(placeholderClass);
+        const placeholders =
+          contentRef.current.querySelectorAll(placeholderClass);
         placeholders.forEach((placeholder) => {
           const imgElement = document.createElement("div");
           imgElement.classList.add(styles.contentImg);
@@ -65,9 +78,7 @@ const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate, MumbaiD
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setAds((prevAds) =>
-        prevAds.map((ad) => ({ ...ad, show: true }))
-      );
+      setAds((prevAds) => prevAds.map((ad) => ({ ...ad, show: true })));
     }, 3000); // 3 seconds delay for all ads
 
     return () => clearTimeout(timer);
@@ -86,7 +97,9 @@ const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate, MumbaiD
 
   const handleAdClose = (id) => {
     setAds((prevAds) =>
-      prevAds.map((ad) => (ad.id === id ? { ...ad, show: false, closed: true } : ad))
+      prevAds.map((ad) =>
+        ad.id === id ? { ...ad, show: false, closed: true } : ad
+      )
     );
   };
 
@@ -108,33 +121,37 @@ const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate, MumbaiD
           <div className={styles.firstdiv}>
             <div className={styles.tableOfContents}>
               <div className={styles.insidetable}>
-              <h3 onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
-                Table of Contents
-                <div className={`${styles.icon} ${isDropdownOpen ? styles.active : ""}`}>
-                  {isDropdownOpen ? <FaAngleUp /> : <FaAngleDown />}
-                </div>
-              </h3>
-              <ul className={`${isDropdownOpen ? styles.open : ""}`}>
-                {headingElements.map((heading, index) => (
-                  <li key={index}>
-                    <Link
-                      href={`#heading-${index}`}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        scrollToElement(`heading-${index}`);
-                      }}
-                    >
-                      {heading.textContent}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+                <h3 onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
+                  Table of Contents
+                  <div
+                    className={`${styles.icon} ${
+                      isDropdownOpen ? styles.active : ""
+                    }`}
+                  >
+                    {isDropdownOpen ? <FaAngleUp /> : <FaAngleDown />}
+                  </div>
+                </h3>
+                <ul className={`${isDropdownOpen ? styles.open : ""}`}>
+                  {headingElements.map((heading, index) => (
+                    <li key={index}>
+                      <Link
+                        href={`#heading-${index}`}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          scrollToElement(`heading-${index}`);
+                        }}
+                      >
+                        {heading.textContent}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
             <div className={styles.related}>
               <h3>Related blogs</h3>
               <Swiper
-                direction={'vertical'} // Set direction to vertical
+                direction={"vertical"} // Set direction to vertical
                 spaceBetween={10}
                 slidesPerView={3}
                 // pagination={{ clickable: true }}
@@ -146,7 +163,13 @@ const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate, MumbaiD
                 {MumbaiData.Blogs.map((blog, index) => (
                   <SwiperSlide key={index}>
                     <div className={styles.bloglist}>
-                      <Image src={blog.image} width={80} height={80} alt="blog" loading="lazy" />
+                      <Image
+                        src={blog.image}
+                        width={80}
+                        height={80}
+                        alt="blog"
+                        loading="lazy"
+                      />
                       <div className={styles.bloglistryt}>
                         <p>{blog.title}</p>
                         <Link href={blog.link}>
@@ -180,8 +203,13 @@ const BlogContent = ({ contentHtml, lastUpdated, shareLink, publishDate, MumbaiD
                 </div>
               ) : (
                 ad.closed && (
-                  <div key={ad.id} className={`${styles.stickyAds} ${styles.adLink}`}>
-                    <Link href={ad.url}>Click here to visit our sponsor <FaArrowCircleRight /></Link>
+                  <div
+                    key={ad.id}
+                    className={`${styles.stickyAds} ${styles.adLink}`}
+                  >
+                    <Link href={ad.url}>
+                      Click here to visit our sponsor <FaArrowCircleRight />
+                    </Link>
                   </div>
                 )
               )

@@ -28,7 +28,7 @@ import Talk from "../../components/DigitalMarketing/Talk/Talk";
 import Emi from "../../components/Course/EMI/Emi";
 import CourseHeader from "../../components/DigitalMarketing/Course/FirstSection/CourseHeader";
 import CaseStudy from "../../components/DigitalMarketing/Course/CaseStudy/CaseStudy";
-import Review from "../../components/DigitalMarketing/Reviews/Reviews"
+import Review from "../../components/DigitalMarketing/Reviews/Reviews";
 
 const DataSciencePage = ({ DataScienceCourseData }) => {
   const [showNigeriaForm, setShowNigeriaForm] = useState(false);
@@ -57,9 +57,9 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}
         redirectFs={DataScienceCourseData.data.header.FullStack}
         redirectDM={DataScienceCourseData.data.header.digitalmarketing}
-        noHam ={DataScienceCourseData.data.header.digitalmarketing}
+        noHam={DataScienceCourseData.data.header.digitalmarketing}
       />
-     
+
       <CourseHeader
         title={DataScienceCourseData.data.header.title}
         dmPage={DataScienceCourseData.data.header.dmPage}
@@ -67,7 +67,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         redirectDM={DataScienceCourseData.data.header.digitalmarketing}
         subtitle={DataScienceCourseData.data.header.subtitle}
         GenImg={DataScienceCourseData.data.header.GenImg}
-        AdsDM={DataScienceCourseData.data.header.AdsDM} 
+        AdsDM={DataScienceCourseData.data.header.AdsDM}
       />
       <SkillsContent
         certification={DataScienceCourseData.data.header.certification}
@@ -97,7 +97,9 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           nomicrosoft={DataScienceCourseData.data.header.nomicrosoft}
           redirectDM={DataScienceCourseData.data.header.digitalmarketing}
           dmPage={DataScienceCourseData.data.header.dmPage}
-          redirectCertificate={DataScienceCourseData.data.header.redirectCertificate}
+          redirectCertificate={
+            DataScienceCourseData.data.header.redirectCertificate
+          }
         />
       </div>
       <div id="certificate">
@@ -107,16 +109,18 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           redirectFs={DataScienceCourseData.data.header.FullStack}
           dmPage={DataScienceCourseData.data.header.dmPage}
           redirectDM={DataScienceCourseData.data.header.digitalmarketing}
-          redirectCertificate={DataScienceCourseData.data.header.redirectCertificate}
+          redirectCertificate={
+            DataScienceCourseData.data.header.redirectCertificate
+          }
         />
       </div>
 
       <Tools />
-      <CaseStudy 
-         redirectDM={DataScienceCourseData.data.header.digitalmarketing}
-         redirectCaseS={DataScienceCourseData.data.header.redirectgrowth}/>
+      <CaseStudy
+        redirectDM={DataScienceCourseData.data.header.digitalmarketing}
+        redirectCaseS={DataScienceCourseData.data.header.redirectgrowth}
+      />
       <CareerSupport />
-
 
       <div id="modules">
         <DataScienceSyllabus
@@ -133,24 +137,19 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           redirectsocialSeo={DataScienceCourseData.data.header.redirectgrowth}
           redirectPerforSocia={DataScienceCourseData.data.header.redirectgrowth}
           redirectPSeo={DataScienceCourseData.data.header.redirectgrowth}
- 
         />
       </div>
-   
 
-    
-
-     
       <div id="fee">
-          <Emi
-    
-            price={DataScienceCourseData.data.Fee.ProPrice}
-            emi={DataScienceCourseData.data.Fee.emi}
-            redirectDM={DataScienceCourseData.data.header.digitalmarketing}/>
-        </div>
+        <Emi
+          price={DataScienceCourseData.data.Fee.ProPrice}
+          emi={DataScienceCourseData.data.Fee.emi}
+          redirectDM={DataScienceCourseData.data.header.digitalmarketing}
+        />
+      </div>
 
-        <Review/>
-   
+      <Review />
+
       {DataScienceCourseData.data.header.FullStack ? (
         ""
       ) : (
@@ -162,7 +161,6 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           spanText="our learners say it best."
         />
       )}
-           
 
       <div id="faq">
         <FAQ
