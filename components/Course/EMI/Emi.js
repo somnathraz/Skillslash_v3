@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import styles from "./Emi.module.css";
 import dynamic from "next/dynamic";
-const Popup = dynamic(() => import("../../Popup/Popup"));
-const Form = dynamic(() => import("../../Skills/Global/Form/Form"));
+// const Popup = dynamic(() => import("../../Popup/Popup"));
+// const Form = dynamic(() => import("../../Skills/Global/Form/Form"));
 
 const Emi = ({
   redirectWeb,
@@ -46,7 +46,7 @@ const Emi = ({
               time: "8pm - 10pm",
               isFilled: true,
             },
-          
+
             {
               type: "Weekday",
               date: "30th Aug",
@@ -54,7 +54,7 @@ const Emi = ({
               isFilled: false,
             },
             {
-              type: "Weekend",
+              type: "Weekend ",
               date: "31 Aug",
               time: "11am - 2pm",
               isFilled: true,

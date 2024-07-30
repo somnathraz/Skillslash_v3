@@ -16,7 +16,6 @@ const BAHyderabad = ({ data }) => {
     <div>
       <Head>
         <title>
-          {" "}
           Business analytics course with industry experience in Hyderabad -
           Skillslash
         </title>
