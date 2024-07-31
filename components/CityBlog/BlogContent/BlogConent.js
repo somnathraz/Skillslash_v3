@@ -44,7 +44,7 @@ const BlogContent = ({
       });
       setHeadingElements(headings);
 
-      // Function to replace placeholders with Next.js Image components
+
       const replacePlaceholders = (placeholderClass, center = false) => {
         const placeholders =
           contentRef.current.querySelectorAll(placeholderClass);
