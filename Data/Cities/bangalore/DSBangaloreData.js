@@ -584,7 +584,7 @@ const BangaloreData = {
 
 <h3 id="Learnbay">1. Executive Program for Data Science & AI [Learnbay]</h3>
 <p><b>About:</b> Bangalore-based firms and job markets rely heavily on data science in today’s data-driven age. Busy working experts willing to revamp their careers opt for upskilling in their chosen field. In short, experts eager to grab lucrative job offers with tempting hikes and promotions must upskill.</p>
-<p>Learnbay concocts a tech-friendly career path via its cutting-edge<a href="https://www.learnbay.co/datascience/executive-program-in-data-science-and-ai" target="_blank"> <i>‘Executive Program for Data Science & AI’</i></a>  with job-driven gains. Its global-level <b>data science classes in Bangalore</b> help you harness the power of data. No wonder, learning is a proven metric to grab alluring job offers with better hikes. Hence, join Learnbay to build a global-level career path with promising offers.  </p>
+<p>Learnbay concocts a tech-friendly career path via its cutting-edge<a href="https://www.learnbay.co/datascience/executive-program-in-data-science-and-ai?utm_source=skillslash&utm_medium=bangalore&utm_campaign=ds&utm_content=blog_bangalore" target="_blank"> <i>‘Executive Program for Data Science & AI’</i></a>  with job-driven gains. Its global-level <b>data science classes in Bangalore</b> help you harness the power of data. No wonder, learning is a proven metric to grab alluring job offers with better hikes. Hence, join Learnbay to build a global-level career path with promising offers.  </p>
 <i><b>Key Features: </b></i>
 <ul>
  <li style="margin-bottom: 10px;">Join <b>flexible training sessions</b> for a hassle-free career shift with exciting gains</li>
