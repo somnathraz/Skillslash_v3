@@ -1,7 +1,7 @@
 const BAMumbaiData = {
     contentHtml: `
      <i><b>Imagine a digitally-driven business future where automated functioning bridges the gap between actual conditions and technical outputs.</b></i>
-      <span class="blog-center-image" data-src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_second_img.webp" data-alt="Banner Image" data-width="800" data-height="400"></span></a>
+      <span class="blog-center-image" data-src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_second_img.webp" data-alt="Banner Image" data-width="800" data-height="400"></span>
 
 <p>Today’s fast-paced growth of tech space sees a bright future with the rise of analytics. Firms (from startups to MNCs) from diverse sectors plan a dynamic business model with strategic gains and better returns. In the interim, Mumbai has become a one-stop landmark for stunning growth and success. As the need for automatic business functions grows, so do searches for experts. Thus, the demand for upskilling via a <b>business analyst course in Mumbai keeps increasing. </b></p>
 
