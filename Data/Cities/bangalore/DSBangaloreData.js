@@ -1,9 +1,11 @@
+
 const BangaloreData = {
   contentHtml: `
      
 <p>Dream of a thriving data science career with diverse skills to decode data patterns, extract facts, and drive a definite impact on firms. Data has become a valid aid for startups, MNCs, and career fanatics in Bangalore’s rising tech space. Yet, handling data oddities needs cutting-edge mastery of data-driven tools and trends. Hence, learning via an industry-paced <b>data science course in Bangalore</b> has become vital. </p>
 
       <span class="blog-center-image" data-src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_second_img.webp" data-alt="Banner Image" data-width="800" data-height="400"></span>
+      <div class="table-container" style="overflow-x: auto;">
 <table
    style="border-collapse: collapse; width: 100%; border: 2px solid #ccc"
  >
@@ -125,7 +127,7 @@ const BangaloreData = {
    </tbody>
  </table>
 
-
+</div>
 <p>Today’s tech space demands cutting-edge skills to stand out of the crowd and attain success. <a href="https://www.fortuneindia.com/enterprise/bengaluru-chennai-lead-indias-tech-talent-demand/116788" target="_blank" rel="nofollow"><i>Reports</i></a> state that Bangalore is a rising southern city with 49.4% tech talent demand. Hence, learning from proven <b>data science classes in Bangalore</b> has become crucial for experts from diverse fields. </p>
 <span class="next-image-placeholder" data-src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/banner_c.webp" data-alt="Banner Image" data-width="800" data-height="400"></span></a>
 
@@ -205,7 +207,7 @@ const BangaloreData = {
 </ul>
 
 <h2>Unleashing salary trends for data scientists in Bangalore compared to other PAN India locations</h2>
-
+<div class="table-container" style="overflow-x: auto;">
 <table
    style="border-collapse: collapse; width: 100%; border: 2px solid #ccc" 
  >
@@ -324,6 +326,7 @@ const BangaloreData = {
      </tr>
    </tbody>
  </table>
+ </div>
 <h2> Is upskilling via a proven data scientist course in Bangalore career-worthy?</h2>
 <p>Today’s modern-age business practices prefer a data-driven culture for enriched outcomes and resilient growth. In the interim, the rise of data science and its agile integration with diverse sectors boost success rates. Thus, experts opt to join a <b>data science course with a placement guarantee in Bangalore.</b> Yet, many question the worthiness of a learning program regarding marking justified growth and success.</p>
 
@@ -346,7 +349,7 @@ const BangaloreData = {
 
 <p>Let’s explore the crucial differences between an online and <b>offline data science course in Bangalore. </b></p>
 
-
+<div class="table-container" style="overflow-x: auto;">
 <table
    style="border-collapse: collapse; width: 100%; border: 2px solid #ccc">
    <thead style="background-color: #f0f0f0">
@@ -423,6 +426,7 @@ const BangaloreData = {
      </tr>
    </tbody>
  </table>
+ </div>
 <h2>What key learning modules will you learn to become a data scientist? </h2>
 <p><b>Data science in Bangalore</b> has become a trendsetter for various businesses and working pros. Freshers or working experts eager to revamp their careers in data science must opt for upskilling. Learning is vital for experts to leave their stagnancies behind and foster exciting success.</p>
 <p>Hence, joining a <b>data scientist course in Bangalore</b> that provides in-depth learning is vital. Let’s explore the key concepts and modules you will learn to become a data scientist. </p>

@@ -6,7 +6,7 @@ const BAHyderabadData = {
 
 <p>Hyderabad, also known as the City of Pearls has become a prime hub for the rising startups, MNCs, and working experts from diverse fields. This metropolis concocts an exciting future with the rise of an analytics-driven work culture. In the interim, business analytics (BA) marks a historic move in leveling up financial growth and success. Yet, lasting skill gaps halt the career progress rates to a greater extent. Hence, experts with static career paths prefer upskilling via a <b>business analyst course in Hyderabad.</b></p>
 
-
+<div class="table-container" style="overflow-x: auto;">
 <table
    style="border-collapse: collapse; width: 100%; border: 2px solid #ccc"
  >
@@ -70,6 +70,7 @@ const BAHyderabadData = {
      </tr>
    </tbody>
  </table>
+ </div>
 
 <p>As per the reports, the <a href="https://www.mordorintelligence.com/industry-reports/global-business-analytics-market-industry"  rel="nofollow"><i>business analytics solutions market</i></a> size expects an 8.07% rise across Asia-Pacific segments including Hyderabad, India. The rise of analytics shows its eminence across prime sectors boosting their yields. Owing to the changing trends, the demand for skilled analysts keeps increasing. </p>
 <span class="next-image-placeholder" data-src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/banner_c.webp" data-alt="Banner Image" data-width="800" data-height="400"></span></a>
