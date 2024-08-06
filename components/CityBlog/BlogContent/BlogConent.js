@@ -16,13 +16,7 @@ import "swiper/swiper-bundle.min.css";
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
-const BlogContent = ({
-  contentHtml,
-  lastUpdated,
-  shareLink,
-  publishDate,
-  MumbaiData,
-}) => {
+const BlogContent = ({ contentHtml, shareLink, MumbaiData }) => {
   const [headingElements, setHeadingElements] = useState([]);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [ads, setAds] = useState([
@@ -35,6 +29,46 @@ const BlogContent = ({
     },
   ]);
   const contentRef = useRef(null);
+  const [publishDate, setPublishDate] = useState("");
+  const [lastUpdated, setLastUpdated] = useState("");
+
+  useEffect(() => {
+    // const currentDate = new Date();
+    // const twoDaysAgo = new Date(currentDate);
+    // twoDaysAgo.setDate(currentDate.getDate() - 2);
+
+    const currentDate = new Date();
+    const twoDaysAgo = new Date (currentDate);
+    twoDaysAgo.setDate(currentDate.getDate() -2);
+
+
+    const formattedCurrentDate = currentDate.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+    const formattedTwoDaysAgo = twoDaysAgo.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+
+    setPublishDate(formattedTwoDaysAgo); 
+    setLastUpdated(formattedCurrentDate);
+
+    // Update last updated date daily
+    const interval = setInterval(() => {
+      setLastUpdated(
+        new Date().toLocaleDateString("en-US", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        })
+      );
+    }, 24 * 60 * 60 * 1000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     if (contentRef.current) {
@@ -43,7 +77,6 @@ const BlogContent = ({
         heading.setAttribute("id", `heading-${index}`);
       });
       setHeadingElements(headings);
-
 
       const replacePlaceholders = (placeholderClass, center = false) => {
         const placeholders =

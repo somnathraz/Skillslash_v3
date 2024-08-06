@@ -4,7 +4,7 @@ const BAMumbaiData = {
       <span class="blog-center-image" data-src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_second_img.webp" data-alt="Banner Image" data-width="800" data-height="400"></span>
 
 <p>Today’s fast-paced growth of tech space sees a bright future with the rise of analytics. Firms (from startups to MNCs) from diverse sectors plan a dynamic business model with strategic gains and better returns. In the interim, Mumbai has become a one-stop landmark for stunning growth and success. As the need for automatic business functions grows, so do searches for experts. Thus, the demand for upskilling via a <b>business analyst course in Mumbai keeps increasing. </b></p>
-
+<div class="table-container" style="overflow-x: auto;">
 
 <table
       style="border-collapse: collapse; width: 100%; border: 2px solid #ccc"
@@ -69,7 +69,7 @@ const BAMumbaiData = {
         </tr>
       </tbody>
     </table>
-
+</div>
 <p>As per the <a href="https://www.imarcgroup.com/business-analytics-market" target="_blank" rel="nofollow"> <i>reports,</i></a> the global business analytics market expects an 8.2% growth by 2032. With rising data usage and reliance on cloud-based solutions, firms search for skilled analysts.</p>
 <p>Mumbai’s modern business outlook alters the career trends for many experts. The role of business analysts keeps increasing rapidly, bringing major corporate shifts. Thus, upskilling via a <b>business analyst training institute in Mumbai with vital gains.</b> </p>
 <p>Proper learning can equip you with proven gains and justify your growth metrics. On the other hand, improper focus on learning offerings and skill sets can degrade your career values and growth options. So, let’s explore vital skills or concepts that a <b>business analysis course in Mumbai will cover. </b></p>

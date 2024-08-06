@@ -12,7 +12,7 @@ const JaipurData = {
       enthusiasts. Working experts from diverse fields prefer career upskilling
       via a <b>data science course in Jaipur.</b>
     </p>
-    
+    <div class="table-container" style="overflow-x: auto;">
     <table
       style="border-collapse: collapse; width: 100%; border: 2px solid #ccc"
     >
@@ -97,7 +97,7 @@ const JaipurData = {
         </tr>
       </tbody>
     </table>
-
+</div>
     <p>
       The
       <a
@@ -351,6 +351,7 @@ const JaipurData = {
 
     <h2>Watch Out Best Data Science Job Roles in Jaipur [2024 Exclusive]</h2>
     <p>Jaipur is one of the fastest-growing tech hubs in India with career-exclusive growth options. Meanwhile, the rise of data science alters the career dynamics in Jaipur with progressive results. Experts from diverse domains and various career levels rethink their career paths for competitive gains. Also, the State government steps forward to enrich data science career options with better gains. <b>Let’s explore the in-demand career roles.</b> </p>
+    <div class="table-container" style="overflow-x: auto;">
     <table
       style="border-collapse: collapse; width: 100%; border: 2px solid #ccc"
     >
@@ -434,6 +435,7 @@ const JaipurData = {
         </tr>
       </tbody>
     </table>
+    </div>
 
     <h2>Master Data Science Trends via Real-time Projects in Your Domain [Enlisting 30+ Projects]</h2>
     <h3>Domain: BFSI </h3>
