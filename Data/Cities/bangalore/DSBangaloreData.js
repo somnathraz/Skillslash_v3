@@ -599,7 +599,7 @@ const BangaloreData = {
  <li style="margin-bottom: 10px;">Get <b>hassle-free career support services</b> (Career Service PRO) from advisors – from 1:1 doubt-clearing to resume-making</li>
  <li style="margin-bottom: 10px;">Obtain career-worthy credentials from <b>E&ICT Academy, IIT Guwahati and IBM</b></li>
 </ul>
-<p><b>Fee:</b> Experts opting for Learnbay’s <b>data science training in Bangalore</b> must invest INR 190,000 + 18% GST for absolute learning and growth options. </p>
+<p><b>Fee:</b> Experts opting for Learnbay’s <b><a href="https://www.learnbay.co/datascience/bangalore/data-science-course-training-in-bangalore?utm_source=Skillslash&utm_medium=bangalore&utm_campaign=ds_blog_bangalore" target="_blank">data science training in Bangalore</a></b> must invest INR 190,000 + 18% GST for absolute learning and growth options. </p>
 
 <p><b>Mode of training:</b> Learnbay offers online live instructor-led <b>data scientist training in Bangalore </b>to equip learners with the latest skills. </p>
 
