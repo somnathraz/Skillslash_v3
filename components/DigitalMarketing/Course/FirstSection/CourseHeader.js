@@ -142,7 +142,7 @@ const CourseHeader = ({
                 <FaYoutube className={Styles.IconYou} />
               </button>
             </div>
-            <div className={Styles.threeimg}>
+            {AdsDM ? (  <div className={Styles.threeimg}>
               <p>Featured by :</p>
               <Image
                 src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/3-logo.png"
@@ -151,7 +151,8 @@ const CourseHeader = ({
                 width={420}
                 height={200}
               />
-            </div>
+            </div>):( <></>)}
+          
           </div>
 
           <>
