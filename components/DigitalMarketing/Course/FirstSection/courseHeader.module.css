@@ -252,6 +252,17 @@
     flex-direction: column;
     gap: 18px;
   }
+  .threeimg{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+   
+margin-top: 20px;
+  }
+.threeimg p {
+   color: #fff;
+   font-weight: 600;
+}
 
 
 /* Media Queries for Mobile View */
@@ -382,6 +393,10 @@
   }
   .togglelisthide{
     display: none;
+  }
+  .threeimg{
+
+    margin: 0px 20px 30px 20px;
   }
 }
 
