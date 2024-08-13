@@ -20,7 +20,7 @@ const DSPune = ({ data }) => {
         </title>
         <meta
           name="description"
-          content="Elevate your skills with the comprehensive Data Science course in Pune. Unleash advanced analytics techniques with live projects and exposure. Enroll now!"
+          content=" Explore the top 10 data science course institute in pune. Find the best training, enhance your skills, and advance your career with top-notch education options."
         />
         <meta
           name="keywords"

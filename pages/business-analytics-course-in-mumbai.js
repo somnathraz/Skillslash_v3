@@ -15,14 +15,14 @@ const BAMumbai = ({ data }) => {
   return (
     <div>
       <Head>
-        <title> Top 7 Business Analytics Course Institutes in Mumbai [2024]        </title>
+        <title>Top 7 Business Analytics Course Institutes in Mumbai [2024]        </title>
         <meta
           name="description"
-          content=" Looking for the best business analytics institute in Mumbai? We have listed 7 top performing Business Analyst course Institutes in Mumbai. Read now!! "
+          content=" Looking for the best business analytics institute in Mumbai? We have listed 7 top performing Business Analyst course Institutes in Mumbai. Read now!!  "
         />
         <meta
           name="keywords"
-          content="Business Analyst course, Business Analyst certification, Business Analyst courses online, Business Analyst training, Business Analyst program, Business Analyst certification courses, Business Analyst certification online, Business Analyst classes, Business Analyst course in Mumbai, Business Analyst certification in Mumbai, Business Analyst training in Mumbai."
+          content=" business analyst course in mumbai, business analyst course mumbai, business analyst certification course in mumbai, business analytics course in mumbai, business analytics training in mumbai, business analyst course in mumbai with placement, business analyst course fees in mumbai, business analyst training institute in mumbai, best institute for business analyst course in mumbai, business analyst institute in mumbai"
         />
         <link
           rel="canonical"

@@ -25,7 +25,7 @@ const Delhi = ({ data }) => {
         />
         <link
           rel="canonical"
-          href="https://skillslash.com/data-science-course-training-hyderabad"
+          href="https://skillslash.com/data-science-course-in-delhi"
         />
         <script type="application/ld+json">
           {JSON.stringify({

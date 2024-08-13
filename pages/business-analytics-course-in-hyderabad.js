@@ -16,12 +16,11 @@ const BAHyderabad = ({ data }) => {
     <div>
       <Head>
         <title>
-          Business analytics course with industry experience in Hyderabad -
-          Skillslash
+        Title Best 10 Data Science Course Institute in Hyderabad  
         </title>
         <meta
           name="description"
-          content=" Step up to get direct company certification under our Business analytics course in Hyderabad. Study in live-interactive classes."
+          content="  Discover the top 10 data science courses in hyderabad. Compare institutes, boost your skills, and advance your career with the best training options available."
         />
         <meta
           name="keywords"
