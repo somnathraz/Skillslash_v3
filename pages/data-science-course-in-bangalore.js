@@ -14,7 +14,7 @@ const Mumbai = ({ data }) => {
   return (
     <div>
       <Head>
-        <title> Top 10 Data Science Course Institutes in Bangalore </title>
+        <title>Top 10 Data Science Course Institutes in Bangalore        </title>
         <meta
           name="description"
           content="Explore the top 10 data science institutes in Bangalore. Boost your career with expert training and hands-on projects. Enroll now to master data science skills"

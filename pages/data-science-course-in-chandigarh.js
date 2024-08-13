@@ -20,7 +20,7 @@ const Chandigarh = ({ data }) => {
         </title>
         <meta
           name="description"
-          content="Looking for the best Data Science courses in Chandigarh? Check out the listed top data science training institutes in Chandigarh to boost your tech skills."
+          content=" Looking for the best Data Science courses in Chandigarh? Check out the listed top data science training institutes in Chandigarh to boost your tech skills."
         />
         <meta
           name="keywords"
