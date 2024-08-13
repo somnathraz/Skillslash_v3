@@ -12,7 +12,7 @@ import { IoToggleSharp } from "react-icons/io5";
 import { PiToggleRightThin } from "react-icons/pi";
 import { FaDownload } from "react-icons/fa6";
 
-import Counter from "../Counter/Counter"
+import Counter from "../Counter/Counter";
 
 const CourseHeader = ({
   title,
@@ -89,40 +89,35 @@ const CourseHeader = ({
                   priority
                 />
               </div>
-              <div>
-                {AdsDM ? (     <Counter AdsDM={AdsDM}/>):(<></>)}
-
-           
-              </div>
-              
+              <div>{AdsDM ? <Counter AdsDM={AdsDM} /> : <></>}</div>
             </div>
-        
+
             <ul className={Styles.listpoints}>
               <li className={Styles.togglelist}>
                 <span>
                   {" "}
                   <IoToggleSharp className={Styles.listicon} />
                 </span>
-                <p>Assured Placement                </p>
+                <p>Assured Placement </p>
               </li>
               <li className={Styles.togglelist}>
                 <IoToggleSharp className={Styles.listicon} />
-                <p> Guaranteed Internship                </p>
+                <p> Guaranteed Internship </p>
               </li>
               <li className={Styles.togglelist}>
                 {" "}
                 <IoToggleSharp className={Styles.listicon} />
-                <p>200+ hrs of live sessions                </p>
+                <p>200+ hrs of live sessions </p>
               </li>
-              <li className= {`${Styles.togglelist} ${Styles.togglelisthide}`}>
+              <li className={`${Styles.togglelist} ${Styles.togglelisthide}`}>
                 <IoToggleSharp className={Styles.listicon} />
                 <p>20+ Branded Case Studies</p>
               </li>
-              <li className= {`${Styles.togglelist} ${Styles.togglelisthide}`}>
+              <li className={`${Styles.togglelist} ${Styles.togglelisthide}`}>
                 <IoToggleSharp className={Styles.listicon} />
                 <p> 10+ Global Certificates</p>
               </li>
-              <li className= {`${Styles.togglelist} ${Styles.togglelisthide}`}>
+              <li className={`${Styles.togglelist} ${Styles.togglelisthide}`}>
                 {" "}
                 <IoToggleSharp className={Styles.listicon} />
                 <p> 100+ Tools</p>
@@ -130,28 +125,34 @@ const CourseHeader = ({
             </ul>
             {/* <p className={Styles.para}>{spanTitleText}</p> */}
             <div className={Styles.buttondiv}>
-            <button
-              id="clck-free-counselling"
-              onClick={() => popupShow()}
-              className={Styles.btn}
-            >
-              Brochure
-              <FaDownload/>
-            </button>
-            <button
-              id="clck-free-counselling"
-              onClick={() => showVideo(true)}
-              className={Styles.btnDemo}
-            >
-              DEMO
-              <FaYoutube className={Styles.IconYou} />
-            </button>
+              <button
+                id="clck-free-counselling"
+                onClick={() => popupShow()}
+                className={Styles.btn}
+              >
+                Brochure
+                <FaDownload />
+              </button>
+              <button
+                id="clck-free-counselling"
+                onClick={() => showVideo(true)}
+                className={Styles.btnDemo}
+              >
+                DEMO
+                <FaYoutube className={Styles.IconYou} />
+              </button>
+            </div>
+            <div className={Styles.threeimg}>
+              <p>Featured by :</p>
+              <Image
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/3-logo.png"
+                alt="news"
+                priority
+                width={420}
+                height={200}
+              />
+            </div>
           </div>
-          </div>
-   
-         
-   
-       
 
           <>
             <div className={Styles.formDiv}>
@@ -168,7 +169,7 @@ const CourseHeader = ({
             </div>
           </>
         </div>
-{/* 
+        {/* 
         <div className={Styles.icons}>
           <div className={Styles.icondivs}>
             <Image
