@@ -68,6 +68,9 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         subtitle={DataScienceCourseData.data.header.subtitle}
         GenImg={DataScienceCourseData.data.header.GenImg}
         AdsDM={DataScienceCourseData.data.header.AdsDM}
+        logoN={DataScienceCourseData.data.header.logoN}
+        logoG={DataScienceCourseData.data.header.logoG}
+        logoGN ={DataScienceCourseData.data.header.logoGN}
       />
       <SkillsContent
         certification={DataScienceCourseData.data.header.certification}
