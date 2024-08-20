@@ -31,7 +31,7 @@ const TabSection = ({ changeHeading }) => {
         "Voice and Audio Marketing",
         "Affiliate Marketing",
       ],
-      para: ["Growth marketing Specialization"],
+      para: [""],
       redirect: { redirectgrowth: true },
     },
     {
@@ -51,7 +51,7 @@ const TabSection = ({ changeHeading }) => {
         "Mobile Marketing",
         "Voice and Audio Marketing",
       ],
-      para: ["Performance & SEO marketing Specialization"],
+      para: [""],
       redirect: { redirectPSeo: true },
     },
     {
@@ -72,7 +72,7 @@ const TabSection = ({ changeHeading }) => {
         "Mobile Marketing",
         "Voice and Audio Marketing",
       ],
-      para: ["Performance & Social Media marketing Specialization"],
+      para: [""],
       redirect: { redirectPerforSocia: true },
     },
     {
@@ -92,7 +92,7 @@ const TabSection = ({ changeHeading }) => {
         "Voice and Audio Marketing",
         "Affiliate Marketing",
       ],
-      para: ["SEO & Social Media marketing Specialization"],
+      para: [""],
       redirect: { redirectsocialSeo: true },
     },
   ];
@@ -152,7 +152,7 @@ const TabSection = ({ changeHeading }) => {
             </li>
           ))}
           {tabs[activeTab].para.map((para, index) => (
-            <div className="flex flex-row gap-1" key={index}>
+            <div className="flex flex-row justify-end" key={index}>
               <p>{para}</p>
               <button
                 id="clck-free-counselling"

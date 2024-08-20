@@ -26,6 +26,9 @@ const CourseHeader = ({
   subtitle,
   GenImg,
   AdsDM,
+  logoN,
+  logoG,
+  logoGN,
 }) => {
   const [popups, setPopups] = useState(false);
   const popupShow = (demoClass, changeText) => {
@@ -142,17 +145,58 @@ const CourseHeader = ({
                 <FaYoutube className={Styles.IconYou} />
               </button>
             </div>
-            {AdsDM ? (  <div className={Styles.threeimg}>
-              <p>Featured by :</p>
-              <Image
-                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/3-logo.png"
-                alt="news"
-                priority
-                width={420}
-                height={200}
-              />
-            </div>):( <></>)}
-          
+            {logoN ? (
+              <div className={Styles.threeimg}>
+                <p>Featured by :</p>
+                <Image
+                  src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/3-logo.png"
+                  alt="news"
+                  priority
+                  width={420}
+                  height={200}
+                />
+              </div>
+            ) : (
+              <></>
+            )}
+
+            {logoG ? (
+              <div className={Styles.threeimg}>
+                <p>Reviews :</p>
+                <Image
+                  src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/google_review.png"
+                  alt="news"
+                  priority
+                  width={420}
+                  height={200}
+                />
+              </div>
+            ) : (
+              <></>
+            )}
+            {logoGN ? (
+              <div className={Styles.threeimg}>
+                <p>Reviews :</p>
+                <Image
+                  src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/google_review.png"
+                  alt="news"
+                  priority
+                  width={400}
+                  height={100}
+                />
+
+                <p>Featured by :</p>
+                <Image
+                  src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/3-logo.png"
+                  alt="news"
+                  priority
+                  width={420}
+                  height={200}
+                />
+              </div>
+            ) : (
+              <></>
+            )}
           </div>
 
           <>
