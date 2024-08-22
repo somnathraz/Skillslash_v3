@@ -1,4 +1,4 @@
-const HyderbadData = {
+const DelhiData = {
     contentHtml: `
 <p>Step into a data-driven world where data takes the pledge of transforming things to extract insightful facts and attain cutting-edge success. Data science growth confirms data-centric success for top-rated startups and MNCs in today’s rising tech era. Data science shifts connect several firms to a data-driven set up marking tempting gains and success. Hence, working experts with static skill sets prefer reshaping their careers via a <b>data science course in Delhi.</b> </p>
 
@@ -1083,5 +1083,5 @@ style="border-collapse: collapse; width: 100%; border: 2px solid #ccc"
     ],
   };
   
-  export default HyderbadData;
+  export default DelhiData;
   
