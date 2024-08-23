@@ -570,7 +570,7 @@ style="border-collapse: collapse; width: 100%; border: 2px solid #ccc"
 <h3 id="MSIT">2. Specialize in Data Science Programs [MSIT]</h3>
 
 <p><b>About:</b>No wonder, data supremacy controls modern-age business practices enriching its ways of making profits. Also, the rise of data science compliments the process of diving deeper into factual ways to operate now and then. Hence, experts opt for learning via <b>data science institutes in Hyderabad</b> with tempting gains.</p>
-<p>In the interim, MSIT marks a historic move in its 20 years of splendid growth via front-age <b>data science classes in Hyderabad.</b> Its <a href="https://www.msit.ac.in/data-science"><i>specialized program in data science</i></a> at the master’s level enriches your career worth with notable gains. Its thoroughly designed learning modules help you develop specialized skills. Also, its unison with IIIT Hyderabad equips you with skills to grab better job offers.  </p>
+<p>In the interim, MSIT marks a historic move in its 20 years of splendid growth via front-age <b>data science classes in Hyderabad.</b> Its <a href="https://www.msit.ac.in/data-science" rel="nofollow"><i>specialized program in data science</i></a> at the master’s level enriches your career worth with notable gains. Its thoroughly designed learning modules help you develop specialized skills. Also, its unison with IIIT Hyderabad equips you with skills to grab better job offers.  </p>
 <i><b>Key Features:</b></i>
 <ul>
 <li style="margin-bottom: 10px;">Master data science via <b>MSIT’s unique learning pedagogy</b> with the ability to conquer success in today’s thriving world</li>

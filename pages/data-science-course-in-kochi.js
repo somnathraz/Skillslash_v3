@@ -8,43 +8,43 @@ import BlogContent from "../components/CityBlog/BlogContent/BlogConent";
 import Footer from "../components/Footer/Footer";
 import InternalLinking from "../components/InternalLinking/InternalLinking";
 import Popup from "../components/CityBlog/BlogPopup/Popup";
-import HyderbadData from "../Data/Cities/hyderabad/DSHydrerbadData";
+import KochiData from "../Data/Cities/kochi/DsKochiData";
 
-const Mumbai = ({ data }) => {
+const Kochi = ({ data }) => {
   return (
     <div>
       <Head>
-        <title>Top 10 Data Science Course Training Institutes in Hyderabad</title>
+        <title>Data Science Course in Kochi | Skillslash</title>
         <meta
           name="description"
-          content="Boost your Career with Skillslash Data Science, Data Scientist Online Course Training in Hyderabad, and get Placed in Top Companies. You'll gain real-time work experience."
+          content="Join our top 10 Data Science courses in Chennai. Master data analysis, python, machine learning, and AI with expert instructors. Start your data-driven career today!"
         />
         <meta
           name="keywords"
-          content="data science course in hyderabad,data science training in hyderabad,best data science institute in hyderabad,data science course in hyderabad with placements,data science institutes in hyderabad,data science training in dilsukhnagar,best institute for data science in hyderabad,data science course fees in hyderabad,data scientist course in hyderabad, data science training in hyderabad with placement, best data science institute in hyderabad with placement, data science in hyderabad, data science course in ameerpet, big data course in hyderabad,data science coaching in hyderabad"
+          content="Data Science training, Data Science certification, Data Science course, Data Science institute, Data Science institute in Kochi, data science courses in Kochi, data science courses, data science course in Kochi, data scientist course, data scientist course in Kochi"
         />
         <link
           rel="canonical"
-          href="https://skillslash.com/data-science-course-training-hyderabad"
+          href="https://skillslash.com/data-science-course-in-kochi"
         />
         <script type="application/ld+json">
           {JSON.stringify({
-         "ReviewSchema": {
-            "@context": "https://schema.org/",
-            "@type": "Product",
-            "name": "Data science course in Hyderabad",
-            "brand": {
-              "@type": "Brand",
-              "name": "Skillslash"
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "9.8",
-              "bestRating": "10",
-              "worstRating": "1",
-              "ratingCount": "22680"
-            }
+        "ReviewSchema": {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "Data science course in Kochi",
+          "brand": {
+            "@type": "Brand",
+            "name": "Skillslash"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "9.9",
+            "bestRating": "10",
+            "worstRating": "1",
+            "ratingCount": "25987"
           }
+        }
           })}
         </script>
       </Head>
@@ -52,10 +52,10 @@ const Mumbai = ({ data }) => {
       <Navbar />
 
       <BlogHeader
-        city="Hyderabad"
+        city="Kochi"
         title=" Data Science Course Training Institutes in "
         subTitle="Top 10"
-        titleAuthor="Hyderabad"
+        titleAuthor="Kochi"
         authorPro="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/ai_face.webp"
         linkedinId="https://www.linkedin.com/in/amit-ambi-axh08/"
         rytImg="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/mumbai_top_10_comp.webp"
@@ -68,7 +68,7 @@ const Mumbai = ({ data }) => {
         lastUpdated={data.lastUpdated}
         shareLink={data.shareLink}
         publishDate={data.publishDate}
-        MumbaiData={HyderbadData} // Passing MumbaiData to BlogContent
+        MumbaiData={KochiData}// Passing MumbaiData to BlogContent
       />
 
       <InternalLinking />
@@ -82,9 +82,9 @@ export async function getStaticProps() {
   // Since the data is already in a JS file, we can directly import it
   return {
     props: {
-      data: HyderbadData,
+      data: KochiData,
     },
   };
 }
 
-export default Mumbai;
+export default Kochi;

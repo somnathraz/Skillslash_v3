@@ -1039,6 +1039,12 @@ style="border-collapse: collapse; width: 100%; border: 2px solid #ccc"
       title: "Top 10 Data Science Course Training Institutes in Delhi",
       link: "https://skillslash.com/data-science-course-in-delhi",
     },
+    {
+      image:
+        "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_side_3.webp",
+      title: "Top 10 Data Science Course Training Institutes in Kochi",
+      link: "https://skillslash.com/data-science-course-in-kochi",
+    },
 
     // Add more blog objects as needed
   ],
