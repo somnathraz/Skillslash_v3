@@ -14,7 +14,7 @@ const Delhi = ({ data }) => {
   return (
     <div>
       <Head>
-        <title>Data Science Course in Delhi | Data Scientist Course - Skillslash</title>
+        <title>Top 10 Data Science Course Training Institutes in Chennai</title>
         <meta
           name="description"
           content="Join our top 10 Data Science courses in Chennai. Master data analysis, python, machine learning, and AI with expert instructors. Start your data-driven career today!"
