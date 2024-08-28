@@ -14,10 +14,10 @@ const Kochi = ({ data }) => {
   return (
     <div>
       <Head>
-        <title>Data Science Course in Kochi | Skillslash</title>
+        <title>Best 10 Data Science Institutes in Kochi  </title>
         <meta
           name="description"
-          content="Join our top 10 Data Science courses in Chennai. Master data analysis, python, machine learning, and AI with expert instructors. Start your data-driven career today!"
+          content="Best Data science course in Kochi at budget-friendly prices at Skillslash. Enrol in our data science course with placement support"
         />
         <meta
           name="keywords"

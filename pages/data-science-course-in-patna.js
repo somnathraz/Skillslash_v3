@@ -1,49 +1,51 @@
-
+// pages/Bangalore.js
 
 import React from "react";
 import Head from "next/head";
 import Navbar from "../components/Navbar/Navbar";
 import BlogHeader from "../components/CityBlog/BlogHeader/BlogHeader";
-import BlogContent from "../components/CityBlog/BlogContent/BlogConent"; 
-import RelatedInfo from "../components/SeoComponents/ReleteadInfo/RelatedInfo"; 
-import JaipurData from "../Data/Cities/jaipurData";
+import BlogContent from "../components/CityBlog/BlogContent/BlogConent";
 import Footer from "../components/Footer/Footer";
 import InternalLinking from "../components/InternalLinking/InternalLinking";
 import Popup from "../components/CityBlog/BlogPopup/Popup";
 
-const Jaipur  = ({ data }) => {
+import PatnaData from "../Data/Cities/Patna/DSPatnaData";
+
+const Patna = ({ data }) => {
   return (
     <div>
       <Head>
-        <title>Top 10 Data Science Course Training Institutes in Jaipur</title>
+        <title>Best 10 Data Science Institutes in Patna        </title>
         <meta
           name="description"
-          content="Discover the best data science courses in Jaipur. Explore our top pics of data science Institutes in Jaipur and excel in your data science career!"
+          content="Explore the Best 10 data science courses in Patna. Find expert training, hands-on experience, and the best institutes to advance your career in data science"
         />
         <meta
           name="keywords"
-          content="data science course in jaipur, data science course fees in jaipur, data science institute in jaipur, data science coaching in jaipur, data science in jaipur, data science course jaipur, data science training in jaipur, best data science course in jaipur, data science jaipur"
+          content="Data Science training, Data Science certification, Data Science course, Data Science institute, Data Science institute in Patna, data science courses in Patna, data science courses, data science course in Patna, data scientist course, data scientist course in Patna"
         />
         <link
           rel="canonical"
-          href="https://skillslash.com/data-science-course-in-jaipur"
+          href="https://skillslash.com/data-science-course-in-patna"
         />
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org/",
-            "@type": "Product",
-            name: "Data science course in Jaipur",
-            brand: {
-              "@type": "Brand",
-              name: "Skillslash",
-            },
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "9.9",
-              bestRating: "10",
-              worstRating: "1",
-              ratingCount: "25987",
-            },
+      "ReviewSchema": {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "Data science course in Patna",
+      "brand": {
+        "@type": "Brand",
+        "name": "Skillslash"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "9.9",
+        "bestRating": "10",
+        "worstRating": "1",
+        "ratingCount": "25987"
+      }
+    }
           })}
         </script>
       </Head>
@@ -51,10 +53,10 @@ const Jaipur  = ({ data }) => {
       <Navbar />
 
       <BlogHeader
-        city="Jaipur"
+        city="Patna"
         title=" Data Science Course Training Institutes in "
         subTitle="Top 10"
-        titleAuthor="Amit"
+        titleAuthor="Patna"
         authorPro="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/ai_face.webp"
         linkedinId="https://www.linkedin.com/in/amit-ambi-axh08/"
         rytImg="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/mumbai_top_10_comp.webp"
@@ -67,10 +69,8 @@ const Jaipur  = ({ data }) => {
         lastUpdated={data.lastUpdated}
         shareLink={data.shareLink}
         publishDate={data.publishDate}
-        MumbaiData={JaipurData} // Passing MumbaiData to BlogContent
+        MumbaiData={PatnaData}// Passing MumbaiData to BlogContent
       />
-
-    
 
       <InternalLinking />
       <Footer />
@@ -83,9 +83,9 @@ export async function getStaticProps() {
   // Since the data is already in a JS file, we can directly import it
   return {
     props: {
-      data: JaipurData,
+      data: PatnaData,
     },
   };
 }
 
-export default Jaipur;
+export default Patna;
