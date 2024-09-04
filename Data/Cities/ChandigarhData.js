@@ -353,7 +353,7 @@ const ChandigarhData = {
     <h2>Top 10 Competitors with Data Science Courses in Chandigarh</h2>
 
       <h3 id="Learnbay"><b><b>1. Best Data Science Courses in Chandigarh by Learnbay</b> </b></h3>
-    <p><i><b>About:</b></i> In the data-driven age, Learnbay's <a href="https://www.learnbay.co/datascience/advance-data-science-certification-courses?utm_source=skillslash&utm_medium=chandigarh&utm_campaign=ds_blog_chandigarh" target="_blank" rel="nofollow">Data Science Courses in Chandigarh</a> mark a historic move with its career-driven offerings. Experts eager to overcome their static careers can join Learnbay and explore untapped options. Enroll in cutting-edge courses today and unleash exciting growth offers. Also, its alliance with IBM and Microsoft unlocks exciting options on a global scale. </p>
+    <p><i><b>About:</b></i> In the data-driven age, Learnbay's <a href="https://www.learnbay.co/datascience/advance-data-science-certification-courses?utm_source=skillslash&utm_medium=chandigarh&utm_campaign=ds_blog_chandigarh" target="_blank">Data Science Courses in Chandigarh</a> mark a historic move with its career-driven offerings. Experts eager to overcome their static careers can join Learnbay and explore untapped options. Enroll in cutting-edge courses today and unleash exciting growth offers. Also, its alliance with IBM and Microsoft unlocks exciting options on a global scale. </p>
 
     <i><b>Course Highlights:</b></i>
 

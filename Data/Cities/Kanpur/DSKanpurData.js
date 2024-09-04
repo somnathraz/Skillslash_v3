@@ -59,7 +59,7 @@ style="border-collapse: collapse; width: 100%; border: 2px solid #ccc"
 
  <tr>
 
-   <td style="border: 1px solid #ccc; padding: 8px"><a href="">Simplilearn</a></td>
+   <td style="border: 1px solid #ccc; padding: 8px"><a href="#Simplilearn">Simplilearn</a></td>
 
    <td style="border: 1px solid #ccc; padding: 8px">INR 145,000 with taxes</td>
 
@@ -69,7 +69,7 @@ style="border-collapse: collapse; width: 100%; border: 2px solid #ccc"
 
  <tr>  
 
-   <td style="border: 1px solid #ccc; padding: 8px"><a href="">Henry Harvin</a></td>    
+   <td style="border: 1px solid #ccc; padding: 8px"><a href="#Henry">Henry Harvin</a></td>    
 
    <td style="border: 1px solid #ccc; padding: 8px">INR 298,000 with taxes</td>
 
@@ -79,7 +79,7 @@ style="border-collapse: collapse; width: 100%; border: 2px solid #ccc"
 
  <tr>
 
-   <td style="border: 1px solid #ccc; padding: 8px"><a href="">Intellipaat </a></td>
+   <td style="border: 1px solid #ccc; padding: 8px"><a href="#Intellipaat">Intellipaat </a></td>
 
    <td style="border: 1px solid #ccc; padding: 8px">INR 85,044 with taxes</td>
 
@@ -89,7 +89,7 @@ style="border-collapse: collapse; width: 100%; border: 2px solid #ccc"
 
   <tr>  
 
-      <td style="border: 1px solid #ccc; padding: 8px"><a href="">Datamites </a></td>
+      <td style="border: 1px solid #ccc; padding: 8px"><a href="#Datamites">Datamites </a></td>
 
       <td style="border: 1px solid #ccc; padding: 8px">INR 42,948 – INR 80,873 with taxes</td>
 
@@ -99,7 +99,7 @@ style="border-collapse: collapse; width: 100%; border: 2px solid #ccc"
 
    <tr>
 
-     <td style="border: 1px solid #ccc; padding: 8px"><a href="">Apponix Academy</a></td>    
+     <td style="border: 1px solid #ccc; padding: 8px"><a href="#Apponix">Apponix Academy</a></td>    
 
      <td style="border: 1px solid #ccc; padding: 8px"> NA</td>
 
@@ -109,7 +109,7 @@ style="border-collapse: collapse; width: 100%; border: 2px solid #ccc"
 
 <tr>
 
-  <td style="border: 1px solid #ccc; padding: 8px"><a href="">Unichrone</a></td>
+  <td style="border: 1px solid #ccc; padding: 8px"><a href="#Unichrone">Unichrone</a></td>
 
   <td style="border: 1px solid #ccc; padding: 8px">NA</td>
 
@@ -119,7 +119,7 @@ style="border-collapse: collapse; width: 100%; border: 2px solid #ccc"
 
  <tr>   
 
-   <td style="border: 1px solid #ccc; padding: 8px"><a href="">UnCodemy </a></td>
+   <td style="border: 1px solid #ccc; padding: 8px"><a href="#UnCodemy">UnCodemy </a></td>
 
       
 
@@ -131,7 +131,7 @@ style="border-collapse: collapse; width: 100%; border: 2px solid #ccc"
 
   <tr>    
 
-   <td style="border: 1px solid #ccc; padding: 8px"><a href=""></a>AVIT</td>
+   <td style="border: 1px solid #ccc; padding: 8px"><a href="#AVIT">AVIT</a></td>
 
     
 
@@ -141,7 +141,7 @@ style="border-collapse: collapse; width: 100%; border: 2px solid #ccc"
 
  <tr>   
 
-   <td style="border: 1px solid #ccc; padding: 8px"><a href="">QuickXpert</a></td>
+   <td style="border: 1px solid #ccc; padding: 8px"><a href="#QuickXpert">QuickXpert</a></td>
 
    <td style="border: 1px solid #ccc; padding: 8px">INR 40,000 inclusive of taxes</td>
 
@@ -721,7 +721,7 @@ target="_blank"><i> executive program in data science</i></a> states a hassle-fr
 
 
 
-<h3 id=""> <b>2. Professional Certificate Course in Data Science [Simplilearn in Alliance with IIT Kanpur]</b></h3>
+<h3 id="Simplilearn"> <b>2. Professional Certificate Course in Data Science [Simplilearn in Alliance with IIT Kanpur]</b></h3>
 
 
 
@@ -764,7 +764,7 @@ everything required to grab better offers and highlight your profile.</p>
 
 
 
-<h3 id=""> <b>3. Post-graduate Program in Data Science [Henry Harvin]</b></h3>
+<h3 id="Henry"> <b>3. Post-graduate Program in Data Science [Henry Harvin]</b></h3>
 
 <p><b>About:</b> Henry Harvin is a popular upskilling institute with diversified courses and tutorials for freshers and working pros from diverse fields. Henry Harvin brings a  <a href="https://www.henryharvin.com/post-graduate-program-data-science-kanpur"
 target="_blank" rel="nofollow"><i>post-graduate program</i></a>  to expedite your career following the changing trends. Also, its job-guaranteed program attests globally valued certificates to your job to drive compelling growth and stay ahead of the curve.
@@ -802,7 +802,7 @@ target="_blank" rel="nofollow"><i>post-graduate program</i></a>  to expedite you
 
 
 
-<h3 id=""> <b>4. Data Science Course in Kanpur [Intellipaat – IIT Roorkee] </b></h3>
+<h3 id="Intellipaat"> <b>4. Data Science Course in Kanpur [Intellipaat – IIT Roorkee] </b></h3>
 
 <p><b>About: </b>  Intellipaat’s revolutionary turns bring its cutting-edge upskilling programs and certifications into the limelight. Its constant efforts toward hassle-free career shifts guide many experts to see through tough times and rise beyond tech advances.
 Its<a href="https://intellipaat.com/data-scientist-course-training-kanpur/" target="_blank" rel="nofollow"><i>  data science course</i></a>  in alliance with iHUB, IIT Roorkee grabs the notable attention of many. Working pros from diverse fields opt for upskilling
@@ -842,7 +842,7 @@ with Intellipaat for its career-rich benefits.</p>
 
 
 
-<h3 id=""><b>5. Data Science Course in Kanpur [Datamites] </b></h3>
+<h3 id="Datamites"><b>5. Data Science Course in Kanpur [Datamites] </b></h3>
 
 <p> <b>About:</b> Datamites sets the stage for global-level career transitions with its intensive training sessions to back your proven expertise. It's <a href="https://datamites.com/data-science-course-training-kanpur/?srsltid=AfmBOopdPwv_RSQQ1Mc2D-sp3Yw94CNcLTaVfIYwi6Rp_W5jXDUjWGbs"
 target="_blank" rel="nofollow"><i>data science certification course training </i></a>  with placement offerings enriches career worth radically. Also, its association with IABAC propels tempting success for experts with static skill sets. If you are eager
@@ -875,7 +875,7 @@ to escalate your career success rates, join the course today.</p>
 
 
 
-<h3 id=""><b>6. Data Science with Python Certification Training in Kanpur [Apponix Academy]</b></h3>
+<h3 id="Apponix"><b>6. Data Science with Python Certification Training in Kanpur [Apponix Academy]</b></h3>
 
 <p><b>About: </b>  Apponix Academy is a well-recognized data science training center in Kanpur with placement offers. Its cutting-edge <a href="https://www.apponix.com/data-science-course-in-kanpur" target="_blank" rel="nofollow"><i> data science program </i></a>
  with Python-exclusive training helps you become a certified data scientist. Apponix brings its job-driven <b>data science course in Kanpur</b> to set your career apart and crack high-paying jobs in one go. Anyone eager to overcome career redundancies and
@@ -913,7 +913,7 @@ thrive in the present data-driven era must enroll in the course today. </p>
 
 
 
-<h3 id=""><b>7. Advanced-Data Science Certification Training in Kanpur India [Unichrone]</b></h3>
+<h3 id="Unichrone"><b>7. Advanced-Data Science Certification Training in Kanpur India [Unichrone]</b></h3>
 
 <p><b>About: </b>  Unichrone is one of the trending<a href="https://unichrone.com/in/advanced-data-science-training/kanpur" target="_blank" rel="nofollow"><i>data science training </i></a> institutions in Kanpur, India following a rigorous course structure
 with basic to advanced concepts. Its flexible training sessions guide experts for individual accomplishments and credible growth. Anyone willing to embark on a global-level career success must join Unichrone and build remarkable credibility to thrive globally.
@@ -950,7 +950,7 @@ with basic to advanced concepts. Its flexible training sessions guide experts fo
 
 
 
-<h3 id=""><b>8. Data Science Training Course in Kanpur [UnCodemy]</b></h3>
+<h3 id="UnCodemy"><b>8. Data Science Training Course in Kanpur [UnCodemy]</b></h3>
 
 <p> <b>About: </b> UnCodemy envisions a world with data-driven experts to handle data intricacies and thrive globally. Its<a href="https://uncodemy.com/course/data-science-training-course-in-kanpur" target="_blank" rel="nofollow"><i> data science training course
 </i></a> gathers aspirants to dream as well as build a lucrative career. UnCodemy’s industry-certified <b>data science course in Kanpur</b> unleashes true career potential with powers to ascertain proven success. </p>
@@ -992,7 +992,7 @@ with basic to advanced concepts. Its flexible training sessions guide experts fo
 
 
 
-<h3 id=""><b>9. Data Science Course in Kanpur [AVIT]</b></h3>
+<h3 id="AVIT"><b>9. Data Science Course in Kanpur [AVIT]</b></h3>
 
 <p><b>About: </b> AVIT is a promising learning institute with a globally recognized <a href="https://avit.website/data-science-course-in-kanpur/" target="_blank" rel="nofollow"><i>data science program </i></a> exclusively designed for working pros. Its cutting-edge
 upskilling sessions and resources guide experts to build a data-driven career with better gains. Also, freshers and experts eager to revamp their jobs can get into its exciting internship chances. </p>
@@ -1031,7 +1031,7 @@ upskilling sessions and resources guide experts to build a data-driven career wi
 
 
 
-<h3 id=""><b>10. Data Science Course in Kanpur with 100% Job Guarantee [QuickXpert]</b></h3>
+<h3 id="QuickXpert"><b>10. Data Science Course in Kanpur with 100% Job Guarantee [QuickXpert]</b></h3>
 
 <p> <b>About: </b>   QuickXpert is a well-known ISO-certified data science training institute in Kanpur with a 100% job assistance and placement guarantee. Its<a href="https://quickxpertinfotech.com/job-guarantee/data-science-course-in-kanpur" target="_blank"
 rel="nofollow"><i> data science course</i></a> is popular amongst learners for its flexible schedules, reasonable fees, and job assurance. Anyone eager to modernize their career to face the rising tech intricacies, join the course today.  </p>
@@ -1150,7 +1150,7 @@ a global scale.   </p>
                 </style>
             `,
     lastUpdated: "2024-08-02",
-    shareLink: "https://skillslash.com/data-science-course-in-kochi",
+    shareLink: "https://skillslash.com/data-science-course-in-kanpur",
     publishDate: "2024-08-02",
   
     pinCode: {
@@ -1234,6 +1234,12 @@ a global scale.   </p>
           "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_side_3.webp",
         title: "Top 10 Data Science Course Training Institutes in Delhi",
         link: "https://skillslash.com/data-science-course-in-delhi",
+      },
+      {
+        image:
+          "https://skillslash-cdn.s3.ap-south-1.amazonaws.com/city_Blog/blog_side.webp",
+        title: "Top 10 Data Science Course Training Institutes in Mysore",
+        link: "https://skillslash.com/data-science-course-in-mysore",
       },
   
       // Add more blog objects as needed
