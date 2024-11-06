@@ -42,6 +42,37 @@ const nextConfig = {
         destination: "/selfpaced/dsa-system-design-bootcamp",
         permanent: true,
       },
+
+      {
+        source: "/data-structures-algorithm-&-system-design",
+        destination: "/dsa-system-design",
+        permanent: true,
+      },
+
+      {
+        source: "/data-structures-algorithms",
+        destination: "/dsa-system-design",
+        permanent: true,
+      },
+
+      {
+        source: "/data-structures-and-algorithms-course",
+        destination: "/dsa-system-design",
+        permanent: true,
+      },
+
+
+      {
+        source: "/best-data-structures-algorithms-course",
+        destination: "/dsa-system-design",
+        permanent: true,
+      },
+
+      {
+        source: "/data-structures-course.json",
+        destination: "/dsa-system-design",
+        permanent: true,
+      },
      
       // {
       //   source: "/blog/ai-and-machine-learning",
