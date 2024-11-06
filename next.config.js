@@ -69,7 +69,7 @@ const nextConfig = {
       },
 
       {
-        source: "/data-structures-course.json",
+        source: "/data-structures-course",
         destination: "/dsa-system-design",
         permanent: true,
       },
