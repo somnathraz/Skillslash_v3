@@ -38,7 +38,7 @@ const Navbar = ({
   redirectDa,
   redirectDM,
   changeHeading,
-  noHam ,
+  noHam,
 }) => {
   const [idBtnB, setIdBtnW] = useState("org-slb");
 
@@ -83,7 +83,6 @@ const Navbar = ({
   const handleIcon = (data) => {
     setIcon(data);
   };
-  
 
   return (
     <div>
@@ -110,172 +109,175 @@ const Navbar = ({
       </Popup>
       <nav className={styles.nav}>
         <div className={styles.innerdiv}>
-        {showVideo && (
-          <VideoPlaylist
-            setShow={showVideoF}
-            show={show}
-            redirectDs={redirectDs}
-            redirectFs={redirectFs}
-            redirectDa={redirectDa}
-            redirectDM={redirectDM}
-          />
-        )}
-        <div className={styles.left}>
-          {/*<FaBars
+          {showVideo && (
+            <VideoPlaylist
+              setShow={showVideoF}
+              show={show}
+              redirectDs={redirectDs}
+              redirectFs={redirectFs}
+              redirectDa={redirectDa}
+              redirectDM={redirectDM}
+            />
+          )}
+          <div className={styles.left}>
+            {/*<FaBars
             className={styles.ham}
             onClick={() => {
               showMenu();
               setIcon(false);
             }}*/}
 
-        {noHam ? (<></>):(<>  {!show ? (
-            <FaBars
-              className={styles.ham}
-              onClick={() => {
-                showMenu();
-                setIcon(false);
-              }}
-            />
-          ) : (
-            <p
-              className={styles.ham}
-              style={{ fontSize: "45px", margin: "0" }}
-              onClick={() => {
-                showMenu();
-                setIcon(false);
-              }}
-            >
-              ⨯
-            </p>
-          )}</>)}
+            {noHam ? (
+              <></>
+            ) : (
+              <>
+                {" "}
+                {!show ? (
+                  <FaBars
+                    className={styles.ham}
+                    onClick={() => {
+                      showMenu();
+                      setIcon(false);
+                    }}
+                  />
+                ) : (
+                  <p
+                    className={styles.ham}
+                    style={{ fontSize: "45px", margin: "0" }}
+                    onClick={() => {
+                      showMenu();
+                      setIcon(false);
+                    }}
+                  >
+                    ⨯
+                  </p>
+                )}
+              </>
+            )}
 
-          <div className={show ? styles.mobileWrapper : styles.hide}>
-            <div className={styles.mobileMenu}>
-              <span onClick={showMenu}>
-                <Link href="/event">Events</Link>
-              </span>
-              <span onClick={showMenu}>
-                <Link href="/About">About Us</Link>
-              </span>
-
-              <span onClick={showMenu}>
-                <Link href="/Contact-us">Conctact Us</Link>
-              </span>
-
-              <span onClick={showMenu}>
-                <a href="/blog">Blogs</a>
-              </span>
+            <div className={show ? styles.mobileWrapper : styles.hide}>
+              <div className={styles.mobileMenu}>
+                <span onClick={showMenu}>
+                  <Link href="/event">Events</Link>
+                </span>
+                <span onClick={showMenu}>
+                  <Link href="/About">About Us</Link>
+                </span>
+                <span onClick={showMenu}>
+                  <Link href="/Contact-us">Conctact Us</Link>
+                </span>
+              </div>
             </div>
-          </div>
-          {ads ? (
-            <Image
-              src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Skillslash-logo.webp"
-              alt="Skillslash"
-              quality={100}
-              style={{ objectFit: "contain" }}
-              width={180}
-              height={60}
-            />
-          ) : (
-            <a href="/">
+            {ads ? (
               <Image
-                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/skillslsash_logo.webp"
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Skillslash-logo.webp"
                 alt="Skillslash"
                 quality={100}
                 style={{ objectFit: "contain" }}
                 width={180}
                 height={60}
               />
-            </a>
-          )}
+            ) : (
+              <a href="/">
+                <Image
+                  src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/digital-marketing/skillslsash_logo.webp"
+                  alt="Skillslash"
+                  quality={100}
+                  style={{ objectFit: "contain" }}
+                  width={180}
+                  height={60}
+                />
+              </a>
+            )}
 
-        {noHam ? (<></>):(<>  <button
-            className={styles.mLearn}
-            id={idBtnB}
-            onClick={() => {
-              setIcon(!icon);
-              setShow(false);
-            }}
-          >
-            Our Courses
-          </button></>)}
-          {ads ? (
-            ""
-          ) : (
-            <button
-              onMouseEnter={() => setIcon(true)}
-              onMouseOver={() => setIcon(true)}
-              onClick={() => {
-                setIcon(!icon);
-                setShow(false);
-              }}
-              className={styles.MegaBtn}
-            >
-              Our Courses
-              {icon ? (
-                <MdKeyboardArrowUp className={styles.bIcon} />
-              ) : (
-                <MdKeyboardArrowDown className={styles.bIcon} />
-              )}
-            </button>
-          )}
-
-          {icon ? (
-            <div
-              className="megaMenu"
-              onMouseOver={() => setIcon(true)}
-              onMouseLeave={() => setIcon(false)}
-            >
-              <MegaMenu handleIcon={handleIcon} />
-            </div>
-          ) : (
-            ""
-          )}
-        </div>
-        <div className={styles.right}>
-          {ads ? (
-            <button
-              className={styles.mLearn}
-              id={idBtnB}
-              onClick={() => showVideoF(true)}
-            >
-           
-            </button>
-          ) : event ? (
-            <>
-              <span>
-                <Link href="#Feature">Program Features</Link>
-              </span>
-
-              <span>
-                <Link href="#who">Who can join</Link>
-              </span>
-              <span>
-                <Link href="#About">About us</Link>
-              </span>
-            </>
-          ) : (
-            <>
-              <span>
-                <Link href="/event">EVENTS</Link>
-              </span>
-              <span>
-                <Link href="/About">ABOUT US</Link>
-              </span>
-              <span>
-                <Link href="/Contact-us">Contact us</Link>
-              </span>
-              <span>
-                <a href="/blog">Blog</a>
-              </span>
-
-              <button  id="clck-free-counselling"
-                  onClick={() => popupShow()}>
-            Apply for Counselling
+            {noHam ? (
+              <></>
+            ) : (
+              <>
+                {" "}
+                <button
+                  className={styles.mLearn}
+                  id={idBtnB}
+                  onClick={() => {
+                    setIcon(!icon);
+                    setShow(false);
+                  }}
+                >
+                  Our Courses
+                </button>
+              </>
+            )}
+            {ads ? (
+              ""
+            ) : (
+              <button
+                onMouseEnter={() => setIcon(true)}
+                onMouseOver={() => setIcon(true)}
+                onClick={() => {
+                  setIcon(!icon);
+                  setShow(false);
+                }}
+                className={styles.MegaBtn}
+              >
+                Our Courses
+                {icon ? (
+                  <MdKeyboardArrowUp className={styles.bIcon} />
+                ) : (
+                  <MdKeyboardArrowDown className={styles.bIcon} />
+                )}
               </button>
-            </>
-          )}
-        </div>
+            )}
+
+            {icon ? (
+              <div
+                className="megaMenu"
+                onMouseOver={() => setIcon(true)}
+                onMouseLeave={() => setIcon(false)}
+              >
+                <MegaMenu handleIcon={handleIcon} />
+              </div>
+            ) : (
+              ""
+            )}
+          </div>
+          <div className={styles.right}>
+            {ads ? (
+              <button
+                className={styles.mLearn}
+                id={idBtnB}
+                onClick={() => showVideoF(true)}
+              ></button>
+            ) : event ? (
+              <>
+                <span>
+                  <Link href="#Feature">Program Features</Link>
+                </span>
+
+                <span>
+                  <Link href="#who">Who can join</Link>
+                </span>
+                <span>
+                  <Link href="#About">About us</Link>
+                </span>
+              </>
+            ) : (
+              <>
+                <span>
+                  <Link href="/event">EVENTS</Link>
+                </span>
+                <span>
+                  <Link href="/About">ABOUT US</Link>
+                </span>
+                <span>
+                  <Link href="/Contact-us">Contact us</Link>
+                </span>
+
+                <button id="clck-free-counselling" onClick={() => popupShow()}>
+                  Apply for Counselling
+                </button>
+              </>
+            )}
+          </div>
         </div>
       </nav>
       {/* <main className={styles.TopBar}>
